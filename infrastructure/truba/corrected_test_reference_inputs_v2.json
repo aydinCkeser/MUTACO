@@ -1,0 +1,34 @@
+{
+  "accepted_source": "6a6dfe85073475c14a2155d0527b98a218419a70",
+  "accepted_test_execution_snapshot": "15a6ff67dd73d4b47b2a6cb40fdf2a8361aa00e0",
+  "baseline": "aa7f4feb58302ecf6abfa6dee2d81071eabb7fe3",
+  "baseline_fit_event_emitter_AST_sha256": {
+    "GP_FIT_FINISHED": "c33f7ce78fd980ff1bbd33c616ddf58af9fb335e1fce378188cefea8cae2ff57",
+    "GP_FIT_STARTED": "113c4669462fce69cd22aa00c66cf89e1222e602567b6c0803d91db43be4b85d"
+  },
+  "capture_fit_events": true,
+  "corrected_fixture": {
+    "path": "tests/acquisition/test_nei.py",
+    "sha256": "cfc0e6fba96460670216bb011841f2aed5759d3e74ae31740b8a1a5e2e3bb998",
+    "source_commit": "bd3859906a969d362e7d0496e87dcac404804285"
+  },
+  "derived_summaries_are_not_raw_inputs": true,
+  "expected_added_tests": 18,
+  "historical_reference_test_revision": "6a6dfe85073475c14a2155d0527b98a218419a70",
+  "new_test_prefixes": [
+    "test_fit_result_real_success_warm_history_and_events[",
+    "test_fit_result_controlled_failures_keep_partial_state[",
+    "test_fit_result_controlled_recovery_counts_only_executed_attempts[",
+    "test_fit_result_record_allocation_precedes_failed_status_handling["
+  ],
+  "raw_inputs": {
+    "accepted-tests-status.json": "25a7b6f811ad1499cb717ad3b3ccf20c2a74e315d191668ce1e7bff35fb2776f",
+    "accepted-tests.xml": "84870b0b82babbf31e92360c8de96a956ef6f0f3e5adb86cac4c013719ade206",
+    "b100-capture.json.gz": "1865655feddf8658f534e029b89212f2e5a1b0bf308f099705e584bde641e156",
+    "b100-history.json.gz": "09e2df33bdfba7cc7ccb331a2995d81bda7e1ae13d5d6f61569904574b6a7e57",
+    "b40-capture.json.gz": "029632e4d0f863a4d1e4c8014a88eca94a0b7eee59517152cbfa80d8919604c2",
+    "b40-history.json.gz": "cc7974d202ecaa5444946aae45965c01f9cf93a10b027f253e71e30a7494dad2"
+  },
+  "schema": "mutaco-corrected-test-reference-inputs-v2",
+  "test_expectation_revision": "corrected-nei-fixture-v2"
+}

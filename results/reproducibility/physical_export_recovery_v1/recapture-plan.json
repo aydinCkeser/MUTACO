@@ -1,0 +1,191 @@
+{
+  "acceptance": [
+    "unchanged existing first-step/final-response parity rules",
+    "exact comparison of all newly computed per-case metrics and retained metric against original saved metrics, with signed-zero-sensitive float identities",
+    "fail at first comparison or export failure; no tolerance changes or automatic resubmission",
+    "newly captured arrays labeled new computations, never original recovered tensors"
+  ],
+  "additional_calls": {
+    "GP_fits": 0,
+    "current_graph_Torch": 16,
+    "end_to_end_repeats": 0,
+    "forward_kernel_total": 33,
+    "independent_graph_NumPy": 16,
+    "retained_Torch": 1,
+    "simulator_API_calls": 0
+  },
+  "configuration": {
+    "config": {
+      "batch_size": 1,
+      "burn_in_steps": 2,
+      "device": "cpu",
+      "node_count": 3,
+      "parameter_profile_id": "p4-paper-baseline",
+      "repeat_size": 1,
+      "sample_steps": 4
+    },
+    "context_family": "prompt7-parity-v1",
+    "context_purpose": "reference_parity",
+    "seeds": [
+      73007,
+      177736,
+      282465,
+      387194,
+      491923,
+      596652,
+      701381,
+      806110,
+      910839,
+      1015568,
+      1120297,
+      1225026,
+      1329755,
+      1434484,
+      1539213,
+      1643942
+    ],
+    "theta": [
+      [
+        1.25,
+        1.25,
+        1.25,
+        0.5
+      ],
+      [
+        0.5,
+        1.25,
+        1.25,
+        0.5
+      ],
+      [
+        2.0,
+        1.25,
+        1.25,
+        0.5
+      ],
+      [
+        1.25,
+        0.5,
+        1.25,
+        0.5
+      ],
+      [
+        1.25,
+        2.0,
+        1.25,
+        0.5
+      ],
+      [
+        1.25,
+        1.25,
+        0.5,
+        0.5
+      ],
+      [
+        1.25,
+        1.25,
+        2.0,
+        0.5
+      ],
+      [
+        1.25,
+        1.25,
+        1.25,
+        0.0
+      ],
+      [
+        1.25,
+        1.25,
+        1.25,
+        1.0
+      ],
+      [
+        0.5,
+        0.5,
+        0.5,
+        0.0
+      ],
+      [
+        2.0,
+        2.0,
+        2.0,
+        1.0
+      ],
+      [
+        1.625,
+        0.875,
+        1.625,
+        0.25
+      ],
+      [
+        0.875,
+        1.625,
+        0.875,
+        0.75
+      ],
+      [
+        1.0625,
+        1.0625,
+        1.8125,
+        0.625
+      ],
+      [
+        1.8125,
+        1.8125,
+        1.0625,
+        0.125
+      ],
+      [
+        0.6875,
+        1.4375,
+        1.4375,
+        0.875
+      ]
+    ]
+  },
+  "exact_original_tensor_recovery_possible": false,
+  "missing_original_tensor_leaves": 222,
+  "missing_reason": "Neither failedTorch ZIP contains data.pkl or tensor storage entries. All16 first-step pairs and16 NumPy responses were never exported. Only3 Torch candidate responses survive in API logs, leaving13 missing; retained candidate8-vector is also absent. Summary distances/quantiles do not determine these arrays.",
+  "original_exit": "1:0",
+  "original_job_id": 6925432,
+  "original_job_state": "FAILED",
+  "pre_kernel_gate": "focused offline exporter tests must pass on the unchanged qualified compute-node environment before any kernel is evaluated",
+  "previous_measured_sum_of_these33_kernel_seconds": 0.5925129018723965,
+  "prohibited_repeats": [
+    "analytic simulator",
+    "full-resolution frozen-target simulation",
+    "17-observation integration",
+    "GP fitting",
+    "B40/B100 campaigns",
+    "SBI training"
+  ],
+  "qualified_environment": {
+    "botorch": "0.18.1",
+    "device": "CPU",
+    "gpytorch": "1.15.2",
+    "platform": "Linux x86_64",
+    "python": "3.11.17",
+    "torch": "2.12.1+cpu"
+  },
+  "resources": {
+    "CPUs": 20,
+    "GPUs": 0,
+    "automatic_retry": false,
+    "jobs": 1,
+    "maximum_minutes": 5,
+    "memory_GiB": 4
+  },
+  "retained_fixture": {
+    "label": "retained numerical oracle, not current-model physics",
+    "path": "scientific/graph_oscillator/reference_fixtures/retained_cpu_small_v1.json",
+    "sha256": "7779b6d7283e1ff4431380125e2108e87a401e94060e62f29b18dd73c5cc67a7",
+    "torch_kernel_runs": 1
+  },
+  "runtime_caveat": "original33 forward runs used under1second in total, excluding imports, realization generation and I/O; the5-minute cap includes those costs",
+  "schema_version": "mutaco-minimum-missing-parity-recapture-plan-v1",
+  "status": "awaiting_explicit_researcher_authorization_no_submission",
+  "threads": [
+    20,
+    1
+  ]
+}

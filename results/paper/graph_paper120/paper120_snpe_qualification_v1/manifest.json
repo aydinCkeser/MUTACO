@@ -1,0 +1,16 @@
+{
+  "consolidation_identity": "paper-v3-consolidated-compact-evidence-v1-ad6fd30b4b420c25133ded16542f300708dbadad3f1f73f97af0f325bf87835c",
+  "methods": [
+    "mutaco",
+    "sbi_npe",
+    "sbi_snpe"
+  ],
+  "paired_records_sha256": "b6165c52f310006c5a4082df368d27513129c7f0ac6bfb9d53038caac4a76705",
+  "schema_version": "mutaco-paper-v3-consolidated-compact-evidence-v1",
+  "scientific_calls_added_by_consolidation": 0,
+  "source_evidence_identities": [
+    "paper120-b40-complete-20260809",
+    "paper-population-declaration-v3-07b4435be8b3146f80b9544882e832988063d1788a94d89ff3290e7c67f4906d"
+  ],
+  "target_count": 120
+}

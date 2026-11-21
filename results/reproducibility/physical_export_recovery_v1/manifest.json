@@ -1,0 +1,181 @@
+{
+  "GitHub_pushes": 0,
+  "Milestone3E_fully_closed": false,
+  "additional_execution": {
+    "GP_fits": 0,
+    "TRUBA_jobs_submitted": 0,
+    "automatic_resubmission": false,
+    "physical_kernel_evaluations": 0,
+    "simulator_API_calls": 0
+  },
+  "integrity": {
+    "additional_GP_fits": 0,
+    "additional_physical_evaluations": 0,
+    "historical_hashes_at_original_source_verified": 47,
+    "immutable_archive_members_verified": 8,
+    "new_TRUBA_jobs": 0,
+    "original_private_files_unchanged": 55,
+    "original_private_inventory_sha256": "2f6c2c6ca5c95917faf1c0b6ca05d60462fa5f79da8ecc2f4a213b7138680436",
+    "portable_checksum_entries_verified": 68,
+    "qualified_core_hash_entries_verified": 47,
+    "tracked_figures_arrays_unchanged": 21
+  },
+  "minimum_additional_capture": {
+    "CPUs": 20,
+    "GP_fits": 0,
+    "authorization": "requested_separately_not_received_no_submission",
+    "end_to_end_repeats": 0,
+    "kernel_runs": 33,
+    "maximum_minutes": 5,
+    "memory_GiB": 4,
+    "plan": "recapture-plan.json",
+    "plan_sha256": "70f68db550e36dd76751efb243a5fa3dc2da599accd2e30d69596fc137f44013",
+    "provenance": "any new arrays must be identified as new qualified computations, never original recovered states",
+    "simulator_API_calls": 0
+  },
+  "new_private_check_evidence": {
+    "files_sealed": 18,
+    "inventory_SHA256SUMS_sha256": "248dd3c54d093b31acfffed35d79f81bad15a328d5c93c6be90ec574d9d13fba"
+  },
+  "original_evidence": "benchmarks/reproducibility/physical_integration_qualification_v1/manifest.json",
+  "original_job": {
+    "exit_code": "1:0",
+    "id": 6925432,
+    "scientific_assertions_passed_before_export": true,
+    "state": "FAILED",
+    "status_rewritten": false
+  },
+  "private_original_evidence_unchanged": {
+    "archive_sha256": "d9d7cb8b3e817f39a63f3a6bec177e4e579cc1a46c06545b8da93c94d4490d0e",
+    "inventory_SHA256SUMS_sha256": "2f6c2c6ca5c95917faf1c0b6ca05d60462fa5f79da8ecc2f4a213b7138680436",
+    "sealed_files": 55
+  },
+  "recovery": {
+    "bitwise_readback_verified": true,
+    "complete_export_correctly_rejected_when_missing": true,
+    "no_arrays_inferred_from_distance_quantile_or_other_approximate_summaries": true,
+    "original_binary_capture_restored": false,
+    "original_tensor_leaves_expected": 236,
+    "partial_export_bytes": 106681,
+    "partial_export_sha256": "3e19f76ded8d3b6849418052f7a3f45160ce092dc53ad4cfb2bc562c1b315741",
+    "partial_label": "exact values reconstructed from retained source records; not original in-memory objects or storage identities",
+    "private_recovery_inventory_sha256": "0fa2fe121ac42775c00627cb43534e649a94ae872b26c0bcd308f611408e8856",
+    "recovered_paths": [
+      "analytic_noisy",
+      "analytic_constant",
+      "graph_fixed/0/candidate_response",
+      "graph_fixed/9/candidate_response",
+      "graph_fixed/10/candidate_response",
+      "graph_full_reference/reference",
+      "graph_full_reference/candidate",
+      "retained/reference",
+      "training/0/theta",
+      "training/0/response_standardized",
+      "training/1/theta",
+      "training/1/response_standardized",
+      "transform_mean",
+      "transform_scale"
+    ],
+    "source_bindings": {
+      "analytic_constant": "calls.jsonl: completed analytic_constant response",
+      "analytic_noisy": "calls.jsonl: three completed analytic_noise responses",
+      "graph_fixed/0/candidate_response": "calls.jsonl: completed API repeat case0, originally asserted bit-equal to parity candidate",
+      "graph_fixed/10/candidate_response": "calls.jsonl: completed API repeat case10, originally asserted bit-equal to parity candidate",
+      "graph_fixed/9/candidate_response": "calls.jsonl: completed API repeat case9, originally asserted bit-equal to parity candidate",
+      "graph_full_reference/candidate": "calls.jsonl: completed full-resolution graph response",
+      "graph_full_reference/reference": "pre-execution-plan.json: frozen target response",
+      "retained/reference": "unchanged checksum-verified independent retained fixture; not computed candidate",
+      "training/0/response_standardized": "integration.json: first16 standardized response rows; training ID verified",
+      "training/0/theta": "integration.json: first16 ordered theta rows; training ID verified",
+      "training/1/response_standardized": "integration.json: first17 standardized response rows; training ID verified",
+      "training/1/theta": "integration.json: first17 ordered theta rows; training ID verified",
+      "transform_mean": "integration.json: frozen transform metadata.mean",
+      "transform_scale": "integration.json: frozen transform metadata.effective_scale"
+    },
+    "tensor_leaves_exact_values_recovered": 14,
+    "tensor_leaves_unavailable": 222,
+    "training_IDs_match_original_executed_fits": 2,
+    "unavailable_breakdown": {
+      "NumPy_final_response_vectors": 16,
+      "Torch_final_response_vectors_without_API_repeats": 13,
+      "computed_retained_response_vector": 1,
+      "first_step_arrays_both_implementations_16_cases_6_fields": 192
+    },
+    "unrecorded_metadata": "13 parity seed manifests and2 GP config repr strings were also not separately exported; recorded input configurations/seeds and full GP diagnostic JSON remain intact"
+  },
+  "repair": {
+    "behavior": [
+      "thaw mapping containers recursively; keep lists and tuples, numeric scalars and ordering",
+      "retain tensor objects and native storage/view semantics; no dtype/device/value conversion",
+      "require explicitly declared tensor paths and reject missing scientific leaves",
+      "read back with weights_only=True and verify shapes, dtype, device, strides, offsets, requires_grad and every tensor bit",
+      "publish only after verification; never overwrite existing evidence, even on a publication race",
+      "reject cycles, unsupported object types/storage and arbitrary pickle hooks",
+      "read-only verifier imports/CLI remain unchanged and do not require Torch"
+    ],
+    "existing_helper_reason": "core strict_metadata_document is for JSON metadata; it converts tuples to lists and does not enforce tensor capture completeness. The new exporter applies only mapping conversion and native Torch tensor serialization.",
+    "function": "save_tensor_evidence",
+    "implementation": "tools/reproducibility/tensor_export.py",
+    "original_sealed_worker_modified": false,
+    "source_sha256": "167fe3f801f7c3ffb5a9489f149ee5bec5b588135e5f1c4d2bdbb2ba09e76afe",
+    "strict_metadata_document_reused_for_whole_capture": false,
+    "test_source_sha256": "1118d42f474a0b5682eb8def80c6e4214116ab42d5fce683f5c517af9f6bb577",
+    "tests": "tests/infrastructure/test_tensor_evidence_export.py"
+  },
+  "root_cause": {
+    "command": "torch.save(raw, OUT / 'training-and-checkpoints.pt')",
+    "exception": "TypeError: cannot pickle 'mappingproxy' object",
+    "explanation": "dict(result.metadata) copied only the outer mapping; checked_evaluate had recursively frozen nested metadata. The fallback tried the same unmodified payload and failed again.",
+    "failed_ZIP_members": "version, byteorder, serialization_id only; no data.pkl or tensor storage entries",
+    "failed_files": [
+      "training-and-checkpoints.pt",
+      "partial-checkpoints.pt"
+    ],
+    "function_chain": [
+      "torch.save",
+      "torch.serialization._save",
+      "pickler.dump(obj)"
+    ],
+    "missing_file": "verdict.json, because fallback export raised before its write",
+    "offending_object_path": "raw.graph_full_reference.metadata.seed_manifest",
+    "worker_lines": [
+      176,
+      179
+    ]
+  },
+  "schema_version": "mutaco-physical-evidence-export-repair-v1",
+  "scientific_sources_reference_values_archives_figures_and_data_modified": false,
+  "starting_commit": "ebf30fb82ef5b225fae0ac673db27d2a2a7494c9",
+  "status": "offline_exporter_repaired_partial_recovery_verified_missing_parity_states_require_explicit_recapture_approval",
+  "surviving_original_evidence": {
+    "files": [
+      "calls.jsonl",
+      "integration.json",
+      "reference-comparisons.json",
+      "events.jsonl",
+      "environment.json",
+      "pre-execution-plan.json"
+    ],
+    "saved_diagnostics": "full GP diagnostic and fit/proposal/recommendation provenance in integration.json; comparison metrics in reference-comparisons.json",
+    "surviving_binary": "the separately sealed derived-training-from-json.pt is explicitly a prior reconstruction, not the lost original dump",
+    "tensor_data": "finite scalar JSON response/training/transform records plus independently frozen retained reference bytes"
+  },
+  "tests": {
+    "baseline_native_failure_reproduced_before_repair": true,
+    "deselected": 0,
+    "failed": 0,
+    "forbidden_scientific_attempts": 0,
+    "full_GP_scientific_suite_executed": false,
+    "new_exporter_tests": 21,
+    "passed": 75,
+    "selection": [
+      "tests/infrastructure/test_tensor_evidence_export.py",
+      "tests/reproducibility/test_verification_characterization.py",
+      "tests/reproducibility/test_verification_entrypoints.py",
+      "tests/contracts/test_repository_navigation.py",
+      "tests/contracts/test_clean_break_handoff.py"
+    ],
+    "skipped": 0
+  },
+  "unchanged_qualified_scientific_source": "35ef82dba2160dfb3f709854b0e11c3956744c31"
+}

@@ -1,0 +1,2692 @@
+{
+  "schema": "mutaco.repository_architecture.truba_jobs.v1",
+  "coverage": 48,
+  "paths": "Each job has a private run root. Output and log paths are relative to that root. The command is the submitted executable argv or the tracked launcher and profile, with transport and access identifiers removed.",
+  "symbols": {
+    "$RUN": "job-specific private run root",
+    "$SOURCE": "protected revision checked by the job",
+    "$HISTORICAL_SOURCE": "original qualified scientific checkout",
+    "$PRELIMINARY_RUN": "preliminary execution root",
+    "$FINAL_RUN": "final execution root",
+    "$HISTORICAL_RUN": "original evidence root",
+    "$REFERENCES": "private verified historical reference inputs",
+    "$PY_CPU": "qualified Linux x86-64 CPU environment",
+    "$PY_SBI": "isolated extended CPU/SBI environment",
+    "$PY_CUDA": "isolated CUDA runtime"
+  },
+  "limits": "Scheduler success establishes completion of the submitted job. A diagnostic can succeed while demonstrating a failed acceptance check. A null sampled peak means Slurm returned zero or had no workload-step RSS measurement. Pending runs have no final exit code. Cancelled jobs may have no output or log files.",
+  "jobs": [
+    {
+      "id": 7010389,
+      "gate": "replay",
+      "context": "preliminary",
+      "role": "Accepted 531-test CPU selection followed by strict B40/B100 archived replay and checkpoint comparison.",
+      "source": "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+      "source_mode": "exact scientific source with established archived replay plumbing; independent original references",
+      "command": [
+        "$RUN/validation-job.sh",
+        "$SOURCE",
+        "$RUN/workers",
+        "$PY_CPU",
+        "$REFERENCES",
+        "$SOURCE/infrastructure/truba/gp_optimizer_diagnostics_reference_inputs_v2.json"
+      ],
+      "environment": [
+        "$PY_CPU"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "20G",
+        "time_limit": "00:20:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:05:48",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 15567848,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:05:48",
+            "max_rss_kib": 15567848
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:05:48",
+            "max_rss_kib": 88
+          }
+        ]
+      },
+      "job_scope_outcome": "PASSED",
+      "qualification_note": "Accepted 531 test identities and both archived scientific gates passed on the preliminary source.",
+      "run_relative_paths": {
+        "output": "workers",
+        "stdout": "logs/qualification-7010389.out",
+        "stderr": "logs/qualification-7010389.err"
+      }
+    },
+    {
+      "id": 7010409,
+      "gate": "env-sbi",
+      "context": "preliminary",
+      "role": "Provision and verify the isolated extended CPU/SBI runtime.",
+      "source": "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+      "source_mode": "environment qualification",
+      "command": [
+        "$RUN/setup-env.sh",
+        "$SOURCE",
+        "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+        "$PY_CPU",
+        "$RUN/envs/mutaco-sbi",
+        "$RUN/env-evidence-sbi",
+        "sbi"
+      ],
+      "environment": [
+        "$PY_CPU"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "12G",
+        "time_limit": "00:30:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:00:32",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 147468,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:32",
+            "max_rss_kib": 147468
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:32",
+            "max_rss_kib": 4
+          }
+        ]
+      },
+      "job_scope_outcome": "PASSED",
+      "qualification_note": "The isolated CPU/SBI environment passed its dependency/version checks.",
+      "run_relative_paths": {
+        "output": "env-evidence-sbi",
+        "stdout": "logs/env-sbi-7010409.out",
+        "stderr": "logs/env-sbi-7010409.err"
+      }
+    },
+    {
+      "id": 7010411,
+      "gate": "env-cuda",
+      "context": "preliminary",
+      "role": "Provision and verify the isolated GPU runtime.",
+      "source": "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+      "source_mode": "environment qualification",
+      "command": [
+        "$RUN/setup-env.sh",
+        "$SOURCE",
+        "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+        "$PY_CPU",
+        "$RUN/envs/mutaco-cu126",
+        "$RUN/env-evidence-cuda",
+        "cuda"
+      ],
+      "environment": [
+        "$PY_CPU"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "12G",
+        "time_limit": "00:30:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:02:12",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 87416,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:02:12",
+            "max_rss_kib": 87416
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:02:12",
+            "max_rss_kib": 12
+          }
+        ]
+      },
+      "job_scope_outcome": "PASSED",
+      "qualification_note": "The isolated CUDA environment was provisioned and version-verified.",
+      "run_relative_paths": {
+        "output": "env-evidence-cuda",
+        "stdout": "logs/env-cuda-7010411.out",
+        "stderr": "logs/env-cuda-7010411.err"
+      }
+    },
+    {
+      "id": 7010415,
+      "gate": "extra-eng",
+      "context": "preliminary",
+      "role": "Extended engineering and contract pytest selection.",
+      "source": "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+      "source_mode": "exact checkout",
+      "command": [
+        "$RUN/run_extended.sbatch",
+        "$RUN/engineering.py",
+        "engineering",
+        "$SOURCE",
+        "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+        "$PY_CPU",
+        "$RUN/engineering-results",
+        "$SOURCE/results/reproducibility/documented_core_qualification_v1/manifest.json",
+        "d5a0e58b23cda081c4c138b60b2a68cb0857d5a984dbd96f4c64e924279f7a90"
+      ],
+      "environment": [
+        "$PY_CPU"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "20G",
+        "time_limit": "00:20:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:01:17",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 413252,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:01:17",
+            "max_rss_kib": 413252
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:01:17",
+            "max_rss_kib": 12
+          }
+        ]
+      },
+      "job_scope_outcome": "PASSED",
+      "run_relative_paths": {
+        "output": "engineering-results",
+        "stdout": "logs/extra-eng-7010415.out",
+        "stderr": "logs/extra-eng-7010415.err"
+      }
+    },
+    {
+      "id": 7010422,
+      "gate": "gate-composite-v1",
+      "context": "preliminary",
+      "role": "Reproduce original composite MC NEI numerical qualification workflow.",
+      "source": "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+      "source_mode": "separate exact-source comparator checkout and versioned profile",
+      "command": "source infrastructure/truba/primary_nei_q1_compute_smoke_v1.env && bash infrastructure/truba/submit_primary_nei_q1_compute_smoke.sh --submit",
+      "environment": [
+        "$PY_CPU"
+      ],
+      "scheduler_worker": "$SOURCE/infrastructure/truba/primary_nei_q1_compute_smoke.sbatch",
+      "requested": {
+        "partition": "barbun",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "64G",
+        "time_limit": "00:30:00"
+      },
+      "slurm": {
+        "state": "CANCELLED",
+        "exit": "0:0",
+        "elapsed": "00:00:00",
+        "allocated_cpus": 0,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": []
+      },
+      "job_scope_outcome": "NOT_RUN",
+      "qualification_note": "Superseded before dispatch; no numerical result.",
+      "run_relative_paths": {
+        "output": "workers",
+        "stdout": "logs/mutaco-primary-q1-gp-smoke-7010422.out",
+        "stderr": "logs/mutaco-primary-q1-gp-smoke-7010422.err"
+      }
+    },
+    {
+      "id": 7010424,
+      "gate": "physics",
+      "context": "preliminary",
+      "role": "Bounded physical analytic and graph integration, parity and full real 16+1 search.",
+      "source": "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+      "source_mode": "exact checkout",
+      "command": [
+        "$RUN/physical-plan/physical-job.sh",
+        "$SOURCE",
+        "$RUN/physical-workers",
+        "$PY_CPU",
+        "$RUN/physical-plan",
+        "bc68bc51a0075d237d0709474ec61c5a2734f3b1"
+      ],
+      "environment": [
+        "$PY_CPU"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "20G",
+        "time_limit": "00:20:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:00:51",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 507124,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:51",
+            "max_rss_kib": 507124
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:51",
+            "max_rss_kib": 80
+          }
+        ]
+      },
+      "job_scope_outcome": "PASSED",
+      "run_relative_paths": {
+        "output": "physical-workers",
+        "stdout": "logs/physical-7010424.out",
+        "stderr": "logs/physical-7010424.err"
+      }
+    },
+    {
+      "id": 7010426,
+      "gate": "gate-npe-v1",
+      "context": "preliminary",
+      "role": "Execute the supported real NPE/SNPE method profile.",
+      "source": "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+      "source_mode": "separate exact-source comparator checkout and versioned profile",
+      "command": "source infrastructure/truba/paper120_b100_three_method_qualification_v1.env && bash infrastructure/truba/submit_paper120_v3_population.sh --submit",
+      "environment": [
+        "$PY_SBI"
+      ],
+      "scheduler_worker": "$SOURCE/infrastructure/truba/paper_v3_population_template.sbatch",
+      "requested": {
+        "partition": "barbun",
+        "cpus": 60,
+        "gpus": 0,
+        "memory": "192G",
+        "time_limit": "01:00:00"
+      },
+      "slurm": {
+        "state": "CANCELLED",
+        "exit": "0:0",
+        "elapsed": "00:00:00",
+        "allocated_cpus": 0,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": []
+      },
+      "job_scope_outcome": "NOT_RUN",
+      "qualification_note": "Superseded before dispatch; no numerical result.",
+      "run_relative_paths": {
+        "output": "workers",
+        "stdout": "logs/mutaco-paper-v3-7010426.out",
+        "stderr": "logs/mutaco-paper-v3-7010426.err"
+      }
+    },
+    {
+      "id": 7010429,
+      "gate": "gate-zoo-v1",
+      "context": "preliminary",
+      "role": "Execute the supported real SBI zoo NLE/NRE method profile.",
+      "source": "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+      "source_mode": "separate exact-source comparator checkout and versioned profile",
+      "command": "source infrastructure/truba/sbi_zoo_qualification_v1.env && bash infrastructure/truba/submit_sbi_zoo_qualification.sh --submit",
+      "environment": [
+        "$PY_SBI"
+      ],
+      "scheduler_worker": "$SOURCE/infrastructure/truba/sbi_zoo_qualification.sbatch",
+      "requested": {
+        "partition": "barbun",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "64G",
+        "time_limit": "1-00:00:00"
+      },
+      "slurm": {
+        "state": "CANCELLED",
+        "exit": "0:0",
+        "elapsed": "00:00:00",
+        "allocated_cpus": 0,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": []
+      },
+      "job_scope_outcome": "NOT_RUN",
+      "qualification_note": "Superseded before dispatch; no numerical result.",
+      "run_relative_paths": {
+        "output": "workers",
+        "stdout": "logs/mutaco-sbi-zoo-qual-7010429.out",
+        "stderr": "logs/mutaco-sbi-zoo-qual-7010429.err"
+      }
+    },
+    {
+      "id": 7010431,
+      "gate": "graph-parity",
+      "context": "preliminary",
+      "role": "Full independent Torch/NumPy graph parity with fixed, retained and statistical checks.",
+      "source": "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+      "source_mode": "exact checkout",
+      "command": [
+        "$RUN/cpu-forward-parity.sh",
+        "$SOURCE",
+        "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+        "$PY_CPU",
+        "$RUN/graph-parity-result",
+        "parity",
+        "ec7d805eb702167b624a453ed2d965a11ffdde6216b4a605906d4d49e5f3e376"
+      ],
+      "environment": [
+        "$PY_CPU"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "8G",
+        "time_limit": "00:20:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:00:25",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:25",
+            "max_rss_kib": null
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:25",
+            "max_rss_kib": 56
+          }
+        ]
+      },
+      "job_scope_outcome": "PASSED",
+      "run_relative_paths": {
+        "output": "graph-parity-result",
+        "stdout": "logs/graph-parity-7010431.out",
+        "stderr": "logs/graph-parity-7010431.err"
+      }
+    },
+    {
+      "id": 7010433,
+      "gate": "graph-forward",
+      "context": "preliminary",
+      "role": "Standalone graph oscillator CPU physical benchmark and artifact verification.",
+      "source": "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+      "source_mode": "exact checkout",
+      "command": [
+        "$RUN/cpu-forward-parity.sh",
+        "$SOURCE",
+        "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+        "$PY_SBI",
+        "$RUN/graph-forward-result",
+        "forward",
+        "ec7d805eb702167b624a453ed2d965a11ffdde6216b4a605906d4d49e5f3e376"
+      ],
+      "environment": [
+        "$PY_SBI"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "8G",
+        "time_limit": "00:20:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:00:11",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:11",
+            "max_rss_kib": null
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:11",
+            "max_rss_kib": 48
+          }
+        ]
+      },
+      "job_scope_outcome": "PASSED",
+      "run_relative_paths": {
+        "output": "graph-forward-result",
+        "stdout": "logs/graph-forward-7010433.out",
+        "stderr": "logs/graph-forward-7010433.err"
+      }
+    },
+    {
+      "id": 7010435,
+      "gate": "gpu",
+      "context": "preliminary",
+      "role": "Physical graph/analytic CUDA execution and CPU/GPU comparisons.",
+      "source": "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+      "source_mode": "exact checkout",
+      "command": [
+        "$RUN/gpu-validation.sh",
+        "$SOURCE",
+        "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+        "$PY_CUDA",
+        "$RUN/gpu-results",
+        "$RUN/env-evidence-cuda/environment-verified"
+      ],
+      "environment": [
+        "$PY_CUDA"
+      ],
+      "requested": {
+        "partition": "akya-cuda",
+        "cpus": 10,
+        "gpus": 1,
+        "memory": "16G",
+        "time_limit": "00:20:00"
+      },
+      "slurm": {
+        "state": "FAILED",
+        "exit": "1:0",
+        "elapsed": "00:00:37",
+        "allocated_cpus": 10,
+        "allocated_gpus_recorded_by_slurm": null,
+        "sampled_workload_peak_rss_kib": 319968,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "FAILED",
+            "exit": "1:0",
+            "elapsed": "00:00:37",
+            "max_rss_kib": 319968
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:37",
+            "max_rss_kib": 28
+          }
+        ]
+      },
+      "job_scope_outcome": "FAILED",
+      "qualification_note": "Two CUDA placement checks failed. See 7010446 and corrected-source job 7010540.",
+      "run_relative_paths": {
+        "output": "gpu-results",
+        "stdout": "logs/gpu-7010435.out",
+        "stderr": "logs/gpu-7010435.err"
+      }
+    },
+    {
+      "id": 7010438,
+      "gate": "analytic-real",
+      "context": "preliminary",
+      "role": "Handwritten and frozen GP-landscape full supported analytic programs with deterministic repeats.",
+      "source": "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+      "source_mode": "exact checkout",
+      "command": [
+        "$RUN/analytic-job.sh",
+        "$SOURCE",
+        "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+        "$PY_SBI",
+        "$RUN/analytic-result",
+        "dc9a93cd674ef444ec9e564dc7fafb29bf1e2d55f832ca64525eeaa2631d6952  experiments/analytic_target_matching/configs/handwritten.json\n729c6ddd51942afc83c59e2da26f973c972951e96c8bc39a216181c1523359ce  experiments/analytic_target_matching/configs/gp_landscape.json",
+        "a92b82eeb99c996fd2d9e1343afa37fbb0ffe771cf7e3ef935ee9574e55aa17a"
+      ],
+      "environment": [
+        "$PY_SBI"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "8G",
+        "time_limit": "00:20:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:00:29",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:29",
+            "max_rss_kib": null
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:29",
+            "max_rss_kib": 56
+          }
+        ]
+      },
+      "job_scope_outcome": "PASSED",
+      "run_relative_paths": {
+        "output": "analytic-result",
+        "stdout": "logs/analytic-real-7010438.out",
+        "stderr": "logs/analytic-real-7010438.err"
+      }
+    },
+    {
+      "id": 7010440,
+      "gate": "extra-expt",
+      "context": "preliminary",
+      "role": "Extended experiment pytest with independently checked original inputs.",
+      "source": "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+      "source_mode": "disposable clone at specified source with independently verified compact observations restored at historical paths",
+      "command": [
+        "$RUN/extra-experiments.sh",
+        "$SOURCE",
+        "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+        "$RUN"
+      ],
+      "environment": [
+        "$PY_SBI"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "20G",
+        "time_limit": "00:40:00"
+      },
+      "slurm": {
+        "state": "FAILED",
+        "exit": "1:0",
+        "elapsed": "00:27:46",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 1243004,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "FAILED",
+            "exit": "1:0",
+            "elapsed": "00:27:46",
+            "max_rss_kib": 1243004
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:27:46",
+            "max_rss_kib": 108
+          }
+        ]
+      },
+      "job_scope_outcome": "FAILED",
+      "qualification_note": "Extended experiment suite reported failures; preliminary evidence only.",
+      "run_relative_paths": {
+        "output": "extended-experiment-7010440/results",
+        "stdout": "logs/extra-expt-7010440.out",
+        "stderr": "logs/extra-expt-7010440.err"
+      }
+    },
+    {
+      "id": 7010446,
+      "gate": "gpu-owners-diag",
+      "context": "preliminary",
+      "role": "Two-source diagnostic of implicit versus explicit CUDA device identities.",
+      "source": "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+      "source_mode": "two-source diagnostic",
+      "command": [
+        "$RUN/gpu_owners_compare.sbatch",
+        "$SOURCE",
+        "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+        "$HISTORICAL_SOURCE",
+        "35ef82dba2160dfb3f709854b0e11c3956744c31",
+        "$PY_CUDA",
+        "$RUN/gpu-owners-diagnosis",
+        "$RUN/gpu_owners_diagnose.py",
+        "$RUN/env-evidence-cuda/environment-verified"
+      ],
+      "environment": [
+        "$PY_CUDA"
+      ],
+      "also_compared_sources": [
+        "35ef82dba2160dfb3f709854b0e11c3956744c31"
+      ],
+      "requested": {
+        "partition": "akya-cuda",
+        "cpus": 10,
+        "gpus": 1,
+        "memory": "16G",
+        "time_limit": "00:05:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:00:09",
+        "allocated_cpus": 10,
+        "allocated_gpus_recorded_by_slurm": null,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:09",
+            "max_rss_kib": null
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:09",
+            "max_rss_kib": 28
+          }
+        ]
+      },
+      "job_scope_outcome": "DIAGNOSTIC_COMPLETED",
+      "qualification_note": "Reproduced prior-source CUDA device/ordinal mismatch.",
+      "run_relative_paths": {
+        "output": "gpu-owners-diagnosis",
+        "stdout": "logs/gpu-owners-diag-7010446.out",
+        "stderr": "logs/gpu-owners-diag-7010446.err"
+      }
+    },
+    {
+      "id": 7010452,
+      "gate": "paper-figures",
+      "context": "preliminary",
+      "role": "Persisted paper analyses and original figure producers.",
+      "source": "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+      "source_mode": "disposable clone at specified source with restored inputs, private figure destinations",
+      "command": [
+        "$RUN/paper-job.sh",
+        "$SOURCE",
+        "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+        "$PY_SBI",
+        "$RUN/paper-figures-result",
+        "$RUN/paper_worker.py",
+        "313ff0a22b3619dddd2fe307c4c270c1adf911774a86a643ceeee03de01bbc8c"
+      ],
+      "environment": [
+        "$PY_SBI"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "8G",
+        "time_limit": "00:20:00"
+      },
+      "slurm": {
+        "state": "FAILED",
+        "exit": "1:0",
+        "elapsed": "00:00:42",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 231408,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "FAILED",
+            "exit": "1:0",
+            "elapsed": "00:00:42",
+            "max_rss_kib": 231408
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:42",
+            "max_rss_kib": 104
+          }
+        ]
+      },
+      "job_scope_outcome": "FAILED",
+      "qualification_note": "Two stored analyses passed; true TeX figure execution failed on compute.",
+      "run_relative_paths": {
+        "output": "paper-figures-result",
+        "stdout": "logs/paper-figures-7010452.out",
+        "stderr": "logs/paper-figures-7010452.err"
+      }
+    },
+    {
+      "id": 7010465,
+      "gate": "integrity",
+      "context": "preliminary",
+      "role": "Frozen reference/source/figure/archive and manifest integrity checks.",
+      "source": "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+      "source_mode": "exact checkout",
+      "command": [
+        "$RUN/integrity-job.sh",
+        "$PY_CPU",
+        "$RUN",
+        "$SOURCE",
+        "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+        "$RUN/integrity.json"
+      ],
+      "environment": [
+        "$PY_CPU"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "8G",
+        "time_limit": "00:10:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:00:16",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:16",
+            "max_rss_kib": null
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:16",
+            "max_rss_kib": 8
+          }
+        ]
+      },
+      "job_scope_outcome": "PASSED",
+      "run_relative_paths": {
+        "output": "integrity.json",
+        "stdout": "logs/integrity-7010465.out",
+        "stderr": "logs/integrity-7010465.err"
+      }
+    },
+    {
+      "id": 7010479,
+      "gate": "gate-scalar-method-v1",
+      "context": "preliminary",
+      "role": "Full scalar qLogNEI method for B40 target 16 with independent recorded trajectory.",
+      "source": "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+      "source_mode": "separate exact-source comparator checkout and versioned profile",
+      "command": [
+        "$RUN/scalar-method.sbatch",
+        "$SOURCE",
+        "$RUN/scalar-method-qualification.py",
+        "$RUN/method-results",
+        "$PY_CPU",
+        "bc68bc51a0075d237d0709474ec61c5a2734f3b1"
+      ],
+      "environment": [
+        "$PY_CPU"
+      ],
+      "requested": {
+        "partition": "barbun",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "20G",
+        "time_limit": "00:20:00"
+      },
+      "slurm": {
+        "state": "CANCELLED",
+        "exit": "0:0",
+        "elapsed": "00:00:00",
+        "allocated_cpus": 0,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": []
+      },
+      "job_scope_outcome": "NOT_RUN",
+      "qualification_note": "Superseded before dispatch; no numerical result.",
+      "run_relative_paths": {
+        "output": "method-results",
+        "stdout": "logs/mutaco-arch-scalar-method-7010479.out",
+        "stderr": "logs/mutaco-arch-scalar-method-7010479.err"
+      }
+    },
+    {
+      "id": 7010512,
+      "gate": "tex-env",
+      "context": "preliminary",
+      "role": "Initial attempt to prepare privately scoped TeX fonts on compute node.",
+      "source": "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+      "source_mode": "environment qualification",
+      "command": [
+        "$RUN/tex-private-env.sh",
+        "$SOURCE",
+        "bc68bc51a0075d237d0709474ec61c5a2734f3b1",
+        "$RUN/tex-font-env",
+        "$PY_SBI",
+        "1971feddf747103c21befd219d6c1d2c2e76722f55675e12fe1fe038e6bbc13f"
+      ],
+      "environment": [
+        "$PY_SBI"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "4G",
+        "time_limit": "00:12:00"
+      },
+      "slurm": {
+        "state": "FAILED",
+        "exit": "1:0",
+        "elapsed": "00:00:02",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "FAILED",
+            "exit": "1:0",
+            "elapsed": "00:00:02",
+            "max_rss_kib": null
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:02",
+            "max_rss_kib": 12
+          }
+        ]
+      },
+      "job_scope_outcome": "FAILED",
+      "qualification_note": "Compute node lacked cached packages; separate native font/TeX proof 7010587 passed.",
+      "run_relative_paths": {
+        "output": "tex-font-env",
+        "stdout": "logs/tex-env-7010512.out",
+        "stderr": "logs/tex-env-7010512.err"
+      }
+    },
+    {
+      "id": 7010540,
+      "gate": "gpu-final",
+      "context": "final",
+      "role": "Corrected CUDA device resolution and physical CPU/GPU comparisons.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "exact checkout",
+      "command": [
+        "$RUN/gpu-final.sbatch",
+        "$SOURCE",
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+        "$PY_CUDA",
+        "$RUN/gpu-final-results",
+        "$PRELIMINARY_RUN/env-evidence-cuda/environment-verified"
+      ],
+      "environment": [
+        "$PY_CUDA"
+      ],
+      "requested": {
+        "partition": "akya-cuda",
+        "cpus": 20,
+        "gpus": 2,
+        "memory": "16G",
+        "time_limit": "00:12:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:00:18",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": null,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:18",
+            "max_rss_kib": null
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:18",
+            "max_rss_kib": 36
+          }
+        ]
+      },
+      "worker_visible_gpu_count": 2,
+      "job_scope_outcome": "PASSED",
+      "qualification_note": "11 pytest cases passed, two independently visible Tesla V100s; maximum CPU/GPU physical difference 4.76837158203125e-7 within the registered rule.",
+      "run_relative_paths": {
+        "output": "gpu-final-results",
+        "stdout": "logs/gpu-final-7010540.out",
+        "stderr": "logs/gpu-final-7010540.err"
+      }
+    },
+    {
+      "id": 7010542,
+      "gate": "extra-eng",
+      "context": "final",
+      "role": "Extended engineering and contract pytest selection.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "exact checkout",
+      "command": [
+        "$RUN/run_extended.sbatch",
+        "$RUN/engineering.py",
+        "engineering",
+        "$SOURCE",
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+        "$PY_CPU",
+        "$RUN/engineering-results",
+        "$SOURCE/results/reproducibility/documented_core_qualification_v1/manifest.json",
+        "d5a0e58b23cda081c4c138b60b2a68cb0857d5a984dbd96f4c64e924279f7a90"
+      ],
+      "environment": [
+        "$PY_CPU"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "20G",
+        "time_limit": "00:20:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:00:59",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 603340,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:59",
+            "max_rss_kib": 603340
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:59",
+            "max_rss_kib": 112
+          }
+        ]
+      },
+      "job_scope_outcome": "PASSED",
+      "qualification_note": "296 passed, 10 skipped on the candidate.",
+      "run_relative_paths": {
+        "output": "engineering-results",
+        "stdout": "logs/extra-eng-7010542.out",
+        "stderr": "logs/extra-eng-7010542.err"
+      }
+    },
+    {
+      "id": 7010544,
+      "gate": "replay",
+      "context": "final",
+      "role": "Accepted 531-test CPU selection followed by strict B40/B100 archived replay and checkpoint comparison.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "exact scientific source with established archived replay plumbing; independent original references",
+      "command": [
+        "$RUN/validation-job.sh",
+        "$SOURCE",
+        "$RUN/workers",
+        "$PY_CPU",
+        "$REFERENCES",
+        "$SOURCE/infrastructure/truba/gp_optimizer_diagnostics_reference_inputs_v2.json"
+      ],
+      "environment": [
+        "$PY_CPU"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "20G",
+        "time_limit": "00:20:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:05:58",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 12882896,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:05:58",
+            "max_rss_kib": 12882896
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:05:58",
+            "max_rss_kib": 116
+          }
+        ]
+      },
+      "job_scope_outcome": "PASSED",
+      "qualification_note": "523 passed, 8 expected skips; B40 40/40 and B100 100/100 exact replay.",
+      "run_relative_paths": {
+        "output": "workers",
+        "stdout": "logs/qualification-7010544.out",
+        "stderr": "logs/qualification-7010544.err"
+      }
+    },
+    {
+      "id": 7010546,
+      "gate": "physics",
+      "context": "final",
+      "role": "Bounded physical analytic and graph integration, parity and full real 16+1 search.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "exact checkout",
+      "command": [
+        "$RUN/physical-plan/physical-job.sh",
+        "$SOURCE",
+        "$RUN/physical-workers",
+        "$PY_CPU",
+        "$RUN/physical-plan",
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424"
+      ],
+      "environment": [
+        "$PY_CPU"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "20G",
+        "time_limit": "00:20:00"
+      },
+      "slurm": {
+        "state": "CANCELLED",
+        "exit": "0:0",
+        "elapsed": "00:00:00",
+        "allocated_cpus": 0,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": []
+      },
+      "job_scope_outcome": "NOT_RUN",
+      "qualification_note": "Superseded packet cancelled pending, before execution.",
+      "run_relative_paths": {
+        "output": "physical-workers",
+        "stdout": "logs/physical-7010546.out",
+        "stderr": "logs/physical-7010546.err"
+      }
+    },
+    {
+      "id": 7010548,
+      "gate": "integrity",
+      "context": "final",
+      "role": "Frozen reference/source/figure/archive and manifest integrity checks.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "exact checkout",
+      "command": [
+        "$RUN/integrity-job.sh",
+        "$PY_CPU",
+        "$RUN",
+        "$SOURCE",
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+        "$RUN/integrity.json"
+      ],
+      "environment": [
+        "$PY_CPU"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "8G",
+        "time_limit": "00:10:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:00:12",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:12",
+            "max_rss_kib": null
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:12",
+            "max_rss_kib": 24
+          }
+        ]
+      },
+      "job_scope_outcome": "PASSED",
+      "qualification_note": "2,555 ledger rows, 2,663 distinct blobs, 810 portable checksum entries, both historical core identities, eight archive members, 242 cohort files and 24 manuscript-tree entries verified.",
+      "run_relative_paths": {
+        "output": "integrity.json",
+        "stdout": "logs/integrity-7010548.out",
+        "stderr": "logs/integrity-7010548.err"
+      }
+    },
+    {
+      "id": 7010552,
+      "gate": "gate-scalar-method-v1",
+      "context": "comparator",
+      "role": "Full scalar qLogNEI method for B40 target 16 with independent recorded trajectory.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "separate exact-source comparator checkout and versioned profile",
+      "command": [
+        "$RUN/scalar-method.sbatch",
+        "$SOURCE",
+        "$RUN/scalar-method-qualification.py",
+        "$RUN/method-results",
+        "$PY_CPU",
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424"
+      ],
+      "environment": [
+        "$PY_CPU"
+      ],
+      "requested": {
+        "partition": "barbun",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "20G",
+        "time_limit": "00:20:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:01:24",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 689112,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:01:24",
+            "max_rss_kib": 689112
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:01:24",
+            "max_rss_kib": 88
+          }
+        ]
+      },
+      "job_scope_outcome": "PASSED",
+      "qualification_note": "Full target-16 40-evaluation trajectory and held-out physical assessment matched the independent historical trajectory.",
+      "run_relative_paths": {
+        "output": "method-results",
+        "stdout": "logs/mutaco-arch-scalar-method-7010552.out",
+        "stderr": "logs/mutaco-arch-scalar-method-7010552.err"
+      }
+    },
+    {
+      "id": 7010553,
+      "gate": "gate-composite-v1",
+      "context": "comparator",
+      "role": "Reproduce original composite MC NEI numerical qualification workflow.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "separate exact-source comparator checkout and versioned profile",
+      "command": "source infrastructure/truba/primary_nei_q1_compute_smoke_v1.env && bash infrastructure/truba/submit_primary_nei_q1_compute_smoke.sh --submit",
+      "environment": [
+        "$PY_CPU"
+      ],
+      "scheduler_worker": "$SOURCE/infrastructure/truba/primary_nei_q1_compute_smoke.sbatch",
+      "requested": {
+        "partition": "barbun",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "64G",
+        "time_limit": "00:30:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:02:23",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 654356,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:02:23",
+            "max_rss_kib": 654356
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:02:23",
+            "max_rss_kib": 12
+          }
+        ]
+      },
+      "job_scope_outcome": "PASSED",
+      "qualification_note": "Native composite MC NEI numerical qualification completed; job 7010719 also independently reconciled both historical and current snapshot schemas.",
+      "run_relative_paths": {
+        "output": "workers",
+        "stdout": "logs/mutaco-primary-q1-gp-smoke-7010553.out",
+        "stderr": "logs/mutaco-primary-q1-gp-smoke-7010553.err"
+      }
+    },
+    {
+      "id": 7010554,
+      "gate": "gate-npe-v1",
+      "context": "comparator",
+      "role": "Execute the supported real NPE/SNPE method profile.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "separate exact-source comparator checkout and versioned profile",
+      "command": "source infrastructure/truba/paper120_b100_three_method_qualification_v1.env && bash infrastructure/truba/submit_paper120_v3_population.sh --submit",
+      "environment": [
+        "$PY_SBI"
+      ],
+      "scheduler_worker": "$SOURCE/infrastructure/truba/paper_v3_population_template.sbatch",
+      "requested": {
+        "partition": "barbun",
+        "cpus": 60,
+        "gpus": 0,
+        "memory": "192G",
+        "time_limit": "01:00:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:16:44",
+        "allocated_cpus": 60,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 10622212,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:16:44",
+            "max_rss_kib": 126348
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:16:44",
+            "max_rss_kib": 88
+          },
+          {
+            "step": "0",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:16:26",
+            "max_rss_kib": 10622212
+          }
+        ]
+      },
+      "job_scope_outcome": "PARTIAL_HISTORICAL_AGREEMENT",
+      "qualification_note": "All 9 native B100 tasks for MUTACO, NPE and SNPE completed, 909 attempts and 909 successful simulator calls. Six archived NPE/SNPE terminal mean values agreed exactly. Three MUTACO terminal means differed; native held-out MAE mean 0.005378766122309268 versus archived 0.005104691666216847. Historical qualification reported 8 Torch threads; the tracked native launcher uses 20.",
+      "run_relative_paths": {
+        "output": "workers",
+        "stdout": "logs/mutaco-paper-v3-7010554.out",
+        "stderr": "logs/mutaco-paper-v3-7010554.err"
+      }
+    },
+    {
+      "id": 7010556,
+      "gate": "gate-zoo-v1",
+      "context": "comparator",
+      "role": "Execute the supported real SBI zoo NLE/NRE method profile.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "separate exact-source comparator checkout and versioned profile",
+      "command": "source infrastructure/truba/sbi_zoo_qualification_v1.env && bash infrastructure/truba/submit_sbi_zoo_qualification.sh --submit",
+      "environment": [
+        "$PY_SBI"
+      ],
+      "scheduler_worker": "$SOURCE/infrastructure/truba/sbi_zoo_qualification.sbatch",
+      "requested": {
+        "partition": "barbun",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "64G",
+        "time_limit": "1-00:00:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:07:25",
+        "allocated_cpus": 40,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 470032,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:07:25",
+            "max_rss_kib": 470032
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:07:25",
+            "max_rss_kib": 84
+          }
+        ]
+      },
+      "job_scope_outcome": "NATIVE_PASSED_ORIGINAL_MODEL_BYTES_UNAVAILABLE",
+      "qualification_note": "B40/B100 NLE and NRE passed their native 140-call qualification. Four fitted models and 40,000 saved bounded candidate vectors were verified. Historical job 6261857 model and sample files are inaccessible, so historical sample-by-sample equality remains unverified. The exclusive allocation accounted for 40 CPUs; each task ran 20 intraop threads.",
+      "run_relative_paths": {
+        "output": "workers",
+        "stdout": "logs/mutaco-sbi-zoo-qual-7010556.out",
+        "stderr": "logs/mutaco-sbi-zoo-qual-7010556.err"
+      }
+    },
+    {
+      "id": 7010558,
+      "gate": "physics-final",
+      "context": "final",
+      "role": "Bounded physical analytic and graph integration, parity and full real 16+1 search.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "exact checkout",
+      "command": [
+        "$RUN/physical-plan-final/physical-job.sh",
+        "$SOURCE",
+        "$RUN/physical-workers-final",
+        "$PY_CPU",
+        "$RUN/physical-plan-final",
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424"
+      ],
+      "environment": [
+        "$PY_CPU"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "20G",
+        "time_limit": "00:20:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:00:41",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 879968,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:41",
+            "max_rss_kib": 879968
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:41",
+            "max_rss_kib": 72
+          }
+        ]
+      },
+      "job_scope_outcome": "PASSED",
+      "qualification_note": "8 analytic and 21 graph API evaluations, 62 forward computations, 16 initial and one adaptive observation, two 12-iteration GP fits and 236 exact captured tensor leaves.",
+      "run_relative_paths": {
+        "output": "physical-workers-final",
+        "stdout": "logs/physical-7010558.out",
+        "stderr": "logs/physical-7010558.err"
+      }
+    },
+    {
+      "id": 7010560,
+      "gate": "extra-expt",
+      "context": "final",
+      "role": "Extended experiment pytest with independently checked original inputs.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "disposable clone at specified source with independently verified compact observations restored at historical paths",
+      "command": [
+        "$RUN/extra-experiments.sh",
+        "$SOURCE",
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+        "$RUN",
+        "$PRELIMINARY_RUN"
+      ],
+      "environment": [
+        "$PY_SBI"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "20G",
+        "time_limit": "00:40:00"
+      },
+      "slurm": {
+        "state": "FAILED",
+        "exit": "1:0",
+        "elapsed": "00:08:11",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 1252368,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "FAILED",
+            "exit": "1:0",
+            "elapsed": "00:08:11",
+            "max_rss_kib": 1252368
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:08:12",
+            "max_rss_kib": 116
+          }
+        ]
+      },
+      "job_scope_outcome": "FAILED",
+      "qualification_note": "518 passed, 13 failed, 7 setup errors and 12 skipped among 550 collected. See independently recorded per-test outcomes.",
+      "run_relative_paths": {
+        "output": "extended-experiment-7010560/results",
+        "stdout": "logs/extra-expt-7010560.out",
+        "stderr": "logs/extra-expt-7010560.err"
+      }
+    },
+    {
+      "id": 7010562,
+      "gate": "graph-parity",
+      "context": "final",
+      "role": "Full independent Torch/NumPy graph parity with fixed, retained and statistical checks.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "exact checkout",
+      "command": [
+        "$RUN/cpu-forward-parity.sh",
+        "$SOURCE",
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+        "$PY_CPU",
+        "$RUN/graph-parity-result",
+        "parity",
+        "ec7d805eb702167b624a453ed2d965a11ffdde6216b4a605906d4d49e5f3e376"
+      ],
+      "environment": [
+        "$PY_CPU"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "8G",
+        "time_limit": "00:20:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:00:26",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:26",
+            "max_rss_kib": null
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:26",
+            "max_rss_kib": 48
+          }
+        ]
+      },
+      "job_scope_outcome": "PASSED",
+      "qualification_note": "All fixed, retained and statistical NumPy/Torch graph checks passed; 577 graph forward computations.",
+      "run_relative_paths": {
+        "output": "graph-parity-result",
+        "stdout": "logs/graph-parity-7010562.out",
+        "stderr": "logs/graph-parity-7010562.err"
+      }
+    },
+    {
+      "id": 7010564,
+      "gate": "graph-forward",
+      "context": "final",
+      "role": "Standalone graph oscillator CPU physical benchmark and artifact verification.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "exact checkout",
+      "command": [
+        "$RUN/cpu-forward-parity.sh",
+        "$SOURCE",
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+        "$PY_SBI",
+        "$RUN/graph-forward-result",
+        "forward",
+        "ec7d805eb702167b624a453ed2d965a11ffdde6216b4a605906d4d49e5f3e376"
+      ],
+      "environment": [
+        "$PY_SBI"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "8G",
+        "time_limit": "00:20:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:00:11",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:11",
+            "max_rss_kib": null
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:11",
+            "max_rss_kib": 32
+          }
+        ]
+      },
+      "job_scope_outcome": "PASSED",
+      "qualification_note": "Complete 1,000-step CPU physical forward benchmark; seven artifact checksums verified.",
+      "run_relative_paths": {
+        "output": "graph-forward-result",
+        "stdout": "logs/graph-forward-7010564.out",
+        "stderr": "logs/graph-forward-7010564.err"
+      }
+    },
+    {
+      "id": 7010566,
+      "gate": "analytic-real",
+      "context": "final",
+      "role": "Handwritten and frozen GP-landscape full supported analytic programs with deterministic repeats.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "exact checkout",
+      "command": [
+        "$RUN/analytic-job.sh",
+        "$SOURCE",
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+        "$PY_SBI",
+        "$RUN/analytic-result",
+        "dc9a93cd674ef444ec9e564dc7fafb29bf1e2d55f832ca64525eeaa2631d6952  experiments/analytic_target_matching/configs/handwritten.json\n729c6ddd51942afc83c59e2da26f973c972951e96c8bc39a216181c1523359ce  experiments/analytic_target_matching/configs/gp_landscape.json",
+        "a92b82eeb99c996fd2d9e1343afa37fbb0ffe771cf7e3ef935ee9574e55aa17a"
+      ],
+      "environment": [
+        "$PY_SBI"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "8G",
+        "time_limit": "00:20:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:00:30",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:30",
+            "max_rss_kib": null
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:30",
+            "max_rss_kib": 44
+          }
+        ]
+      },
+      "job_scope_outcome": "PASSED",
+      "qualification_note": "Both declared analytic experiment profiles and their deterministic repeats passed. The independent paper landscape identity is assessed separately.",
+      "run_relative_paths": {
+        "output": "analytic-result",
+        "stdout": "logs/analytic-real-7010566.out",
+        "stderr": "logs/analytic-real-7010566.err"
+      }
+    },
+    {
+      "id": 7010570,
+      "gate": "golden-extra",
+      "context": "final",
+      "role": "Explicitly enable the native historical golden-replay tests.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "exact checkout",
+      "command": [
+        "$RUN/golden-extra.sh",
+        "$SOURCE",
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+        "$PY_CPU",
+        "$RUN"
+      ],
+      "environment": [
+        "$PY_CPU"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "20G",
+        "time_limit": "00:20:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:04:11",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 14188960,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:04:11",
+            "max_rss_kib": 14188960
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:04:12",
+            "max_rss_kib": 112
+          }
+        ]
+      },
+      "job_scope_outcome": "PASSED",
+      "qualification_note": "All 531 ordered identity digests matched, and both opt-in historical replay tests passed.",
+      "run_relative_paths": {
+        "output": "explicit-golden-qualification",
+        "stdout": "logs/golden-extra-7010570.out",
+        "stderr": "logs/golden-extra-7010570.err"
+      }
+    },
+    {
+      "id": 7010587,
+      "gate": "font-readiness",
+      "context": "final",
+      "role": "Validate privately staged native TeX and signed distribution fonts on compute.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "environment qualification",
+      "command": [
+        "$RUN/font-check.sh",
+        "$SOURCE",
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+        "$RUN/font-readiness-result",
+        "$PY_SBI",
+        "$RUN/tex-runtime-inputs",
+        "$RUN/activate_private_tex.sh",
+        "b65a38e2e792db117a2dfa688fdedb5f4eef3cb8e4b9cfbc29cd578ba557d91c"
+      ],
+      "environment": [
+        "$PY_SBI"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "3G",
+        "time_limit": "00:04:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:00:13",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:13",
+            "max_rss_kib": null
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:13",
+            "max_rss_kib": 36
+          }
+        ]
+      },
+      "job_scope_outcome": "DIAGNOSTIC_COMPLETED",
+      "qualification_note": "Historical TeX T1/Computer Modern probe rendered PDF and PNG.",
+      "run_relative_paths": {
+        "output": "font-readiness-result",
+        "stdout": "logs/font-readiness-7010587.out",
+        "stderr": "logs/font-readiness-7010587.err"
+      }
+    },
+    {
+      "id": 7010591,
+      "gate": "paper-figures",
+      "context": "final",
+      "role": "Persisted paper analyses and original figure producers.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "disposable clone at specified source with restored inputs, private figure destinations",
+      "command": [
+        "$RUN/paper-job.sh",
+        "$SOURCE",
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+        "$PY_SBI",
+        "$RUN/paper-figures-result",
+        "$RUN/paper_worker.py",
+        "2ae400d0dadacdf8c6c949bf0bfc234dc4d14f464cbcb0df8f9823ea9147d7bf",
+        "$RUN/activate_private_tex.sh",
+        "$RUN/tex-runtime-inputs",
+        "b65a38e2e792db117a2dfa688fdedb5f4eef3cb8e4b9cfbc29cd578ba557d91c"
+      ],
+      "environment": [
+        "$PY_SBI"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "8G",
+        "time_limit": "00:20:00"
+      },
+      "slurm": {
+        "state": "FAILED",
+        "exit": "1:0",
+        "elapsed": "00:02:17",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 195300,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "FAILED",
+            "exit": "1:0",
+            "elapsed": "00:02:17",
+            "max_rss_kib": 195300
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:02:17",
+            "max_rss_kib": 28
+          }
+        ]
+      },
+      "job_scope_outcome": "FAILED",
+      "qualification_note": "Both stored analyses passed. Five original PDF byte guards failed; Fig. 7 matched archived pixels/text.",
+      "run_relative_paths": {
+        "output": "paper-figures-result",
+        "stdout": "logs/paper-figures-7010591.out",
+        "stderr": "logs/paper-figures-7010591.err"
+      }
+    },
+    {
+      "id": 7010595,
+      "gate": "landscape-diag",
+      "context": "final",
+      "role": "Compare original and relocated frozen GP-landscape generation and identities.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "two-source diagnostic",
+      "command": [
+        "$RUN/compare.sbatch",
+        "$SOURCE",
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+        "$HISTORICAL_SOURCE",
+        "35ef82dba2160dfb3f709854b0e11c3956744c31",
+        "$PY_SBI",
+        "$RUN/landscape_diag.py",
+        "$RUN/landscape-diagnosis"
+      ],
+      "environment": [
+        "$PY_SBI"
+      ],
+      "also_compared_sources": [
+        "35ef82dba2160dfb3f709854b0e11c3956744c31"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "4G",
+        "time_limit": "00:04:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:00:22",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:22",
+            "max_rss_kib": null
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:22",
+            "max_rss_kib": 36
+          }
+        ]
+      },
+      "job_scope_outcome": "DIAGNOSTIC_COMPLETED",
+      "qualification_note": "Original and relocated Linux models have the same numerical state and the same fingerprint. Both fail the independent historical paper landscape identity.",
+      "run_relative_paths": {
+        "output": "landscape-diagnosis",
+        "stdout": "logs/landscape-diag-7010595.out",
+        "stderr": "logs/landscape-diag-7010595.err"
+      }
+    },
+    {
+      "id": 7010597,
+      "gate": "terminals",
+      "context": "final",
+      "role": "Compare all relevant terminal policy outputs on original and relocated implementations.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "two-source diagnostic",
+      "command": [
+        "$RUN/terminal-methods.sh",
+        "$PY_CPU",
+        "$RUN/terminal-methods.py",
+        "$HISTORICAL_SOURCE",
+        "35ef82dba2160dfb3f709854b0e11c3956744c31",
+        "$SOURCE",
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+        "$RUN/terminal-policy-results"
+      ],
+      "environment": [
+        "$PY_CPU"
+      ],
+      "also_compared_sources": [
+        "35ef82dba2160dfb3f709854b0e11c3956744c31"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "20G",
+        "time_limit": "00:20:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:02:00",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 2184836,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:02:00",
+            "max_rss_kib": 2184836
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:02:00",
+            "max_rss_kib": 12
+          }
+        ]
+      },
+      "job_scope_outcome": "PASSED",
+      "qualification_note": "All six terminal policy result documents agreed on original and candidate GP models. Ambient RNG preserved; terminal simulator calls zero.",
+      "run_relative_paths": {
+        "output": "terminal-policy-results",
+        "stdout": "logs/terminals-7010597.out",
+        "stderr": "logs/terminals-7010597.err"
+      }
+    },
+    {
+      "id": 7010614,
+      "gate": "figure-parity",
+      "context": "final",
+      "role": "Compare original and relocated stored-data boxplot coordinates and artist inputs.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "two-source diagnostic with restored archive inputs",
+      "command": [
+        "$RUN/figures-diagnosis-tools/compare.sbatch",
+        "$SOURCE",
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+        "$HISTORICAL_SOURCE",
+        "35ef82dba2160dfb3f709854b0e11c3956744c31",
+        "$PY_SBI",
+        "$RUN/figures-diagnosis-tools/dump.py",
+        "$RUN/figure-parity-diagnosis"
+      ],
+      "environment": [
+        "$PY_SBI"
+      ],
+      "also_compared_sources": [
+        "35ef82dba2160dfb3f709854b0e11c3956744c31"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "4G",
+        "time_limit": "00:06:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:00:42",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 874188,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:42",
+            "max_rss_kib": 874188
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:42",
+            "max_rss_kib": 92
+          }
+        ]
+      },
+      "job_scope_outcome": "DIAGNOSTIC_COMPLETED",
+      "qualification_note": "Two Linux source versions agreed, while two of 720 parameter errors differed from the earlier macOS snapshot by one ULP.",
+      "run_relative_paths": {
+        "output": "figure-parity-diagnosis",
+        "stdout": "logs/figure-parity-7010614.out",
+        "stderr": "logs/figure-parity-7010614.err"
+      }
+    },
+    {
+      "id": 7010616,
+      "gate": "figure12",
+      "context": "final",
+      "role": "Original target-98 physical producer, private dense-array archive and independent historical figure comparisons.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "exact checkout",
+      "command": [
+        "$RUN/figure12-job.sh",
+        "$SOURCE",
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+        "$PY_SBI",
+        "$RUN/figure12-result",
+        "$RUN/figure12_worker.py",
+        "$RUN/figure12-inputs.json",
+        "$RUN/activate_private_tex.sh",
+        "$RUN/tex-runtime-inputs",
+        "0520c8ac8e518675ccfee86f6746aad78d2d9b4563419c1a404cdfbb33af1253  figure12_worker.py\n6e6221ae4e3c2aa6889e4a9f8922217629cb2687b469c5578e84f6eba131862b  figure12-inputs.json\nb65a38e2e792db117a2dfa688fdedb5f4eef3cb8e4b9cfbc29cd578ba557d91c  activate_private_tex.sh"
+      ],
+      "environment": [
+        "$PY_SBI"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "20G",
+        "time_limit": "00:20:00"
+      },
+      "slurm": {
+        "state": "FAILED",
+        "exit": "1:0",
+        "elapsed": "00:01:57",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 536944,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "FAILED",
+            "exit": "1:0",
+            "elapsed": "00:01:57",
+            "max_rss_kib": 536944
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:01:57",
+            "max_rss_kib": 12
+          }
+        ]
+      },
+      "job_scope_outcome": "FAILED",
+      "qualification_note": "All 20 independent sparse physical values matched; original dense archive absent; both historical images differed.",
+      "run_relative_paths": {
+        "output": "figure12-result",
+        "stdout": "logs/figure12-7010616.out",
+        "stderr": "logs/figure12-7010616.err"
+      }
+    },
+    {
+      "id": 7010637,
+      "gate": "pdf-diagnosis",
+      "context": "final",
+      "role": "Observe original PDF font prefix and glyph subset pairs for Fig. 3.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "exact checkout",
+      "command": [
+        "$RUN/pdf-observe.sh",
+        "$SOURCE",
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+        "$PY_SBI",
+        "$RUN/pdf-diagnosis-result",
+        "$RUN/inspect_pdf_pair.py",
+        "$RUN/activate_private_tex.sh",
+        "$RUN/tex-runtime-inputs",
+        "0d9677a7c204bf53fc3e1a36c7b32058f453d3ebdbaa8d9dacfccb4bd1e412ff"
+      ],
+      "environment": [
+        "$PY_SBI"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "4G",
+        "time_limit": "00:06:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:00:38",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 113424,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:38",
+            "max_rss_kib": 113424
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:38",
+            "max_rss_kib": null
+          }
+        ]
+      },
+      "job_scope_outcome": "DIAGNOSTIC_COMPLETED",
+      "qualification_note": "Isolated nondeterministic embedded font subset names. Historical Fig. 3 pixels/text agreed.",
+      "run_relative_paths": {
+        "output": "pdf-diagnosis-result",
+        "stdout": "logs/pdf-diagnosis-7010637.out",
+        "stderr": "logs/pdf-diagnosis-7010637.err"
+      }
+    },
+    {
+      "id": 7010639,
+      "gate": "landscape-dispatch",
+      "context": "final",
+      "role": "Diagnose numerical backend dependence of the historical frozen landscape identity.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "exact checkout",
+      "command": [
+        "$RUN/dispatch.sbatch",
+        "$SOURCE",
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+        "$PY_SBI",
+        "$RUN/landscape_diag.py",
+        "$RUN/landscape-dispatch-diagnosis"
+      ],
+      "environment": [
+        "$PY_SBI"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "4G",
+        "time_limit": "00:04:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:00:12",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:12",
+            "max_rss_kib": null
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:12",
+            "max_rss_kib": 12
+          }
+        ]
+      },
+      "job_scope_outcome": "DIAGNOSTIC_COMPLETED",
+      "qualification_note": "Linux default, AVX2 and AVX512 generated the same landscape fingerprint. Historical paper landscape fingerprint still differs.",
+      "run_relative_paths": {
+        "output": "landscape-dispatch-diagnosis",
+        "stdout": "logs/landscape-dispatch-7010639.out",
+        "stderr": "logs/landscape-dispatch-7010639.err"
+      }
+    },
+    {
+      "id": 7010648,
+      "gate": "linux-wheels",
+      "context": "final",
+      "role": "Build and import installed distribution wheels outside the Git checkout.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "exact checkout",
+      "command": [
+        "$RUN/installed-check.sh",
+        "$SOURCE",
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+        "$PY_SBI",
+        "$RUN/linux-wheels",
+        "$RUN/installed-check.py"
+      ],
+      "environment": [
+        "$PY_SBI"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "4G",
+        "time_limit": "00:06:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:00:23",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:23",
+            "max_rss_kib": null
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:23",
+            "max_rss_kib": 36
+          }
+        ]
+      },
+      "job_scope_outcome": "PASSED",
+      "qualification_note": "All three wheels built and imported outside the checkout. Both import orders preserved the ten module pairs and pickle globals.",
+      "run_relative_paths": {
+        "output": "linux-wheels",
+        "stdout": "logs/linux-wheels-7010648.out",
+        "stderr": "logs/linux-wheels-7010648.err"
+      }
+    },
+    {
+      "id": 7010685,
+      "gate": "historical-input-guards",
+      "context": "final",
+      "role": "Run the 19 selected path-dependent/private-input pytest identities on the earlier scientific source.",
+      "source": "35ef82dba2160dfb3f709854b0e11c3956744c31",
+      "source_mode": "original scientific source control",
+      "command": [
+        "$RUN/figures-diagnosis-tools/optional-original.sbatch",
+        "$SOURCE",
+        "35ef82dba2160dfb3f709854b0e11c3956744c31",
+        "$PY_SBI",
+        "$RUN/figures-diagnosis-tools/private-originals-nodeids.txt",
+        "$RUN/historical-path-dependent-diagnosis"
+      ],
+      "environment": [
+        "$PY_SBI"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "4G",
+        "time_limit": "00:04:00"
+      },
+      "slurm": {
+        "state": "FAILED",
+        "exit": "1:0",
+        "elapsed": "00:00:09",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "FAILED",
+            "exit": "1:0",
+            "elapsed": "00:00:09",
+            "max_rss_kib": null
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:09",
+            "max_rss_kib": 56
+          }
+        ]
+      },
+      "job_scope_outcome": "FAILED",
+      "qualification_note": "Original-source control: 19 selected, 9 failed, 7 setup errors and 3 skipped. Detailed failure causes are retained in the private JUnit/log and per-test outcomes.",
+      "run_relative_paths": {
+        "output": "historical-path-dependent-diagnosis",
+        "stdout": "logs/historical-input-guards-7010685.out",
+        "stderr": "logs/historical-input-guards-7010685.err"
+      }
+    },
+    {
+      "id": 7010693,
+      "gate": "individual-renderers",
+      "context": "final",
+      "role": "Retain original double-render artifacts for four figures and compare archived pixels and text.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "exact source plus persisted inputs in a separate disposable clone",
+      "command": [
+        "$RUN/remaining-plot-diagnostics.sh",
+        "$SOURCE",
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+        "$PY_SBI",
+        "$RUN/individual-figures-result",
+        "$RUN/inspect_remaining_plots.py",
+        "$RUN/activate_private_tex.sh",
+        "$RUN/tex-runtime-inputs",
+        "a3bbd813603898dcbcca180bb8e9170ce03d900c01000d0c48b439c74f9650a4",
+        "$RUN/paper-figures-result/disposable"
+      ],
+      "environment": [
+        "$PY_SBI"
+      ],
+      "requested": {
+        "partition": "debug",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "4G",
+        "time_limit": "00:06:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:01:18",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 180544,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:01:18",
+            "max_rss_kib": 180544
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:01:18",
+            "max_rss_kib": 112
+          }
+        ]
+      },
+      "job_scope_outcome": "DIAGNOSTIC_COMPLETED",
+      "qualification_note": "Historical Figs. 4\u20136 and A1 pixels and text agreed; the four original PDF byte guards still failed.",
+      "run_relative_paths": {
+        "output": "individual-figures-result",
+        "stdout": "logs/individual-renderers-7010693.out",
+        "stderr": "logs/individual-renderers-7010693.err"
+      }
+    },
+    {
+      "id": 7010714,
+      "gate": "gate-composite-v4snapshot",
+      "context": "comparator",
+      "role": "Resolve comparator snapshot/identity differences against the pinned upstream behavior.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "current source with both original and current snapshot digest functions",
+      "command": [
+        "$RUN/snapshot-format.sbatch"
+      ],
+      "environment": [
+        "$PY_CPU"
+      ],
+      "also_compared_sources": [
+        "cc65ee1862ced2a4d21d3f932ad338d95799c1f0"
+      ],
+      "scheduler_worker": "$RUN/snapshot-format.sbatch",
+      "requested": {
+        "partition": "barbun",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "64G",
+        "time_limit": "00:30:00"
+      },
+      "slurm": {
+        "state": "FAILED",
+        "exit": "1:0",
+        "elapsed": "00:00:03",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "FAILED",
+            "exit": "1:0",
+            "elapsed": "00:00:03",
+            "max_rss_kib": null
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:03",
+            "max_rss_kib": 12
+          }
+        ]
+      },
+      "job_scope_outcome": "FAILED",
+      "qualification_note": "Evidence-directory setup failure before scientific work; no physical or GP calls.",
+      "run_relative_paths": {
+        "output": "workers/diagnostic",
+        "stdout": "logs/mutaco-nei-hash-probe-7010714.out",
+        "stderr": "logs/mutaco-nei-hash-probe-7010714.err"
+      }
+    },
+    {
+      "id": 7010719,
+      "gate": "gate-composite-v5snapshot",
+      "context": "comparator",
+      "role": "Resolve comparator snapshot/identity differences against the pinned upstream behavior.",
+      "source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+      "source_mode": "current source with both original and current snapshot digest functions",
+      "command": [
+        "$RUN/snapshot-format.sbatch"
+      ],
+      "environment": [
+        "$PY_CPU"
+      ],
+      "also_compared_sources": [
+        "cc65ee1862ced2a4d21d3f932ad338d95799c1f0"
+      ],
+      "scheduler_worker": "$RUN/snapshot-format.sbatch",
+      "requested": {
+        "partition": "barbun",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "64G",
+        "time_limit": "00:30:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:00:04",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:04",
+            "max_rss_kib": null
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:04",
+            "max_rss_kib": 80
+          }
+        ]
+      },
+      "job_scope_outcome": "DIAGNOSTIC_COMPLETED",
+      "qualification_note": "Both historical and current model snapshot digests reproduced on one fitted synthetic 16-observation state. Four constraint +infinity encodings and one derived digest explained the document differences; zero physical attempts.",
+      "run_relative_paths": {
+        "output": "workers/diagnostic",
+        "stdout": "logs/mutaco-nei-hash-probe-7010719.out",
+        "stderr": "logs/mutaco-nei-hash-probe-7010719.err"
+      }
+    },
+    {
+      "id": 7010918,
+      "gate": "base3-replay",
+      "context": "comparator",
+      "role": "Pre-migration-source comparison against the newly collected native 20-thread B100 responses for targets 0, 49 and 99.",
+      "source": "9f3ce1893112bb37c23e3aad1508564f55d2c81b",
+      "source_mode": "pre-migration source with private independent responses collected by final-source native job 7010554",
+      "command": [
+        "$RUN/baseline3-replay.sbatch"
+      ],
+      "environment": [
+        "$PY_SBI"
+      ],
+      "also_compared_sources": [
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424"
+      ],
+      "scheduler_worker": "$RUN/baseline3-replay.sbatch",
+      "requested": {
+        "partition": "barbun",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "64G",
+        "time_limit": "01:00:00"
+      },
+      "slurm": {
+        "state": "FAILED",
+        "exit": "1:0",
+        "elapsed": "00:00:10",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": null,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "FAILED",
+            "exit": "1:0",
+            "elapsed": "00:00:10",
+            "max_rss_kib": null
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:00:10",
+            "max_rss_kib": 68
+          }
+        ]
+      },
+      "job_scope_outcome": "FAILED",
+      "qualification_note": "Archived-input contract rejected the initial packet at startup. No scientific execution occurred.",
+      "run_relative_paths": {
+        "output": "workers",
+        "stdout": "logs/mutaco-b100-native-proof-7010918.out",
+        "stderr": "logs/mutaco-b100-native-proof-7010918.err"
+      }
+    },
+    {
+      "id": 7010931,
+      "gate": "base3-replay-v2",
+      "context": "comparator",
+      "role": "Pre-migration-source comparison against the newly collected native 20-thread B100 responses for targets 0, 49 and 99.",
+      "source": "9f3ce1893112bb37c23e3aad1508564f55d2c81b",
+      "source_mode": "pre-migration source with private independent responses collected by final-source native job 7010554",
+      "command": [
+        "$RUN/baseline3-replay-v2.sbatch"
+      ],
+      "environment": [
+        "$PY_SBI"
+      ],
+      "also_compared_sources": [
+        "7f4ef91e34fefb00fd5f1f8779f1c69641afb424"
+      ],
+      "scheduler_worker": "$RUN/baseline3-replay-v2.sbatch",
+      "requested": {
+        "partition": "barbun",
+        "cpus": 20,
+        "gpus": 0,
+        "memory": "64G",
+        "time_limit": "01:00:00"
+      },
+      "slurm": {
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "elapsed": "00:15:14",
+        "allocated_cpus": 20,
+        "allocated_gpus_recorded_by_slurm": 0,
+        "sampled_workload_peak_rss_kib": 12383680,
+        "step_results": [
+          {
+            "step": "batch",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:15:14",
+            "max_rss_kib": 12383680
+          },
+          {
+            "step": "extern",
+            "state": "COMPLETED",
+            "exit": "0:0",
+            "elapsed": "00:15:14",
+            "max_rss_kib": 12
+          }
+        ]
+      },
+      "job_scope_outcome": "PASSED_SAME_PROFILE_MIGRATION_COMPARISON",
+      "qualification_note": "Complete 9f3ce18 native-replay scientific projections matched 7f4ef91 at all three targets in the same 20-thread environment. 300 observations, 255 fits, 252 proposals and three terminal results were exact; zero physical attempts. Job 7010554 supplied the actual new physical responses. This comparison is independent of historical eight-thread endpoint agreement.",
+      "run_relative_paths": {
+        "output": "workers",
+        "stdout": "logs/mutaco-b100-native-proof-7010931.out",
+        "stderr": "logs/mutaco-b100-native-proof-7010931.err"
+      }
+    }
+  ]
+}

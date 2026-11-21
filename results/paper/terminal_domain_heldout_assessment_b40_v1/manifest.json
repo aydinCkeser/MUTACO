@@ -1,0 +1,14 @@
+{
+  "analysis_identity": "terminal-domain-heldout-analysis-v1-46e8da8a41b760faed54130468f8904c6955d08ef9a73e65c63191c484668527",
+  "analysis_report_sha256": "a49c02e4697e8dec99488a839b15d0839bfe9ce63009b69b5467c8abb177f814",
+  "declaration_identity": "terminal-domain-heldout-declaration-v1-15a2180b4ce9073a54c015edb5c5cb1f482703ab2d4b5a2f94b1e8f6d9207576",
+  "execution_manifest_sha256": "564df1abd409da6adee169af7ccc9e3760def85a8bc40c2b04359f6cb453cb1b",
+  "existing_primary_evidence_modified": false,
+  "package_identity": "terminal-domain-heldout-evidence-package-v1-86e17768dc8760091c9846b7285a4cc36d26c021131290cf90332968eeae1799",
+  "paired_results_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "preparation_manifest_sha256": "9555fdfedd9494d2d1838768b77e42e232e2cd3a1c8f18bfb217cf840c5b56e5",
+  "schema_version": "mutaco-terminal-domain-heldout-evidence-package-v1",
+  "slurm_jobs": 0,
+  "truba_jobs": 0,
+  "verdict": "TERMINAL_DOMAIN_HELDOUT_ASSESSMENT_INCOMPLETE"
+}

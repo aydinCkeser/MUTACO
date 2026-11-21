@@ -1,0 +1,80 @@
+{
+  "schema_version": "mutaco-paper-all-method-smoke-evidence-v1",
+  "status": "complete",
+  "role": "isolated_engineering_qualification_not_primary_comparison",
+  "campaign_id": "graph_paper120_b40_all_method_smoke_v1",
+  "scientific_source_commit": "42cd551c7f8f85f4325ffb5b1c1528b5490659d3",
+  "declaration_identity": "paper-population-declaration-v3-655ca32dfb61761a5430e84539cdfea65a794f4319f6b24afa1a0f41fa63ba35",
+  "declaration_sha256": "aeb517a9778350dac6b1233b9fdef1d2e90845d520352c2b41c941f4b1583fc8",
+  "target_position": 0,
+  "target_record_identity": "frozen-target-record-v2-e3a859e807a718a6749aae18930a5d1c4982970f272ad09cf46fd700ccda0ef6",
+  "methods": [
+    "mutaco",
+    "sbi_npe",
+    "sbi_snpe"
+  ],
+  "inference_budget_per_method": 40,
+  "physical_calls": {
+    "attempted": 123,
+    "successful": 123,
+    "failed": 0,
+    "retry": 0,
+    "inference": 120,
+    "assessment": 3
+  },
+  "assessment_randomness_namespaces": [
+    "quenched_disorder",
+    "initial_state",
+    "thermal_noise"
+  ],
+  "shared_assessment_root_seed": 5119230880871475713,
+  "shared_assessment_seed_manifest_hash": "paper-assessment-seed-manifest-v1-2d2aa51c0505a28cafc2c427f28a6ee311988e461e3064b8a96c1949e0053e93",
+  "records": [
+    {
+      "method": "mutaco",
+      "status": "completed",
+      "record_content_hash": "paper-method-record-v1-70ad853ac3bbe2d247b49fc9930866fbe36378e3c38948c5c496f0b00010dba6",
+      "response_error_mae": 0.02298643101203197,
+      "response_error_l2": 0.12619991352279414,
+      "parameter_error_l2": 0.31492504673383676
+    },
+    {
+      "method": "sbi_npe",
+      "status": "completed",
+      "record_content_hash": "paper-method-record-v1-cebadda014f2405f955e21eeb16e0f8e1e0b5e8eccb82fdb2637a4c37b1baba7",
+      "response_error_mae": 0.19982653277438658,
+      "response_error_l2": 1.226945002526479,
+      "parameter_error_l2": 0.8941805477464829
+    },
+    {
+      "method": "sbi_snpe",
+      "status": "completed",
+      "record_content_hash": "paper-method-record-v1-7bacb04d059b3b65cd8aa7fab3eccadc1fdbfc5cc3c4e02a9aefa4878ddfa63c",
+      "response_error_mae": 0.1933884563841275,
+      "response_error_l2": 1.3616566578874874,
+      "parameter_error_l2": 0.45538313901547295
+    }
+  ],
+  "truba": {
+    "job_id": 6214393,
+    "state": "COMPLETED",
+    "elapsed": "00:05:14",
+    "exit_code": "0:0",
+    "node": "barbun82",
+    "allocated_cpus": 20,
+    "worker_threads": 8,
+    "memory": "64G",
+    "excluded_nodes": "barbun70,barbun[112-119]"
+  },
+  "validation": {
+    "hash_validated_json_files": 24,
+    "collection_sha256": "881a43570f398cb2e41bf9bdb16fc575b8634aed9ae9fa59725f20806776d5fe",
+    "summary_sha256": "76f5644661b08eda72fe225bdb3427da3adf08632d086f7bae2f238df9c6fd31",
+    "stdout_sha256": "2a80f3720580bdf507e7479008ce2664d8ac343105478edd435ac93d642cdf42",
+    "stderr_sha256": "284f4a6c5544947250c7ebdc7cb50ac571bfe94ace386e0637a48a5da59e16fa",
+    "scientific_calls_added_by_collection": 0
+  },
+  "remote_output_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/all_method_smoke/42cd551c7f8f85f4325ffb5b1c1528b5490659d3/workers",
+  "remote_log_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/all_method_smoke/42cd551c7f8f85f4325ffb5b1c1528b5490659d3/logs",
+  "evidence_identity": "paper-all-method-smoke-evidence-v1-66740dc8e9b53a3fe5c4fa53e28ddd94879ee0af060007713e066bc6dde0192c"
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "mutaco-scalar-primary-cross-budget-synthesis-spec-v1",
+  "synthesis_id": "scalar_primary_b40_b100_cross_budget_scientific_synthesis_v1",
+  "synthesis_spec_identity": "scalar-primary-cross-budget-synthesis-spec-v1-f0a7c6453d3353976b60c5d71b105c68c8a11a032a84ac877398227962a318c5",
+  "contract_identity": "cross-experiment-scientific-contract-v1-f5cfcdc612904d951da366c492d510ad45886265ec716b2560bc1b93bce90fd4",
+  "source_row_schema": "mutaco-cross-experiment-analysis-row-v1",
+  "source_evidence_identities": {
+    "40": "scalar-primary-population-evidence-v1-9294220a23a94c7514dfd608ea6a7b0dbe3f8474222d30309e7b4a9aeef04009",
+    "100": "scalar-primary-population-evidence-v1-c72415fcb29e8d7379604d3cf0a33a3b0e962fed94ead446088c55ece83a9375"
+  },
+  "source_analysis_report_identities": {
+    "40": "cross-experiment-analysis-report-v1-d34c6f25a3da7d3bbf15fb5a2f1dd81bce0a7b5ec52f3ace8b0299ac18df825e",
+    "100": "cross-experiment-analysis-report-v1-92c1964d2be762a2f84fb73f3b8ee42fbecd58c47fd3f42a2c9ea2f39aa91a51"
+  },
+  "budgets": [40, 100],
+  "methods": ["mutaco", "scalar_qlognei", "sobol"],
+  "primary_metric": "heldout_assessment_error.component_mean_mae",
+  "campaign_relation": "independent_campaigns_same_ordered_target_cohort_not_nested",
+  "target_blocking": "same_ordered_paper120_target_identity",
+  "cross_budget_inference_scope": "descriptive_target_blocked_not_confirmatory_not_nested",
+  "bootstrap": {
+    "algorithm": "python_random_index_resampling_v1",
+    "seed": 92024140,
+    "resamples": 10000,
+    "lower_percentile": 0.025,
+    "upper_percentile": 0.975
+  },
+  "timing_policy": "descriptive_symmetric_persisted_components_only",
+  "missing_metric_policy": "retain_explicit_unavailable_never_impute",
+  "excluded_evidence_families": ["retired_vector_nei", "repaired_mutaco_sbi"]
+}

@@ -1,0 +1,45 @@
+{
+  "assessment_context": {
+    "coordinate": {
+      "coordinates": [
+        "paper120_b40_terminal_domain_bprime_cprime_heldout_v2",
+        "frozen-target-record-v2-cca966ab967c9613e13200766488a155d857df16f1e3076ce6a05d6920b872d4",
+        0
+      ],
+      "namespace": "terminal_domain_paired_heldout_assessment"
+    },
+    "evaluation_seed": 8021509936453358270,
+    "family_definition": {
+      "assessment_campaign_seed": 92021841,
+      "assessment_fidelity": "canonical_sparse_m20_one_evaluation_v1",
+      "campaign_id": "paper120_b40_terminal_domain_bprime_cprime_heldout_v2",
+      "schema": "terminal-domain-heldout-family-v2",
+      "simulator_configuration_sha256": "2614cdae3f2eb40ff1a0f0ee473056f05c8284d3ab59e2f159969ed1cc704a8a",
+      "simulator_definition_identity": "graph-oscillator.overdamped-scientific.v1.p4-paper-baseline.m20-five-force-scientific.float32",
+      "target_record_identity": "frozen-target-record-v2-cca966ab967c9613e13200766488a155d857df16f1e3076ce6a05d6920b872d4"
+    },
+    "family_identity": "scientific-v1-f3045a047ac4c2f35f39e5a0d91d8a7dca4cb514fc94849dc49f9271b1220f51",
+    "logical_index": 55,
+    "purpose": "paired_held_out_assessment",
+    "replicate": 0,
+    "root_seed": 92021841
+  },
+  "attempt_index": 0,
+  "automatic_retry": false,
+  "call_identity": "terminal-domain-heldout-call-v2-cb1624e9ee3ea8b6c51e0fdf4d1e9d76aff43d0c95a86c1e46eb216fb3286df6",
+  "declaration_identity": "terminal-domain-heldout-declaration-v2-8becf876b147ebd3799dd40e68e18c5c71e14d411bcd00ae12e42bfa3779efa0",
+  "policy": "C_prime",
+  "policy_identity": "continuous_posterior_mean_physical_l1_mae",
+  "schema_version": "mutaco-terminal-domain-heldout-call-intent-v2",
+  "status": "attempted_pending_outcome",
+  "target_position": 55,
+  "target_record_identity": "frozen-target-record-v2-cca966ab967c9613e13200766488a155d857df16f1e3076ce6a05d6920b872d4",
+  "task_identity": "terminal-domain-heldout-task-v2-bbc74a49b07982e40ba57250533f8f001a0f35a46894267fe8543f3910db2c40",
+  "theta_float32": [
+    0.726798415184021,
+    1.5466067790985107,
+    1.4308782815933228,
+    0.6726838946342468
+  ],
+  "theta_float32_sha256": "53ea8ee7f2be4abad881bc2305bd74db080ba5e51cbc0eef6bf84dd8c29167f9"
+}

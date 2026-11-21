@@ -1,0 +1,104 @@
+{
+  "schema_version": "mutaco-primary-nei-q1-failed-attempt-evidence-v2",
+  "status": "failed_preserved_no_automatic_retry",
+  "role": "numerical_qualification_attempt_not_primary_performance_evidence",
+  "campaign_id": "graph_primary_nei_q1_v1",
+  "scientific_source_commit": "db4422899f9b3ed5b98bffc5f6947721298c5103",
+  "declaration": "experiments/graph_inversion/configs/paper/primary_nei_q1_retry_v1.json",
+  "declaration_identity": "nei-numerical-qualification-declaration-v1-e2b36a74389d85f96c1fe5926a5cebff9979db310ae7bd8d83433d27a8aac9e2",
+  "target_count": 5,
+  "budgets": [40, 100],
+  "workers": 5,
+  "maximum_calls_per_worker": 140,
+  "maximum_total_calls": 700,
+  "heldout_calls": 0,
+  "physical_calls": {
+    "attempted": 436,
+    "successful": 436,
+    "failed": 0,
+    "retry": 0
+  },
+  "worker_terminals": {
+    "present": 5,
+    "completed": 1,
+    "failed": 4,
+    "completed_trajectory_records": 5,
+    "attempted_calls_by_rank": [73, 40, 140, 102, 81]
+  },
+  "completed_trajectory_slots": [
+    {"rank": 0, "target_position": 0, "budget": 40},
+    {"rank": 2, "target_position": 2, "budget": 40},
+    {"rank": 2, "target_position": 2, "budget": 100},
+    {"rank": 3, "target_position": 3, "budget": 40},
+    {"rank": 4, "target_position": 4, "budget": 40}
+  ],
+  "failure": {
+    "reported_type": "ValueError",
+    "reported_explanation": "canonical JSON forbids non-finite floats",
+    "observed_boundary": "target-dependent trajectory-attempt stable hash after the real search result returned",
+    "failed_slot_result_persisted": false,
+    "failed_slots": [
+      {"rank": 0, "target_position": 0, "budget": 100, "calls_within_budget": 33},
+      {"rank": 1, "target_position": 1, "budget": 40, "calls_within_budget": 40},
+      {"rank": 3, "target_position": 3, "budget": 100, "calls_within_budget": 62},
+      {"rank": 4, "target_position": 4, "budget": 100, "calls_within_budget": 41}
+    ],
+    "qualification_result_created": false,
+    "selected_tier_id": null
+  },
+  "post_attempt_diagnosis": {
+    "status": "new_nonfinite_trajectory_evidence_boundary_unresolved",
+    "prior_position_16_snapshot_repair_verified": true,
+    "compute_smoke_job_id": 6244651,
+    "compute_smoke_limitation": "the synthetic smoke deliberately stopped after the position-16 snapshot and did not hash a complete or failed full-trajectory result",
+    "next_action": "zero-call reproduction and field-level localization before any new declaration or retry proposal",
+    "scientific_calls": 0,
+    "retry_authorized": false
+  },
+  "truba": {
+    "job_id": 6244676,
+    "state": "FAILED",
+    "elapsed": "04:27:28",
+    "exit_code": "1:0",
+    "nodes": "barbun[4,22,34,41,53]",
+    "allocated_cpus": 100,
+    "worker_threads": 20,
+    "memory_per_node": "64G",
+    "excluded_nodes": "barbun70,barbun[112-119]"
+  },
+  "remote_output_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/primary_nei_q1/qualification-retry-v1/workers",
+  "local_raw_evidence": "experiments/paper/exploration/outputs/primary_nei_q1/qualification_retry_attempt_6244676",
+  "artifact_hashes": {
+    "worker_start_json": [
+      "6f6510c4ce480df25f22a0b7211f1600feb5373f21fa600ccab08b4e4a491802",
+      "59508d77a12de9eb7e80adc745ca3982693aa04d0cba7a406cc3ffe2636f3908",
+      "7a7e1de8b55f9285f38d012a993f1d702c8f811acb527837cb58c231ea197940",
+      "b82ec7fe397c06b359f290d7aaf50ef69607546a0072dded04581e567c39a503",
+      "7af83d8dd3115da74839e1c2e0e1463f31fad680f29d4cf4adf74ef6373f4548"
+    ],
+    "worker_terminal_json": [
+      "762c623fd3d7006ce85830bb9a4dc264b6a0ee122a519daa6d71a64caf622fcf",
+      "75b8174994cdbe91acd33de31e7d147bc3e6ae5686632bde7239d9dd23f4cab2",
+      "44b29ae53d4fef10829e8cbbe6a51d7667b3415846dd733b4c3a505e699ce39a",
+      "2a3ffb0c02676c96aa11a90076577d00eedac12a8ef620b08e85ae480fa6b13f",
+      "e6e069d837cdfd02998c929bf279cde6be94aba06d56d7a0b51e77dcb35a0ec3"
+    ],
+    "completed_record_json": {
+      "worker-00-b40": "7c52dac13accc71618ca6fe04b207d05c8eafb74b6499707ad6cac701ae0e6cc",
+      "worker-02-b40": "5249a646fca61af87fecba81ba63b56e4223a5951493ef4beddb45558ea244c6",
+      "worker-02-b100": "0a16b625e620eaedee2686f09a877b7f5a322d7092125ef960732b8e738ac737",
+      "worker-03-b40": "f9f6c224b802f85d6d64b8bdb1bef94ba441af41f123bcff2e87b9f7c3133bef",
+      "worker-04-b40": "11015ab48ed1c8fc5ad99758ee35f7bd7f90074ea3b519051a3e966b2407fbbe"
+    },
+    "completed_attempt_json": {
+      "worker-00-b40": "91c1fe4079c5b6dced09e3066eb0d3a3994c9e393a9d28501d9413bccaa61cf2",
+      "worker-02-b40": "b58548c1f8fe24be4e1020ae0a1255a0bdde38b0b6f4f572fb9709410ba38c21",
+      "worker-02-b100": "f1aa073b61c9b64cdd745902f969a01763b600ac062d88878bbb2367ef2f4d92",
+      "worker-03-b40": "947b354b9cbc39fbfce162b7863f41e582b56e900fb606f4204411ecd7caebe7",
+      "worker-04-b40": "76eb39ac7e6e72cf04590338e22ddbc0ccb18658f803a641ec070fe0505fdf6f"
+    },
+    "scheduler_stdout": "4d5a7af61d108ca805c65e4f27cf8decd94245836b44f39b7ee5babeac764af6",
+    "scheduler_stderr": "1ede44675bd97cde0dab26d28c338bd00d9aba7c7d2d2f0817f5008c8f352acc"
+  },
+  "scientific_calls_added_by_fetch_and_documentation": 0
+}

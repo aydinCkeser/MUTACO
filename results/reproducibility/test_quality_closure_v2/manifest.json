@@ -1,0 +1,291 @@
+{
+  "B40_B100_replays_executed": 0,
+  "NEI_cases": {
+    "test_baseline_factorization_does_not_mask_indefinite_covariance": "passed",
+    "test_baseline_factorization_promotes_without_jitter": "passed",
+    "test_baseline_factorization_rejects_exactly_singular_covariance[dtype0]": "passed",
+    "test_baseline_factorization_rejects_exactly_singular_covariance[dtype1]": "passed",
+    "test_candidate_set_evaluation_uses_one_common_base_sample_and_is_rng_neutral": "passed",
+    "test_composite_nei_is_seeded_rng_neutral_and_reproducible": "passed",
+    "test_composite_nei_refines_against_exact_multitask_surrogate": "passed",
+    "test_composite_nei_uses_joint_cross_point_covariance": "passed"
+  },
+  "PR_updates": 0,
+  "artifact_sha256": {
+    "README.md": "f087158701a8dca75d790038766e8d5a27b68eabd764182375847ef9bbe4ebe2",
+    "raw-evidence-index.json": "d333210591311c168a15a6fe3cd55afd053457b90423f3e5a3c80ac053c0660d"
+  },
+  "automatic_resubmissions": 0,
+  "byte_identical_to_raw": false,
+  "collection_comparison": {
+    "changed_prior_cases": [],
+    "current_cases": 368,
+    "new_gate_cases": [
+      {
+        "class": "tests.infrastructure.test_readability_regression",
+        "name": "test_corrected_expectation_accepts_only_declared_fixture_transition",
+        "outcome": "passed"
+      },
+      {
+        "class": "tests.infrastructure.test_readability_regression",
+        "name": "test_corrected_expectation_accepts_corrected_reference_without_exemptions",
+        "outcome": "passed"
+      },
+      {
+        "class": "tests.infrastructure.test_readability_regression",
+        "name": "test_corrected_expectation_rejects_every_unapproved_outcome[nei_failure]",
+        "outcome": "passed"
+      },
+      {
+        "class": "tests.infrastructure.test_readability_regression",
+        "name": "test_corrected_expectation_rejects_every_unapproved_outcome[nei_error]",
+        "outcome": "passed"
+      },
+      {
+        "class": "tests.infrastructure.test_readability_regression",
+        "name": "test_corrected_expectation_rejects_every_unapproved_outcome[nei_skipped]",
+        "outcome": "passed"
+      },
+      {
+        "class": "tests.infrastructure.test_readability_regression",
+        "name": "test_corrected_expectation_rejects_every_unapproved_outcome[missing_nei]",
+        "outcome": "passed"
+      },
+      {
+        "class": "tests.infrastructure.test_readability_regression",
+        "name": "test_corrected_expectation_rejects_every_unapproved_outcome[missing_singular]",
+        "outcome": "passed"
+      },
+      {
+        "class": "tests.infrastructure.test_readability_regression",
+        "name": "test_corrected_expectation_rejects_every_unapproved_outcome[singular_failure]",
+        "outcome": "passed"
+      },
+      {
+        "class": "tests.infrastructure.test_readability_regression",
+        "name": "test_corrected_expectation_rejects_every_unapproved_outcome[singular_skip]",
+        "outcome": "passed"
+      },
+      {
+        "class": "tests.infrastructure.test_readability_regression",
+        "name": "test_corrected_expectation_rejects_every_unapproved_outcome[other_failure]",
+        "outcome": "passed"
+      },
+      {
+        "class": "tests.infrastructure.test_readability_regression",
+        "name": "test_corrected_expectation_rejects_every_unapproved_outcome[other_error]",
+        "outcome": "passed"
+      },
+      {
+        "class": "tests.infrastructure.test_readability_regression",
+        "name": "test_corrected_expectation_rejects_every_unapproved_outcome[new_skip]",
+        "outcome": "passed"
+      },
+      {
+        "class": "tests.infrastructure.test_readability_regression",
+        "name": "test_corrected_expectation_rejects_every_unapproved_outcome[changed_skip]",
+        "outcome": "passed"
+      },
+      {
+        "class": "tests.infrastructure.test_readability_regression",
+        "name": "test_corrected_expectation_rejects_every_unapproved_outcome[removed_skip]",
+        "outcome": "passed"
+      },
+      {
+        "class": "tests.infrastructure.test_readability_regression",
+        "name": "test_corrected_expectation_rejects_every_unapproved_outcome[extra_case]",
+        "outcome": "passed"
+      },
+      {
+        "class": "tests.infrastructure.test_readability_regression",
+        "name": "test_corrected_expectation_rejects_every_unapproved_outcome[pytest_exit]",
+        "outcome": "passed"
+      },
+      {
+        "class": "tests.infrastructure.test_readability_regression",
+        "name": "test_corrected_expectation_rejects_every_unapproved_outcome[physical_call]",
+        "outcome": "passed"
+      },
+      {
+        "class": "tests.infrastructure.test_readability_regression",
+        "name": "test_corrected_expectation_rejects_every_unapproved_outcome[invalid_reference]",
+        "outcome": "passed"
+      },
+      {
+        "class": "tests.infrastructure.test_readability_regression",
+        "name": "test_corrected_expectation_rejects_unknown_versions",
+        "outcome": "passed"
+      },
+      {
+        "class": "tests.infrastructure.test_readability_regression",
+        "name": "test_corrected_expectation_does_not_change_historical_verdict",
+        "outcome": "passed"
+      },
+      {
+        "class": "tests.infrastructure.test_readability_regression",
+        "name": "test_corrected_expectation_retains_explicit_new_case_limits",
+        "outcome": "passed"
+      },
+      {
+        "class": "tests.infrastructure.test_readability_regression",
+        "name": "test_corrected_expectation_default_cli_checks_fixture_revision",
+        "outcome": "passed"
+      }
+    ],
+    "new_skips": [],
+    "prior_cases": 346,
+    "prior_order_preserved": true
+  },
+  "core_projection_gate": {
+    "added_passed_cases": 18,
+    "changed_accepted_cases": [],
+    "counts": {
+      "error": 0,
+      "failure": 0,
+      "passed": 282,
+      "skipped": 8
+    },
+    "declared_NEI_correction": true,
+    "known_NEI_failure_present": false,
+    "physical_backend_attempts": 0,
+    "pytest_exit": 0,
+    "required_singular_cases": [
+      [
+        "tests.acquisition.test_nei",
+        "test_baseline_factorization_rejects_exactly_singular_covariance[dtype0]"
+      ],
+      [
+        "tests.acquisition.test_nei",
+        "test_baseline_factorization_rejects_exactly_singular_covariance[dtype1]"
+      ]
+    ],
+    "test_expectation_revision": "corrected-nei-fixture-v2",
+    "test_gate_passed": true
+  },
+  "corrected_fixture_revision": {
+    "path": "tests/acquisition/test_nei.py",
+    "sha256": "cfc0e6fba96460670216bb011841f2aed5759d3e74ae31740b8a1a5e2e3bb998",
+    "source_commit": "bd3859906a969d362e7d0496e87dcac404804285"
+  },
+  "current_test_expectation": "corrected-nei-fixture-v2",
+  "derived": true,
+  "derived_current_reference_XML_sha256": "2effc6e0107a722ed78df0f58271fff8880b9731bfe1535aa25aa3ac8ca3fe22",
+  "environment": {
+    "architecture": "x86_64",
+    "device": "cpu",
+    "packages": {
+      "botorch": "0.18.1",
+      "gpytorch": "1.15.2",
+      "numpy": "2.4.6",
+      "psutil": "7.2.2",
+      "pytest": "9.1.1",
+      "scipy": "1.17.1",
+      "torch": "2.12.1+cpu"
+    },
+    "platform": "Linux-5.14.0-284.11.1.el9_2.x86_64-x86_64-with-glibc2.34",
+    "python": "3.11.17",
+    "thread_environment": {
+      "MKL_NUM_THREADS": "2",
+      "OMP_NUM_THREADS": "2",
+      "OPENBLAS_NUM_THREADS": "2"
+    },
+    "torch_threads": [
+      2,
+      1
+    ]
+  },
+  "focused_NEI_and_expectation_passed": 38,
+  "full_final_TRUBA_suite_executed": true,
+  "full_local_raw_JUnit_sha256": "7a3cd306d20cf80408eec6924defbb40bda03138395a7bb7494927cea8af88ab",
+  "full_suite_gate": {
+    "added_passed_cases": 0,
+    "changed_accepted_cases": [],
+    "counts": {
+      "error": 0,
+      "failure": 0,
+      "passed": 360,
+      "skipped": 8
+    },
+    "declared_NEI_correction": false,
+    "known_NEI_failure_present": false,
+    "physical_backend_attempts": 0,
+    "pytest_exit": 0,
+    "required_singular_cases": [
+      [
+        "tests.acquisition.test_nei",
+        "test_baseline_factorization_rejects_exactly_singular_covariance[dtype0]"
+      ],
+      [
+        "tests.acquisition.test_nei",
+        "test_baseline_factorization_rejects_exactly_singular_covariance[dtype1]"
+      ]
+    ],
+    "test_expectation_revision": "corrected-nei-fixture-v2",
+    "test_gate_passed": true
+  },
+  "github_pushes": 0,
+  "historical_failing_candidate_rejected_by_current_mode": true,
+  "historical_raw_inputs_sha256": {
+    "accepted-tests-status.json": "25a7b6f811ad1499cb717ad3b3ccf20c2a74e315d191668ce1e7bff35fb2776f",
+    "accepted-tests.xml": "84870b0b82babbf31e92360c8de96a956ef6f0f3e5adb86cac4c013719ade206",
+    "b100-capture.json.gz": "1865655feddf8658f534e029b89212f2e5a1b0bf308f099705e584bde641e156",
+    "b100-history.json.gz": "09e2df33bdfba7cc7ccb331a2995d81bda7e1ae13d5d6f61569904574b6a7e57",
+    "b40-capture.json.gz": "029632e4d0f863a4d1e4c8014a88eca94a0b7eee59517152cbfa80d8919604c2",
+    "b40-history.json.gz": "cc7974d202ecaa5444946aae45965c01f9cf93a10b027f253e71e30a7494dad2"
+  },
+  "historical_test_expectation": "historical-nei-failure-v1",
+  "historical_verdict_and_format_preserved": true,
+  "jobs_submitted": 1,
+  "local_combined_counts": {
+    "error": 0,
+    "failure": 0,
+    "passed": 360,
+    "skipped": 8
+  },
+  "local_infrastructure_metadata_passed": 75,
+  "local_scientific_import_counts": {
+    "passed": 285,
+    "skipped": 8
+  },
+  "maximum_minutes": 5,
+  "next_boundary": "acquisition/proposal.py:1101-1144 raw scoring, branch selection and ranking only; no extraction implemented",
+  "physical_simulator_calls": 0,
+  "previous_reference_sidecars_sha256": {
+    "benchmarks/reproducibility/b100_regression_v1/SHA256SUMS": "4e336b0378478e555223a1bb686e4606b5a849e7e3adb07cc474b3a0cadb012b",
+    "benchmarks/reproducibility/gp_fit_result_v1/SHA256SUMS": "e203440a2d5cd280f49f990ba15cea7bf1dd970ab60e926934bc09b5cd7e93e4",
+    "benchmarks/reproducibility/gp_training_data_preparation_v1/SHA256SUMS": "9bcc4021a9ee81c36a3e68883b52a7ada0f098e28db0cd5ae02e89635a6bee3e",
+    "benchmarks/reproducibility/initial_observation_collection_v1/SHA256SUMS": "116ec8fee995f128dc5525994e88620f331340c6879f2ac34655ad06f2715577",
+    "benchmarks/reproducibility/pre_run_validation_v1/SHA256SUMS": "a2a491cf9e86a9e855299427657588393cea3b47d4dfaa9a4ff9fc9556a4ed38",
+    "benchmarks/reproducibility/sequential_observation_commit_v1/SHA256SUMS": "e7d68f59b2f1a4845854f272510b8e01d816c29389b28c0c0ca5ad8528f0c545",
+    "benchmarks/reproducibility/shareable_milestone_v1/SHA256SUMS": "86c94e42849c8f3d15430b8ede7fe6f666c708d07b904d5063f005f2ff748237",
+    "benchmarks/reproducibility/test_quality_v1/SHA256SUMS": "7b1ab03f3b2abefeaf73ac452b083ac277e8f3ccfd1bb3fc241a6ea39b4be9b8"
+  },
+  "production_source_changed": false,
+  "resources": {
+    "allocated_cpus": 2,
+    "elapsed_seconds": 96,
+    "exit_code": "0:0",
+    "future_memory_allocation_requires_review": false,
+    "interpretation": "Scheduler figures retained.",
+    "job_id": 6859583,
+    "jobs_submitted": 1,
+    "partition": "debug",
+    "reported_batch_MaxRSS": "383772K",
+    "reported_peak_exceeds_request": false,
+    "reported_peak_rss_gib": 0.3659934997558594,
+    "reported_peak_rss_kib": 383772,
+    "requested_memory": "4G",
+    "state": "COMPLETED"
+  },
+  "schema": "mutaco-test-quality-closure-v2",
+  "scientific_equality_AST_unchanged": true,
+  "scientific_policy_seed_precision_tolerance_changes": false,
+  "starting_commit": "bd3859906a969d362e7d0496e87dcac404804285",
+  "validated_engineering_files_sha256": {
+    "infrastructure/truba/corrected_test_reference_inputs_v2.json": "4d461774d9e221f7cc148ae921fcd7bd283c3856dce6bdac0a8401142ba8b18f",
+    "infrastructure/truba/readability_regression.py": "28d649e126eaa40229a3f63be6322d135c495da3a57cc0c123808ada317b11f0",
+    "scientific/refactor_validation/README.md": "72d5cdbf24f583819c63eda0a25f87327c4396427064f274de0b0f1b8fa963ad",
+    "tests/infrastructure/test_readability_regression.py": "8578830fa85f48da8f76f5c6876147121f15f8a5094cce83f5bcd670eaba564f"
+  },
+  "validated_source_snapshot": "408c2eee44e9b250a2606768804c8a616ba1848f"
+}

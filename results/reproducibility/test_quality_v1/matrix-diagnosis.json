@@ -1,0 +1,169 @@
+{
+  "TRUBA_original_and_replacement": {
+    "new_cholesky_info": [
+      5,
+      0
+    ],
+    "new_eigenvalues_float64": [
+      1.7029551470740475e-09,
+      0.0009721241285155724,
+      0.06194617152358654,
+      1.2216467957296713,
+      8.16709518237456
+    ],
+    "new_matrix_float32_sha256": "8aeb5a62becffaf056a38cd1b99af3a62f43880f822b78b5aa315bc04510f89c",
+    "old_cholesky_info": [
+      0,
+      0
+    ],
+    "old_eigenvalues_float64": [
+      -6.15311129435031e-17,
+      0.0009721051559101728,
+      0.06194612257490596,
+      1.2216467541474552,
+      8.167095174371731
+    ],
+    "source_commit": "df2e6630921ef734e6a421494ced18e7fefffb08"
+  },
+  "backend_limitation": "The old exact rank-four matrix may return positive numerical pivots; neither success nor failure is portable at that singular boundary.",
+  "contract": "float64 strict Cholesky without jitter; a reported factorization failure raises NEIAcquisitionError; no exact symbolic rank test",
+  "original": {
+    "cholesky_info_float32": 5,
+    "cholesky_info_float64": 5,
+    "eigenvalues_float64": [
+      2.4652212072697065e-16,
+      0.0009721051559103184,
+      0.06194612257490635,
+      1.221646754147454,
+      8.167095174371731
+    ],
+    "exact_determinant": "0",
+    "exact_nullspace": [
+      [
+        "1",
+        "-4",
+        "6",
+        "-4",
+        "1"
+      ]
+    ],
+    "exact_rational_rank": 4,
+    "original_matrix": [
+      [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.066650390625,
+        1.142578125,
+        1.229248046875,
+        1.328125
+      ],
+      [
+        1.0,
+        1.142578125,
+        1.328125,
+        1.568359375,
+        1.875
+      ],
+      [
+        1.0,
+        1.229248046875,
+        1.568359375,
+        2.056884765625,
+        2.734375
+      ],
+      [
+        1.0,
+        1.328125,
+        1.875,
+        2.734375,
+        4.0
+      ]
+    ]
+  },
+  "replacement": {
+    "cholesky_info_float32": 5,
+    "cholesky_info_float64": 0,
+    "eigenvalues_float64": [
+      1.7029554551830695e-09,
+      0.000972124128515718,
+      0.061946171523586925,
+      1.2216467957296722,
+      8.16709518237456
+    ],
+    "exact_determinant": "9/8796093022208",
+    "exact_rank": 5,
+    "leading_principal_minors": [
+      "8388609/8388608",
+      "2290094353/34359738368",
+      "847256693/549755813888",
+      "75501293/8796093022208",
+      "9/8796093022208"
+    ],
+    "reconstruction_max_abs_error": 0.0,
+    "replacement_matrix": [
+      [
+        1.0000001192092896,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.066650390625,
+        1.142578125,
+        1.229248046875,
+        1.328125
+      ],
+      [
+        1.0,
+        1.142578125,
+        1.328125,
+        1.568359375,
+        1.875
+      ],
+      [
+        1.0,
+        1.229248046875,
+        1.568359375,
+        2.056884765625,
+        2.734375
+      ],
+      [
+        1.0,
+        1.328125,
+        1.875,
+        2.734375,
+        4.0
+      ]
+    ]
+  },
+  "scope": "test inputs only; no production covariance modification",
+  "singular_rejection_fixture": {
+    "matrix": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "null": [
+      1,
+      -1
+    ],
+    "rank": 1,
+    "tested_dtypes": [
+      "float32",
+      "float64"
+    ]
+  }
+}

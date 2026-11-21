@@ -1,0 +1,98 @@
+{
+  "assessment_policy": {
+    "automatic_retry": false,
+    "calls_per_recommendation": 1,
+    "campaign_seeds": {
+      "100": 92021600,
+      "40": 92021540
+    },
+    "distinct_context_across_budgets": true,
+    "identifier": "new_budget_specific_three_method_paired_heldout_assessment_v1",
+    "method_in_random_address": false,
+    "protocol_id": "paper120_repaired_mutaco_npe_snpe_assessment_v1",
+    "randomness_coordinates": [
+      "budget",
+      "target_record_identity",
+      "replicate"
+    ],
+    "randomness_namespace": "paired_heldout_assessment",
+    "replicate": 0,
+    "same_context_for_all_methods_within_target_budget": true
+  },
+  "authorization": {
+    "assessment_execution": false,
+    "simulator_execution": false,
+    "truba_preparation": false,
+    "truba_submission": false
+  },
+  "budgets": [
+    40,
+    100
+  ],
+  "call_preview": {
+    "budgets": 2,
+    "gp_fit_attempts": 0,
+    "maximum_assessment_calls": 720,
+    "methods": 3,
+    "scientific_calls_executed": 0,
+    "search_calls": 0,
+    "targets": 120,
+    "terminal_optimizations": 0
+  },
+  "campaign_id": "paper120_repaired_mutaco_npe_snpe_b40_b100_assessment_v1",
+  "cohort": {
+    "path": "data/cohorts/paper120_v3/manifest.json",
+    "sha256": "359fc0bb59fc9a8a52f5da684e7a7eb352466bdc0d0a54fb8efa94131ce423bb",
+    "targets": 120
+  },
+  "corrected_mutaco_package_identity": "repaired-sbi-corrected-terminal-package-v1-6988fdc19056535377b54b28ba6d6b03c9ee46ddba5f793d03e536d053d490a2",
+  "cross_experiment_contract_identity": "cross-experiment-scientific-contract-v1-f5cfcdc612904d951da366c492d510ad45886265ec716b2560bc1b93bce90fd4",
+  "declaration_identity": "repaired-sbi-assessment-declaration-v1-acd75ed8d2fcc424f5b2bd68f092c3f2f4fa61fdbec4195d355a7b033f01492f",
+  "endpoint": {
+    "formula": "mean_m_abs_y_assess_m_theta_hat_minus_y_star_m",
+    "response_dimension": 20,
+    "response_source": "fresh_heldout_simulator_response",
+    "selection_domain": "frozen_recommendation_only",
+    "symbol": "E_heldout"
+  },
+  "evidence_policy": {
+    "append_only_attempts": true,
+    "canonical_json_allow_nan": false,
+    "historical_evidence_immutable": true,
+    "historical_heldout_responses_excluded": true,
+    "partial_pooling_forbidden": true,
+    "preserve_failures": true
+  },
+  "methods": [
+    "mutaco",
+    "sbi_npe",
+    "sbi_snpe"
+  ],
+  "recommendation_sources": {
+    "mutaco": {
+      "path": "benchmarks/paper/repaired_mutaco_sbi_corrected_terminal/v1/recommendations.jsonl",
+      "sha256": "a5f1ecca16c560378c57836dca64853a80eb3f3a144cfafd52a1f4eb0fb7ab81"
+    },
+    "sbi_b100": {
+      "path": "benchmarks/paper/graph_paper120/b100_v1/paired_records.jsonl",
+      "sha256": "29f6af90cdec9581dd3b850636c05c6dd740dac2aa22164c7f4bc68b3ab61f67"
+    },
+    "sbi_b40": {
+      "path": "benchmarks/graph/paper120_mutaco_npe_snpe_v1/paired_records.jsonl",
+      "sha256": "cd0352310c8e570bdc56fe6e4ef587bd58e1c26f1f0865d44878ffc7dd2c0c72"
+    }
+  },
+  "salvage_design_identity": "repaired-sbi-salvage-design-v1-5283c87e6f5fedfc8d611682769ca0a8b1bbdd184b26110678f2fd74ceaa2a9b",
+  "schema_version": "mutaco-repaired-sbi-assessment-declaration-v1",
+  "scientific_calls": 0,
+  "simulator": {
+    "configuration_identity": "graph-paper-v3-simulator-configuration-v1-ff70b08584d86189e7464b20602142d9faeca01f588c0d691de6cdf2c7568a08",
+    "configuration_path": "experiments/graph_inversion/configs/paper/paper120_v3_target_config.json",
+    "configuration_sha256": "2614cdae3f2eb40ff1a0f0ee473056f05c8284d3ab59e2f159969ed1cc704a8a",
+    "definition_identity": "graph-oscillator.overdamped-scientific.v1.p4-paper-baseline.m20-five-force-scientific.float32",
+    "device": "cpu",
+    "dtype": "float32",
+    "fidelity": "canonical_sparse_m20_one_evaluation_v1"
+  },
+  "truba_jobs_submitted": 0
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": "mutaco-oscillator-physics-sensitivity-declaration-v1",
+  "declaration_identity": "mutaco-oscillator-physics-sensitivity-declaration-v1-211c22d28bda06dcce8835dfdf1d936b4bbb93234101c0ba096f0b172734d325",
+  "status": "prepared_unexecuted",
+  "execution_requires_explicit_eight_call_authorization": true,
+  "target_position": 98,
+  "target_record_path": "data/cohorts/paper120_v3/target_098.json",
+  "target_record_id": "frozen-target-record-v2-c1f2caab22dc5c7f72782e379c38ce9ee06297491b6174c6306303cb9f35a7c5",
+  "theta_star": [
+    1.910422682762146,
+    1.115454077720642,
+    1.1611828804016113,
+    0.880811870098114
+  ],
+  "parameter_names": [
+    "weight_mean",
+    "pairwise_coupling_mean",
+    "bias_scale_mean",
+    "pairwise_coupling_CV"
+  ],
+  "parameter_bounds": [
+    [0.5, 2.0],
+    [0.5, 2.0],
+    [0.5, 2.0],
+    [0.0, 1.0]
+  ],
+  "normalized_half_step": 0.05,
+  "point_construction": "torch_float32_normalize_then_add_signed_h_then_unnormalize_v1",
+  "physical_response_scales": {
+    "omega_bar": 5.0,
+    "M": 1.0
+  },
+  "finite_difference": {
+    "formula": "central_two_point_per_parameter",
+    "point_count": 8,
+    "center_reruns": 0,
+    "extra_replicates": 0,
+    "additional_step_sizes": 0,
+    "ordered_points": [
+      {"point_index": 0, "parameter_index": 0, "parameter_name": "weight_mean", "sign": "minus", "theta": [1.8354227542877197, 1.115454077720642, 1.1611828804016113, 0.880811870098114]},
+      {"point_index": 1, "parameter_index": 0, "parameter_name": "weight_mean", "sign": "plus", "theta": [1.9854227304458618, 1.115454077720642, 1.1611828804016113, 0.880811870098114]},
+      {"point_index": 2, "parameter_index": 1, "parameter_name": "pairwise_coupling_mean", "sign": "minus", "theta": [1.910422682762146, 1.0404541492462158, 1.1611828804016113, 0.880811870098114]},
+      {"point_index": 3, "parameter_index": 1, "parameter_name": "pairwise_coupling_mean", "sign": "plus", "theta": [1.910422682762146, 1.190454125404358, 1.1611828804016113, 0.880811870098114]},
+      {"point_index": 4, "parameter_index": 2, "parameter_name": "bias_scale_mean", "sign": "minus", "theta": [1.910422682762146, 1.115454077720642, 1.0861828327178955, 0.880811870098114]},
+      {"point_index": 5, "parameter_index": 2, "parameter_name": "bias_scale_mean", "sign": "plus", "theta": [1.910422682762146, 1.115454077720642, 1.2361829280853271, 0.880811870098114]},
+      {"point_index": 6, "parameter_index": 3, "parameter_name": "pairwise_coupling_CV", "sign": "minus", "theta": [1.910422682762146, 1.115454077720642, 1.1611828804016113, 0.8308118581771851]},
+      {"point_index": 7, "parameter_index": 3, "parameter_name": "pairwise_coupling_CV", "sign": "plus", "theta": [1.910422682762146, 1.115454077720642, 1.1611828804016113, 0.930811882019043]}
+    ]
+  },
+  "common_random_numbers": {
+    "policy": "fixed_full_stream_crn_diagnostic_v1",
+    "scope": "all_eight_perturbation_points",
+    "scientific_run_id": "oscillator-physics-target098-sensitivity-v1",
+    "purpose": "finite_difference_sensitivity",
+    "logical_index": 98,
+    "repeat_index": 0,
+    "attempt_index": 0,
+    "evaluation_seed": 9818052026,
+    "seed_policy": "mutaco-coordinate-sha256-v1",
+    "shared_namespaces": ["quenched_disorder", "initial_state", "thermal_noise"]
+  },
+  "simulator": {
+    "definition_identity": "graph-oscillator.overdamped-scientific.v1.p4-paper-baseline.m20-five-force-scientific.float32",
+    "configuration_path": "experiments/graph_inversion/configs/paper/paper120_v3_target_config.json",
+    "configuration_sha256": "2614cdae3f2eb40ff1a0f0ee473056f05c8284d3ab59e2f159969ed1cc704a8a",
+    "device": "cpu",
+    "dtype": "float32"
+  },
+  "call_contract": {
+    "maximum_simulator_calls": 8,
+    "required_successful_calls_for_jacobian": 8,
+    "retry_calls": 0,
+    "center_calls": 0,
+    "calls_per_point": 1,
+    "automatic_retry": false
+  },
+  "output_schemas": {
+    "point_outcome": "schemas/point_outcome_v1.schema.json",
+    "sensitivity": "schemas/sensitivity_v1.schema.json"
+  }
+}

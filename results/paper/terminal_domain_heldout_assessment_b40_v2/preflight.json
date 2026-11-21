@@ -1,0 +1,48 @@
+{
+  "B_prime_tasks": 120,
+  "C_prime_tasks": 120,
+  "archived_search_seed_overlap": 0,
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 92024101,
+  "bootstrap_sign_test": {
+    "negative_C_minus_B": [
+      -1.0,
+      -1.0
+    ],
+    "passed": true,
+    "positive_C_minus_B": [
+      1.0,
+      1.0
+    ]
+  },
+  "declaration_identity": "terminal-domain-heldout-declaration-v2-8becf876b147ebd3799dd40e68e18c5c71e14d411bcd00ae12e42bfa3779efa0",
+  "exact_equal_pairs": 0,
+  "expected_calls": 240,
+  "gate_passed": true,
+  "gp_fit_attempts": 0,
+  "maximum_calls": 240,
+  "mutaco_search_calls": 0,
+  "pairing_condition": "A_fresh_simulator_per_policy_same_context",
+  "recommendation_hashes_valid": true,
+  "retry_policy": "none",
+  "schema_version": "mutaco-terminal-domain-heldout-preflight-v2",
+  "serializer_repair_qualified": true,
+  "serializer_self_check": {
+    "canonical_JSON_sha256": "a55716ab5cf018b6538fcc9e437628b31bfc72b651f0439b69725b0be964a35d",
+    "canonical_document_identity": "terminal-domain-heldout-v1-metadata-shape-canonical-v2-6f70efebc6f2a662c3eb574b8ecfb5f45558350fb189aa2a5c8c4830da741fbf",
+    "exact_v1_failure_shape_serialized": true,
+    "policy": "strict_metadata_document_then_canonical_JSON_round_trip_v2",
+    "simulator_calls": 0,
+    "simulator_constructed": false
+  },
+  "simulator_calls": 0,
+  "simulator_provenance_frozen": true,
+  "slurm_jobs": 0,
+  "target_context_mapping_frozen": true,
+  "target_count": 120,
+  "tasks": 240,
+  "truba_jobs": 0,
+  "v1_assessment_context_overlap": 0,
+  "v1_assessment_outcomes_reused": false,
+  "write_ahead_ledger_initialized": true
+}

@@ -1,0 +1,14 @@
+{
+  "analysis_identity": "terminal-domain-heldout-analysis-v2-9545e519fa4d5a2560bf6fdb35051ad5ce52a10706df7b534277b3b3cbcfd671",
+  "analysis_report_sha256": "19e126c932c134934713273dbff0495f646c6dccafa8595da373283348930f66",
+  "declaration_identity": "terminal-domain-heldout-declaration-v2-8becf876b147ebd3799dd40e68e18c5c71e14d411bcd00ae12e42bfa3779efa0",
+  "execution_manifest_sha256": "7cdf93da6290f3289d37fbcf9ecdd7b4784ca17691283236b7725d42ee335415",
+  "existing_primary_evidence_modified": false,
+  "package_identity": "terminal-domain-heldout-evidence-package-v2-dc9df5a726dfc00fe05cebcbb5a94ce6963d98f1783f842986c92c0a7588142e",
+  "paired_results_sha256": "be8f7f48e1fa98ad154ab71631984114ea5f2a9f1c96ecc3962cf8420998b416",
+  "preparation_manifest_sha256": "88001b4529e6f200c007d794f20f8c5077b191894ccd530e0574ad71547dbffa",
+  "schema_version": "mutaco-terminal-domain-heldout-evidence-package-v2",
+  "slurm_jobs": 0,
+  "truba_jobs": 0,
+  "verdict": "TERMINAL_DOMAIN_PHYSICAL_BENEFIT_SUPPORTED"
+}

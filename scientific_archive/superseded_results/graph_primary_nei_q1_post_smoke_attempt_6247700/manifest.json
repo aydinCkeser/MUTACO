@@ -1,0 +1,116 @@
+{
+  "schema_version": "mutaco-primary-nei-q1-failed-attempt-evidence-v4",
+  "status": "cancelled_after_repeated_numerical_failure_preserved_no_automatic_retry",
+  "role": "historical_composite_multioutput_nei_qualification_not_primary_performance_evidence",
+  "campaign_id": "graph_primary_nei_q1_v1",
+  "scientific_source_commit": "f39df981cd74d11f8d9443a92a0e00c4f0365f92",
+  "declaration": "experiments/graph_inversion/configs/paper/primary_nei_q1_post_smoke_v1.json",
+  "declaration_identity": "nei-numerical-qualification-declaration-v1-80bb997b9fa4cd0a2ec3aa014d39402217966d7ceb986d181d234fd3379771b2",
+  "run_declaration": "experiments/graph_inversion/configs/paper/primary_nei_q1_post_smoke_attempt_v1.json",
+  "run_declaration_identity": "mutaco-nei-q1-run-declaration-v1-c3215d2f5447fb1c0684ec2c2965aac8031af136c8b846bb1b34fbc4b421f54e",
+  "target_count": 5,
+  "budgets": [40, 100],
+  "workers": 5,
+  "maximum_calls_per_worker": 140,
+  "maximum_total_calls": 700,
+  "heldout_calls": 0,
+  "physical_calls": {
+    "durably_accounted_lower_bound": 360,
+    "durably_accounted_successful": 360,
+    "durably_accounted_failed": 0,
+    "completed_b40": 200,
+    "persisted_failed_b100": 160,
+    "cancelled_in_memory_b100": "unknown_not_checkpointed",
+    "exact_total_available": false
+  },
+  "worker_terminals": {
+    "present": 3,
+    "completed": 0,
+    "failed": 3,
+    "missing_due_to_cancellation": 2,
+    "completed_trajectory_records": 5,
+    "attempted_calls_by_terminal_rank": {
+      "worker-00": 100,
+      "worker-01": 74,
+      "worker-03": 106
+    }
+  },
+  "completed_b40_slots": [
+    {"rank": 0, "record_identity": "nei-q1-trajectory-record-v1-4dc5d3ee61a402b0671624144f148ba88bb946458b53ace67ddccbe8c22bc68b"},
+    {"rank": 1, "record_identity": "nei-q1-trajectory-record-v1-cd7f19f50b1d8e427df79fa0364776658c0611510d98cc4fbf0649251b5d82c5"},
+    {"rank": 2, "record_identity": "nei-q1-trajectory-record-v1-a70631440816227751a6de3c51cebbf52fa7cdbb46e11f143e162019a0e46b38"},
+    {"rank": 3, "record_identity": "nei-q1-trajectory-record-v1-fcfb0591c5ca83366147922508d80f56f7f0e684c5522fb8d3d88cb116ae5e87"},
+    {"rank": 4, "record_identity": "nei-q1-trajectory-record-v1-dba6b6d50bbc8a81cb5168ba0040de9ae5430b3b94e0ba4f60d90d928587a710"}
+  ],
+  "failed_b100_slots": [
+    {"rank": 0, "calls_within_budget": 60, "attempt_identity": "nei-q1-trajectory-attempt-v1-1587ab64ac4c50c425317d0cebfde2c520cc8ce3adc9cc9fca9d7db681228af5"},
+    {"rank": 1, "calls_within_budget": 34, "attempt_identity": "nei-q1-trajectory-attempt-v1-5bee6e33a959fe6e33264c56f92a77e39362f30a04a9bbe581bd9f8ce608e7fb"},
+    {"rank": 3, "calls_within_budget": 66, "attempt_identity": "nei-q1-trajectory-attempt-v1-14fa2df398c2ca8583203b048cc7a7967ea55e547c751939919c845f8c56a57a"}
+  ],
+  "cancelled_uncheckpointed_slots": [
+    {"rank": 2, "target_position": 2, "budget": 100},
+    {"rank": 4, "target_position": 4, "budget": 100}
+  ],
+  "failure": {
+    "failure_stage": "acquisition",
+    "failure_type": "NEIAcquisitionError",
+    "failure_explanation": "baseline latent covariance is not positive definite",
+    "observed_on_three_independent_b100_workers": true,
+    "simulator_failures_in_persisted_evidence": 0,
+    "evidence_serialization_failures": 0,
+    "qualification_result_created": false,
+    "selected_tier_id": null
+  },
+  "zero_call_post_failure_diagnosis": {
+    "status": "root_cause_narrowed_to_post_return_float32_covariance_rounding",
+    "cases": [
+      {"rank": 0, "baseline_size": 60, "dimension": 1200, "returned_minimum_eigenvalue_float64": -1.2899071502317255e-10, "source_float64_minimum_eigenvalue": 1.121366943566954e-9, "first_passing_relative_jitter": 2.6645352591003757e-10},
+      {"rank": 1, "baseline_size": 34, "dimension": 680, "returned_minimum_eigenvalue_float64": -1.3166647593318934e-9, "source_float64_minimum_eigenvalue": 8.104221090874164e-10, "first_passing_relative_jitter": 1.5099033134902129e-9},
+      {"rank": 3, "baseline_size": 66, "dimension": 1320, "returned_minimum_eigenvalue_float64": -9.774080964758851e-10, "source_float64_minimum_eigenvalue": 8.684827139412749e-10, "first_passing_relative_jitter": 2.9309887850104133e-9}
+    ],
+    "conclusion": "casting an already rounded float32 covariance to float64 cannot restore positive definiteness; the archived-state repair did not generalize to later B100 states",
+    "scientific_calls": 0
+  },
+  "cancellation": {
+    "authorized_by_user": true,
+    "reason": "qualification matrix already impossible and comparator redesign approved",
+    "remote_artifacts_left_immutable": true,
+    "cancelled_workers_had_no_incremental_b100_checkpoint": true
+  },
+  "eligibility": {
+    "eligible_for_tier_selection": false,
+    "eligible_for_primary_performance_comparison": false,
+    "completed_b40_records_are_historical_diagnostic_evidence_only": true,
+    "may_mix_with_future_scalar_qlognei_evidence": false
+  },
+  "truba": {
+    "job_id": 6247700,
+    "state": "CANCELLED",
+    "elapsed": "02:22:40",
+    "allocation_exit_code": "0:0",
+    "batch_exit_code": "0:15",
+    "srun_step_state": "FAILED",
+    "srun_step_exit_code": "1:0",
+    "nodes": "barbun[24-28]",
+    "allocated_cpus": 100,
+    "worker_threads": 20,
+    "memory_per_node": "64G",
+    "excluded_nodes": "barbun70,barbun[112-119]"
+  },
+  "remote_output_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/primary_nei_q1/qualification-post-smoke-v1/workers",
+  "remote_log_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/primary_nei_q1/qualification-post-smoke-v1/logs",
+  "local_raw_evidence": "experiments/paper/exploration/outputs/primary_nei_q1/qualification_post_smoke_attempt_6247700",
+  "integrity": {
+    "json_hash_pairs_checked": 21,
+    "json_parse_failures": 0,
+    "missing_sidecars": 0,
+    "hash_mismatches": 0,
+    "full_worker_tree_copied_locally": true,
+    "scheduler_logs_copied_locally": true
+  },
+  "scheduler_log_hashes": {
+    "stdout": "b9a485337375fb3b2988e1cf39f3d9e0ff62b8ad586a7cad49da9f7a6ffec354",
+    "stderr": "0046fa4ff9cc9a1510f6cd6170528d8089713a5ab8ad14bde441d98ce79ef545"
+  },
+  "scientific_calls_added_by_fetch_diagnosis_and_documentation": 0
+}

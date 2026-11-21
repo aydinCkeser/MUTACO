@@ -1,0 +1,12 @@
+{
+  "existing_accepted_tests_byte_identical": true,
+  "failed": 0,
+  "known_NEI_fixture": "original recorded failure retained; this focused local suite excludes that unchanged test",
+  "new_physical_simulator_calls": 0,
+  "new_truba_jobs": 0,
+  "passed": 103,
+  "production_source_byte_identical": true,
+  "role": "new hygiene-task local checks, not a new scientific execution",
+  "skipped": 6,
+  "skips": "two CUDA cases and four opt-in historical integration cases"
+}

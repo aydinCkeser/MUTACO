@@ -1,0 +1,40 @@
+{
+  "b100_compact_sha256": "29f6af90cdec9581dd3b850636c05c6dd740dac2aa22164c7f4bc68b3ab61f67",
+  "b40_compact_sha256": "bb02d5d525bdb64a08a37abdd417a2e444cdf04e80111b9a453ab407b42da80e",
+  "b40_raw_files_verified": 120,
+  "budgets": [
+    40,
+    100
+  ],
+  "cohort_sha256": "359fc0bb59fc9a8a52f5da684e7a7eb352466bdc0d0a54fb8efa94131ce423bb",
+  "exact_source_verification": {
+    "commits": {
+      "2b067c33720ed7c6b30ee91ae6087081d5ad0776": {
+        "src/mutaco/recommendation/_continuous.py": "84fee3d4c0199aafa3d5455b794b557953a3ee33",
+        "src/mutaco/recommendation/physical_mae.py": "a5bfa2793742db9f6b195fcdfd6f4e7615e786c5"
+      },
+      "9235d2fefefa6af0d35cc3af2dfaa01a2d56a3a9": {
+        "src/mutaco/recommendation/_continuous.py": "84fee3d4c0199aafa3d5455b794b557953a3ee33",
+        "src/mutaco/recommendation/physical_mae.py": "a5bfa2793742db9f6b195fcdfd6f4e7615e786c5"
+      },
+      "e7baa235fd7282ea478acc83f9457cfd95b76185": {
+        "src/mutaco/recommendation/_continuous.py": "84fee3d4c0199aafa3d5455b794b557953a3ee33",
+        "src/mutaco/recommendation/physical_mae.py": "a5bfa2793742db9f6b195fcdfd6f4e7615e786c5"
+      }
+    },
+    "status": "verified",
+    "working_tree_modified": false
+  },
+  "forensic_audit_identity": "historical-terminal-lineage-forensic-audit-v1-976f529293b22454ad1dec93f4742eeb12fcc96302cebb17a0bca6e802b9c074",
+  "forensic_report_identity": "historical-terminal-lineage-forensic-report-v1-6b1a939b1ad0f714daf141a807dcebba38b716c45175711e7e9da199c2e361f2",
+  "forensic_spec_identity": "historical-terminal-lineage-forensic-spec-v1-33e9bc9f55a1495b004deffd02b00b327f38525eaff3a74877d7e60b7df1e4e0",
+  "historical_evidence_modified": false,
+  "mismatch_count": 0,
+  "package_identity": "historical-terminal-lineage-forensic-package-v1-fe5baacf1ba8f0d64b1c1e970202b3982e05deac1d3417c1b6e202f70c80a31b",
+  "row_count": 240,
+  "rows_content_identity": "historical-terminal-lineage-forensic-rows-file-v1-a3213daddac47bee2f846c7e12a017e0b62699a279fdaaebb3b2c32be435b7f8",
+  "schema_version": "mutaco-historical-terminal-lineage-forensic-package-v1",
+  "scientific_calls": 0,
+  "target_count_per_budget": 120,
+  "truba_jobs_submitted": 0
+}

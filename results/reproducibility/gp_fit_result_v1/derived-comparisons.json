@@ -1,0 +1,101 @@
+{
+  "byte_identical_to_raw": false,
+  "derived": true,
+  "not_a_raw_acceptance_packet": true,
+  "reports": {
+    "b100_checkpoints": {
+      "artifacts_self_consistent": true,
+      "baseline_scientific_hash": "06338d126708d62fdb3967db3d1603eb1529270ec4c6704322b621cd6b4fa150",
+      "comparison_scientific_hash": "06338d126708d62fdb3967db3d1603eb1529270ec4c6704322b621cd6b4fa150",
+      "environment_comparison_schema": "runtime-library-set-v2",
+      "physical_backend_attempts": [
+        0,
+        0
+      ],
+      "runtime_enumeration_order_only_difference": false,
+      "same_environment": true,
+      "scientific_exact_equal": true,
+      "tolerances": "none; exact operation-preserving reference"
+    },
+    "b100_fit_events": {
+      "candidate_origin": "observed candidate events during strict replay",
+      "event_boundaries_preserved": true,
+      "events_exact_equal": true,
+      "excluded": "existing predeclared elapsed_seconds fields only; actual historical times unavailable",
+      "expected_event_count": 170,
+      "expected_origin": "reconstructed from saved original fit records and baseline emitter; not archived historical event logs",
+      "expected_sha256": "dec05ec3d128fcafe0e60ff5299119fa9baccb910d19759210fdadb8db2fc6c1",
+      "first_difference": null,
+      "observed_event_count": 170,
+      "observed_sha256": "dec05ec3d128fcafe0e60ff5299119fa9baccb910d19759210fdadb8db2fc6c1"
+    },
+    "b100_replay": {
+      "baseline_gate_passed": true,
+      "baseline_sha256": "c97b62ec714905ff97037561aad8ac3aef638abf9e189a926d6306844d3854c2",
+      "candidate_gate_passed": true,
+      "candidate_sha256": "c97b62ec714905ff97037561aad8ac3aef638abf9e189a926d6306844d3854c2",
+      "excluded": "unchanged predeclared timers and execution provenance only",
+      "first_difference": null,
+      "scientific_exact_equal": true,
+      "tolerances": "none"
+    },
+    "b40_checkpoints": {
+      "artifacts_self_consistent": true,
+      "baseline_scientific_hash": "12251e746d4c39f2f028651f766c96a6723dc39cb63d5cd484ad661b9cf3001c",
+      "comparison_scientific_hash": "12251e746d4c39f2f028651f766c96a6723dc39cb63d5cd484ad661b9cf3001c",
+      "environment_comparison_schema": "runtime-library-set-v2",
+      "physical_backend_attempts": [
+        0,
+        0
+      ],
+      "runtime_enumeration_order_only_difference": true,
+      "same_environment": true,
+      "scientific_exact_equal": true,
+      "tolerances": "none; exact operation-preserving reference"
+    },
+    "b40_fit_events": {
+      "candidate_origin": "observed candidate events during strict replay",
+      "event_boundaries_preserved": true,
+      "events_exact_equal": true,
+      "excluded": "existing predeclared elapsed_seconds fields only; actual historical times unavailable",
+      "expected_event_count": 50,
+      "expected_origin": "reconstructed from saved original fit records and baseline emitter; not archived historical event logs",
+      "expected_sha256": "67bd5af0372b120cdd00ca7d8616e4c1f21378096538708a664dc7be0bc8760d",
+      "first_difference": null,
+      "observed_event_count": 50,
+      "observed_sha256": "67bd5af0372b120cdd00ca7d8616e4c1f21378096538708a664dc7be0bc8760d"
+    },
+    "b40_replay": {
+      "baseline_gate_passed": true,
+      "baseline_sha256": "687433605adebeb928b081c616e7d603267d71faebb3cfa061a6c730865ec782",
+      "candidate_gate_passed": true,
+      "candidate_sha256": "687433605adebeb928b081c616e7d603267d71faebb3cfa061a6c730865ec782",
+      "excluded": "unchanged predeclared timers and execution provenance only",
+      "first_difference": null,
+      "scientific_exact_equal": true,
+      "tolerances": "none"
+    },
+    "job": {
+      "execution_exit": 1,
+      "last_stage": "completed",
+      "original_baseline_reexecuted": false,
+      "physical_simulator_calls_authorized": 0,
+      "scientific_exit": 0,
+      "scientific_gate_passed": true
+    },
+    "tests": {
+      "added_passed_cases": 18,
+      "changed_accepted_cases": [],
+      "counts": {
+        "error": 0,
+        "failure": 1,
+        "passed": 279,
+        "skipped": 8
+      },
+      "known_NEI_failure_present": true,
+      "physical_backend_attempts": 0,
+      "pytest_exit": 1,
+      "test_gate_passed": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "files": [
+    {
+      "path": "paired_records.jsonl",
+      "sha256": "e8eb2b513d60318ee54228f132cfbddb1bda741fc888f7794ae06131f3d282eb",
+      "size_bytes": 1190727
+    },
+    {
+      "path": "population_collection.json",
+      "sha256": "e1e2966937ad16176ce5aa5c19cf7b974db3d6ecdcb6efcf243d0180fa6b7fc4",
+      "size_bytes": 45491
+    },
+    {
+      "path": "population_summary.json",
+      "sha256": "acb5ad0dd863b211457c137c272245232ecf45e0a2ebf4afd073339f60185c05",
+      "size_bytes": 14279
+    }
+  ],
+  "schema_version": "mutaco-paper-canonical-artifact-inventory-v1",
+  "scientific_calls": 0
+}

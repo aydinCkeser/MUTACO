@@ -1,0 +1,37 @@
+{
+  "B_prime_tasks": 120,
+  "C_prime_tasks": 120,
+  "archived_search_seed_overlap": 0,
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 92024100,
+  "bootstrap_sign_test": {
+    "negative_C_minus_B": [
+      -1.0,
+      -1.0
+    ],
+    "passed": true,
+    "positive_C_minus_B": [
+      1.0,
+      1.0
+    ]
+  },
+  "declaration_identity": "terminal-domain-heldout-declaration-v1-15a2180b4ce9073a54c015edb5c5cb1f482703ab2d4b5a2f94b1e8f6d9207576",
+  "exact_equal_pairs": 0,
+  "expected_calls": 240,
+  "gate_passed": true,
+  "gp_fit_attempts": 0,
+  "maximum_calls": 240,
+  "mutaco_search_calls": 0,
+  "pairing_condition": "A_fresh_simulator_per_policy_same_context",
+  "recommendation_hashes_valid": true,
+  "retry_policy": "none",
+  "schema_version": "mutaco-terminal-domain-heldout-preflight-v1",
+  "simulator_calls": 0,
+  "simulator_provenance_frozen": true,
+  "slurm_jobs": 0,
+  "target_context_mapping_frozen": true,
+  "target_count": 120,
+  "tasks": 240,
+  "truba_jobs": 0,
+  "write_ahead_ledger_initialized": true
+}

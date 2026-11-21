@@ -1,0 +1,25 @@
+{
+  "accepted_source": "47c81dc71bd9608b952448d5beb878017b96bb28",
+  "accepted_test_execution_snapshot": "8f74cd59b465639e12e795a61df1ab0ddababd9e",
+  "baseline": "aa7f4feb58302ecf6abfa6dee2d81071eabb7fe3",
+  "derived_summaries_are_not_raw_inputs": true,
+  "expected_added_tests": 21,
+  "new_test_prefixes": [
+    "test_sequential_commit_order_ownership_and_context[",
+    "test_sequential_commit_retry_reuses_realization[",
+    "test_sequential_commit_evaluation_failure_precedes_transform[",
+    "test_sequential_commit_standardization_allocation_failure[",
+    "test_sequential_commit_clone_allocation_failure_stays_uncaught[",
+    "test_sequential_commit_after_production_duplicate_recovery[",
+    "test_sequential_commit_callback_failure_remains_observational"
+  ],
+  "raw_inputs": {
+    "accepted-tests-status.json": "d1f78a138fe5a4c0b2d56f0e3d4d4f026d273c3a5a9bb4a38fee9ee04c4f1f6f",
+    "accepted-tests.xml": "8a4ce0d41ccd5387c5db2d63b7064b03ebb05d7ca2953221c5d06e86e777e7ae",
+    "b100-capture.json.gz": "1865655feddf8658f534e029b89212f2e5a1b0bf308f099705e584bde641e156",
+    "b100-history.json.gz": "09e2df33bdfba7cc7ccb331a2995d81bda7e1ae13d5d6f61569904574b6a7e57",
+    "b40-capture.json.gz": "029632e4d0f863a4d1e4c8014a88eca94a0b7eee59517152cbfa80d8919604c2",
+    "b40-history.json.gz": "cc7974d202ecaa5444946aae45965c01f9cf93a10b027f253e71e30a7494dad2"
+  },
+  "schema": "mutaco-sequential-commit-private-inputs-v1"
+}

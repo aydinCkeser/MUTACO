@@ -1,0 +1,40 @@
+{
+  "analysis_id": "paper120_scalar_primary_b40_cross_experiment_v1",
+  "analysis_spec_identity": "cross-experiment-analysis-spec-v1-ce39586ec1978c954d3daecc7d1687942c56123f085eae68a84dc70a5c4c3392",
+  "bootstrap": {
+    "algorithm": "python_random_index_resampling_v1",
+    "lower_percentile": 0.025,
+    "resamples": 10000,
+    "seed": 92024001,
+    "upper_percentile": 0.975
+  },
+  "contract_identity": "cross-experiment-scientific-contract-v1-f5cfcdc612904d951da366c492d510ad45886265ec716b2560bc1b93bce90fd4",
+  "error_quantities": [
+    "observed_search_error",
+    "raw_terminal_surrogate_error",
+    "optimized_terminal_surrogate_error",
+    "heldout_assessment_error"
+  ],
+  "missing_metric_policy": "retain_explicit_unavailable_reason_never_impute",
+  "paired_procedures": [
+    "mean_difference",
+    "median_difference",
+    "wins_ties_losses",
+    "mean_rank",
+    "seeded_percentile_bootstrap_95"
+  ],
+  "primary_metric": "heldout_assessment_error.component_mean_mae",
+  "row_schema": "mutaco-cross-experiment-analysis-row-v1",
+  "schema_version": "mutaco-cross-experiment-analysis-spec-v1",
+  "summaries": [
+    "n",
+    "mean",
+    "standard_deviation",
+    "median",
+    "q1",
+    "q3",
+    "minimum",
+    "maximum"
+  ],
+  "timing_policy": "descriptive_persisted_components_only_null_is_not_zero"
+}

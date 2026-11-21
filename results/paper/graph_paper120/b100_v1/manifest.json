@@ -1,0 +1,55 @@
+{
+  "artifact_inventory_sha256": "cfd2c9a0326fdde9ba8928344fcf311a974f5d033ebfd17a06d8b8d76766967b",
+  "assessment_coordinates_shared_across_methods_per_target": true,
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 92020120,
+  "bundle_id": "graph_paper120_b100_mutaco_npe_snpe_v1",
+  "bundle_identity": "paper-canonical-population-evidence-v1-37f198a4c844356de1e1c538f81e036afcd26ea3ef638393e3e9fca9d3b82fa8",
+  "cohort_identity": "hidden-theta-cohort-v2-da66373467f7cc3eecf5600bb38ef9d845c0c5a40d33c04247be72687bc38c46",
+  "cohort_sha256": "359fc0bb59fc9a8a52f5da684e7a7eb352466bdc0d0a54fb8efa94131ce423bb",
+  "ingestion_identity": "paper-ingestion-spec-v1-b5cbccc40a71e9b8797c64e944fc70f254f3b37fc6ce2255fd4c833fa01815e2",
+  "method_configuration_identities": {
+    "mutaco": "graph-paper-v3-method-configuration-v1-ad5c41bd3fee65a65e0af5f1d2cc5f2f4557730d2276ebc014aa59f19b384695",
+    "sbi_npe": "graph-paper-v3-method-configuration-v1-04e58b833074684f87a93c4b6f95e39f7d76cf8a23991183ca3938292ec7b3e5",
+    "sbi_snpe": "graph-paper-v3-method-configuration-v1-37d7010f0e0a149df5f43c0f2f8329a03b296f573974de8f94c5fdbd8a338a94"
+  },
+  "methods": [
+    "mutaco",
+    "sbi_npe",
+    "sbi_snpe"
+  ],
+  "paired_records_sha256": "29f6af90cdec9581dd3b850636c05c6dd740dac2aa22164c7f4bc68b3ab61f67",
+  "physical_calls": {
+    "attempted_calls": 36360,
+    "failed_calls": 0,
+    "retry_calls": 0,
+    "successful_calls": 36360
+  },
+  "population_collection_sha256": "2c619efdeb4156b295046e4a8e92ce103559d0f005f2e6a618680897a83f861a",
+  "population_summary_sha256": "ac05093279019814c72e11abadb9a1665b511749e51558f36b9319f698051115",
+  "schema_version": "mutaco-paper-canonical-population-evidence-v1",
+  "scientific_calls_added_by_consolidation": 0,
+  "source_evidence": [
+    {
+      "collection_sha256": "a69f76f35a1cd998e024c5670ad0a8286470b73e8ce6d585cdbfa1bbc0397611",
+      "declaration_identity": "paper-population-declaration-v3-973f724e86a90a6efbaafe994b8291d4d56fd60ebb1f366608752a8d29773d2c",
+      "record_count": 9,
+      "source_commit": "2b067c33720ed7c6b30ee91ae6087081d5ad0776",
+      "source_evidence_identity": "qualification-manifest-sha256-1f761d2b942430897e8b986b2ad78e06605bce1ca701686e73508e56cd9b686e",
+      "source_id": "qualification3",
+      "successful_calls": 909,
+      "target_count": 3
+    },
+    {
+      "collection_sha256": "3a186cbdf1b74b8e3b6ee7d8b8efd8fc85e835600cbcba4773c81283a63048eb",
+      "declaration_identity": "paper-population-declaration-v3-ffd2344127e1fd3a868a13225cebfbe47f322d4740654d615ded5eb504895157",
+      "record_count": 351,
+      "source_commit": "e7baa235fd7282ea478acc83f9457cfd95b76185",
+      "source_evidence_identity": "truba-job-6215336-collection-sha256-3a186cbdf1b74b8e3b6ee7d8b8efd8fc85e835600cbcba4773c81283a63048eb",
+      "source_id": "remaining117",
+      "successful_calls": 35451,
+      "target_count": 117
+    }
+  ],
+  "target_count": 120
+}

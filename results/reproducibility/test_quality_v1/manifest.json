@@ -1,0 +1,190 @@
+{
+  "B40_B100_replays_executed": 0,
+  "PR_updates": 0,
+  "TRUBA_final_case_coverage_union": {
+    "counts": {
+      "error": 0,
+      "failure": 0,
+      "passed": 338,
+      "skipped": 8
+    },
+    "matches_all_local_final_core_outcomes": true,
+    "meaning": "coverage across a full run plus affected-case follow-up; not a full-suite execution on final source",
+    "unaffected_test_AST_identical": true
+  },
+  "TRUBA_final_fixture_focused_followup": {
+    "automatic_resubmission": false,
+    "counts": {
+      "error": 0,
+      "failure": 0,
+      "passed": 8,
+      "skipped": 0
+    },
+    "physical_backend_attempts": 0,
+    "resources": {
+      "cpus": 2,
+      "elapsed_seconds": 64,
+      "exit_code": "0:0",
+      "job_id": 6859389,
+      "maximum_minutes": 3,
+      "peak_rss_gib": 0.2791023254394531,
+      "peak_rss_kib": 292660,
+      "requested_memory": "2G",
+      "state": "COMPLETED"
+    }
+  },
+  "TRUBA_full_suite_attempt": {
+    "counts": {
+      "error": 0,
+      "failure": 2,
+      "passed": 336,
+      "skipped": 8
+    },
+    "new_failures": "two initially overstrong singular-fixture rejection expectations; original success-fixture correction passed",
+    "physical_backend_attempts": 0,
+    "resources": {
+      "cpus": 2,
+      "elapsed_seconds": 96,
+      "exit_code": "1:0",
+      "job_id": 6859352,
+      "maximum_minutes": 5,
+      "peak_rss_gib": 0.35819244384765625,
+      "peak_rss_kib": 375592,
+      "requested_memory": "4G",
+      "state": "FAILED"
+    }
+  },
+  "added_singular_cases": [
+    {
+      "class": "tests.acquisition.test_nei",
+      "name": "test_baseline_factorization_rejects_exactly_singular_covariance[dtype0]",
+      "result": "passed"
+    },
+    {
+      "class": "tests.acquisition.test_nei",
+      "name": "test_baseline_factorization_rejects_exactly_singular_covariance[dtype1]",
+      "result": "passed"
+    }
+  ],
+  "all_changed_cases_verified_on_macOS_and_TRUBA": true,
+  "artifact_sha256": {
+    "matrix-diagnosis.json": "9ce7c25727c73daf93899cc8f32de1b24d66835e69a3f5cd8366e7e9079db667",
+    "raw-evidence-index.json": "0f08b94fa3587c6bc4f313c8b6e54981c9bde1893130f2b2ddc241474966a395"
+  },
+  "baseline_and_current_focused_before": {
+    "failure": 1,
+    "passed": 5
+  },
+  "byte_identical_to_raw": false,
+  "declared_existing_test_changes": [
+    {
+      "after": "passed",
+      "before": "failure",
+      "class": "tests.acquisition.test_nei",
+      "name": "test_baseline_factorization_promotes_without_jitter"
+    }
+  ],
+  "derived": true,
+  "final_fixture_source_snapshot": "2d9ec6337520aeeca86d227c8743561dd773b987",
+  "focused_after": {
+    "TRUBA": 8,
+    "local": 8
+  },
+  "full_TRUBA_suite_executed_on_final_source": false,
+  "full_suite_source_snapshot": "df2e6630921ef734e6a421494ced18e7fefffb08",
+  "github_pushes": 0,
+  "historical_baseline": "aa7f4feb58302ecf6abfa6dee2d81071eabb7fe3",
+  "jobs_executed": 2,
+  "local_final_core_suite": {
+    "error": 0,
+    "failure": 0,
+    "passed": 285,
+    "skipped": 8
+  },
+  "local_regression_infrastructure_passed": 53,
+  "next_gate_requirement": "version software test expectations for one declared failure-to-pass and two new cases before the next production refactor; do not rewrite historical references",
+  "original_NEI_failure_resolved": true,
+  "physical_simulator_calls": 0,
+  "production_source_unchanged": true,
+  "production_tree_sha256": "c9600562ed47ff8fe4e4c16034637ac2b77cb4a2a386272637ee49e80e1a1943",
+  "runner_review": {
+    "helpers": [
+      {
+        "end": 885,
+        "name": "_prepare_frozen_responses",
+        "parameters": 4,
+        "start": 817
+      },
+      {
+        "end": 914,
+        "name": "_validate_pre_run_options",
+        "parameters": 2,
+        "start": 888
+      },
+      {
+        "end": 956,
+        "name": "_collect_initial_observations",
+        "parameters": 11,
+        "start": 917
+      },
+      {
+        "end": 982,
+        "name": "_prepare_gp_training_data",
+        "parameters": 3,
+        "start": 959
+      },
+      {
+        "end": 1009,
+        "name": "_standardize_and_commit_sequential_observation",
+        "parameters": 5,
+        "start": 985
+      },
+      {
+        "end": 1046,
+        "name": "_record_gp_fit_result",
+        "parameters": 7,
+        "start": 1012
+      }
+    ],
+    "next_area": "acquisition raw screening and branch selection; no production extraction implemented",
+    "path": "scientific/refactor_validation/test_quality_checkpoint.md",
+    "runner": [
+      {
+        "AST_statements": 172,
+        "end": 1437,
+        "lines": 629,
+        "nested_functions": [
+          "finish",
+          "fit_version"
+        ],
+        "start": 809,
+        "version": "baseline"
+      },
+      {
+        "AST_statements": 132,
+        "end": 1569,
+        "lines": 521,
+        "nested_functions": [
+          "finish",
+          "fit_version"
+        ],
+        "start": 1049,
+        "version": "current"
+      }
+    ],
+    "sha256": "188313a3f38db3829b95f2920bbdb79a33a928158e98553157dd4574ff65ca6c"
+  },
+  "schema": "mutaco-test-quality-checkpoint-v1",
+  "scientific_algorithms_policies_precision_and_tolerances_changed": false,
+  "scientific_reference_sidecars_sha256": {
+    "benchmarks/reproducibility/b100_regression_v1/SHA256SUMS": "4e336b0378478e555223a1bb686e4606b5a849e7e3adb07cc474b3a0cadb012b",
+    "benchmarks/reproducibility/gp_fit_result_v1/SHA256SUMS": "e203440a2d5cd280f49f990ba15cea7bf1dd970ab60e926934bc09b5cd7e93e4",
+    "benchmarks/reproducibility/gp_training_data_preparation_v1/SHA256SUMS": "9bcc4021a9ee81c36a3e68883b52a7ada0f098e28db0cd5ae02e89635a6bee3e",
+    "benchmarks/reproducibility/initial_observation_collection_v1/SHA256SUMS": "116ec8fee995f128dc5525994e88620f331340c6879f2ac34655ad06f2715577",
+    "benchmarks/reproducibility/pre_run_validation_v1/SHA256SUMS": "a2a491cf9e86a9e855299427657588393cea3b47d4dfaa9a4ff9fc9556a4ed38",
+    "benchmarks/reproducibility/sequential_observation_commit_v1/SHA256SUMS": "e7d68f59b2f1a4845854f272510b8e01d816c29389b28c0c0ca5ad8528f0c545",
+    "benchmarks/reproducibility/shareable_milestone_v1/SHA256SUMS": "86c94e42849c8f3d15430b8ede7fe6f666c708d07b904d5063f005f2ff748237"
+  },
+  "six_refactors_preserved": true,
+  "starting_commit": "9219b7a82e5713aec27b9e0637f4e8588f5170aa"
+}

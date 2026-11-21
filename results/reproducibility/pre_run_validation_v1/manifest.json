@@ -1,0 +1,194 @@
+{
+  "GitHub_pushes_this_task": 0,
+  "accepted_previous_refactor": "242fac08c1c3dc0041651a731c20ed228969ed6a",
+  "archive_sha256": {
+    "100": "e30befedd72b85bd0eda8fe1d7e33ed6ef10acd0c880b1bd6aca60865e4a49c7",
+    "40": "2f86646f7c21914552d10e9e1fcb209d29880cee194a3e79f8f8fae211b6659c"
+  },
+  "artifact_sha256": {
+    "README.md": "f5f9676b878a9c982d21230b7167561f8b32954851e91ba577522a018f5afcca",
+    "derived-comparisons.json": "d045cc9a0f50a3ba9c11278f177300315df4fcf740eaa4bf75ddc4185613f5f6",
+    "environment-summary.json": "b7edc23b605d8ad84bf0dd82725b77d581308cf65d934b8652b92bcb0e8bb28f",
+    "raw-evidence-index.json": "71266f78335d331d7659bb92493aa53900ca5a37ff450af498a0eb98f67d6c71"
+  },
+  "baseline": "aa7f4feb58302ecf6abfa6dee2d81071eabb7fe3",
+  "baseline_reexecuted": false,
+  "byte_identical_to_raw": false,
+  "candidates_substituted": false,
+  "cases": {
+    "100": {
+      "ambient_rng_preserved": true,
+      "archived_observations_consumed": 100,
+      "candidate_comparison": "exact; no tolerance or candidate substitution",
+      "frozen_transform_identity": {
+        "historical": "response-transform-v1-e320ccd0f0ca0fed4db7c443cbaa25e1a4757dbdc6d2a8cdb9ca1067a33f5e50",
+        "reconstructed": "response-transform-v1-e320ccd0f0ca0fed4db7c443cbaa25e1a4757dbdc6d2a8cdb9ca1067a33f5e50"
+      },
+      "logical_replay_accounting": {
+        "committed_fit_events": 85,
+        "committed_observations": 100,
+        "committed_proposal_events": 84,
+        "committed_recommendation_events": 1,
+        "initial_observations": 16,
+        "planned_observations": 100,
+        "sequential_observations": 84,
+        "training_data_versions": 85
+      },
+      "physical_simulator_calls": 0,
+      "record_pointer": "/records/0",
+      "target": 0
+    },
+    "40": {
+      "ambient_rng_preserved": true,
+      "archived_observations_consumed": 40,
+      "candidate_comparison": "exact; no tolerance or candidate substitution",
+      "frozen_transform_identity": {
+        "historical": "response-transform-v1-80cbe14adbb107bff5459f2062e59617f2c17a49131091c880d7f0859f877a0f",
+        "reconstructed": "response-transform-v1-80cbe14adbb107bff5459f2062e59617f2c17a49131091c880d7f0859f877a0f"
+      },
+      "logical_replay_accounting": {
+        "committed_fit_events": 25,
+        "committed_observations": 40,
+        "committed_proposal_events": 24,
+        "committed_recommendation_events": 1,
+        "initial_observations": 16,
+        "planned_observations": 40,
+        "sequential_observations": 24,
+        "training_data_versions": 25
+      },
+      "physical_simulator_calls": 0,
+      "record_pointer": "/records/48",
+      "target": 16
+    }
+  },
+  "derived": true,
+  "exact_numerical_comparison": true,
+  "historical_GP_snapshots_available": false,
+  "historical_campaign_sources": {
+    "100": "649235bcb7e8773f5f4b0425ad111314d7d3b1f9",
+    "40": "bd83de6ec01f0f7e2241ee498960a4d493d601e6"
+  },
+  "local_tests": {
+    "full_scientific_passed": 204,
+    "full_scientific_skipped": 8,
+    "infrastructure_metadata_passed": 41,
+    "known_NEI_failure": 1,
+    "post_added_import_boundary_cases": 3,
+    "post_extraction_passed": 132,
+    "post_extraction_skipped": 3,
+    "pre_extraction_characterization": 29,
+    "pre_extraction_passed": 129,
+    "pre_extraction_skipped": 3
+  },
+  "new_GP_values": "reconstructed; conditional final-data cold checkpoint is not historical terminal warm GP",
+  "physical_simulator_calls": 0,
+  "previous_reference_artifacts_modified": false,
+  "raw_environment_identity": "Unchanged comparator used original private packets; portable summaries cannot replace them.",
+  "raw_originals_modified": false,
+  "resources": {
+    "allocated_cpus": 20,
+    "elapsed_seconds": 571,
+    "exit_code": "1:0",
+    "future_memory_allocation_requires_review": false,
+    "interpretation": "Scheduler figures retained.",
+    "job_id": 6854173,
+    "jobs_submitted": 1,
+    "partition": "debug",
+    "reported_batch_MaxRSS": "13462608K",
+    "reported_peak_exceeds_request": false,
+    "reported_peak_rss_gib": 12.838943481445312,
+    "reported_peak_rss_kib": 13462608,
+    "requested_memory": "20G",
+    "state": "FAILED"
+  },
+  "same_qualified_environment": true,
+  "schema": "mutaco-pre-run-readability-evidence-v1",
+  "scientific_bindings": {
+    "b100-capture.json.gz": {
+      "baseline_raw_sha256": "1865655feddf8658f534e029b89212f2e5a1b0bf308f099705e584bde641e156",
+      "candidate_raw_sha256": "03059bac97b4574ba415dad819319674b89cf66f0837743a2c047c1440e4b2c2",
+      "mathematical_sha256": "06338d126708d62fdb3967db3d1603eb1529270ec4c6704322b621cd6b4fa150"
+    },
+    "b100-history.json.gz": {
+      "baseline_raw_sha256": "09e2df33bdfba7cc7ccb331a2995d81bda7e1ae13d5d6f61569904574b6a7e57",
+      "candidate_raw_sha256": "1844dc46d7c6ce241e8ae5cf920148e06e4e4c85a03ed60956de62355b431e42",
+      "mathematical_sha256": "c97b62ec714905ff97037561aad8ac3aef638abf9e189a926d6306844d3854c2"
+    },
+    "b40-capture.json.gz": {
+      "baseline_raw_sha256": "029632e4d0f863a4d1e4c8014a88eca94a0b7eee59517152cbfa80d8919604c2",
+      "candidate_raw_sha256": "e514f873707beee333ae48af39250e250741f242088491b8232ae999cb82be72",
+      "mathematical_sha256": "12251e746d4c39f2f028651f766c96a6723dc39cb63d5cd484ad661b9cf3001c"
+    },
+    "b40-history.json.gz": {
+      "baseline_raw_sha256": "cc7974d202ecaa5444946aae45965c01f9cf93a10b027f253e71e30a7494dad2",
+      "candidate_raw_sha256": "4d188ac37e4a8556bca027950f7674d05350ab9d8aa5c561811436b3410c6342",
+      "mathematical_sha256": "687433605adebeb928b081c616e7d603267d71faebb3cfa061a6c730865ec782"
+    }
+  },
+  "scientific_equivalence_established": true,
+  "starting_clean_commit": "c295641b74abf6791b74553e7b3a180d487629e5",
+  "tests": {
+    "added_passed_cases": 29,
+    "changed_accepted_cases": [],
+    "counts": {
+      "error": 0,
+      "failure": 1,
+      "passed": 204,
+      "skipped": 8
+    },
+    "known_NEI_failure_present": true,
+    "physical_backend_attempts": 0,
+    "pytest_exit": 1,
+    "test_gate_passed": true
+  },
+  "tolerances_changed": false,
+  "validated_core_files_sha256": {
+    "src/mutaco/__init__.py": "3166db470c3d6588d61828779ea6a53dcd223a28f7b3f93d55b826a9646ac72b",
+    "src/mutaco/acquisition/__init__.py": "d826b11cebd52309d6b5ed90a0d336ba90c5538dd64e4461a23230218cfd4609",
+    "src/mutaco/acquisition/geometry.py": "72f9e087d061cfe2a9fe8926f7416dfb6e50f52bb28c22ec124da4b155196f42",
+    "src/mutaco/acquisition/nei.py": "439f337eb471106abb64de88c1e3ef50d5cd24dc8ceaba90413684b3c8d844c5",
+    "src/mutaco/acquisition/objectives.py": "b01742ad9bcf2d5eb311caeb1673c05d89aaeef26b7ffd8f608f4cabc790e137",
+    "src/mutaco/acquisition/proposal.py": "ce01a0889a877e25763ad5a243a9bae3555860cea2a9a22ace56c2f9aa7acfc7",
+    "src/mutaco/api.py": "54fd90f046aa62b9686dcd1c1b87c8d24e2e4489499e342ca8d143f6fc29cf0b",
+    "src/mutaco/artifacts/__init__.py": "cf2503a40d00308a671dad7d9d63e4c5abb5a67a6210f0d6e1e2b35ba167c5e9",
+    "src/mutaco/artifacts/schemas.py": "bc9ec3c13dd6d0e8628cab2d6d810c2df280478203eda5a1de328ff662f3534e",
+    "src/mutaco/atomic_io.py": "13dd7f331e8d3ea6de0a8129169f5aca8034a989baabc4eb0427900750e226e3",
+    "src/mutaco/design/__init__.py": "fc35585cb1d442858b34c8c4580c3a4f015aafdd04d3de284f6068fd81f915ca",
+    "src/mutaco/design/initial.py": "97901dd36d6dfe6db294c417615c03e7281b45da9f1eefe333d43207c56bf16a",
+    "src/mutaco/diagnostics/__init__.py": "9ed12da3bf36c6724eaacd98a541e7d8fad1268f87c5be47f8224cbcd5b91054",
+    "src/mutaco/diagnostics/policies.py": "075cfb8c4b7780232c3fedd7f11b01030a0daba46809c23ddebf24fe1ac9643a",
+    "src/mutaco/identity/__init__.py": "41306dc0c3269da22b4bb10900a004718cc1aef5af26166db933de8fc43c2da1",
+    "src/mutaco/identity/canonical.py": "a973478a6866762d78c8b9f7139048871189ab41426297d1b1a79a7ab6718b44",
+    "src/mutaco/identity/metadata.py": "86db6819eaf988287d0c8cf0e53716b9470cb2ddf4604b90ccec00ff052fa383",
+    "src/mutaco/identity/sequential.py": "6ac227d59c0743fe53ebf04bcfcd8550bc5d573e421b96075ca7ff49dae584cc",
+    "src/mutaco/observability/__init__.py": "abd4d956051d5a34a55cbada0c24f5e8c3673da474c7648032be9d3a6bbe479e",
+    "src/mutaco/observability/monitoring.py": "eb6203ff4127acdfb713b7ca93c59b03538037d3cf77c0620e72f05079dca7ee",
+    "src/mutaco/orchestration/__init__.py": "f7eb20470a05d3353927405f491861aa2b00e7d7ab33991aec80da43fff6b9a4",
+    "src/mutaco/orchestration/runner.py": "c34995e0b10581c53a554c23d433e01ac68f3e681e45c40dce0814220be7585c",
+    "src/mutaco/policies/__init__.py": "5356767ea1f01562d16936867fb7ac28a281f1ddfba46c2aaeba66c330dafbba",
+    "src/mutaco/policies/registry.py": "820c22244791f8a149b9a8c3c43de950dea1e6d20be4d3ed451c3a91cb559d37",
+    "src/mutaco/policies/surface.py": "29a9249ddb3587791909fdc6cc1a53a1f7cc35f1c56faaa23601637e5c2f152e",
+    "src/mutaco/posterior/__init__.py": "2a5f02bc24b2c3525c4f6e2994fda36bb2e9673845708bec603b862e42587718",
+    "src/mutaco/posterior/summary.py": "90e282d4d479f1351753db0f6a4aeb0b77fa4c5710a9884859b30c28d45464d4",
+    "src/mutaco/randomness/__init__.py": "573c7aac6804104d0e0abab9676c6c49f3ecd86fa30f595501dbfd7b6f6879e0",
+    "src/mutaco/randomness/seeds.py": "80da64ee60d5f0261fe8ec42eec14fb070595dcf2a5574955e87055d3337064b",
+    "src/mutaco/recommendation/__init__.py": "7b6d67990efdd9b0a8e68becef1fa8bc7bcf4ba4ea253fa03fb73729050e6578",
+    "src/mutaco/recommendation/_continuous.py": "42c8c174c96ea4fe3014f9f759fce7c4a49db0bdcfb2d0e408cfb37389f57f75",
+    "src/mutaco/recommendation/observed_physical_mae.py": "cc20346cdb542cadfb3e938110db29c73685803826afedad1ae0830087e09a14",
+    "src/mutaco/recommendation/physical_l2.py": "af779aec90ba3c413fb714e355ebf5d78e3a324face7a3fe324ee9add9e17aa2",
+    "src/mutaco/recommendation/physical_mae.py": "03f26ddde6268088bbe8dc63491f99346efffa148ba13d26fb451474bd340896",
+    "src/mutaco/recommendation/policies.py": "894d074f3805d761c63810fa49bb11dcc8b0855ec954e38792a5a5a4df1c4d07",
+    "src/mutaco/response/__init__.py": "fc61678a58bfeac0e833606fd00635bf9684dcd56643050860a980372671e486",
+    "src/mutaco/response/transform.py": "2ea623efc035fa239305508497ddcf40f5bca1629a43b1736bd9f61be2d45de7",
+    "src/mutaco/runtime/__init__.py": "5bf5c4da0058f47c2bbfb1afa8292002c619a5f1a67ad87ba44b71ae81eb6171",
+    "src/mutaco/runtime/parallelism.py": "a56b75eeed998b62cecedbb2e690df2e51d68428f057cef179500ed09c2f5d58",
+    "src/mutaco/runtime/resolution.py": "bcad51846057f162d40e698eed52bbcd0856b05eb8cbd38d56f86446755a0b0e",
+    "src/mutaco/simulator/__init__.py": "0d010a341994f908af5436ea7e14f74115593ccabd77cc90b4be28c805d2ffd4",
+    "src/mutaco/simulator/protocol.py": "ed07c75b881df3d29c353e3e5bd8e21c3823c06313b1773f9885bd76afad4ada",
+    "src/mutaco/surrogate/__init__.py": "6d61d40e2472246a4e2dcb7b8eb544442ae3366407b6205e2ecaf0f12929a1e8",
+    "src/mutaco/surrogate/exact_multitask.py": "b368f44f35ee7654331d39734d391e830a57dab816ce7de4bd7e2a5f7f287617",
+    "src/mutaco/types/__init__.py": "87d27a4cce29b08680a783a6c4107ac5189fcd76783a84c233527f83056c6859",
+    "src/mutaco/types/specifications.py": "cbbbbd372833b5df90c4b7efa542ae3da171ea9b5b213ca2f719343e3e6f9640"
+  },
+  "validated_source_snapshot": "c960fef4d4654253bfbfb94a0003f07d9ac86f1e"
+}

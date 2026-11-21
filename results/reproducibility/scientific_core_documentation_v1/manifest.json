@@ -1,0 +1,224 @@
+{
+  "GitHub_pushes": 0,
+  "documented_source_identity": "the eight source-byte hashes below; Git revision is the commit containing this record",
+  "external_submission_approved": false,
+  "files": {
+    "src/mutaco/acquisition/geometry.py": {
+      "AST_equal_excluding_docstrings": true,
+      "annotations_and_import_statements_unchanged": true,
+      "compiled_operations_equal_excluding_docstrings_and_locations": true,
+      "documented_source_sha256": "c1d588e261838522beb36ebe9481667d30d676d0ef203ca7f57f5a79dc00c434",
+      "documented_symbols": [
+        "<module>",
+        "evaluate_confidence_geometry"
+      ],
+      "executable_AST_sha256": "35175b58caecdd1c92d8c2fb424b9b657fea616d3af8571aa5181c1b7b75d007",
+      "previous_source_sha256": "72f9e087d061cfe2a9fe8926f7416dfb6e50f52bb28c22ec124da4b155196f42"
+    },
+    "src/mutaco/acquisition/objectives.py": {
+      "AST_equal_excluding_docstrings": true,
+      "annotations_and_import_statements_unchanged": true,
+      "compiled_operations_equal_excluding_docstrings_and_locations": true,
+      "documented_source_sha256": "23b12faab983b2c2edba6898aa4152beddab601e56ecabf9dcfa184908dad9e4",
+      "documented_symbols": [
+        "<module>",
+        "standardized_l2_exploitation",
+        "MatchedBarrierObjective",
+        "MatchedBarrierObjective.evaluate",
+        "evaluate_exploration"
+      ],
+      "executable_AST_sha256": "706c257518b4a7094fb880bc62465fe96c466efeaa722b59afb4f5983ae91a4f",
+      "previous_source_sha256": "b01742ad9bcf2d5eb311caeb1673c05d89aaeef26b7ffd8f608f4cabc790e137"
+    },
+    "src/mutaco/acquisition/proposal.py": {
+      "AST_equal_excluding_docstrings": true,
+      "annotations_and_import_statements_unchanged": true,
+      "compiled_operations_equal_excluding_docstrings_and_locations": true,
+      "documented_source_sha256": "622c6b9c38726e6c7f1e8fe53f31b4a237c0c31bbbd714f01a26f8bd8fd8e54a",
+      "documented_symbols": [
+        "<module>",
+        "generate_candidate_pool",
+        "_ordered_finite_indices",
+        "_score",
+        "_barrier_restart",
+        "_exploration_restart",
+        "recover_best_ranked_unevaluated_raw",
+        "_screen_and_rank_raw_candidates",
+        "propose_candidate"
+      ],
+      "executable_AST_sha256": "87850f4815cf40f82049a77ffeae27348a39e16a2d66b7087b83036343f194f0",
+      "previous_source_sha256": "cf14f643f4599c6138325adf07a00073f60ff3e1a19274d1650450220946b25b"
+    },
+    "src/mutaco/design/initial.py": {
+      "AST_equal_excluding_docstrings": true,
+      "annotations_and_import_statements_unchanged": true,
+      "compiled_operations_equal_excluding_docstrings_and_locations": true,
+      "documented_source_sha256": "3f7b8d4c6258232d5dab12ecda9ac450d4a8cbafb07bd50eca611d2dd34e5c97",
+      "documented_symbols": [
+        "<module>",
+        "generate_initial_design",
+        "validate_caller_design"
+      ],
+      "executable_AST_sha256": "4d5140cb21ff981f57166698bde61f61f3784a18b71fb4ccf441f2e06638d348",
+      "previous_source_sha256": "97901dd36d6dfe6db294c417615c03e7281b45da9f1eefe333d43207c56bf16a"
+    },
+    "src/mutaco/orchestration/runner.py": {
+      "AST_equal_excluding_docstrings": true,
+      "annotations_and_import_statements_unchanged": true,
+      "compiled_operations_equal_excluding_docstrings_and_locations": true,
+      "documented_source_sha256": "be067e0712226a2c1c0fd1d1155f61ca67353d37524501224aecab09e31b30a6",
+      "documented_symbols": [
+        "<module>",
+        "_evaluate",
+        "_prepare_frozen_responses",
+        "_collect_initial_observations",
+        "_prepare_gp_training_data",
+        "_standardize_and_commit_sequential_observation",
+        "run_sequential"
+      ],
+      "executable_AST_sha256": "639f44e79e4eac82757b8e5e8f3a4d609842ad6e602174659171e66f7eed47e1",
+      "previous_source_sha256": "f1029ad78487fea7949362dd0562978341cbaf3c4786fb3cf1a705ec606d0435"
+    },
+    "src/mutaco/recommendation/physical_mae.py": {
+      "AST_equal_excluding_docstrings": true,
+      "annotations_and_import_statements_unchanged": true,
+      "compiled_operations_equal_excluding_docstrings_and_locations": true,
+      "documented_source_sha256": "96c8b63610acaa3208d506da8be717d1e9710237c638c25a98f7060d7666cde7",
+      "documented_symbols": [
+        "<module>",
+        "physical_mae_scores",
+        "recommend_continuous_physical_mae"
+      ],
+      "executable_AST_sha256": "0f1a6c2ce7acfec24a3e13209ebc77d8e33dd07a05b4fb0a65443e0f3f93f941",
+      "previous_source_sha256": "03f26ddde6268088bbe8dc63491f99346efffa148ba13d26fb451474bd340896"
+    },
+    "src/mutaco/response/transform.py": {
+      "AST_equal_excluding_docstrings": true,
+      "annotations_and_import_statements_unchanged": true,
+      "compiled_operations_equal_excluding_docstrings_and_locations": true,
+      "documented_source_sha256": "99a57a332ad0203a71b356db92abaa43a65147f88685de03f6d6a057dab5f476",
+      "documented_symbols": [
+        "<module>",
+        "FrozenResponseTransform",
+        "FrozenResponseTransform.fit",
+        "FrozenResponseTransform.to_standardized",
+        "FrozenResponseTransform.to_physical",
+        "FrozenResponseTransform.standardize_target",
+        "FrozenResponseTransform.covariance_to_standardized",
+        "FrozenResponseTransform.covariance_to_physical"
+      ],
+      "executable_AST_sha256": "e90b07c17929342bfbe6e9708e676d2e9736f4e38da14b861e29d25c4d26bb3b",
+      "previous_source_sha256": "2ea623efc035fa239305508497ddcf40f5bca1629a43b1736bd9f61be2d45de7"
+    },
+    "src/mutaco/surrogate/exact_multitask.py": {
+      "AST_equal_excluding_docstrings": true,
+      "annotations_and_import_statements_unchanged": true,
+      "compiled_operations_equal_excluding_docstrings_and_locations": true,
+      "documented_source_sha256": "d93dd6ef57df12200b441acf8fd88bc37b15f6ee93304968bc7fe44e83c5f537",
+      "documented_symbols": [
+        "<module>",
+        "SurrogateTrainingData",
+        "GPFitConfig",
+        "ExactMultiTaskGPSurrogate",
+        "ExactMultiTaskGPSurrogate._promoted_covariance_model",
+        "ExactMultiTaskGPSurrogate.posterior_mean",
+        "ExactMultiTaskGPSurrogate.posterior",
+        "_likelihood",
+        "_build_model",
+        "fit_exact_multitask_gp",
+        "fit_exact_multitask_gp_with_recovery"
+      ],
+      "executable_AST_sha256": "41a9b7f8c986df032250efb3ace344fa0629d85ab1827e7e13058f76de3cce67",
+      "previous_source_sha256": "41b34c8e3a3a376f1e658d2ddec85dc0028f25d1cc12fc916bb102b199d092b5"
+    }
+  },
+  "integrity": {
+    "all_other_original_tracked_files_unchanged_except_state_and_validation_navigation": true,
+    "documented_core_files_with_new_byte_hashes": 8,
+    "existing_portable_checksum_entries_unchanged": 62,
+    "historical_manuscript_results_and_reference_values_changed": false,
+    "immutable_archive_members_verified": 8,
+    "original_figure_array_files_unchanged": 21,
+    "previous_accepted_core_hashes_verified_in_starting_Git_tree": 47,
+    "remaining_accepted_core_files_unchanged": 39
+  },
+  "local_tests": {
+    "GP_and_physical_call_tripwires": "active; zero attempts",
+    "after": {
+      "deselected": 0,
+      "errors": 0,
+      "failed": 0,
+      "passed": 226,
+      "skipped": 0
+    },
+    "before": {
+      "deselected": 0,
+      "errors": 0,
+      "failed": 0,
+      "passed": 226,
+      "skipped": 0
+    },
+    "environment": "macOS ARM64 Python 3.11 qualified local mutaco-sbi CPU environment",
+    "final_metadata_recheck": {
+      "GP_or_physical_attempts": 0,
+      "errors": 0,
+      "failed": 0,
+      "passed": 28,
+      "skipped": 0
+    },
+    "same_test_identities_and_outcomes": true,
+    "test_paths": [
+      "tests/surrogate/test_initial_design.py",
+      "tests/mathematics/test_transform.py",
+      "tests/mathematics/test_posterior_geometry.py",
+      "tests/mathematics/test_objectives.py",
+      "tests/acquisition/test_raw_screening.py",
+      "tests/acquisition/test_refined_selection.py",
+      "tests/smoke/test_boundaries.py",
+      "tests/contracts/test_repository_navigation.py",
+      "tests/contracts/test_curated_main.py"
+    ]
+  },
+  "previous_qualified_evidence": "benchmarks/reproducibility/final_qualified_validation_v1/manifest.json",
+  "previous_qualified_scientific_source": "4f563439a6d4445a11d97cd6d81ba784267f729d",
+  "private_raw_validation": {
+    "existing_private_evidence_modified": false,
+    "private_raw_files_sealed": 18,
+    "raw_SHA256SUMS_sha256": "2604d16833714daf85ed6a8a88687088508c77f4d514a764b76d85302a4ce38d"
+  },
+  "raw_local_logs": "kept outside Git; this is a compact derived static/offline record, not new numerical reference evidence",
+  "runtime_interfaces": {
+    "GP_or_physical_attempts": 0,
+    "annotation_changes": 0,
+    "exact_equal": true,
+    "method": "fresh-process imports of preserved prior sources and documented sources under the same module names; compare inspect signatures/annotations, public exports and imported core module inventory",
+    "private_likelihood_return_annotation": "unchanged to preserve the existing annotation interface",
+    "symbols_compared": 194
+  },
+  "schema": "mutaco-scientific-core-documentation-v1",
+  "scientific_qualification": {
+    "B40_B100_replays": 0,
+    "GP_fits": 0,
+    "TRUBA_jobs": 0,
+    "new_source_numerically_qualified": false,
+    "next_gate": "separately authorized qualified full suite and strict B40/B100 against unchanged references before accepting this documented source",
+    "physical_simulator_calls": 0,
+    "previous_523_passed_8_skipped_and_exact_B40_B100_apply_to": "4f563439a6d4445a11d97cd6d81ba784267f729d"
+  },
+  "scope": "comments and docstrings only; no changed executable statements or annotations",
+  "separate_researcher_decisions": [
+    "manuscript marginal-likelihood wording versus registered-prior MAP-type fitting",
+    "existing terminal global-best-raw and policy-dispatch questions",
+    "pre-existing shadowed last_valid_covariance diagnostic; not changed"
+  ],
+  "starting_commit": "ecf4b3510f4296a22e07b55cb0a48bc9f799ce50",
+  "static_comparison": {
+    "changed_docstrings": 48,
+    "compiled_operations_equal": true,
+    "executable_AST_equal": true,
+    "imports_and_annotations_equal": true,
+    "method": "parse both revisions, remove only leading docstrings (empty suites represented by pass), compare AST without locations and recursively compare compiled opcodes/constants/names/flags/arguments without location tables",
+    "source_locations_and_doc_values_intentionally_changed": true
+  },
+  "status": "static_and_offline_verified_qualified_TRUBA_validation_pending"
+}

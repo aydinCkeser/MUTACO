@@ -1,0 +1,147 @@
+{
+  "schema_version": "mutaco-primary-nei-q1-failed-attempt-evidence-v3",
+  "status": "cancelled_after_numerical_failure_preserved_no_automatic_retry",
+  "role": "numerical_qualification_attempt_not_primary_performance_evidence",
+  "campaign_id": "graph_primary_nei_q1_v1",
+  "scientific_source_commit": "00c81ddcda78265ce5ebdeb330da0bf05ce7d24c",
+  "declaration": "experiments/graph_inversion/configs/paper/primary_nei_q1_evidence_repair_v1.json",
+  "declaration_identity": "nei-numerical-qualification-declaration-v1-18244241c5af5f5abcd5171c39a2ea2a9dd6db04ac5da32ec944384ba0b56af1",
+  "run_declaration": "experiments/graph_inversion/configs/paper/primary_nei_q1_evidence_repair_attempt_v1.json",
+  "run_declaration_identity": "mutaco-nei-q1-run-declaration-v1-36ed4c846e968706660f0b218b30cd8273b56423579a2caa48c943ba53028c2c",
+  "target_count": 5,
+  "budgets": [40, 100],
+  "workers": 5,
+  "maximum_calls_per_worker": 140,
+  "maximum_total_calls": 700,
+  "heldout_calls": 0,
+  "physical_calls": {
+    "durably_accounted_lower_bound": 332,
+    "durably_accounted_successful": 332,
+    "durably_accounted_failed": 0,
+    "completed_b40": 200,
+    "persisted_failed_b100": 132,
+    "cancelled_in_memory_b100": "unknown_not_checkpointed",
+    "exact_total_available": false
+  },
+  "worker_terminals": {
+    "present": 3,
+    "completed": 0,
+    "failed": 3,
+    "missing_due_to_cancellation": 2,
+    "completed_trajectory_records": 5,
+    "attempted_calls_by_terminal_rank": {
+      "worker-00": 98,
+      "worker-01": 75,
+      "worker-04": 79
+    }
+  },
+  "completed_trajectory_slots": [
+    {"rank": 0, "target_position": 0, "budget": 40, "record_identity": "nei-q1-trajectory-record-v1-99c2205a7fa51d4054de18dbba2dd3325ad36769c7d2758867665b7c750d83c2"},
+    {"rank": 1, "target_position": 1, "budget": 40, "record_identity": "nei-q1-trajectory-record-v1-af1a7816d2e71fb49d4a0a30a79e66015969f7fda4f1d19551199b91610fb771"},
+    {"rank": 2, "target_position": 2, "budget": 40, "record_identity": "nei-q1-trajectory-record-v1-6899ba8e6d236871bb74afa4dc2d1b0a5c816bf46535d5431a32d490a0b75af5"},
+    {"rank": 3, "target_position": 3, "budget": 40, "record_identity": "nei-q1-trajectory-record-v1-19d2a5c77ec51c27a529f42c4ece55a743cfea0a6a4cae109b4f358d3c15cd4d"},
+    {"rank": 4, "target_position": 4, "budget": 40, "record_identity": "nei-q1-trajectory-record-v1-e9884ee24a59e83d2b9303e7fca58f9cbdd4dcf2639c8ed0a8a36d2199bb857b"}
+  ],
+  "failed_b100_slots": [
+    {"rank": 0, "target_position": 0, "calls_within_budget": 58, "attempt_identity": "nei-q1-trajectory-attempt-v1-4f140511064126489c6b29a0751320245638a93f9ab7973044dcb225c2b038da"},
+    {"rank": 1, "target_position": 1, "calls_within_budget": 35, "attempt_identity": "nei-q1-trajectory-attempt-v1-669d15ad2927cc307fbc0d641ab87baf116cf3431784109c9d10249cf3b7beb8"},
+    {"rank": 4, "target_position": 4, "calls_within_budget": 39, "attempt_identity": "nei-q1-trajectory-attempt-v1-84c2329685929bfd9b6ed14bbc73917469919b19451aba5eef07be96bb2673fe"}
+  ],
+  "cancelled_uncheckpointed_slots": [
+    {"rank": 2, "target_position": 2, "budget": 100},
+    {"rank": 3, "target_position": 3, "budget": 100}
+  ],
+  "failure": {
+    "failure_stage": "acquisition",
+    "failure_type": "NEIAcquisitionError",
+    "failure_explanation": "baseline latent covariance is not positive definite",
+    "observed_on_three_independent_b100_workers": true,
+    "simulator_failures_in_persisted_evidence": 0,
+    "evidence_serialization_failures": 0,
+    "qualification_result_created": false,
+    "selected_tier_id": null
+  },
+  "numerical_diagnosis": {
+    "status": "failing_boundary_identified_read_only",
+    "gp_fit_dtype": "float32",
+    "posterior_covariance_compute_dtype": "float64",
+    "posterior_covariance_return_dtype": "float32",
+    "gp_fit_jitter": 1e-6,
+    "gp_fit_jitter_applies_to_nei_baseline_factorization": false,
+    "nei_baseline_factorization": "single_strict_torch_linalg_cholesky_without_jitter_or_eigenvalue_floor",
+    "joint_posterior_validation": "positive_semidefinite_with_precision_scaled_tolerance",
+    "conditional_candidate_factorization": "eigendecomposition_with_tolerance_and_nonnegative_clipping",
+    "conclusion": "declared GP safeguards do not cover the failing NEI baseline Cholesky boundary"
+  },
+  "cancellation": {
+    "authorized_by_user": true,
+    "reason": "qualification matrix already impossible after three matching B100 acquisition failures",
+    "remote_artifacts_left_immutable": true,
+    "cancelled_workers_had_no_incremental_b100_checkpoint": true
+  },
+  "eligibility": {
+    "eligible_for_tier_selection": false,
+    "eligible_for_primary_performance_comparison": false,
+    "completed_b40_records_are_historical_diagnostic_evidence_only": true,
+    "may_mix_with_future_retry": false
+  },
+  "truba": {
+    "job_id": 6246600,
+    "state": "CANCELLED",
+    "elapsed": "03:12:04",
+    "allocation_exit_code": "0:0",
+    "srun_step_state": "FAILED",
+    "srun_step_exit_code": "1:0",
+    "nodes": "barbun[24-28]",
+    "allocated_cpus": 100,
+    "worker_threads": 20,
+    "memory_per_node": "64G",
+    "excluded_nodes": "barbun70,barbun[112-119]"
+  },
+  "remote_output_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/primary_nei_q1/qualification-evidence-repair-v1/workers",
+  "remote_log_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/primary_nei_q1/qualification-evidence-repair-v1/logs",
+  "local_raw_evidence": "experiments/paper/exploration/outputs/primary_nei_q1/qualification_evidence_repair_attempt_6246600",
+  "integrity": {
+    "json_hash_pairs_checked": 21,
+    "json_parse_failures": 0,
+    "missing_sidecars": 0,
+    "hash_mismatches": 0,
+    "full_worker_tree_copied_locally": true
+  },
+  "artifact_hashes": {
+    "worker_start_json": {
+      "worker-00": "58617b9fd0f9e7206ffb4051a018bf937f2b76af8425c953f8a5553531dce526",
+      "worker-01": "f4172d05fdee555f147aad95e1ec34b9e593cef16b5e183f003a1e6f25d019b8",
+      "worker-02": "1aefb0f7956ee2ba92e83a8812bfc1741acfafb5130f080fd4ee791270a022ee",
+      "worker-03": "7cc4fdc70ee77846800e293a0c867a1ca3433b256b705fa7e1fead44861cf9ff",
+      "worker-04": "5a9f4301917e392706b91ea4e034d8095bacea93ebc4729b98de79ea8f97ff0f"
+    },
+    "worker_terminal_json": {
+      "worker-00": "5fb87817c970d20718b6b75a9d09a78f37887e90d6f2d6ee2c835de545efbcdf",
+      "worker-01": "707cec924823e67d0eff70207e827e1e4b45c84fb91aeb65c7ac36312ddeb7b3",
+      "worker-04": "63d9f43f393acc05a506300278dd867227120c4e59376395d5e44bdf7ffe73eb"
+    },
+    "completed_record_json": {
+      "worker-00-b40": "f9a056449abd2c36a965ce16caf7cf96b8387fda4d411e697f40d0eaff94babc",
+      "worker-01-b40": "fe39000b42f85ffaca25c49ea5943e2ca1d8236c82ec2192672b051ac96f5c6c",
+      "worker-02-b40": "484a25a5a3b1d3d817c4954626eec1b9a5dd6c7d901923404e351752446195d5",
+      "worker-03-b40": "4066de84cb610b62f53265bda869e6f9d80b461d6efd85b6f172336fc2832e9c",
+      "worker-04-b40": "6cc1174b67e92ab566cfbb86bdbcac42cdc54db18963228ea9e975f87894368c"
+    },
+    "completed_attempt_json": {
+      "worker-00-b40": "5b9ad4d084a2d4b3bd0819a74bfb58416fe9a50cd210e3f2969b740496bc06a6",
+      "worker-01-b40": "f6ffd1b8d4b25c41cc2b883bde50faf32e7b067d9f1c9510ffb1d3c6da1d18a6",
+      "worker-02-b40": "da21e66c5a1b63b4e6eb7f30c0506c1dec5e9700a1eb076d4143094a921ed0cc",
+      "worker-03-b40": "cad2b1b02c67311698cc392829da6982a8e06637dceded5644420174425ff147",
+      "worker-04-b40": "c162cd9cada6e375d261b201d36abbc0f88a86bae8adad689d7cc0350df8f4a3"
+    },
+    "failed_attempt_json": {
+      "worker-00-b100": "5691df15213eaf75333efa75a8b4da7b531be54438d925afb7df94959155c36e",
+      "worker-01-b100": "b4244e43eb4d8d460ce8b4542c12ee3e4eb08856e4275b8e664119563033f109",
+      "worker-04-b100": "744a7360874e12aff4f7595f90eebeef27cc569a7a1f206017ed513ea1c0474f"
+    },
+    "scheduler_stdout": "8b1a88616a9a4b32a62d61f40bc7a81ee1b3e1667731e854cd40c038b05e0993",
+    "scheduler_stderr": "3516080ab9ec722ed37e37a0f29bca95f0042c1fb213717e38f2436aec45521b"
+  },
+  "scientific_calls_added_by_fetch_validation_and_documentation": 0
+}

@@ -1,0 +1,364 @@
+{
+  "schema_version": "mutaco-policy-surface-v1",
+  "classifications": [
+    "active_core",
+    "active_specialized_core",
+    "compatibility",
+    "diagnostic",
+    "internal"
+  ],
+  "records": [
+    {
+      "identifier": "scrambled_sobol",
+      "family": "initial_and_candidate_design",
+      "surface": "active_core",
+      "ordinary_graph_configuration": true,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "caller_supplied",
+      "family": "initial_design",
+      "surface": "active_core",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "task_diagonal_gaussian",
+      "family": "likelihood",
+      "surface": "active_core",
+      "ordinary_graph_configuration": true,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "shared_isotropic_gaussian",
+      "family": "likelihood",
+      "surface": "compatibility",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "cold_only",
+      "family": "gp_fit",
+      "surface": "active_core",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "graph_m20_sequential_recovery_v1",
+      "family": "gp_fit",
+      "surface": "active_specialized_core",
+      "ordinary_graph_configuration": true,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "float32_fit_float64_covariance",
+      "family": "posterior_numerics",
+      "surface": "active_core",
+      "ordinary_graph_configuration": true,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "operator_norm_radius_v1",
+      "family": "confidence_geometry",
+      "surface": "active_core",
+      "ordinary_graph_configuration": true,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "operator_norm_uncertainty",
+      "family": "exploration",
+      "surface": "active_core",
+      "ordinary_graph_configuration": true,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "fixed_beta_v1",
+      "family": "beta",
+      "surface": "active_core",
+      "ordinary_graph_configuration": true,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "joint_chi_square_response_dimension_v1",
+      "family": "beta",
+      "surface": "active_core",
+      "ordinary_graph_configuration": true,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "posterior_uncertainty_v1",
+      "family": "infeasible_fallback",
+      "surface": "active_core",
+      "ordinary_graph_configuration": true,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "reject_exact_duplicate_v1",
+      "family": "duplicate",
+      "surface": "active_core",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "best_ranked_unevaluated_raw_v1",
+      "family": "duplicate",
+      "surface": "active_core",
+      "ordinary_graph_configuration": true,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "final_posterior_standardized_l1",
+      "family": "recommendation",
+      "surface": "active_core",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "continuous_posterior_mean_physical_l2",
+      "family": "recommendation",
+      "surface": "active_core",
+      "ordinary_graph_configuration": true,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "continuous_posterior_mean_physical_l1_mae",
+      "family": "recommendation",
+      "surface": "active_core",
+      "ordinary_graph_configuration": true,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "evaluated_best_observed_physical_mae_v1",
+      "family": "recommendation",
+      "surface": "active_core",
+      "ordinary_graph_configuration": true,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "composite_mc_nei_physical_mae_v1",
+      "family": "acquisition",
+      "surface": "active_core",
+      "ordinary_graph_configuration": true,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "best_ranked_finite_unevaluated_raw_v1",
+      "family": "acquisition_recovery",
+      "surface": "active_core",
+      "ordinary_graph_configuration": true,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "evaluated_posterior_expected_l2",
+      "family": "recommendation",
+      "surface": "compatibility",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "evaluated_posterior_mean_physical_l2",
+      "family": "recommendation",
+      "surface": "compatibility",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "independent",
+      "family": "evaluation_randomness",
+      "surface": "active_core",
+      "ordinary_graph_configuration": true,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "fresh_held_out",
+      "family": "assessment",
+      "surface": "active_core",
+      "ordinary_graph_configuration": true,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "high_compute",
+      "family": "proposal_effort_alias",
+      "surface": "compatibility",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": false,
+      "owner": "graph_inversion"
+    },
+    {
+      "identifier": "iid_uniform",
+      "family": "initial_and_candidate_design",
+      "surface": "diagnostic",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "trace_marginal_variance",
+      "family": "exploration",
+      "surface": "diagnostic",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "native_float32",
+      "family": "posterior_numerics",
+      "surface": "diagnostic",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": true,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "full_float64_diagnostic",
+      "family": "posterior_numerics",
+      "surface": "diagnostic",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": true,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "trace_effective_dimension_radius_diagnostic_v1",
+      "family": "confidence_geometry",
+      "surface": "diagnostic",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": true,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "minimum_normalized_target_miss_diagnostic_v1",
+      "family": "infeasible_fallback",
+      "surface": "diagnostic",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": true,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "paired_coordinate_diagnostic_v1",
+      "family": "evaluation_randomness",
+      "surface": "diagnostic",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": true,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "fixed_full_stream_crn_diagnostic_v1",
+      "family": "evaluation_randomness",
+      "surface": "diagnostic",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": true,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "same_target_realization_assessment",
+      "family": "assessment",
+      "surface": "diagnostic",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": true,
+      "owner": "graph_inversion"
+    },
+    {
+      "identifier": "continuous_expected_physical_l2_diagnostic",
+      "family": "recommendation",
+      "surface": "diagnostic",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": true,
+      "owner": "graph_inversion"
+    },
+    {
+      "identifier": "legacy_full_stream_crn_diagnostic",
+      "family": "search_randomness",
+      "surface": "diagnostic",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": true,
+      "owner": "graph_inversion"
+    },
+    {
+      "identifier": "legacy_scale_search_effort_diagnostic",
+      "family": "proposal_effort",
+      "surface": "diagnostic",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": true,
+      "owner": "graph_inversion"
+    },
+    {
+      "identifier": "continuous_posterior_mean_physical_l1_mae_diagnostic_v1",
+      "family": "recommendation_alias",
+      "surface": "diagnostic",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": true,
+      "owner": "graph_policy_canary"
+    },
+    {
+      "identifier": "gp_recovery_stages",
+      "family": "mechanism",
+      "surface": "internal",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "covariance_promotion_and_validation",
+      "family": "mechanism",
+      "surface": "internal",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "duplicate_detection_and_raw_ranking",
+      "family": "mechanism",
+      "surface": "internal",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "continuous_terminal_optimizer",
+      "family": "mechanism",
+      "surface": "internal",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "optimizer_numerical_controls",
+      "family": "mechanism",
+      "surface": "internal",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    },
+    {
+      "identifier": "execution_and_thread_controls",
+      "family": "mechanism",
+      "surface": "internal",
+      "ordinary_graph_configuration": false,
+      "retained_for_existing_evidence": false,
+      "owner": "mutaco"
+    }
+  ]
+}

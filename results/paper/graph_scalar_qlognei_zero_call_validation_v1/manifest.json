@@ -1,0 +1,621 @@
+{
+  "ambient_rng_isolated": true,
+  "baseline_sizes": [
+    16,
+    40,
+    60,
+    34,
+    66
+  ],
+  "botorch_version": "0.18.1",
+  "cases": [
+    {
+      "baseline_size": 16,
+      "case_identity": "scalar-qlognei-archived-validation-case-v1-524a9f4640c1da76bacbf3944882bd63bc3e1a48be8daf650df497522ad2a668",
+      "fit": {
+        "botorch_version": "0.18.1",
+        "device": "cpu",
+        "dtype": "torch.float32",
+        "elapsed_seconds": 0.679927500001213,
+        "fit_seed": 5337391739563350644,
+        "gpytorch_version": "1.15.2",
+        "model_id": "scalar-loss-single-task-gp-v1-13b365469c9852d6a203342aff71fe489cd2a71ce1d90cfb98f6468b5622f1b0",
+        "precision_fallback_used": false,
+        "status": "success",
+        "training_covariance_dimension": 16,
+        "training_observation_count": 16,
+        "warnings": [
+          {
+            "category": "InputDataWarning",
+            "message": "The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/meta-pytorch/botorch/discussions/1444"
+          },
+          {
+            "category": "InputDataWarning",
+            "message": "The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/meta-pytorch/botorch/discussions/1444"
+          }
+        ]
+      },
+      "proposal": {
+        "baseline_covariance_dimension": 16,
+        "baseline_size": 16,
+        "batch_q": 1,
+        "candidate": [
+          0.5,
+          1.0625721216201782,
+          2.0,
+          0.0
+        ],
+        "candidate_source": "botorch_optimize_acqf",
+        "configuration": {
+          "acquisition": "botorch.qLogNoisyExpectedImprovement",
+          "batch_q": 1,
+          "botorch_version": "0.18.1",
+          "cholesky_policy": {
+            "implementation": "gpytorch.settings.cholesky_jitter",
+            "initial_float32_jitter": 1e-06,
+            "maximum_attempts": 3,
+            "unrecovered_action": "typed_failure_before_next_simulator_call"
+          },
+          "dtype_policy": "float32_end_to_end_v1",
+          "fit_max_iterations": 100,
+          "fit_seed": 5337391739563350644,
+          "gpytorch_version": "1.15.2",
+          "max_iterations": 64,
+          "model": "botorch.SingleTaskGP",
+          "n_mc": 256,
+          "objective": "negative_observed_physical_response_l1_mae",
+          "optimizer_seed": 504792517823727376,
+          "policy_id": "scalar_qlognei_negative_physical_mae_v1",
+          "precision_fallback": "forbidden",
+          "raw_samples": 256,
+          "restarts": 10,
+          "sampler_seed": 2208825936191301784
+        },
+        "device": "cpu",
+        "dtype": "torch.float32",
+        "elapsed_seconds": 0.5670608000000357,
+        "log_acquisition_value": -2.8375277519226074,
+        "optimizer_seed": 504792517823727376,
+        "policy_id": "scalar_qlognei_negative_physical_mae_v1",
+        "precision_fallback_used": false,
+        "sampler_seed": 2208825936191301784,
+        "simulator_calls": 0,
+        "warnings": [
+          {
+            "category": "RuntimeWarning",
+            "message": "Optimization failed in `gen_candidates_scipy` with the following warning(s):\n[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]\nTrying again with a new set of initial conditions."
+          },
+          {
+            "category": "RuntimeWarning",
+            "message": "Optimization failed on the second try, after generating a new set of initial conditions."
+          }
+        ]
+      },
+      "rank": 0,
+      "simulator_calls": 0,
+      "state_path": "experiments/paper/exploration/outputs/primary_nei_q1/qualification_post_smoke_attempt_6247700/workers/worker-00/trajectory_attempts/target-00-b100.json",
+      "state_sha256": "cedccf10132641f318d03e26389d61eb215f68d6210ba313262a468b5af43063",
+      "status": "passed",
+      "target_path": "experiments/paper/exploration/outputs/primary_nei_q1/target_construction/workers/target_ledger/target_000.json",
+      "target_sha256": "390c9ce75b48abb3adbac27fabcf161efef222721476f63d0c19d08056aa1e8d",
+      "terminal": {
+        "batch_q": 1,
+        "candidate_domain": "continuous_bounded_theta",
+        "derived_seed": 5802346767251337627,
+        "device": "cpu",
+        "dtype": "torch.float32",
+        "elapsed_seconds": 0.06978260000323644,
+        "gp_fits": 0,
+        "max_iterations": 64,
+        "model_id": "scalar-loss-single-task-gp-v1-13b365469c9852d6a203342aff71fe489cd2a71ce1d90cfb98f6468b5622f1b0",
+        "policy_id": "continuous_scalar_posterior_mean_physical_mae_v1",
+        "precision_fallback_used": false,
+        "raw_samples": 1024,
+        "restarts": 10,
+        "score": 0.05070292949676514,
+        "score_formula": "posterior_mean_observed_physical_response_l1_mae",
+        "seed_coordinates": [
+          0,
+          16
+        ],
+        "seed_namespace": "archived_terminal",
+        "selected_theta": [
+          0.5,
+          1.1994463205337524,
+          2.0,
+          0.0
+        ],
+        "simulator_calls": 0,
+        "warnings": []
+      }
+    },
+    {
+      "baseline_size": 40,
+      "case_identity": "scalar-qlognei-archived-validation-case-v1-6d5d1786cd915dc56c355a3ef37c69ae53cbea410801e34b22ece6f851f745a0",
+      "fit": {
+        "botorch_version": "0.18.1",
+        "device": "cpu",
+        "dtype": "torch.float32",
+        "elapsed_seconds": 0.11103909999656025,
+        "fit_seed": 7574483337148795277,
+        "gpytorch_version": "1.15.2",
+        "model_id": "scalar-loss-single-task-gp-v1-afa7b04c4d9670e524191375c129e477fb69a3d692f0dd2513838bb2b4382ec6",
+        "precision_fallback_used": false,
+        "status": "success",
+        "training_covariance_dimension": 40,
+        "training_observation_count": 40,
+        "warnings": [
+          {
+            "category": "InputDataWarning",
+            "message": "The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/meta-pytorch/botorch/discussions/1444"
+          },
+          {
+            "category": "InputDataWarning",
+            "message": "The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/meta-pytorch/botorch/discussions/1444"
+          }
+        ]
+      },
+      "proposal": {
+        "baseline_covariance_dimension": 40,
+        "baseline_size": 40,
+        "batch_q": 1,
+        "candidate": [
+          0.6109793782234192,
+          0.5,
+          2.0,
+          0.8973118662834167
+        ],
+        "candidate_source": "botorch_optimize_acqf",
+        "configuration": {
+          "acquisition": "botorch.qLogNoisyExpectedImprovement",
+          "batch_q": 1,
+          "botorch_version": "0.18.1",
+          "cholesky_policy": {
+            "implementation": "gpytorch.settings.cholesky_jitter",
+            "initial_float32_jitter": 1e-06,
+            "maximum_attempts": 3,
+            "unrecovered_action": "typed_failure_before_next_simulator_call"
+          },
+          "dtype_policy": "float32_end_to_end_v1",
+          "fit_max_iterations": 100,
+          "fit_seed": 7574483337148795277,
+          "gpytorch_version": "1.15.2",
+          "max_iterations": 64,
+          "model": "botorch.SingleTaskGP",
+          "n_mc": 256,
+          "objective": "negative_observed_physical_response_l1_mae",
+          "optimizer_seed": 1815933848101785286,
+          "policy_id": "scalar_qlognei_negative_physical_mae_v1",
+          "precision_fallback": "forbidden",
+          "raw_samples": 256,
+          "restarts": 10,
+          "sampler_seed": 4247287486336806620
+        },
+        "device": "cpu",
+        "dtype": "torch.float32",
+        "elapsed_seconds": 0.3222530999992159,
+        "log_acquisition_value": -2.6202657222747803,
+        "optimizer_seed": 1815933848101785286,
+        "policy_id": "scalar_qlognei_negative_physical_mae_v1",
+        "precision_fallback_used": false,
+        "sampler_seed": 4247287486336806620,
+        "simulator_calls": 0,
+        "warnings": [
+          {
+            "category": "NumericalWarning",
+            "cholesky_jitter_added": 1e-06,
+            "message": "A not p.d., added jitter of 1.0e-06 to the diagonal"
+          }
+        ]
+      },
+      "rank": 0,
+      "simulator_calls": 0,
+      "state_path": "experiments/paper/exploration/outputs/primary_nei_q1/qualification_post_smoke_attempt_6247700/workers/worker-00/trajectory_attempts/target-00-b100.json",
+      "state_sha256": "cedccf10132641f318d03e26389d61eb215f68d6210ba313262a468b5af43063",
+      "status": "passed",
+      "target_path": "experiments/paper/exploration/outputs/primary_nei_q1/target_construction/workers/target_ledger/target_000.json",
+      "target_sha256": "390c9ce75b48abb3adbac27fabcf161efef222721476f63d0c19d08056aa1e8d",
+      "terminal": {
+        "batch_q": 1,
+        "candidate_domain": "continuous_bounded_theta",
+        "derived_seed": 4205348035638265465,
+        "device": "cpu",
+        "dtype": "torch.float32",
+        "elapsed_seconds": 0.11362619999999879,
+        "gp_fits": 0,
+        "max_iterations": 64,
+        "model_id": "scalar-loss-single-task-gp-v1-afa7b04c4d9670e524191375c129e477fb69a3d692f0dd2513838bb2b4382ec6",
+        "policy_id": "continuous_scalar_posterior_mean_physical_mae_v1",
+        "precision_fallback_used": false,
+        "raw_samples": 1024,
+        "restarts": 10,
+        "score": -0.023946523666381836,
+        "score_formula": "posterior_mean_observed_physical_response_l1_mae",
+        "seed_coordinates": [
+          0,
+          40
+        ],
+        "seed_namespace": "archived_terminal",
+        "selected_theta": [
+          0.6803473830223083,
+          0.5,
+          2.0,
+          0.861842930316925
+        ],
+        "simulator_calls": 0,
+        "warnings": []
+      }
+    },
+    {
+      "baseline_size": 60,
+      "case_identity": "scalar-qlognei-archived-validation-case-v1-5695532efcb7d034b6fd64910d2cd2012dc6732ffd7090873aa979e8f462404d",
+      "fit": {
+        "botorch_version": "0.18.1",
+        "device": "cpu",
+        "dtype": "torch.float32",
+        "elapsed_seconds": 0.06446120000327937,
+        "fit_seed": 7024532427246815877,
+        "gpytorch_version": "1.15.2",
+        "model_id": "scalar-loss-single-task-gp-v1-4aca320b78b2c4aff146c9dec35cdc29be2aa227e8173b28bbd26474eba52b1a",
+        "precision_fallback_used": false,
+        "status": "success",
+        "training_covariance_dimension": 60,
+        "training_observation_count": 60,
+        "warnings": [
+          {
+            "category": "InputDataWarning",
+            "message": "The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/meta-pytorch/botorch/discussions/1444"
+          },
+          {
+            "category": "InputDataWarning",
+            "message": "The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/meta-pytorch/botorch/discussions/1444"
+          }
+        ]
+      },
+      "proposal": {
+        "baseline_covariance_dimension": 60,
+        "baseline_size": 60,
+        "batch_q": 1,
+        "candidate": [
+          0.7432793974876404,
+          0.5,
+          2.0,
+          1.0
+        ],
+        "candidate_source": "botorch_optimize_acqf",
+        "configuration": {
+          "acquisition": "botorch.qLogNoisyExpectedImprovement",
+          "batch_q": 1,
+          "botorch_version": "0.18.1",
+          "cholesky_policy": {
+            "implementation": "gpytorch.settings.cholesky_jitter",
+            "initial_float32_jitter": 1e-06,
+            "maximum_attempts": 3,
+            "unrecovered_action": "typed_failure_before_next_simulator_call"
+          },
+          "dtype_policy": "float32_end_to_end_v1",
+          "fit_max_iterations": 100,
+          "fit_seed": 7024532427246815877,
+          "gpytorch_version": "1.15.2",
+          "max_iterations": 64,
+          "model": "botorch.SingleTaskGP",
+          "n_mc": 256,
+          "objective": "negative_observed_physical_response_l1_mae",
+          "optimizer_seed": 1882499528221541078,
+          "policy_id": "scalar_qlognei_negative_physical_mae_v1",
+          "precision_fallback": "forbidden",
+          "raw_samples": 256,
+          "restarts": 10,
+          "sampler_seed": 8746121371896248031
+        },
+        "device": "cpu",
+        "dtype": "torch.float32",
+        "elapsed_seconds": 0.7204940999945393,
+        "log_acquisition_value": -3.069838047027588,
+        "optimizer_seed": 1882499528221541078,
+        "policy_id": "scalar_qlognei_negative_physical_mae_v1",
+        "precision_fallback_used": false,
+        "sampler_seed": 8746121371896248031,
+        "simulator_calls": 0,
+        "warnings": [
+          {
+            "category": "NumericalWarning",
+            "cholesky_jitter_added": 1e-06,
+            "message": "A not p.d., added jitter of 1.0e-06 to the diagonal"
+          },
+          {
+            "category": "RuntimeWarning",
+            "message": "Optimization failed in `gen_candidates_scipy` with the following warning(s):\n[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]\nTrying again with a new set of initial conditions."
+          },
+          {
+            "category": "RuntimeWarning",
+            "message": "Optimization failed on the second try, after generating a new set of initial conditions."
+          }
+        ]
+      },
+      "rank": 0,
+      "simulator_calls": 0,
+      "state_path": "experiments/paper/exploration/outputs/primary_nei_q1/qualification_post_smoke_attempt_6247700/workers/worker-00/trajectory_attempts/target-00-b100.json",
+      "state_sha256": "cedccf10132641f318d03e26389d61eb215f68d6210ba313262a468b5af43063",
+      "status": "passed",
+      "target_path": "experiments/paper/exploration/outputs/primary_nei_q1/target_construction/workers/target_ledger/target_000.json",
+      "target_sha256": "390c9ce75b48abb3adbac27fabcf161efef222721476f63d0c19d08056aa1e8d",
+      "terminal": {
+        "batch_q": 1,
+        "candidate_domain": "continuous_bounded_theta",
+        "derived_seed": 5822484829672241912,
+        "device": "cpu",
+        "dtype": "torch.float32",
+        "elapsed_seconds": 0.10791790000075707,
+        "gp_fits": 0,
+        "max_iterations": 64,
+        "model_id": "scalar-loss-single-task-gp-v1-4aca320b78b2c4aff146c9dec35cdc29be2aa227e8173b28bbd26474eba52b1a",
+        "policy_id": "continuous_scalar_posterior_mean_physical_mae_v1",
+        "precision_fallback_used": false,
+        "raw_samples": 1024,
+        "restarts": 10,
+        "score": 0.0034893155097961426,
+        "score_formula": "posterior_mean_observed_physical_response_l1_mae",
+        "seed_coordinates": [
+          0,
+          60
+        ],
+        "seed_namespace": "archived_terminal",
+        "selected_theta": [
+          0.8005905151367188,
+          0.5,
+          2.0,
+          1.0
+        ],
+        "simulator_calls": 0,
+        "warnings": []
+      }
+    },
+    {
+      "baseline_size": 34,
+      "case_identity": "scalar-qlognei-archived-validation-case-v1-2caf219fc74bc237fae32c7290bc7361a0fb4a93ec7146378643e633e3e90635",
+      "fit": {
+        "botorch_version": "0.18.1",
+        "device": "cpu",
+        "dtype": "torch.float32",
+        "elapsed_seconds": 0.22923849999642698,
+        "fit_seed": 7263968613735825066,
+        "gpytorch_version": "1.15.2",
+        "model_id": "scalar-loss-single-task-gp-v1-930107f1b7803a6a7f4277848bba4ff79028e5bc0842936974f16f826fb9d217",
+        "precision_fallback_used": false,
+        "status": "success",
+        "training_covariance_dimension": 34,
+        "training_observation_count": 34,
+        "warnings": [
+          {
+            "category": "InputDataWarning",
+            "message": "The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/meta-pytorch/botorch/discussions/1444"
+          },
+          {
+            "category": "InputDataWarning",
+            "message": "The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/meta-pytorch/botorch/discussions/1444"
+          }
+        ]
+      },
+      "proposal": {
+        "baseline_covariance_dimension": 34,
+        "baseline_size": 34,
+        "batch_q": 1,
+        "candidate": [
+          1.6558772325515747,
+          1.8187239170074463,
+          0.7173300981521606,
+          0.003356305882334709
+        ],
+        "candidate_source": "botorch_optimize_acqf",
+        "configuration": {
+          "acquisition": "botorch.qLogNoisyExpectedImprovement",
+          "batch_q": 1,
+          "botorch_version": "0.18.1",
+          "cholesky_policy": {
+            "implementation": "gpytorch.settings.cholesky_jitter",
+            "initial_float32_jitter": 1e-06,
+            "maximum_attempts": 3,
+            "unrecovered_action": "typed_failure_before_next_simulator_call"
+          },
+          "dtype_policy": "float32_end_to_end_v1",
+          "fit_max_iterations": 100,
+          "fit_seed": 7263968613735825066,
+          "gpytorch_version": "1.15.2",
+          "max_iterations": 64,
+          "model": "botorch.SingleTaskGP",
+          "n_mc": 256,
+          "objective": "negative_observed_physical_response_l1_mae",
+          "optimizer_seed": 452336466222137628,
+          "policy_id": "scalar_qlognei_negative_physical_mae_v1",
+          "precision_fallback": "forbidden",
+          "raw_samples": 256,
+          "restarts": 10,
+          "sampler_seed": 2557307829963855239
+        },
+        "device": "cpu",
+        "dtype": "torch.float32",
+        "elapsed_seconds": 0.39572929999849293,
+        "log_acquisition_value": -2.1797807216644287,
+        "optimizer_seed": 452336466222137628,
+        "policy_id": "scalar_qlognei_negative_physical_mae_v1",
+        "precision_fallback_used": false,
+        "sampler_seed": 2557307829963855239,
+        "simulator_calls": 0,
+        "warnings": [
+          {
+            "category": "NumericalWarning",
+            "cholesky_jitter_added": 1e-06,
+            "message": "A not p.d., added jitter of 1.0e-06 to the diagonal"
+          }
+        ]
+      },
+      "rank": 1,
+      "simulator_calls": 0,
+      "state_path": "experiments/paper/exploration/outputs/primary_nei_q1/qualification_post_smoke_attempt_6247700/workers/worker-01/trajectory_attempts/target-01-b100.json",
+      "state_sha256": "0d9194f5d776e23de1bc5f7cf41d5cceea36e5f43269aff6c326089b51cee244",
+      "status": "passed",
+      "target_path": "experiments/paper/exploration/outputs/primary_nei_q1/target_construction/workers/target_ledger/target_001.json",
+      "target_sha256": "cee2a5d981712efe36418cead637beb92f87eaeb6b8c3187a820858a21abbe6c",
+      "terminal": {
+        "batch_q": 1,
+        "candidate_domain": "continuous_bounded_theta",
+        "derived_seed": 6979320994392635143,
+        "device": "cpu",
+        "dtype": "torch.float32",
+        "elapsed_seconds": 0.1720318000006955,
+        "gp_fits": 0,
+        "max_iterations": 64,
+        "model_id": "scalar-loss-single-task-gp-v1-930107f1b7803a6a7f4277848bba4ff79028e5bc0842936974f16f826fb9d217",
+        "policy_id": "continuous_scalar_posterior_mean_physical_mae_v1",
+        "precision_fallback_used": false,
+        "raw_samples": 1024,
+        "restarts": 10,
+        "score": 0.01215207576751709,
+        "score_formula": "posterior_mean_observed_physical_response_l1_mae",
+        "seed_coordinates": [
+          1,
+          34
+        ],
+        "seed_namespace": "archived_terminal",
+        "selected_theta": [
+          1.3576816320419312,
+          2.0,
+          0.6956003904342651,
+          0.0
+        ],
+        "simulator_calls": 0,
+        "warnings": []
+      }
+    },
+    {
+      "baseline_size": 66,
+      "case_identity": "scalar-qlognei-archived-validation-case-v1-5ab821c7ddbf6f5681e3e1041c2d62df0eabd6e2600acb71efd2cadfd836904c",
+      "fit": {
+        "botorch_version": "0.18.1",
+        "device": "cpu",
+        "dtype": "torch.float32",
+        "elapsed_seconds": 0.20124650000070687,
+        "fit_seed": 5795752839906842415,
+        "gpytorch_version": "1.15.2",
+        "model_id": "scalar-loss-single-task-gp-v1-f0be1ec38ca5c380f167df8b1a9e43ea31f9da54de9b96cdce7851449b9bc581",
+        "precision_fallback_used": false,
+        "status": "success",
+        "training_covariance_dimension": 66,
+        "training_observation_count": 66,
+        "warnings": [
+          {
+            "category": "InputDataWarning",
+            "message": "The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/meta-pytorch/botorch/discussions/1444"
+          },
+          {
+            "category": "InputDataWarning",
+            "message": "The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/meta-pytorch/botorch/discussions/1444"
+          }
+        ]
+      },
+      "proposal": {
+        "baseline_covariance_dimension": 66,
+        "baseline_size": 66,
+        "batch_q": 1,
+        "candidate": [
+          0.5,
+          2.0,
+          1.250678300857544,
+          0.38976746797561646
+        ],
+        "candidate_source": "botorch_optimize_acqf",
+        "configuration": {
+          "acquisition": "botorch.qLogNoisyExpectedImprovement",
+          "batch_q": 1,
+          "botorch_version": "0.18.1",
+          "cholesky_policy": {
+            "implementation": "gpytorch.settings.cholesky_jitter",
+            "initial_float32_jitter": 1e-06,
+            "maximum_attempts": 3,
+            "unrecovered_action": "typed_failure_before_next_simulator_call"
+          },
+          "dtype_policy": "float32_end_to_end_v1",
+          "fit_max_iterations": 100,
+          "fit_seed": 5795752839906842415,
+          "gpytorch_version": "1.15.2",
+          "max_iterations": 64,
+          "model": "botorch.SingleTaskGP",
+          "n_mc": 256,
+          "objective": "negative_observed_physical_response_l1_mae",
+          "optimizer_seed": 3568985140902143365,
+          "policy_id": "scalar_qlognei_negative_physical_mae_v1",
+          "precision_fallback": "forbidden",
+          "raw_samples": 256,
+          "restarts": 10,
+          "sampler_seed": 3358504339513068420
+        },
+        "device": "cpu",
+        "dtype": "torch.float32",
+        "elapsed_seconds": 0.7152160000041476,
+        "log_acquisition_value": -4.22548770904541,
+        "optimizer_seed": 3568985140902143365,
+        "policy_id": "scalar_qlognei_negative_physical_mae_v1",
+        "precision_fallback_used": false,
+        "sampler_seed": 3358504339513068420,
+        "simulator_calls": 0,
+        "warnings": [
+          {
+            "category": "RuntimeWarning",
+            "message": "Optimization failed in `gen_candidates_scipy` with the following warning(s):\n[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]\nTrying again with a new set of initial conditions."
+          }
+        ]
+      },
+      "rank": 3,
+      "simulator_calls": 0,
+      "state_path": "experiments/paper/exploration/outputs/primary_nei_q1/qualification_post_smoke_attempt_6247700/workers/worker-03/trajectory_attempts/target-03-b100.json",
+      "state_sha256": "58bbdc67d4f1a3be943fb765dc4ca01e6cc286b8579a91da0e4cc627ad0f78b0",
+      "status": "passed",
+      "target_path": "experiments/paper/exploration/outputs/primary_nei_q1/target_construction/workers/target_ledger/target_003.json",
+      "target_sha256": "9afe9c94ec59ada7ad749201645a8a3e5b3eaf9e1c1bff81238af1fa4fdff35a",
+      "terminal": {
+        "batch_q": 1,
+        "candidate_domain": "continuous_bounded_theta",
+        "derived_seed": 6529771996402859902,
+        "device": "cpu",
+        "dtype": "torch.float32",
+        "elapsed_seconds": 0.16342980000626994,
+        "gp_fits": 0,
+        "max_iterations": 64,
+        "model_id": "scalar-loss-single-task-gp-v1-f0be1ec38ca5c380f167df8b1a9e43ea31f9da54de9b96cdce7851449b9bc581",
+        "policy_id": "continuous_scalar_posterior_mean_physical_mae_v1",
+        "precision_fallback_used": false,
+        "raw_samples": 1024,
+        "restarts": 10,
+        "score": 0.02233603596687317,
+        "score_formula": "posterior_mean_observed_physical_response_l1_mae",
+        "seed_coordinates": [
+          3,
+          66
+        ],
+        "seed_namespace": "archived_terminal",
+        "selected_theta": [
+          0.5643159747123718,
+          1.9450539350509644,
+          1.2551668882369995,
+          0.4032670557498932
+        ],
+        "simulator_calls": 0,
+        "warnings": []
+      }
+    }
+  ],
+  "classification": "zero_call_numerical_prequalification_not_performance_evidence",
+  "configuration": "experiments/graph_inversion/configs/paper/policy_upgrade_100_targets_v1.json",
+  "configuration_sha256": "5e44d50a0073706dbe692bfd1c9627ee34b67791d7e32d94898c8928a44bc7bf",
+  "dtype": "torch.float32",
+  "gpytorch_version": "1.15.2",
+  "jobs_submitted": 0,
+  "precision_fallback_used": false,
+  "schema_version": "mutaco-scalar-qlognei-archived-validation-v1",
+  "scientific_calls": 0,
+  "settings": "experiments/graph_inversion/configs/paper/scalar_qlognei_primary_settings_v1.json",
+  "settings_identity": "scalar-qlognei-primary-settings-v1-0f64f21df9b925a5508d90420f1179941174d300d0d38a11ac162044f3540a6d",
+  "status": "passed",
+  "validation_identity": "scalar-qlognei-archived-validation-v1-4be73d233a10fccfd24274d17e400963db4c40be105e2a9e70927870e2a3c926"
+}

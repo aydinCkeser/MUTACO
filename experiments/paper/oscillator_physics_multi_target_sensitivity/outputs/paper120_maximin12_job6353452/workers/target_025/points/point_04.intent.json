@@ -1,0 +1,17 @@
+{
+  "attempt_index": 0,
+  "declaration_identity": "mutaco-oscillator-physics-multitarget-declaration-v1-22becfc33c2d62850044fec060cd3bec361c86f832a4a879adc94416f818f73c",
+  "evaluation_seed": 1662995696984675293,
+  "global_point_index": 4,
+  "maximum_transport_calls": 1,
+  "retry_calls": 0,
+  "schema_version": "mutaco-oscillator-physics-multitarget-point-intent-v1",
+  "target_index": 25,
+  "target_point_index": 4,
+  "theta": [
+    1.3490705490112305,
+    1.3436427116394043,
+    0.8997527956962585,
+    0.6326565742492676
+  ]
+}

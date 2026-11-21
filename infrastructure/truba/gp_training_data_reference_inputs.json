@@ -1,0 +1,22 @@
+{
+  "accepted_source": "415c9eab620fe8e6e1a9b85b26990d17b347043b",
+  "accepted_test_execution_snapshot": "e4867390d85be7be5ec796aef429830295b66256",
+  "baseline": "aa7f4feb58302ecf6abfa6dee2d81071eabb7fe3",
+  "derived_summaries_are_not_raw_inputs": true,
+  "expected_added_tests": 10,
+  "new_test_prefixes": [
+    "test_gp_training_preparation_initial_and_updates[",
+    "test_gp_training_preparation_keeps_duplicate_parameter_rows[",
+    "test_gp_training_preparation_excludes_partial_evaluations[",
+    "test_gp_training_preparation_reachable_standardization_overflow["
+  ],
+  "raw_inputs": {
+    "accepted-tests-status.json": "e25b18a18bcc8f3f9825e0c7ee278f73fe380ece55f08b06ad0dea72a89572b0",
+    "accepted-tests.xml": "42614e82440e25a64be1351ebd1fcf58a6ba2488e29ee9b94692af0e0e5550b2",
+    "b100-capture.json.gz": "1865655feddf8658f534e029b89212f2e5a1b0bf308f099705e584bde641e156",
+    "b100-history.json.gz": "09e2df33bdfba7cc7ccb331a2995d81bda7e1ae13d5d6f61569904574b6a7e57",
+    "b40-capture.json.gz": "029632e4d0f863a4d1e4c8014a88eca94a0b7eee59517152cbfa80d8919604c2",
+    "b40-history.json.gz": "cc7974d202ecaa5444946aae45965c01f9cf93a10b027f253e71e30a7494dad2"
+  },
+  "schema": "mutaco-gp-training-data-private-inputs-v1"
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "mutaco-terminal-domain-ablation-declaration-v1",
+  "declaration_id": "paper120_b40_mutaco_terminal_domain_refit_v1",
+  "scientific_question": "continuous versus evaluated-only terminal candidate domain under one shared refitted final MUTACO surrogate",
+  "source": {
+    "campaign_id": "graph_paper120_scalar_primary_b40_v1",
+    "budget": 40,
+    "method": "mutaco",
+    "target_count": 120,
+    "compact_export": "experiments/paper/exploration/outputs/scalar_primary_smoke/population_b40_v3r2_compact_fetch/population/collection/compact_export.json",
+    "compact_export_sha256": "f02bd7343292cf0a9768fb83ffc85019177feceb0afb1003c65f834b3ffcbbe9",
+    "cohort": "data/cohorts/paper120_v3",
+    "configuration": "experiments/graph_inversion/configs/paper/policy_upgrade_100_targets_v1.json",
+    "population_declaration": "experiments/graph_inversion/configs/paper/scalar_primary_population_b40_v3r2.json"
+  },
+  "final_refit": {
+    "dtype": "float32",
+    "device": "cpu",
+    "torch_intraop_threads": 8,
+    "torch_interop_threads": 1,
+    "omp_threads": 8,
+    "mkl_threads": 8,
+    "openblas_threads": 8,
+    "response_transform_fit_domain": "first_16_archived_observations",
+    "training_domain": "all_40_archived_observations_in_recorded_order",
+    "gp_settings_source": "configuration.runner.gp",
+    "fit_policy": "one_deterministic_cold_optimization_attempt",
+    "fit_seed_root_source": "population_declaration.comparison.inference_campaign_seed",
+    "fit_seed_namespace": "terminal_ablation_final_gp_refit"
+  },
+  "policies": {
+    "evaluated_only": "B_prime_evaluated_posterior_mean_physical_mae_v1",
+    "continuous": "continuous_posterior_mean_physical_l1_mae",
+    "shared_score": "mean_m_abs_mu_physical_m_minus_target_physical_m",
+    "tie_break": "earliest_evaluation_index"
+  },
+  "continuous_optimizer": {
+    "settings_source": "mutaco.recommendation.physical_mae.CONTINUOUS_PHYSICAL_MAE_SETTINGS",
+    "seed_root_source": "population_declaration.comparison.terminal_campaign_seed"
+  },
+  "distance": {
+    "coordinate_system": "parameter_bounds_normalized_to_unit_box",
+    "displacement_norm": "l2",
+    "near_equality_norm": "linf",
+    "near_equality_tolerance": 1e-6,
+    "exact_equality": "torch.equal"
+  },
+  "interpretation": {
+    "causal_comparison": "B_prime_vs_C_prime_terminal_candidate_domain_only",
+    "archived_continuous_recommendation_comparison": "prohibited_as_causal_ablation",
+    "heldout_assessment": "not_executed"
+  },
+  "call_accounting": {
+    "simulator_constructed": false,
+    "simulator_calls": 0
+  }
+}

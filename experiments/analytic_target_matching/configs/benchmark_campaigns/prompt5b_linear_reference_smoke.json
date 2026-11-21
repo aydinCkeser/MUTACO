@@ -1,0 +1,45 @@
+{
+  "schema_version": "mutaco-benchmark-campaign-v1",
+  "campaign_classification": "mechanical_smoke",
+  "dtype": "float64",
+  "device": "auto",
+  "campaign": {
+    "target_count": 2,
+    "target_bank_policy": "scrambled_sobol",
+    "campaign_seed": 71001,
+    "replay_policy": "first_middle_last"
+  },
+  "simulator": {
+    "adapter": "linear_diagnostic",
+    "identifier": "linear_diagnostic"
+  },
+  "comparison_set": {
+    "policy": "full_bank"
+  },
+  "reference_method": "mutaco",
+  "sbi_methods": [],
+  "views": [],
+  "regimes": [],
+  "runner": {
+    "initial_points": 4,
+    "sequential_rounds": 1,
+    "transform": {
+      "ddof": 1,
+      "scale_floor": 1e-12
+    },
+    "gp": {
+      "likelihood": "task_diagonal_gaussian",
+      "max_iterations": 2
+    },
+    "acquisition": {
+      "raw_policy": "scrambled_sobol",
+      "raw_samples": 8,
+      "restarts": 1,
+      "max_iterations": 1,
+      "learning_rate": 0.05,
+      "alpha": 0.1,
+      "tau_interior": 1e-8
+    },
+    "recommendation_policy": "final_posterior_standardized_l1"
+  }
+}

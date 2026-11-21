@@ -1,0 +1,15 @@
+{
+  "b100_raw_trajectories_verified": 120,
+  "exact_state_cases_passed": 240,
+  "package_identity": "repaired-sbi-recovery-qualification-package-v1-59b60902132c611f80695f52cddc061c53570a26de2fb41f09f0759897c55890",
+  "population_exact_state_replay_complete": true,
+  "qualification_content_identity": "repaired-sbi-qualification-file-v1-224e3bfebc706886db57fad142eda9d09321754f993fab1642f6f9ad104b9ac9",
+  "qualification_identity": "repaired-sbi-exact-state-qualification-v1-843aeb4d8cae6bb30d79ce7b660056386f2f8f43443ef67953607870f1c9cb6d",
+  "recovery_content_identity": "repaired-sbi-recovery-file-v1-cc91a5ea005c2b78d917923aad821619e3751f6de7266c9d3bf1a3333afdf1b3",
+  "recovery_identity": "repaired-sbi-b100-raw-recovery-v1-0b92638d9cef2e05f1d341e582d3afbbb27df87f3aacfad74e1671b16ed0917f",
+  "schema_version": "mutaco-repaired-sbi-recovery-qualification-package-v1",
+  "scientific_calls": 0,
+  "search_reruns_required": 0,
+  "terminal_generation_authorized": false,
+  "truba_jobs_submitted": 0
+}

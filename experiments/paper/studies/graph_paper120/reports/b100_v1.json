@@ -1,0 +1,42 @@
+{
+  "schema_version": "mutaco-paper-report-spec-v1",
+  "report_id": "graph_paper120_b100_v1",
+  "study_id": "graph_paper120_three_method",
+  "state": "accepted_canonical_evidence",
+  "inference_budget_per_method_target": 100,
+  "methods": ["mutaco", "sbi_npe", "sbi_snpe"],
+  "source": {
+    "state": "accepted_tracked_evidence",
+    "path": "benchmarks/paper/graph_paper120/b100_v1/manifest.json",
+    "sha256": "14de31cc009fffc8003bb1bb3ef67d43d349eef2982d9a513740c76618eca936"
+  },
+  "output": "docs/paper/results/graph_paper120_b100_v1.md",
+  "sections": ["status", "parameters", "method_metrics", "paired_results", "accounting", "provenance"],
+  "claims": {
+    "target_count": 120,
+    "methods": {
+      "mutaco": {
+        "response_error_mae": {"mean": 0.03899742913274474, "median": 0.032616807999920644},
+        "response_error_l2": {"mean": 0.2650661531324628, "median": 0.22244794703925297},
+        "parameter_error_l2": {"mean": 0.3917220889679006, "median": 0.34537556448182394}
+      },
+      "sbi_npe": {
+        "response_error_mae": {"mean": 0.06713414994018788, "median": 0.05395703199706077},
+        "response_error_l2": {"mean": 0.47807929307983593, "median": 0.36452527471196206},
+        "parameter_error_l2": {"mean": 0.36991915273032056, "median": 0.3583801062931798}
+      },
+      "sbi_snpe": {
+        "response_error_mae": {"mean": 0.07558378741768929, "median": 0.043884739081386216},
+        "response_error_l2": {"mean": 0.5402167901254076, "median": 0.3015827814892311},
+        "parameter_error_l2": {"mean": 0.42839725431627873, "median": 0.41539938633820034}
+      }
+    },
+    "paired_response_mae": {
+      "mutaco__sbi_npe": {"mean_left_minus_right": -0.028136720807443134, "left_wins": 78, "ties": 0, "left_losses": 42, "paired_mean_bootstrap_95_percentile_interval": [-0.040837308308665964, -0.016941881667029073]},
+      "mutaco__sbi_snpe": {"mean_left_minus_right": -0.03658635828494454, "left_wins": 77, "ties": 0, "left_losses": 43, "paired_mean_bootstrap_95_percentile_interval": [-0.053335941714207406, -0.021392495931121365]},
+      "sbi_npe__sbi_snpe": {"mean_left_minus_right": -0.008449637477501406, "left_wins": 59, "ties": 0, "left_losses": 61, "paired_mean_bootstrap_95_percentile_interval": [-0.027056603779289947, 0.01079396344962782]}
+    },
+    "physical_calls": {"attempted_calls": 36360, "successful_calls": 36360, "failed_calls": 0, "retry_calls": 0}
+  },
+  "report_identity": "paper-report-spec-v1-01b7c06fdb1a810e233d11ba3142063d8ee23386e6fdf96337964c10bfbfff49"
+}

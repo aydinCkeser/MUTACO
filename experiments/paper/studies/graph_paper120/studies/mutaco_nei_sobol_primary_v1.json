@@ -1,0 +1,138 @@
+{
+  "schema_version": "mutaco-paper-study-spec-v1",
+  "study_id": "graph_paper120_mutaco_nei_sobol_primary",
+  "revision": "v1",
+  "classification": "primary_three_method_benchmark",
+  "status": "scientific_contract_frozen_implementation_unapproved",
+  "domain": "graph_oscillator_inverse_problem",
+  "authority": "scientific/primary_benchmark_protocol/README.md",
+  "scientific_inputs": {
+    "cohort_manifest": "data/cohorts/paper120_v3/manifest.json",
+    "target_ledger_sha256": "359fc0bb59fc9a8a52f5da684e7a7eb352466bdc0d0a54fb8efa94131ce423bb",
+    "target_count": 120,
+    "response_dimension": 20,
+    "methods": ["mutaco", "nei_bo", "sobol"],
+    "budgets": [40, 100],
+    "budgets_are_independent_campaigns": true,
+    "initial_points": 16,
+    "hidden_theta_available_to_methods": false
+  },
+  "comparison_interpretation": {
+    "mutaco_vs_nei_bo": "controlled_acquisition_policy_comparison_under_common_gp_and_terminal_optimizer",
+    "mutaco_vs_sobol": "end_to_end_adaptive_model_based_vs_nonadaptive_surrogate_free_comparison",
+    "three_way_sampling_policy_only_claim_allowed": false
+  },
+  "design": {
+    "policy": "single_scrambled_sobol_sequence_per_target_budget_v1",
+    "sequence_length": "budget",
+    "shared_prefix_length": 16,
+    "continuation_owner": "sobol",
+    "separate_initial_and_continuation_engines_allowed": false,
+    "shared_simulator_randomness_during_search": false
+  },
+  "surrogate": {
+    "mutaco_and_nei_share_canonical_multioutput_gp": true,
+    "shared_preprocessing_and_recovery": true,
+    "standardization_fitted_once_from_complete_initial_design": true,
+    "sobol_uses_surrogate": false,
+    "sobol_posthoc_gp_allowed": false
+  },
+  "acquisitions": {
+    "mutaco": "canonical_registered_profile",
+    "nei_bo": {
+      "policy": "composite_mc_nei_physical_mae_v1",
+      "batch_q": 1,
+      "posterior_samples": "joint_latent_baseline_and_candidate",
+      "new_observation_noise_sampled": false,
+      "objective": "physical_response_l1_mae_after_inverse_standardization",
+      "common_base_samples_within_optimization": true,
+      "conditional_joint_sampling_allowed": true,
+      "independent_marginal_sampling_allowed": false,
+      "local_failure_policy": "best_ranked_finite_unevaluated_raw_v1",
+      "raw_tie_rule": "earliest_raw_candidate",
+      "production_n_mc": null,
+      "production_raw_candidates": null,
+      "production_local_starts": null,
+      "production_optimization_steps": null,
+      "production_learning_rate": null,
+      "production_values_status": "must_be_frozen_by_qualification_before_population_declaration"
+    },
+    "sobol": "none"
+  },
+  "terminal_policies": {
+    "mutaco": "continuous_posterior_mean_physical_l1_mae",
+    "nei_bo": "continuous_posterior_mean_physical_l1_mae",
+    "adaptive_common_start_geometry": true,
+    "sobol": "evaluated_best_observed_physical_mae_v1",
+    "sobol_tie_rule": "earliest_evaluation",
+    "terminal_simulator_calls": 0
+  },
+  "randomness_coordinates": {
+    "sobol_design": ["campaign", "target", "budget", "sobol_design"],
+    "search_simulation": ["campaign", "target", "budget", "method", "evaluation_index", "simulation"],
+    "gp_fit": ["campaign", "target", "budget", "method", "training_version", "attempt", "gp_fit"],
+    "mutaco_proposal": ["campaign", "target", "budget", "method", "iteration", "mutaco_proposal"],
+    "nei_mc": ["campaign", "target", "budget", "method", "iteration", "optimization_stage", "nei_mc"],
+    "nei_optimizer": ["campaign", "target", "budget", "method", "iteration", "nei_optimizer"],
+    "continuous_terminal": ["campaign", "target", "budget", "continuous_terminal"],
+    "heldout": ["campaign", "target", "budget", "replicate", "heldout"]
+  },
+  "assessment": {
+    "policy": "paired_held_out_assessment_v1",
+    "metric": "paired_one_realization_heldout_physical_response_mae",
+    "replicates": 1,
+    "method_independent_context": true,
+    "after_all_decisions_frozen": true,
+    "inside_search_budget": false
+  },
+  "qualification": {
+    "target_disposition": "five_frozen_off_cohort_targets",
+    "nei_only_budgets": [40, 100],
+    "nei_only_search_call_cap": 700,
+    "heldout_calls_for_numerical_selection": 0,
+    "reference_batches": 4,
+    "reference_samples_per_batch": 4096,
+    "run_scale": "max(median_initial_design_observed_physical_mae,1e-12)",
+    "normalized_regret_denominator": "max(reference_max_nei,0.01*run_scale)",
+    "minimum_optimizer_success_rate": 0.95,
+    "maximum_median_normalized_regret": 0.01,
+    "maximum_p90_normalized_regret": 0.05,
+    "performance_comparator_results_allowed_for_selection": false,
+    "independent_three_method_b40_smoke_call_cap": 123,
+    "planned_total_call_cap_excluding_target_construction": 823,
+    "scientific_execution_authorized": false
+  },
+  "statistics": {
+    "paired_difference_sign": "mutaco_minus_comparator_negative_favors_mutaco",
+    "primary_summary": "median_paired_target_difference",
+    "supporting_summaries": ["mean_paired_difference", "iqr", "win_probability", "marginal_distributions"],
+    "uncertainty": "deterministic_paired_target_bootstrap",
+    "cross_budget_resampling_unit": "target_cluster",
+    "formal_test_multiplicity_if_used": "holm_over_four_budget_comparator_combinations",
+    "failure_reporting": "four_way_pair_completion_table_plus_failure_aware_sensitivity"
+  },
+  "call_accounting": {
+    "b40_search_calls": 14400,
+    "b40_assessment_calls": 360,
+    "b40_total_calls": 14760,
+    "b40_calls_per_target": 123,
+    "b100_search_calls": 36000,
+    "b100_assessment_calls": 360,
+    "b100_total_calls": 36360,
+    "b100_calls_per_target": 303,
+    "full_search_calls": 50400,
+    "full_assessment_calls": 720,
+    "full_total_calls": 51120,
+    "target_construction_calls": 0,
+    "terminal_calls": 0,
+    "automatic_campaign_retry": false
+  },
+  "execution": {
+    "implementation_authorized": false,
+    "qualification_authorized": false,
+    "truba_submission_authorized": false,
+    "population_campaign_authorized": false,
+    "scientific_calls_executed_by_freeze": 0
+  },
+  "study_identity": "paper-study-spec-v1-be2d8718a2e931174e21a0e5e34c096819cdf9ef65c46724bb4ca02846120d80"
+}

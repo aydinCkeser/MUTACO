@@ -1,0 +1,55 @@
+{
+  "archive_audit": {
+    "archive_root": "experiments/paper/exploration/outputs/primary_nei_q1/qualification_evidence_repair_attempt_6246600/workers",
+    "b40_completed_records": 5,
+    "historical_restart_histories": 50,
+    "historical_restart_histories_with_one_iteration": 50,
+    "historical_returned_candidate_sources": {
+      "raw_fallback": 1,
+      "refined": 4
+    },
+    "interpretation": "historical defect diagnosis only; not new scientific performance evidence",
+    "reexecution": {
+      "performed": false,
+      "reason": "the local archive preserves final GP parameter snapshots and search responses but not the frozen target-response ledger or a directly loadable surrogate object"
+    }
+  },
+  "covariance_policy": {
+    "changed": false,
+    "policy_id": "promoted_float64_cholesky_zero_jitter_v1"
+  },
+  "defect": {
+    "affected_methods": [
+      "mutaco",
+      "nei_bo"
+    ],
+    "boundary": "shared continuous physical terminal optimizer",
+    "explanation": "the first convergence comparison used the raw-start score and the pre-update score at the same state, forcing every restart to terminate after its first Adam update",
+    "sobol_affected": false
+  },
+  "diagnostic_identity": "continuous-terminal-optimizer-repair-diagnostic-v1-324fda6de8a3736ae8a765167aa50449d4573ea891c8d51e734f77c620eb1dcf",
+  "implementation": {
+    "best_state_policy": "best finite non-worsening post-update state per restart; otherwise best finite raw fallback",
+    "convergence_policy": "compare raw-start with first post-update score and then successive post-update scores",
+    "historical_evidence_changed": false,
+    "objective_changed": false,
+    "primary_benchmark_policy_changed": false,
+    "restart_geometry_changed": false,
+    "seed_coordinates_changed": false,
+    "settings_changed": false
+  },
+  "schema_version": "mutaco-continuous-terminal-optimizer-repair-diagnostic-v1",
+  "scientific_calls": 0,
+  "simulator_calls": 0,
+  "source_commit": "9603305a7f7f7b6c6f93586aa5728c0dc2393237",
+  "source_parent_commit": "98753e1e2a8bd5e2c1aa70a4dba7295802d26640",
+  "status": "completed_zero_call",
+  "tests": {
+    "focused_terminal_tests_passed": 8,
+    "full_suite_passed": 421,
+    "full_suite_skipped": 8,
+    "pinned_environment": "mutaco-sbi",
+    "torch": "2.12.1+cpu"
+  },
+  "truba_jobs_submitted": 0
+}

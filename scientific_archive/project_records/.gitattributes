@@ -1,0 +1,3 @@
+# Preserve the original byte policies of the four Paper-100 inventory files.
+benchmark* -text -eol
+registry.json -text -eol

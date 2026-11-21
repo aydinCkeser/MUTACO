@@ -1,0 +1,16 @@
+{
+  "assessment_execution_authorized": false,
+  "declaration_content_identity": "repaired-sbi-assessment-declaration-file-v1-66032b9758e06092aaa5a2635facf9653a6d8ff7c469d0bdca66b6321e96cb44",
+  "declaration_identity": "repaired-sbi-assessment-declaration-v1-acd75ed8d2fcc424f5b2bd68f092c3f2f4fa61fdbec4195d355a7b033f01492f",
+  "maximum_future_assessment_calls": 720,
+  "package_identity": "repaired-sbi-assessment-preparation-package-v1-15191325a32642bc9da1f6e4514cc7f84208263f62e8bc642832a18722f8eb46",
+  "preparation_content_identity": "repaired-sbi-assessment-preparation-file-v1-85e677d6bbbc973fafc15c784dc9fcee16531065e42a95fa30d975660ac94b12",
+  "preparation_identity": "repaired-sbi-assessment-preparation-v1-4ce37f910f76ea7d9c8dd76178f003471a092c6163754c384bbc829ced41291b",
+  "schema_version": "mutaco-repaired-sbi-assessment-preparation-package-v1",
+  "scientific_calls": 0,
+  "task_count": 720,
+  "tasks_content_identity": "repaired-sbi-assessment-tasks-file-v1-a083f7d50486ef4dd2b090e9a9ec1b80c887f92ad49c432f196d8a504d475950",
+  "tasks_identity": "repaired-sbi-assessment-task-list-v1-a9ae8aa77ea067d40f83d68d7079104893cba2e72beddb9ddad6e4a23a6f17c3",
+  "truba_preparation_authorized": false,
+  "truba_submission_authorized": false
+}

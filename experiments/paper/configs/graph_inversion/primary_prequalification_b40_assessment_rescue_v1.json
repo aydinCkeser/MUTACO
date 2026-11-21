@@ -1,0 +1,51 @@
+{
+  "assessment_replicate": 0,
+  "automatic_retry": false,
+  "budget": 40,
+  "campaign_id": "graph_primary_prequalification_b40_integration_smoke_v1",
+  "classification": "prequalification_engineering_rescue_not_q1_or_primary_performance_evidence",
+  "configuration_sha256": "5e44d50a0073706dbe692bfd1c9627ee34b67791d7e32d94898c8928a44bc7bf",
+  "decision_freeze_identity": "primary-all-method-decision-freeze-v1-bab64af25214969d97fb20803f4975e2c094faa10ab0c1ed9541e4803f9eca03",
+  "decision_freeze_sha256": "62b8a2797b326995852de2cd388ce14ca5edf38f6d5a810e8a4f8e357e1de9b5",
+  "declaration_identity": "primary-assessment-rescue-declaration-v1-d8ba3e2b6ac742a4b5824d5adfc9db11a76e172f823b5017e4ff7c504f2f57c8",
+  "maximum_assessment_calls": 3,
+  "methods": [
+    {
+      "method": "mutaco",
+      "recommended_theta": [
+        1.2309844493865967,
+        0.8728883862495422,
+        2.0,
+        0.6750051975250244
+      ]
+    },
+    {
+      "method": "nei_bo",
+      "recommended_theta": [
+        1.1838120222091675,
+        0.7506611347198486,
+        2.0,
+        0.7801502346992493
+      ]
+    },
+    {
+      "method": "sobol",
+      "recommended_theta": [
+        0.8270516395568848,
+        0.5468377470970154,
+        1.926875352859497,
+        0.20393967628479004
+      ]
+    }
+  ],
+  "output_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/primary_three_method_smoke/assessment-rescue-v1/workers",
+  "primary_benchmark_evidence_eligible": false,
+  "primary_declaration_identity": "primary-population-declaration-v1-27e5747d2e155163b7b7f5957eeec0c03a3ca40bfde459c2746c39c7b9835d2c",
+  "schema_version": "mutaco-primary-assessment-rescue-declaration-v1",
+  "scientific_submission_authorized": false,
+  "search_calls": 0,
+  "source_attempt_commit": "a398ed58eef4449ee8aebb98a21243c1863cb3fb",
+  "source_attempt_job_id": 6247524,
+  "state": "declared_unexecuted_submission_unauthorized",
+  "target_id": "frozen-target-record-v2-55ef79e8c497a3d9e186553901b04d909b2de06d145b70f177968372063f8693"
+}

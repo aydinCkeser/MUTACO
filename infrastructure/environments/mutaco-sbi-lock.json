@@ -1,0 +1,31 @@
+{
+  "schema_version": "mutaco-sbi-environment-lock-v1",
+  "resolved_on": "2026-07-29",
+  "construction": {
+    "base": "clone of mutaco-dev",
+    "additional_requirement": "sbi==0.26.1",
+    "mutaco_dev_modified": false
+  },
+  "python": "3.11.15",
+  "packages": {
+    "botorch": "0.18.1",
+    "gpytorch": "1.15.2",
+    "matplotlib": "3.11.1",
+    "nflows": "0.14",
+    "numpy": "2.4.6",
+    "psutil": "7.2.2",
+    "pytest": "9.1.1",
+    "sbi": "0.26.1",
+    "scipy": "1.17.1",
+    "skorch": "1.4.0",
+    "tensorboard": "2.21.0",
+    "torch": "2.12.1+cpu",
+    "zuko": "1.6.0"
+  },
+  "cuda_verified": false,
+  "notes": [
+    "The local resolved Torch build is CPU-only.",
+    "A CUDA environment must resolve and record its own Torch build.",
+    "SBI 0.25.0 was rejected because its torch<2.6 constraint conflicts with MUTACO."
+  ]
+}

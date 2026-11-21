@@ -1,0 +1,80 @@
+{
+  "schema_version": "mutaco-scalar-qlognei-fallback-provenance-repair-v1",
+  "evidence_identity": "scalar-qlognei-fallback-provenance-repair-v1-bf15388d14777ab8151fd90da50d23aaafa41d2dcf13afa9a32fe06162e679ee",
+  "status": "complete_zero_call",
+  "role": "diagnostic_only_evidence_repair_no_policy_change",
+  "implementation_commit": "6f096e7e135b8b67259190e40134174a4b98bee3",
+  "implementation": "experiments/benchmarking/methods/scalar_qlognei.py",
+  "implementation_sha256": "7902560a253003a2bfc3f8dd03d4eb8d92db8c42cf8f13f77850277aa73dc9f1",
+  "test_file": "tests/experiments/test_scalar_qlognei.py",
+  "test_file_sha256": "a150292e0073243fbb2e06c6395254279a91bd796cfa42ef67d7b39317fcebc8",
+  "new_provenance_field": "fallback_trigger",
+  "fallback_trigger_fields": [
+    "stage",
+    "optimizer_returned",
+    "exception_type",
+    "exception_message",
+    "trigger_reasons",
+    "rejected_candidate",
+    "rejected_candidate_finite",
+    "rejected_candidate_nonfinite",
+    "rejected_log_acquisition_value",
+    "rejected_log_acquisition_value_finite",
+    "rejected_log_acquisition_value_nonfinite_kind",
+    "exact_duplicate_indices_zero_based"
+  ],
+  "path_safety": {
+    "nonfinite_candidate_values_enter_json": false,
+    "nonfinite_acquisition_values_enter_json": false,
+    "nonfinite_kind_tags": ["nan", "+inf", "-inf"],
+    "successful_official_optimizer_has_null_fallback_trigger": true,
+    "failed_raw_fallback_envelope_includes_optimizer_trigger": true
+  },
+  "policy_invariants": {
+    "scalar_objective_changed": false,
+    "gp_model_changed": false,
+    "gp_fit_changed": false,
+    "qlognei_construction_changed": false,
+    "optimizer_settings_changed": false,
+    "raw_fallback_generation_changed": false,
+    "raw_fallback_ranking_changed": false,
+    "candidate_selection_changed": false,
+    "seed_coordinates_changed": false,
+    "dtype_changed": false,
+    "precision_policy_changed": false,
+    "terminal_policy_changed": false,
+    "automatic_retry_changed": false
+  },
+  "regressions": {
+    "official_optimizer_success_records_null_trigger": true,
+    "exact_duplicate_records_rejected_candidate_and_duplicate_index": true,
+    "duplicate_fallback_is_deterministic": true,
+    "nonfinite_candidate_is_encoded_without_nonfinite_json": true,
+    "nonfinite_value_is_encoded_without_nonfinite_json": true,
+    "optimizer_exception_type_and_message_are_recorded": true,
+    "fallback_candidate_is_finite_and_unevaluated": true,
+    "ambient_torch_rng_preserved": true,
+    "archived_state_returned_candidates_unchanged": true,
+    "archived_exact_fallback_reproductions": 5,
+    "archived_platform_divergent_states": 3
+  },
+  "validation": {
+    "full_suite": "456_passed_8_skipped",
+    "focused_suite_after_final_failure_envelope_change": "9_passed",
+    "archived_state_replay": "passed_zero_call_same_5_exact_and_3_platform_divergent_classification",
+    "scientific_calls": 0,
+    "jobs_submitted": 0
+  },
+  "compatibility": {
+    "settings_sha256": "d932763c41356d9a756e84b82abc4af661bb68422566b704dd5d2da8db844788",
+    "settings_identity": "scalar-qlognei-primary-settings-v1-0f64f21df9b925a5508d90420f1179941174d300d0d38a11ac162044f3540a6d",
+    "settings_identity_unchanged": true,
+    "b40_historical_record_sha256": "faca64ed7be0e6d359fa7e19ebd9a50ea85f4b133b1eb78ca32f23c90cfa7503",
+    "b100_historical_record_sha256": "5a57b06d150fbe2505ec244b697d9a53d0957e69d9c9c4e970383fa0542a7315",
+    "historical_records_immutable": true,
+    "future_evidence_identities_include_new_provenance": true
+  },
+  "scientific_calls": 0,
+  "jobs_submitted": 0,
+  "population_submission_authorized": false
+}

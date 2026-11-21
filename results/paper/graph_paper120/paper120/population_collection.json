@@ -1,0 +1,702 @@
+{
+  "collected_slot_count": 240,
+  "declaration_identity": "paper-population-declaration-v3-ee470d7c6fe6de7f42f4eec6ed3768fe573127948d24a480cdae19aea40c3d1b",
+  "declaration_sha256": "5fb7a53565517aa1f51d3134dc6d24af2ae53b18d51c538072848085987bc3f5",
+  "declared_method_count": 2,
+  "declared_slot_count": 240,
+  "declared_target_count": 120,
+  "errors": [],
+  "physical_calls": {
+    "attempted_calls": 9840,
+    "failed_calls": 0,
+    "maximum_calls": 9840,
+    "successful_calls": 9840
+  },
+  "schema_version": "mutaco-paper120-v3-global-collection-v1",
+  "scientific_calls_added_by_collection": 0,
+  "source_commit": "9235d2fefefa6af0d35cc3af2dfaa01a2d56a3a9",
+  "status": "completed",
+  "worker_count": 40,
+  "workers": [
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 0,
+      "target_positions": [
+        0,
+        40,
+        80
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 1,
+      "target_positions": [
+        1,
+        41,
+        81
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 2,
+      "target_positions": [
+        2,
+        42,
+        82
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 3,
+      "target_positions": [
+        3,
+        43,
+        83
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 4,
+      "target_positions": [
+        4,
+        44,
+        84
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 5,
+      "target_positions": [
+        5,
+        45,
+        85
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 6,
+      "target_positions": [
+        6,
+        46,
+        86
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 7,
+      "target_positions": [
+        7,
+        47,
+        87
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 8,
+      "target_positions": [
+        8,
+        48,
+        88
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 9,
+      "target_positions": [
+        9,
+        49,
+        89
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 10,
+      "target_positions": [
+        10,
+        50,
+        90
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 11,
+      "target_positions": [
+        11,
+        51,
+        91
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 12,
+      "target_positions": [
+        12,
+        52,
+        92
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 13,
+      "target_positions": [
+        13,
+        53,
+        93
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 14,
+      "target_positions": [
+        14,
+        54,
+        94
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 15,
+      "target_positions": [
+        15,
+        55,
+        95
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 16,
+      "target_positions": [
+        16,
+        56,
+        96
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 17,
+      "target_positions": [
+        17,
+        57,
+        97
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 18,
+      "target_positions": [
+        18,
+        58,
+        98
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 19,
+      "target_positions": [
+        19,
+        59,
+        99
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 20,
+      "target_positions": [
+        20,
+        60,
+        100
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 21,
+      "target_positions": [
+        21,
+        61,
+        101
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 22,
+      "target_positions": [
+        22,
+        62,
+        102
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 23,
+      "target_positions": [
+        23,
+        63,
+        103
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 24,
+      "target_positions": [
+        24,
+        64,
+        104
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 25,
+      "target_positions": [
+        25,
+        65,
+        105
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 26,
+      "target_positions": [
+        26,
+        66,
+        106
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 27,
+      "target_positions": [
+        27,
+        67,
+        107
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 28,
+      "target_positions": [
+        28,
+        68,
+        108
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 29,
+      "target_positions": [
+        29,
+        69,
+        109
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 30,
+      "target_positions": [
+        30,
+        70,
+        110
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 31,
+      "target_positions": [
+        31,
+        71,
+        111
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 32,
+      "target_positions": [
+        32,
+        72,
+        112
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 33,
+      "target_positions": [
+        33,
+        73,
+        113
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 34,
+      "target_positions": [
+        34,
+        74,
+        114
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 35,
+      "target_positions": [
+        35,
+        75,
+        115
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 36,
+      "target_positions": [
+        36,
+        76,
+        116
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 37,
+      "target_positions": [
+        37,
+        77,
+        117
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 38,
+      "target_positions": [
+        38,
+        78,
+        118
+      ],
+      "terminal_status": "completed"
+    },
+    {
+      "completed_slots": 6,
+      "failed_slots": 0,
+      "physical_calls": {
+        "attempted_calls": 246,
+        "failed_calls": 0,
+        "maximum_calls": 246,
+        "successful_calls": 246
+      },
+      "rank": 39,
+      "target_positions": [
+        39,
+        79,
+        119
+      ],
+      "terminal_status": "completed"
+    }
+  ]
+}

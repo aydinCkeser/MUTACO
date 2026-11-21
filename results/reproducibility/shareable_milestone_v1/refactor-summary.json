@@ -1,0 +1,284 @@
+{
+  "byte_identical_to_raw": false,
+  "derived": true,
+  "not_a_raw_acceptance_packet": true,
+  "report": {
+    "accepted": true,
+    "artifact_sha256": {
+      "README.md": "4f5f67e7a63ebf188874d485c09580ea28bd4828777513c27cf57b0d68a8a569",
+      "baseline-failure-path-tests.log": "6ae3d845fc5442ad18cd74139ef61a128f71d2fa4aaaa3203ee1fb61f7f2377f",
+      "candidate-source.bundle": "340286cf4a081db91b933f82cee92580c39e21867d50c823041da5b3117551cc",
+      "execution/lifecycle-validation.json": "f4b49fb3514e86d69bb60751ac8a43fae1aab717016d8857821a55207a86af78",
+      "execution/retrieval.json": "8bf2776ffff9cd0963f2c9f8b22876f251aea4563e4722cc8f10b8812a28f108",
+      "execution/scheduler-accounting.txt": "f983cf23f3c3054a629ea7022c5caf8cb49d01bc16e97826cf3ed23b3cceb39b",
+      "execution/scheduler-test-only.log": "098b56a1992d1eff8d893d32d039e026d5c6711e2b56bd572189b584613566ba",
+      "execution/submission-intent.json": "d8ebfd162a1fb05d06a103ca8c11d5a00dc0ff493c06940df2a4f4e337d5de9c",
+      "execution/submission-receipt.json": "ff5319763ca18dd8cb6e3cd61a78f2be0d90a0d69b87b9cfac9a107c834d6281",
+      "full-replay-comparison.json": "3d11796b9d5992285345761bd9bdbd7d4bc1334be48742c32f2786287b515adc",
+      "local-tests.log": "a68e56755462aea34a489cd118766b80a971b47ea73b5505ff81a604eee389fc",
+      "logs/validation-6852735.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "logs/validation-6852735.out": "8bd94613f5183ae9ec914afe25d034e62b2f6894b7c3bce6cf7632067a1d17b6",
+      "operation-order.json": "94c86e9e9282eecbe088f00e98974fc13079fc825824672794b9b86123b90f7d",
+      "source-provenance.json": "970b98c59293416f6a97f4c494c7c158b38e37e3f019fbd53a039b8aa9d1d990",
+      "workers/SHA256SUMS": "377c4135e90b10495e3fc27f552912b7dbc6199ba4c1a7b587d0521f94428436",
+      "workers/b40-comparison.json": "5b4500caee134872256097c48e808fac9be961db40483ceaa96723170254c917",
+      "workers/candidate-b40.json.gz": "06da8f05e8f5e0c2f67def4671c2b6aa35f5f361bcea3cacfd80816f280b737f",
+      "workers/candidate-b40.json.gz.first.json.gz": "be4eb953aeb1d4349b5c735c5c60bed5f0b32fe7ce8bd4e2d12ffab9d68d6665",
+      "workers/candidate-b40.log": "0a14cd70a763f4daaf01339bcf6b78fa0aea3387627e85414b4fa15eb7115f45",
+      "workers/candidate-historical-b40.json.gz": "23178c0af3778d2006b31ab426f376e2b3be68abe32138e89da35cdf8eda845a",
+      "workers/candidate-historical-b40.log": "7788b9d8da2bcd1d4994496bccdadcc496abe444d851c4c0667de0a5bba116d8",
+      "workers/job-status.json": "547002a453d290447784a60383affda6b197b9a8bc2433636c4ec8428aaa83ec",
+      "workers/pytest.log": "511c13220cd8480231935ddccfd1769cef600365c8db91bf1990d33f6c5cec3a",
+      "workers/test-comparison.json": "a7b9d97abc821ff4f16e1830864dd1ae84807811d609fa74158b7aaf55729cbd",
+      "workers/tests/junit.xml": "c50706366c0fb3f92529a9897a1a27de8b969d96f5a9147a12ad6cfa11a6ead6",
+      "workers/tests/status.json": "97bb1f1ffaada48ac1221eb8444e0c3dd6956c05a075cfab1922c5a0d3dce087"
+    },
+    "branch": "ege/repro-refactor",
+    "capture_harness_commit": "27f654a8e590d3aadb89a2791c91f1e1491a1aad",
+    "changed_core_files": [
+      "src/mutaco/orchestration/runner.py"
+    ],
+    "comparator_path": "infrastructure/truba/refactor_reference.py",
+    "date": "2026-10-26",
+    "extraction": {
+      "helper": "src/mutaco/orchestration/runner.py::_prepare_frozen_responses",
+      "identical_operation_AST": "operation-order.json",
+      "mathematical_functions_changed": false,
+      "operations": [
+        "ordered_initial_physical_response_stack",
+        "existing_transform_policy_validation_and_fitting",
+        "initial_observation_standardization_with_original_clone_and_replacement",
+        "target_tensor_creation_and_standardization"
+      ],
+      "preserved_partial_failure_state": true,
+      "private_result_record": "_FrozenResponsePreparation",
+      "progress_events_and_accounting_owned_by": "run_sequential"
+    },
+    "final_engineering_commit_binding": "the engineering commit containing this manifest must have the exact validated runner and test SHA-256 values below; result/documentation additions are outside the scientific execution",
+    "git_rules": {
+      "PR_update": false,
+      "final_branch_commit_count": 1,
+      "github_push": false,
+      "main_modified": false
+    },
+    "historical_scientific_baseline": "aa7f4feb58302ecf6abfa6dee2d81071eabb7fe3",
+    "limitations": [
+      "B100 reference remains uncaptured",
+      "known exactly singular NEI fixture still fails; no test or factorization policy changed",
+      "SBI environment workflows are outside qualification",
+      "historical original intermediate_GP_snapshots remain unavailable",
+      "source bundle is a validation snapshot; final engineering commit adds result evidence with identical core/test bytes"
+    ],
+    "local_validation": {
+      "new_failure_cases_on_unmodified_starting_code": {
+        "dtype": [
+          "torch.float32",
+          "torch.float64"
+        ],
+        "log": "baseline-failure-path-tests.log",
+        "passed": 6,
+        "stages": [
+          "fit",
+          "to_standardized",
+          "standardize_target"
+        ]
+      },
+      "refactored_existing_and_new_tests": {
+        "command": "infrastructure/local/run_pytest.sh -q tests/mathematics/test_transform.py tests/orchestration tests/unit/test_identity_and_randomness.py tests/unit/test_observability.py tests/unit/test_runtime.py tests/contracts/test_policy_surface.py tests/smoke/test_boundaries.py",
+        "failed": 0,
+        "log": "local-tests.log",
+        "passed": 45,
+        "skip_reason": "CUDA unavailable",
+        "skipped": 2
+      }
+    },
+    "modified_non_artifact_files": [
+      "src/mutaco/orchestration/runner.py",
+      "tests/orchestration/test_runner.py",
+      "infrastructure/truba/validate_refactor_b40.sbatch",
+      "project/state.toml",
+      "project/experiment_registry.toml"
+    ],
+    "next_stage": {
+      "B100_before_sensitive_changes": true,
+      "proposed_only": "pre-run configuration-validation extraction with preserved invalid-configuration failure semantics",
+      "second_refactor_implemented": false,
+      "sensitive_changes": [
+        "GP fitting/recovery",
+        "acquisition",
+        "terminal recommendation"
+      ]
+    },
+    "repository": "https://github.com/aydinCkeser/MUTACO",
+    "role": "behavior_preserving_readability_refactor_zero_physical_call_engineering_validation",
+    "schema_version": "mutaco-frozen-response-helper-regression-v1",
+    "scientific_comparison": {
+      "complete_replay_diagnostic_comparison": {
+        "ambient_rng_preserved": true,
+        "baseline_hash": "687433605adebeb928b081c616e7d603267d71faebb3cfa061a6c730865ec782",
+        "candidate_hash": "687433605adebeb928b081c616e7d603267d71faebb3cfa061a6c730865ec782",
+        "comparison": "all retained full replay mathematical, proposal, fit and accounting diagnostics; only pre-declared timers/execution provenance excluded",
+        "exact_equal": true,
+        "first_difference": [],
+        "fits_compared": 25,
+        "historical_replay_status": "passed",
+        "physical_simulator_calls": 0,
+        "proposals_compared": 24
+      },
+      "differences_found": [],
+      "historical_candidates_substituted": false,
+      "historical_replay": {
+        "ambient_rng_preserved": true,
+        "archived_observations_consumed": 40,
+        "frozen_transform_identity": {
+          "historical": "response-transform-v1-80cbe14adbb107bff5459f2062e59617f2c17a49131091c880d7f0859f877a0f",
+          "reconstructed": "response-transform-v1-80cbe14adbb107bff5459f2062e59617f2c17a49131091c880d7f0859f877a0f"
+        },
+        "logical_replay_accounting": {
+          "committed_fit_events": 25,
+          "committed_observations": 40,
+          "committed_proposal_events": 24,
+          "committed_recommendation_events": 1,
+          "initial_observations": 16,
+          "planned_observations": 40,
+          "sequential_observations": 24,
+          "training_data_versions": 25
+        },
+        "physical_simulator_calls": 0,
+        "status": "passed"
+      },
+      "new_GP_states_origin": "reconstructed_candidate_values_compared_against_retained_reconstructed_original_source_values_not_original_historical_GP_snapshots",
+      "new_simulator_calls": 0,
+      "record_pointer": "/records/48",
+      "reference_values_updated": false,
+      "saved_checkpoint_comparison": {
+        "artifacts_self_consistent": true,
+        "baseline_scientific_hash": "12251e746d4c39f2f028651f766c96a6723dc39cb63d5cd484ad661b9cf3001c",
+        "comparison_scientific_hash": "12251e746d4c39f2f028651f766c96a6723dc39cb63d5cd484ad661b9cf3001c",
+        "environment_comparison_schema": "runtime-library-set-v2",
+        "physical_backend_attempts": [
+          0,
+          0
+        ],
+        "runtime_enumeration_order_only_difference": false,
+        "same_environment": true,
+        "scientific_exact_equal": true,
+        "tolerances": "none; exact operation-preserving reference"
+      },
+      "target": 16,
+      "tolerance_changes": false
+    },
+    "scientific_invariants_preserved": [
+      "initial_observation_order",
+      "mean_and_scale_calculations_reduction_order_and_scale_floor",
+      "transform_identity_and_provenance",
+      "dtype_device_and_clones",
+      "named_seeds_and_ambient_RNG",
+      "exception_and_partial_failure_state",
+      "event_and_timer_boundaries",
+      "evaluation_and_fit_accounting",
+      "GP_fitting_acquisition_duplicate_and_terminal_policies"
+    ],
+    "starting_commit": "d45e34a75a031313cd7985461f0aaa065097cee7",
+    "truba": {
+      "allocated_cpus": 20,
+      "batch_peak_rss_kib": 2074988,
+      "compute_node": "<private operational metadata omitted>",
+      "elapsed_seconds": 159,
+      "environment": {
+        "architecture": "x86_64",
+        "cpu_model": "Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz",
+        "device": "cpu",
+        "fit_dtype": "torch.float32",
+        "libraries": [
+          {
+            "internal_api": "openmp",
+            "num_threads": 20,
+            "prefix": "libgomp",
+            "user_api": "openmp",
+            "version": null
+          },
+          {
+            "architecture": "SkylakeX",
+            "internal_api": "openblas",
+            "num_threads": 20,
+            "prefix": "libscipy_openblas",
+            "threading_layer": "pthreads",
+            "user_api": "blas",
+            "version": "0.3.31.188.0"
+          },
+          {
+            "architecture": "SkylakeX",
+            "internal_api": "openblas",
+            "num_threads": 20,
+            "prefix": "libscipy_openblas",
+            "threading_layer": "pthreads",
+            "user_api": "blas",
+            "version": "0.3.30"
+          }
+        ],
+        "packages": {
+          "botorch": "0.18.1",
+          "gpytorch": "1.15.2",
+          "linear_operator": "0.6.1",
+          "numpy": "2.4.6",
+          "pytest": "9.1.1",
+          "sbi": null,
+          "scipy": "1.17.1",
+          "threadpoolctl": "3.7.0",
+          "torch": "2.12.1+cpu"
+        },
+        "posterior_covariance_policy": "float32_fit_float64_covariance",
+        "python": "3.11.17",
+        "role": "derived backend summary; strict environment verification requires private raw packets",
+        "thread_environment": {
+          "MKL_NUM_THREADS": null,
+          "NUMEXPR_NUM_THREADS": null,
+          "OMP_NUM_THREADS": null,
+          "OPENBLAS_NUM_THREADS": null,
+          "VECLIB_MAXIMUM_THREADS": null
+        },
+        "torch_interop_threads": 1,
+        "torch_intraop_threads": 20
+      },
+      "job_id": 6852735,
+      "jobs_submitted": 1,
+      "no_further_jobs_authorized_in_this_task": true,
+      "partition": "debug",
+      "requested_memory_gib": 8,
+      "requested_wall_seconds": 480,
+      "scientific_gate": {
+        "historical_gate_exit": 0,
+        "mathematical_comparison_exit": 0,
+        "physical_simulator_calls_authorized": 0,
+        "pytest_exit": 1,
+        "scientific_refactor_gate_passed": true,
+        "test_gate_exit": 0
+      },
+      "slurm_exit_code": "1:0",
+      "slurm_failure_reason": "unchanged known baseline NEI test keeps pytest exit1; independent scientific gate passed",
+      "slurm_state": "FAILED",
+      "test_suite": {
+        "additional_cases_passed": 6,
+        "baseline_test_outcomes_preserved": true,
+        "failed": 1,
+        "known_failure": "tests/acquisition/test_nei.py::test_baseline_factorization_promotes_without_jitter",
+        "new_failures": [],
+        "passed": 175,
+        "seconds": 28.828,
+        "skipped": 8
+      }
+    },
+    "unchanged_comparator_sha256": "0403a498e316b85dd2c0d3ebca4496dfb9e9efecd3735c2595df3361930f3e36",
+    "unchanged_saved_reference_manifest": {
+      "path": "benchmarks/reproducibility/truba_refactor_reference_v1/manifest.json",
+      "sha256": "71f76cec7cb371157a24bd225ba0e5b664802f3c6a04d5c965f32169c3446fd9"
+    },
+    "validated_scientific_files_sha256": {
+      "src/mutaco/orchestration/runner.py": "482dcae76e7e34b4f69892a9b02a6973d3366242abf8080929f56827650c9de0",
+      "tests/orchestration/test_runner.py": "b78d60f64c6137fed99dd873d348a7678a81ac889fd82f35f840da9a701f5522"
+    },
+    "validated_snapshot_bundle": "candidate-source.bundle",
+    "validated_source_snapshot": "31e161d0112ffd920e4f105ed498be39b9b4ec68"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "mutaco-paper-report-spec-v1",
+  "report_id": "graph_paper120_b40_v1",
+  "study_id": "graph_paper120_three_method",
+  "state": "accepted_tracked_evidence",
+  "inference_budget_per_method_target": 40,
+  "methods": ["mutaco", "sbi_npe", "sbi_snpe"],
+  "source": {
+    "state": "accepted_tracked_evidence",
+    "path": "benchmarks/graph/paper120_mutaco_npe_snpe_v1/manifest.json",
+    "sha256": "ce08ebecad386a488539b3d9fe2a827580f173499c6977311b64d5b3649523cc"
+  },
+  "claims": {
+    "target_count": 120,
+    "methods": {
+      "mutaco": {
+        "response_error_mae": {"mean": 0.040110001546098305, "median": 0.039604372485098335},
+        "response_error_l2": {"mean": 0.27188131832717244, "median": 0.27161972825214314},
+        "parameter_error_l2": {"mean": 0.41428726144383504, "median": 0.3677705109138707}
+      },
+      "sbi_npe": {
+        "response_error_mae": {"mean": 0.1342730776626495, "median": 0.0975258298746752},
+        "response_error_l2": {"mean": 0.9510522192574513, "median": 0.7076264698958409},
+        "parameter_error_l2": {"mean": 0.5099709617153423, "median": 0.4975237552964847}
+      },
+      "sbi_snpe": {
+        "response_error_mae": {"mean": 0.14292504291265037, "median": 0.10575199428949418},
+        "response_error_l2": {"mean": 1.031961000361429, "median": 0.774150234699281},
+        "parameter_error_l2": {"mean": 0.4959962387432404, "median": 0.45846422513926244}
+      }
+    },
+    "paired_response_mae": {
+      "mutaco__sbi_npe": {"mean_left_minus_right": -0.09416307611655121, "left_wins": 102, "ties": 0, "left_losses": 18},
+      "mutaco__sbi_snpe": {"mean_left_minus_right": -0.10281504136655206, "left_wins": 102, "ties": 0, "left_losses": 18},
+      "sbi_npe__sbi_snpe": {"mean_left_minus_right": -0.008651965250000846, "left_wins": 52, "ties": 0, "left_losses": 68}
+    },
+    "physical_calls": {
+      "attempted_calls": 14760,
+      "successful_calls": 14760,
+      "failed_calls": 0,
+      "retry_calls": 0
+    }
+  },
+  "output": "docs/paper/results/graph_paper120_b40_v1.md",
+  "sections": ["status", "parameters", "method_metrics", "paired_results", "accounting", "provenance"],
+  "report_identity": "paper-report-spec-v1-e2e777f4d071b28b8283a959a26de3396dae0299137c45d028f8a4cb654a0ad8"
+}

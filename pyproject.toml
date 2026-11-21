@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=77,<82"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mutaco"
+version = "0.1.0.dev0"
+description = "Simulator-independent target-matching inversion foundations"
+readme = "README.md"
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+requires-python = ">=3.11,<3.13"
+authors = [{ name = "MUTACO contributors" }]
+dependencies = [
+  "botorch>=0.18,<0.19",
+  "gpytorch>=1.15,<1.16",
+  "psutil>=7.2,<8",
+  "torch>=2.11,<2.13",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=9.1,<9.2"]
+plot = [
+  "matplotlib>=3.9,<4",
+]
+plot-test = [
+  "matplotlib>=3.9,<4",
+  "pypdf>=5,<7",
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+# Research-checkout imports are handled by the launcher; they are outside the MUTACO distribution.
+exclude = ["tools", "tools.*"]
+
+[tool.setuptools.package-data]
+mutaco = ["py.typed"]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src",
+  "experiments/analytic_target_matching/src",
+  "simulators/graph-simulator/src",
+]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider -p no:benchmark"
+markers = [
+  "cuda: requires a compatible Torch CUDA runtime",
+]

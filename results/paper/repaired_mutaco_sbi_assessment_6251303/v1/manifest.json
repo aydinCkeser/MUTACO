@@ -1,0 +1,234 @@
+{
+  "budgets": [
+    40,
+    100
+  ],
+  "call_accounting": {
+    "analysis_calls": 0,
+    "attempted_calls": 720,
+    "failed_calls": 0,
+    "maximum_calls": 720,
+    "retry_calls": 0,
+    "successful_calls": 720
+  },
+  "cohort_sha256": "359fc0bb59fc9a8a52f5da684e7a7eb352466bdc0d0a54fb8efa94131ce423bb",
+  "collection_identity": "repaired-sbi-assessment-collection-v1-507d012c72151554bea319511e8a04d699382407abe6c1ee97bb8c4c15c19ec6",
+  "evidence_identity": "repaired-sbi-assessment-evidence-v1-5c8c27a1c3669d61161a8601edda7cb82e895c6849f813ec8536af796c43bc0f",
+  "historical_evidence_modified": false,
+  "integrity": {
+    "archive_inventory_identity": "repaired-sbi-assessment-raw-inventory-v1-3467a5e15b3746996bfd9b33f8e775850893a3606f044191b0e5746839f037fb",
+    "attempt_records": 720,
+    "collection_sha256": "43e645281a7fdab5348b7e218ac730b46c576747cf1cf5368c78e7693854ce33",
+    "compact_export_sha256": "f4558c9a59ebbdb405ce6aefdf5313bcfb8103b3fcca3b3c0699df7d1134a1bf",
+    "json_hash_pairs_verified": 962,
+    "scheduler_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scheduler_stdout_sha256": "fbba1d1ddb20480a1d8b20a681fb022f1969e3a6cf700870231e828b618f3142",
+    "worker_starts": 120,
+    "worker_terminals": 120
+  },
+  "job": {
+    "automatic_retry": false,
+    "cpus_per_task": 5,
+    "elapsed": "00:00:44",
+    "exit_code": "0:0",
+    "job_id": 6251303,
+    "nodes": 30,
+    "scheduler_state": "COMPLETED",
+    "scientific_step_elapsed": "00:00:32",
+    "source_commit": "61f26e368f426be95978991caf656609e954158f",
+    "tasks": 120
+  },
+  "methods": [
+    "mutaco",
+    "sbi_npe",
+    "sbi_snpe"
+  ],
+  "raw_archive": "experiments/paper/exploration/outputs/repaired_mutaco_sbi_salvage/assessment_attempt_6251303",
+  "remote_log_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/repaired_sbi_assessment/v1-61f26e3/logs",
+  "remote_output_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/repaired_sbi_assessment/v1-61f26e3/workers",
+  "reports": {
+    "100": {
+      "analysis_report_identity": "cross-experiment-analysis-report-v1-8cced0405a123c073a4860deabbcee8885cc219b59cae5ec3e5ed7997c58ffce",
+      "heldout_component_mean_mae": {
+        "mutaco": {
+          "maximum": 0.08323375871259486,
+          "mean": 0.02273630326705556,
+          "median": 0.017818431254147525,
+          "minimum": 0.0030261597843491473,
+          "n": 120,
+          "q1": 0.010977085598869962,
+          "q3": 0.030577195521914294,
+          "standard_deviation": 0.016415270839023253
+        },
+        "sbi_npe": {
+          "maximum": 0.524350709527198,
+          "mean": 0.06838273574858415,
+          "median": 0.049602398708702825,
+          "minimum": 0.004353523424106243,
+          "n": 120,
+          "q1": 0.02889246822792302,
+          "q3": 0.07960956072025738,
+          "standard_deviation": 0.06618718672116311
+        },
+        "sbi_snpe": {
+          "maximum": 0.4815241547720689,
+          "mean": 0.07379806015385802,
+          "median": 0.04837388540363463,
+          "minimum": 0.008676593612108263,
+          "n": 120,
+          "q1": 0.026351333204124215,
+          "q3": 0.07955229352126025,
+          "standard_deviation": 0.08241612204308982
+        }
+      },
+      "mean_rank": {
+        "mutaco": 1.3583333333333334,
+        "sbi_npe": 2.35,
+        "sbi_snpe": 2.2916666666666665
+      },
+      "paired_primary_endpoint": {
+        "mutaco__sbi_npe": {
+          "derived_pair_seed": 11607049593256840578,
+          "left_losses": 18,
+          "left_wins": 102,
+          "mean_left_minus_right": -0.045646432481528595,
+          "median_left_minus_right": -0.03000090119282959,
+          "n": 120,
+          "paired_mean_bootstrap_95_percentile_interval": [
+            -0.05843566423706306,
+            -0.0347542062085899
+          ],
+          "ties": 0
+        },
+        "mutaco__sbi_snpe": {
+          "derived_pair_seed": 1118256218202867826,
+          "left_losses": 25,
+          "left_wins": 95,
+          "mean_left_minus_right": -0.05106175688680246,
+          "median_left_minus_right": -0.027433174068210067,
+          "n": 120,
+          "paired_mean_bootstrap_95_percentile_interval": [
+            -0.06681287807470322,
+            -0.037162308001929295
+          ],
+          "ties": 0
+        },
+        "sbi_npe__sbi_snpe": {
+          "derived_pair_seed": 18278635035903579849,
+          "left_losses": 60,
+          "left_wins": 60,
+          "mean_left_minus_right": -0.0054153244052738605,
+          "median_left_minus_right": 0.00026059649503622564,
+          "n": 120,
+          "paired_mean_bootstrap_95_percentile_interval": [
+            -0.024706857312274413,
+            0.012772616535825522
+          ],
+          "ties": 0
+        }
+      },
+      "row_count": 360,
+      "target_count": 120,
+      "target_winner_ties": 0,
+      "target_winners": {
+        "mutaco": 84,
+        "sbi_npe": 16,
+        "sbi_snpe": 20
+      }
+    },
+    "40": {
+      "analysis_report_identity": "cross-experiment-analysis-report-v1-1a3fa306e3e17e4686ba5edb6540dab1053ffcca4a15f19edf3d8b0a4daa63d0",
+      "heldout_component_mean_mae": {
+        "mutaco": {
+          "maximum": 0.0886904876177141,
+          "mean": 0.02228858642026008,
+          "median": 0.01657466237263918,
+          "minimum": 0.0025868766643952767,
+          "n": 120,
+          "q1": 0.010640959510578795,
+          "q3": 0.02943694333514486,
+          "standard_deviation": 0.016656101013229178
+        },
+        "sbi_npe": {
+          "maximum": 0.7390373699148768,
+          "mean": 0.13151996656526227,
+          "median": 0.09360039633123735,
+          "minimum": 0.010894137909053825,
+          "n": 120,
+          "q1": 0.0575480531215618,
+          "q3": 0.16693704847721164,
+          "standard_deviation": 0.12268366899678466
+        },
+        "sbi_snpe": {
+          "maximum": 1.0792401707790304,
+          "mean": 0.1388317254187712,
+          "median": 0.10137297601028195,
+          "minimum": 0.016387983481399714,
+          "n": 120,
+          "q1": 0.04794668129770798,
+          "q3": 0.17248564771498423,
+          "standard_deviation": 0.14225117252334724
+        }
+      },
+      "mean_rank": {
+        "mutaco": 1.1416666666666666,
+        "sbi_npe": 2.5,
+        "sbi_snpe": 2.3583333333333334
+      },
+      "paired_primary_endpoint": {
+        "mutaco__sbi_npe": {
+          "derived_pair_seed": 9447082092253841667,
+          "left_losses": 7,
+          "left_wins": 113,
+          "mean_left_minus_right": -0.10923138014500218,
+          "median_left_minus_right": -0.06782390168397115,
+          "n": 120,
+          "paired_mean_bootstrap_95_percentile_interval": [
+            -0.13259188840188926,
+            -0.08799937298594153
+          ],
+          "ties": 0
+        },
+        "mutaco__sbi_snpe": {
+          "derived_pair_seed": 1394878808628435611,
+          "left_losses": 10,
+          "left_wins": 110,
+          "mean_left_minus_right": -0.11654313899851114,
+          "median_left_minus_right": -0.07984310259525956,
+          "n": 120,
+          "paired_mean_bootstrap_95_percentile_interval": [
+            -0.14367767729584882,
+            -0.09245665321019841
+          ],
+          "ties": 0
+        },
+        "sbi_npe__sbi_snpe": {
+          "derived_pair_seed": 12480245819242359912,
+          "left_losses": 67,
+          "left_wins": 53,
+          "mean_left_minus_right": -0.007311758853508957,
+          "median_left_minus_right": 0.01663921472480183,
+          "n": 120,
+          "paired_mean_bootstrap_95_percentile_interval": [
+            -0.041519954801547146,
+            0.024614821406421475
+          ],
+          "ties": 0
+        }
+      },
+      "row_count": 360,
+      "target_count": 120,
+      "target_winner_ties": 0,
+      "target_winners": {
+        "mutaco": 107,
+        "sbi_npe": 4,
+        "sbi_snpe": 9
+      }
+    }
+  },
+  "role": "repaired_primary_mutaco_npe_snpe_paired_assessment",
+  "schema_version": "mutaco-repaired-sbi-assessment-evidence-v1",
+  "scientific_calls_added_by_archival_and_analysis": 0,
+  "status": "complete_collected_archived_and_analyzed",
+  "truba_jobs_added_by_archival_and_analysis": 0
+}

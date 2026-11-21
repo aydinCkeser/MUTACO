@@ -1,0 +1,125 @@
+schema_version = "mutaco-scientific-registry-v1"
+
+[[contracts]]
+id = "same_environment_refactor_validation"
+path = "scientific_archive/validation_history/refactor_validation/README.md"
+authority = "normative"
+
+[[contracts]]
+id = "mutaco_mathematics"
+path = "scientific_contracts/mutaco_d_contract/README.md"
+authority = "normative"
+
+[[contracts]]
+id = "simulator_protocol"
+path = "scientific_contracts/simulator_protocol/README.md"
+authority = "normative"
+
+[[contracts]]
+id = "graph_oscillator"
+path = "scientific_contracts/graph_oscillator/README.md"
+authority = "normative"
+
+[[contracts]]
+id = "oscillator_physics_target098_post_analysis"
+path = "experiments/paper/studies/oscillator_physics_post_analysis/README.md"
+machine_contract = "experiments/paper/studies/oscillator_physics_post_analysis/config/target098_sensitivity_v1.json"
+authority = "normative_candidate"
+
+[[contracts]]
+id = "oscillator_physics_paper120_multitarget_sensitivity"
+path = "experiments/paper/studies/oscillator_physics_multi_target_sensitivity/README.md"
+machine_contract = "experiments/paper/studies/oscillator_physics_multi_target_sensitivity/config/paper120_maximin12_sensitivity_v1.json"
+authority = "normative_candidate"
+
+[[contracts]]
+id = "assessment"
+path = "scientific_contracts/assessment_protocol/README.md"
+authority = "normative"
+
+[[contracts]]
+id = "paper_comparison"
+path = "scientific_contracts/paper_comparison_protocol/README.md"
+authority = "normative"
+
+[[contracts]]
+id = "cross_experiment_scientific_semantics"
+path = "scientific_contracts/cross_experiment_contract/README.md"
+machine_contract = "scientific_contracts/cross_experiment_contract/contract.json"
+authority = "normative"
+
+[[contracts]]
+id = "cross_experiment_evidence_analysis"
+path = "scientific_contracts/cross_experiment_analysis/README.md"
+authority = "normative"
+
+[[contracts]]
+id = "paper_experimental_scope"
+path = "scientific_contracts/paper_scope/README.md"
+authority = "normative"
+
+[[contracts]]
+id = "paper120_sbi_zoo_extension"
+path = "scientific_contracts/sbi_zoo_extension/README.md"
+machine_contract = "experiments/paper/studies/graph_paper120/analysis/sbi_zoo_extension_v1.json"
+authority = "normative_candidate"
+
+[[contracts]]
+id = "historical_mutaco_terminal_lineage_forensics"
+path = "scientific_archive/validation_history/historical_terminal_lineage_forensics/README.md"
+machine_contract = "experiments/paper/studies/graph_paper120/analysis/historical_terminal_lineage_forensics_v1.json"
+authority = "forensic"
+
+[[contracts]]
+id = "terminal_domain_ablation_b40_refit"
+path = "scientific_contracts/terminal_domain_ablation/README.md"
+machine_contract = "experiments/paper/studies/graph_paper120/analysis/terminal_domain_ablation_b40_refit_v1.json"
+authority = "normative_candidate"
+
+[[contracts]]
+id = "repaired_mutaco_sbi_salvage_design"
+path = "scientific_contracts/repaired_mutaco_sbi_salvage/README.md"
+machine_contract = "experiments/paper/studies/graph_paper120/analysis/repaired_mutaco_sbi_salvage_v1.json"
+authority = "normative_candidate"
+
+[[contracts]]
+id = "repaired_mutaco_sbi_corrected_terminal"
+path = "scientific_contracts/repaired_mutaco_sbi_salvage/README.md"
+machine_contract = "experiments/paper/studies/graph_paper120/analysis/repaired_mutaco_sbi_corrected_terminal_v1.json"
+authority = "normative_candidate"
+
+[[contracts]]
+id = "repaired_mutaco_sbi_paired_assessment"
+path = "scientific_contracts/repaired_mutaco_sbi_salvage/README.md"
+machine_contract = "experiments/paper/studies/graph_paper120/analysis/repaired_mutaco_sbi_assessment_v1.json"
+authority = "normative_candidate"
+
+[[contracts]]
+id = "primary_mutaco_nei_sobol_benchmark"
+path = "scientific_contracts/primary_benchmark_protocol/README.md"
+authority = "historical"
+
+[[contracts]]
+id = "primary_mutaco_scalar_qlognei_sobol_benchmark"
+path = "scientific_contracts/scalar_qlognei_primary_benchmark_protocol/README.md"
+authority = "normative_candidate"
+
+[[profiles]]
+id = "graph_canonical_b40_v1"
+path = "experiments/graph_inversion/configs/profiles/graph_canonical_b40_v1.json"
+implementation = "shared_mutaco_core"
+
+[[profiles]]
+id = "graph_paper_joint95_mae_initial16_v1"
+path = "experiments/graph_inversion/configs/profiles/graph_paper_joint95_mae_initial16_v1.json"
+implementation = "shared_mutaco_core"
+
+[[profiles]]
+id = "graph_paper_joint95_mae_initial16_b100_v1"
+path = "experiments/graph_inversion/configs/profiles/graph_paper_joint95_mae_initial16_b100_v1.json"
+implementation = "shared_mutaco_core"
+
+[[profiles]]
+id = "graph_paper_joint95_mae_initial16_no_standardization_v1"
+path = "experiments/graph_inversion/configs/profiles/graph_paper_joint95_mae_initial16_no_standardization_v1.json"
+implementation = "shared_mutaco_core"

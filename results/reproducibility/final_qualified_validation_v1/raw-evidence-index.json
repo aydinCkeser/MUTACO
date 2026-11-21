@@ -1,0 +1,102 @@
+{
+  "byte_identical_to_raw": false,
+  "derived": true,
+  "files": {
+    "download/full-tests.py": "914b414219edda3c318582c3c615b25a2411dbc6173e3bb35d79b68389b9bb8b",
+    "download/logs/job-6875156.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "download/logs/job-6875156.out": "da95e53f693e0daa95a55752dc0dd0e4cb5308a33b0b2247c31f41b628cfb092",
+    "download/validation-job.sh": "c4448a0b184a03b617e271bea037d8c52bbaa80247a0fc8e11d1fc916a5829d4",
+    "download/workers/b100-capture.json.gz": "4a0cfdd1fc04db37c20353fcbf38dca41ad1fe93ddb1bfea8fc98686bbeb9805",
+    "download/workers/b100-capture.json.gz.first.json.gz": "5eb91352089810adcbcd5d5d4d7bb840c6f57d4fe7327a18be8f1664173a0adf",
+    "download/workers/b100-capture.log": "6cef07d9453ab97f3e8d08ed8bff64d050d09d0aacca0257bd47d442ee026cbc",
+    "download/workers/b100-checkpoint-comparison.json": "2c2b122c065082143c16e92940928778d6b920f9e360d6ae634871aa85fdd667",
+    "download/workers/b100-fit-event-comparison.json": "fe9cb90381d4eb38eb6a16b0619d65e1cef79dff7c01b0f61a44346c613d3671",
+    "download/workers/b100-fit-events.json": "2002b6ccc0443dc0d13b45c10f930cf081a463143c742eefdd8b92e1826528c5",
+    "download/workers/b100-history-comparison.json": "f3ee0e379e44aabd3d155c598d79a61bbe8e4741bf4cc81a3e8d7b84a7cd167d",
+    "download/workers/b100-history.json.gz": "ba71b9cd4e52f56e0890dbe4a4a6d85ff915e02eb05f44c890013da08fb8d343",
+    "download/workers/b100-history.log": "0cb3391e95c945308c8487afe43d08dac28bae2f55d7991066a2aaf12519e34c",
+    "download/workers/b40-capture.json.gz": "559deadb8da25774a3c0861869d6954d272f51fbef77cfadeecb8805cac7cd37",
+    "download/workers/b40-capture.json.gz.first.json.gz": "b5012742a111c52652f4442b2b75027234b9b82818a4bc4ab9f326c4f6d13286",
+    "download/workers/b40-capture.log": "ef12d7ebf0ae24f42dd2fac8b3e28f8b3eb8b3d42267b8918bd21d9d29a403a4",
+    "download/workers/b40-checkpoint-comparison.json": "f6a263129b3f7e7c812bec85ece7eaa5d45cc66d93b8004643f28a320476dac9",
+    "download/workers/b40-fit-event-comparison.json": "a7cea890abdfbde6bd93236b8d4b3303f94c24945ea3f8159896d0d7594af67e",
+    "download/workers/b40-fit-events.json": "58db5570d8dd76c859896004e75e3856ca4defe0b33b9aa6af5bf333da60ee8e",
+    "download/workers/b40-history-comparison.json": "30145343775152faed9f0f178a28a1743f1ca266e1b4afdd7c610401b170002d",
+    "download/workers/b40-history.json.gz": "9ad48556ee44a4afbbc37e9541487da785172a73dcd0db8bebb7f295a4eec8f8",
+    "download/workers/b40-history.log": "7788b9d8da2bcd1d4994496bccdadcc496abe444d851c4c0667de0a5bba116d8",
+    "download/workers/candidate-tests.log": "28e5afad9ae73a07650745da17d67d24211c4a61ec97cf80931b117a4ccacebf",
+    "download/workers/candidate-tests/junit.xml": "102879a95899d7361623b3eefff251c3a2542e07f3fc92b9c7fead5db7eccd3b",
+    "download/workers/candidate-tests/status.json": "2c1eeabff806b244805cdd01e53b9241af30f4d8e308b6d57646b447a1135f17",
+    "download/workers/controlled-gp-diagnostics/after_callback.json": "b5c28bafd8afc4f3b9ab83e2af2b346ea47d330451893ad4ea954e216c9a2ea8",
+    "download/workers/controlled-gp-diagnostics/before_callback.json": "06ad0c9e2751a9206a5e9cc8cc34c68e6322d1cf3f53253d26b5cd84d85b7115",
+    "download/workers/controlled-gp-diagnostics/caller_callback.json": "f02f5cc7cbe48c74a979087c79c87d5a38ca6e8b6bd8fe5df66b783d42a04122",
+    "download/workers/controlled-gp-diagnostics/fixed.json": "467a5ae53b46a938c940b10414a9154c1842b911fcc9077db2ac4b6d70fef36a",
+    "download/workers/controlled-gp-diagnostics/invalid_parameters.json": "7d6646a37e98974e92c0510aa094f7d7e7dfc63e313a5439a0c98b9ec1c36786",
+    "download/workers/controlled-gp-diagnostics/invalid_posterior.json": "958150d1c166f8b67324a130f623bf7e30b0ac230f8d7d974b8578a092948161",
+    "download/workers/controlled-gp-diagnostics/iteration_limit.json": "6fb09bd8f4d21ccc02988c15fec8da41f7775ea0360527921117c1aad1e51e98",
+    "download/workers/controlled-gp-diagnostics/nonfinite.json": "f93a402d94060c9c803f68c4d672a055839cebb3a8ab933823d698622af34d92",
+    "download/workers/controlled-gp-diagnostics/real_optimizer.json": "43bec5c1216b6c54189c4eff375a0f2eb74eee76a1c58a70df82f098d06dbef5",
+    "download/workers/controlled-gp-diagnostics/recovery_exhausted.json": "bf2fbce2f9c45d37b885f3450abee6e47216ce83a37883cd5001d53ab42df319",
+    "download/workers/controlled-gp-diagnostics/recovery_success.json": "81b48f257cb6c4e01680818d1c5116a2ec71a023bab9eb9f7d2a6b2fb5daaa75",
+    "download/workers/controlled-gp-diagnostics/success.json": "869f705429b4c232260e1e0e9e8b62de027747bbf909b6eed0f3f828e8926a53",
+    "download/workers/controlled-gp-diagnostics/warm.json": "96fd182b542dd04c73d2cdd9373bf771b51ccab5f89dc59cd09337f5c1eb177d",
+    "download/workers/environment.freeze.txt": "e4cf81c7053a56d4147cb6eaa306a4314ddfee9344750e19d15c068bf5086182",
+    "download/workers/full-test-selection.json": "0a661d93432952fc50b75e6bd7d4d14cb468731f34bbcdc42fcaaded3e7b3c99",
+    "download/workers/job-status.json": "f2f8454e586fe3cf40667191c19ea8fbcd24b0c19e873699469ab3be5b87576a",
+    "download/workers/tests-gate.json": "1308449148f9adcc5b3c5969627279d3e8e5879522fe136b0aeac7cd44e99972",
+    "execution/bundle-verification.txt": "574c60c7aec4ba04723135ee941a5143cf13421f1ee654a936557cce94d411ea",
+    "execution/collection-summary.json": "c7061f69dc019eae84ac75888d9155ac9476cd75f0c73ae19d0a7615c945e900",
+    "execution/context.json": "4c7c5b7f5754e2fa68a228c4bf7c3fe390a9a50b27c583b9c77bdf983d79716b",
+    "execution/lifecycle-first-base-check.raw.log": "2ae8821def4fb4dddbb013024f0866a287a378029a8f9f207920f20fa0bf0b3a",
+    "execution/lifecycle-receipt.json": "04af09626f6311532fe124ced29d163e10ff791df3b538bab24a96b9439ee474",
+    "execution/lifecycle.raw.log": "1c3e5dc70c6143892d5ce973870dd7ede79c376e82cc2729cb8b7af6726f848b",
+    "execution/local-preflight-summary.json": "70d214876ebf0cf7bb9abba59811d926a5d994b4a7cf245c92eaf8c39e08a84f",
+    "execution/monitor-history.jsonl": "a2c5072feeb2d1a30b43af19824c93eaabb532851cb62a96f7b1a08627b651be",
+    "execution/monitor-latest.json": "aeaaab4a11394d68ab92b4e3037eca3861cd7963ac5fb8780e99ad543a047f2c",
+    "execution/remote-metadata.json": "9ca793d363d14a70cc4710dd04bcf999198ad6b2e4c0e35d85d9db33016e8389",
+    "execution/scheduler-accounting.txt": "89363f7a22693427689dc5266fbfe1970a7d32b059dbfca662c53cdf825e731d",
+    "execution/scheduler-test-only.stderr.txt": "1c01eca1fe37cd75583b131145e9bded353ee37a5ba68b1caeaadf28a29c5d49",
+    "execution/scheduler-test-only.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "execution/starting-hashes.json": "4d6aaf8c566f96051fa84388b9c34d4a677ee38fd6458da9f2801045b91905ff",
+    "execution/submission-argv.private.json": "565931f594b9bd1fe85ac14dfe8fbda3b250844c03bb1dfbafaef22b5c5a3d02",
+    "execution/submission-intent.json": "bb9946b9d2429ec862773f10b3fda91a586184626a916ccb8744bee3ff6886f8",
+    "execution/submission.json": "2d0f8f548651d5d9778487d82b976ad89f22b0976c70f0283487342a5f4c087f",
+    "execution/submission.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "execution/submission.stdout.txt": "9ce21273381ad5cda81453ea8ea6887c915dcfe50b882d0b082d38f1269d4a41",
+    "execution/test-selection.json": "5d5361dcdeceeb24f944373a0cd1d160e4995f4d98264525de209260e3ac9ce4",
+    "execution/transfer-preflight.stdout.txt": "79c2dd5a175cbc7b6afd8a3b8737609476d155f8341bcd4c08067b3a7d4f6d09",
+    "independent-verification.json": "4459aa69e165f5ec6843a328e81471ec5204f44fef69ebb8bac55bd95809199d",
+    "job-artifacts.tar.gz": "db9430fffbbf4e9d05619dfe8783ff7e9f53b8fc1a04936233c38f05f602a563",
+    "preserved-input-bindings.json": "12e95d18ce8e21aeb9d5020db2e49a904aeaf1df7c240c2bffc07387b0d02345",
+    "source-delta.bundle": "19841343db9df18ea44d26f33add8d6f0cebeb47280f65358e81237cc7ae3b72"
+  },
+  "required_source_bundle_base": "242fac08c1c3dc0041651a731c20ed228969ed6a",
+  "reused_inputs": {
+    "accepted-tests-status.json": {
+      "preserved_file": "20261027-gpdiag-05d9a95/references/accepted-tests-status.json",
+      "sha256": "4adc97cf33cb3e0c675388bdf4aa892b6189f48046ceb209f2abe5a51fb1ee65"
+    },
+    "accepted-tests.xml": {
+      "preserved_file": "20261027-gpdiag-05d9a95/references/accepted-tests.xml",
+      "sha256": "9f2974b92c0cbd29ca60ac3949760613551c8cc0fdc3e9309353bbcf3d3f97fa"
+    },
+    "b100-capture.json.gz": {
+      "preserved_file": "20261027-refined-selection-8e774d2/references/b100-capture.json.gz",
+      "sha256": "1865655feddf8658f534e029b89212f2e5a1b0bf308f099705e584bde641e156"
+    },
+    "b100-history.json.gz": {
+      "preserved_file": "20261027-refined-selection-8e774d2/references/b100-history.json.gz",
+      "sha256": "09e2df33bdfba7cc7ccb331a2995d81bda7e1ae13d5d6f61569904574b6a7e57"
+    },
+    "b40-capture.json.gz": {
+      "preserved_file": "20261027-refined-selection-8e774d2/references/b40-capture.json.gz",
+      "sha256": "029632e4d0f863a4d1e4c8014a88eca94a0b7eee59517152cbfa80d8919604c2"
+    },
+    "b40-history.json.gz": {
+      "preserved_file": "20261027-refined-selection-8e774d2/references/b40-history.json.gz",
+      "sha256": "cc7974d202ecaa5444946aae45965c01f9cf93a10b027f253e71e30a7494dad2"
+    }
+  },
+  "schema": "mutaco-private-raw-evidence-index-v1",
+  "scope": "all newly sealed raw job results, execution provenance and tested-source delta outside Git; no absolute private paths included"
+}

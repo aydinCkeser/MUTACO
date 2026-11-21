@@ -1,0 +1,60 @@
+schema_version = "mutaco-paper-visual-grammar-v1"
+default_profile = "aps_full_width"
+
+[profiles.aps_full_width]
+mplstyle = "aps_full_width.mplstyle"
+width_inches = 7.0
+height_inches = 2.9
+
+[roles.true]
+color = "#111111"
+linestyle = "-"
+marker = "o"
+marker_face = "white"
+marker_edge = "#111111"
+marker_size = 7.0
+marker_edge_width = 1.25
+line_width = 1.35
+zorder = 3
+
+[roles.mutaco]
+color = "#0072B2"
+linestyle = ":"
+marker = "s"
+marker_face = "#0072B2"
+marker_edge = "#0072B2"
+line_width = 1.35
+zorder = 4
+
+[roles.npe]
+color = "#E66B2C"
+linestyle = ":"
+marker = "^"
+marker_face = "#E66B2C"
+marker_edge = "#111111"
+marker_edge_width = 0.55
+line_width = 1.35
+zorder = 2
+
+[roles.true_uncertainty]
+color = "#B8B8B8"
+alpha = 0.65
+line_width = 0.0
+zorder = 0
+
+[roles.ensemble_mean]
+color = "#0072B2"
+linestyle = "-"
+marker = "o"
+zorder = 3
+
+[roles.ensemble_uncertainty]
+color = "#56B4E9"
+alpha = 0.24
+line_width = 0.0
+
+[roles.individual_realization]
+color = "#9CA3AF"
+alpha = 0.20
+line_width = 0.55
+zorder = 1

@@ -1,0 +1,56 @@
+{
+  "budget": 40,
+  "call_preview": {
+    "maximum_assessment_calls": 3,
+    "maximum_search_calls": 120,
+    "maximum_total_calls": 123,
+    "scientific_calls_executed": 0,
+    "target_construction_calls": 0,
+    "terminal_calls": 0
+  },
+  "campaign_id": "graph_scalar_primary_prequalification_b40_smoke_v1",
+  "comparison": {
+    "assessment_campaign_seed": 92021124,
+    "assessment_fidelity": "sparse-m20-five-force-scientific",
+    "assessment_policy": "paired_held_out_assessment_v1",
+    "configuration_identity": "scalar-primary-comparison-config-v1-3f85790c367295a5169f95be8cb1146440f103b37cedea275714bf2d92662049",
+    "design_campaign_seed": 92021121,
+    "inference_campaign_seed": 92021122,
+    "metric_schema": "primary_physical_response_metrics_v1",
+    "protocol_id": "mutaco-scalar-qlognei-sobol-primary-v1",
+    "record_schema": "mutaco-scalar-primary-target-method-record-v1",
+    "simulator_configuration_identity": "5e44d50a0073706dbe692bfd1c9627ee34b67791d7e32d94898c8928a44bc7bf",
+    "simulator_definition_identity": "graph-oscillator.overdamped-scientific.v1.p4-paper-baseline.m20-five-force-scientific.float32",
+    "terminal_campaign_seed": 92021123
+  },
+  "declaration_identity": "scalar-primary-population-declaration-v1-e4607927411d9d2e5da9c4c2583bf4ff663e81acacc8336bad76103c9aed8dc2",
+  "execution_requires_approval": true,
+  "methods": [
+    {
+      "configuration_identity": "scalar-primary-mutaco-configuration-v1-b8a3542dc42033af0f95ed0f641369abb4b047147a1b5ed8ddb6b3a85345ba3d",
+      "method": "mutaco",
+      "search_policy_identifier": "canonical_registered_mutaco_profile",
+      "terminal_policy_identifier": "continuous_posterior_mean_physical_l1_mae"
+    },
+    {
+      "configuration_identity": "scalar-primary-qlognei-configuration-v1-99fd153c9fcbb9d74d518bdbdc63a35e6725b97095c7049c3ac66031a3e33b7a",
+      "method": "scalar_qlognei",
+      "search_policy_identifier": "scalar_qlognei_negative_physical_mae_v1",
+      "terminal_policy_identifier": "continuous_scalar_posterior_mean_physical_mae_v1"
+    },
+    {
+      "configuration_identity": "scalar-primary-sobol-configuration-v1-102f3cba566a266534fdbddc54863953171b941cc7951742e1098a736bed05fd",
+      "method": "sobol",
+      "search_policy_identifier": "single_scrambled_sobol_sequence_per_target_budget_v1",
+      "terminal_policy_identifier": "evaluated_best_observed_physical_mae_v1"
+    }
+  ],
+  "output_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/scalar_primary_smoke/b40-v1/workers",
+  "schema_version": "mutaco-scalar-primary-population-declaration-v1",
+  "state": "unexecuted",
+  "study_identity": "paper-study-spec-v1-f36dcfe64fe9319b3dfcc972601a722251d604577ce65c00a2a63bf6f2584f84",
+  "target_ledger_hash": "hidden-theta-cohort-v2-e9208cdb8056245dc6df5540c327029917e4600b512e9084b1f6998a772ad142",
+  "target_record_identities": [
+    "frozen-target-record-v2-55ef79e8c497a3d9e186553901b04d909b2de06d145b70f177968372063f8693"
+  ]
+}

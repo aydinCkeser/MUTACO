@@ -1,0 +1,89 @@
+{
+  "assessment_policy": {
+    "b100_assessment_campaign_seed": 92021600,
+    "b40_assessment_campaign_seed": 92021540,
+    "calls_per_valid_recommendation": 1,
+    "distinct_across_budgets": true,
+    "freeze_all_recommendations_before_assessment": true,
+    "identifier": "new_budget_specific_three_method_paired_heldout_assessment_v1",
+    "method_independent_within_target_budget": true,
+    "reason": "uniform new endpoint evidence avoids mixed assessment epochs and repairs partial B40 context provenance"
+  },
+  "authorization": {
+    "exact_replay": false,
+    "raw_archive_recovery": false,
+    "simulator_execution": false,
+    "terminal_generation": false,
+    "truba_submission": false
+  },
+  "budgets": [40, 100],
+  "call_formula": {
+    "assessment_calls_maximum": 720,
+    "best_case": 720,
+    "n100_rerun": "number of B100 MUTACO targets failing raw-lineage or exact-model replay",
+    "n40_rerun": "number of B40 MUTACO targets failing raw-lineage or exact-model replay",
+    "search_calls": "40*n40_rerun + 100*n100_rerun",
+    "total_calls_maximum_formula": "720 + 40*n40_rerun + 100*n100_rerun",
+    "worst_case": 17520
+  },
+  "causal_boundary": {
+    "conclusion": "terminal_recommendation_is_strictly_downstream_of_all_search_evaluations_and_final_gp_fit",
+    "identical_across_historical_commits": true,
+    "recommendation_boundary_lines": [1317, 1422],
+    "runner_git_blob_sha1": "99cc8ef1606a41dd221cf583ca225222178ca15c",
+    "runner_path": "src/mutaco/orchestration/runner.py",
+    "sequential_loop_lines": [1171, 1315],
+    "terminal_simulator_calls": 0
+  },
+  "cohort_sha256": "359fc0bb59fc9a8a52f5da684e7a7eb352466bdc0d0a54fb8efa94131ce423bb",
+  "cross_experiment_contract_identity": "cross-experiment-scientific-contract-v1-f5cfcdc612904d951da366c492d510ad45886265ec716b2560bc1b93bce90fd4",
+  "design_id": "paper120_repaired_mutaco_npe_snpe_b40_b100_salvage_v1",
+  "design_identity": "repaired-sbi-salvage-design-v1-5283c87e6f5fedfc8d611682769ca0a8b1bbdd184b26110678f2fd74ceaa2a9b",
+  "evidence_policy": {
+    "analysis_pipeline": "cross_experiment_evidence_analysis_v1",
+    "error_vocabulary": ["E_obs", "E_raw_GP", "E_term_GP", "E_heldout"],
+    "historical_records_immutable": true,
+    "new_versioned_records": true,
+    "provenance_requires": [
+      "native source record identity",
+      "raw trajectory SHA256 when reused",
+      "exact replay identities",
+      "terminal implementation blob",
+      "new recommendation identity",
+      "new assessment context and response"
+    ]
+  },
+  "exact_replay_gate": {
+    "failure_action": "rerun_mutaco_search_for_that_target_under_native_source_plus_minimal_terminal_delta",
+    "refit_classification": "prospective_reconstruction_validation_never_historical_evidence",
+    "required_equalities": [
+      "ordered observation ids theta and physical responses",
+      "response transform identity",
+      "final training data identity",
+      "final GP model identity",
+      "terminal seed context and settings"
+    ],
+    "simulator_calls": 0
+  },
+  "methods": ["mutaco", "sbi_npe", "sbi_snpe"],
+  "minimal_source_delta": {
+    "after_git_blob_sha1": "76569b61e31fb8d10575d97f4b4ad136eb481507",
+    "all_other_source_must_match_each_budget_native_commit": true,
+    "allowed_change": "post_update_scoring_convergence_and_best_iterate_retention_only",
+    "before_git_blob_sha1": "84fee3d4c0199aafa3d5455b794b557953a3ee33",
+    "correction_commit": "9603305a7f7f7b6c6f93586aa5728c0dc2393237",
+    "path": "src/mutaco/recommendation/_continuous.py"
+  },
+  "reuse_policy": {
+    "historical_heldout_responses": "context_evidence_only_not_primary_endpoint",
+    "mutaco_search": "reuse_only_after_complete_raw_lineage_and_exact_final_model_replay",
+    "mutaco_terminal": "always_new_corrected_refined_terminal_evidence",
+    "partial_pooling": "forbidden",
+    "sbi_search_and_recommendations": "reuse_immutable_native_recommendations",
+    "selection_rule": "target_outcome_blind_evidence_completeness_and_exact_replay_only"
+  },
+  "schema_version": "mutaco-repaired-sbi-salvage-design-v1",
+  "scientific_calls": 0,
+  "targets": 120,
+  "truba_jobs_submitted": 0
+}

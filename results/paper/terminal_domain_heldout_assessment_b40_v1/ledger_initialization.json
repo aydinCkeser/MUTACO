@@ -1,0 +1,10 @@
+{
+  "attempted_calls": 0,
+  "automatic_retry": false,
+  "declaration_identity": "terminal-domain-heldout-declaration-v1-15a2180b4ce9073a54c015edb5c5cb1f482703ab2d4b5a2f94b1e8f6d9207576",
+  "maximum_calls": 240,
+  "pending_tasks": 240,
+  "schema_version": "mutaco-terminal-domain-heldout-ledger-initialization-v1",
+  "simulator_calls": 0,
+  "task_identity_list": "terminal-domain-heldout-task-list-v1-13aa91dc34dc0b26886a05088bdddce70e34540bacb82e250561e5031aa2d133"
+}

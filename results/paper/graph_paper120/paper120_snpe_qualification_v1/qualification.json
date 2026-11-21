@@ -1,0 +1,70 @@
+{
+  "schema_version": "mutaco-paper-snpe-qualification-evidence-v1",
+  "campaign_id": "graph_paper120_b40_snpe_qualification_v1",
+  "status": "scientific_records_complete_validation_recovered",
+  "scientific_execution_surface": "local_windows_cpu",
+  "scientific_source_commit": "6bd1f2d7f77bfb29f8641ff4d3f117533a6e8e72",
+  "validation_source_commit": "126a83dd5a31971828519f92915e38fbe88a004e",
+  "declaration_sha256": "89852c6be6d2cb5b807fd41e8d7be260db69c6c3447095cab373588580ed193b",
+  "method_configuration_sha256": "c4713c213dc12a3e16f60b5f539be8013cf42624f95a1b3be7a95c351aafaf01",
+  "method": "sbi_snpe",
+  "inference_budget_per_target": 40,
+  "sequential_round_allocation": [14, 13, 13],
+  "target_count": 3,
+  "completed_records": 3,
+  "physical_calls": {
+    "attempted": 123,
+    "successful": 123,
+    "failed": 0,
+    "retry": 0,
+    "inference": 120,
+    "assessment": 3
+  },
+  "assessment_randomness_namespaces": [
+    "quenched_disorder",
+    "initial_state",
+    "thermal_noise"
+  ],
+  "worker_terminal": {
+    "status": "failed",
+    "phase": "paired_context_validation",
+    "failure_type": "TypeError",
+    "failure_explanation": "unhashable type: 'dict'",
+    "sha256": "9debe112e5f30f813c4e953d3d0d9be5e0ec81c934fd72b0e9fd384d769ed3fd"
+  },
+  "validation_recovery": {
+    "status": "passed",
+    "scientific_calls_added": 0,
+    "explanation": "All scientific records and the population collection were complete before a computation-free mapping hashability defect in terminal validation. Stable-hash validation of the immutable records passed after the fix."
+  },
+  "population_execution_sha256": "aa44da1aaa3982488afad072bbcec9c374ed7f37684583e52f3e6d2b282563ca",
+  "population_collection_sha256": "36cbee1f98cfcb1a343e2da1abaab12c9359134455a80c46e3d4b2078d373d1d",
+  "records": [
+    {
+      "target_position": 0,
+      "target_record_identity": "frozen-target-record-v2-e3a859e807a718a6749aae18930a5d1c4982970f272ad09cf46fd700ccda0ef6",
+      "record_content_hash": "paper-method-record-v1-bbdc50edc993d8a933b8254cd1a33930eab325e28048dd75bd0903315ffc57e4",
+      "response_error_mae": 0.19421886432464816,
+      "response_error_l2": 1.3688125511470586,
+      "parameter_error_l2": 0.4566272935315124
+    },
+    {
+      "target_position": 49,
+      "target_record_identity": "frozen-target-record-v2-8e00511619bc3333aa42091068d7c157b959e83d6d5369a740563dfdb98d0d5e",
+      "record_content_hash": "paper-method-record-v1-51b98a7891b185a79d8f0975f5688f9c795c0ba95a3d99e6a530e58044314149",
+      "response_error_mae": 0.08756466802119575,
+      "response_error_l2": 0.6892912820973631,
+      "parameter_error_l2": 0.09651761382568122
+    },
+    {
+      "target_position": 99,
+      "target_record_identity": "frozen-target-record-v2-cfc076d5c1fd92a74b72f83230024564c7558c1d5f2ba0256a8d0c552603ec55",
+      "record_content_hash": "paper-method-record-v1-5b68df2d809174ad6128fe661bb95db798beb49ea6e5b2d32aaa75c6f0dad857",
+      "response_error_mae": 0.025076943139356444,
+      "response_error_l2": 0.1566881664712856,
+      "parameter_error_l2": 0.1545191277083571
+    }
+  ],
+  "consolidated_evidence": "benchmarks/graph/paper120_snpe_qualification_v1/manifest.json",
+  "scientific_calls_added_by_consolidation": 0
+}

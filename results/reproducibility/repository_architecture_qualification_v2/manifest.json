@@ -1,0 +1,64 @@
+{
+  "schema": "mutaco-repository-architecture-qualification-v2",
+  "scientific_source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+  "preceding_evidence_commit": "42daad8397a6a572f321c6f1f0cccbb59b842c49",
+  "review_date": "2026-11-18",
+  "decision": "QUALIFIED for publication of the private architecture branch",
+  "scope": "Repository architecture and core scientific workflow on the qualified TRUBA CPU profile, with the documented GPU, physical and SBI checks.",
+  "v1_scientific_manifest_sha256": "2ad3afebc7761f21ef631b0fb050c125482b8ddd83a830b294302d3bef9ed5e2",
+  "v1_checksum_list_sha256": "c9708c3c1654e722fec6003ce952f9103efdf83af63d4a22a9b32447010383c9",
+  "comparison_control_source": "9f3ce1893112bb37c23e3aad1508564f55d2c81b",
+  "scientific_counts": {
+    "collected": 531,
+    "passed": 523,
+    "skipped": 8,
+    "failed": 0,
+    "deselected": 0
+  },
+  "strict_replay": {
+    "B40_target16": "40/40 exact",
+    "B100_target0": "100/100 exact",
+    "physical_attempts": 0,
+    "physical_calls": 0
+  },
+  "same_environment_native_B100_comparison": {
+    "targets": [
+      0,
+      49,
+      99
+    ],
+    "original_job": 7010931,
+    "refactored_job": 7010554,
+    "observations": 300,
+    "fits": 255,
+    "proposals": 252,
+    "terminal_recommendations": 3,
+    "result": "exact"
+  },
+  "unresolved_architecture_regressions": 0,
+  "extended_experiment_job": {
+    "job": 7010560,
+    "state": "FAILED",
+    "passed": 518,
+    "failed": 13,
+    "setup_errors": 7,
+    "skipped": 12
+  },
+  "exceptions": {
+    "extended_missing_originals": "BLOCKED (9 pytest failures and 7 setup errors)",
+    "historical_landscape_fingerprint": "FAILED on both Linux sources, both dtypes",
+    "Fig4_plot_data_and_artist_digest": "FAILED on Linux, same output on both scientific sources",
+    "five_repeat_PDF_byte_checks": "FAILED",
+    "Fig1_and_Fig2_historical_raster_equality": "FAILED",
+    "original_dense_tensor_identity": "NOT VERIFIED",
+    "historical_eight_thread_three_target_mutaco_means": "FAILED exact comparison",
+    "original_NLE_NRE_sample_bytes_private_inputs": "NOT VERIFIED",
+    "full_optional_B100_raw_archive_and_private_off_cohort_scalar_inputs": "BLOCKED"
+  },
+  "new_scientific_jobs_submitted_by_this_review": 0,
+  "evidence": {
+    "figure-interpretation.json": "8dfac009e56e5dbb6da96c2e5212a174a3cfdb5fb9cf02e66083bf983277bc39",
+    "figure4.json": "def5cabc0662d6b14d1a380c625728374cb27c27757b5f84c1009776b16831cd",
+    "historical-search.json": "64e87f01296e44c4b47a754a52a6acc2d1f062208c3ce006a2843d1ed5bccda3"
+  }
+}

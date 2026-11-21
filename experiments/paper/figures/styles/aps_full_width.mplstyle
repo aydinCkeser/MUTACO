@@ -1,0 +1,24 @@
+figure.figsize: 7.0, 2.9
+figure.dpi: 120
+savefig.dpi: 300
+font.size: 9
+font.family: serif
+font.serif: CMU Serif, Computer Modern Roman, DejaVu Serif
+mathtext.fontset: cm
+axes.labelsize: 10
+axes.titlesize: 10
+axes.linewidth: 0.8
+axes.grid: True
+grid.alpha: 0.2
+grid.linewidth: 0.5
+lines.linewidth: 1.5
+lines.markersize: 5
+legend.fontsize: 9
+legend.frameon: False
+xtick.labelsize: 8.5
+ytick.labelsize: 8.5
+pdf.fonttype: 42
+ps.fonttype: 42
+svg.fonttype: none
+savefig.bbox: tight
+savefig.pad_inches: 0.04

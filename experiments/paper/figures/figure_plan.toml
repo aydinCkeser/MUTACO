@@ -1,0 +1,55 @@
+schema_version = "mutaco-paper120-figure-plan-v1"
+source_campaign = "graph_paper120_b40_mutaco_npe_v3_v1"
+source_evidence = "benchmarks/graph/paper120/manifest.json"
+input_policy = "persisted_validated_inputs_only"
+simulator_calls = 0
+final_numbering_promised = false
+
+[[figures]]
+idea_id = "response-error-distributions"
+requires = ["paired_records", "response_error_mae", "status"]
+formats = ["pdf", "svg", "png"]
+caption_formats = ["md", "tex", "json"]
+
+[[figures]]
+idea_id = "paired-mutaco-minus-npe"
+requires = ["paired_records", "response_error_mae", "target_record_identity"]
+formats = ["pdf", "svg", "png"]
+caption_formats = ["md", "tex", "json"]
+
+[[figures]]
+idea_id = "response-versus-parameter-error"
+requires = ["response_error_mae", "parameter_error_l2", "method"]
+formats = ["pdf", "svg", "png"]
+caption_formats = ["md", "tex", "json"]
+
+[[figures]]
+idea_id = "timing-breakdown"
+requires = ["timing_events", "method", "target_record_identity"]
+formats = ["pdf", "svg", "png"]
+caption_formats = ["md", "tex", "json"]
+
+[[figures]]
+idea_id = "representative-reconstruction"
+requires = ["cohort", "recommended_theta", "persisted_assessment_response"]
+selection_uses_method_results = false
+formats = ["pdf", "svg", "png"]
+caption_formats = ["md", "tex", "json"]
+
+[[figures]]
+idea_id = "convergence"
+requires = ["compact_or_full_evaluation_history"]
+formats = ["pdf", "svg", "png"]
+caption_formats = ["md", "tex", "json"]
+
+[[figures]]
+idea_id = "accounting-and-failures"
+requires = ["call_ledger", "status"]
+formats = ["pdf", "svg", "png"]
+caption_formats = ["md", "tex", "json"]
+
+[[figures]]
+idea_id = "future-snpe-and-b100"
+state = "placeholder_until_qualified_evidence_exists"
+formats = ["pdf", "svg", "png"]
+caption_formats = ["md", "tex", "json"]

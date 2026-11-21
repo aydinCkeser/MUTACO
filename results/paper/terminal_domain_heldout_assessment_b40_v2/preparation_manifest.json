@@ -1,0 +1,11 @@
+{
+  "declaration_identity": "terminal-domain-heldout-declaration-v2-8becf876b147ebd3799dd40e68e18c5c71e14d411bcd00ae12e42bfa3779efa0",
+  "declaration_sha256": "7e2f4e7afe5a3f9cd8f070408980ba8964d8685c3bf94203cb6a6ff812c2d11f",
+  "gate_passed": true,
+  "ledger_initialization_sha256": "c44be93b89e481049cc2a651fbe5a28108a0f7229cbfd7637983c03ca144c058",
+  "package_identity": "terminal-domain-heldout-preparation-package-v2-1deb4fe526e62582599a8202265196fe1e7796ba88c85d8d71276c377a42d293",
+  "preflight_sha256": "af3121c02635007fab2df5c45eec5803ee6b262dadb4c8a5713c98a036a614c8",
+  "schema_version": "mutaco-terminal-domain-heldout-preparation-package-v2",
+  "scientific_calls": 0,
+  "tasks_sha256": "43fc27c8bf37db504f9421da8dde88b378e201eee19e7cf97787ab64e0e9fc4a"
+}

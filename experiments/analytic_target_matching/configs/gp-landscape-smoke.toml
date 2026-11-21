@@ -1,0 +1,14 @@
+schema_version = "mutaco-gp-landscape-config-v1"
+simulator = "frozen_gp_landscape"
+device = "auto"
+dtype = "float64"
+parameter_dim = 6
+response_dim = 4
+feature_count = 64
+latent_rank = 3
+landscape_seed = 20260728
+observation_noise = false
+
+[bounds]
+lower = [-1.0, -1.0, -1.0, -1.0, -1.0, -1.0]
+upper = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0]

@@ -1,0 +1,159 @@
+{
+  "archive_name": "paper-v3-6220690.tar.gz",
+  "archive_sha256": "6c935cb99fdbf4ce5f53b92022bd58d996fe64efb2dc97bd8a9e61d41ad78377",
+  "files": [
+    {
+      "path": "collection/artifact_inventory.json",
+      "sha256": "6ac75af1fe936d9082ec1fc8ecc72c0b1c565dc6a5b6c442ae812f88f124e62b",
+      "size_bytes": 763
+    },
+    {
+      "path": "collection/artifact_inventory.sha256",
+      "sha256": "08c03e5c1f0e7ec9fa0e4cb53271a34bb6b6e726376d13cf7cbd79cae5fd0012",
+      "size_bytes": 64
+    },
+    {
+      "path": "collection/population_collection.json",
+      "sha256": "5594e677577a4cef016d1aa3ee49f89c67a32d92572d7776a7451d2b7736e9f9",
+      "size_bytes": 1679
+    },
+    {
+      "path": "collection/population_collection.sha256",
+      "sha256": "3a62efe5bc1dbab6c33313c2079f41f4b398443c806ff80af0fc29f471a8f351",
+      "size_bytes": 64
+    },
+    {
+      "path": "collection/population_summary.json",
+      "sha256": "af6c90a0a043aedf7709e1aa78dccb957244e8b81809617974dfadad6e28c094",
+      "size_bytes": 12640
+    },
+    {
+      "path": "collection/population_summary.sha256",
+      "sha256": "83e877aa00bea809aaa5dbf10c8f2f50595e2d7bffe7bc9ac64de2ac2e6a5264",
+      "size_bytes": 64
+    },
+    {
+      "path": "worker-00/assessment_randomness/target-0bc4b48e85eae71c/mutaco_standardized.json",
+      "sha256": "2b7fab3805c44e8070415d8c5f0010dfd1b6de95615b521f2683d62885ed95a5",
+      "size_bytes": 234661
+    },
+    {
+      "path": "worker-00/assessment_randomness/target-0bc4b48e85eae71c/mutaco_standardized.sha256",
+      "sha256": "426199172df3e073e3970a700f0dc9c7b0f83c3b4c393da958728e85d1abb2f8",
+      "size_bytes": 64
+    },
+    {
+      "path": "worker-00/assessment_randomness/target-0bc4b48e85eae71c/mutaco_unstandardized.json",
+      "sha256": "6d391f53823c9ffc538a481c47fa0aa65b2318e4efef06bfd45ec77631ca44a4",
+      "size_bytes": 234663
+    },
+    {
+      "path": "worker-00/assessment_randomness/target-0bc4b48e85eae71c/mutaco_unstandardized.sha256",
+      "sha256": "e3ddbab352b7128d6d3c6760d6ba9839f5ce6d08f96c7a2ef97a0a10c69123cb",
+      "size_bytes": 64
+    },
+    {
+      "path": "worker-00/records/target-0bc4b48e85eae71c/mutaco_standardized.json",
+      "sha256": "1b327876b34b4c259bdb02c70453199524051d73b52f4625261605af0f338c84",
+      "size_bytes": 28423
+    },
+    {
+      "path": "worker-00/records/target-0bc4b48e85eae71c/mutaco_standardized.sha256",
+      "sha256": "7806bca529aaf0a326cde774dfbdc5544d29eccfc6e08f6a6bdd569cba4ed3dc",
+      "size_bytes": 64
+    },
+    {
+      "path": "worker-00/records/target-0bc4b48e85eae71c/mutaco_unstandardized.json",
+      "sha256": "6316ab43efa0ef75ec9e5b4f6607114845b214891aed7e2504065b58c952d0ce",
+      "size_bytes": 28425
+    },
+    {
+      "path": "worker-00/records/target-0bc4b48e85eae71c/mutaco_unstandardized.sha256",
+      "sha256": "05cfd82aaefe4dd3b5602e3db37a3e070318d55a883552e020bf21137b2fe86f",
+      "size_bytes": 64
+    },
+    {
+      "path": "worker-01/assessment_randomness/target-6306d5504878504c/mutaco_standardized.json",
+      "sha256": "3f0ddfce54e67a58d182c8c762b7b79021ca013694cb141412030446f168e2fb",
+      "size_bytes": 234697
+    },
+    {
+      "path": "worker-01/assessment_randomness/target-6306d5504878504c/mutaco_standardized.sha256",
+      "sha256": "3f88327b55d1c79d38d56b00f4de2289678a1539db99eb318e885061f5aef22a",
+      "size_bytes": 64
+    },
+    {
+      "path": "worker-01/assessment_randomness/target-6306d5504878504c/mutaco_unstandardized.json",
+      "sha256": "c81d6ae7f6cbe37cd88b2d80c8025417b839e52f631f1d492a6fde004e4c565c",
+      "size_bytes": 234699
+    },
+    {
+      "path": "worker-01/assessment_randomness/target-6306d5504878504c/mutaco_unstandardized.sha256",
+      "sha256": "7dd8e7605f9244e360801df6897eab1ad89c0256fa1e81f9be4ada739a157066",
+      "size_bytes": 64
+    },
+    {
+      "path": "worker-01/records/target-6306d5504878504c/mutaco_standardized.json",
+      "sha256": "a98acfd70c5659ecaf530815ebd2c6834255a4609cb95951567b3823e0e87e61",
+      "size_bytes": 28435
+    },
+    {
+      "path": "worker-01/records/target-6306d5504878504c/mutaco_standardized.sha256",
+      "sha256": "d00d4b97c346e6dda57b73b34c993d180374961fe8119b79605255f53dab4a06",
+      "size_bytes": 64
+    },
+    {
+      "path": "worker-01/records/target-6306d5504878504c/mutaco_unstandardized.json",
+      "sha256": "7210346116a4bdabf34cbaef89f71866dfdf644820017960f28a090dd5576f46",
+      "size_bytes": 28534
+    },
+    {
+      "path": "worker-01/records/target-6306d5504878504c/mutaco_unstandardized.sha256",
+      "sha256": "269dd08204a3990c44933d9c77121b1abbeb71c263b0b09dc1f58b662d8f6f69",
+      "size_bytes": 64
+    },
+    {
+      "path": "worker-02/assessment_randomness/target-3322c6912a12f879/mutaco_standardized.json",
+      "sha256": "6a378742375bce1cb7fea02ac46a03d4ae28a5c7b95b0dc875f16b2e90fd36e2",
+      "size_bytes": 234657
+    },
+    {
+      "path": "worker-02/assessment_randomness/target-3322c6912a12f879/mutaco_standardized.sha256",
+      "sha256": "b6ae2e66ca0895896cfb20fca6d8415fd786a72f97ad3ada50622b974ecea8a3",
+      "size_bytes": 64
+    },
+    {
+      "path": "worker-02/assessment_randomness/target-3322c6912a12f879/mutaco_unstandardized.json",
+      "sha256": "9dfa5c872c585bd66177510b64238a7ed96d1fc640432198139525e80e27ac5b",
+      "size_bytes": 234659
+    },
+    {
+      "path": "worker-02/assessment_randomness/target-3322c6912a12f879/mutaco_unstandardized.sha256",
+      "sha256": "4e787455b9dcf1f06d3b4cd5f814bb657c6d54eb1545cec23f8aff7adabd9fcc",
+      "size_bytes": 64
+    },
+    {
+      "path": "worker-02/records/target-3322c6912a12f879/mutaco_standardized.json",
+      "sha256": "099dbbeef04a97fa92018a75c26d79f0bc968b67dd8f5b16b61418bd5e0f7249",
+      "size_bytes": 28421
+    },
+    {
+      "path": "worker-02/records/target-3322c6912a12f879/mutaco_standardized.sha256",
+      "sha256": "0d74cc0d2f8622e8354f812b7571f336957cf3828eccd38758b8a7494885ffe9",
+      "size_bytes": 64
+    },
+    {
+      "path": "worker-02/records/target-3322c6912a12f879/mutaco_unstandardized.json",
+      "sha256": "e2b62a477bdaf53c0b634a0c1779c33bb38cbceb445b106c439820c0f35ab582",
+      "size_bytes": 28350
+    },
+    {
+      "path": "worker-02/records/target-3322c6912a12f879/mutaco_unstandardized.sha256",
+      "sha256": "ea105fcbff4acb21b72acc4bc418a38f85e3096a45adac4c9e253bb6bdb65377",
+      "size_bytes": 64
+    }
+  ],
+  "raw_posterior_artifacts_included": false,
+  "schema_version": "mutaco-paper-v3-compact-export-v1",
+  "scientific_calls": 0
+}

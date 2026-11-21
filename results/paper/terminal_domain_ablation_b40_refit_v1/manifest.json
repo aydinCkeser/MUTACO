@@ -1,0 +1,69 @@
+{
+  "c_prime_better": 120,
+  "completed_targets": 120,
+  "declaration": "experiments/paper/studies/graph_paper120/analysis/terminal_domain_ablation_b40_refit_v1.json",
+  "declaration_sha256": "65e23ada5cf6b0ad349360d951a1a6e19f5e32d070d8d0bdd8639238eb6c3f44",
+  "exact_theta_equal": 0,
+  "failed_targets": 0,
+  "failures": [],
+  "heldout_assessment_calls": 0,
+  "near_theta_equal": 0,
+  "normalized_b_to_c_l2": {
+    "maximum": 1.134065866470337,
+    "mean": 0.3575456284917891,
+    "median": 0.2699919790029526,
+    "minimum": 0.023884138092398643,
+    "q05": 0.04720136858522892,
+    "q25": 0.11590678058564663,
+    "q75": 0.4951842129230499,
+    "q95": 0.9604150086641311
+  },
+  "normalized_c_to_nearest_evaluated_l2": {
+    "maximum": 0.3848433494567871,
+    "mean": 0.11649706962828835,
+    "median": 0.0853528380393982,
+    "minimum": 0.008110202848911285,
+    "q05": 0.025211763009428977,
+    "q25": 0.04725926276296377,
+    "q75": 0.17287945747375488,
+    "q95": 0.2950997546315193
+  },
+  "package_identity": "terminal-domain-ablation-b40-refit-v1-57b9b6308f16e628c5a7b3d5c4b7bc8da66c56f555e78d4e3b4978f691829a7e",
+  "posterior_mae_c_minus_b": {
+    "maximum": -0.00045363116078078747,
+    "mean": -0.021103645584662444,
+    "median": -0.013404041063040495,
+    "minimum": -0.09095072746276855,
+    "q05": -0.06773640841711313,
+    "q25": -0.02611199114471674,
+    "q75": -0.007648911443538964,
+    "q95": -0.0031395891215652235
+  },
+  "raw_fallbacks": 0,
+  "rows_sha256": "b88cd087fa7b2c1053ea749ef5750c01cc54b4b11a64b35a276df39f18bdc101",
+  "runtime": {
+    "botorch": "0.18.1",
+    "device": "cpu",
+    "dtype": "float32",
+    "gpytorch": "1.15.2",
+    "numpy": "2.4.6",
+    "python": "3.11.15",
+    "scipy": "1.17.1",
+    "thread_environment": {
+      "MKL_NUM_THREADS": "8",
+      "OMP_NUM_THREADS": "8",
+      "OPENBLAS_NUM_THREADS": "8"
+    },
+    "torch": "2.12.1+cpu",
+    "torch_interop_threads": 1,
+    "torch_intraop_threads": 8
+  },
+  "schema_version": "mutaco-terminal-domain-ablation-b40-refit-v1",
+  "selected_targets": 120,
+  "simulator_calls": 0,
+  "simulator_constructed": false,
+  "source_compact_export_sha256": "f02bd7343292cf0a9768fb83ffc85019177feceb0afb1003c65f834b3ffcbbe9",
+  "targets_with_failed_restarts": 0,
+  "total_gp_fitting_runtime_seconds": 108.45617618898905,
+  "total_wall_runtime_seconds": 806.4758953750024
+}

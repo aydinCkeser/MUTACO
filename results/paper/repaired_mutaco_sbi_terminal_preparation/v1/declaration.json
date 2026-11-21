@@ -1,0 +1,113 @@
+{
+  "authorization": {
+    "heldout_assessment": false,
+    "simulator_execution": false,
+    "terminal_generation": false,
+    "truba_submission": false
+  },
+  "budgets": [
+    40,
+    100
+  ],
+  "call_accounting": {
+    "gp_fit_attempts": 0,
+    "heldout_assessment_calls": 0,
+    "search_calls": 0,
+    "simulator_calls": 0,
+    "simulator_constructed": false,
+    "terminal_optimizations_planned": 240
+  },
+  "cohort_sha256": "359fc0bb59fc9a8a52f5da684e7a7eb352466bdc0d0a54fb8efa94131ce423bb",
+  "declaration_id": "paper120_repaired_mutaco_b40_b100_corrected_terminal_v1",
+  "declaration_identity": "repaired-sbi-corrected-terminal-declaration-v1-91a3b0e77ede7adb90be188c0bf56995d60e264cd5cc2fff48d28e8289414688",
+  "evidence_policy": {
+    "append_only_attempts": true,
+    "canonical_json_allow_nan": false,
+    "failure_attempts_preserved": true,
+    "freeze_all_240_before_heldout_assessment": true,
+    "one_successful_recommendation_per_target_budget": true,
+    "semantic_identity_excludes_elapsed_timings": true
+  },
+  "exact_state_qualification_identity": "repaired-sbi-exact-state-qualification-v1-843aeb4d8cae6bb30d79ce7b660056386f2f8f43443ef67953607870f1c9cb6d",
+  "immutable_sbi_recommendations": {
+    "b100_source": "benchmarks/paper/graph_paper120/b100_v1/paired_records.jsonl",
+    "b100_source_sha256": "29f6af90cdec9581dd3b850636c05c6dd740dac2aa22164c7f4bc68b3ab61f67",
+    "b40_source": "benchmarks/graph/paper120_mutaco_npe_snpe_v1/paired_records.jsonl",
+    "b40_source_sha256": "cd0352310c8e570bdc56fe6e4ef587bd58e1c26f1f0865d44878ffc7dd2c0c72",
+    "methods": [
+      "sbi_npe",
+      "sbi_snpe"
+    ],
+    "regeneration": false
+  },
+  "model_policy": {
+    "additional_gp_fit_attempts": 0,
+    "method": "exact_source_model_construction_plus_archived_selected_parameter_state",
+    "optimizer_rerun": false,
+    "required_equalities": [
+      "response_transform_identity",
+      "standardized_observations_bitwise",
+      "final_fit_configuration",
+      "final_training_data_identity",
+      "materialized_final_model_identity"
+    ],
+    "required_prior_gate": "240_of_240_exact_state_replays_passed"
+  },
+  "recovery_package_identity": "repaired-sbi-recovery-qualification-package-v1-59b60902132c611f80695f52cddc061c53570a26de2fb41f09f0759897c55890",
+  "salvage_design_identity": "repaired-sbi-salvage-design-v1-5283c87e6f5fedfc8d611682769ca0a8b1bbdd184b26110678f2fd74ceaa2a9b",
+  "schema_version": "mutaco-repaired-sbi-corrected-terminal-declaration-v1",
+  "scientific_calls": 0,
+  "source_policy": {
+    "all_other_files": "native_commit_unchanged",
+    "b100_qualification_positions": [
+      0,
+      49,
+      99
+    ],
+    "composite_identities": {
+      "b100_qualification_positions": "repaired-sbi-native-plus-terminal-overlay-v1-c3a6e149d52fd6c4e0ee90f32f233ece28ffbb22d21784ebc1d9f573974d8c51",
+      "b100_remaining_positions": "repaired-sbi-native-plus-terminal-overlay-v1-3e97edfc5e28ff38c22295bad7abadd1dadbc2fea4be2cad34528d52ecfcc8ed",
+      "b40_all": "repaired-sbi-native-plus-terminal-overlay-v1-88670ccd44c8788d2cf801242a35962446015864cfa3c20e2b247c3b1d64baf5"
+    },
+    "corrected_blob": "76569b61e31fb8d10575d97f4b4ad136eb481507",
+    "correction_commit": "9603305a7f7f7b6c6f93586aa5728c0dc2393237",
+    "defective_blob": "84fee3d4c0199aafa3d5455b794b557953a3ee33",
+    "kind": "clean_native_source_plus_single_in_memory_terminal_overlay_v1",
+    "native_commits": {
+      "b100_qualification_positions": "2b067c33720ed7c6b30ee91ae6087081d5ad0776",
+      "b100_remaining_positions": "e7baa235fd7282ea478acc83f9457cfd95b76185",
+      "b40_all": "9235d2fefefa6af0d35cc3af2dfaa01a2d56a3a9"
+    },
+    "overlay_path": "src/mutaco/recommendation/_continuous.py",
+    "physical_mae_path": "src/mutaco/recommendation/physical_mae.py",
+    "unchanged_physical_mae_blob": "a5bfa2793742db9f6b195fcdfd6f4e7615e786c5"
+  },
+  "targets": 120,
+  "terminal_cases": 240,
+  "terminal_policy": {
+    "candidate_domain": "continuous_bounded_theta",
+    "convergence_tolerance": 1e-07,
+    "corrected_behavior": "score_post_update_state_retain_best_accepted_iterate",
+    "device": "cpu",
+    "dtype": "float32",
+    "learning_rate": 0.05,
+    "max_iterations": 64,
+    "objective": "mean_m_abs_mu_physical_m_theta_minus_target_physical_m",
+    "optimizer": "projected_adam",
+    "policy_id": "continuous_posterior_mean_physical_l1_mae",
+    "randomness": {
+      "ambient_rng_isolation": true,
+      "context": "reuse_immutable_historical_terminal_context",
+      "coordinates": [
+        "target_index",
+        "policy_id"
+      ],
+      "namespace": "terminal_recommendation",
+      "seed_policy": "mutaco-coordinate-sha256-v1"
+    },
+    "raw_samples": 1024,
+    "restarts": 10,
+    "simulator_calls": 0
+  },
+  "truba_jobs_submitted": 0
+}

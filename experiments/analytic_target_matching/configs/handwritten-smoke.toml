@@ -1,0 +1,10 @@
+schema_version = "mutaco-analytic-config-v1"
+simulator = "analytic_handwritten"
+device = "auto"
+dtype = "float64"
+noise_mode = "deterministic"
+theta_star = [0.35, -0.40]
+
+[bounds]
+lower = [-1.0, -1.0]
+upper = [1.0, 1.0]

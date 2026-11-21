@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+build/
+dist/
+*.egg-info/
+runs/
+.idea/
+.vscode/
+Temp/
+
+# LaTeX build intermediates (retain manuscript sources, figures, and final PDFs).
+docs/paper/latex/*.aux
+docs/paper/latex/*.bbl
+docs/paper/latex/*.blg
+docs/paper/latex/*.log
+docs/paper/latex/*.synctex.gz
+docs/paper/latex/*Notes.bib
+# Paper Lab exploratory work products are never accepted evidence by default.
+experiments/paper/exploration/work/
+experiments/paper/exploration/outputs/

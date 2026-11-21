@@ -1,0 +1,307 @@
+{
+  "byte_identical_to_raw": false,
+  "derived": true,
+  "not_a_raw_acceptance_packet": true,
+  "report": {
+    "aggregate_resources": {
+      "elapsed_wall_seconds": 374,
+      "jobs_submitted": 2,
+      "max_batch_rss_kib": 2096980,
+      "maximum_with_completed_first_attempt_seconds": 847,
+      "no_further_job_authorized_in_this_task": true,
+      "original_combined_wall_budget_seconds": 900,
+      "repair_requested_limit_seconds": 660
+    },
+    "artifact_sha256": {
+      "README.md": "afd440c8caadddfc0d1029298e612d430708c36c358bd550b265a8f65e7b7b02",
+      "attempt1-artifacts.tar.gz": "7ded936d686a1a18865ff7b446f9123ccbadcaa57352460ff301885fac9368ef",
+      "attempt2-artifacts.tar.gz": "d487a5e37205efdbdc390e0d6886e502181c073b89af4d75173812552abd8bdc",
+      "b40-comparison.json": "f6a263129b3f7e7c812bec85ece7eaa5d45cc66d93b8004643f28a320476dac9",
+      "baseline-b40.json.gz": "029632e4d0f863a4d1e4c8014a88eca94a0b7eee59517152cbfa80d8919604c2",
+      "baseline-pytest.log": "86dc57f994c85488c83677b0dcfac9b479a6bcca8f7ce197af8aa37781c5ddf1",
+      "baseline-tests-status.json": "fedf756e8d143772b30f5dbb2512f9c803a7c8fb6a2cc723712fb17a0cf6e261",
+      "baseline-tests.xml": "6c04141c650c98291f6bfb4287474a78ab1ce2965660b97882fb642ea170b3e0",
+      "environment.freeze.txt": "e4cf81c7053a56d4147cb6eaa306a4314ddfee9344750e19d15c068bf5086182",
+      "execution/lifecycle-validation.json": "db3f2c6bb942f34e211b0d6987b62e322a05e7edc6238a0787683212177d8875",
+      "execution/repair-lifecycle-validation.json": "0c1dcdc49291972ce5136e4bf676f3e7b6c8ec4ca86722958dbcb27bf76c24be",
+      "execution/repair-submission-intent.json": "a9e65a5994dc32557b45bcec5ffc2708f3fd9b0320a59bfdada332e99b8f4e67",
+      "execution/repair-submission-receipt.json": "dc90cdb7dfc0f668f40da105d05e90379c3e84f2108d717712659f7259843663",
+      "execution/runtime-pip-check.log": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+      "execution/scheduler-accounting.txt": "64e3b921f8d5457a09893772f87387fe50cf8aa769a41646dfe117325bd77b2d",
+      "execution/submission-intent.json": "1c4197273ce76cc04843eb1de800192b59d81034a1198113997c4726e55b4a41",
+      "execution/submission-receipt.json": "2f4fa3b4bca31d25f4282c0b90081ef7510f25546f0a983d6ae579707368bbe9",
+      "historical-b40.json.gz": "cc7974d202ecaa5444946aae45965c01f9cf93a10b027f253e71e30a7494dad2",
+      "local-diagnostic-tests.log": "1b51313c73fa5714388df1056a525f783bd6a59a5ec2675508c161890c096288",
+      "local-gate-tests.log": "0672733208a62263730231eb3fc7c6a3722de8f442b4ca464bcb45404eeefef9",
+      "original-environment-comparison.json": "a6670c991a2f69d27377207d158884c50d5a984508d75a278ec6c6bf605a06c3",
+      "repeat-b40.json.gz": "d1ac47e6a4f68a9fad03746f49afc6fc45e45765f274ab04fe9e64c185f0998f"
+    },
+    "b100": {
+      "captured": false,
+      "reason": "optional extension stopped after original comparator falsely treated runtime library enumeration order as environment difference; no third job authorized",
+      "record_pointer": "/records/0",
+      "target": 0
+    },
+    "b40": {
+      "available_quantities": [
+        "frozen_response_means_scales_and_float_bits",
+        "standardized_training_data_observation_and_option_identities",
+        "model_initialization_seed_and_GP_fit_seed_coordinates",
+        "fitted_hyperparameters_noise_task_covariance_fit_objective_attempts_and_termination",
+        "posterior_means_and_covariances",
+        "raw_candidates_acquisition_scores_branches_optimizer_starts_and_effective_proposal",
+        "duplicate_recovery_operands_and_decision",
+        "conditional_cold_fit_terminal_recommendation",
+        "full_closed_loop_proposal_and_fit_diagnostics",
+        "ambient_RNG_preservation_and_evaluation_accounting"
+      ],
+      "comparison": "b40-comparison.json",
+      "conditional_final_data_checkpoint": {
+        "ambient_rng_preserved": true,
+        "duplicate_recovery_evaluation": 40,
+        "initialization": "production_deterministic_cold_on_archived_final_data_no_historical_warm_starts",
+        "not_historical_final_warm_started_GP": true,
+        "origin": "reconstructed_conditional_mathematical_checkpoints_not_historical_terminal_or_closed_loop",
+        "rows": 40
+      },
+      "first_adaptive": {
+        "accounting": {
+          "committed_fit_events": 1,
+          "committed_observations": 16,
+          "committed_proposal_events": 1,
+          "committed_recommendation_events": 0,
+          "initial_observations": 16,
+          "planned_observations": 40,
+          "sequential_observations": 0,
+          "training_data_versions": 1
+        },
+        "ambient_rng_preserved": true,
+        "archived_observations_consumed": 16,
+        "branch": "barrier",
+        "candidate_17": [
+          0.964871883392334,
+          0.940252959728241,
+          0.5112836956977844,
+          0.8793872594833374
+        ],
+        "candidate_17_matches_archive": true
+      },
+      "full_historical_replay": {
+        "ambient_rng_preserved": true,
+        "archived_observations_consumed": 40,
+        "budget": 40,
+        "candidate_comparison": "exact; no tolerance or candidate substitution",
+        "frozen_transform_identity": {
+          "historical": "response-transform-v1-80cbe14adbb107bff5459f2062e59617f2c17a49131091c880d7f0859f877a0f",
+          "reconstructed": "response-transform-v1-80cbe14adbb107bff5459f2062e59617f2c17a49131091c880d7f0859f877a0f"
+        },
+        "historical_gp_parameter_snapshots_available": false,
+        "logical_replay_accounting": {
+          "committed_fit_events": 25,
+          "committed_observations": 40,
+          "committed_proposal_events": 24,
+          "committed_recommendation_events": 1,
+          "initial_observations": 16,
+          "planned_observations": 40,
+          "sequential_observations": 24,
+          "training_data_versions": 25
+        },
+        "physical_simulator_calls": 0,
+        "production_status": "completed",
+        "record_pointer": "/records/48",
+        "status": "passed",
+        "target": 16
+      },
+      "record_pointer": "/records/48",
+      "reference_capture_status": "two_complete_captures_exact_scientific_equality_same_environment_after_library_enumeration_normalization",
+      "reference_origin": "reconstructed_original_production_implementation_in_current_qualified_TRUBA_environment",
+      "scientific_hash": "12251e746d4c39f2f028651f766c96a6723dc39cb63d5cd484ad661b9cf3001c",
+      "target": 16
+    },
+    "baseline_test_skip_reasons": {
+      "canonical_B40_B100_versioned_archives_sha256_verified": true,
+      "cuda_only_cases": 7,
+      "legacy_B100_verified_untracked_compact_fetch_absent": 1
+    },
+    "canonical_repository": "https://github.com/aydinCkeser/MUTACO",
+    "capture_harness_commit": "27f654a8e590d3aadb89a2791c91f1e1491a1aad",
+    "capture_harness_worker_sha256": "19726fc3242fb650c0f25dbba4e12a96515a1f63a85f4b772257bc04d016072c",
+    "comparator_change": "canonicalize_only_unordered_full_runtime_library_records; verify_original_ordered_v1_artifact_signatures_before_comparison",
+    "comparator_environment_schema": "runtime-library-set-v2",
+    "comparator_source_path": "infrastructure/truba/refactor_reference.py",
+    "comparator_source_sha256": "0403a498e316b85dd2c0d3ebca4496dfb9e9efecd3735c2595df3361930f3e36",
+    "date": "2026-10-26",
+    "decision": {
+      "acceptance": "exact same-environment first+conditional checkpoint hash; strict full40 historical replay; existing transform/RNG/runner tests and unchanged baseline failure set",
+      "broader_refactor_ready": false,
+      "first_helper_gate_ready": true,
+      "first_proposed_change": "extract frozen-response preparation block in runner.run_sequential without reordering any tensor operations, identity construction or event/failure boundaries",
+      "limitations": [
+        "no B100 reference",
+        "known exactly singular NEI success fixture remains failed; separate disposition",
+        "SBI missing; MUTACO-only qualification",
+        "historical intermediate GP snapshots and full original environment not available",
+        "no future A/B validation yet; any candidate must execute under the same environment before acceptance"
+      ],
+      "new_refactored_implementation_validated": false
+    },
+    "development_branch": "ege/repro-refactor",
+    "diagnostic_failures_preserved": {
+      "attempt1": "checkpoint serialization incorrectly called GPFitDiagnostic.provenance; partial first-fit packet retained. Post-run strict replay metadata compared tuples to JSON arrays after consuming all40; no physical call. Fixed using production FitRecord serializer and canonical JSON containers only.",
+      "attempt2": "scientific repeat hash exact; original environment comparison rejected different enumeration order of otherwise identical library records. Original rejection and raw packets retained; v2 comparator verifies them locally. Baseline pytest failure unchanged.",
+      "historical_candidate_substitution": false,
+      "numerical_tolerance_changes": "none"
+    },
+    "environment": {
+      "architecture": "x86_64",
+      "cpu_model": "Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz",
+      "device": "cpu",
+      "fit_dtype": "torch.float32",
+      "libraries": [
+        {
+          "internal_api": "openmp",
+          "num_threads": 20,
+          "prefix": "libgomp",
+          "user_api": "openmp",
+          "version": null
+        },
+        {
+          "architecture": "SkylakeX",
+          "internal_api": "openblas",
+          "num_threads": 20,
+          "prefix": "libscipy_openblas",
+          "threading_layer": "pthreads",
+          "user_api": "blas",
+          "version": "0.3.31.188.0"
+        },
+        {
+          "architecture": "SkylakeX",
+          "internal_api": "openblas",
+          "num_threads": 20,
+          "prefix": "libscipy_openblas",
+          "threading_layer": "pthreads",
+          "user_api": "blas",
+          "version": "0.3.30"
+        }
+      ],
+      "packages": {
+        "botorch": "0.18.1",
+        "gpytorch": "1.15.2",
+        "linear_operator": "0.6.1",
+        "numpy": "2.4.6",
+        "pytest": "9.1.1",
+        "sbi": null,
+        "scipy": "1.17.1",
+        "threadpoolctl": "3.7.0",
+        "torch": "2.12.1+cpu"
+      },
+      "posterior_covariance_policy": "float32_fit_float64_covariance",
+      "python": "3.11.17",
+      "role": "derived backend summary; strict environment verification requires private raw packets",
+      "thread_environment": {
+        "MKL_NUM_THREADS": null,
+        "NUMEXPR_NUM_THREADS": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "VECLIB_MAXIMUM_THREADS": null
+      },
+      "torch_interop_threads": 1,
+      "torch_intraop_threads": 20
+    },
+    "historical_archive_inputs": [
+      {
+        "budget": 40,
+        "path": "benchmarks/paper/scalar_primary_trajectory_archives_v3r2/b40-v3r2/scalar-primary-b40-v3r2.tar.gz",
+        "sha256": "2f86646f7c21914552d10e9e1fcb209d29880cee194a3e79f8f8fae211b6659c",
+        "unchanged": true
+      },
+      {
+        "budget": 100,
+        "path": "benchmarks/paper/scalar_primary_trajectory_archives_v3r2/b100-v3r2/scalar-primary-b100-v3r2.tar.gz",
+        "sha256": "e30befedd72b85bd0eda8fe1d7e33ed6ef10acd0c880b1bd6aca60865e4a49c7",
+        "unchanged": true
+      }
+    ],
+    "historical_execution_source_commit": "bd83de6ec01f0f7e2241ee498960a4d493d601e6",
+    "jobs": [
+      {
+        "allocated_cpus": 20,
+        "batch_max_rss_kib": 2096980,
+        "elapsed_seconds": 187,
+        "harness_commit": "c313b43601bbece19d184d1534111005fa785ebe",
+        "job_id": 6852386,
+        "node": "<private host>",
+        "physical_backend_attempts_in_baseline_tests": 0,
+        "preserved_export": "attempt1-artifacts.tar.gz",
+        "raw_job_status": {
+          "historical_replay_execution_exit": 0,
+          "mathematical_reference_exit": 1,
+          "physical_simulator_calls_authorized": 0,
+          "pytest_exit": 1
+        },
+        "requested_memory_gib": 8,
+        "slurm_exit_code": "1:0",
+        "slurm_state": "FAILED",
+        "tests": {
+          "failure": "tests/acquisition/test_nei.py::test_baseline_factorization_promotes_without_jitter",
+          "failures": 1,
+          "passed": 169,
+          "seconds": 31.911,
+          "skipped": 8
+        }
+      },
+      {
+        "allocated_cpus": 20,
+        "batch_max_rss_kib": 2070080,
+        "elapsed_seconds": 187,
+        "harness_commit": "27f654a8e590d3aadb89a2791c91f1e1491a1aad",
+        "job_id": 6852464,
+        "node": "<private host>",
+        "physical_backend_attempts_in_baseline_tests": 0,
+        "preserved_export": "attempt2-artifacts.tar.gz",
+        "raw_job_status": {
+          "historical_replay_execution_exit": 0,
+          "mathematical_reference_exit": 2,
+          "physical_simulator_calls_authorized": 0,
+          "pytest_exit": 1
+        },
+        "requested_memory_gib": 8,
+        "slurm_exit_code": "1:0",
+        "slurm_state": "FAILED",
+        "tests": {
+          "failure": "tests/acquisition/test_nei.py::test_baseline_factorization_promotes_without_jitter",
+          "failures": 1,
+          "passed": 169,
+          "seconds": 25.423,
+          "skipped": 8
+        }
+      }
+    ],
+    "local_validation": {
+      "diagnostic_compatibility_tests": {
+        "command": "infrastructure/local/run_pytest.sh -q tests/reproducibility/test_replay_divergence.py",
+        "passed": 16,
+        "skipped": 2
+      },
+      "gate_tests": {
+        "command": "infrastructure/local/run_pytest.sh -q tests/infrastructure/test_refactor_reference.py tests/infrastructure/test_truba_lifecycle.py tests/reproducibility/test_scalar_primary_replay.py",
+        "passed": 39,
+        "skipped": 2
+      },
+      "skips": "opt-in numerical historical capture/replay integration tests; not rerun as macOS historical investigation",
+      "tests_verify": "real candidate, terminal, accounting, thread count, library version/path and tampered-content changes are rejected; only representation order is normalized"
+    },
+    "role": "reconstructed_engineering_reference_not_new_scientific_campaign_or_original_historical_GP_states",
+    "schema_version": "mutaco-truba-refactor-qualification-v1",
+    "scientific_invariants": {
+      "GP_priors_acquisition_and_terminal_policy_modified": false,
+      "core_refactor_started": false,
+      "github_push_or_PR_update": false,
+      "historical_evidence_modified": false,
+      "physical_backend_attempts": 0,
+      "production_algorithm_modified": false,
+      "scientific_options_seeds_and_precision_modified": false
+    },
+    "scientific_source_commit": "aa7f4feb58302ecf6abfa6dee2d81071eabb7fe3"
+  }
+}

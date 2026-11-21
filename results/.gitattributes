@@ -1,0 +1,8 @@
+# Preserve the native benchmark-store byte policy on migrated evidence.
+paper/** -text -eol
+reproducibility/** -text -eol
+# These receipts and studies originated under experiments/.
+paper/oscillator_physics_post_analysis/** text=auto eol=lf
+paper/oscillator_physics_multi_target_sensitivity/** text=auto eol=lf
+paper/scalar_primary_source_validation_receipts/** text=auto eol=lf
+paper/repaired_mutaco_sbi_source_validation_receipts/** text=auto eol=lf

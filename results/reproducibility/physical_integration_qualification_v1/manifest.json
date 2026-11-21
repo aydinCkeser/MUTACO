@@ -1,0 +1,381 @@
+{
+  "GitHub_pushes": 0,
+  "calls": {
+    "actual_API_evaluations": 29,
+    "actual_forward_computations": 62,
+    "analytic_API": 8,
+    "analytic_forward_runs": 8,
+    "current_graph_Torch_kernel_runs": 37,
+    "current_graph_independent_NumPy_runs": 16,
+    "graph_API_direct": 4,
+    "graph_API_integration": 17,
+    "held_out_assessment_calls": 0,
+    "invalid_requests_rejected_before_backend": 6,
+    "note": "API graph calls invoke kernels already included in the37; do not add21 API calls again to forward total",
+    "physical_backend_failures": 0,
+    "planned_API_evaluations": 29,
+    "planned_forward_computations": 62,
+    "retained_Torch_kernel_runs": 1,
+    "retry_evaluations": 0,
+    "target_generation_in_integration": 0,
+    "terminal_simulator_calls": 0,
+    "unplanned_backend_attempts": 0
+  },
+  "coverage": {
+    "GPU_MPS_other_platform_physics": "not qualified",
+    "SBI": "not executed; SBI absent in qualified core environment",
+    "analytic": "four deterministic points including bounds, three seeded noisy evaluations and one constant-channel call; transparent testbed, not oscillatorphysics",
+    "core": "previous3D full531 selection and exact B40/B100 remain unchanged; not rerun here",
+    "current_graph": "all16 existing small fixed parity cases, three real API repeats, one independent frozen full-resolution response; no statistical cohort or independent sampling-distribution qualification",
+    "paper_figures_and_historical_TeX": "original bytes preserved, not regenerated or TeX-qualified",
+    "physical_reconstruction": "not executed; no supplemental condition grids or held-out assessments",
+    "real_integration": "16 real initial plus1 real adaptive observation,2 fits and1 continuous physical-MAE terminal; not B40/B100 performance evidence",
+    "retained_graph": "one independently frozen legacy numerical oracle only; incompatible with modern model"
+  },
+  "environment": {
+    "OS": "Linux",
+    "architecture": "x86_64",
+    "device": "cpu",
+    "dtype": "float32 graph/GP; float64 analytic",
+    "python": "3.11.17",
+    "thread_environment": {
+      "MKL_NUM_THREADS": null,
+      "OMP_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null
+    },
+    "torch_threads": [
+      20,
+      1
+    ],
+    "versions": {
+      "botorch": "0.18.1",
+      "gpytorch": "1.15.2",
+      "numpy": "2.4.6",
+      "psutil": "7.2.2",
+      "pytest": "9.1.1",
+      "scipy": "1.17.1",
+      "torch": "2.12.1+cpu"
+    }
+  },
+  "inputs_sha256": {
+    "data/cohorts/paper120_v3/target_016.json": "6571d93be38d163de5fbd3fbe4d7b9944a55891c321e1ac50f37124fc679ef6d",
+    "experiments/graph_forward/run_parity.py": "810bec4508f2b083c83b63e81c90643e591b5bda29078f7b452f8fe1dc5148e8",
+    "experiments/graph_inversion/configs/paper/paper120_b100_mutaco_v1.json": "f1d0c70fdba6e0f14109c2d6b76c8c2d40476138c769ccbd240017447867b145",
+    "packages/graph-simulator/src/mutaco_graph/parity.py": "dcb7ed70cdd1f229fe970172447577e415666850b77c7709a3c4ade699b27054",
+    "scientific/graph_oscillator/reference_fixtures/retained_cpu_small_v1.json": "7779b6d7283e1ff4431380125e2108e87a401e94060e62f29b18dd73c5cc67a7",
+    "tests/analytic/test_handwritten.py": "0298c2b1860136c4610dd000f3b74291d26c410fb7c9b5707626a223c7344d59"
+  },
+  "integration": {
+    "GP_final_objectives": [
+      0.8842129707336426,
+      1.0681219100952148
+    ],
+    "GP_fit_statuses": [
+      "success",
+      "success"
+    ],
+    "GP_optimizer_iterations": [
+      12,
+      12
+    ],
+    "GP_optimizer_terminations": [
+      "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+      "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+    ],
+    "GP_recovery_stages": [
+      [
+        "deterministic_cold"
+      ],
+      [
+        "most_recent_warm_optimized"
+      ]
+    ],
+    "RNG_preserved": true,
+    "adaptive_theta": [
+      1.9774377346038818,
+      0.5796123743057251,
+      0.5,
+      0.49549657106399536
+    ],
+    "branch": "barrier",
+    "callback_failures": 0,
+    "candidate_source": "refined",
+    "classification": "bounded direct-core integration diagnostic; NOT registered B40/B100 campaign",
+    "duplicate_recovery": null,
+    "events_counts": {
+      "gp_fit_finished": 2,
+      "gp_fit_started": 2,
+      "initial_design_ready": 1,
+      "proposal_finished": 1,
+      "proposal_started": 1,
+      "recommendation_started": 1,
+      "run_finished": 1,
+      "run_started": 1,
+      "simulator_attempt_finished": 17,
+      "simulator_attempt_started": 17,
+      "transform_fitted": 1
+    },
+    "fit_updates": 2,
+    "initial_design_matches_predeclared_vectors": true,
+    "logical_accounting": {
+      "committed_fit_events": 2,
+      "committed_observations": 17,
+      "committed_proposal_events": 1,
+      "committed_recommendation_events": 1,
+      "initial_observations": 16,
+      "planned_observations": 17,
+      "sequential_observations": 1,
+      "training_data_versions": 2
+    },
+    "observations_initial_adaptive": [
+      16,
+      1
+    ],
+    "original_training_tensor_capture_available": false,
+    "physical_accounting": {
+      "gp_fit_attempts": 2,
+      "gp_fit_seconds": 3.551371492445469,
+      "gp_fit_successes": 2,
+      "gp_fit_validation_posterior_calls": 2,
+      "proposal_calls": 1,
+      "proposal_raw_posterior_calls": 1,
+      "proposal_refinement_posterior_calls": 48,
+      "proposal_seconds": 0.8760818839073181,
+      "proposal_total_posterior_calls": 49,
+      "recommendation_posterior_calls": 1281,
+      "recommendation_seconds": 14.727085083723068,
+      "simulator_attempts": 17,
+      "simulator_failures": 0,
+      "simulator_retry_attempts": 0,
+      "simulator_seconds": 19.820664923638105,
+      "simulator_successes": 17
+    },
+    "physical_config": {
+      "batch_size": 80,
+      "burn_in_steps": 100,
+      "dt": 0.1,
+      "dtype": "float32",
+      "model_identity": "graph-oscillator.overdamped-scientific.v1",
+      "node_count": 10,
+      "parameter_profile": "p4-paper-baseline",
+      "repeat_size": 2,
+      "response_profile": "m20-five-force-scientific",
+      "sample_steps": 900,
+      "sample_stride": 1,
+      "temperature": 0.15,
+      "total_steps": 1000
+    },
+    "proposals": 1,
+    "response_bits_match_actual_backend_returns": true,
+    "scientific_identity": "scientific-v1-946ddbcb5db1222e50eb649580ea335d59f1edf8a41848e7338d162ecd8a1afa",
+    "status": "completed",
+    "target_record_id": "frozen-target-record-v2-4e2b6d17df5371f082ad76b281aa08e97fa6ccf50e60c47ef54730267b35e714",
+    "terminal_GP_fits": 0,
+    "terminal_MAE": 0.1372329145669937,
+    "terminal_model_equals_final_fit": true,
+    "terminal_physical_calls": 0,
+    "terminal_policy": "continuous_posterior_mean_physical_l1_mae",
+    "terminal_theta": [
+      0.6440871953964233,
+      0.9104036092758179,
+      0.5788657069206238,
+      0.3961564898490906
+    ],
+    "training_IDs_reconstructed_and_verified": true
+  },
+  "not_claimed": [
+    "complete paper reproducibility",
+    "exact cross-platform physical equality",
+    "new performance results",
+    "complete raw binary checkpoint export",
+    "external software submission approval"
+  ],
+  "outcome": {
+    "Slurm_exit_code": "1:0",
+    "Slurm_state": "FAILED",
+    "automatic_resubmission": false,
+    "complete_successful_execution": false,
+    "derived_tensor_recovery": "training tensors reconstructed from exact JSON float32 values; both identities match executed GP training IDs; these are labeled derived, not original captures",
+    "missing_evidence": "original first-step/raw tensor bundle and final worker verdict; neither incomplete .pt is loadable",
+    "preserved_evidence": "original JSON responses, full integration provenance and GP diagnostics, parity metrics, seed manifests, event/call logs and failure logs",
+    "raw_binary_capture_complete": false,
+    "reason": "all scientific assertions completed; subsequent private tensor export failed on nested immutable mappingproxy metadata",
+    "scientific_checks_passed": true
+  },
+  "plan_sha256": "baea525f628434d560b9bb05114b90f6a63dcb8d83f99e43c2dab20c52df6df2",
+  "previous_qualification": "benchmarks/reproducibility/documented_core_qualification_v1/manifest.json",
+  "raw_evidence": {
+    "downloaded_archive_sha256": "d9d7cb8b3e817f39a63f3a6bec177e4e579cc1a46c06545b8da93c94d4490d0e",
+    "executed_worker_sha256": "1efd6847f2227c554aa480b88dd9ff816ed4a32fe13bc97eb872a95b16d9f2ef",
+    "files_sealed": 55,
+    "independent_verifier_sha256": "ac22b476a067ba4148dc0727d3a2cff0b230468c1ea87f785c7e01f8bd29db0d",
+    "inventory_SHA256SUMS_sha256": "2f6c2c6ca5c95917faf1c0b6ca05d60462fa5f79da8ecc2f4a213b7138680436",
+    "raw_data_regenerated": false,
+    "storage": "established private evidence backup outside Git; institutional execution locations excluded"
+  },
+  "reference_results": {
+    "analytic": {
+      "ambient_rng_preserved": true,
+      "classification": "transparent analytic testbed, not oscillator physics",
+      "constant_channel_exact": true,
+      "independent_equation_abs_max": 2.220446049250313e-16,
+      "noise_other_seed_differs": true,
+      "noise_same_seed_exact": true,
+      "passed": true,
+      "per_case_abs_max": [
+        1.1102230246251565e-16,
+        2.220446049250313e-16,
+        2.220446049250313e-16,
+        0.0
+      ]
+    },
+    "full_resolution_frozen_graph": {
+      "metrics": {
+        "allclose": true,
+        "max_absolute": 2.6881694793701172e-05,
+        "quantile_50": 1.1920928955078125e-07,
+        "quantile_95": 8.761882781982435e-06,
+        "quantile_99": 2.3257732391357397e-05,
+        "relative_l2": 4.823311182862164e-06
+      },
+      "passed": true,
+      "reference_path": "data/cohorts/paper120_v3/target_016.json",
+      "reference_sha256": "6571d93be38d163de5fbd3fbe4d7b9944a55891c321e1ac50f37124fc679ef6d",
+      "seed_manifest_exact": true
+    },
+    "graph_API": {
+      "indices": [
+        0,
+        9,
+        10
+      ],
+      "passed": true,
+      "response_order": "10 mean velocities force-major/gauge-minor, then10 synchronizations in same order",
+      "same_context_repeat_response_and_seed_manifest_exact": true
+    },
+    "graph_fixed": {
+      "cases": 16,
+      "evolution_reference_independent": true,
+      "final_atol": 5e-06,
+      "final_relative_L2_limit": 5e-05,
+      "final_rtol": 5e-05,
+      "intermediate_atol": 2e-06,
+      "intermediate_rtol": 2e-05,
+      "maximum_final_absolute_difference": 4.76837158203125e-07,
+      "maximum_final_relative_L2": 5.51382700063112e-08,
+      "maximum_first_step_absolute_difference": 4.76837158203125e-07,
+      "passed": true,
+      "sampling_reference_independent": false
+    },
+    "invalid_inputs": {
+      "backend_attempts": 0,
+      "passed": true,
+      "requests": [
+        {
+          "case": "shape",
+          "message": "theta shape (3,) does not match (2,)",
+          "simulator": "analytic",
+          "type": "TensorContractError"
+        },
+        {
+          "case": "nonfinite",
+          "message": "theta must contain only finite values",
+          "simulator": "analytic",
+          "type": "TensorContractError"
+        },
+        {
+          "case": "bounds",
+          "message": "theta lies outside the declared parameter bounds",
+          "simulator": "analytic",
+          "type": "TensorContractError"
+        },
+        {
+          "case": "shape",
+          "message": "theta shape (5,) does not match (4,)",
+          "simulator": "graph",
+          "type": "TensorContractError"
+        },
+        {
+          "case": "nonfinite",
+          "message": "theta must contain only finite values",
+          "simulator": "graph",
+          "type": "TensorContractError"
+        },
+        {
+          "case": "bounds",
+          "message": "theta lies outside the declared parameter bounds",
+          "simulator": "graph",
+          "type": "TensorContractError"
+        }
+      ]
+    },
+    "retained_frozen": {
+      "classification": "historical numerical oracle only; not current scientific model",
+      "fixture_identity": "retained-cpu-numpy-numba.small-p2.v1",
+      "metrics": {
+        "allclose": true,
+        "max_absolute": 4.76837158203125e-07,
+        "quantile_50": 0.0,
+        "quantile_95": 3.3080577850341775e-07,
+        "quantile_99": 4.476308822631835e-07,
+        "relative_l2": 5.576697125989186e-08
+      },
+      "passed": true
+    }
+  },
+  "remaining_resources": {
+    "SBI_training": "requires separately qualified SBI environment and existing declared training budgets; no credible new runtime estimate from this CPU-only check",
+    "existing_current_model_statistical_cohort": "8theta x16seeds x2 independent evolution implementations =256 kernel runs atN3B1R1 and1000steps; no wall-clock estimate established here",
+    "historical_TeX": "requires historical TeX/fonts/backend and stored-input rendering qualification; no physical calls inherently required for offline renderers",
+    "reconstruction": "extra condition-grid/seed evaluations need their own explicit call/resource budget; not bounded by this17-observation check",
+    "single_full_resolution_response_observed_seconds": 1.165921466096359
+  },
+  "resources": {
+    "CPUs": 20,
+    "GPUs": 0,
+    "batch_peak_RSS_KiB": 432268,
+    "dependencies_changed": false,
+    "elapsed_seconds": 108,
+    "integration_GP_fit_seconds": 3.551371492445469,
+    "integration_physics_seconds": 19.820664923638105,
+    "integration_proposal_seconds": 0.8760818839073181,
+    "integration_seconds": 39.65452370792627,
+    "integration_terminal_seconds": 14.727085083723068,
+    "job_id": 6925432,
+    "jobs_submitted": 1,
+    "maximum_minutes": 20,
+    "memory_GiB": 20,
+    "nodes": 1,
+    "numerical_work_on_login_node": false,
+    "original_worker_output_bytes": 4377485
+  },
+  "schema_version": "mutaco-bounded-physical-qualification-v1",
+  "scope": "bounded simulator parity and one real direct-core integration diagnostic; not full paper reproducibility",
+  "simulator_package_source_inventory_sha256": {
+    "packages/analytic-simulator/src/mutaco_analytic/__init__.py": "1818a6dd02aa67b355a0b30c07408bb04f02d4dca729e4e006c75f606f3eaffb",
+    "packages/analytic-simulator/src/mutaco_analytic/gp_landscape.py": "2ca707b2a91b26ad8cb564b5a7bd1a1ce2f5172456f9b626b8d8147e917e929d",
+    "packages/analytic-simulator/src/mutaco_analytic/handwritten.py": "ddc5d6c5bca703a6d8c5860d0a17554b9a68246065bfb15c6fb897dbc0f6266f",
+    "packages/graph-simulator/src/mutaco_graph/__init__.py": "681b267be2d676d17a855994aec667c2646205019033fd96755d51192c8401d7",
+    "packages/graph-simulator/src/mutaco_graph/axes.py": "54eac4d9b1dedd9dd03b0c1492669f3cc88ca05f1895ac815f7a42cfcd6cd1a1",
+    "packages/graph-simulator/src/mutaco_graph/config.py": "d60233dbc8aa7b53dd67a9171c53bd4397b245617e7139c2de9ec65f0d3793cd",
+    "packages/graph-simulator/src/mutaco_graph/parity.py": "dcb7ed70cdd1f229fe970172447577e415666850b77c7709a3c4ade699b27054",
+    "packages/graph-simulator/src/mutaco_graph/profiles.py": "f9163082ad06ec07ba00a201fa509522b4914ffa29697a34adf78db3a4044323",
+    "packages/graph-simulator/src/mutaco_graph/reference.py": "9631f36fb877d630fce902b39f6eeb2ab430bc144bc4cbaca50baf189aecbd33",
+    "packages/graph-simulator/src/mutaco_graph/retained.py": "37073447090e4f1d53ea115d93a60e5a37b3e98467dfb2e93b6b30de7553eb58",
+    "packages/graph-simulator/src/mutaco_graph/runtime.py": "7ac8ed1bc9fe1c2a6298dacb3a855bf0abfd854ebb3e78ae1d3213c2d0c59ef9",
+    "packages/graph-simulator/src/mutaco_graph/scientific.py": "c837935867d01e663ab3df0f846e6afd35b224c8a1ea1e33a2914cb3743a51c0"
+  },
+  "source_integrity": {
+    "all_original_tracked_files_verified_before_evidence_update": 2542,
+    "core_hashes_at_original_versions_verified": 47,
+    "current_core_and_simulator_sources_identical_to_35ef82d": true,
+    "current_documentation_hashes_verified": 8,
+    "immutable_archive_members_verified": 8,
+    "preexisting_portable_checksum_entries_verified": 65,
+    "scientific_sources_policies_tests_references_results_figures_modified": false,
+    "subsequent_record_changes": "new portable evidence plus project/state.toml and benchmarks/README.md only",
+    "tracked_figures_arrays_unchanged": 21
+  },
+  "tested_repository_commit": "1af825f93ab06a36a679ca08f83fb8a524e3b10b",
+  "unchanged_qualified_core_commit": "35ef82dba2160dfb3f709854b0e11c3956744c31"
+}

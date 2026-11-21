@@ -1,0 +1,116 @@
+{
+  "schema_version": "mutaco-paper-b100-three-method-qualification-evidence-v1",
+  "status": "complete",
+  "role": "engineering_qualification_not_population_performance_claim",
+  "campaign_id": "graph_paper120_b100_three_method_qualification_v1",
+  "scientific_source_commit": "2b067c33720ed7c6b30ee91ae6087081d5ad0776",
+  "declaration_identity": "paper-population-declaration-v3-973f724e86a90a6efbaafe994b8291d4d56fd60ebb1f366608752a8d29773d2c",
+  "declaration_sha256": "4a38ed0c8a0fe6d774ad32a2153413e7aaf44cb78a418fb3560b2a25442ec302",
+  "target_indices": [0, 49, 99],
+  "target_record_identities": [
+    "frozen-target-record-v2-e3a859e807a718a6749aae18930a5d1c4982970f272ad09cf46fd700ccda0ef6",
+    "frozen-target-record-v2-8e00511619bc3333aa42091068d7c157b959e83d6d5369a740563dfdb98d0d5e",
+    "frozen-target-record-v2-cfc076d5c1fd92a74b72f83230024564c7558c1d5f2ba0256a8d0c552603ec55"
+  ],
+  "methods": ["mutaco", "sbi_npe", "sbi_snpe"],
+  "observed_allocations": {
+    "mutaco": {"initial": 16, "sequential": 84, "total": 100},
+    "sbi_npe": [100],
+    "sbi_snpe": [34, 33, 33]
+  },
+  "physical_calls": {
+    "maximum": 909,
+    "attempted": 909,
+    "successful": 909,
+    "failed": 0,
+    "retry": 0,
+    "inference": 900,
+    "assessment": 9,
+    "target_construction": 0,
+    "recommendation": 0
+  },
+  "assessment_audit": {
+    "contexts_shared_across_methods_per_target": true,
+    "evaluation_seeds_shared_across_methods_per_target": true,
+    "quenched_disorder_manifests_shared_across_methods_per_target": true,
+    "initial_state_manifests_shared_across_methods_per_target": true,
+    "thermal_noise_manifests_shared_across_methods_per_target": true,
+    "target_assessment_coordinates": [
+      {
+        "target_index": 0,
+        "evaluation_seed": 5119230880871475713,
+        "full_seed_manifest_hash": "paper-assessment-seed-manifest-v1-2d2aa51c0505a28cafc2c427f28a6ee311988e461e3064b8a96c1949e0053e93"
+      },
+      {
+        "target_index": 49,
+        "evaluation_seed": 3116984856545459218,
+        "full_seed_manifest_hash": "paper-assessment-seed-manifest-v1-7542d966e24132bed100ddec28fb786baa47ed79e1b6cf97021ba3da60473bfd"
+      },
+      {
+        "target_index": 99,
+        "evaluation_seed": 95668325136915149,
+        "full_seed_manifest_hash": "paper-assessment-seed-manifest-v1-8a137cbc9b973bbef5e66c0f1be0840555d9445deb0bc572e3cca5394c68ea83"
+      }
+    ]
+  },
+  "method_metric_means": {
+    "mutaco": {
+      "response_error_mae": 0.005104691666216847,
+      "response_error_l2": 0.03250575012929122,
+      "parameter_error_l2": 0.19368165713196986
+    },
+    "sbi_npe": {
+      "response_error_mae": 0.07398892574281793,
+      "response_error_l2": 0.5124413533649395,
+      "parameter_error_l2": 0.2514087292822344
+    },
+    "sbi_snpe": {
+      "response_error_mae": 0.051623102589337576,
+      "response_error_l2": 0.32119950473760306,
+      "parameter_error_l2": 0.40022794011207147
+    }
+  },
+  "record_content_hashes": {
+    "target_0": {
+      "mutaco": "paper-method-record-v1-a2a933df0e1132166b5e04cb7b68bb42f1354ef8a211aefe17634241b7a11a7d",
+      "sbi_npe": "paper-method-record-v1-af764f867c6f7c1407626186dedb3c2e3875b15a36cc790b70d07ac0a8085a33",
+      "sbi_snpe": "paper-method-record-v1-9111441febc3a15f0cf3960c9b18f332392d88672ff18c283b4e83325a43f6b3"
+    },
+    "target_49": {
+      "mutaco": "paper-method-record-v1-bb126906e0a22d49c1b93795b14e72ef66a32b85e5094195b620f560ccb43f6c",
+      "sbi_npe": "paper-method-record-v1-81f9b7cc9db94d7a437844e03b76615be6dacc346fd6cc110f1ded362b0053e5",
+      "sbi_snpe": "paper-method-record-v1-2419abc237cade7c154b98f5b83c03ee1c6673b7850fd4ea278dcfcc3f757e6a"
+    },
+    "target_99": {
+      "mutaco": "paper-method-record-v1-2554d9badc9229c319812e553a839d2fe78257f02d514416b14cbc2550650478",
+      "sbi_npe": "paper-method-record-v1-152b22a7324dd624a54a699d1c00f7c0bca8e6b1b45cf6008065b233a3ed2470",
+      "sbi_snpe": "paper-method-record-v1-c5e08926ece016b919e0d11a4fc137621c3fc3e2a76da69ac9c410dafd1ace52"
+    }
+  },
+  "truba": {
+    "job_id": 6214971,
+    "state": "COMPLETED",
+    "elapsed": "00:12:29",
+    "exit_code": "0:0",
+    "nodes": "barbun[71-73]",
+    "allocated_cpus": 60,
+    "worker_threads": 8,
+    "memory": "64G",
+    "maximum_step_rss_kib": 9739820,
+    "excluded_nodes": "barbun70,barbun[112-119]"
+  },
+  "validation": {
+    "local_tests": "27 passed",
+    "truba_tests": "27 passed",
+    "population_validate_only": "passed",
+    "validated_hashed_json_files": 30,
+    "completed_method_records": 9,
+    "collection_sha256": "a69f76f35a1cd998e024c5670ad0a8286470b73e8ce6d585cdbfa1bbc0397611",
+    "summary_sha256": "fc5adbcd459c59e2be1533d364726b2a93d0aa66d31be4baa7fe8e53c1590100",
+    "stdout_sha256": "ba08f4d053406ac61184e7f932421aacd2ff81f460c8fddbd027cf066d9a3b71",
+    "stderr_sha256": "2d1df7bc2700697afd0c859fc636d32573cf8d728551e6236193629eefee093c",
+    "scientific_calls_added_by_validation_and_collection": 0
+  },
+  "remote_output_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/b100_qualification/2b067c33/workers",
+  "remote_log_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/b100_qualification/2b067c33/logs"
+}

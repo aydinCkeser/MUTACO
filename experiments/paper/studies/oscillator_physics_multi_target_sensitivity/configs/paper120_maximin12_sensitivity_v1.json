@@ -1,0 +1,2878 @@
+{
+  "call_contract": {
+    "automatic_retry": false,
+    "calls_per_point": 1,
+    "center_calls": 0,
+    "maximum_calls_per_target": 8,
+    "maximum_simulator_calls_global": 96,
+    "required_successful_calls_global": 96,
+    "required_successful_calls_per_target": 8,
+    "resubmission": false,
+    "retry_calls": 0,
+    "targets": 12
+  },
+  "cohort": {
+    "manifest_path": "data/cohorts/paper120_v3/manifest.json",
+    "manifest_sha256": "359fc0bb59fc9a8a52f5da684e7a7eb352466bdc0d0a54fb8efa94131ce423bb",
+    "size": 120
+  },
+  "declaration_identity": "mutaco-oscillator-physics-multitarget-declaration-v1-22becfc33c2d62850044fec060cd3bec361c86f832a4a879adc94416f818f73c",
+  "execution_authorized": false,
+  "execution_topology": {
+    "array": false,
+    "cpus_per_task": 20,
+    "jobs": 1,
+    "memory": "64G",
+    "nodes": 1,
+    "target_processing": "sequential_single_process",
+    "tasks": 1,
+    "walltime": "00:30:00"
+  },
+  "finite_difference": {
+    "additional_step_sizes": 0,
+    "center_calls": 0,
+    "derivative_denominator_policy": "persisted_float32_theta_plus_minus_theta_minus",
+    "half_step_formula": "min(0.05,0.9*min(z,1-z))",
+    "nominal_max_normalized_half_step": 0.05,
+    "one_sided_stencils": 0,
+    "points_per_target": 8,
+    "policy": "boundary_aware_symmetric_central_float32_v1",
+    "total_points": 96
+  },
+  "jobs_submitted": 0,
+  "parameter_bounds": [
+    [
+      0.5,
+      2.0
+    ],
+    [
+      0.5,
+      2.0
+    ],
+    [
+      0.5,
+      2.0
+    ],
+    [
+      0.0,
+      1.0
+    ]
+  ],
+  "parameter_names": [
+    "weight_mean",
+    "pairwise_coupling_mean",
+    "bias_scale_mean",
+    "pairwise_coupling_CV"
+  ],
+  "response": {
+    "ordering": "omega_components_0_9_then_M_components_10_19_force_major_gauge_0_then_pi",
+    "physical_scales": {
+      "M": 1.0,
+      "omega_bar": 5.0
+    }
+  },
+  "runtime_estimate": {
+    "central_extrapolated_seconds": 624,
+    "evidence_calls": 8,
+    "evidence_cpus": 20,
+    "evidence_elapsed_seconds": 52,
+    "evidence_job": 6352257,
+    "evidence_memory": "64G",
+    "evidence_node": "barbun110",
+    "lower_extrapolated_seconds": 480,
+    "qualification": "observed_elapsed_includes_worker_process_overhead_excludes_queue_delay",
+    "upper_extrapolated_seconds": 900
+  },
+  "schema_version": "mutaco-oscillator-physics-multitarget-declaration-v1",
+  "scientific_calls_executed": 0,
+  "selection": {
+    "forbidden_inputs": [
+      "mutaco_performance",
+      "parameter_error",
+      "response_error",
+      "sbi",
+      "sensitivity",
+      "manual_behavior"
+    ],
+    "information_inputs": [
+      "frozen_theta_star",
+      "p4_paper_baseline_parameter_bounds"
+    ],
+    "policy": "normalized_theta_star_greedy_farthest_point_maximin_v1",
+    "selected_target_indices": [
+      25,
+      64,
+      34,
+      48,
+      119,
+      86,
+      57,
+      13,
+      111,
+      96,
+      45,
+      58
+    ],
+    "target098_selected": false,
+    "target_count": 12
+  },
+  "simulator": {
+    "configuration_path": "experiments/graph_inversion/configs/paper/paper120_v3_target_config.json",
+    "configuration_sha256": "2614cdae3f2eb40ff1a0f0ee473056f05c8284d3ab59e2f159969ed1cc704a8a",
+    "definition_identity": "graph-oscillator.overdamped-scientific.v1.p4-paper-baseline.m20-five-force-scientific.float32",
+    "device": "cpu",
+    "dtype": "float32"
+  },
+  "status": "prepared_unexecuted_zero_call",
+  "submission_authorized": false,
+  "targets": [
+    {
+      "common_random_numbers": {
+        "attempt_index": 0,
+        "evaluation_seed": 1662995696984675293,
+        "logical_index": 25,
+        "policy": "target_addressed_full_stream_crn_v1",
+        "purpose": "finite_difference_sensitivity",
+        "repeat_index": 0,
+        "scientific_run_id": "oscillator-physics-paper120-maximin12-target025-v1",
+        "scope": "all_eight_points_within_target_only",
+        "seed_namespace": "oscillator-physics-paper120-maximin12-crn-v1",
+        "seed_policy": "sha256_first_u64_mask63_target_addressed_v1",
+        "shared_namespaces": [
+          "quenched_disorder",
+          "initial_state",
+          "thermal_noise"
+        ]
+      },
+      "coordinates": [
+        {
+          "actual_physical_denominator": 0.15000009536743164,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.4339529871940613,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.5660470128059387,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "persisted_float32_minus_theta": [
+            1.2740705013275146,
+            1.3436427116394043,
+            0.9747528433799744,
+            0.6326565742492676
+          ],
+          "persisted_float32_plus_theta": [
+            1.4240705966949463,
+            1.3436427116394043,
+            0.9747528433799744,
+            0.6326565742492676
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.15000009536743164,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.43757152557373047,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.5624284744262695,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "persisted_float32_minus_theta": [
+            1.3490705490112305,
+            1.2686426639556885,
+            0.9747528433799744,
+            0.6326565742492676
+          ],
+          "persisted_float32_plus_theta": [
+            1.3490705490112305,
+            1.4186427593231201,
+            0.9747528433799744,
+            0.6326565742492676
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.15000003576278687,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.3165018856525421,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.3165018856525421,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "persisted_float32_minus_theta": [
+            1.3490705490112305,
+            1.3436427116394043,
+            0.8997527956962585,
+            0.6326565742492676
+          ],
+          "persisted_float32_plus_theta": [
+            1.3490705490112305,
+            1.3436427116394043,
+            1.0497528314590454,
+            0.6326565742492676
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.10000002384185791,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.3673434257507324,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.6326565742492676,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "persisted_float32_minus_theta": [
+            1.3490705490112305,
+            1.3436427116394043,
+            0.9747528433799744,
+            0.5826565623283386
+          ],
+          "persisted_float32_plus_theta": [
+            1.3490705490112305,
+            1.3436427116394043,
+            0.9747528433799744,
+            0.6826565861701965
+          ]
+        }
+      ],
+      "normalized_theta_star": [
+        0.5660470326741537,
+        0.5624284744262695,
+        0.3165018955866496,
+        0.6326565742492676
+      ],
+      "ordered_points": [
+        {
+          "global_point_index": 0,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "minus",
+          "target_point_index": 0,
+          "theta": [
+            1.2740705013275146,
+            1.3436427116394043,
+            0.9747528433799744,
+            0.6326565742492676
+          ]
+        },
+        {
+          "global_point_index": 1,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "plus",
+          "target_point_index": 1,
+          "theta": [
+            1.4240705966949463,
+            1.3436427116394043,
+            0.9747528433799744,
+            0.6326565742492676
+          ]
+        },
+        {
+          "global_point_index": 2,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "minus",
+          "target_point_index": 2,
+          "theta": [
+            1.3490705490112305,
+            1.2686426639556885,
+            0.9747528433799744,
+            0.6326565742492676
+          ]
+        },
+        {
+          "global_point_index": 3,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "plus",
+          "target_point_index": 3,
+          "theta": [
+            1.3490705490112305,
+            1.4186427593231201,
+            0.9747528433799744,
+            0.6326565742492676
+          ]
+        },
+        {
+          "global_point_index": 4,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "minus",
+          "target_point_index": 4,
+          "theta": [
+            1.3490705490112305,
+            1.3436427116394043,
+            0.8997527956962585,
+            0.6326565742492676
+          ]
+        },
+        {
+          "global_point_index": 5,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "plus",
+          "target_point_index": 5,
+          "theta": [
+            1.3490705490112305,
+            1.3436427116394043,
+            1.0497528314590454,
+            0.6326565742492676
+          ]
+        },
+        {
+          "global_point_index": 6,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "minus",
+          "target_point_index": 6,
+          "theta": [
+            1.3490705490112305,
+            1.3436427116394043,
+            0.9747528433799744,
+            0.5826565623283386
+          ]
+        },
+        {
+          "global_point_index": 7,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "plus",
+          "target_point_index": 7,
+          "theta": [
+            1.3490705490112305,
+            1.3436427116394043,
+            0.9747528433799744,
+            0.6826565861701965
+          ]
+        }
+      ],
+      "selection_distance": 0.2439853396396931,
+      "selection_rank": 1,
+      "target_index": 25,
+      "target_record_id": "frozen-target-record-v2-e6f61e08f67b2f50c42ab9b4dd17bd3e23a8dd2c0104fbdbe93a3cacd23eebeb",
+      "target_record_path": "data/cohorts/paper120_v3/target_025.json",
+      "target_record_sha256": "82c05d74753513223e3ff915cef21361624cc4b7d7aaf49ecc202d90368b1c21",
+      "theta_star": [
+        1.3490705490112305,
+        1.3436427116394043,
+        0.9747528433799744,
+        0.6326565742492676
+      ]
+    },
+    {
+      "common_random_numbers": {
+        "attempt_index": 0,
+        "evaluation_seed": 4904126609075682662,
+        "logical_index": 64,
+        "policy": "target_addressed_full_stream_crn_v1",
+        "purpose": "finite_difference_sensitivity",
+        "repeat_index": 0,
+        "scientific_run_id": "oscillator-physics-paper120-maximin12-target064-v1",
+        "scope": "all_eight_points_within_target_only",
+        "seed_namespace": "oscillator-physics-paper120-maximin12-crn-v1",
+        "seed_policy": "sha256_first_u64_mask63_target_addressed_v1",
+        "shared_namespaces": [
+          "quenched_disorder",
+          "initial_state",
+          "thermal_noise"
+        ]
+      },
+      "coordinates": [
+        {
+          "actual_physical_denominator": 0.1499999761581421,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.08102750778198242,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.08102750778198242,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "persisted_float32_minus_theta": [
+            0.5465412735939026,
+            1.153903841972351,
+            1.942138433456421,
+            0.04186341539025307
+          ],
+          "persisted_float32_plus_theta": [
+            0.6965412497520447,
+            1.153903841972351,
+            1.942138433456421,
+            0.04186341539025307
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.1499999761581421,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.4359358847141266,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.4359358847141266,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "persisted_float32_minus_theta": [
+            0.6215412616729736,
+            1.0789037942886353,
+            1.942138433456421,
+            0.04186341539025307
+          ],
+          "persisted_float32_plus_theta": [
+            0.6215412616729736,
+            1.2289037704467773,
+            1.942138433456421,
+            0.04186341539025307
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.10415089130401611,
+          "boundary_reduced_from_0p05": true,
+          "nearest_boundary_distance": 0.038574397563934326,
+          "nominal_normalized_half_step": 0.034716957807540895,
+          "normalized_center": 0.9614256024360657,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "persisted_float32_minus_theta": [
+            0.6215412616729736,
+            1.153903841972351,
+            1.890062928199768,
+            0.04186341539025307
+          ],
+          "persisted_float32_plus_theta": [
+            0.6215412616729736,
+            1.153903841972351,
+            1.9942138195037842,
+            0.04186341539025307
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.07535414770245552,
+          "boundary_reduced_from_0p05": true,
+          "nearest_boundary_distance": 0.04186341539025307,
+          "nominal_normalized_half_step": 0.03767707385122776,
+          "normalized_center": 0.04186341539025307,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "persisted_float32_minus_theta": [
+            0.6215412616729736,
+            1.153903841972351,
+            1.942138433456421,
+            0.004186343401670456
+          ],
+          "persisted_float32_plus_theta": [
+            0.6215412616729736,
+            1.153903841972351,
+            1.942138433456421,
+            0.07954049110412598
+          ]
+        }
+      ],
+      "normalized_theta_star": [
+        0.08102750778198242,
+        0.43593589464823407,
+        0.9614256223042806,
+        0.04186341539025307
+      ],
+      "ordered_points": [
+        {
+          "global_point_index": 8,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "minus",
+          "target_point_index": 0,
+          "theta": [
+            0.5465412735939026,
+            1.153903841972351,
+            1.942138433456421,
+            0.04186341539025307
+          ]
+        },
+        {
+          "global_point_index": 9,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "plus",
+          "target_point_index": 1,
+          "theta": [
+            0.6965412497520447,
+            1.153903841972351,
+            1.942138433456421,
+            0.04186341539025307
+          ]
+        },
+        {
+          "global_point_index": 10,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "minus",
+          "target_point_index": 2,
+          "theta": [
+            0.6215412616729736,
+            1.0789037942886353,
+            1.942138433456421,
+            0.04186341539025307
+          ]
+        },
+        {
+          "global_point_index": 11,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "plus",
+          "target_point_index": 3,
+          "theta": [
+            0.6215412616729736,
+            1.2289037704467773,
+            1.942138433456421,
+            0.04186341539025307
+          ]
+        },
+        {
+          "global_point_index": 12,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "minus",
+          "target_point_index": 4,
+          "theta": [
+            0.6215412616729736,
+            1.153903841972351,
+            1.890062928199768,
+            0.04186341539025307
+          ]
+        },
+        {
+          "global_point_index": 13,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "plus",
+          "target_point_index": 5,
+          "theta": [
+            0.6215412616729736,
+            1.153903841972351,
+            1.9942138195037842,
+            0.04186341539025307
+          ]
+        },
+        {
+          "global_point_index": 14,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "minus",
+          "target_point_index": 6,
+          "theta": [
+            0.6215412616729736,
+            1.153903841972351,
+            1.942138433456421,
+            0.004186343401670456
+          ]
+        },
+        {
+          "global_point_index": 15,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "plus",
+          "target_point_index": 7,
+          "theta": [
+            0.6215412616729736,
+            1.153903841972351,
+            1.942138433456421,
+            0.07954049110412598
+          ]
+        }
+      ],
+      "selection_distance": 1.0080711691658981,
+      "selection_rank": 2,
+      "target_index": 64,
+      "target_record_id": "frozen-target-record-v2-e8aee67ef21caf9ceaefdb705e37198b586542d38035c917296881389f34d2c4",
+      "target_record_path": "data/cohorts/paper120_v3/target_064.json",
+      "target_record_sha256": "6eb0fa9c737804deea78d6683fe2f319ccc08ddcc64986367571a8192f37bbe7",
+      "theta_star": [
+        0.6215412616729736,
+        1.153903841972351,
+        1.942138433456421,
+        0.04186341539025307
+      ]
+    },
+    {
+      "common_random_numbers": {
+        "attempt_index": 0,
+        "evaluation_seed": 4640928415104168493,
+        "logical_index": 34,
+        "policy": "target_addressed_full_stream_crn_v1",
+        "purpose": "finite_difference_sensitivity",
+        "repeat_index": 0,
+        "scientific_run_id": "oscillator-physics-paper120-maximin12-target034-v1",
+        "scope": "all_eight_points_within_target_only",
+        "seed_namespace": "oscillator-physics-paper120-maximin12-crn-v1",
+        "seed_policy": "sha256_first_u64_mask63_target_addressed_v1",
+        "shared_namespaces": [
+          "quenched_disorder",
+          "initial_state",
+          "thermal_noise"
+        ]
+      },
+      "coordinates": [
+        {
+          "actual_physical_denominator": 0.10719573497772217,
+          "boundary_reduced_from_0p05": true,
+          "nearest_boundary_distance": 0.03970211744308472,
+          "nominal_normalized_half_step": 0.035731905698776247,
+          "normalized_center": 0.9602978825569153,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "persisted_float32_minus_theta": [
+            1.8868489265441895,
+            0.8168642520904541,
+            1.804288625717163,
+            0.07668544352054596
+          ],
+          "persisted_float32_plus_theta": [
+            1.9940446615219116,
+            0.8168642520904541,
+            1.804288625717163,
+            0.07668544352054596
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.1499999761581421,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.21124283969402313,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.21124283969402313,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "persisted_float32_minus_theta": [
+            1.9404468536376953,
+            0.7418642640113831,
+            1.804288625717163,
+            0.07668544352054596
+          ],
+          "persisted_float32_plus_theta": [
+            1.9404468536376953,
+            0.8918642401695251,
+            1.804288625717163,
+            0.07668544352054596
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.15000009536743164,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.1304742693901062,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.8695257306098938,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "persisted_float32_minus_theta": [
+            1.9404468536376953,
+            0.8168642520904541,
+            1.7292885780334473,
+            0.07668544352054596
+          ],
+          "persisted_float32_plus_theta": [
+            1.9404468536376953,
+            0.8168642520904541,
+            1.879288673400879,
+            0.07668544352054596
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.09999999776482582,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.07668544352054596,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.07668544352054596,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "persisted_float32_minus_theta": [
+            1.9404468536376953,
+            0.8168642520904541,
+            1.804288625717163,
+            0.0266854427754879
+          ],
+          "persisted_float32_plus_theta": [
+            1.9404468536376953,
+            0.8168642520904541,
+            1.804288625717163,
+            0.12668544054031372
+          ]
+        }
+      ],
+      "normalized_theta_star": [
+        0.9602979024251302,
+        0.2112428347269694,
+        0.8695257504781088,
+        0.07668544352054596
+      ],
+      "ordered_points": [
+        {
+          "global_point_index": 16,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "minus",
+          "target_point_index": 0,
+          "theta": [
+            1.8868489265441895,
+            0.8168642520904541,
+            1.804288625717163,
+            0.07668544352054596
+          ]
+        },
+        {
+          "global_point_index": 17,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "plus",
+          "target_point_index": 1,
+          "theta": [
+            1.9940446615219116,
+            0.8168642520904541,
+            1.804288625717163,
+            0.07668544352054596
+          ]
+        },
+        {
+          "global_point_index": 18,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "minus",
+          "target_point_index": 2,
+          "theta": [
+            1.9404468536376953,
+            0.7418642640113831,
+            1.804288625717163,
+            0.07668544352054596
+          ]
+        },
+        {
+          "global_point_index": 19,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "plus",
+          "target_point_index": 3,
+          "theta": [
+            1.9404468536376953,
+            0.8918642401695251,
+            1.804288625717163,
+            0.07668544352054596
+          ]
+        },
+        {
+          "global_point_index": 20,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "minus",
+          "target_point_index": 4,
+          "theta": [
+            1.9404468536376953,
+            0.8168642520904541,
+            1.7292885780334473,
+            0.07668544352054596
+          ]
+        },
+        {
+          "global_point_index": 21,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "plus",
+          "target_point_index": 5,
+          "theta": [
+            1.9404468536376953,
+            0.8168642520904541,
+            1.879288673400879,
+            0.07668544352054596
+          ]
+        },
+        {
+          "global_point_index": 22,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "minus",
+          "target_point_index": 6,
+          "theta": [
+            1.9404468536376953,
+            0.8168642520904541,
+            1.804288625717163,
+            0.0266854427754879
+          ]
+        },
+        {
+          "global_point_index": 23,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "plus",
+          "target_point_index": 7,
+          "theta": [
+            1.9404468536376953,
+            0.8168642520904541,
+            1.804288625717163,
+            0.12668544054031372
+          ]
+        }
+      ],
+      "selection_distance": 0.9128316154458453,
+      "selection_rank": 3,
+      "target_index": 34,
+      "target_record_id": "frozen-target-record-v2-0f21ca4e86664c7640fbd8dfaa480b39a602fe24f6649f41977522b065d4fd97",
+      "target_record_path": "data/cohorts/paper120_v3/target_034.json",
+      "target_record_sha256": "d4c1345038f70a538989e7824586652c9ed52b5f1d21c22bb88b5e97588a360f",
+      "theta_star": [
+        1.9404468536376953,
+        0.8168642520904541,
+        1.804288625717163,
+        0.07668544352054596
+      ]
+    },
+    {
+      "common_random_numbers": {
+        "attempt_index": 0,
+        "evaluation_seed": 9018064020228879097,
+        "logical_index": 48,
+        "policy": "target_addressed_full_stream_crn_v1",
+        "purpose": "finite_difference_sensitivity",
+        "repeat_index": 0,
+        "scientific_run_id": "oscillator-physics-paper120-maximin12-target048-v1",
+        "scope": "all_eight_points_within_target_only",
+        "seed_namespace": "oscillator-physics-paper120-maximin12-crn-v1",
+        "seed_policy": "sha256_first_u64_mask63_target_addressed_v1",
+        "shared_namespaces": [
+          "quenched_disorder",
+          "initial_state",
+          "thermal_noise"
+        ]
+      },
+      "coordinates": [
+        {
+          "actual_physical_denominator": 0.09389817714691162,
+          "boundary_reduced_from_0p05": true,
+          "nearest_boundary_distance": 0.03477708622813225,
+          "nominal_normalized_half_step": 0.03129937760531903,
+          "normalized_center": 0.03477708622813225,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "persisted_float32_minus_theta": [
+            0.5052165389060974,
+            0.5118273496627808,
+            1.8648664951324463,
+            0.844890832901001
+          ],
+          "persisted_float32_plus_theta": [
+            0.599114716053009,
+            0.5118273496627808,
+            1.8648664951324463,
+            0.844890832901001
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.02128922939300537,
+          "boundary_reduced_from_0p05": true,
+          "nearest_boundary_distance": 0.007884900085628033,
+          "nominal_normalized_half_step": 0.007096410077065229,
+          "normalized_center": 0.007884900085628033,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "persisted_float32_minus_theta": [
+            0.5521656274795532,
+            0.5011827349662781,
+            1.8648664951324463,
+            0.844890832901001
+          ],
+          "persisted_float32_plus_theta": [
+            0.5521656274795532,
+            0.5224719643592834,
+            1.8648664951324463,
+            0.844890832901001
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.15000009536743164,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.09008902311325073,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.9099109768867493,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "persisted_float32_minus_theta": [
+            0.5521656274795532,
+            0.5118273496627808,
+            1.7898664474487305,
+            0.844890832901001
+          ],
+          "persisted_float32_plus_theta": [
+            0.5521656274795532,
+            0.5118273496627808,
+            1.939866542816162,
+            0.844890832901001
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.10000002384185791,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.15510916709899902,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.844890832901001,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "persisted_float32_minus_theta": [
+            0.5521656274795532,
+            0.5118273496627808,
+            1.8648664951324463,
+            0.794890820980072
+          ],
+          "persisted_float32_plus_theta": [
+            0.5521656274795532,
+            0.5118273496627808,
+            1.8648664951324463,
+            0.8948908448219299
+          ]
+        }
+      ],
+      "normalized_theta_star": [
+        0.03477708498636881,
+        0.007884899775187174,
+        0.9099109967549642,
+        0.844890832901001
+      ],
+      "ordered_points": [
+        {
+          "global_point_index": 24,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "minus",
+          "target_point_index": 0,
+          "theta": [
+            0.5052165389060974,
+            0.5118273496627808,
+            1.8648664951324463,
+            0.844890832901001
+          ]
+        },
+        {
+          "global_point_index": 25,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "plus",
+          "target_point_index": 1,
+          "theta": [
+            0.599114716053009,
+            0.5118273496627808,
+            1.8648664951324463,
+            0.844890832901001
+          ]
+        },
+        {
+          "global_point_index": 26,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "minus",
+          "target_point_index": 2,
+          "theta": [
+            0.5521656274795532,
+            0.5011827349662781,
+            1.8648664951324463,
+            0.844890832901001
+          ]
+        },
+        {
+          "global_point_index": 27,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "plus",
+          "target_point_index": 3,
+          "theta": [
+            0.5521656274795532,
+            0.5224719643592834,
+            1.8648664951324463,
+            0.844890832901001
+          ]
+        },
+        {
+          "global_point_index": 28,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "minus",
+          "target_point_index": 4,
+          "theta": [
+            0.5521656274795532,
+            0.5118273496627808,
+            1.7898664474487305,
+            0.844890832901001
+          ]
+        },
+        {
+          "global_point_index": 29,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "plus",
+          "target_point_index": 5,
+          "theta": [
+            0.5521656274795532,
+            0.5118273496627808,
+            1.939866542816162,
+            0.844890832901001
+          ]
+        },
+        {
+          "global_point_index": 30,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "minus",
+          "target_point_index": 6,
+          "theta": [
+            0.5521656274795532,
+            0.5118273496627808,
+            1.8648664951324463,
+            0.794890820980072
+          ]
+        },
+        {
+          "global_point_index": 31,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "plus",
+          "target_point_index": 7,
+          "theta": [
+            0.5521656274795532,
+            0.5118273496627808,
+            1.8648664951324463,
+            0.8948908448219299
+          ]
+        }
+      ],
+      "selection_distance": 0.9126190583918602,
+      "selection_rank": 4,
+      "target_index": 48,
+      "target_record_id": "frozen-target-record-v2-2eb70a65b78d0e97804dca6390602ee465434ef961789235c67f013367b606c8",
+      "target_record_path": "data/cohorts/paper120_v3/target_048.json",
+      "target_record_sha256": "1b3242c111968853873283e696e4762d4f2e39c01fefa55acaa339b5f6d74a4c",
+      "theta_star": [
+        0.5521656274795532,
+        0.5118273496627808,
+        1.8648664951324463,
+        0.844890832901001
+      ]
+    },
+    {
+      "common_random_numbers": {
+        "attempt_index": 0,
+        "evaluation_seed": 8063812577233328311,
+        "logical_index": 119,
+        "policy": "target_addressed_full_stream_crn_v1",
+        "purpose": "finite_difference_sensitivity",
+        "repeat_index": 0,
+        "scientific_run_id": "oscillator-physics-paper120-maximin12-target119-v1",
+        "scope": "all_eight_points_within_target_only",
+        "seed_namespace": "oscillator-physics-paper120-maximin12-crn-v1",
+        "seed_policy": "sha256_first_u64_mask63_target_addressed_v1",
+        "shared_namespaces": [
+          "quenched_disorder",
+          "initial_state",
+          "thermal_noise"
+        ]
+      },
+      "coordinates": [
+        {
+          "actual_physical_denominator": 0.1499999761581421,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.15362612903118134,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.15362612903118134,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "persisted_float32_minus_theta": [
+            0.6554391980171204,
+            1.8838064670562744,
+            0.56439608335495,
+            0.06000804901123047
+          ],
+          "persisted_float32_plus_theta": [
+            0.8054391741752625,
+            1.8838064670562744,
+            0.56439608335495,
+            0.06000804901123047
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.15000009536743164,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.07746237516403198,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.922537624835968,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "persisted_float32_minus_theta": [
+            0.7304391860961914,
+            1.8088064193725586,
+            0.56439608335495,
+            0.06000804901123047
+          ],
+          "persisted_float32_plus_theta": [
+            0.7304391860961914,
+            1.9588065147399902,
+            0.56439608335495,
+            0.06000804901123047
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.11591291427612305,
+          "boundary_reduced_from_0p05": true,
+          "nearest_boundary_distance": 0.0429307222366333,
+          "nominal_normalized_half_step": 0.038637650012969975,
+          "normalized_center": 0.0429307222366333,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "persisted_float32_minus_theta": [
+            0.7304391860961914,
+            1.8838064670562744,
+            0.5064396262168884,
+            0.06000804901123047
+          ],
+          "persisted_float32_plus_theta": [
+            0.7304391860961914,
+            1.8838064670562744,
+            0.6223525404930115,
+            0.06000804901123047
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.09999999776482582,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.06000804901123047,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.06000804901123047,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "persisted_float32_minus_theta": [
+            0.7304391860961914,
+            1.8838064670562744,
+            0.56439608335495,
+            0.010008048266172409
+          ],
+          "persisted_float32_plus_theta": [
+            0.7304391860961914,
+            1.8838064670562744,
+            0.56439608335495,
+            0.11000804603099823
+          ]
+        }
+      ],
+      "normalized_theta_star": [
+        0.1536261240641276,
+        0.922537644704183,
+        0.0429307222366333,
+        0.06000804901123047
+      ],
+      "ordered_points": [
+        {
+          "global_point_index": 32,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "minus",
+          "target_point_index": 0,
+          "theta": [
+            0.6554391980171204,
+            1.8838064670562744,
+            0.56439608335495,
+            0.06000804901123047
+          ]
+        },
+        {
+          "global_point_index": 33,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "plus",
+          "target_point_index": 1,
+          "theta": [
+            0.8054391741752625,
+            1.8838064670562744,
+            0.56439608335495,
+            0.06000804901123047
+          ]
+        },
+        {
+          "global_point_index": 34,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "minus",
+          "target_point_index": 2,
+          "theta": [
+            0.7304391860961914,
+            1.8088064193725586,
+            0.56439608335495,
+            0.06000804901123047
+          ]
+        },
+        {
+          "global_point_index": 35,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "plus",
+          "target_point_index": 3,
+          "theta": [
+            0.7304391860961914,
+            1.9588065147399902,
+            0.56439608335495,
+            0.06000804901123047
+          ]
+        },
+        {
+          "global_point_index": 36,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "minus",
+          "target_point_index": 4,
+          "theta": [
+            0.7304391860961914,
+            1.8838064670562744,
+            0.5064396262168884,
+            0.06000804901123047
+          ]
+        },
+        {
+          "global_point_index": 37,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "plus",
+          "target_point_index": 5,
+          "theta": [
+            0.7304391860961914,
+            1.8838064670562744,
+            0.6223525404930115,
+            0.06000804901123047
+          ]
+        },
+        {
+          "global_point_index": 38,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "minus",
+          "target_point_index": 6,
+          "theta": [
+            0.7304391860961914,
+            1.8838064670562744,
+            0.56439608335495,
+            0.010008048266172409
+          ]
+        },
+        {
+          "global_point_index": 39,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "plus",
+          "target_point_index": 7,
+          "theta": [
+            0.7304391860961914,
+            1.8838064670562744,
+            0.56439608335495,
+            0.11000804603099823
+          ]
+        }
+      ],
+      "selection_distance": 0.838174886716591,
+      "selection_rank": 5,
+      "target_index": 119,
+      "target_record_id": "frozen-target-record-v2-beb92c06ab3cb06d2b8fb7e7c3ec1025a7906c06ef80bb5b20988cc80827d731",
+      "target_record_path": "data/cohorts/paper120_v3/target_119.json",
+      "target_record_sha256": "a3f0579ce73a7774cf8df2297ca57ee0a8a402c8883631a259acfd022d54db26",
+      "theta_star": [
+        0.7304391860961914,
+        1.8838064670562744,
+        0.56439608335495,
+        0.06000804901123047
+      ]
+    },
+    {
+      "common_random_numbers": {
+        "attempt_index": 0,
+        "evaluation_seed": 9200568382323971363,
+        "logical_index": 86,
+        "policy": "target_addressed_full_stream_crn_v1",
+        "purpose": "finite_difference_sensitivity",
+        "repeat_index": 0,
+        "scientific_run_id": "oscillator-physics-paper120-maximin12-target086-v1",
+        "scope": "all_eight_points_within_target_only",
+        "seed_namespace": "oscillator-physics-paper120-maximin12-crn-v1",
+        "seed_policy": "sha256_first_u64_mask63_target_addressed_v1",
+        "shared_namespaces": [
+          "quenched_disorder",
+          "initial_state",
+          "thermal_noise"
+        ]
+      },
+      "coordinates": [
+        {
+          "actual_physical_denominator": 0.15000009536743164,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.4588724970817566,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.5411275029182434,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "persisted_float32_minus_theta": [
+            1.2366912364959717,
+            0.5106184482574463,
+            0.7915430068969727,
+            0.006014362908899784
+          ],
+          "persisted_float32_plus_theta": [
+            1.3866913318634033,
+            0.5106184482574463,
+            0.7915430068969727,
+            0.006014362908899784
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.01911318302154541,
+          "boundary_reduced_from_0p05": true,
+          "nearest_boundary_distance": 0.007078965660184622,
+          "nominal_normalized_half_step": 0.00637106909416616,
+          "normalized_center": 0.007078965660184622,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "persisted_float32_minus_theta": [
+            1.3116912841796875,
+            0.5010618567466736,
+            0.7915430068969727,
+            0.006014362908899784
+          ],
+          "persisted_float32_plus_theta": [
+            1.3116912841796875,
+            0.520175039768219,
+            0.7915430068969727,
+            0.006014362908899784
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.1499999761581421,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.19436199963092804,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.19436199963092804,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "persisted_float32_minus_theta": [
+            1.3116912841796875,
+            0.5106184482574463,
+            0.7165430188179016,
+            0.006014362908899784
+          ],
+          "persisted_float32_plus_theta": [
+            1.3116912841796875,
+            0.5106184482574463,
+            0.8665429949760437,
+            0.006014362908899784
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.010825852397829294,
+          "boundary_reduced_from_0p05": true,
+          "nearest_boundary_distance": 0.006014362908899784,
+          "nominal_normalized_half_step": 0.005412926618009806,
+          "normalized_center": 0.006014362908899784,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "persisted_float32_minus_theta": [
+            1.3116912841796875,
+            0.5106184482574463,
+            0.7915430068969727,
+            0.0006014364771544933
+          ],
+          "persisted_float32_plus_theta": [
+            1.3116912841796875,
+            0.5106184482574463,
+            0.7915430068969727,
+            0.011427288874983788
+          ]
+        }
+      ],
+      "normalized_theta_star": [
+        0.5411275227864584,
+        0.007078965504964192,
+        0.19436200459798178,
+        0.006014362908899784
+      ],
+      "ordered_points": [
+        {
+          "global_point_index": 40,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "minus",
+          "target_point_index": 0,
+          "theta": [
+            1.2366912364959717,
+            0.5106184482574463,
+            0.7915430068969727,
+            0.006014362908899784
+          ]
+        },
+        {
+          "global_point_index": 41,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "plus",
+          "target_point_index": 1,
+          "theta": [
+            1.3866913318634033,
+            0.5106184482574463,
+            0.7915430068969727,
+            0.006014362908899784
+          ]
+        },
+        {
+          "global_point_index": 42,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "minus",
+          "target_point_index": 2,
+          "theta": [
+            1.3116912841796875,
+            0.5010618567466736,
+            0.7915430068969727,
+            0.006014362908899784
+          ]
+        },
+        {
+          "global_point_index": 43,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "plus",
+          "target_point_index": 3,
+          "theta": [
+            1.3116912841796875,
+            0.520175039768219,
+            0.7915430068969727,
+            0.006014362908899784
+          ]
+        },
+        {
+          "global_point_index": 44,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "minus",
+          "target_point_index": 4,
+          "theta": [
+            1.3116912841796875,
+            0.5106184482574463,
+            0.7165430188179016,
+            0.006014362908899784
+          ]
+        },
+        {
+          "global_point_index": 45,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "plus",
+          "target_point_index": 5,
+          "theta": [
+            1.3116912841796875,
+            0.5106184482574463,
+            0.8665429949760437,
+            0.006014362908899784
+          ]
+        },
+        {
+          "global_point_index": 46,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "minus",
+          "target_point_index": 6,
+          "theta": [
+            1.3116912841796875,
+            0.5106184482574463,
+            0.7915430068969727,
+            0.0006014364771544933
+          ]
+        },
+        {
+          "global_point_index": 47,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "plus",
+          "target_point_index": 7,
+          "theta": [
+            1.3116912841796875,
+            0.5106184482574463,
+            0.7915430068969727,
+            0.011427288874983788
+          ]
+        }
+      ],
+      "selection_distance": 0.823545492397251,
+      "selection_rank": 6,
+      "target_index": 86,
+      "target_record_id": "frozen-target-record-v2-b625cd6de43ff0101869627e92e037e519b72af1d956dd760c82fed9d19e9f8c",
+      "target_record_path": "data/cohorts/paper120_v3/target_086.json",
+      "target_record_sha256": "cd52b3238ea4a4c5acd6dd10c16fa5c15c25f1c8e3a2cce4012a3485fc30cc8a",
+      "theta_star": [
+        1.3116912841796875,
+        0.5106184482574463,
+        0.7915430068969727,
+        0.006014362908899784
+      ]
+    },
+    {
+      "common_random_numbers": {
+        "attempt_index": 0,
+        "evaluation_seed": 5873134624827905693,
+        "logical_index": 57,
+        "policy": "target_addressed_full_stream_crn_v1",
+        "purpose": "finite_difference_sensitivity",
+        "repeat_index": 0,
+        "scientific_run_id": "oscillator-physics-paper120-maximin12-target057-v1",
+        "scope": "all_eight_points_within_target_only",
+        "seed_namespace": "oscillator-physics-paper120-maximin12-crn-v1",
+        "seed_policy": "sha256_first_u64_mask63_target_addressed_v1",
+        "shared_namespaces": [
+          "quenched_disorder",
+          "initial_state",
+          "thermal_noise"
+        ]
+      },
+      "coordinates": [
+        {
+          "actual_physical_denominator": 0.15000009536743164,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.38348597288131714,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.6165140271186829,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "persisted_float32_minus_theta": [
+            1.3497710227966309,
+            1.9339513778686523,
+            1.5633926391601562,
+            0.03712617605924606
+          ],
+          "persisted_float32_plus_theta": [
+            1.4997711181640625,
+            1.9339513778686523,
+            1.5633926391601562,
+            0.03712617605924606
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.11888742446899414,
+          "boundary_reduced_from_0p05": true,
+          "nearest_boundary_distance": 0.044032394886016846,
+          "nominal_normalized_half_step": 0.03962915539741516,
+          "normalized_center": 0.9559676051139832,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "persisted_float32_minus_theta": [
+            1.4247710704803467,
+            1.8745076656341553,
+            1.5633926391601562,
+            0.03712617605924606
+          ],
+          "persisted_float32_plus_theta": [
+            1.4247710704803467,
+            1.9933950901031494,
+            1.5633926391601562,
+            0.03712617605924606
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.15000009536743164,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.2910715937614441,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.7089284062385559,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "persisted_float32_minus_theta": [
+            1.4247710704803467,
+            1.9339513778686523,
+            1.4883925914764404,
+            0.03712617605924606
+          ],
+          "persisted_float32_plus_theta": [
+            1.4247710704803467,
+            1.9339513778686523,
+            1.638392686843872,
+            0.03712617605924606
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.06682711839675903,
+          "boundary_reduced_from_0p05": true,
+          "nearest_boundary_distance": 0.03712617605924606,
+          "nominal_normalized_half_step": 0.03341355845332146,
+          "normalized_center": 0.03712617605924606,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "persisted_float32_minus_theta": [
+            1.4247710704803467,
+            1.9339513778686523,
+            1.5633926391601562,
+            0.0037126168608665466
+          ],
+          "persisted_float32_plus_theta": [
+            1.4247710704803467,
+            1.9339513778686523,
+            1.5633926391601562,
+            0.07053973525762558
+          ]
+        }
+      ],
+      "normalized_theta_star": [
+        0.6165140469868978,
+        0.9559675852457682,
+        0.7089284261067709,
+        0.03712617605924606
+      ],
+      "ordered_points": [
+        {
+          "global_point_index": 48,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "minus",
+          "target_point_index": 0,
+          "theta": [
+            1.3497710227966309,
+            1.9339513778686523,
+            1.5633926391601562,
+            0.03712617605924606
+          ]
+        },
+        {
+          "global_point_index": 49,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "plus",
+          "target_point_index": 1,
+          "theta": [
+            1.4997711181640625,
+            1.9339513778686523,
+            1.5633926391601562,
+            0.03712617605924606
+          ]
+        },
+        {
+          "global_point_index": 50,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "minus",
+          "target_point_index": 2,
+          "theta": [
+            1.4247710704803467,
+            1.8745076656341553,
+            1.5633926391601562,
+            0.03712617605924606
+          ]
+        },
+        {
+          "global_point_index": 51,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "plus",
+          "target_point_index": 3,
+          "theta": [
+            1.4247710704803467,
+            1.9933950901031494,
+            1.5633926391601562,
+            0.03712617605924606
+          ]
+        },
+        {
+          "global_point_index": 52,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "minus",
+          "target_point_index": 4,
+          "theta": [
+            1.4247710704803467,
+            1.9339513778686523,
+            1.4883925914764404,
+            0.03712617605924606
+          ]
+        },
+        {
+          "global_point_index": 53,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "plus",
+          "target_point_index": 5,
+          "theta": [
+            1.4247710704803467,
+            1.9339513778686523,
+            1.638392686843872,
+            0.03712617605924606
+          ]
+        },
+        {
+          "global_point_index": 54,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "minus",
+          "target_point_index": 6,
+          "theta": [
+            1.4247710704803467,
+            1.9339513778686523,
+            1.5633926391601562,
+            0.0037126168608665466
+          ]
+        },
+        {
+          "global_point_index": 55,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "plus",
+          "target_point_index": 7,
+          "theta": [
+            1.4247710704803467,
+            1.9339513778686523,
+            1.5633926391601562,
+            0.07053973525762558
+          ]
+        }
+      ],
+      "selection_distance": 0.7880076575893599,
+      "selection_rank": 7,
+      "target_index": 57,
+      "target_record_id": "frozen-target-record-v2-ef274b92c63b655f1d738d72a71ff81f18b62d90439aa75cb79ef5649d4da2c7",
+      "target_record_path": "data/cohorts/paper120_v3/target_057.json",
+      "target_record_sha256": "05c21ad02464c1cd453fd49e23c3b9febad4a4d60dd03f53ac3d26547dfc8600",
+      "theta_star": [
+        1.4247710704803467,
+        1.9339513778686523,
+        1.5633926391601562,
+        0.03712617605924606
+      ]
+    },
+    {
+      "common_random_numbers": {
+        "attempt_index": 0,
+        "evaluation_seed": 3895899743694963867,
+        "logical_index": 13,
+        "policy": "target_addressed_full_stream_crn_v1",
+        "purpose": "finite_difference_sensitivity",
+        "repeat_index": 0,
+        "scientific_run_id": "oscillator-physics-paper120-maximin12-target013-v1",
+        "scope": "all_eight_points_within_target_only",
+        "seed_namespace": "oscillator-physics-paper120-maximin12-crn-v1",
+        "seed_policy": "sha256_first_u64_mask63_target_addressed_v1",
+        "shared_namespaces": [
+          "quenched_disorder",
+          "initial_state",
+          "thermal_noise"
+        ]
+      },
+      "coordinates": [
+        {
+          "actual_physical_denominator": 0.1499999761581421,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.0941959023475647,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.9058040976524353,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "persisted_float32_minus_theta": [
+            1.7837061882019043,
+            1.4169059991836548,
+            1.9321227073669434,
+            0.9119846224784851
+          ],
+          "persisted_float32_plus_theta": [
+            1.9337061643600464,
+            1.4169059991836548,
+            1.9321227073669434,
+            0.9119846224784851
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.15000009536743164,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.3887293338775635,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.6112706661224365,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "persisted_float32_minus_theta": [
+            1.8587061166763306,
+            1.341905951499939,
+            1.9321227073669434,
+            0.9119846224784851
+          ],
+          "persisted_float32_plus_theta": [
+            1.8587061166763306,
+            1.4919060468673706,
+            1.9321227073669434,
+            0.9119846224784851
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.12217903137207031,
+          "boundary_reduced_from_0p05": true,
+          "nearest_boundary_distance": 0.045251548290252686,
+          "nominal_normalized_half_step": 0.04072639346122742,
+          "normalized_center": 0.9547484517097473,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "persisted_float32_minus_theta": [
+            1.8587061166763306,
+            1.4169059991836548,
+            1.8710331916809082,
+            0.9119846224784851
+          ],
+          "persisted_float32_plus_theta": [
+            1.8587061166763306,
+            1.4169059991836548,
+            1.9932122230529785,
+            0.9119846224784851
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.10000002384185791,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.08801537752151489,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.9119846224784851,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "persisted_float32_minus_theta": [
+            1.8587061166763306,
+            1.4169059991836548,
+            1.9321227073669434,
+            0.8619846105575562
+          ],
+          "persisted_float32_plus_theta": [
+            1.8587061166763306,
+            1.4169059991836548,
+            1.9321227073669434,
+            0.9619846343994141
+          ]
+        }
+      ],
+      "normalized_theta_star": [
+        0.9058040777842203,
+        0.6112706661224365,
+        0.9547484715779623,
+        0.9119846224784851
+      ],
+      "ordered_points": [
+        {
+          "global_point_index": 56,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "minus",
+          "target_point_index": 0,
+          "theta": [
+            1.7837061882019043,
+            1.4169059991836548,
+            1.9321227073669434,
+            0.9119846224784851
+          ]
+        },
+        {
+          "global_point_index": 57,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "plus",
+          "target_point_index": 1,
+          "theta": [
+            1.9337061643600464,
+            1.4169059991836548,
+            1.9321227073669434,
+            0.9119846224784851
+          ]
+        },
+        {
+          "global_point_index": 58,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "minus",
+          "target_point_index": 2,
+          "theta": [
+            1.8587061166763306,
+            1.341905951499939,
+            1.9321227073669434,
+            0.9119846224784851
+          ]
+        },
+        {
+          "global_point_index": 59,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "plus",
+          "target_point_index": 3,
+          "theta": [
+            1.8587061166763306,
+            1.4919060468673706,
+            1.9321227073669434,
+            0.9119846224784851
+          ]
+        },
+        {
+          "global_point_index": 60,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "minus",
+          "target_point_index": 4,
+          "theta": [
+            1.8587061166763306,
+            1.4169059991836548,
+            1.8710331916809082,
+            0.9119846224784851
+          ]
+        },
+        {
+          "global_point_index": 61,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "plus",
+          "target_point_index": 5,
+          "theta": [
+            1.8587061166763306,
+            1.4169059991836548,
+            1.9932122230529785,
+            0.9119846224784851
+          ]
+        },
+        {
+          "global_point_index": 62,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "minus",
+          "target_point_index": 6,
+          "theta": [
+            1.8587061166763306,
+            1.4169059991836548,
+            1.9321227073669434,
+            0.8619846105575562
+          ]
+        },
+        {
+          "global_point_index": 63,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "plus",
+          "target_point_index": 7,
+          "theta": [
+            1.8587061166763306,
+            1.4169059991836548,
+            1.9321227073669434,
+            0.9619846343994141
+          ]
+        }
+      ],
+      "selection_distance": 0.7766616120832724,
+      "selection_rank": 8,
+      "target_index": 13,
+      "target_record_id": "frozen-target-record-v2-8c0a74c53d82a4ab6bef24b2d1f3548fb443af5a5c9a99d4e69989f741ee23f0",
+      "target_record_path": "data/cohorts/paper120_v3/target_013.json",
+      "target_record_sha256": "8db51ccfb1a67dd6d00981580874bd5482e9faefa21680b9aa7e4b03682bb196",
+      "theta_star": [
+        1.8587061166763306,
+        1.4169059991836548,
+        1.9321227073669434,
+        0.9119846224784851
+      ]
+    },
+    {
+      "common_random_numbers": {
+        "attempt_index": 0,
+        "evaluation_seed": 2638199609409622781,
+        "logical_index": 111,
+        "policy": "target_addressed_full_stream_crn_v1",
+        "purpose": "finite_difference_sensitivity",
+        "repeat_index": 0,
+        "scientific_run_id": "oscillator-physics-paper120-maximin12-target111-v1",
+        "scope": "all_eight_points_within_target_only",
+        "seed_namespace": "oscillator-physics-paper120-maximin12-crn-v1",
+        "seed_policy": "sha256_first_u64_mask63_target_addressed_v1",
+        "shared_namespaces": [
+          "quenched_disorder",
+          "initial_state",
+          "thermal_noise"
+        ]
+      },
+      "coordinates": [
+        {
+          "actual_physical_denominator": 0.06900382041931152,
+          "boundary_reduced_from_0p05": true,
+          "nearest_boundary_distance": 0.025556961074471474,
+          "nominal_normalized_half_step": 0.023001264967024326,
+          "normalized_center": 0.025556961074471474,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "persisted_float32_minus_theta": [
+            0.503833532333374,
+            1.6598187685012817,
+            1.7944787740707397,
+            0.9389947056770325
+          ],
+          "persisted_float32_plus_theta": [
+            0.5728373527526855,
+            1.6598187685012817,
+            1.7944787740707397,
+            0.9389947056770325
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.1499999761581421,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.2267875075340271,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.7732124924659729,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "persisted_float32_minus_theta": [
+            0.5383354425430298,
+            1.584818720817566,
+            1.7944787740707397,
+            0.9389947056770325
+          ],
+          "persisted_float32_plus_theta": [
+            0.5383354425430298,
+            1.734818696975708,
+            1.7944787740707397,
+            0.9389947056770325
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.15000009536743164,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.13701415061950684,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.8629858493804932,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "persisted_float32_minus_theta": [
+            0.5383354425430298,
+            1.6598187685012817,
+            1.719478726387024,
+            0.9389947056770325
+          ],
+          "persisted_float32_plus_theta": [
+            0.5383354425430298,
+            1.6598187685012817,
+            1.8694788217544556,
+            0.9389947056770325
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.10000002384185791,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.06100529432296753,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.9389947056770325,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "persisted_float32_minus_theta": [
+            0.5383354425430298,
+            1.6598187685012817,
+            1.7944787740707397,
+            0.8889946937561035
+          ],
+          "persisted_float32_plus_theta": [
+            0.5383354425430298,
+            1.6598187685012817,
+            1.7944787740707397,
+            0.9889947175979614
+          ]
+        }
+      ],
+      "normalized_theta_star": [
+        0.02555696169535319,
+        0.7732125123341879,
+        0.8629858493804932,
+        0.9389947056770325
+      ],
+      "ordered_points": [
+        {
+          "global_point_index": 64,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "minus",
+          "target_point_index": 0,
+          "theta": [
+            0.503833532333374,
+            1.6598187685012817,
+            1.7944787740707397,
+            0.9389947056770325
+          ]
+        },
+        {
+          "global_point_index": 65,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "plus",
+          "target_point_index": 1,
+          "theta": [
+            0.5728373527526855,
+            1.6598187685012817,
+            1.7944787740707397,
+            0.9389947056770325
+          ]
+        },
+        {
+          "global_point_index": 66,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "minus",
+          "target_point_index": 2,
+          "theta": [
+            0.5383354425430298,
+            1.584818720817566,
+            1.7944787740707397,
+            0.9389947056770325
+          ]
+        },
+        {
+          "global_point_index": 67,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "plus",
+          "target_point_index": 3,
+          "theta": [
+            0.5383354425430298,
+            1.734818696975708,
+            1.7944787740707397,
+            0.9389947056770325
+          ]
+        },
+        {
+          "global_point_index": 68,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "minus",
+          "target_point_index": 4,
+          "theta": [
+            0.5383354425430298,
+            1.6598187685012817,
+            1.719478726387024,
+            0.9389947056770325
+          ]
+        },
+        {
+          "global_point_index": 69,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "plus",
+          "target_point_index": 5,
+          "theta": [
+            0.5383354425430298,
+            1.6598187685012817,
+            1.8694788217544556,
+            0.9389947056770325
+          ]
+        },
+        {
+          "global_point_index": 70,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "minus",
+          "target_point_index": 6,
+          "theta": [
+            0.5383354425430298,
+            1.6598187685012817,
+            1.7944787740707397,
+            0.8889946937561035
+          ]
+        },
+        {
+          "global_point_index": 71,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "plus",
+          "target_point_index": 7,
+          "theta": [
+            0.5383354425430298,
+            1.6598187685012817,
+            1.7944787740707397,
+            0.9889947175979614
+          ]
+        }
+      ],
+      "selection_distance": 0.772572892060241,
+      "selection_rank": 9,
+      "target_index": 111,
+      "target_record_id": "frozen-target-record-v2-511bdd05a84d911f9a72c18152ae5389664f4847e72d109ebadc84417211e2c4",
+      "target_record_path": "data/cohorts/paper120_v3/target_111.json",
+      "target_record_sha256": "d412bf8db744395c10ea1efd5e0581065cf45166673c72003de1ff90c27e454b",
+      "theta_star": [
+        0.5383354425430298,
+        1.6598187685012817,
+        1.7944787740707397,
+        0.9389947056770325
+      ]
+    },
+    {
+      "common_random_numbers": {
+        "attempt_index": 0,
+        "evaluation_seed": 3397310695416321146,
+        "logical_index": 96,
+        "policy": "target_addressed_full_stream_crn_v1",
+        "purpose": "finite_difference_sensitivity",
+        "repeat_index": 0,
+        "scientific_run_id": "oscillator-physics-paper120-maximin12-target096-v1",
+        "scope": "all_eight_points_within_target_only",
+        "seed_namespace": "oscillator-physics-paper120-maximin12-crn-v1",
+        "seed_policy": "sha256_first_u64_mask63_target_addressed_v1",
+        "shared_namespaces": [
+          "quenched_disorder",
+          "initial_state",
+          "thermal_noise"
+        ]
+      },
+      "coordinates": [
+        {
+          "actual_physical_denominator": 0.1499999761581421,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.09969520568847656,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.09969520568847656,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "persisted_float32_minus_theta": [
+            0.5745428204536438,
+            0.6221405863761902,
+            0.607801616191864,
+            0.6357928514480591
+          ],
+          "persisted_float32_plus_theta": [
+            0.7245427966117859,
+            0.6221405863761902,
+            0.607801616191864,
+            0.6357928514480591
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.1499999761581421,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.08142706006765366,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.08142706006765366,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "persisted_float32_minus_theta": [
+            0.6495428085327148,
+            0.5471405982971191,
+            0.607801616191864,
+            0.6357928514480591
+          ],
+          "persisted_float32_plus_theta": [
+            0.6495428085327148,
+            0.6971405744552612,
+            0.607801616191864,
+            0.6357928514480591
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.1499999761581421,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.07186774164438248,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.07186774164438248,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "persisted_float32_minus_theta": [
+            0.6495428085327148,
+            0.6221405863761902,
+            0.532801628112793,
+            0.6357928514480591
+          ],
+          "persisted_float32_plus_theta": [
+            0.6495428085327148,
+            0.6221405863761902,
+            0.6828016042709351,
+            0.6357928514480591
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.10000002384185791,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.3642071485519409,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.6357928514480591,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "persisted_float32_minus_theta": [
+            0.6495428085327148,
+            0.6221405863761902,
+            0.607801616191864,
+            0.5857928395271301
+          ],
+          "persisted_float32_plus_theta": [
+            0.6495428085327148,
+            0.6221405863761902,
+            0.607801616191864,
+            0.685792863368988
+          ]
+        }
+      ],
+      "normalized_theta_star": [
+        0.09969520568847656,
+        0.08142705758412679,
+        0.07186774412790935,
+        0.6357928514480591
+      ],
+      "ordered_points": [
+        {
+          "global_point_index": 72,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "minus",
+          "target_point_index": 0,
+          "theta": [
+            0.5745428204536438,
+            0.6221405863761902,
+            0.607801616191864,
+            0.6357928514480591
+          ]
+        },
+        {
+          "global_point_index": 73,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "plus",
+          "target_point_index": 1,
+          "theta": [
+            0.7245427966117859,
+            0.6221405863761902,
+            0.607801616191864,
+            0.6357928514480591
+          ]
+        },
+        {
+          "global_point_index": 74,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "minus",
+          "target_point_index": 2,
+          "theta": [
+            0.6495428085327148,
+            0.5471405982971191,
+            0.607801616191864,
+            0.6357928514480591
+          ]
+        },
+        {
+          "global_point_index": 75,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "plus",
+          "target_point_index": 3,
+          "theta": [
+            0.6495428085327148,
+            0.6971405744552612,
+            0.607801616191864,
+            0.6357928514480591
+          ]
+        },
+        {
+          "global_point_index": 76,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "minus",
+          "target_point_index": 4,
+          "theta": [
+            0.6495428085327148,
+            0.6221405863761902,
+            0.532801628112793,
+            0.6357928514480591
+          ]
+        },
+        {
+          "global_point_index": 77,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "plus",
+          "target_point_index": 5,
+          "theta": [
+            0.6495428085327148,
+            0.6221405863761902,
+            0.6828016042709351,
+            0.6357928514480591
+          ]
+        },
+        {
+          "global_point_index": 78,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "minus",
+          "target_point_index": 6,
+          "theta": [
+            0.6495428085327148,
+            0.6221405863761902,
+            0.607801616191864,
+            0.5857928395271301
+          ]
+        },
+        {
+          "global_point_index": 79,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "plus",
+          "target_point_index": 7,
+          "theta": [
+            0.6495428085327148,
+            0.6221405863761902,
+            0.607801616191864,
+            0.685792863368988
+          ]
+        }
+      ],
+      "selection_distance": 0.7132335478871091,
+      "selection_rank": 10,
+      "target_index": 96,
+      "target_record_id": "frozen-target-record-v2-e8809f4c318d0bade56d60822bfa5b1ba6ab02a6766ef4c9ee6522bd91ef2f21",
+      "target_record_path": "data/cohorts/paper120_v3/target_096.json",
+      "target_record_sha256": "1c040c915cf732171e477d350a12652b19e2fab8e143ce6e408131929a3c6419",
+      "theta_star": [
+        0.6495428085327148,
+        0.6221405863761902,
+        0.607801616191864,
+        0.6357928514480591
+      ]
+    },
+    {
+      "common_random_numbers": {
+        "attempt_index": 0,
+        "evaluation_seed": 665982463665392951,
+        "logical_index": 45,
+        "policy": "target_addressed_full_stream_crn_v1",
+        "purpose": "finite_difference_sensitivity",
+        "repeat_index": 0,
+        "scientific_run_id": "oscillator-physics-paper120-maximin12-target045-v1",
+        "scope": "all_eight_points_within_target_only",
+        "seed_namespace": "oscillator-physics-paper120-maximin12-crn-v1",
+        "seed_policy": "sha256_first_u64_mask63_target_addressed_v1",
+        "shared_namespaces": [
+          "quenched_disorder",
+          "initial_state",
+          "thermal_noise"
+        ]
+      },
+      "coordinates": [
+        {
+          "actual_physical_denominator": 0.1499999761581421,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.08261972665786743,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.9173802733421326,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "persisted_float32_minus_theta": [
+            1.8010704517364502,
+            1.8549151420593262,
+            0.5941265821456909,
+            0.2539527714252472
+          ],
+          "persisted_float32_plus_theta": [
+            1.9510704278945923,
+            1.8549151420593262,
+            0.5941265821456909,
+            0.2539527714252472
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.15000009536743164,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.09672325849533081,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.9032767415046692,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "persisted_float32_minus_theta": [
+            1.8760703802108765,
+            1.7799150943756104,
+            0.5941265821456909,
+            0.2539527714252472
+          ],
+          "persisted_float32_plus_theta": [
+            1.8760703802108765,
+            1.929915189743042,
+            0.5941265821456909,
+            0.2539527714252472
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.1499999761581421,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.06275105476379395,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.06275105476379395,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "persisted_float32_minus_theta": [
+            1.8760703802108765,
+            1.8549151420593262,
+            0.5191265940666199,
+            0.2539527714252472
+          ],
+          "persisted_float32_plus_theta": [
+            1.8760703802108765,
+            1.8549151420593262,
+            0.669126570224762,
+            0.2539527714252472
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.10000000894069672,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.2539527714252472,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.2539527714252472,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "persisted_float32_minus_theta": [
+            1.8760703802108765,
+            1.8549151420593262,
+            0.5941265821456909,
+            0.20395277440547943
+          ],
+          "persisted_float32_plus_theta": [
+            1.8760703802108765,
+            1.8549151420593262,
+            0.5941265821456909,
+            0.30395278334617615
+          ]
+        }
+      ],
+      "normalized_theta_star": [
+        0.9173802534739176,
+        0.9032767613728842,
+        0.06275105476379395,
+        0.2539527714252472
+      ],
+      "ordered_points": [
+        {
+          "global_point_index": 80,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "minus",
+          "target_point_index": 0,
+          "theta": [
+            1.8010704517364502,
+            1.8549151420593262,
+            0.5941265821456909,
+            0.2539527714252472
+          ]
+        },
+        {
+          "global_point_index": 81,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "plus",
+          "target_point_index": 1,
+          "theta": [
+            1.9510704278945923,
+            1.8549151420593262,
+            0.5941265821456909,
+            0.2539527714252472
+          ]
+        },
+        {
+          "global_point_index": 82,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "minus",
+          "target_point_index": 2,
+          "theta": [
+            1.8760703802108765,
+            1.7799150943756104,
+            0.5941265821456909,
+            0.2539527714252472
+          ]
+        },
+        {
+          "global_point_index": 83,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "plus",
+          "target_point_index": 3,
+          "theta": [
+            1.8760703802108765,
+            1.929915189743042,
+            0.5941265821456909,
+            0.2539527714252472
+          ]
+        },
+        {
+          "global_point_index": 84,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "minus",
+          "target_point_index": 4,
+          "theta": [
+            1.8760703802108765,
+            1.8549151420593262,
+            0.5191265940666199,
+            0.2539527714252472
+          ]
+        },
+        {
+          "global_point_index": 85,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "plus",
+          "target_point_index": 5,
+          "theta": [
+            1.8760703802108765,
+            1.8549151420593262,
+            0.669126570224762,
+            0.2539527714252472
+          ]
+        },
+        {
+          "global_point_index": 86,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "minus",
+          "target_point_index": 6,
+          "theta": [
+            1.8760703802108765,
+            1.8549151420593262,
+            0.5941265821456909,
+            0.20395277440547943
+          ]
+        },
+        {
+          "global_point_index": 87,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "plus",
+          "target_point_index": 7,
+          "theta": [
+            1.8760703802108765,
+            1.8549151420593262,
+            0.5941265821456909,
+            0.30395278334617615
+          ]
+        }
+      ],
+      "selection_distance": 0.6688935985967112,
+      "selection_rank": 11,
+      "target_index": 45,
+      "target_record_id": "frozen-target-record-v2-150d47a262376ad71b781ee403508fe958e1b866c8024dc48dde7e26f821c221",
+      "target_record_path": "data/cohorts/paper120_v3/target_045.json",
+      "target_record_sha256": "1067954d33523f04ab426ef64f08c21d0fc6a8cb6e351f13d59cbc7d2b11d570",
+      "theta_star": [
+        1.8760703802108765,
+        1.8549151420593262,
+        0.5941265821456909,
+        0.2539527714252472
+      ]
+    },
+    {
+      "common_random_numbers": {
+        "attempt_index": 0,
+        "evaluation_seed": 8362019985991239918,
+        "logical_index": 58,
+        "policy": "target_addressed_full_stream_crn_v1",
+        "purpose": "finite_difference_sensitivity",
+        "repeat_index": 0,
+        "scientific_run_id": "oscillator-physics-paper120-maximin12-target058-v1",
+        "scope": "all_eight_points_within_target_only",
+        "seed_namespace": "oscillator-physics-paper120-maximin12-crn-v1",
+        "seed_policy": "sha256_first_u64_mask63_target_addressed_v1",
+        "shared_namespaces": [
+          "quenched_disorder",
+          "initial_state",
+          "thermal_noise"
+        ]
+      },
+      "coordinates": [
+        {
+          "actual_physical_denominator": 0.15000009536743164,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.17173796892166138,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.8282620310783386,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "persisted_float32_minus_theta": [
+            1.6673929691314697,
+            0.6863598227500916,
+            0.5499900579452515,
+            0.9242698550224304
+          ],
+          "persisted_float32_plus_theta": [
+            1.8173930644989014,
+            0.6863598227500916,
+            0.5499900579452515,
+            0.9242698550224304
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.1499999761581421,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.12423988431692123,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.12423988431692123,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "persisted_float32_minus_theta": [
+            1.7423930168151855,
+            0.6113598346710205,
+            0.5499900579452515,
+            0.9242698550224304
+          ],
+          "persisted_float32_plus_theta": [
+            1.7423930168151855,
+            0.7613598108291626,
+            0.5499900579452515,
+            0.9242698550224304
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.08998215198516846,
+          "boundary_reduced_from_0p05": true,
+          "nearest_boundary_distance": 0.03332670405507088,
+          "nominal_normalized_half_step": 0.02999403364956379,
+          "normalized_center": 0.03332670405507088,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "persisted_float32_minus_theta": [
+            1.7423930168151855,
+            0.6863598227500916,
+            0.5049989819526672,
+            0.9242698550224304
+          ],
+          "persisted_float32_plus_theta": [
+            1.7423930168151855,
+            0.6863598227500916,
+            0.5949811339378357,
+            0.9242698550224304
+          ]
+        },
+        {
+          "actual_physical_denominator": 0.10000002384185791,
+          "boundary_reduced_from_0p05": false,
+          "nearest_boundary_distance": 0.07573014497756958,
+          "nominal_normalized_half_step": 0.05,
+          "normalized_center": 0.9242698550224304,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "persisted_float32_minus_theta": [
+            1.7423930168151855,
+            0.6863598227500916,
+            0.5499900579452515,
+            0.8742698431015015
+          ],
+          "persisted_float32_plus_theta": [
+            1.7423930168151855,
+            0.6863598227500916,
+            0.5499900579452515,
+            0.9742698669433594
+          ]
+        }
+      ],
+      "normalized_theta_star": [
+        0.8282620112101237,
+        0.12423988183339436,
+        0.03332670529683431,
+        0.9242698550224304
+      ],
+      "ordered_points": [
+        {
+          "global_point_index": 88,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "minus",
+          "target_point_index": 0,
+          "theta": [
+            1.6673929691314697,
+            0.6863598227500916,
+            0.5499900579452515,
+            0.9242698550224304
+          ]
+        },
+        {
+          "global_point_index": 89,
+          "parameter_index": 0,
+          "parameter_name": "weight_mean",
+          "sign": "plus",
+          "target_point_index": 1,
+          "theta": [
+            1.8173930644989014,
+            0.6863598227500916,
+            0.5499900579452515,
+            0.9242698550224304
+          ]
+        },
+        {
+          "global_point_index": 90,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "minus",
+          "target_point_index": 2,
+          "theta": [
+            1.7423930168151855,
+            0.6113598346710205,
+            0.5499900579452515,
+            0.9242698550224304
+          ]
+        },
+        {
+          "global_point_index": 91,
+          "parameter_index": 1,
+          "parameter_name": "pairwise_coupling_mean",
+          "sign": "plus",
+          "target_point_index": 3,
+          "theta": [
+            1.7423930168151855,
+            0.7613598108291626,
+            0.5499900579452515,
+            0.9242698550224304
+          ]
+        },
+        {
+          "global_point_index": 92,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "minus",
+          "target_point_index": 4,
+          "theta": [
+            1.7423930168151855,
+            0.6863598227500916,
+            0.5049989819526672,
+            0.9242698550224304
+          ]
+        },
+        {
+          "global_point_index": 93,
+          "parameter_index": 2,
+          "parameter_name": "bias_scale_mean",
+          "sign": "plus",
+          "target_point_index": 5,
+          "theta": [
+            1.7423930168151855,
+            0.6863598227500916,
+            0.5949811339378357,
+            0.9242698550224304
+          ]
+        },
+        {
+          "global_point_index": 94,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "minus",
+          "target_point_index": 6,
+          "theta": [
+            1.7423930168151855,
+            0.6863598227500916,
+            0.5499900579452515,
+            0.8742698431015015
+          ]
+        },
+        {
+          "global_point_index": 95,
+          "parameter_index": 3,
+          "parameter_name": "pairwise_coupling_CV",
+          "sign": "plus",
+          "target_point_index": 7,
+          "theta": [
+            1.7423930168151855,
+            0.6863598227500916,
+            0.5499900579452515,
+            0.9742698669433594
+          ]
+        }
+      ],
+      "selection_distance": 0.6526809569507177,
+      "selection_rank": 12,
+      "target_index": 58,
+      "target_record_id": "frozen-target-record-v2-7e33e6ca1bee0e2795bedad56428c6f839297ea5b378474be049e1aa7c5a67a1",
+      "target_record_path": "data/cohorts/paper120_v3/target_058.json",
+      "target_record_sha256": "ce8d74758403ddaa5c626ac54b59a658f3a69cd963d056619ed5419a67975328",
+      "theta_star": [
+        1.7423930168151855,
+        0.6863598227500916,
+        0.5499900579452515,
+        0.9242698550224304
+      ]
+    }
+  ]
+}

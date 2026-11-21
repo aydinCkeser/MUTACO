@@ -1,0 +1,17 @@
+{
+  "bootstrap_path": "experiments/paper/common/exact_terminal_bootstrap.py",
+  "bootstrap_sha256": "03951618c76d9d8b8109503a10c37a6c8d21b80490823a6977364ef8f8af508d",
+  "declaration_content_identity": "repaired-sbi-corrected-terminal-declaration-file-v1-911b1a1c304e199a037886a56d2ac3843333d6e942e1cd3d6385ce3c611ee237",
+  "declaration_identity": "repaired-sbi-corrected-terminal-declaration-v1-91a3b0e77ede7adb90be188c0bf56995d60e264cd5cc2fff48d28e8289414688",
+  "generation_authorized": false,
+  "generator_path": "experiments/paper/common/exact_terminal_generation.py",
+  "generator_sha256": "791cff702f3733596890d03a13b20047cdafd97809e9e8612572a46800841e14",
+  "package_identity": "repaired-sbi-corrected-terminal-preparation-package-v1-123306d9650ee714d0601a253149c609bdfa08faabc762d3300cc5bb425181e6",
+  "preparation_content_identity": "repaired-sbi-corrected-terminal-preparation-file-v1-df15fab95f25a8a7911c22c5a1cb36e43d5892d0f8ba27c1393085b05a6b532f",
+  "preparation_identity": "repaired-sbi-corrected-terminal-preparation-v1-3a346d310c9a54bd285707c4b77d9b92f0b62abc720cff0122678ab3f91933af",
+  "schema_version": "mutaco-repaired-sbi-corrected-terminal-preparation-package-v1",
+  "simulator_calls": 0,
+  "terminal_cases_ready": 240,
+  "terminal_recommendations_generated": 0,
+  "truba_jobs_submitted": 0
+}

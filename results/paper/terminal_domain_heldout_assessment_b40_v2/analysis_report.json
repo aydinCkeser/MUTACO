@@ -1,0 +1,88 @@
+{
+  "B_prime_heldout_physical_mae": {
+    "maximum": 0.15294304874250883,
+    "mean": 0.03596357617714898,
+    "median": 0.0279502446842713,
+    "minimum": 0.0027339318778103914,
+    "q05": 0.0072441203887319726,
+    "q25": 0.018316566523367328,
+    "q75": 0.04836054156880891,
+    "q95": 0.08755577343260484
+  },
+  "C_prime_heldout_physical_mae": {
+    "maximum": 0.09336676758248359,
+    "mean": 0.025730973025557283,
+    "median": 0.02244389447350841,
+    "minimum": 0.0026786891867232043,
+    "q05": 0.0077523709643264735,
+    "q25": 0.013100230219288276,
+    "q75": 0.033785357553222185,
+    "q95": 0.052976414953300265
+  },
+  "analysis_identity": "terminal-domain-heldout-analysis-v2-9545e519fa4d5a2560bf6fdb35051ad5ce52a10706df7b534277b3b3cbcfd671",
+  "bootstrap": {
+    "contrast": "C_prime_minus_B_prime",
+    "lower_percentile": 2.5,
+    "resamples": 10000,
+    "seed": 92024101,
+    "statistic": "arithmetic_mean",
+    "stratified": false,
+    "studentized": false,
+    "unit": "paired_target_delta",
+    "upper_percentile": 97.5
+  },
+  "complete_pairs": 120,
+  "confirmatory_complete": true,
+  "counts": {
+    "B_prime_better": 45,
+    "C_prime_better": 75,
+    "tie_exact_float": 0
+  },
+  "declaration_identity": "terminal-domain-heldout-declaration-v2-8becf876b147ebd3799dd40e68e18c5c71e14d411bcd00ae12e42bfa3779efa0",
+  "declared_targets": 120,
+  "execution_accounting": {
+    "automatic_retry": false,
+    "declaration_identity": "terminal-domain-heldout-declaration-v2-8becf876b147ebd3799dd40e68e18c5c71e14d411bcd00ae12e42bfa3779efa0",
+    "execution_location": "local_ubuntu",
+    "gp_fit_attempts": 0,
+    "mutaco_search_calls": 0,
+    "physical_calls": {
+      "attempted": 240,
+      "attempted_outcome_unknown": 0,
+      "failed": 0,
+      "maximum": 240,
+      "retry": 0,
+      "successful": 240
+    },
+    "policy_A_calls": 0,
+    "schema_version": "mutaco-terminal-domain-heldout-execution-manifest-v2",
+    "simulator_instances_constructed": 240,
+    "slurm_jobs": 0,
+    "terminal_optimizations": 0,
+    "truba_jobs": 0
+  },
+  "incomplete": [],
+  "inferential_scope": "The paired target-level bootstrap quantifies variation across the Paper-120 target/context pairs; it does not separately estimate within-target Monte Carlo uncertainty.",
+  "paired_mean_bootstrap_95_percentile_interval": [
+    -0.014645077700721048,
+    -0.006026733225736714
+  ],
+  "physical_C_prime_minus_B_prime": {
+    "maximum": 0.04183746156759298,
+    "mean": -0.010232603151591697,
+    "median": -0.007135361108703362,
+    "minimum": -0.10042617209255694,
+    "q05": -0.056050122320450556,
+    "q25": -0.018692983080472913,
+    "q75": 0.0038673947748293375,
+    "q95": 0.021598200411062862
+  },
+  "population_relative_physical_mae_change": -0.2845268529800278,
+  "schema_version": "mutaco-terminal-domain-heldout-analysis-v2",
+  "surrogate_vs_physical_association": {
+    "pearson": 0.5970610702885937,
+    "role": "descriptive_only",
+    "spearman": 0.4877422043197444
+  },
+  "verdict": "TERMINAL_DOMAIN_PHYSICAL_BENEFIT_SUPPORTED"
+}

@@ -1,0 +1,29 @@
+{
+  "accepted_source": "68435659d05d12280c396045c42a15eefaf7c84e",
+  "accepted_test_reference": {
+    "characterization_file": "tests/surrogate/test_optimizer_diagnostics.py",
+    "characterization_sha256": "b0c97e1ca28935d6438b4fd8ebec9b288d2848914ea22d36c6618cf05788f660",
+    "origin": "full local archived-input characterization before production extraction",
+    "scientific_source_commit": "68435659d05d12280c396045c42a15eefaf7c84e"
+  },
+  "baseline": "aa7f4feb58302ecf6abfa6dee2d81071eabb7fe3",
+  "capture_fit_events": true,
+  "corrected_fixture": {
+    "path": "tests/acquisition/test_nei.py",
+    "sha256": "cfc0e6fba96460670216bb011841f2aed5759d3e74ae31740b8a1a5e2e3bb998",
+    "source_commit": "bd3859906a969d362e7d0496e87dcac404804285"
+  },
+  "derived_summaries_are_not_raw_inputs": true,
+  "expected_added_tests": 0,
+  "new_test_prefixes": [],
+  "raw_inputs": {
+    "accepted-tests-status.json": "4adc97cf33cb3e0c675388bdf4aa892b6189f48046ceb209f2abe5a51fb1ee65",
+    "accepted-tests.xml": "9f2974b92c0cbd29ca60ac3949760613551c8cc0fdc3e9309353bbcf3d3f97fa",
+    "b100-capture.json.gz": "1865655feddf8658f534e029b89212f2e5a1b0bf308f099705e584bde641e156",
+    "b100-history.json.gz": "09e2df33bdfba7cc7ccb331a2995d81bda7e1ae13d5d6f61569904574b6a7e57",
+    "b40-capture.json.gz": "029632e4d0f863a4d1e4c8014a88eca94a0b7eee59517152cbfa80d8919604c2",
+    "b40-history.json.gz": "cc7974d202ecaa5444946aae45965c01f9cf93a10b027f253e71e30a7494dad2"
+  },
+  "schema": "mutaco-gp-optimizer-diagnostics-reference-inputs-v2",
+  "test_expectation_revision": "corrected-nei-fixture-v2"
+}

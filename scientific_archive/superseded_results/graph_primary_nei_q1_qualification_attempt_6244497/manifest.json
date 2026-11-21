@@ -1,0 +1,78 @@
+{
+  "schema_version": "mutaco-primary-nei-q1-failed-attempt-evidence-v1",
+  "status": "failed_preserved_no_automatic_retry",
+  "role": "numerical_qualification_attempt_not_primary_performance_evidence",
+  "campaign_id": "graph_primary_nei_q1_v1",
+  "scientific_source_commit": "64f6d69df386e62be6c3393eca5caebc99a19c27",
+  "declaration": "experiments/graph_inversion/configs/paper/primary_nei_q1_v1.json",
+  "declaration_identity": "nei-numerical-qualification-declaration-v1-12c8822d0e09859eafc77401febad714785b4bcd772c77b378e904954a4a1d3c",
+  "target_count": 5,
+  "budgets": [40, 100],
+  "workers": 5,
+  "maximum_calls_per_worker": 140,
+  "maximum_total_calls": 700,
+  "heldout_calls": 0,
+  "physical_calls": {
+    "attempted": 80,
+    "successful": 80,
+    "failed": 0,
+    "retry": 0
+  },
+  "worker_terminals": {
+    "present": 5,
+    "completed": 0,
+    "failed": 5,
+    "completed_trajectory_records": 0
+  },
+  "failure": {
+    "reported_type": "PaperContractError",
+    "reported_explanation": "Q1 trajectory did not use its exact budget",
+    "observed_boundary": "all workers returned after the 16-call initial design before the first B40 trajectory record",
+    "underlying_search_failure_persisted": false,
+    "qualification_result_created": false,
+    "selected_tier_id": null
+  },
+  "post_attempt_diagnosis": {
+    "status": "root_cause_reproduced_and_repaired_zero_call",
+    "failure_boundary": "position_16_gp_snapshot_state_identity",
+    "root_cause": "positive-infinity GP constraint bounds lacked explicit canonical Q1 snapshot encoding",
+    "evidence_hardening": "mutaco-nei-q1-trajectory-attempt-v1",
+    "signed_infinity_encoding": "explicit_signed_infinity_v1",
+    "nan_policy": "rejected",
+    "real_stack_synthetic_reproduction_after_repair": "position-16 snapshot complete with three tier observations before deliberate evaluation-17 stop",
+    "scientific_calls": 0,
+    "retry_authorized": false
+  },
+  "truba": {
+    "job_id": 6244497,
+    "state": "FAILED",
+    "elapsed": "00:03:41",
+    "exit_code": "1:0",
+    "nodes": "barbun[7-11]",
+    "allocated_cpus": 100,
+    "worker_threads": 20,
+    "memory_per_node": "64G",
+    "excluded_nodes": "barbun70,barbun[112-119]"
+  },
+  "remote_output_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/primary_nei_q1/qualification-v1/workers",
+  "local_raw_evidence": "experiments/paper/exploration/outputs/primary_nei_q1/qualification_attempt_6244497",
+  "artifact_hashes": {
+    "worker_start_json": [
+      "9baf5c06ff0e7e20a7a629da5b5d5cc7e90eba20d99ee056d65a0688a2786905",
+      "eaa8046b4075cf7af04db97b397379ce3b6de55b832ab2935dbae2b6b000c08e",
+      "12297be24821f4f3468ba80f92dc29c23bc3478904bfbc77c75c3a036b726656",
+      "acb076f41ed780b91e177ff89773d9740fefc7986dd41c7642a0505a11faee7f",
+      "818bc7a6f27bb6344981e82dd647591c6dbb8e0327e83e76722bc44cd0b1eb16"
+    ],
+    "worker_terminal_json": [
+      "1f6fdf6c240e83cb702d74e09f6b764981e33bcc2afbc149b829da0c71b3bd5a",
+      "1f6fdf6c240e83cb702d74e09f6b764981e33bcc2afbc149b829da0c71b3bd5a",
+      "1f6fdf6c240e83cb702d74e09f6b764981e33bcc2afbc149b829da0c71b3bd5a",
+      "1f6fdf6c240e83cb702d74e09f6b764981e33bcc2afbc149b829da0c71b3bd5a",
+      "1f6fdf6c240e83cb702d74e09f6b764981e33bcc2afbc149b829da0c71b3bd5a"
+    ],
+    "scheduler_stdout": "eba54458ff40c2bc4f38ec8488a0e2413c4d65b836bc77a2cc406e5c4908b243",
+    "scheduler_stderr": "c8d5dfc14aa71f1ccfeb9a80f0e1bacb5c899b3a6cd30ef706f4498d98fe99a0"
+  },
+  "scientific_calls_added_by_fetch_and_documentation": 0
+}

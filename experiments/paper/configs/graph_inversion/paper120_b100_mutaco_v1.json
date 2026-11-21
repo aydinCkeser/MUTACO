@@ -1,0 +1,146 @@
+{
+  "schema_version": "mutaco-benchmark-campaign-v1",
+  "identity_policy": "target_method_execution_v1",
+  "campaign_classification": "paper120_b100_locked_method_configuration",
+  "dtype": "float32",
+  "device": "cpu",
+  "proposal_effort": "canonical",
+  "terminal_recommendation": "continuous_posterior_mean_physical_l1_mae",
+  "evaluation_randomness": "independent",
+  "assessment": "fresh_held_out",
+  "posterior_numerics": "float32_fit_float64_covariance",
+  "gp_recovery": "graph_m20_sequential_recovery_v1",
+  "graph_paper_policy": {
+    "profile_id": "graph_paper_joint95_mae_initial16_b100_v1",
+    "initial_design": {"policy": "scrambled_sobol", "point_count": 16},
+    "confidence_geometry": "operator_norm_radius_v1",
+    "beta_policy": {
+      "id": "joint_chi_square_response_dimension_v1",
+      "coverage": 0.95,
+      "response_dimension": 20,
+      "chi_square_quantile": 31.410432844230918,
+      "resolved_beta": 5.604501123581913,
+      "quantile_provenance": {
+        "distribution": "chi_square",
+        "degrees_of_freedom": 20,
+        "probability": 0.95,
+        "algorithm": "torch_gammainc_bisection_float64_v1",
+        "iterations": 128,
+        "computation_dtype": "float64"
+      }
+    },
+    "infeasible_fallback": "posterior_uncertainty_v1",
+    "terminal_recommendation": "continuous_posterior_mean_physical_l1_mae",
+    "evaluation_randomness": "independent",
+    "assessment": "fresh_held_out"
+  },
+  "campaign": {
+    "id": "graph_paper120_b100_mutaco_v1",
+    "description": "Locked MUTACO B100 method configuration for the frozen Paper-120 cohort",
+    "target_count": 100,
+    "target_bank_policy": "scrambled_sobol",
+    "campaign_seed": 81257,
+    "replay_policy": "first_middle_last",
+    "hidden_theta_visibility": "method_hidden_existing_ledger"
+  },
+  "simulator": {
+    "adapter": "graph_scientific_d4",
+    "identifier": "graph-oscillator.overdamped-scientific.v1",
+    "parameter_profile": "p4-paper-baseline",
+    "response_profile": "m20-five-force-scientific",
+    "node_count": 10,
+    "batch_size": 80,
+    "repeat_size": 2,
+    "bias_conditions": 5,
+    "temperature": 0.15,
+    "dt": 0.1,
+    "burn_in_steps": 100,
+    "sample_steps": 900,
+    "sample_stride": 1
+  },
+  "comparison": {
+    "primary_basis": "equal_simulator_calls",
+    "include_target_generation_in_budget": false,
+    "held_out_assessment_calls": 1,
+    "assessment_response_profile": "m20-five-force-scientific",
+    "dense_assessment_prohibited": true,
+    "record_wall_clock": true
+  },
+  "simulation_budget_per_target": 100,
+  "runner": {
+    "initial_points": 16,
+    "sequential_rounds": 84,
+    "transform": {"ddof": 1, "scale_floor": 1e-12},
+    "gp": {
+      "likelihood": "task_diagonal_gaussian",
+      "max_iterations": 12,
+      "jitter": 1e-6,
+      "symmetry_tolerance": 2e-6,
+      "psd_tolerance": 1e-6,
+      "covariance_validation_policy": "structural_symmetric_materialization_v1",
+      "posterior_numerics_policy": "float32_fit_float64_covariance",
+      "task_variance_floor_policy": "standardized_absolute_v1",
+      "task_variance_floor": 5.991468697175151e-6,
+      "task_variance_floor_reference_scale": 6.282510280609131,
+      "task_variance_floor_epsilon_multiplier": 8.0,
+      "recovery_policy": "graph_m20_sequential_recovery_v1",
+      "max_warm_start_states": 2
+    },
+    "acquisition": {
+      "raw_policy": "scrambled_sobol",
+      "raw_samples": 64,
+      "restarts": 4,
+      "max_iterations": 8,
+      "learning_rate": 0.05,
+      "alpha": 0.1,
+      "tau_interior": 1e-8,
+      "beta": 5.604501123581913,
+      "beta_policy": {
+        "id": "joint_chi_square_response_dimension_v1",
+        "coverage": 0.95,
+        "response_dimension": 20,
+        "chi_square_quantile": 31.410432844230918,
+        "resolved_beta": 5.604501123581913,
+        "quantile_provenance": {
+          "distribution": "chi_square",
+          "degrees_of_freedom": 20,
+          "probability": 0.95,
+          "algorithm": "torch_gammainc_bisection_float64_v1",
+          "iterations": 128,
+          "computation_dtype": "float64"
+        }
+      },
+      "confidence_radius_policy": "operator_norm_radius_v1",
+      "infeasible_fallback_policy": "posterior_uncertainty_v1"
+    },
+    "duplicate_policy": "best_ranked_unevaluated_raw_v1"
+  },
+  "randomness": {
+    "seed_policy": "mutaco-coordinate-sha256-v1",
+    "target_seed_namespace": "graph_paper_100_target_response",
+    "method_seed_namespace": "method_runs",
+    "assessment_seed_namespace": "held_out_assessment",
+    "no_cross_theta_common_random_numbers": true
+  },
+  "runtime_limits": {
+    "global_deadline_seconds": 28800,
+    "per_target_deadline_seconds": 7200,
+    "mutaco_method_deadline_seconds": 7200,
+    "artifact_cap_bytes": 2147483648,
+    "resume_policy": "completed_target_or_method_only",
+    "process_tree_cleanup": true
+  },
+  "target_declaration": {
+    "path": "experiments/graph_inversion/target_declarations/paper_100_theta_ledger.json",
+    "schema_version": "graph-paper-hidden-theta-ledger-v1"
+  },
+  "call_accounting": {
+    "target_construction": 0,
+    "initial_inference": 16,
+    "sequential_inference": 84,
+    "inference": 100,
+    "recommendation": 0,
+    "assessment": 1,
+    "total_per_valid_target": 101
+  }
+}

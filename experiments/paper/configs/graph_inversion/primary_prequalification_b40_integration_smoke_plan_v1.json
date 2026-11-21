@@ -1,0 +1,25 @@
+{
+  "automatic_retry": false,
+  "budget": 40,
+  "classification": "engineering_integration_smoke_ineligible_for_q1_tier_selection_and_primary_performance",
+  "declaration_identity": "primary-population-declaration-v1-27e5747d2e155163b7b7f5957eeec0c03a3ca40bfde459c2746c39c7b9835d2c",
+  "historical_or_future_q1_evidence_eligible": false,
+  "maximum_assessment_calls": 3,
+  "maximum_search_calls": 120,
+  "maximum_total_calls": 123,
+  "methods": [
+    "mutaco",
+    "nei_bo",
+    "sobol"
+  ],
+  "plan_identity": "primary-prequalification-smoke-plan-v1-79c0f4fcbb4750e85300fe28a98e9a2474f73dc67a4d7da8e7fb471faa713fca",
+  "primary_benchmark_evidence_eligible": false,
+  "production_nei_tier_selected": false,
+  "provisional_nei_tier_id": "tier_high_provisional_engineering_only",
+  "schema_version": "mutaco-primary-prequalification-smoke-plan-v1",
+  "scientific_calls_executed": 0,
+  "scientific_submission_authorized": false,
+  "state": "declared_unexecuted_submission_unauthorized",
+  "target_record_identity": "frozen-target-record-v2-55ef79e8c497a3d9e186553901b04d909b2de06d145b70f177968372063f8693",
+  "target_source": "first_frozen_q1_offcohort_target"
+}

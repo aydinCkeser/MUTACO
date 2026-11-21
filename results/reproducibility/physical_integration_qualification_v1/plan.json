@@ -1,0 +1,703 @@
+{
+  "analytic": {
+    "calls": 8,
+    "constant_output": 7.25,
+    "constant_seed": 9,
+    "constant_theta": [
+      0.1,
+      0.2
+    ],
+    "expected": [
+      [
+        0.43,
+        0.4910065241883679,
+        -0.109375
+      ],
+      [
+        -0.5,
+        -1.0,
+        1.25
+      ],
+      [
+        1.5,
+        1.0,
+        1.25
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "noisy_seeds": [
+      123,
+      123,
+      124
+    ],
+    "noisy_theta": [
+      0.2,
+      -0.4
+    ],
+    "theta": [
+      [
+        0.35,
+        -0.4
+      ],
+      [
+        -1.0,
+        -1.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  "config_path": "experiments/graph_inversion/configs/paper/paper120_b100_mutaco_v1.json",
+  "config_sha256": "f1d0c70fdba6e0f14109c2d6b76c8c2d40476138c769ccbd240017447867b145",
+  "frozen_graph": {
+    "calls": 1,
+    "evaluation_seed": 557745369049974288,
+    "reference_response": [
+      0.000586328620556742,
+      5.353218875825405e-05,
+      0.4849289357662201,
+      0.4996665120124817,
+      1.3166296482086182,
+      1.316029667854309,
+      2.0928120613098145,
+      2.090222120285034,
+      2.848893404006958,
+      2.8495001792907715,
+      0.9539758563041687,
+      0.9425140619277954,
+      0.8378853797912598,
+      0.8585443496704102,
+      0.6634014844894409,
+      0.6735151410102844,
+      0.5217294692993164,
+      0.5261184573173523,
+      0.4482886791229248,
+      0.4494245648384094
+    ],
+    "theta": [
+      0.5343450307846069,
+      1.2105786800384521,
+      0.5737454295158386,
+      0.43844762444496155
+    ]
+  },
+  "graph_fixed": {
+    "api_repeat_indices": [
+      0,
+      9,
+      10
+    ],
+    "config": {
+      "batch_size": 1,
+      "burn_in_steps": 2,
+      "device": "cpu",
+      "node_count": 3,
+      "parameter_profile_id": "p4-paper-baseline",
+      "repeat_size": 1,
+      "sample_steps": 4
+    },
+    "context_family": "prompt7-parity-v1",
+    "context_purpose": "reference_parity",
+    "numpy_reference_runs": 16,
+    "seeds": [
+      73007,
+      177736,
+      282465,
+      387194,
+      491923,
+      596652,
+      701381,
+      806110,
+      910839,
+      1015568,
+      1120297,
+      1225026,
+      1329755,
+      1434484,
+      1539213,
+      1643942
+    ],
+    "theta": [
+      [
+        1.25,
+        1.25,
+        1.25,
+        0.5
+      ],
+      [
+        0.5,
+        1.25,
+        1.25,
+        0.5
+      ],
+      [
+        2.0,
+        1.25,
+        1.25,
+        0.5
+      ],
+      [
+        1.25,
+        0.5,
+        1.25,
+        0.5
+      ],
+      [
+        1.25,
+        2.0,
+        1.25,
+        0.5
+      ],
+      [
+        1.25,
+        1.25,
+        0.5,
+        0.5
+      ],
+      [
+        1.25,
+        1.25,
+        2.0,
+        0.5
+      ],
+      [
+        1.25,
+        1.25,
+        1.25,
+        0.0
+      ],
+      [
+        1.25,
+        1.25,
+        1.25,
+        1.0
+      ],
+      [
+        0.5,
+        0.5,
+        0.5,
+        0.0
+      ],
+      [
+        2.0,
+        2.0,
+        2.0,
+        1.0
+      ],
+      [
+        1.625,
+        0.875,
+        1.625,
+        0.25
+      ],
+      [
+        0.875,
+        1.625,
+        0.875,
+        0.75
+      ],
+      [
+        1.0625,
+        1.0625,
+        1.8125,
+        0.625
+      ],
+      [
+        1.8125,
+        1.8125,
+        1.0625,
+        0.125
+      ],
+      [
+        0.6875,
+        1.4375,
+        1.4375,
+        0.875
+      ]
+    ],
+    "torch_kernel_runs": 16
+  },
+  "integration": {
+    "GP_acquisition_transform_duplicate_controls": "unchanged values from the locked paper configuration; total observation budget deliberately bounded at17, with its own identity",
+    "adaptive_observations": 1,
+    "classification": "bounded direct-core integration diagnostic; NOT registered B40/B100 campaign",
+    "expected_fit_updates": 2,
+    "expected_proposals": 1,
+    "expected_terminal_recommendations": 1,
+    "held_out_calls": 0,
+    "initial_design": {
+      "classification": "D default",
+      "design_id": "initial-design-v1-fc9a0679dd08866ad0a59616766f44adf09cd3ed84d745efcc930c04c72d14d8",
+      "dtype": "float32",
+      "generation_device": "cpu",
+      "lower": [
+        0.5,
+        0.5,
+        0.5,
+        0.0
+      ],
+      "observation_ids": [
+        "initial-design-v1-fc9a0679dd08866ad0a59616766f44adf09cd3ed84d745efcc930c04c72d14d8:observation:0",
+        "initial-design-v1-fc9a0679dd08866ad0a59616766f44adf09cd3ed84d745efcc930c04c72d14d8:observation:1",
+        "initial-design-v1-fc9a0679dd08866ad0a59616766f44adf09cd3ed84d745efcc930c04c72d14d8:observation:2",
+        "initial-design-v1-fc9a0679dd08866ad0a59616766f44adf09cd3ed84d745efcc930c04c72d14d8:observation:3",
+        "initial-design-v1-fc9a0679dd08866ad0a59616766f44adf09cd3ed84d745efcc930c04c72d14d8:observation:4",
+        "initial-design-v1-fc9a0679dd08866ad0a59616766f44adf09cd3ed84d745efcc930c04c72d14d8:observation:5",
+        "initial-design-v1-fc9a0679dd08866ad0a59616766f44adf09cd3ed84d745efcc930c04c72d14d8:observation:6",
+        "initial-design-v1-fc9a0679dd08866ad0a59616766f44adf09cd3ed84d745efcc930c04c72d14d8:observation:7",
+        "initial-design-v1-fc9a0679dd08866ad0a59616766f44adf09cd3ed84d745efcc930c04c72d14d8:observation:8",
+        "initial-design-v1-fc9a0679dd08866ad0a59616766f44adf09cd3ed84d745efcc930c04c72d14d8:observation:9",
+        "initial-design-v1-fc9a0679dd08866ad0a59616766f44adf09cd3ed84d745efcc930c04c72d14d8:observation:10",
+        "initial-design-v1-fc9a0679dd08866ad0a59616766f44adf09cd3ed84d745efcc930c04c72d14d8:observation:11",
+        "initial-design-v1-fc9a0679dd08866ad0a59616766f44adf09cd3ed84d745efcc930c04c72d14d8:observation:12",
+        "initial-design-v1-fc9a0679dd08866ad0a59616766f44adf09cd3ed84d745efcc930c04c72d14d8:observation:13",
+        "initial-design-v1-fc9a0679dd08866ad0a59616766f44adf09cd3ed84d745efcc930c04c72d14d8:observation:14",
+        "initial-design-v1-fc9a0679dd08866ad0a59616766f44adf09cd3ed84d745efcc930c04c72d14d8:observation:15"
+      ],
+      "output_device": "cpu",
+      "parameter_names": [
+        "weight_mean",
+        "pairwise_coupling_mean",
+        "bias_scale_mean",
+        "pairwise_coupling_CV"
+      ],
+      "point_count": 16,
+      "policy_id": "scrambled_sobol",
+      "seed_coordinate": {
+        "coordinates": [
+          "initial",
+          0
+        ],
+        "namespace": "initial_design"
+      },
+      "seed_value": 7803873353031018665,
+      "upper": [
+        2.0,
+        2.0,
+        2.0,
+        1.0
+      ]
+    },
+    "initial_observations": 16,
+    "initial_theta": [
+      [
+        1.3970202207565308,
+        1.4958535432815552,
+        1.1220779418945312,
+        0.800986111164093
+      ],
+      [
+        0.9058283567428589,
+        0.8357161283493042,
+        1.361382246017456,
+        0.2390696108341217
+      ],
+      [
+        0.6626150012016296,
+        1.7372596263885498,
+        0.8414610624313354,
+        0.7075127363204956
+      ],
+      [
+        1.6694319248199463,
+        0.8960251212120056,
+        1.6451406478881836,
+        0.27003923058509827
+      ],
+      [
+        1.9882817268371582,
+        1.9561618566513062,
+        1.5927256345748901,
+        0.42749765515327454
+      ],
+      [
+        0.7011761665344238,
+        1.1107145547866821,
+        0.8945170044898987,
+        0.614482581615448
+      ],
+      [
+        1.2314990758895874,
+        1.2637701034545898,
+        1.8714656829833984,
+        0.08353593200445175
+      ],
+      [
+        1.4404796361923218,
+        0.6107723712921143,
+        0.6126353144645691,
+        0.8959405422210693
+      ],
+      [
+        1.5653324127197266,
+        1.667252779006958,
+        1.9734470844268799,
+        0.5171462297439575
+      ],
+      [
+        1.1182689666748047,
+        1.0128817558288574,
+        0.513887345790863,
+        0.454551100730896
+      ],
+      [
+        0.8224200010299683,
+        1.612805962562561,
+        1.5025548934936523,
+        0.9861040711402893
+      ],
+      [
+        1.8788583278656006,
+        0.765619158744812,
+        0.9816380739212036,
+        0.04808943718671799
+      ],
+      [
+        1.7350115776062012,
+        1.3805344104766846,
+        0.7527093887329102,
+        0.14109231531620026
+      ],
+      [
+        0.5854181051254272,
+        0.5408564209938049,
+        1.7306596040725708,
+        0.8286194801330566
+      ],
+      [
+        0.9691579341888428,
+        1.8863389492034912,
+        1.2224571704864502,
+        0.3595619797706604
+      ],
+      [
+        1.3218762874603271,
+        1.2273917198181152,
+        1.2640533447265625,
+        0.6726459860801697
+      ]
+    ],
+    "intent": {
+      "acquisition_settings": {
+        "alpha": 0.1,
+        "beta": 5.604501123581913,
+        "beta_policy": {
+          "chi_square_quantile": 31.410432844230918,
+          "coverage": 0.95,
+          "id": "joint_chi_square_response_dimension_v1",
+          "quantile_provenance": {
+            "algorithm": "torch_gammainc_bisection_float64_v1",
+            "computation_dtype": "float64",
+            "degrees_of_freedom": 20,
+            "distribution": "chi_square",
+            "iterations": 128,
+            "probability": 0.95
+          },
+          "resolved_beta": 5.604501123581913,
+          "response_dimension": 20
+        },
+        "confidence_radius_policy": "operator_norm_radius_v1",
+        "infeasible_fallback_policy": "posterior_uncertainty_v1",
+        "learning_rate": 0.05,
+        "max_iterations": 8,
+        "raw_policy": "scrambled_sobol",
+        "raw_samples": 64,
+        "restarts": 4,
+        "tau_interior": 1e-08
+      },
+      "dtype": "float32",
+      "duplicate_policy": "best_ranked_unevaluated_raw_v1",
+      "gp_settings": {
+        "covariance_validation_policy": "structural_symmetric_materialization_v1",
+        "jitter": 1e-06,
+        "likelihood": "task_diagonal_gaussian",
+        "max_iterations": 12,
+        "max_warm_start_states": 2,
+        "posterior_numerics_policy": "float32_fit_float64_covariance",
+        "psd_tolerance": 1e-06,
+        "recovery_policy": "graph_m20_sequential_recovery_v1",
+        "symmetry_tolerance": 2e-06,
+        "task_variance_floor": 5.991468697175151e-06,
+        "task_variance_floor_epsilon_multiplier": 8.0,
+        "task_variance_floor_policy": "standardized_absolute_v1",
+        "task_variance_floor_reference_scale": 6.282510280609131
+      },
+      "initial_design": {
+        "caller_point_count": 0,
+        "caller_points": null,
+        "point_count": 16,
+        "policy": "scrambled_sobol"
+      },
+      "physical_target": [
+        0.000586328620556742,
+        5.353218875825405e-05,
+        0.4849289357662201,
+        0.4996665120124817,
+        1.3166296482086182,
+        1.316029667854309,
+        2.0928120613098145,
+        2.090222120285034,
+        2.848893404006958,
+        2.8495001792907715,
+        0.9539758563041687,
+        0.9425140619277954,
+        0.8378853797912598,
+        0.8585443496704102,
+        0.6634014844894409,
+        0.6735151410102844,
+        0.5217294692993164,
+        0.5261184573173523,
+        0.4482886791229248,
+        0.4494245648384094
+      ],
+      "recommendation_policy": "final_posterior_standardized_l1",
+      "root_seed": 81257,
+      "schema": "mutaco-sequential-scientific-intent-v1",
+      "seed_coordinate_schema": {
+        "gp_fit": [
+          "training_version"
+        ],
+        "initial_design": [
+          "phase",
+          "repeat"
+        ],
+        "raw_candidates": [
+          "sequential_round"
+        ],
+        "simulator_evaluation": [
+          "purpose",
+          "logical_index",
+          "repeat"
+        ]
+      },
+      "seed_policy": "mutaco-coordinate-sha256-v1",
+      "sequential_rounds": 1,
+      "simulator": {
+        "definition_metadata": {
+          "batch_size": 80,
+          "burn_in_steps": 100,
+          "dt": 0.1,
+          "dtype": "float32",
+          "model_identity": "graph-oscillator.overdamped-scientific.v1",
+          "node_count": 10,
+          "parameter_profile": "p4-paper-baseline",
+          "repeat_size": 2,
+          "response_profile": "m20-five-force-scientific",
+          "sample_steps": 900,
+          "sample_stride": 1,
+          "temperature": 0.15,
+          "total_steps": 1000
+        },
+        "identity": "graph-oscillator.overdamped-scientific.v1.p4-paper-baseline.m20-five-force-scientific.float32"
+      },
+      "specifications": {
+        "parameters": [
+          {
+            "lower": 0.5,
+            "name": "weight_mean",
+            "role": "inferred",
+            "transformation": "identity",
+            "unit": "dimensionless",
+            "upper": 2.0
+          },
+          {
+            "lower": 0.5,
+            "name": "pairwise_coupling_mean",
+            "role": "inferred",
+            "transformation": "identity",
+            "unit": "dimensionless",
+            "upper": 2.0
+          },
+          {
+            "lower": 0.5,
+            "name": "bias_scale_mean",
+            "role": "inferred",
+            "transformation": "identity",
+            "unit": "dimensionless",
+            "upper": 2.0
+          },
+          {
+            "lower": 0.0,
+            "name": "pairwise_coupling_CV",
+            "role": "inferred",
+            "transformation": "identity",
+            "unit": "dimensionless",
+            "upper": 1.0
+          }
+        ],
+        "responses": [
+          {
+            "name": "omega(F=0.0, gauge=0)",
+            "unit": "dimensionless"
+          },
+          {
+            "name": "omega(F=0.0, gauge=pi)",
+            "unit": "dimensionless"
+          },
+          {
+            "name": "omega(F=1.25, gauge=0)",
+            "unit": "dimensionless"
+          },
+          {
+            "name": "omega(F=1.25, gauge=pi)",
+            "unit": "dimensionless"
+          },
+          {
+            "name": "omega(F=2.5, gauge=0)",
+            "unit": "dimensionless"
+          },
+          {
+            "name": "omega(F=2.5, gauge=pi)",
+            "unit": "dimensionless"
+          },
+          {
+            "name": "omega(F=3.75, gauge=0)",
+            "unit": "dimensionless"
+          },
+          {
+            "name": "omega(F=3.75, gauge=pi)",
+            "unit": "dimensionless"
+          },
+          {
+            "name": "omega(F=5.0, gauge=0)",
+            "unit": "dimensionless"
+          },
+          {
+            "name": "omega(F=5.0, gauge=pi)",
+            "unit": "dimensionless"
+          },
+          {
+            "name": "Z_magnitude(F=0.0, gauge=0)",
+            "unit": "dimensionless"
+          },
+          {
+            "name": "Z_magnitude(F=0.0, gauge=pi)",
+            "unit": "dimensionless"
+          },
+          {
+            "name": "Z_magnitude(F=1.25, gauge=0)",
+            "unit": "dimensionless"
+          },
+          {
+            "name": "Z_magnitude(F=1.25, gauge=pi)",
+            "unit": "dimensionless"
+          },
+          {
+            "name": "Z_magnitude(F=2.5, gauge=0)",
+            "unit": "dimensionless"
+          },
+          {
+            "name": "Z_magnitude(F=2.5, gauge=pi)",
+            "unit": "dimensionless"
+          },
+          {
+            "name": "Z_magnitude(F=3.75, gauge=0)",
+            "unit": "dimensionless"
+          },
+          {
+            "name": "Z_magnitude(F=3.75, gauge=pi)",
+            "unit": "dimensionless"
+          },
+          {
+            "name": "Z_magnitude(F=5.0, gauge=0)",
+            "unit": "dimensionless"
+          },
+          {
+            "name": "Z_magnitude(F=5.0, gauge=pi)",
+            "unit": "dimensionless"
+          }
+        ]
+      },
+      "transform_settings": {
+        "ddof": 1,
+        "scale_floor": 1e-12
+      }
+    },
+    "physical_parameters_reduced": false,
+    "planned_observations": 17,
+    "retries": 0,
+    "scientific_identity": "scientific-v1-946ddbcb5db1222e50eb649580ea335d59f1edf8a41848e7338d162ecd8a1afa",
+    "target_generation_calls": 0,
+    "terminal_context": {
+      "policy_id": "continuous_posterior_mean_physical_l1_mae",
+      "root_seed": 81257,
+      "seed_family_id": "scientific-v1-b9d0eaf8ee7bd1250f3cdacc84358c060430fd80c91d0d79935d42d6327f632c",
+      "seed_policy": "mutaco-coordinate-sha256-v1",
+      "target_id": "frozen-target-record-v2-4e2b6d17df5371f082ad76b281aa08e97fa6ccf50e60c47ef54730267b35e714",
+      "target_index": 16
+    },
+    "terminal_gp_fits": 0,
+    "terminal_simulator_calls": 0
+  },
+  "outputs": {
+    "expected": [
+      "pre-execution-plan.json",
+      "reference-comparisons.json",
+      "integration.json",
+      "training-and-checkpoints.pt",
+      "calls.jsonl",
+      "environment.json",
+      "verdict.json",
+      "SHA256SUMS"
+    ],
+    "portable": "benchmarks/reproducibility/physical_integration_qualification_v1 (only after verification)",
+    "raw": "fresh private task directory and fresh scheduled compute-node output only; exact paths recorded privately"
+  },
+  "physical_config": {
+    "batch_size": 80,
+    "burn_in_steps": 100,
+    "dt": 0.1,
+    "dtype": "float32",
+    "model_identity": "graph-oscillator.overdamped-scientific.v1",
+    "node_count": 10,
+    "parameter_profile": "p4-paper-baseline",
+    "repeat_size": 2,
+    "response_profile": "m20-five-force-scientific",
+    "sample_steps": 900,
+    "sample_stride": 1,
+    "temperature": 0.15,
+    "total_steps": 1000
+  },
+  "qualified_core_commit": "35ef82dba2160dfb3f709854b0e11c3956744c31",
+  "reference_rules": {
+    "analytic": "tests/analytic/test_handwritten.py: rtol=0, atol=1e-15, float64 independent literal/math equations",
+    "frozen_graph": "same predeclared graph final-response rule; require identical seed manifest, not exact historical-platform bytes",
+    "graph": "mutaco_graph.parity existing FIXED_INTERMEDIATE rtol=2e-5 atol=2e-6; FINAL_RESPONSE rtol=5e-5 atol=5e-6 and relative_L2<=5e-5",
+    "retained": "existing frozen retained small fixture rule, incompatible identity kept separate"
+  },
+  "retained_fixture": {
+    "label": "retained numerical oracle, not current-model physics",
+    "path": "scientific/graph_oscillator/reference_fixtures/retained_cpu_small_v1.json",
+    "sha256": "7779b6d7283e1ff4431380125e2108e87a401e94060e62f29b18dd73c5cc67a7",
+    "torch_kernel_runs": 1
+  },
+  "safety": {
+    "CPUs": 20,
+    "GPUs": 0,
+    "automatic_retries": false,
+    "estimated_runtime": "several minutes; hard Slurm limit20minutes, stop on first failed reference or integration gate",
+    "full_statistical_parity_cohort": false,
+    "maximum_invalid_requests_rejected_before_backend": 6,
+    "maximum_minutes": 20,
+    "maximum_numerical_forward_runs_including_independent_numpy": 62,
+    "maximum_simulator_API_evaluations": 29,
+    "memory_GiB": 20,
+    "per_forward_main_noise_tensor_bytes": 64000000,
+    "raw_disk_budget_MiB": 512
+  },
+  "schema_version": "mutaco-bounded-physical-qualification-plan-v1",
+  "source_commit": "1af825f93ab06a36a679ca08f83fb8a524e3b10b",
+  "target_path": "data/cohorts/paper120_v3/target_016.json",
+  "target_record_id": "frozen-target-record-v2-4e2b6d17df5371f082ad76b281aa08e97fa6ccf50e60c47ef54730267b35e714",
+  "target_sha256": "6571d93be38d163de5fbd3fbe4d7b9944a55891c321e1ac50f37124fc679ef6d"
+}

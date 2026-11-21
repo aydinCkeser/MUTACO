@@ -1,0 +1,256 @@
+{
+  "GP_priors_MAP_objective_12_iteration_reference_profile_and_policies_changed": false,
+  "GitHub_pushes": 0,
+  "branch": "ege/repro-refactor",
+  "byte_identical_to_raw": false,
+  "candidate_substitution": false,
+  "cases": {
+    "B100": {
+      "ambient_rng_preserved": true,
+      "budget": 100,
+      "checkpoints": {
+        "artifacts_self_consistent": true,
+        "baseline_scientific_hash": "06338d126708d62fdb3967db3d1603eb1529270ec4c6704322b621cd6b4fa150",
+        "comparison_scientific_hash": "06338d126708d62fdb3967db3d1603eb1529270ec4c6704322b621cd6b4fa150",
+        "environment_comparison_schema": "runtime-library-set-v2",
+        "physical_backend_attempts": [
+          0,
+          0
+        ],
+        "runtime_enumeration_order_only_difference": false,
+        "same_environment": true,
+        "scientific_exact_equal": true,
+        "tolerances": "none; exact operation-preserving reference"
+      },
+      "fit_events": {
+        "candidate_origin": "observed candidate events during strict replay",
+        "event_boundaries_preserved": true,
+        "events_exact_equal": true,
+        "excluded": "existing predeclared elapsed_seconds fields only; actual historical times unavailable",
+        "expected_event_count": 170,
+        "expected_origin": "reconstructed from saved original fit records and baseline emitter; not archived historical event logs",
+        "expected_sha256": "dec05ec3d128fcafe0e60ff5299119fa9baccb910d19759210fdadb8db2fc6c1",
+        "first_difference": null,
+        "observed_event_count": 170,
+        "observed_sha256": "dec05ec3d128fcafe0e60ff5299119fa9baccb910d19759210fdadb8db2fc6c1"
+      },
+      "historical_campaign_source": "649235bcb7e8773f5f4b0425ad111314d7d3b1f9",
+      "history": {
+        "baseline_gate_passed": true,
+        "baseline_sha256": "c97b62ec714905ff97037561aad8ac3aef638abf9e189a926d6306844d3854c2",
+        "candidate_gate_passed": true,
+        "candidate_sha256": "c97b62ec714905ff97037561aad8ac3aef638abf9e189a926d6306844d3854c2",
+        "excluded": "unchanged predeclared timers and execution provenance only",
+        "first_difference": null,
+        "scientific_exact_equal": true,
+        "tolerances": "none"
+      },
+      "logical_accounting": {
+        "committed_fit_events": 85,
+        "committed_observations": 100,
+        "committed_proposal_events": 84,
+        "committed_recommendation_events": 1,
+        "initial_observations": 16,
+        "planned_observations": 100,
+        "sequential_observations": 84,
+        "training_data_versions": 85
+      },
+      "observations_consumed": 100,
+      "physical_simulator_calls": 0,
+      "record_pointer": "/records/0",
+      "target": 0
+    },
+    "B40": {
+      "ambient_rng_preserved": true,
+      "budget": 40,
+      "checkpoints": {
+        "artifacts_self_consistent": true,
+        "baseline_scientific_hash": "12251e746d4c39f2f028651f766c96a6723dc39cb63d5cd484ad661b9cf3001c",
+        "comparison_scientific_hash": "12251e746d4c39f2f028651f766c96a6723dc39cb63d5cd484ad661b9cf3001c",
+        "environment_comparison_schema": "runtime-library-set-v2",
+        "physical_backend_attempts": [
+          0,
+          0
+        ],
+        "runtime_enumeration_order_only_difference": true,
+        "same_environment": true,
+        "scientific_exact_equal": true,
+        "tolerances": "none; exact operation-preserving reference"
+      },
+      "fit_events": {
+        "candidate_origin": "observed candidate events during strict replay",
+        "event_boundaries_preserved": true,
+        "events_exact_equal": true,
+        "excluded": "existing predeclared elapsed_seconds fields only; actual historical times unavailable",
+        "expected_event_count": 50,
+        "expected_origin": "reconstructed from saved original fit records and baseline emitter; not archived historical event logs",
+        "expected_sha256": "67bd5af0372b120cdd00ca7d8616e4c1f21378096538708a664dc7be0bc8760d",
+        "first_difference": null,
+        "observed_event_count": 50,
+        "observed_sha256": "67bd5af0372b120cdd00ca7d8616e4c1f21378096538708a664dc7be0bc8760d"
+      },
+      "historical_campaign_source": "bd83de6ec01f0f7e2241ee498960a4d493d601e6",
+      "history": {
+        "baseline_gate_passed": true,
+        "baseline_sha256": "687433605adebeb928b081c616e7d603267d71faebb3cfa061a6c730865ec782",
+        "candidate_gate_passed": true,
+        "candidate_sha256": "687433605adebeb928b081c616e7d603267d71faebb3cfa061a6c730865ec782",
+        "excluded": "unchanged predeclared timers and execution provenance only",
+        "first_difference": null,
+        "scientific_exact_equal": true,
+        "tolerances": "none"
+      },
+      "logical_accounting": {
+        "committed_fit_events": 25,
+        "committed_observations": 40,
+        "committed_proposal_events": 24,
+        "committed_recommendation_events": 1,
+        "initial_observations": 16,
+        "planned_observations": 40,
+        "sequential_observations": 24,
+        "training_data_versions": 25
+      },
+      "observations_consumed": 40,
+      "physical_simulator_calls": 0,
+      "record_pointer": "/records/48",
+      "target": 16
+    }
+  },
+  "derived": true,
+  "environment_summary": {
+    "SBI_installed": false,
+    "architecture": "x86_64",
+    "archived_cases_dtype": "float32",
+    "device": "cpu",
+    "full_raw_environment_fingerprints_exact": true,
+    "packages": {
+      "botorch": "0.18.1",
+      "gpytorch": "1.15.2",
+      "numpy": "2.4.6",
+      "psutil": "7.2.2",
+      "pytest": "9.1.1",
+      "scipy": "1.17.1",
+      "torch": "2.12.1+cpu"
+    },
+    "platform": "Linux",
+    "private_library_paths_retained_only_in_raw_captures": true,
+    "python": "3.11.17",
+    "torch_interop_threads": 1,
+    "torch_intraop_threads": 20
+  },
+  "historical_GP_snapshots_available": false,
+  "integrity": {
+    "accepted_core_hashes_verified": 47,
+    "archive_members_verified": 8,
+    "archives": [
+      {
+        "archive_sha256": "2f86646f7c21914552d10e9e1fcb209d29880cee194a3e79f8f8fae211b6659c",
+        "budget": 40,
+        "members_verified": 4
+      },
+      {
+        "archive_sha256": "e30befedd72b85bd0eda8fe1d7e33ed6ef10acd0c880b1bd6aca60865e4a49c7",
+        "budget": 100,
+        "members_verified": 4
+      }
+    ],
+    "core_hash_authority": "benchmarks/reproducibility/gp_optimizer_diagnostics_v1/manifest.json",
+    "core_hash_authority_sha256": "ff350a032e80c9c87f1d2eccfa126b0b796c1a1381acfa5c3d037086a408e109",
+    "existing_portable_checksum_sets_verified": 12,
+    "existing_portable_evidence_files_verified": 58,
+    "tracked_figure_array_files_unchanged": 21,
+    "validated_source_tracked_files_unchanged_before_evidence_record": 2532
+  },
+  "original_baseline_reexecuted": false,
+  "original_scientific_baseline": "aa7f4feb58302ecf6abfa6dee2d81071eabb7fe3",
+  "physical_backend_attempts": 0,
+  "physical_simulator_calls": 0,
+  "private_evidence_storage": "append-only private backup outside Git; relative raw-file hashes indexed separately; private reference inputs reused through existing checksum bindings",
+  "production_source_tests_or_paper_artifacts_changed_for_validation": false,
+  "protocol": "existing strict archive oracle, exact raw checkpoint comparator, canonical history and fit-event comparisons; no new acceptance rules",
+  "raw_reference_files_regenerated_or_overwritten": false,
+  "reconstructed_GP_state_origin": "saved independent original-aa7f4fe reconstruction in the qualified environment; current captures compared exactly; not original historical campaign GP iterates",
+  "resources": {
+    "CPU_constraint": "barbun",
+    "CPUs": 20,
+    "GPUs": 0,
+    "Slurm_exit_code": "0:0",
+    "Slurm_state": "COMPLETED",
+    "automatic_resubmission": false,
+    "elapsed": "00:06:34",
+    "elapsed_seconds": 394,
+    "job_id": 6875156,
+    "jobs_submitted": 1,
+    "maximum_minutes": 20,
+    "nodes": 1,
+    "partition": "debug",
+    "reported_batch_peak_RSS_GiB": 10.6961669921875,
+    "reported_batch_peak_RSS_KiB": 11215744,
+    "requested_memory_GiB": 20
+  },
+  "schema": "mutaco-final-qualified-regression-evidence-v1",
+  "scientific_job_verdict": {
+    "execution_exit": 0,
+    "last_stage": "completed",
+    "original_baseline_reexecuted": false,
+    "physical_simulator_calls_authorized": 0,
+    "scientific_exit": 0,
+    "scientific_gate_passed": true
+  },
+  "scope_exclusions": [
+    "SBI-specific scientific behavior",
+    "physical simulator kernel or CPU/GPU parity",
+    "cross-platform historical equality",
+    "fresh Windows/Linux or separate-machine installation",
+    "historical TeX rendering",
+    "external software submission approval"
+  ],
+  "test_selection": {
+    "display_redacted_case_count": 4,
+    "exact_identity_representation": "SHA-256 of every unchanged raw node ID; full IDs preserved privately",
+    "identical_to_accepted_reference": true,
+    "identities": 531,
+    "path": "test-selection.json",
+    "sha256": "51bbcbd564989b85a5eaf34a16a883dd8a7e3f1ef393cf91709f4c65db973613"
+  },
+  "tests": {
+    "GP_fits_authorized_in_existing_suite": true,
+    "added_passed_cases": 0,
+    "changed_accepted_cases": [],
+    "counts": {
+      "error": 0,
+      "failure": 0,
+      "passed": 523,
+      "skipped": 8
+    },
+    "declared_NEI_correction": false,
+    "deselected": 0,
+    "known_NEI_failure_present": false,
+    "physical_backend_attempts": 0,
+    "pytest_exit": 0,
+    "required_singular_cases": [
+      [
+        "tests.acquisition.test_nei",
+        "test_baseline_factorization_rejects_exactly_singular_covariance[dtype0]"
+      ],
+      [
+        "tests.acquisition.test_nei",
+        "test_baseline_factorization_rejects_exactly_singular_covariance[dtype1]"
+      ]
+    ],
+    "test_expectation_revision": "corrected-nei-fixture-v2",
+    "test_gate_passed": true
+  },
+  "tolerances": "none",
+  "unchanged_driver_sha256": {
+    "full-tests.py": "914b414219edda3c318582c3c615b25a2411dbc6173e3bb35d79b68389b9bb8b",
+    "validation-job.sh": "c4448a0b184a03b617e271bea037d8c52bbaa80247a0fc8e11d1fc916a5829d4"
+  },
+  "unchanged_input_profile": {
+    "path": "infrastructure/truba/gp_optimizer_diagnostics_reference_inputs_v2.json",
+    "sha256": "d06a525f5621e8290f37decd87a1f0d589201536dd1a51d0dd3396badcf37061"
+  },
+  "validated_source_commit": "4f563439a6d4445a11d97cd6d81ba784267f729d",
+  "validated_source_tree": "d5292d06d56f643efa70a240eee2ed5165a507f8",
+  "validation_contract": "scientific/refactor_validation/README.md"
+}

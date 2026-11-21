@@ -1,0 +1,108 @@
+{
+  "schema_version": "mutaco-primary-prequalification-smoke-failed-attempt-evidence-v1",
+  "status": "failed_after_complete_search_before_first_assessment",
+  "role": "prequalification_engineering_integration_attempt_not_q1_or_primary_performance_evidence",
+  "campaign_id": "graph_primary_prequalification_b40_integration_smoke_v1",
+  "scientific_source_commit": "a398ed58eef4449ee8aebb98a21243c1863cb3fb",
+  "repair_source_commit": "41d0bbd563bed0271373f9a18780010d96991e87",
+  "declaration_identity": "primary-population-declaration-v1-27e5747d2e155163b7b7f5957eeec0c03a3ca40bfde459c2746c39c7b9835d2c",
+  "plan_identity": "primary-prequalification-smoke-plan-v1-79c0f4fcbb4750e85300fe28a98e9a2474f73dc67a4d7da8e7fb471faa713fca",
+  "target_record_identity": "frozen-target-record-v2-55ef79e8c497a3d9e186553901b04d909b2de06d145b70f177968372063f8693",
+  "budget": 40,
+  "truba": {
+    "job_id": 6247524,
+    "state": "FAILED",
+    "elapsed": "00:20:34",
+    "exit_code": "1:0",
+    "node": "barbun22",
+    "automatic_retry": false
+  },
+  "call_accounting": {
+    "maximum_calls": 123,
+    "ledger_attempted_callbacks": 121,
+    "ledger_successful_callbacks": 120,
+    "ledger_failed_callbacks": 1,
+    "confirmed_simulator_executions": 120,
+    "successful_search_calls": 120,
+    "heldout_simulator_calls": 0,
+    "failed_callback_entered_simulator": false
+  },
+  "decision_freeze": {
+    "freeze_identity": "primary-all-method-decision-freeze-v1-bab64af25214969d97fb20803f4975e2c094faa10ab0c1ed9541e4803f9eca03",
+    "sha256": "62b8a2797b326995852de2cd388ce14ca5edf38f6d5a810e8a4f8e357e1de9b5",
+    "assessment_started": false,
+    "methods": [
+      {
+        "method": "mutaco",
+        "status": "recommended",
+        "search_calls": 40,
+        "recommended_theta": [1.2309844493865967, 0.8728883862495422, 2.0, 0.6750051975250244]
+      },
+      {
+        "method": "nei_bo",
+        "status": "recommended",
+        "search_calls": 40,
+        "recommended_theta": [1.1838120222091675, 0.7506611347198486, 2.0, 0.7801502346992493],
+        "baseline_factorization_policy": "promoted_float64_cholesky_zero_jitter_v1",
+        "factorization_successes": 24,
+        "factorization_failures": 0
+      },
+      {
+        "method": "sobol",
+        "status": "recommended",
+        "search_calls": 40,
+        "recommended_theta": [0.8270516395568848, 0.5468377470970154, 1.926875352859497, 0.20393967628479004]
+      }
+    ]
+  },
+  "failure": {
+    "stage": "first_paired_heldout_assessment_context_restoration",
+    "failure_type": "KeyError",
+    "failure_explanation": "'purpose'",
+    "root_cause": "primary_assessment_context_omitted_purpose_and_logical_index_required_by_the_graph_SimulationContext_bridge",
+    "nei_covariance_failure": false,
+    "search_method_failure": false,
+    "evidence_persistence_failure": false
+  },
+  "repair": {
+    "policy": "complete_method_neutral_assessment_SimulationContext_address_v1",
+    "purpose": "paired_held_out_assessment",
+    "logical_index": "replicate",
+    "repeat_index": 0,
+    "heldout_seed_coordinate_changed": false,
+    "benchmark_methods_changed": false,
+    "benchmark_objective_changed": false,
+    "tests": {
+      "focused_passed": 13,
+      "full_suite_passed": 430,
+      "full_suite_skipped": 8,
+      "simulator_calls": 0,
+      "truba_jobs_submitted": 0
+    }
+  },
+  "assessment_rescue": {
+    "status": "feasible_requires_separate_declaration_exact_source_validation_and_three_call_authorization",
+    "search_rerun_required": false,
+    "frozen_recommendations": 3,
+    "maximum_future_calls": 3,
+    "paired_context_reconstructible": true,
+    "decision_freeze_must_remain_immutable": true,
+    "attempt_6247524_remains_failed": true,
+    "currently_authorized": false
+  },
+  "integrity": {
+    "json_hash_pairs_verified": 3,
+    "json_parse_failures": 0,
+    "missing_sidecars": 0,
+    "hash_mismatches": 0,
+    "worker_start_sha256": "989a552a453ebd5f89a85f3b8a8bd024d87c798b803351ba2130b30e3876e09e",
+    "worker_terminal_sha256": "dad95026f60e2d1cdacd2c73bcddc51647f0c01f382e412653ab32e6945eafac",
+    "scheduler_stdout_sha256": "762afa091ecaa5f2464f48971c08adf9cae8c974090a1af38e005fcdebef197c",
+    "scheduler_stderr_sha256": "d5011103b3d2a8af87664d0fa23d90bb181c3b73ed1b3dd695d9d398d1e7ef33",
+    "full_remote_worker_and_log_tree_copied_locally": true
+  },
+  "remote_output_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/primary_three_method_smoke/prequalification-b40-v1/workers",
+  "remote_log_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/primary_three_method_smoke/prequalification-b40-v1/logs",
+  "local_raw_evidence": "experiments/paper/exploration/outputs/primary_three_method_smoke/attempt_6247524",
+  "scientific_calls_added_by_archival_repair_and_validation": 0
+}

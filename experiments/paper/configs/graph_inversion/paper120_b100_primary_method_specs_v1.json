@@ -1,0 +1,37 @@
+{
+  "schema_version": "mutaco-paper-method-spec-set-v1",
+  "state": "unexecuted",
+  "execution_requires_approval": true,
+  "methods": [
+    {
+      "method": "mutaco",
+      "method_family": "mutaco",
+      "comparison_group": "mutaco_npe_snpe_primary",
+      "adapter": "mutaco",
+      "configuration_path": "experiments/graph_inversion/configs/paper/paper120_b100_mutaco_v1.json",
+      "configuration_sha256": "f1d0c70fdba6e0f14109c2d6b76c8c2d40476138c769ccbd240017447867b145",
+      "inference_budget": 100,
+      "decision_policy_identifier": "continuous_posterior_mean_physical_l1_mae"
+    },
+    {
+      "method": "sbi_npe",
+      "method_family": "direct_posterior",
+      "comparison_group": "mutaco_npe_snpe_primary",
+      "adapter": "direct_posterior",
+      "configuration_path": "experiments/graph_inversion/configs/paper/paper120_b100_npe_v1.json",
+      "configuration_sha256": "1e611cdd6df83dc45c28c333f054085af027f0e2f66a200e28fcd272432cc76f",
+      "inference_budget": 100,
+      "decision_policy_identifier": "posterior_sample_map_physical_v1"
+    },
+    {
+      "method": "sbi_snpe",
+      "method_family": "direct_posterior",
+      "comparison_group": "mutaco_npe_snpe_primary",
+      "adapter": "direct_posterior",
+      "configuration_path": "experiments/graph_inversion/configs/paper/paper120_b100_snpe_v1.json",
+      "configuration_sha256": "68451af48a6123fa259fed203d020f4642dc73b5821661f6a3b2993e0ba98ad0",
+      "inference_budget": 100,
+      "decision_policy_identifier": "posterior_sample_map_physical_v1"
+    }
+  ]
+}

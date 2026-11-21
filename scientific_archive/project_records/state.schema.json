@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mutaco-project-state-v1",
+  "type": "object",
+  "required": ["schema_version", "updated", "branch_role", "execution_authorized", "archive", "flagship", "next_gate"],
+  "properties": {
+    "schema_version": {"const": "mutaco-project-state-v1"},
+    "updated": {"type": "string", "format": "date"},
+    "branch_role": {"type": "string"},
+    "execution_authorized": {"type": "boolean"},
+    "license_status": {"enum": ["unresolved", "resolved"]},
+    "archive": {"type": "object"},
+    "flagship": {"type": "object"},
+    "next_gate": {"type": "object"}
+  },
+  "additionalProperties": true
+}

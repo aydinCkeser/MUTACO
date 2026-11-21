@@ -1,0 +1,77 @@
+{
+  "schema_version": "mutaco-identity-compatibility-replay-evidence-v1",
+  "campaign_id": "graph_paper120_b40_identity_compatibility_replay_v1",
+  "status": "complete",
+  "scientific_source_commit": "83866624af17104b126a5d4da76aa6f319a46aab",
+  "declaration_identity": "paper-population-declaration-v3-93c2a590ce57911767c119a1335a204171b5e4e9eec9ad8b603c58eaae2abc49",
+  "declaration_sha256": "f84addfec578bcc6ffd77b00e0f7386ae41037161b8d1254185a01a286ae03ac",
+  "target_position": 0,
+  "target_record_identity": "frozen-target-record-v2-e3a859e807a718a6749aae18930a5d1c4982970f272ad09cf46fd700ccda0ef6",
+  "truba": {
+    "job_id": 6214636,
+    "state": "COMPLETED",
+    "elapsed": "00:05:30",
+    "exit_code": "0:0",
+    "node": "barbun18",
+    "sbi_version": "0.26.1",
+    "torch_version": "2.12.1+cpu"
+  },
+  "validation": {
+    "zero_call_identity_regressions": "passed",
+    "population_validate_only": "passed",
+    "scientific_calls": 0
+  },
+  "call_accounting": {
+    "maximum_calls": 123,
+    "attempted_calls": 123,
+    "successful_calls": 123,
+    "failed_calls": 0,
+    "retry_calls": 0
+  },
+  "compatibility": {
+    "mutaco": {
+      "method_identity": "scientific-v1-abb64f3ff6df4cf85e4e8cb61bdd08f4ba40493c7ab40afdbff1ac16f2d8ca2c",
+      "scientific_intent_identity": "scientific-v1-7aa424c20d232ae7ae1f3822abe704138cb785b4734d01d198da9b9a1010aea4",
+      "root_seed": 6183545776657103761,
+      "method_identity_matches_stored": true,
+      "scientific_intent_matches_stored": true,
+      "initial_design_matches_stored": true,
+      "pinned_beta_document_matches_stored": true,
+      "recommendation_matches_stored": true,
+      "assessment_metrics_match_stored": true
+    },
+    "sbi_npe": {
+      "method_identity": "scientific-v1-55697c18de2bf86ebb1f86dd34bd49b675b160182e35613102b557afe23a4aa8",
+      "simulation_seed": 5393899087350487035,
+      "recommendation_seed": 1965748830523254238,
+      "method_identity_matches_stored": true,
+      "complete_seed_ledger_matches_stored": true,
+      "recommendation_matches_stored": true,
+      "assessment_metrics_match_stored": true
+    },
+    "sbi_snpe": {
+      "method_identity": "scientific-v1-4ee51d64aba2a35ae4a78fdb92d2c725facb2325f0cda99e080e69fee0b7ae10",
+      "recommendation_seed": 8523649479027807959,
+      "replay_recommended_theta": [0.8713234066963196, 0.6487019062042236, 0.9293134808540344, 0.6385250091552734],
+      "qualification_recommended_theta": [0.8665874004364014, 0.6509288549423218, 0.9279302358627319, 0.6325656175613403],
+      "replay_response_error_mae": 0.1933884563841275,
+      "qualification_response_error_mae": 0.19421886432464816,
+      "assessment_context_matches_qualification": true,
+      "assessment_randomness_matches_qualification": true
+    }
+  },
+  "paired_assessment": {
+    "root_evaluation_seed": 5119230880871475713,
+    "contexts_shared_across_methods": true,
+    "quenched_disorder_manifest_shared": true,
+    "initial_state_manifest_shared": true,
+    "thermal_noise_manifest_shared": true,
+    "full_seed_manifest_hash": "paper-assessment-seed-manifest-v1-2d2aa51c0505a28cafc2c427f28a6ee311988e461e3064b8a96c1949e0053e93"
+  },
+  "remote_artifact_sha256": {
+    "worker_terminal": "da8b0066d94b576c8db085566c0814098616dbd4c7ebe4916714412937e5b257",
+    "population_execution_attempt": "f60d8ad8a0f2e05a7f8feaeb2a6896ecccf80a49b31de3877826105407dc0c63",
+    "population_collection": "38b11493c75eb95ef8f3e20b0abddf709d433a6540fe33b7ae873ad81bcde053",
+    "population_summary": "a6c931dcc70b119d3a153eea11fdfd006b9d9826953b7c2cf4af19a792a0c790"
+  }
+}

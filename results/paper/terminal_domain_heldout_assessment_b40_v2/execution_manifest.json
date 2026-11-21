@@ -1,0 +1,21 @@
+{
+  "automatic_retry": false,
+  "declaration_identity": "terminal-domain-heldout-declaration-v2-8becf876b147ebd3799dd40e68e18c5c71e14d411bcd00ae12e42bfa3779efa0",
+  "execution_location": "local_ubuntu",
+  "gp_fit_attempts": 0,
+  "mutaco_search_calls": 0,
+  "physical_calls": {
+    "attempted": 240,
+    "attempted_outcome_unknown": 0,
+    "failed": 0,
+    "maximum": 240,
+    "retry": 0,
+    "successful": 240
+  },
+  "policy_A_calls": 0,
+  "schema_version": "mutaco-terminal-domain-heldout-execution-manifest-v2",
+  "simulator_instances_constructed": 240,
+  "slurm_jobs": 0,
+  "terminal_optimizations": 0,
+  "truba_jobs": 0
+}

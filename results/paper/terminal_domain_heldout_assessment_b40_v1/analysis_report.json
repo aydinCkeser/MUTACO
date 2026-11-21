@@ -1,0 +1,1258 @@
+{
+  "B_prime_heldout_physical_mae": null,
+  "C_prime_heldout_physical_mae": null,
+  "analysis_identity": "terminal-domain-heldout-analysis-v1-46e8da8a41b760faed54130468f8904c6955d08ef9a73e65c63191c484668527",
+  "bootstrap": {
+    "contrast": "C_prime_minus_B_prime",
+    "lower_percentile": 2.5,
+    "resamples": 10000,
+    "seed": 92024100,
+    "statistic": "arithmetic_mean",
+    "stratified": false,
+    "studentized": false,
+    "unit": "paired_target_delta",
+    "upper_percentile": 97.5
+  },
+  "complete_pairs": 0,
+  "confirmatory_complete": false,
+  "counts": {
+    "B_prime_better": 0,
+    "C_prime_better": 0,
+    "tie_exact_float": 0
+  },
+  "declaration_identity": "terminal-domain-heldout-declaration-v1-15a2180b4ce9073a54c015edb5c5cb1f482703ab2d4b5a2f94b1e8f6d9207576",
+  "declared_targets": 120,
+  "execution_accounting": {
+    "automatic_retry": false,
+    "continuation_prohibited_under_current_declaration": true,
+    "declaration_identity": "terminal-domain-heldout-declaration-v1-15a2180b4ce9073a54c015edb5c5cb1f482703ab2d4b5a2f94b1e8f6d9207576",
+    "execution_location": "local_ubuntu",
+    "gp_fit_attempts": 0,
+    "mutaco_search_calls": 0,
+    "physical_calls": {
+      "attempted": 1,
+      "attempted_outcome_unknown": 1,
+      "failed": 0,
+      "maximum": 240,
+      "retry": 0,
+      "successful": 0
+    },
+    "policy_A_calls": 0,
+    "remaining_unattempted_calls": 239,
+    "schema_version": "mutaco-terminal-domain-heldout-execution-manifest-v1",
+    "simulator_instances_constructed": 1,
+    "slurm_jobs": 0,
+    "status": "incomplete_stopped_after_first_outcome_persistence_failure",
+    "terminal_optimizations": 0,
+    "truba_jobs": 0
+  },
+  "incomplete": [
+    {
+      "policy": "B_prime",
+      "status": "attempted_outcome_unknown",
+      "target_position": 0
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 0
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 1
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 1
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 2
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 2
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 3
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 3
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 4
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 4
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 5
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 5
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 6
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 6
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 7
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 7
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 8
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 8
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 9
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 9
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 10
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 10
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 11
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 11
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 12
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 12
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 13
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 13
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 14
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 14
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 15
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 15
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 16
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 16
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 17
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 17
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 18
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 18
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 19
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 19
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 20
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 20
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 21
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 21
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 22
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 22
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 23
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 23
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 24
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 24
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 25
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 25
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 26
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 26
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 27
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 27
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 28
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 28
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 29
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 29
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 30
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 30
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 31
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 31
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 32
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 32
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 33
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 33
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 34
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 34
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 35
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 35
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 36
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 36
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 37
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 37
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 38
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 38
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 39
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 39
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 40
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 40
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 41
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 41
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 42
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 42
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 43
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 43
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 44
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 44
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 45
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 45
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 46
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 46
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 47
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 47
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 48
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 48
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 49
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 49
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 50
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 50
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 51
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 51
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 52
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 52
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 53
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 53
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 54
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 54
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 55
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 55
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 56
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 56
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 57
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 57
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 58
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 58
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 59
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 59
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 60
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 60
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 61
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 61
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 62
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 62
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 63
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 63
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 64
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 64
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 65
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 65
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 66
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 66
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 67
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 67
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 68
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 68
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 69
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 69
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 70
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 70
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 71
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 71
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 72
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 72
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 73
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 73
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 74
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 74
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 75
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 75
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 76
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 76
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 77
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 77
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 78
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 78
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 79
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 79
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 80
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 80
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 81
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 81
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 82
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 82
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 83
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 83
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 84
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 84
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 85
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 85
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 86
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 86
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 87
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 87
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 88
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 88
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 89
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 89
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 90
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 90
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 91
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 91
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 92
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 92
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 93
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 93
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 94
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 94
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 95
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 95
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 96
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 96
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 97
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 97
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 98
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 98
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 99
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 99
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 100
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 100
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 101
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 101
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 102
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 102
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 103
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 103
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 104
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 104
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 105
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 105
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 106
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 106
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 107
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 107
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 108
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 108
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 109
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 109
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 110
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 110
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 111
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 111
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 112
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 112
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 113
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 113
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 114
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 114
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 115
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 115
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 116
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 116
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 117
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 117
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 118
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 118
+    },
+    {
+      "policy": "B_prime",
+      "status": "missing",
+      "target_position": 119
+    },
+    {
+      "policy": "C_prime",
+      "status": "missing",
+      "target_position": 119
+    }
+  ],
+  "inferential_scope": "The paired target-level bootstrap quantifies variation across the Paper-120 target/context pairs; it does not separately estimate within-target Monte Carlo uncertainty.",
+  "paired_mean_bootstrap_95_percentile_interval": null,
+  "physical_C_prime_minus_B_prime": null,
+  "population_relative_physical_mae_change": null,
+  "schema_version": "mutaco-terminal-domain-heldout-analysis-v1",
+  "surrogate_vs_physical_association": null,
+  "verdict": "TERMINAL_DOMAIN_HELDOUT_ASSESSMENT_INCOMPLETE"
+}

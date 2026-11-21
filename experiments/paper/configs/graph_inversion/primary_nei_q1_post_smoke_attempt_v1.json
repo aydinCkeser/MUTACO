@@ -1,0 +1,51 @@
+{
+  "schema_version": "mutaco-nei-q1-run-declaration-v1",
+  "state": "declared_unexecuted",
+  "qualification_declaration": "experiments/graph_inversion/configs/paper/primary_nei_q1_post_smoke_v1.json",
+  "qualification_declaration_identity": "nei-numerical-qualification-declaration-v1-80bb997b9fa4cd0a2ec3aa014d39402217966d7ceb986d181d234fd3379771b2",
+  "qualification_declaration_sha256": "659bc1a4604893e31e082efad4d5f271758be0336f92fd0bdc2df0af71219acb",
+  "evidence_contract": "single_recursive_path_aware_complete_attempt_boundary",
+  "factorization_policy": "promoted_float64_cholesky_zero_jitter_v1",
+  "terminal_optimizer_policy": "distinct_post_update_state_comparison_best_finite_state_v1",
+  "assessment_context_policy": "complete_purpose_and_logical_index_bridge_v1_not_exercised_heldout_false",
+  "required_source_ancestors": {
+    "evidence_repair": "ae8dfdf04360e7869b6ca4d6c82a843e6cb6c59f",
+    "baseline_factorization": "3ee7832985e25eb649a6b727cfb4d11f922f75bd",
+    "terminal_optimizer": "9603305a7f7f7b6c6f93586aa5728c0dc2393237",
+    "assessment_context": "41d0bbd563bed0271373f9a18780010d96991e87"
+  },
+  "output_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/primary_nei_q1/qualification-post-smoke-v1/workers",
+  "historical_attempts": [
+    {
+      "job_id": 6244497,
+      "successful_calls": 80,
+      "status": "failed_historical_evidence",
+      "eligible_for_tier_selection": false
+    },
+    {
+      "job_id": 6244676,
+      "successful_calls": 436,
+      "status": "failed_historical_evidence",
+      "eligible_for_tier_selection": false
+    },
+    {
+      "job_id": 6246600,
+      "scientific_calls_lower_bound": 332,
+      "status": "cancelled_historical_evidence_after_numerical_failure",
+      "eligible_for_tier_selection": false
+    }
+  ],
+  "engineering_prequalification": {
+    "search_job_id": 6247524,
+    "assessment_rescue_job_id": 6247636,
+    "eligible_for_tier_selection": false,
+    "role": "one_target_engineering_integration_only"
+  },
+  "tier_selection_evidence_policy": "complete_matrix_from_this_qualification_declaration_only",
+  "scientific_calls_executed": 0,
+  "exact_source_prepared": false,
+  "preflight_validated": false,
+  "scientific_retry_authorized": false,
+  "job_submitted": false,
+  "run_declaration_identity": "mutaco-nei-q1-run-declaration-v1-c3215d2f5447fb1c0684ec2c2965aac8031af136c8b846bb1b34fbc4b421f54e"
+}

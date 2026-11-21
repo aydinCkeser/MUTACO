@@ -1,0 +1,52 @@
+{
+  "schema_version": "mutaco-paper-population-declaration-v3",
+  "state": "unexecuted",
+  "execution_requires_approval": true,
+  "campaign_id": "graph_paper120_b40_identity_compatibility_replay_v1",
+  "paper_comparison": {
+    "protocol_id": "paper_final_decision_and_paired_assessment_v1",
+    "record_schema": "mutaco-paper-target-method-record-v3",
+    "assessment_policy": "paired_held_out_assessment_v1",
+    "metric_schema": "physical_response_and_parameter_errors_v1",
+    "simulator_definition_identity": "graph-oscillator.overdamped-scientific.v1.p4-paper-baseline.m20-five-force-scientific.float32",
+    "simulator_configuration_identity": "graph-paper-v3-simulator-configuration-v1-ff70b08584d86189e7464b20602142d9faeca01f588c0d691de6cdf2c7568a08",
+    "assessment_fidelity": "canonical_sparse_m20_one_evaluation_v1",
+    "assessment_campaign_seed": 92020402,
+    "inference_campaign_seed": 92020401,
+    "configuration_identity": "paper-comparison-config-v1-a5da263af0ad0975602297f8f17e486f56ce6950aae3256fa40cbd5f17253d19"
+  },
+  "target_ledger_hash": "359fc0bb59fc9a8a52f5da684e7a7eb352466bdc0d0a54fb8efa94131ce423bb",
+  "target_record_identities": [
+    "frozen-target-record-v2-e3a859e807a718a6749aae18930a5d1c4982970f272ad09cf46fd700ccda0ef6"
+  ],
+  "methods": [
+    {
+      "method": "mutaco",
+      "configuration_identity": "graph-paper-v3-method-configuration-v1-f525195d6ca4bb5123fdb1580d574cf1775a132386244ba3df1f46cda0140cdd",
+      "decision_policy_identifier": "continuous_posterior_mean_physical_l1_mae",
+      "inference_budget": 40
+    },
+    {
+      "method": "sbi_npe",
+      "configuration_identity": "graph-paper-v3-method-configuration-v1-7c43ea73547e2b058672cc123a458756f8ab5ad6f7692293f296b7f3ec3d8aab",
+      "decision_policy_identifier": "posterior_sample_map_physical_v1",
+      "inference_budget": 40
+    },
+    {
+      "method": "sbi_snpe",
+      "configuration_identity": "graph-paper-v3-method-configuration-v1-79d9f2608cda36cfb0485b25b548b60302f56d0c27e65293b9f225c04a55ce84",
+      "decision_policy_identifier": "posterior_sample_map_physical_v1",
+      "inference_budget": 40
+    }
+  ],
+  "output_root": "runs/paper/graph_oscillator/graph_paper120_b40_identity_compatibility_replay_v1",
+  "call_preview": {
+    "target_construction_calls": 0,
+    "maximum_inference_calls": 120,
+    "maximum_assessment_calls": 3,
+    "maximum_total_calls": 123,
+    "recommendation_calls": 0,
+    "scientific_calls_executed": 0
+  },
+  "declaration_identity": "paper-population-declaration-v3-93c2a590ce57911767c119a1335a204171b5e4e9eec9ad8b603c58eaae2abc49"
+}

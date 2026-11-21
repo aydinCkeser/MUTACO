@@ -1,0 +1,50 @@
+{
+  "cases": {
+    "b100": {
+      "exit_code": 0,
+      "last_error_line": null,
+      "stdout": "{\"baseline_refactor_equivalence_established\": true, \"derived_integrity_verified\": true, \"private_original_bytes_verified\": false, \"reference_established\": true}\n"
+    },
+    "b40": {
+      "exit_code": 0,
+      "last_error_line": null,
+      "stdout": "{\"derived_integrity_verified\": true, \"new_numerical_calculations\": 0, \"raw_original_checks_verified\": false, \"replay_mathematics_sha256\": \"687433605adebeb928b081c616e7d603267d71faebb3cfa061a6c730865ec782\", \"scientific_payload_sha256\": \"12251e746d4c39f2f028651f766c96a6723dc39cb63d5cd484ad661b9cf3001c\"}\n"
+    },
+    "checkpoints": {
+      "exit_code": 0,
+      "last_error_line": null,
+      "stdout": "{\"artifacts_self_consistent\": true, \"environment_comparison_schema\": \"runtime-library-set-v2\", \"same_environment\": true, \"runtime_enumeration_order_only_difference\": false, \"scientific_exact_equal\": true, \"physical_backend_attempts\": [0, 0], \"tolerances\": \"none; exact operation-preserving reference\", \"baseline_scientific_hash\": \"9a0ec44948547b1e3c440495a6617b40c54342416670fe320f5c36ce48b1d503\", \"comparison_scientific_hash\": \"9a0ec44948547b1e3c440495a6617b40c54342416670fe320f5c36ce48b1d503\"}\n"
+    },
+    "fit-events": {
+      "exit_code": 0,
+      "last_error_line": null,
+      "stdout": "{\"candidate_origin\": \"fixed synthetic event fixture, not historical GP states\", \"event_boundaries_preserved\": true, \"events_exact_equal\": true, \"excluded\": \"existing predeclared elapsed_seconds fields only; actual historical times unavailable\", \"expected_event_count\": 2, \"expected_origin\": \"reconstructed from saved original fit records and baseline emitter; not archived historical event logs\", \"expected_sha256\": \"a425646a95d47178b6bde1849c64cfa9d294e11c397a53e0b280d55c43996e04\", \"first_difference\": null, \"observed_event_count\": 2, \"observed_sha256\": \"a425646a95d47178b6bde1849c64cfa9d294e11c397a53e0b280d55c43996e04\"}\n"
+    },
+    "history100": {
+      "exit_code": 0,
+      "last_error_line": null,
+      "stdout": "{\"baseline_gate_passed\": true, \"baseline_sha256\": \"c97b62ec714905ff97037561aad8ac3aef638abf9e189a926d6306844d3854c2\", \"candidate_gate_passed\": true, \"candidate_sha256\": \"c97b62ec714905ff97037561aad8ac3aef638abf9e189a926d6306844d3854c2\", \"excluded\": \"unchanged predeclared timers and execution provenance only\", \"first_difference\": null, \"scientific_exact_equal\": true, \"tolerances\": \"none\"}\n"
+    },
+    "history40": {
+      "exit_code": 0,
+      "last_error_line": null,
+      "stdout": "{\"baseline_gate_passed\": true, \"baseline_sha256\": \"687433605adebeb928b081c616e7d603267d71faebb3cfa061a6c730865ec782\", \"candidate_gate_passed\": true, \"candidate_sha256\": \"687433605adebeb928b081c616e7d603267d71faebb3cfa061a6c730865ec782\", \"excluded\": \"unchanged predeclared timers and execution provenance only\", \"first_difference\": null, \"scientific_exact_equal\": true, \"tolerances\": \"none\"}\n"
+    },
+    "tests": {
+      "exit_code": 0,
+      "last_error_line": null,
+      "stdout": "{\"added_passed_cases\": 0, \"changed_accepted_cases\": [], \"counts\": {\"error\": 0, \"failure\": 0, \"passed\": 4, \"skipped\": 1}, \"declared_NEI_correction\": true, \"known_NEI_failure_present\": false, \"physical_backend_attempts\": 0, \"pytest_exit\": 0, \"required_singular_cases\": [[\"tests.acquisition.test_nei\", \"test_baseline_factorization_rejects_exactly_singular_covariance[dtype0]\"], [\"tests.acquisition.test_nei\", \"test_baseline_factorization_rejects_exactly_singular_covariance[dtype1]\"]], \"test_expectation_revision\": \"corrected-nei-fixture-v2\", \"test_gate_passed\": true}\n"
+    }
+  },
+  "fixture_scope": "committed portable B40/B100 packets and fixed synthetic checkpoint/event/JUnit inputs; no original historical GP states",
+  "pinned_implementation_sha256": {
+    "b100_evidence": "7f3733806ee1de6c68e84594bfcf49377f0d6debe2733b57fb4ed394bf0329bb",
+    "b100_regression": "17fa57ea80715147d7eccb87db2e322dd84706fced4f4f6562e640ba579b6869",
+    "fit_event_evidence": "ae7a73899232b5d3e453955f879b9a7b5324ce1558af93f72bb83a955b3d6b30",
+    "readability_regression": "28d649e126eaa40229a3f63be6322d135c495da3a57cc0c123808ada317b11f0",
+    "refactor_reference": "6173a14c78686d125f910d7e48a5468e3b5441bdc8c4af1c7100556ccdbccf92",
+    "shareable_evidence": "446adcd2de33c4641bae45c00c7bedb1a65eba1e0fba37309e04b21629a61e23"
+  },
+  "schema": "mutaco-readonly-verification-cli-characterization-v1",
+  "source_commit": "7786682ee04a04275fa93883f6f64392db3dd9a7"
+}

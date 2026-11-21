@@ -1,0 +1,176 @@
+{
+  "analysis_classification": "zero_call_frozen_archive_only",
+  "mutaco_b40_recommended_theta": [
+    1.9519236087799072,
+    1.1798672676086426,
+    1.1263821125030518,
+    0.409557968378067
+  ],
+  "response_ordering": "quantity_then_force_major_then_gauge_0_pi",
+  "rows": [
+    {
+      "M": 0.9720698595046997,
+      "force": 0.0,
+      "gauge": "0",
+      "omega_bar": -0.0001369270758004859,
+      "series": "target"
+    },
+    {
+      "M": 0.8116058111190796,
+      "force": 0.0,
+      "gauge": "pi",
+      "omega_bar": 0.0003626138495747,
+      "series": "target"
+    },
+    {
+      "M": 0.8965334892272949,
+      "force": 1.25,
+      "gauge": "0",
+      "omega_bar": 0.080106720328331,
+      "series": "target"
+    },
+    {
+      "M": 0.6847779154777527,
+      "force": 1.25,
+      "gauge": "pi",
+      "omega_bar": 0.13570070266723633,
+      "series": "target"
+    },
+    {
+      "M": 0.5289996862411499,
+      "force": 2.5,
+      "gauge": "0",
+      "omega_bar": 2.0119516849517822,
+      "series": "target"
+    },
+    {
+      "M": 0.4586080014705658,
+      "force": 2.5,
+      "gauge": "pi",
+      "omega_bar": 2.009200096130371,
+      "series": "target"
+    },
+    {
+      "M": 0.42199692130088806,
+      "force": 3.75,
+      "gauge": "0",
+      "omega_bar": 3.783337354660034,
+      "series": "target"
+    },
+    {
+      "M": 0.39086174964904785,
+      "force": 3.75,
+      "gauge": "pi",
+      "omega_bar": 3.7758941650390625,
+      "series": "target"
+    },
+    {
+      "M": 0.37367135286331177,
+      "force": 5.0,
+      "gauge": "0",
+      "omega_bar": 5.3637261390686035,
+      "series": "target"
+    },
+    {
+      "M": 0.35729241371154785,
+      "force": 5.0,
+      "gauge": "pi",
+      "omega_bar": 5.360419273376465,
+      "series": "target"
+    },
+    {
+      "M": 0.9732965230941772,
+      "force": 0.0,
+      "gauge": "0",
+      "omega_bar": -0.00018333244952373207,
+      "series": "mutaco_b40_reconstruction"
+    },
+    {
+      "M": 0.800436794757843,
+      "force": 0.0,
+      "gauge": "pi",
+      "omega_bar": 0.00011829640425276011,
+      "series": "mutaco_b40_reconstruction"
+    },
+    {
+      "M": 0.9185855984687805,
+      "force": 1.25,
+      "gauge": "0",
+      "omega_bar": 0.05139433220028877,
+      "series": "mutaco_b40_reconstruction"
+    },
+    {
+      "M": 0.6902860403060913,
+      "force": 1.25,
+      "gauge": "pi",
+      "omega_bar": 0.10970939695835114,
+      "series": "mutaco_b40_reconstruction"
+    },
+    {
+      "M": 0.5463153123855591,
+      "force": 2.5,
+      "gauge": "0",
+      "omega_bar": 1.9601188898086548,
+      "series": "mutaco_b40_reconstruction"
+    },
+    {
+      "M": 0.45879054069519043,
+      "force": 2.5,
+      "gauge": "pi",
+      "omega_bar": 1.9720556735992432,
+      "series": "mutaco_b40_reconstruction"
+    },
+    {
+      "M": 0.4347492754459381,
+      "force": 3.75,
+      "gauge": "0",
+      "omega_bar": 3.7625160217285156,
+      "series": "mutaco_b40_reconstruction"
+    },
+    {
+      "M": 0.39832448959350586,
+      "force": 3.75,
+      "gauge": "pi",
+      "omega_bar": 3.751166820526123,
+      "series": "mutaco_b40_reconstruction"
+    },
+    {
+      "M": 0.3850460946559906,
+      "force": 5.0,
+      "gauge": "0",
+      "omega_bar": 5.361011028289795,
+      "series": "mutaco_b40_reconstruction"
+    },
+    {
+      "M": 0.36345401406288147,
+      "force": 5.0,
+      "gauge": "pi",
+      "omega_bar": 5.350639343261719,
+      "series": "mutaco_b40_reconstruction"
+    }
+  ],
+  "schema_version": "mutaco-oscillator-physics-trajectories-v1",
+  "scientific_calls": 0,
+  "sources": {
+    "mutaco_b40_reconstruction": {
+      "identity": "paper-method-record-v1-76c8bf4b5a6ede5b1bcfc26142a86256c1c7f4d3a3a474e80868e3614749dd49",
+      "path": "runs/paper/graph_oscillator/graph_paper120_b40_mutaco_npe_v3_v1/worker-18/records/target-a12dae0d295ac006/mutaco.json",
+      "response_field": "assessment_response",
+      "sha256": "4eb69e660b9ef9527ff9ee61d4803c23514a0fde3738c1cbed9a10b59fe8c207"
+    },
+    "target": {
+      "identity": "frozen-target-record-v2-c1f2caab22dc5c7f72782e379c38ce9ee06297491b6174c6306303cb9f35a7c5",
+      "path": "data/cohorts/paper120_v3/target_098.json",
+      "sha256": "2d05a098f42c6bd338a30d4e72d79e906dda55cf57f70156c30a22a14fdcc231"
+    }
+  },
+  "target_position": 98,
+  "target_record_id": "frozen-target-record-v2-c1f2caab22dc5c7f72782e379c38ce9ee06297491b6174c6306303cb9f35a7c5",
+  "theta_star": [
+    1.910422682762146,
+    1.115454077720642,
+    1.1611828804016113,
+    0.880811870098114
+  ],
+  "trajectory_identity": "mutaco-oscillator-physics-trajectories-v1-96e138b7a081c5ed9f50ad49d1ed0facf8609c186f06ac8211241a546d736f63"
+}

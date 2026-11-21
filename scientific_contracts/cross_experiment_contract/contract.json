@@ -1,0 +1,148 @@
+{
+  "canonical_cohort": {
+    "application": "required_for_primary_population_repaired_sbi_and_paper120_mechanism_ablation; explicit_qualification_cohorts_exempt",
+    "cohort_id": "paper120_v3",
+    "manifest": "data/cohorts/paper120_v3/manifest.json",
+    "manifest_sha256": "359fc0bb59fc9a8a52f5da684e7a7eb352466bdc0d0a54fb8efa94131ce423bb",
+    "target_count": 120
+  },
+  "contract_identity": "cross-experiment-scientific-contract-v1-f5cfcdc612904d951da366c492d510ad45886265ec716b2560bc1b93bce90fd4",
+  "error_quantities": {
+    "heldout_assessment_error": {
+      "formula": "L(y_assess(theta_hat),y_star)",
+      "response_source": "fresh_heldout_simulator_response",
+      "selection_domain": "frozen_recommendation_only",
+      "symbol": "E_heldout"
+    },
+    "observed_search_error": {
+      "formula": "min_i<=B L(y_i,y_star)",
+      "response_source": "noisy_in_search_simulator_observation",
+      "selection_domain": "evaluated_designs_only",
+      "symbol": "E_obs"
+    },
+    "optimized_terminal_surrogate_error": {
+      "formula": "L(mu_B(theta_hat),y_star)",
+      "response_source": "final_surrogate_posterior_mean",
+      "selection_domain": "declared_terminal_optimizer",
+      "symbol": "E_term_GP"
+    },
+    "raw_terminal_surrogate_error": {
+      "formula": "L(mu_B(theta_raw),y_star)",
+      "response_source": "final_surrogate_posterior_mean",
+      "selection_domain": "declared_raw_terminal_screen",
+      "symbol": "E_raw_GP"
+    }
+  },
+  "evidence_statuses": [
+    "valid_current_policy_evidence",
+    "valid_historical_policy_evidence",
+    "protocol_noncompliant_for_current_claim",
+    "qualification_evidence",
+    "superseded_evidence"
+  ],
+  "randomness_invariants": {
+    "assessment_cannot_influence_search_or_recommendation": true,
+    "assessment_frozen_after_all_recommendations": true,
+    "cross_budget_seed_reuse_forbidden_unless_explicitly_declared": true,
+    "historical_seed_identities_immutable": true,
+    "initial_design_sharing_must_be_declared": true,
+    "named_coordinate_addressing_required": true,
+    "one_global_seed_forbidden": true,
+    "paired_assessment_omits_method": true,
+    "search_is_method_addressed": true
+  },
+  "randomness_roles": {
+    "acquisition_or_training": {
+      "index_required": true,
+      "method_ownership": "required",
+      "pairing_scope": "method_specific",
+      "role": "acquisition_or_training"
+    },
+    "paired_heldout_assessment": {
+      "index_required": true,
+      "method_ownership": "forbidden",
+      "pairing_scope": "target_budget_comparison",
+      "role": "paired_heldout_assessment"
+    },
+    "search_evaluation": {
+      "index_required": true,
+      "method_ownership": "required",
+      "pairing_scope": "method_specific",
+      "role": "search_evaluation"
+    },
+    "shared_initial_design": {
+      "index_required": true,
+      "method_ownership": "forbidden",
+      "pairing_scope": "target_budget_comparison",
+      "role": "shared_initial_design"
+    },
+    "target_construction": {
+      "index_required": true,
+      "method_ownership": "forbidden",
+      "pairing_scope": "cohort_target_only",
+      "role": "target_construction"
+    },
+    "terminal_recommendation": {
+      "index_required": true,
+      "method_ownership": "required",
+      "pairing_scope": "method_specific",
+      "role": "terminal_recommendation"
+    }
+  },
+  "simulator_backbone_projection": {
+    "excluded_fields": [
+      "budget",
+      "method_profile",
+      "campaign",
+      "runtime_limits",
+      "artifact_policy"
+    ],
+    "included_fields": [
+      "dtype",
+      "simulator"
+    ],
+    "reason": "legacy simulator_configuration_identity fields hash complete budget-specific method configurations, not only simulator physics",
+    "schema_version": "paper-simulator-scientific-backbone-v1"
+  },
+  "recommendation_provenance": [
+    "best_observed",
+    "raw_terminal_screen",
+    "historical_one_step_terminal",
+    "corrected_refined_terminal",
+    "heldout_assessment"
+  ],
+  "schema_version": "mutaco-cross-experiment-scientific-contract-v1",
+  "scope": "paper_cross_experiment_scientific_semantics",
+  "study_families": {
+    "mechanism_ablation": {
+      "cohort_policy": "paper120_v3_required",
+      "declaration_required_before_execution": true,
+      "randomness_policy": "paired_where_mechanisms_are_alignable"
+    },
+    "numerical_qualification": {
+      "cannot_be_pooled_with_primary_population": true,
+      "cohort_policy": "explicit_declared_cohort",
+      "paper120_v3_required": false
+    },
+    "repaired_sbi_comparison": {
+      "budgets": [
+        40,
+        100
+      ],
+      "cohort_policy": "paper120_v3_required",
+      "historical_search_randomness": "immutable_if_reused",
+      "new_paired_assessment_required": true
+    },
+    "scalar_primary": {
+      "budgets": [
+        40,
+        100
+      ],
+      "budgets_are_independent_campaigns": true,
+      "cohort_policy": "paper120_v3_required",
+      "paired_heldout_assessment": true,
+      "protocol_id": "mutaco-scalar-qlognei-sobol-primary-v1",
+      "shared_initial_design": true
+    }
+  }
+}

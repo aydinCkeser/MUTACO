@@ -1,0 +1,123 @@
+{
+  "schema": "mutaco-illustrative-figure-claim-review-v1",
+  "manuscript": "docs/paper/latex/bandits_v6.tex",
+  "figures": [
+    1,
+    2
+  ],
+  "reconstruction_job": 7010616,
+  "tested_source": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+  "original_context": "Target 98, 80 graph realizations, two repeats, five protocol forces, 200 illustrative force coordinates, gauge zero.",
+  "method": {
+    "measurement": "Both PDFs use identical panel heights to within 0.01 PDF points. For each observable, group both vertices of each band segment by their force coordinate to obtain 200 pairs of bounds. Linearly interpolate the plotted polylines at those same abscissas. For each plot, compare the blue curve to its own plotted band, then compare the two sets of plotted ordinates. Heights below are percentages of the panel height.",
+    "interpretation": "The bounds on plotted distances characterize these saved vector graphics at the sampled abscissas. Recovering exact historical dense tensor values from a rendered curve is outside their scope.",
+    "pdf_parser_version": "1.27.2.2",
+    "interpolation_numpy_version": "2.0.2"
+  },
+  "artifact_sha256": {
+    "retained_response_npz": "5355ed788c07213abdaaea235056cb4a4ad3fe30869e1c27cdcc736a145a6403",
+    "retained_response_npz_manifest": "e19cc8ff59e7c86013fe4a4d03eb231c9021b3cd6cc48dcbe86824db001b120c",
+    "original_target_and_recommendation_sparse_record": "8ffe79a0258e86f4057669ccb0510d972a8e73dab5b7b0dd3c4d7016ebc60a80",
+    "original_producer": "f55c30213a9e9b5fbfab5a1bc89fb3586c0246ab201548aaa9f62b303e32d465",
+    "original_archive_renderer": "a2907c9df76c66695d1333931fc6848dfe18cd6005ecd7f38920f63f73e96f2e",
+    "forward_archived_pdf": "bc06fbfc382952eca929668744b3758c35c07b5d77958b29393fd0210f4d7de4",
+    "forward_qualified_pdf": "b7e14511c28f6a7394936eff0c7996bcd2ef22967380dd36facd622356c5ff17",
+    "reconstruction_archived_pdf": "4f2dd452c8ac4e68fc824107ecd8303edaf5d286e73d8fa8d0d30b60935accd0",
+    "reconstruction_qualified_pdf": "f4b930b45c61fb73a0cfc1cd3048ee87dc6aa66ce60132b9d511e41f15930ef6"
+  },
+  "sparse_response_comparison": {
+    "bitwise_equal_values": 20,
+    "recorded_values": 20,
+    "composition": "Ten target ordinates came from the stored target. Ten recommendation ordinates were evaluated at the canonical force/gauge grid and compared with the archived response record."
+  },
+  "forward_panels": {
+    "historical_144dpi_changed_pixels": 18885,
+    "historical_144dpi_total_pixels": 864001,
+    "omega": {
+      "forces_sampled": 200,
+      "max_change_percent_of_panel_height": {
+        "band_top": 0.00855,
+        "band_bottom": 0.012311,
+        "blue": 0.060793,
+        "traces": 0.344225
+      },
+      "traces_per_panel": {
+        "archived": 80,
+        "qualified": 80
+      },
+      "positive_target_band_at_each_force": {
+        "archived": true,
+        "qualified": true
+      },
+      "upward_endpoint_displacement_percent_of_panel_height": {
+        "archived": 71.789005,
+        "qualified": 71.788882
+      }
+    },
+    "M": {
+      "forces_sampled": 200,
+      "max_change_percent_of_panel_height": {
+        "band_top": 0.051743,
+        "band_bottom": 0.048968,
+        "blue": 0.107082,
+        "traces": 2.033396
+      },
+      "traces_per_panel": {
+        "archived": 80,
+        "qualified": 80
+      },
+      "positive_target_band_at_each_force": {
+        "archived": true,
+        "qualified": true
+      },
+      "upward_endpoint_displacement_percent_of_panel_height": {
+        "archived": -59.887196,
+        "qualified": -59.888977
+      }
+    }
+  },
+  "reconstruction_panels": {
+    "historical_144dpi_changed_pixels": 1886,
+    "historical_144dpi_total_pixels": 864001,
+    "omega": {
+      "forces_sampled": 200,
+      "max_change_percent_of_panel_height": {
+        "band_top": 0.009659,
+        "band_bottom": 0.013918,
+        "black": 0.078589,
+        "blue": 0.093594
+      },
+      "inside_target_band": {
+        "archived": 200,
+        "qualified": 200
+      },
+      "inside_band_from_retained_npz": 200,
+      "peak_target_reconstruction_separation_percent_of_panel_height": {
+        "archived": 1.479362,
+        "qualified": 1.500272
+      }
+    },
+    "M": {
+      "forces_sampled": 200,
+      "max_change_percent_of_panel_height": {
+        "band_top": 0.051743,
+        "band_bottom": 0.048968,
+        "black": 0.107082,
+        "blue": 0.05047
+      },
+      "inside_target_band": {
+        "archived": 200,
+        "qualified": 200
+      },
+      "inside_band_from_retained_npz": 200,
+      "peak_target_reconstruction_separation_percent_of_panel_height": {
+        "archived": 3.438854,
+        "qualified": 3.437719
+      }
+    }
+  },
+  "scientific_scope": "The rendered curves support the illustrated response trends, spread and reconstruction within target variability. Population performance is assessed separately in the paired cohort data.",
+  "historical_144dpi_raster_equality": "FAILED",
+  "historical_dense_tensor_identity": "NOT VERIFIED",
+  "frozen_historical_pdfs_replaced": false
+}

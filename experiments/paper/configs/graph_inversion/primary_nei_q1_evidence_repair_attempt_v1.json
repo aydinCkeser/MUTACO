@@ -1,0 +1,31 @@
+{
+  "schema_version": "mutaco-nei-q1-run-declaration-v1",
+  "state": "declared_unexecuted",
+  "qualification_declaration": "experiments/graph_inversion/configs/paper/primary_nei_q1_evidence_repair_v1.json",
+  "qualification_declaration_identity": "nei-numerical-qualification-declaration-v1-18244241c5af5f5abcd5171c39a2ea2a9dd6db04ac5da32ec944384ba0b56af1",
+  "qualification_declaration_sha256": "4e17f07fc767ae5718f59b6915de6090005d53fe9cd3655a4dd30bb9c8c1d0ff",
+  "evidence_contract": "single_recursive_path_aware_complete_attempt_boundary",
+  "evidence_repair_ancestor": "ae8dfdf04360e7869b6ca4d6c82a843e6cb6c59f",
+  "output_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/primary_nei_q1/qualification-evidence-repair-v1/workers",
+  "historical_attempts": [
+    {
+      "job_id": 6244497,
+      "successful_calls": 80,
+      "status": "failed_historical_evidence",
+      "eligible_for_tier_selection": false
+    },
+    {
+      "job_id": 6244676,
+      "successful_calls": 436,
+      "status": "failed_historical_evidence",
+      "eligible_for_tier_selection": false
+    }
+  ],
+  "tier_selection_evidence_policy": "complete_matrix_from_this_qualification_declaration_only",
+  "scientific_calls_executed": 0,
+  "exact_source_prepared": false,
+  "preflight_validated": false,
+  "scientific_retry_authorized": false,
+  "job_submitted": false,
+  "run_declaration_identity": "mutaco-nei-q1-run-declaration-v1-36ed4c846e968706660f0b218b30cd8273b56423579a2caa48c943ba53028c2c"
+}

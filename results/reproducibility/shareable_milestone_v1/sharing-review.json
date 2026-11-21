@@ -1,0 +1,53 @@
+{
+  "entire_repository_certified_for_public_release": false,
+  "existing_shared_history_rewritten": false,
+  "inherited_path_bearing_files_in_changed_set": [
+    "infrastructure/truba/README.md",
+    "project/experiment_registry.toml",
+    "project/state.toml",
+    "tests/infrastructure/test_truba_lifecycle.py"
+  ],
+  "new_credential_patterns_found": false,
+  "new_files_or_modifications_reviewed": 33,
+  "new_private_operational_paths_found": false,
+  "original_unpublished_commits_will_not_be_ancestors": true,
+  "preexisting_remote_concerns": [
+    {
+      "concern": "machine-specific environment prefix",
+      "file": "configs/environments/mutaco-sbi-macos-arm64-lock.json"
+    },
+    {
+      "concern": "personal interpreter/import and backend paths",
+      "file": "configs/environments/mutaco-sbi-macos-arm64-qualification.json"
+    },
+    {
+      "concern": "historical institutional output roots",
+      "file": "project/state.toml"
+    },
+    {
+      "concern": "institution-specific example directories",
+      "file": "infrastructure/truba/README.md"
+    },
+    {
+      "concern": "immutable historical archives include execution provenance",
+      "file": "benchmarks/paper/scalar_primary_trajectory_archives_v3r2/"
+    },
+    {
+      "concern": "machine-hostname email identities already in remote history",
+      "scope": "existing commit metadata"
+    }
+  ],
+  "raw_original_files_introduced": false,
+  "schema": "mutaco-outgoing-sharing-review-v1",
+  "scientific_payloads_over_100KB": [
+    {
+      "bytes": 178148,
+      "file": "benchmarks/reproducibility/shareable_milestone_v1/b40-scientific-payload.json.gz"
+    },
+    {
+      "bytes": 122938,
+      "file": "project/state.toml"
+    }
+  ],
+  "scope": "new branch changes compared with verified remote checkpoint; inherited shared history is reported separately"
+}

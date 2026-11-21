@@ -1,0 +1,96 @@
+{
+  "schema_version": "mutaco-terminal-domain-heldout-assessment-spec-v2",
+  "study_id": "paper120_b40_terminal_domain_heldout_v2",
+  "campaign_id": "paper120_b40_terminal_domain_bprime_cprime_heldout_v2",
+  "budget": 40,
+  "target_count": 120,
+  "policies": [
+    "B_prime_evaluated_posterior_mean_physical_mae_v1",
+    "continuous_posterior_mean_physical_l1_mae"
+  ],
+  "recommendation_source": {
+    "rows": "benchmarks/paper/terminal_domain_ablation_b40_refit_v1/rows.jsonl",
+    "rows_sha256": "b88cd087fa7b2c1053ea749ef5750c01cc54b4b11a64b35a276df39f18bdc101",
+    "manifest": "benchmarks/paper/terminal_domain_ablation_b40_refit_v1/manifest.json",
+    "package_identity": "terminal-domain-ablation-b40-refit-v1-57b9b6308f16e628c5a7b3d5c4b7bc8da66c56f555e78d4e3b4978f691829a7e"
+  },
+  "cohort": {
+    "manifest": "data/cohorts/paper120_v3/manifest.json",
+    "sha256": "359fc0bb59fc9a8a52f5da684e7a7eb352466bdc0d0a54fb8efa94131ce423bb",
+    "target_root": "data/cohorts/paper120_v3"
+  },
+  "simulator": {
+    "configuration": "experiments/graph_inversion/configs/paper/paper120_v3_target_config.json",
+    "configuration_sha256": "2614cdae3f2eb40ff1a0f0ee473056f05c8284d3ab59e2f159969ed1cc704a8a",
+    "definition_identity": "graph-oscillator.overdamped-scientific.v1.p4-paper-baseline.m20-five-force-scientific.float32",
+    "fidelity": "canonical_sparse_m20_one_evaluation_v1",
+    "dtype": "float32",
+    "device": "cpu",
+    "pairing_condition": "A_fresh_simulator_per_policy_same_context"
+  },
+  "randomness": {
+    "assessment_campaign_seed": 92021841,
+    "namespace": "terminal_domain_paired_heldout_assessment",
+    "coordinates": ["campaign_id", "target_record_identity", "replicate"],
+    "replicate": 0,
+    "policy_in_random_address": false
+  },
+  "endpoint": {
+    "formula": "mean_m_abs_y_heldout_m_theta_minus_y_star_m",
+    "response_dimension": 20,
+    "paired_difference": "C_prime_minus_B_prime"
+  },
+  "analysis": {
+    "bootstrap_seed": 92024101,
+    "bootstrap_resamples": 10000,
+    "bootstrap_unit": "paired_target_delta",
+    "bootstrap_statistic": "arithmetic_mean",
+    "bootstrap_interval": "percentile_2p5_97p5",
+    "stratified": false,
+    "studentized": false,
+    "tie_policy": "exact_stored_float_delta_equals_zero",
+    "associations": ["pearson", "spearman"],
+    "associations_role": "descriptive_only"
+  },
+  "execution": {
+    "platform": "local_ubuntu_only",
+    "maximum_scientific_calls": 240,
+    "automatic_retry": false,
+    "search_calls": 0,
+    "gp_fit_attempts": 0,
+    "terminal_optimizations": 0,
+    "policy_a_calls": 0,
+    "fixed_order": ["B_prime", "C_prime"],
+    "write_ahead_ledger": true,
+    "stop_on_first_failed_or_outcome_unknown": true
+  },
+  "inferential_scope": "The paired target-level bootstrap quantifies variation across the Paper-120 target/context pairs; it does not separately estimate within-target Monte Carlo uncertainty.",
+  "serializer_repair": {
+    "policy": "strict_metadata_document_then_canonical_JSON_round_trip_v2",
+    "scope": "assessment_result_metadata_persistence_only",
+    "simulator_behavior_changed": false,
+    "scientific_values_changed": false
+  },
+  "preexisting_dirty_paths": [
+    "docs/paper/latex/bandits_v5.pdf",
+    "docs/paper/latex/bandits_v5.tex",
+    "project/experiment_registry.toml",
+    "project/scientific_registry.toml",
+    "project/state.toml",
+    "benchmarks/paper/terminal_domain_ablation_b40_refit_v1/",
+    "benchmarks/paper/terminal_domain_heldout_assessment_b40_v1/",
+    "experiments/paper/common/terminal_domain_ablation.py",
+    "experiments/paper/common/terminal_domain_heldout_assessment.py",
+    "experiments/paper/studies/graph_paper120/analysis/terminal_domain_ablation_b40_refit_v1.json",
+    "experiments/paper/studies/graph_paper120/analysis/terminal_domain_heldout_assessment_b40_v1.json",
+    "scientific/terminal_domain_ablation/",
+    "tests/experiments/test_terminal_domain_ablation.py",
+    "tests/experiments/test_terminal_domain_heldout_assessment.py"
+  ],
+  "allowed_assessment_paths": [
+    "experiments/paper/common/terminal_domain_heldout_assessment_v2.py",
+    "experiments/paper/studies/graph_paper120/analysis/terminal_domain_heldout_assessment_b40_v2.json",
+    "tests/experiments/test_terminal_domain_heldout_assessment_v2.py",
+    "benchmarks/paper/terminal_domain_heldout_assessment_b40_v2/"
+  ]
+}

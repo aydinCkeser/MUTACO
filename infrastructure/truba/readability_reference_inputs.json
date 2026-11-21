@@ -1,0 +1,14 @@
+{
+  "accepted_source": "242fac08c1c3dc0041651a731c20ed228969ed6a",
+  "baseline": "aa7f4feb58302ecf6abfa6dee2d81071eabb7fe3",
+  "derived_summaries_are_not_raw_inputs": true,
+  "raw_inputs": {
+    "accepted-tests-status.json": "c716a3f81ea5e9328ac482deb23290f0749f9ec57f536a840ba83094c7e40608",
+    "accepted-tests.xml": "e3a81b9f924e26e1f3c2e4f3a847e4b6414eba3507c949e2a9ece7ceca1e1a50",
+    "b100-capture.json.gz": "1865655feddf8658f534e029b89212f2e5a1b0bf308f099705e584bde641e156",
+    "b100-history.json.gz": "09e2df33bdfba7cc7ccb331a2995d81bda7e1ae13d5d6f61569904574b6a7e57",
+    "b40-capture.json.gz": "029632e4d0f863a4d1e4c8014a88eca94a0b7eee59517152cbfa80d8919604c2",
+    "b40-history.json.gz": "cc7974d202ecaa5444946aae45965c01f9cf93a10b027f253e71e30a7494dad2"
+  },
+  "schema": "mutaco-readability-private-inputs-v1"
+}

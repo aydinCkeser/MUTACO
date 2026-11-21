@@ -1,0 +1,63 @@
+{
+  "budgets": [
+    40,
+    100
+  ],
+  "cohort_sha256": "359fc0bb59fc9a8a52f5da684e7a7eb352466bdc0d0a54fb8efa94131ce423bb",
+  "contract_identity": "cross-experiment-scientific-contract-v1-f5cfcdc612904d951da366c492d510ad45886265ec716b2560bc1b93bce90fd4",
+  "error_vocabulary": [
+    "E_obs",
+    "E_raw_GP",
+    "E_term_GP",
+    "E_heldout"
+  ],
+  "exact_source": {
+    "continuous_optimizer_git_blob_sha1": "84fee3d4c0199aafa3d5455b794b557953a3ee33",
+    "continuous_optimizer_path": "src/mutaco/recommendation/_continuous.py",
+    "historical_line_evidence": {
+      "convergence_test": [127, 132],
+      "incorrect_current_assignment": [125, 125],
+      "initial_and_previous_score": [102, 103],
+      "optimizer_update": [122, 124],
+      "post_loop_score_and_acceptance": [133, 145],
+      "pre_update_score_and_gradient": [109, 121]
+    },
+    "identical_across_all_source_commits": true,
+    "physical_mae_git_blob_sha1": "a5bfa2793742db9f6b195fcdfd6f4e7615e786c5",
+    "physical_mae_path": "src/mutaco/recommendation/physical_mae.py"
+  },
+  "fact_strengths": [
+    "direct_persisted",
+    "direct_recomputed_from_persisted",
+    "exact_source_inferred",
+    "unavailable"
+  ],
+  "forensic_id": "paper120_historical_mutaco_b40_b100_terminal_lineage_v1",
+  "forensic_spec_identity": "historical-terminal-lineage-forensic-spec-v1-33e9bc9f55a1495b004deffd02b00b327f38525eaff3a74877d7e60b7df1e4e0",
+  "historical_sources": {
+    "b100": {
+      "qualification_target_positions": [0, 49, 99],
+      "raw_terminal_metadata": "not_retained_in_local_canonical_bundle",
+      "source_commits": [
+        "2b067c33720ed7c6b30ee91ae6087081d5ad0776",
+        "e7baa235fd7282ea478acc83f9457cfd95b76185"
+      ]
+    },
+    "b40": {
+      "raw_terminal_metadata": "complete_120_of_120",
+      "source_commits": ["9235d2fefefa6af0d35cc3af2dfaa01a2d56a3a9"]
+    }
+  },
+  "historical_terminal_settings": {
+    "convergence_tolerance": 1e-07,
+    "learning_rate": 0.05,
+    "max_iterations": 64,
+    "optimizer": "projected_adam",
+    "raw_samples": 1024,
+    "restarts": 10
+  },
+  "method": "mutaco",
+  "missing_policy": "unavailable_never_reconstructed_or_imputed",
+  "schema_version": "mutaco-historical-terminal-lineage-forensic-spec-v1",
+  "scientific_calls": 0
+}

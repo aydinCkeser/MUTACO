@@ -1,0 +1,75 @@
+{
+  "schema_version": "mutaco-graph-paper-snpe-method-configuration-v1",
+  "state": "proposed_unexecuted",
+  "execution_requires_approval": true,
+  "scientific_policy_status": "pending_owner_approval",
+  "dtype": "float32",
+  "device": "cpu",
+  "campaign": {
+    "id": "graph_paper120_b40_snpe_append_v1",
+    "campaign_seed": 92020401,
+    "scope": "cold_start_target_specific"
+  },
+  "simulator": {
+    "adapter": "graph_scientific_d4",
+    "identifier": "graph-oscillator.overdamped-scientific.v1",
+    "parameter_profile": "p4-paper-baseline",
+    "response_profile": "m20-five-force-scientific",
+    "node_count": 10,
+    "batch_size": 80,
+    "repeat_size": 2,
+    "bias_conditions": 5,
+    "temperature": 0.15,
+    "dt": 0.1,
+    "burn_in_steps": 100,
+    "sample_steps": 900,
+    "sample_stride": 1
+  },
+  "comparison": {
+    "primary_basis": "equal_simulator_calls",
+    "include_target_generation_in_budget": false,
+    "held_out_assessment_calls": 1,
+    "record_wall_clock": true
+  },
+  "simulation_budget_per_target": 40,
+  "runner": {
+    "initial_points": 8,
+    "sequential_rounds": 32
+  },
+  "sbi": {
+    "method": "sbi_snpe",
+    "density_estimator": "maf",
+    "training_batch_size": 64,
+    "learning_rate": 0.0005,
+    "validation_fraction": 0.2,
+    "stop_after_epochs": 20,
+    "max_num_epochs": 200,
+    "posterior_samples": 10000,
+    "show_progress_bars": false,
+    "posterior_sampling": "direct",
+    "fallback_policy": "none",
+    "sequential_round_allocation": [14, 13, 13],
+    "proposal_correction": "sbi_append_simulations_proposal_v0261",
+    "final_decision_policy": "posterior_sample_map_physical_v1"
+  },
+  "randomness": {
+    "seed_policy": "mutaco-coordinate-sha256-v1",
+    "method_seed_namespace": "method_runs",
+    "sbi_batch_context_policy": "per_logical_simulation_index_v1",
+    "no_cross_theta_common_random_numbers": true,
+    "ambient_rng_isolation": true
+  },
+  "assessment": {
+    "policy": "paired_held_out_assessment_v1",
+    "campaign_seed": 92020402,
+    "replicate": 0,
+    "calls_per_valid_recommendation": 1
+  },
+  "call_accounting": {
+    "target_construction": 0,
+    "inference": 40,
+    "recommendation": 0,
+    "assessment": 1,
+    "total_per_valid_target": 41
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "accepted_source": "677b619561abfb7e6d8eca4ddaa967de3e866c7b",
+  "accepted_test_reference": {
+    "characterization_file": "tests/acquisition/test_raw_screening.py",
+    "characterization_sha256": "ec6a512fe93bfd16fa2c6299610ee49e0205d8830307ab923b1982173bbcf708",
+    "origin": "full local characterization suite before production extraction",
+    "scientific_source_commit": "677b619561abfb7e6d8eca4ddaa967de3e866c7b"
+  },
+  "baseline": "aa7f4feb58302ecf6abfa6dee2d81071eabb7fe3",
+  "capture_fit_events": true,
+  "corrected_fixture": {
+    "path": "tests/acquisition/test_nei.py",
+    "sha256": "cfc0e6fba96460670216bb011841f2aed5759d3e74ae31740b8a1a5e2e3bb998",
+    "source_commit": "bd3859906a969d362e7d0496e87dcac404804285"
+  },
+  "derived_summaries_are_not_raw_inputs": true,
+  "expected_added_tests": 0,
+  "new_test_prefixes": [],
+  "raw_inputs": {
+    "accepted-tests-status.json": "558b8d54bd6749ac8d22d883fc02b0e4afc2d77af2f240db603ecf8ce246af9f",
+    "accepted-tests.xml": "21ae6154c046df9e0feb7dae940711e1d9ba0c9ac86281e4b53af8f1b68e2bac",
+    "b100-capture.json.gz": "1865655feddf8658f534e029b89212f2e5a1b0bf308f099705e584bde641e156",
+    "b100-history.json.gz": "09e2df33bdfba7cc7ccb331a2995d81bda7e1ae13d5d6f61569904574b6a7e57",
+    "b40-capture.json.gz": "029632e4d0f863a4d1e4c8014a88eca94a0b7eee59517152cbfa80d8919604c2",
+    "b40-history.json.gz": "cc7974d202ecaa5444946aae45965c01f9cf93a10b027f253e71e30a7494dad2"
+  },
+  "schema": "mutaco-raw-screening-reference-inputs-v2",
+  "test_expectation_revision": "corrected-nei-fixture-v2"
+}

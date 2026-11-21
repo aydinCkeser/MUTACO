@@ -1,0 +1,141 @@
+{
+  "schema_version": "mutaco-scalar-primary-b100-prequalification-evidence-v1",
+  "status": "complete_collected_archived",
+  "role": "single_target_prequalification_engineering_evidence_not_population_performance",
+  "campaign_id": "graph_scalar_primary_prequalification_b100_smoke_v1",
+  "target_record_identity": "frozen-target-record-v2-55ef79e8c497a3d9e186553901b04d909b2de06d145b70f177968372063f8693",
+  "budget": 100,
+  "scientific_attempt": {
+    "job_id": 6248220,
+    "scheduler_state": "COMPLETED",
+    "elapsed": "00:10:55",
+    "exit_code": "0:0",
+    "node": "barbun56",
+    "scientific_worker_step_state": "COMPLETED",
+    "scientific_worker_step_exit_code": "0:0",
+    "scientific_worker_step_elapsed": "00:10:50",
+    "scientific_source_commit": "01795d10aaefd4dd67f798fec6feb9afc0cca1a5",
+    "maximum_step_rss_kib": 7956280,
+    "automatic_retry": false
+  },
+  "call_accounting": {
+    "maximum_calls": 303,
+    "attempted_calls": 303,
+    "successful_calls": 303,
+    "failed_calls": 0,
+    "search_calls": 300,
+    "paired_heldout_assessment_calls": 3,
+    "collection_calls": 0
+  },
+  "decision_freeze": {
+    "identity": "scalar-primary-all-method-decision-freeze-v1-babe1a5fe0b1935301035894ca29f571e0554118a4de78b1e88e776eb5e2b018",
+    "sha256": "59277699023e1f331965da296f0ed4eec64c011418a4fd469d8e6f8a8c6d7b4e",
+    "assessment_started_at_freeze": false,
+    "all_methods_frozen_before_assessment": true
+  },
+  "method_results": [
+    {
+      "method": "mutaco",
+      "recommended_theta": [1.2344526052474976, 0.7749357223510742, 2.0, 0.0],
+      "best_observed_search_mae": 0.005570497829467058,
+      "heldout_physical_mae": 0.07437722896702326,
+      "record_identity": "scalar-primary-target-method-record-v1-d04ff340f01eaca38f5cf156ddb08ff81ce9ad2124b9832c048359a37a95bebb",
+      "record_sha256": "82692e495464e5c42a18aa71053f7fa499de3e3a6bb51cbdcb8d9cb965d393e3",
+      "timing_seconds": {
+        "simulator": 118.0695575196296,
+        "gp_fit": 127.07492577470839,
+        "acquisition": 52.54300610534847,
+        "terminal": 10.226652957499027,
+        "other": 1.3849907461553812,
+        "total": 309.29913310334086
+      }
+    },
+    {
+      "method": "scalar_qlognei",
+      "recommended_theta": [1.0854367017745972, 0.794503390789032, 2.0, 0.0],
+      "best_observed_search_mae": 0.01332952082157135,
+      "heldout_physical_mae": 0.09104549843523273,
+      "record_identity": "scalar-primary-target-method-record-v1-062874ba1a1049a100447c3b12ddeffab317674d2c389eec8e7bf96aad0866ff",
+      "record_sha256": "5a57b06d150fbe2505ec244b697d9a53d0957e69d9c9c4e970383fa0542a7315",
+      "timing_seconds": {
+        "simulator": 118.18764852546155,
+        "gp_fit": 19.46921763382852,
+        "acquisition": 39.19034272618592,
+        "terminal": 0.30368043296039104,
+        "other": 0.0014532096683979034,
+        "total": 177.15234252810478
+      }
+    },
+    {
+      "method": "sobol",
+      "recommended_theta": [0.7420034408569336, 1.6341379880905151, 1.9661043882369995, 0.8003925681114197],
+      "best_observed_search_mae": 0.07798346132040024,
+      "heldout_physical_mae": 0.11213616068744159,
+      "record_identity": "scalar-primary-target-method-record-v1-9a51cb5d843a916e0e274136a2cb46d858398cfcf570f0e9ba89a871c452c725",
+      "record_sha256": "ed6919f48f841a174d790c20b798ee1c6d7ab61dbdac18160930fb9b945ac832",
+      "timing_seconds": {
+        "simulator": 118.02243850007653,
+        "gp_fit": 0.0,
+        "acquisition": 0.0,
+        "terminal": 0.00047652609646320343,
+        "other": 0.0076395682990550995,
+        "total": 118.03055459447205
+      }
+    }
+  ],
+  "scalar_qlognei_numerical_diagnostics": {
+    "adaptive_iterations": 84,
+    "successful_gp_fits": 85,
+    "precision_fallbacks": 0,
+    "official_optimizer_candidates": 80,
+    "deterministic_raw_fallback_candidates": 4,
+    "fallback_evaluation_indices": [29, 39, 47, 48],
+    "unique_search_designs": 100,
+    "duplicate_search_designs": 0,
+    "warning_iterations": 78,
+    "recorded_jitter_events": 154,
+    "maximum_recorded_jitter": 0.00001,
+    "terminal_precision_fallback": false,
+    "terminal_simulator_calls": 0,
+    "trajectory_status": "recommended"
+  },
+  "paired_heldout_differences": {
+    "mutaco_minus_scalar_qlognei": -0.01666826946820947,
+    "mutaco_minus_sobol": -0.03775893172041833,
+    "scalar_qlognei_minus_sobol": -0.02109066225220886
+  },
+  "ranking_on_this_engineering_target_only": ["mutaco", "scalar_qlognei", "sobol"],
+  "collection": {
+    "status": "completed",
+    "collection_identity": "scalar-primary-global-collection-v1-5073efa27d8cc6cfcc57a973d684c1acef7a2c47f8101dfb370de28108a0fc31",
+    "record_count": 3,
+    "errors": [],
+    "scientific_calls": 0,
+    "collection_sha256": "6878bbdfd1348bf89dc3f752c57b1156e6b97b8cc2714d1bd2e8919dcdf552b7",
+    "compact_export_sha256": "cb1236f837d5c2aa0faec7c8d80c67dc0e6f84243bbde3733c8e4fa39aaaa9c9"
+  },
+  "integrity": {
+    "json_hash_pairs_verified": 9,
+    "missing_sidecars": 0,
+    "hash_mismatches": 0,
+    "worker_start_sha256": "cf593ce1fdba457e303c7abab0b5ef97031edbc2e2de01e9de209907decdc9ea",
+    "worker_terminal_sha256": "81a6bbfba7eeacd5f81f22986bfcf308307fd2955d4a390b37bc31107f78ffda",
+    "target_execution_sha256": "7491453c971158c5d749a1c293237f5cd57954d3bff9162218700bd28a678872",
+    "scheduler_stdout_sha256": "c09735e599c6c1e19d1c2915336a21b97b70e7957e81361bebe45e49e0041384",
+    "scheduler_stderr_sha256": "76cb8604c4c6ec62fbbec07d19022478035ac1c2566e2679df2e56464d198fad",
+    "scheduler_log_hashes_match_remote": true,
+    "full_worker_collection_and_log_tree_copied_locally": true
+  },
+  "eligibility": {
+    "single_target_engineering_comparison": true,
+    "primary_population_performance": false,
+    "population_ranking": false,
+    "timing_claim": "descriptive_single_node_single_target_only"
+  },
+  "remote_scientific_output_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/scalar_primary_smoke/b100-preparation-v1/workers",
+  "remote_scientific_log_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/scalar_primary_smoke/b100-preparation-v1/logs",
+  "local_raw_scientific_evidence": "experiments/paper/exploration/outputs/scalar_primary_smoke/attempt_6248220",
+  "scientific_calls_added_by_archival_and_documentation": 0,
+  "truba_jobs_added_by_archival_and_documentation": 0,
+  "evidence_identity": "scalar-primary-b100-prequalification-evidence-v1-82848706d189aa8bdf8e8a26ab082ede32b6c65cf402ea63bca9e09235bceb34"
+}

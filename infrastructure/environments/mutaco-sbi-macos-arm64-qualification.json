@@ -1,0 +1,230 @@
+{
+  "archives": [
+    {
+      "archive_sha256": "2f86646f7c21914552d10e9e1fcb209d29880cee194a3e79f8f8fae211b6659c",
+      "budget": 40,
+      "compressed_and_manifest_checksums": "passed",
+      "internal_json_sidecars": "2_passed",
+      "member_size_and_sha256_checks": "4_passed"
+    },
+    {
+      "archive_sha256": "e30befedd72b85bd0eda8fe1d7e33ed6ef10acd0c880b1bd6aca60865e4a49c7",
+      "budget": 100,
+      "compressed_and_manifest_checksums": "passed",
+      "internal_json_sidecars": "2_passed",
+      "member_size_and_sha256_checks": "4_passed"
+    }
+  ],
+  "baseline_commit": "aa7f4feb58302ecf6abfa6dee2d81071eabb7fe3",
+  "bounded_delta_review": {
+    "categories": [
+      "committed_trajectory_archives",
+      "target098_archive_plot_tools_and_tests",
+      "state_pointer"
+    ],
+    "files_changed": 14,
+    "production_core_packages_configs_infrastructure_and_contracts_changed": false
+  },
+  "branch": "ege/repro-refactor",
+  "canonical_repository": "https://github.com/aydinCkeser/MUTACO",
+  "classification": "engineering_diagnostics_not_accepted_benchmark_evidence",
+  "core_refactor_ready": false,
+  "date": "2026-10-24",
+  "earlier_baseline_commit": "111a452347ea1999d92f134abdabf3ec02c010e7",
+  "environment_lock": "configs/environments/mutaco-sbi-macos-arm64-lock.json",
+  "exact_golden_pytest": {
+    "command": "MUTACO_RUN_GOLDEN_REPLAY=1 infrastructure/local/run_pytest.sh -q tests/reproducibility/test_scalar_primary_replay.py -k exact_historical",
+    "errors": 0,
+    "failures": 2,
+    "skipped": 0,
+    "tests": 2,
+    "tolerances_relaxed": false,
+    "xfailed": 0
+  },
+  "historical_evidence_changed": false,
+  "historical_source_comparison": {
+    "b100_source": "649235bcb7e8773f5f4b0425ad111314d7d3b1f9",
+    "b40_source": "bd83de6ec01f0f7e2241ee498960a4d493d601e6",
+    "compared_against": "aa7f4feb58302ecf6abfa6dee2d81071eabb7fe3",
+    "scope": [
+      "src",
+      "packages/graph-simulator/src",
+      "experiments/paper/primary_benchmark",
+      "experiments/benchmarking/methods/mutaco_reference.py",
+      "experiments/graph_inversion/primary_integration_smoke_driver.py",
+      "experiments/graph_inversion/paper_v3_callbacks.py",
+      "respective_effective_mutaco_configuration"
+    ],
+    "source_differences": false
+  },
+  "manuscript_changed": false,
+  "new_archive_guard_and_launcher_subset": {
+    "failed": 0,
+    "passed": 14,
+    "skipped": 2
+  },
+  "physical_simulator_calls": 0,
+  "pip_check": "No broken requirements found.",
+  "production_scientific_policy_changed": false,
+  "relevant_suite": {
+    "command": "infrastructure/local/run_pytest.sh -q tests/mathematics tests/surrogate tests/acquisition tests/orchestration tests/unit tests/contracts/test_policy_surface.py tests/infrastructure/test_local_runtime_hygiene.py tests/infrastructure/test_macos_launchers.py tests/reproducibility/test_scalar_primary_replay.py tests/experiments/test_scalar_primary_protocol.py tests/experiments/test_scalar_primary_b100_archive.py tests/experiments/test_scalar_primary_b100_preparation_audit.py",
+    "errors": 0,
+    "failed_test": "tests/acquisition/test_nei.py::test_baseline_factorization_promotes_without_jitter",
+    "failure_diagnostic": {
+      "dimension": 5,
+      "exact_fixture_determinant": "0",
+      "exact_fixture_rank": 4,
+      "macos_float64_cholesky_info": 5,
+      "production_or_test_policy_changed": false
+    },
+    "failures": 1,
+    "passed": 183,
+    "skip_reasons": {
+      "cuda_unavailable": 7,
+      "explicit_golden_gate_disabled": 2,
+      "legacy_expanded_fetch_absent": 1
+    },
+    "skipped": 10,
+    "tests": 194
+  },
+  "remaining_attention": [
+    "Resolve reference-environment strategy for strict historical numerical equivalence.",
+    "Historical fitted transform arrays and complete GP states are absent; do not infer a unique root cause from identity hashes.",
+    "Review the independent singular-matrix NEI portability test without changing published policy inside refactoring work."
+  ],
+  "replays": [
+    {
+      "ambient_rng_preserved": true,
+      "archived_observations_consumed": 16,
+      "budget": 40,
+      "candidate_comparison": "exact; no tolerance or candidate substitution",
+      "detailed_report_sha256": "4fc5a60074d74b1eb78acf085de042b5c7de67a5efe11776ab14f653839ed9ce",
+      "first_divergence": {
+        "actual": [
+          0.9671909809112549,
+          0.9396123290061951,
+          0.5113476514816284,
+          0.882079005241394
+        ],
+        "evaluation_index": 17,
+        "expected": [
+          0.964871883392334,
+          0.940252959728241,
+          0.5112836956977844,
+          0.8793872594833374
+        ],
+        "kind": "candidate_vector",
+        "max_abs_error": 0.0026917457580566406
+      },
+      "first_identity_divergence": {
+        "after_observations": 16,
+        "historical": "response-transform-v1-80cbe14adbb107bff5459f2062e59617f2c17a49131091c880d7f0859f877a0f",
+        "reconstructed": "response-transform-v1-ff633675832684d3bf3af5fee6a3716e4f7c704ac8d6f7509f923b5cb8eb537b",
+        "stage": "frozen_response_transform"
+      },
+      "frozen_transform_identity": {
+        "historical": "response-transform-v1-80cbe14adbb107bff5459f2062e59617f2c17a49131091c880d7f0859f877a0f",
+        "reconstructed": "response-transform-v1-ff633675832684d3bf3af5fee6a3716e4f7c704ac8d6f7509f923b5cb8eb537b"
+      },
+      "gp_diagnostics_origin": "reconstructed_current_environment",
+      "historical_gp_parameter_snapshots_available": false,
+      "latest_proposal_reconstructed": {
+        "branch": "barrier",
+        "branch_reason": "strict_interior_available",
+        "candidate_id": "proposal-candidate-v1-48a5b15543b76e9c169fa7174c438f4813cb3b6065fc80730269a9bf67e18719",
+        "candidate_source": "refined"
+      },
+      "logical_replay_accounting": {
+        "committed_fit_events": 1,
+        "committed_observations": 16,
+        "committed_proposal_events": 1,
+        "committed_recommendation_events": 0,
+        "initial_observations": 16,
+        "planned_observations": 40,
+        "sequential_observations": 0,
+        "training_data_versions": 1
+      },
+      "physical_simulator_calls": 0,
+      "production_status": "simulator_runtime_failed",
+      "reconstructed_initial_gp_fit": {
+        "model_id": "exact-multitask-gp-v1-ef57f0b93625853f164bb59654b51469289ac5fc21703819bbbcb54a0d001274",
+        "status": "success",
+        "training_data_id": "surrogate-training-v1-2c9525b998f8c73fb234175234fb12a6d2267cd8a6b21d1cba003a1d23085a3b",
+        "training_version": 0
+      },
+      "record_pointer": "/records/48",
+      "status": "diverged",
+      "target": 16,
+      "torch_interop_threads": 1,
+      "torch_intraop_threads": 20
+    },
+    {
+      "ambient_rng_preserved": true,
+      "archived_observations_consumed": 16,
+      "budget": 100,
+      "candidate_comparison": "exact; no tolerance or candidate substitution",
+      "detailed_report_sha256": "1ccfe4437672020a2911b1b367bad7cd6d6ffcbe7cfae94403296d916cacfc48",
+      "first_divergence": {
+        "actual": [
+          0.5,
+          0.5,
+          1.0825492143630981,
+          0.19554536044597626
+        ],
+        "evaluation_index": 17,
+        "expected": [
+          0.5,
+          0.5,
+          1.082544207572937,
+          0.1955556720495224
+        ],
+        "kind": "candidate_vector",
+        "max_abs_error": 1.0311603546142578e-05
+      },
+      "first_identity_divergence": {
+        "after_observations": 16,
+        "historical": "response-transform-v1-e320ccd0f0ca0fed4db7c443cbaa25e1a4757dbdc6d2a8cdb9ca1067a33f5e50",
+        "reconstructed": "response-transform-v1-6acc2eeadbf9fc48d7b43846a91d10315e577a8eda587e51622e76c52130e887",
+        "stage": "frozen_response_transform"
+      },
+      "frozen_transform_identity": {
+        "historical": "response-transform-v1-e320ccd0f0ca0fed4db7c443cbaa25e1a4757dbdc6d2a8cdb9ca1067a33f5e50",
+        "reconstructed": "response-transform-v1-6acc2eeadbf9fc48d7b43846a91d10315e577a8eda587e51622e76c52130e887"
+      },
+      "gp_diagnostics_origin": "reconstructed_current_environment",
+      "historical_gp_parameter_snapshots_available": false,
+      "latest_proposal_reconstructed": {
+        "branch": "barrier",
+        "branch_reason": "strict_interior_available",
+        "candidate_id": "proposal-candidate-v1-3143fcb85501c4d0d34683f383a5ee19e82d697c03b04bb87f1311962ea7d084",
+        "candidate_source": "refined"
+      },
+      "logical_replay_accounting": {
+        "committed_fit_events": 1,
+        "committed_observations": 16,
+        "committed_proposal_events": 1,
+        "committed_recommendation_events": 0,
+        "initial_observations": 16,
+        "planned_observations": 100,
+        "sequential_observations": 0,
+        "training_data_versions": 1
+      },
+      "physical_simulator_calls": 0,
+      "production_status": "simulator_runtime_failed",
+      "reconstructed_initial_gp_fit": {
+        "model_id": "exact-multitask-gp-v1-3c5db4b16b45c8ac4b6307ebc3f83f8e16246013b2445d62614231e837f3ccc0",
+        "status": "success",
+        "training_data_id": "surrogate-training-v1-3b53b50406f1d2742d08c89b41d7541beb10ecba237f87ff62a2ba92830e5262",
+        "training_version": 0
+      },
+      "record_pointer": "/records/0",
+      "status": "diverged",
+      "target": 0,
+      "torch_interop_threads": 1,
+      "torch_intraop_threads": 20
+    }
+  ],
+  "schema_version": "mutaco-macos-engineering-qualification-v1",
+  "truba_jobs_submitted": 0,
+  "windows_launchers_changed": false
+}

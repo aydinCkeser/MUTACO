@@ -1,0 +1,24 @@
+{
+  "automatic_retry": false,
+  "budget": 100,
+  "classification": "engineering_integration_smoke_ineligible_for_primary_performance",
+  "declaration_identity": "scalar-primary-population-declaration-v1-2ca849e742ac7742c631e16a51657b8abb0023c8e43301e0e9fe39855c6c2763",
+  "maximum_assessment_calls": 3,
+  "maximum_search_calls": 300,
+  "maximum_total_calls": 303,
+  "methods": [
+    "mutaco",
+    "scalar_qlognei",
+    "sobol"
+  ],
+  "plan_identity": "scalar-primary-prequalification-smoke-plan-v1-6a2782a3e284eebd1bfd6d250e8647a10dc51f46469fb082c63363633aa1147d",
+  "primary_benchmark_evidence_eligible": false,
+  "schema_version": "mutaco-scalar-primary-prequalification-smoke-plan-v1",
+  "scientific_calls_executed": 0,
+  "scientific_submission_authorized": false,
+  "settings_identity": "scalar-qlognei-primary-settings-v1-0f64f21df9b925a5508d90420f1179941174d300d0d38a11ac162044f3540a6d",
+  "state": "declared_unexecuted_submission_unauthorized",
+  "study_identity": "paper-study-spec-v1-f36dcfe64fe9319b3dfcc972601a722251d604577ce65c00a2a63bf6f2584f84",
+  "target_record_identity": "frozen-target-record-v2-55ef79e8c497a3d9e186553901b04d909b2de06d145b70f177968372063f8693",
+  "target_source": "first_frozen_q1_offcohort_target"
+}

@@ -1,0 +1,48 @@
+{
+  "archive_ref": "paper120-b40-complete-20260809",
+  "campaign_id": "graph_paper120_b40_mutaco_npe_v3_v1",
+  "files": [
+    {
+      "path": "executed_declaration.json",
+      "sha256": "5fb7a53565517aa1f51d3134dc6d24af2ae53b18d51c538072848085987bc3f5",
+      "size_bytes": 13706
+    },
+    {
+      "path": "executed_mutaco_configuration.json",
+      "sha256": "5e44d50a0073706dbe692bfd1c9627ee34b67791d7e32d94898c8928a44bc7bf",
+      "size_bytes": 6117
+    },
+    {
+      "path": "executed_npe_configuration.json",
+      "sha256": "11c0494594007f7c09161ba52e175a764aae2f0ef9ca23eaab196d7737f8ac4e",
+      "size_bytes": 4999
+    },
+    {
+      "path": "paired_records.jsonl",
+      "sha256": "bb02d5d525bdb64a08a37abdd417a2e444cdf04e80111b9a453ab407b42da80e",
+      "size_bytes": 651422
+    },
+    {
+      "path": "population_collection.json",
+      "sha256": "173d42532e005be813895ce119d0eca50ebd2c34346d749d4bf6d11abebb46f2",
+      "size_bytes": 14692
+    },
+    {
+      "path": "population_summary.json",
+      "sha256": "bd149820445e8209a7a291d442cc45dc7dafd31f79e0d70872b68fe9e26bd815",
+      "size_bytes": 14760
+    }
+  ],
+  "method_count": 2,
+  "paired_row_count": 120,
+  "physical_calls": {
+    "attempted": 9840,
+    "failed": 0,
+    "retry": 0,
+    "successful": 9840
+  },
+  "schema_version": "mutaco-paper120-compact-evidence-v1",
+  "scientific_calls_added_by_compaction": 0,
+  "scientific_source_commit": "9235d2fefefa6af0d35cc3af2dfaa01a2d56a3a9",
+  "target_count": 120
+}

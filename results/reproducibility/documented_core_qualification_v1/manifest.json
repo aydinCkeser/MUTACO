@@ -1,0 +1,350 @@
+{
+  "GitHub_pushes": 0,
+  "candidate_substitution": false,
+  "cases": {
+    "B100": {
+      "ambient_rng_preserved": true,
+      "budget": 100,
+      "checkpoints": {
+        "artifacts_self_consistent": true,
+        "baseline_scientific_hash": "06338d126708d62fdb3967db3d1603eb1529270ec4c6704322b621cd6b4fa150",
+        "comparison_scientific_hash": "06338d126708d62fdb3967db3d1603eb1529270ec4c6704322b621cd6b4fa150",
+        "environment_comparison_schema": "runtime-library-set-v2",
+        "physical_backend_attempts": [
+          0,
+          0
+        ],
+        "runtime_enumeration_order_only_difference": false,
+        "same_environment": true,
+        "scientific_exact_equal": true,
+        "tolerances": "none; exact operation-preserving reference"
+      },
+      "fit_events": {
+        "candidate_origin": "observed candidate events during strict replay",
+        "event_boundaries_preserved": true,
+        "events_exact_equal": true,
+        "excluded": "existing predeclared elapsed_seconds fields only; actual historical times unavailable",
+        "expected_event_count": 170,
+        "expected_origin": "reconstructed from saved original fit records and baseline emitter; not archived historical event logs",
+        "expected_sha256": "dec05ec3d128fcafe0e60ff5299119fa9baccb910d19759210fdadb8db2fc6c1",
+        "first_difference": null,
+        "observed_event_count": 170,
+        "observed_sha256": "dec05ec3d128fcafe0e60ff5299119fa9baccb910d19759210fdadb8db2fc6c1"
+      },
+      "history": {
+        "baseline_gate_passed": true,
+        "baseline_sha256": "c97b62ec714905ff97037561aad8ac3aef638abf9e189a926d6306844d3854c2",
+        "candidate_gate_passed": true,
+        "candidate_sha256": "c97b62ec714905ff97037561aad8ac3aef638abf9e189a926d6306844d3854c2",
+        "excluded": "unchanged predeclared timers and execution provenance only",
+        "first_difference": null,
+        "scientific_exact_equal": true,
+        "tolerances": "none"
+      },
+      "logical_accounting": {
+        "committed_fit_events": 85,
+        "committed_observations": 100,
+        "committed_proposal_events": 84,
+        "committed_recommendation_events": 1,
+        "initial_observations": 16,
+        "planned_observations": 100,
+        "sequential_observations": 84,
+        "training_data_versions": 85
+      },
+      "observations_consumed": 100,
+      "physical_simulator_calls": 0,
+      "record_pointer": "/records/0",
+      "target": 0
+    },
+    "B40": {
+      "ambient_rng_preserved": true,
+      "budget": 40,
+      "checkpoints": {
+        "artifacts_self_consistent": true,
+        "baseline_scientific_hash": "12251e746d4c39f2f028651f766c96a6723dc39cb63d5cd484ad661b9cf3001c",
+        "comparison_scientific_hash": "12251e746d4c39f2f028651f766c96a6723dc39cb63d5cd484ad661b9cf3001c",
+        "environment_comparison_schema": "runtime-library-set-v2",
+        "physical_backend_attempts": [
+          0,
+          0
+        ],
+        "runtime_enumeration_order_only_difference": true,
+        "same_environment": true,
+        "scientific_exact_equal": true,
+        "tolerances": "none; exact operation-preserving reference"
+      },
+      "fit_events": {
+        "candidate_origin": "observed candidate events during strict replay",
+        "event_boundaries_preserved": true,
+        "events_exact_equal": true,
+        "excluded": "existing predeclared elapsed_seconds fields only; actual historical times unavailable",
+        "expected_event_count": 50,
+        "expected_origin": "reconstructed from saved original fit records and baseline emitter; not archived historical event logs",
+        "expected_sha256": "67bd5af0372b120cdd00ca7d8616e4c1f21378096538708a664dc7be0bc8760d",
+        "first_difference": null,
+        "observed_event_count": 50,
+        "observed_sha256": "67bd5af0372b120cdd00ca7d8616e4c1f21378096538708a664dc7be0bc8760d"
+      },
+      "history": {
+        "baseline_gate_passed": true,
+        "baseline_sha256": "687433605adebeb928b081c616e7d603267d71faebb3cfa061a6c730865ec782",
+        "candidate_gate_passed": true,
+        "candidate_sha256": "687433605adebeb928b081c616e7d603267d71faebb3cfa061a6c730865ec782",
+        "excluded": "unchanged predeclared timers and execution provenance only",
+        "first_difference": null,
+        "scientific_exact_equal": true,
+        "tolerances": "none"
+      },
+      "logical_accounting": {
+        "committed_fit_events": 25,
+        "committed_observations": 40,
+        "committed_proposal_events": 24,
+        "committed_recommendation_events": 1,
+        "initial_observations": 16,
+        "planned_observations": 40,
+        "sequential_observations": 24,
+        "training_data_versions": 25
+      },
+      "observations_consumed": 40,
+      "physical_simulator_calls": 0,
+      "record_pointer": "/records/48",
+      "target": 16
+    }
+  },
+  "documentation_revision": {
+    "annotations_and_imports_changed": false,
+    "changed_executable_scientific_logic": false,
+    "changed_source_bytes": 8,
+    "independent_normalized_compiled_operations_and_AST_equal": true,
+    "path": "benchmarks/reproducibility/scientific_core_documentation_v1/manifest.json",
+    "reviewed_docstrings": "GP objective/initialization/recovery and terminal delegation match current implementation; existing manuscript-policy questions remain separate",
+    "runtime_symbols_exact_equal": 194,
+    "sha256": "7b18aee0591068f899234b1b36c874c40ec4ca1f8ffdbcdbf414f8c754e66723"
+  },
+  "environment_summary": {
+    "architecture": "x86_64",
+    "cpu_model": "Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz",
+    "device": "cpu",
+    "fit_dtype": "torch.float32",
+    "libraries": [
+      {
+        "architecture": "SkylakeX",
+        "internal_api": "openblas",
+        "num_threads": 20,
+        "prefix": "libscipy_openblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.31.188.0"
+      },
+      {
+        "architecture": "SkylakeX",
+        "internal_api": "openblas",
+        "num_threads": 20,
+        "prefix": "libscipy_openblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.30"
+      },
+      {
+        "internal_api": "openmp",
+        "num_threads": 20,
+        "prefix": "libgomp",
+        "user_api": "openmp",
+        "version": null
+      }
+    ],
+    "packages": {
+      "botorch": "0.18.1",
+      "gpytorch": "1.15.2",
+      "linear_operator": "0.6.1",
+      "numpy": "2.4.6",
+      "pytest": "9.1.1",
+      "sbi": null,
+      "scipy": "1.17.1",
+      "threadpoolctl": "3.7.0",
+      "torch": "2.12.1+cpu"
+    },
+    "posterior_covariance_policy": "float32_fit_float64_covariance",
+    "python": "3.11.17",
+    "role": "derived backend summary; strict environment verification requires private raw packets",
+    "thread_environment": {
+      "MKL_NUM_THREADS": null,
+      "NUMEXPR_NUM_THREADS": null,
+      "OMP_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null,
+      "VECLIB_MAXIMUM_THREADS": null
+    },
+    "torch_interop_threads": 1,
+    "torch_intraop_threads": 20
+  },
+  "external_submission_approved": false,
+  "historical_source_hashes": {
+    "count": 47,
+    "path": "benchmarks/reproducibility/gp_optimizer_diagnostics_v1/manifest.json",
+    "rewritten": false,
+    "sha256": "ff350a032e80c9c87f1d2eccfa126b0b796c1a1381acfa5c3d037086a408e109",
+    "verified_against_original_source_commit": "4f563439a6d4445a11d97cd6d81ba784267f729d"
+  },
+  "integrity": {
+    "all_original_tracked_files_unchanged_during_numerical_validation": true,
+    "archive_members_verified": 8,
+    "existing_portable_checksum_entries_verified": 63,
+    "new_documented_source_hashes_verified": 8,
+    "original_figure_array_files_unchanged": 21,
+    "original_qualified_core_hashes_verified": 47,
+    "other_core_hashes_unchanged": 39,
+    "scientific_data_figures_archives_and_source_policies_changed": false
+  },
+  "original_baseline_reexecuted": false,
+  "original_scientific_baseline": "aa7f4feb58302ecf6abfa6dee2d81071eabb7fe3",
+  "physical_backend_attempts": 0,
+  "physical_simulator_calls": 0,
+  "previous_qualified_scientific_source": "4f563439a6d4445a11d97cd6d81ba784267f729d",
+  "qualified_core_files_sha256": {
+    "src/mutaco/__init__.py": "3166db470c3d6588d61828779ea6a53dcd223a28f7b3f93d55b826a9646ac72b",
+    "src/mutaco/acquisition/__init__.py": "d826b11cebd52309d6b5ed90a0d336ba90c5538dd64e4461a23230218cfd4609",
+    "src/mutaco/acquisition/geometry.py": "c1d588e261838522beb36ebe9481667d30d676d0ef203ca7f57f5a79dc00c434",
+    "src/mutaco/acquisition/nei.py": "439f337eb471106abb64de88c1e3ef50d5cd24dc8ceaba90413684b3c8d844c5",
+    "src/mutaco/acquisition/objectives.py": "23b12faab983b2c2edba6898aa4152beddab601e56ecabf9dcfa184908dad9e4",
+    "src/mutaco/acquisition/proposal.py": "622c6b9c38726e6c7f1e8fe53f31b4a237c0c31bbbd714f01a26f8bd8fd8e54a",
+    "src/mutaco/api.py": "54fd90f046aa62b9686dcd1c1b87c8d24e2e4489499e342ca8d143f6fc29cf0b",
+    "src/mutaco/artifacts/__init__.py": "cf2503a40d00308a671dad7d9d63e4c5abb5a67a6210f0d6e1e2b35ba167c5e9",
+    "src/mutaco/artifacts/schemas.py": "bc9ec3c13dd6d0e8628cab2d6d810c2df280478203eda5a1de328ff662f3534e",
+    "src/mutaco/atomic_io.py": "13dd7f331e8d3ea6de0a8129169f5aca8034a989baabc4eb0427900750e226e3",
+    "src/mutaco/design/__init__.py": "fc35585cb1d442858b34c8c4580c3a4f015aafdd04d3de284f6068fd81f915ca",
+    "src/mutaco/design/initial.py": "3f7b8d4c6258232d5dab12ecda9ac450d4a8cbafb07bd50eca611d2dd34e5c97",
+    "src/mutaco/diagnostics/__init__.py": "9ed12da3bf36c6724eaacd98a541e7d8fad1268f87c5be47f8224cbcd5b91054",
+    "src/mutaco/diagnostics/policies.py": "075cfb8c4b7780232c3fedd7f11b01030a0daba46809c23ddebf24fe1ac9643a",
+    "src/mutaco/identity/__init__.py": "41306dc0c3269da22b4bb10900a004718cc1aef5af26166db933de8fc43c2da1",
+    "src/mutaco/identity/canonical.py": "a973478a6866762d78c8b9f7139048871189ab41426297d1b1a79a7ab6718b44",
+    "src/mutaco/identity/metadata.py": "86db6819eaf988287d0c8cf0e53716b9470cb2ddf4604b90ccec00ff052fa383",
+    "src/mutaco/identity/sequential.py": "6ac227d59c0743fe53ebf04bcfcd8550bc5d573e421b96075ca7ff49dae584cc",
+    "src/mutaco/observability/__init__.py": "abd4d956051d5a34a55cbada0c24f5e8c3673da474c7648032be9d3a6bbe479e",
+    "src/mutaco/observability/monitoring.py": "eb6203ff4127acdfb713b7ca93c59b03538037d3cf77c0620e72f05079dca7ee",
+    "src/mutaco/orchestration/__init__.py": "f7eb20470a05d3353927405f491861aa2b00e7d7ab33991aec80da43fff6b9a4",
+    "src/mutaco/orchestration/runner.py": "be067e0712226a2c1c0fd1d1155f61ca67353d37524501224aecab09e31b30a6",
+    "src/mutaco/policies/__init__.py": "5356767ea1f01562d16936867fb7ac28a281f1ddfba46c2aaeba66c330dafbba",
+    "src/mutaco/policies/registry.py": "820c22244791f8a149b9a8c3c43de950dea1e6d20be4d3ed451c3a91cb559d37",
+    "src/mutaco/policies/surface.py": "29a9249ddb3587791909fdc6cc1a53a1f7cc35f1c56faaa23601637e5c2f152e",
+    "src/mutaco/posterior/__init__.py": "2a5f02bc24b2c3525c4f6e2994fda36bb2e9673845708bec603b862e42587718",
+    "src/mutaco/posterior/summary.py": "90e282d4d479f1351753db0f6a4aeb0b77fa4c5710a9884859b30c28d45464d4",
+    "src/mutaco/py.typed": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src/mutaco/randomness/__init__.py": "573c7aac6804104d0e0abab9676c6c49f3ecd86fa30f595501dbfd7b6f6879e0",
+    "src/mutaco/randomness/seeds.py": "80da64ee60d5f0261fe8ec42eec14fb070595dcf2a5574955e87055d3337064b",
+    "src/mutaco/recommendation/__init__.py": "7b6d67990efdd9b0a8e68becef1fa8bc7bcf4ba4ea253fa03fb73729050e6578",
+    "src/mutaco/recommendation/_continuous.py": "42c8c174c96ea4fe3014f9f759fce7c4a49db0bdcfb2d0e408cfb37389f57f75",
+    "src/mutaco/recommendation/observed_physical_mae.py": "cc20346cdb542cadfb3e938110db29c73685803826afedad1ae0830087e09a14",
+    "src/mutaco/recommendation/physical_l2.py": "af779aec90ba3c413fb714e355ebf5d78e3a324face7a3fe324ee9add9e17aa2",
+    "src/mutaco/recommendation/physical_mae.py": "96c8b63610acaa3208d506da8be717d1e9710237c638c25a98f7060d7666cde7",
+    "src/mutaco/recommendation/policies.py": "894d074f3805d761c63810fa49bb11dcc8b0855ec954e38792a5a5a4df1c4d07",
+    "src/mutaco/response/__init__.py": "fc61678a58bfeac0e833606fd00635bf9684dcd56643050860a980372671e486",
+    "src/mutaco/response/transform.py": "99a57a332ad0203a71b356db92abaa43a65147f88685de03f6d6a057dab5f476",
+    "src/mutaco/runtime/__init__.py": "5bf5c4da0058f47c2bbfb1afa8292002c619a5f1a67ad87ba44b71ae81eb6171",
+    "src/mutaco/runtime/parallelism.py": "a56b75eeed998b62cecedbb2e690df2e51d68428f057cef179500ed09c2f5d58",
+    "src/mutaco/runtime/resolution.py": "bcad51846057f162d40e698eed52bbcd0856b05eb8cbd38d56f86446755a0b0e",
+    "src/mutaco/simulator/__init__.py": "0d010a341994f908af5436ea7e14f74115593ccabd77cc90b4be28c805d2ffd4",
+    "src/mutaco/simulator/protocol.py": "ed07c75b881df3d29c353e3e5bd8e21c3823c06313b1773f9885bd76afad4ada",
+    "src/mutaco/surrogate/__init__.py": "6d61d40e2472246a4e2dcb7b8eb544442ae3366407b6205e2ecaf0f12929a1e8",
+    "src/mutaco/surrogate/exact_multitask.py": "d93dd6ef57df12200b441acf8fd88bc37b15f6ee93304968bc7fe44e83c5f537",
+    "src/mutaco/types/__init__.py": "87d27a4cce29b08680a783a6c4107ac5189fcd76783a84c233527f83056c6859",
+    "src/mutaco/types/specifications.py": "cbbbbd372833b5df90c4b7efa542ae3da171ea9b5b213ca2f719343e3e6f9640"
+  },
+  "qualified_scientific_source_commit": "35ef82dba2160dfb3f709854b0e11c3956744c31",
+  "qualified_source_tree": "0c372c86ef19909e568b378387b627aa8216503b",
+  "raw_evidence": {
+    "files_sealed": 72,
+    "independent_postcollection_comparisons_passed": true,
+    "inventory_SHA256SUMS_sha256": "e1e69a36f7af0b705a8448d7c42dbbdb0d2f3eb2266e8fbd894e90e356ad096e",
+    "original_reference_files_reused_without_duplication": true,
+    "outside_Git": true,
+    "source_delta_bundle_base": "242fac08c1c3dc0041651a731c20ed228969ed6a",
+    "summary_is_derived_not_byte_identical_to_raw": true
+  },
+  "references_regenerated_or_overwritten": false,
+  "resources": {
+    "GPUs": 0,
+    "allocated_cpus": 20,
+    "automatic_resubmission": false,
+    "elapsed_seconds": 416,
+    "exit_code": "0:0",
+    "future_memory_allocation_requires_review": false,
+    "interpretation": "Scheduler figures retained.",
+    "job_id": 6925290,
+    "jobs_submitted": 1,
+    "maximum_minutes": 20,
+    "nodes": 1,
+    "partition": "debug",
+    "reported_batch_MaxRSS": "12198024K",
+    "reported_peak_exceeds_request": false,
+    "reported_peak_rss_gib": 11.632942199707031,
+    "reported_peak_rss_kib": 12198024,
+    "requested_memory": "20G",
+    "requested_memory_GiB": 20,
+    "state": "COMPLETED",
+    "tasks": 1
+  },
+  "schema": "mutaco-documented-core-qualification-v1",
+  "scientific_comparison_contract": "scientific/refactor_validation/README.md",
+  "scientific_job_verdict": {
+    "execution_exit": 0,
+    "last_stage": "completed",
+    "original_baseline_reexecuted": false,
+    "physical_simulator_calls_authorized": 0,
+    "scientific_exit": 0,
+    "scientific_gate_passed": true
+  },
+  "scope_limits": [
+    "two named MUTACO historical trajectories, not all experiment programs",
+    "SBI-specific training and physical simulator kernels are not qualified by B40/B100",
+    "no GPU/MPS or macOS bitwise historical equivalence claim",
+    "independent fresh-machine Linux/Windows installation and historical TeX rendering remain unqualified",
+    "GP checkpoint/event references are reconstructed, not unavailable original campaign optimizer states",
+    "MAP-type fitting wording, terminal-policy/global-best-raw questions and GP diagnostic shadowing remain separate researcher decisions"
+  ],
+  "status": "passed_qualified_scientific_suite_and_exact_B40_B100",
+  "test_identity_reference": {
+    "identities": 531,
+    "path": "benchmarks/reproducibility/final_qualified_validation_v1/test-selection.json",
+    "role": "unchanged accepted identities; full raw names retained privately, four parameter display labels redacted in the portable reference",
+    "sha256": "51bbcbd564989b85a5eaf34a16a883dd8a7e3f1ef393cf91709f4c65db973613"
+  },
+  "tests": {
+    "added_passed_cases": 0,
+    "changed_accepted_cases": [],
+    "counts": {
+      "error": 0,
+      "failure": 0,
+      "passed": 523,
+      "skipped": 8
+    },
+    "declared_NEI_correction": false,
+    "deselected": 0,
+    "identities": 531,
+    "known_NEI_failure_present": false,
+    "physical_backend_attempts": 0,
+    "pytest_exit": 0,
+    "required_singular_cases": [
+      [
+        "tests.acquisition.test_nei",
+        "test_baseline_factorization_rejects_exactly_singular_covariance[dtype0]"
+      ],
+      [
+        "tests.acquisition.test_nei",
+        "test_baseline_factorization_rejects_exactly_singular_covariance[dtype1]"
+      ]
+    ],
+    "same_eight_skipped_cases": true,
+    "same_identities_and_order": true,
+    "test_expectation_revision": "corrected-nei-fixture-v2",
+    "test_gate_passed": true
+  },
+  "tolerances_changed": false,
+  "unchanged_drivers_sha256": {
+    "full-tests.py": "914b414219edda3c318582c3c615b25a2411dbc6173e3bb35d79b68389b9bb8b",
+    "validation-job.sh": "c4448a0b184a03b617e271bea037d8c52bbaa80247a0fc8e11d1fc916a5829d4"
+  },
+  "unchanged_input_profile": {
+    "path": "infrastructure/truba/gp_optimizer_diagnostics_reference_inputs_v2.json",
+    "sha256": "d06a525f5621e8290f37decd87a1f0d589201536dd1a51d0dd3396badcf37061"
+  }
+}

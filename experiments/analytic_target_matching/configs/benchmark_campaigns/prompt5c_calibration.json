@@ -1,0 +1,114 @@
+{
+  "schema_version": "mutaco-benchmark-campaign-v1",
+  "campaign_classification": "final_setting_calibration",
+  "dtype": "float32",
+  "device": "auto",
+  "simulator_profile": "noisy_default",
+  "campaign": {
+    "target_count": 100,
+    "target_bank_policy": "scrambled_sobol",
+    "campaign_seed": 60101,
+    "replay_policy": "first_middle_last"
+  },
+  "simulator": {
+    "adapter": "handwritten_analytic",
+    "identifier": "handwritten",
+    "noise_mode": "task_diagonal_gaussian",
+    "noise_std": [0.04, 0.06, 0.05]
+  },
+  "comparison_set": {
+    "policy": "explicit_indices",
+    "indices": [0, 49, 99]
+  },
+  "reference_method": "mutaco",
+  "sbi_methods": [
+    "sbi_npe",
+    "sbi_nle",
+    "sbi_snle",
+    "sbi_nre",
+    "sbi_snre"
+  ],
+  "views": ["cold_start_per_target"],
+  "regimes": ["equal_simulator_calls"],
+  "process_policy": "fresh_method_process",
+  "simulation_budget_per_target": 14,
+  "runner": {
+    "initial_points": 8,
+    "sequential_rounds": 6,
+    "transform": {
+      "ddof": 1,
+      "scale_floor": 1e-12
+    },
+    "gp": {
+      "likelihood": "task_diagonal_gaussian",
+      "max_iterations": 12
+    },
+    "acquisition": {
+      "raw_policy": "scrambled_sobol",
+      "raw_samples": 64,
+      "restarts": 4,
+      "max_iterations": 8,
+      "learning_rate": 0.05,
+      "alpha": 0.1,
+      "tau_interior": 1e-8
+    },
+    "recommendation_policy": "final_posterior_standardized_l1"
+  },
+  "sbi": {
+    "density_estimator": "maf",
+    "classifier": "mlp",
+    "training_batch_size": 14,
+    "learning_rate": 0.0005,
+    "validation_fraction": 0.2,
+    "snre_validation_fraction": 0.4,
+    "stop_after_epochs": 20,
+    "max_num_epochs": 200,
+    "posterior_samples": 10000,
+    "show_progress_bars": false,
+    "mcmc": {
+      "method": "slice_np_vectorized",
+      "num_chains": 20,
+      "warmup_steps": 100,
+      "thin": 1,
+      "init_strategy": "proposal",
+      "fallback_policy": "none"
+    }
+  },
+  "calibration": {
+    "global_deadline_seconds": 1800.0,
+    "target_deadline_seconds": 600.0,
+    "poll_interval_seconds": 0.1,
+    "progress_interval_seconds": 10.0,
+    "termination_grace_seconds": 2.0,
+    "projection_target_counts": [10, 20, 40, 100],
+    "projection_concurrency_levels": [1, 2, 4],
+    "target_method_orders": {
+      "0": [
+        "mutaco",
+        "sbi_npe",
+        "sbi_nle",
+        "sbi_snle",
+        "sbi_nre",
+        "sbi_snre"
+      ],
+      "49": [
+        "mutaco",
+        "sbi_nre",
+        "sbi_snre",
+        "sbi_npe",
+        "sbi_nle",
+        "sbi_snle"
+      ],
+      "99": [
+        "mutaco",
+        "sbi_snle",
+        "sbi_nle",
+        "sbi_snre",
+        "sbi_npe",
+        "sbi_nre"
+      ]
+    },
+    "amortized_reuse_policy": "reuse_completed_cold_simulations_only",
+    "extra_simulator_calls_for_amortized": 0
+  }
+}

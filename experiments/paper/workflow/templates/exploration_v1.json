@@ -1,0 +1,14 @@
+{
+  "schema_version": "mutaco-paper-exploration-spec-v1",
+  "workspace_id": "replace-with-exploration-id",
+  "classification": "exploratory_non_paper",
+  "promotion_status": "not_promoted",
+  "scientific_execution_authorized": false,
+  "inputs": [],
+  "questions": [],
+  "outputs": {
+    "work_root": "experiments/paper/exploration/work/replace-with-exploration-id",
+    "output_root": "experiments/paper/exploration/outputs/replace-with-exploration-id"
+  },
+  "exploration_identity": "paper-exploration-spec-v1-ee5b15c7dfb18302a26e9eee0a8311c8c27e811c3e34d1cc3db9c0831c95dc61"
+}

@@ -1,0 +1,145 @@
+{
+  "bounds": [
+    [
+      0.5,
+      0.5,
+      0.5,
+      0.0
+    ],
+    [
+      2.0,
+      2.0,
+      2.0,
+      1.0
+    ]
+  ],
+  "campaign_seed": 92020814,
+  "classification": "frozen_hidden_theta_declaration_no_responses",
+  "cohort_id": "graph_primary_nei_q1_offcohort_v1",
+  "declaration_hash": "hidden-theta-cohort-v2-e9208cdb8056245dc6df5540c327029917e4600b512e9084b1f6998a772ad142",
+  "execution_authorized": false,
+  "parameter_names": [
+    "weight_mean",
+    "pairwise_coupling_mean",
+    "bias_scale_mean",
+    "pairwise_coupling_CV"
+  ],
+  "parameter_profile": "p4-paper-baseline",
+  "records": [
+    {
+      "sobol_index": 0,
+      "target_generation_seed": 1250859985208822526,
+      "target_identity": "hidden-theta-target-v2-f9914faa0b242d5e468969c9fb2ebdcbef7c9eb0f1cc98fcc66a864d94b80c56",
+      "target_index": 0,
+      "target_seed_coordinate": {
+        "coordinates": [
+          0
+        ],
+        "namespace": "graph_primary_nei_q1_offcohort_target_response"
+      },
+      "theta_star": [
+        1.215800166130066,
+        0.7782629132270813,
+        1.985019564628601,
+        0.48838233947753906
+      ]
+    },
+    {
+      "sobol_index": 1,
+      "target_generation_seed": 7017319065161604654,
+      "target_identity": "hidden-theta-target-v2-d2f7baa9dd151ae0587e6aab7b7a61de61c94df7cb4e22143c02d112785b9128",
+      "target_index": 1,
+      "target_seed_coordinate": {
+        "coordinates": [
+          1
+        ],
+        "namespace": "graph_primary_nei_q1_offcohort_target_response"
+      },
+      "theta_star": [
+        1.5125747919082642,
+        1.9969706535339355,
+        0.7128204107284546,
+        0.5349377989768982
+      ]
+    },
+    {
+      "sobol_index": 2,
+      "target_generation_seed": 2921877692443398995,
+      "target_identity": "hidden-theta-target-v2-087a032707f4e78ed0928da06927f2e53b791498df9ff5d1ce18ad39475c86e8",
+      "target_index": 2,
+      "target_seed_coordinate": {
+        "coordinates": [
+          2
+        ],
+        "namespace": "graph_primary_nei_q1_offcohort_target_response"
+      },
+      "theta_star": [
+        1.692301630973816,
+        1.0964360237121582,
+        1.4641778469085693,
+        0.11208382993936539
+      ]
+    },
+    {
+      "sobol_index": 3,
+      "target_generation_seed": 6454622678775236098,
+      "target_identity": "hidden-theta-target-v2-517d2852740353a21e49568c3f3e97ae8da5c0f301ba215038c00b575298a787",
+      "target_index": 3,
+      "target_seed_coordinate": {
+        "coordinates": [
+          3
+        ],
+        "namespace": "graph_primary_nei_q1_offcohort_target_response"
+      },
+      "theta_star": [
+        0.6729813814163208,
+        1.565225601196289,
+        1.2364200353622437,
+        0.9112352132797241
+      ]
+    },
+    {
+      "sobol_index": 4,
+      "target_generation_seed": 6947779913753144533,
+      "target_identity": "hidden-theta-target-v2-31e8e37c993ad77c043060037afae71b7256242852b62232c80eecd477c68d2b",
+      "target_index": 4,
+      "target_seed_coordinate": {
+        "coordinates": [
+          4
+        ],
+        "namespace": "graph_primary_nei_q1_offcohort_target_response"
+      },
+      "theta_star": [
+        0.7251824140548706,
+        0.8876991271972656,
+        0.5023767352104187,
+        0.7637516260147095
+      ]
+    }
+  ],
+  "schema_version": "mutaco-hidden-theta-cohort-declaration-v2",
+  "simulator_adapter": "graph_scientific_d4",
+  "simulator_configuration_identity": "graph-target-simulator-configuration-v1-ff70b08584d86189e7464b20602142d9faeca01f588c0d691de6cdf2c7568a08",
+  "simulator_configuration_sha256": "2614cdae3f2eb40ff1a0f0ee473056f05c8284d3ab59e2f159969ed1cc704a8a",
+  "simulator_definition_id": "graph-oscillator.overdamped-scientific.v1",
+  "sobol_seed": 3303544595968137634,
+  "sobol_seed_coordinate": {
+    "coordinates": [
+      "scrambled_sobol"
+    ],
+    "namespace": "target_bank"
+  },
+  "target_bank": {
+    "device": "cpu",
+    "dimension": 4,
+    "dtype": "float32",
+    "indexing": "ordered_contiguous_zero_based_after_skip",
+    "mapping": "lower_plus_upper_minus_lower_times_unit_sobol",
+    "policy": "scrambled_sobol_explicit_index_v1",
+    "scramble": true,
+    "skip": 0
+  },
+  "target_count": 5,
+  "target_family_id": "scientific-v1-e33173decdc72bab62b4ff3edd6a4aedc79b7bda79859b95b86c3c414a9051bc",
+  "target_seed_namespace": "graph_primary_nei_q1_offcohort_target_response"
+}

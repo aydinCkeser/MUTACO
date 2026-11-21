@@ -1,0 +1,98 @@
+{
+  "schema_version": "mutaco-scalar-primary-population-preparation-v1",
+  "evidence_identity": "scalar-primary-population-preparation-v1-8e11c2883b930abb810736d2571b43d8f0122f4cbc42a111a0a3969ee1ae4534",
+  "status": "complete_zero_call_unsubmitted",
+  "source_commit": "5d84483f19df61aa587e79675e1ab2ab7e8899c3",
+  "study_identity": "paper-study-spec-v1-f36dcfe64fe9319b3dfcc972601a722251d604577ce65c00a2a63bf6f2584f84",
+  "cohort": {
+    "manifest": "data/cohorts/paper120_v3/manifest.json",
+    "manifest_sha256": "359fc0bb59fc9a8a52f5da684e7a7eb352466bdc0d0a54fb8efa94131ce423bb",
+    "declaration_hash": "hidden-theta-cohort-v2-da66373467f7cc3eecf5600bb38ef9d845c0c5a40d33c04247be72687bc38c46",
+    "target_count": 120,
+    "target_hashes_verified": 120,
+    "target_identities_unique": true,
+    "target_positions_exact": true,
+    "same_targets_across_budgets": true
+  },
+  "methods": ["mutaco", "scalar_qlognei", "sobol"],
+  "settings_identity": "scalar-qlognei-primary-settings-v1-0f64f21df9b925a5508d90420f1179941174d300d0d38a11ac162044f3540a6d",
+  "fallback_provenance": {
+    "required": true,
+    "implementation_sha256": "7902560a253003a2bfc3f8dd03d4eb8d92db8c42cf8f13f77850277aa73dc9f1",
+    "policy_changed": false
+  },
+  "campaigns": {
+    "b40": {
+      "declaration": "experiments/graph_inversion/configs/paper/scalar_primary_population_b40_v1.json",
+      "declaration_sha256": "4819dabcdfa6a21feb52ef1e908fb3c28c6be0e9e99ba7af74e19020b9e7dad7",
+      "declaration_identity": "scalar-primary-population-declaration-v1-f1d506212a4b67eeb8de0282110b2089281c3d4618ebc0e5af4b8b9af2ef9583",
+      "plan": "experiments/graph_inversion/configs/paper/scalar_primary_population_b40_plan_v1.json",
+      "plan_sha256": "876ee472ae37c59647c70f3cab30a89f217832b4a2c66c29d6dc9308706296c0",
+      "plan_identity": "scalar-primary-population-plan-v1-c4c4a7d60044e7367d1ed56551e853075f07e838a48f7be15e0b938ccfc21efa",
+      "profile": "infrastructure/truba/scalar_primary_population_b40_v1.env",
+      "profile_sha256": "4c4846c727c21ea535046fd59e8f31e48ada11259039886d49c6e43b6229ec14",
+      "budget": 40,
+      "maximum_search_calls": 14400,
+      "maximum_assessment_calls": 360,
+      "maximum_total_calls": 14760,
+      "maximum_calls_per_worker": 123
+    },
+    "b100": {
+      "declaration": "experiments/graph_inversion/configs/paper/scalar_primary_population_b100_v1.json",
+      "declaration_sha256": "053eead847b6b71a87767ec17e3b7045ddb7aedecdb3b8971e26fd4ac3b6561f",
+      "declaration_identity": "scalar-primary-population-declaration-v1-4a81a053315508671b3439737573a0af019a9ecf076c65a2127c0ef3c62974b5",
+      "plan": "experiments/graph_inversion/configs/paper/scalar_primary_population_b100_plan_v1.json",
+      "plan_sha256": "d46227c43d07e0d2aee31cee2b52f46ccfac5b3bb640d9200903f36f837e5129",
+      "plan_identity": "scalar-primary-population-plan-v1-b29f9e474df69792ecefe86206372a9bdfd66fd33fc4db0474b04fe1afa02d6c",
+      "profile": "infrastructure/truba/scalar_primary_population_b100_v1.env",
+      "profile_sha256": "4ee1304b9e1b975ce762f07a90f43cdc835b71a277825161e1361c72ab66aad6",
+      "budget": 100,
+      "maximum_search_calls": 36000,
+      "maximum_assessment_calls": 360,
+      "maximum_total_calls": 36360,
+      "maximum_calls_per_worker": 303
+    }
+  },
+  "scheduler": {
+    "kind": "slurm_array",
+    "workers_per_budget": 120,
+    "targets_per_worker": 1,
+    "array_indices": "0-119",
+    "maximum_concurrent_nodes": 120,
+    "cpus_per_task": 20,
+    "exclusive_node_per_task": true,
+    "worker_packing": false,
+    "automatic_retry": false,
+    "slurm_requeue": false,
+    "collector_dependency": "afterany",
+    "failed_attempt_evidence_collected": true
+  },
+  "implementation": {
+    "preparation": "experiments/graph_inversion/prepare_scalar_primary_population.py",
+    "preparation_sha256": "c29aba267a8dd8472d0055b739b371c63325a6c399d4c4fcf79ec0c8fc0ea212",
+    "worker": "experiments/graph_inversion/run_primary_integration_smoke_worker.py",
+    "worker_sha256": "7c85ecb3e2e03e9086ee0876ad59147a0c33b2b8f3a406d526909e8e92008dae",
+    "submission_surface": "infrastructure/truba/submit_scalar_primary_population.sh",
+    "submission_surface_sha256": "12f51a388a60b75f75747a99d0c1ec5a9fa9e00dbcf37fda0ab957ef207143ae"
+  },
+  "validation": {
+    "b40_all_120_shards_validated": true,
+    "b100_all_120_shards_validated": true,
+    "one_target_per_shard": true,
+    "declarations_reproduced_exactly": true,
+    "sidecar_hashes_verified": true,
+    "full_suite": "462_passed_8_skipped",
+    "focused_after_scheduler_finalization": "13_passed",
+    "scientific_calls": 0,
+    "jobs_submitted": 0,
+    "source_transfers": 0,
+    "remote_directories_created": 0
+  },
+  "authorization": {
+    "exact_source_preparation_authorized": false,
+    "source_transfer_authorized": false,
+    "b40_submission_authorized": false,
+    "b100_submission_authorized": false,
+    "population_execution_authorized": false
+  }
+}

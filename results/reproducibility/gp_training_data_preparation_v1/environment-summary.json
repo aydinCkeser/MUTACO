@@ -1,0 +1,61 @@
+{
+  "byte_identical_to_raw": false,
+  "derived": true,
+  "environment": {
+    "architecture": "x86_64",
+    "cpu_model": "Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz",
+    "device": "cpu",
+    "fit_dtype": "torch.float32",
+    "libraries": [
+      {
+        "internal_api": "openmp",
+        "num_threads": 20,
+        "prefix": "libgomp",
+        "user_api": "openmp",
+        "version": null
+      },
+      {
+        "architecture": "SkylakeX",
+        "internal_api": "openblas",
+        "num_threads": 20,
+        "prefix": "libscipy_openblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.30"
+      },
+      {
+        "architecture": "SkylakeX",
+        "internal_api": "openblas",
+        "num_threads": 20,
+        "prefix": "libscipy_openblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.31.188.0"
+      }
+    ],
+    "packages": {
+      "botorch": "0.18.1",
+      "gpytorch": "1.15.2",
+      "linear_operator": "0.6.1",
+      "numpy": "2.4.6",
+      "pytest": "9.1.1",
+      "sbi": null,
+      "scipy": "1.17.1",
+      "threadpoolctl": "3.7.0",
+      "torch": "2.12.1+cpu"
+    },
+    "posterior_covariance_policy": "float32_fit_float64_covariance",
+    "python": "3.11.17",
+    "role": "derived backend summary; strict environment verification requires private raw packets",
+    "thread_environment": {
+      "MKL_NUM_THREADS": null,
+      "NUMEXPR_NUM_THREADS": null,
+      "OMP_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null,
+      "VECLIB_MAXIMUM_THREADS": null
+    },
+    "torch_interop_threads": 1,
+    "torch_intraop_threads": 20
+  },
+  "not_a_raw_acceptance_packet": true
+}

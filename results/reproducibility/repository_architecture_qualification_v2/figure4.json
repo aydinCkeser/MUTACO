@@ -1,0 +1,80 @@
+{
+  "different": [
+    {
+      "budget": "100",
+      "method": "mutaco",
+      "target": 64,
+      "linux": 0.37831840457340626,
+      "fixture_platform": 0.3783184045734062,
+      "ulps": 1.0
+    },
+    {
+      "budget": "100",
+      "method": "scalar_qlognei",
+      "target": 24,
+      "linux": 0.24661112645782954,
+      "fixture_platform": 0.2466111264578295,
+      "ulps": 1.0
+    }
+  ],
+  "cohorts": {
+    "40/mutaco": {
+      "mean": 0.3070161494413838,
+      "median": 0.2369729089385459,
+      "q1": 0.09840804314121479,
+      "q3": 0.4939075812962509,
+      "whisker_low": 0.030390071851146557,
+      "whisker_high": 0.9955069273630575,
+      "outlier_count": 0
+    },
+    "40/scalar_qlognei": {
+      "mean": 0.5554034225654267,
+      "median": 0.5405906995213006,
+      "q1": 0.3698444373741713,
+      "q3": 0.7145757643385146,
+      "whisker_low": 0.06281397539485697,
+      "whisker_high": 1.1535075723770467,
+      "outlier_count": 0
+    },
+    "40/sobol": {
+      "mean": 0.6456479163075896,
+      "median": 0.6259898092044596,
+      "q1": 0.4724773395091633,
+      "q3": 0.8402367921068092,
+      "whisker_low": 0.16034013933069424,
+      "whisker_high": 1.3901740707374102,
+      "outlier_count": 0
+    },
+    "100/mutaco": {
+      "mean": 0.30611849989549006,
+      "median": 0.2042701803367109,
+      "q1": 0.0967784788037449,
+      "q3": 0.47342187825051985,
+      "whisker_low": 0.014796845344534787,
+      "whisker_high": 0.9520993986129621,
+      "outlier_count": 0
+    },
+    "100/scalar_qlognei": {
+      "mean": 0.38256131599398396,
+      "median": 0.3360013608144075,
+      "q1": 0.19932853739454146,
+      "q3": 0.5136173217530894,
+      "whisker_low": 0.047555255641975686,
+      "whisker_high": 0.9798136005390061,
+      "outlier_count": 1
+    },
+    "100/sobol": {
+      "mean": 0.5381257953212492,
+      "median": 0.5136764835044759,
+      "q1": 0.3692736904846313,
+      "q3": 0.6849285287502089,
+      "whisker_low": 0.0910899314174571,
+      "whisker_high": 1.1012405990814584,
+      "outlier_count": 0
+    }
+  },
+  "paired_method_rankings_identical": 240,
+  "within_method_target_orderings_identical": 6,
+  "total_values": 720,
+  "linux_original_migrated_plot_data_file_exact": true
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": "mutaco-paper-campaign-declaration-v1",
+  "state": "unexecuted",
+  "execution_requires_approval": true,
+  "campaign_id": "paper_handwritten_supporting_v1",
+  "simulator_family": "analytic_handwritten",
+  "benchmark_configuration": "experiments/paper/analytic_handwritten/configs/supporting_campaign.json",
+  "scientifically_comparable_methods": ["mutaco", "sbi_npe", "sbi_snpe", "sbi_nle", "sbi_snle", "sbi_nre", "sbi_snre"],
+  "target_cohort": {"policy": "frozen_on_first_approved_execution", "target_count": 24},
+  "budget_interpretation": "equal_inference_simulator_calls_per_target",
+  "evaluation_randomness_policy": "method_addressed_independent_v1",
+  "assessment_policy": {"identifier": "fresh_held_out_v1", "calls_per_completed_method": 1},
+  "output_directory": "runs/paper/analytic_handwritten/paper_handwritten_supporting_v1"
+}

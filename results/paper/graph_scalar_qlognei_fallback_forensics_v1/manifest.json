@@ -1,0 +1,146 @@
+{
+  "schema_version": "mutaco-scalar-qlognei-fallback-forensics-v1",
+  "status": "complete_zero_call",
+  "scope": "archived_fallback_states_from_jobs_6248175_and_6248220",
+  "diagnostic_source_commit": "4e9152d3268bdca0a0487c0b49c7db4ff0af8c9c",
+  "diagnostic_script": "experiments/graph_inversion/diagnose_scalar_qlognei_fallbacks.py",
+  "diagnostic_script_sha256": "545bda54e4c788a9ea1e9ab37a08bcdb79c6ae0f68ae95be62c541396df20107",
+  "production_scalar_qlognei_sha256": "36dd30bdc4f831f0109b0ce5a00c7f3aa1a0c0327854da192d0dead7365c7361",
+  "production_source_identical_between_scientific_commits": true,
+  "scientific_commits": {
+    "job_6248175_b40": "2ebc20198af8aaf1af1de204d66447f0b30944fc",
+    "job_6248220_b100": "01795d10aaefd4dd67f798fec6feb9afc0cca1a5"
+  },
+  "inputs": {
+    "target_record_identity": "frozen-target-record-v2-55ef79e8c497a3d9e186553901b04d909b2de06d145b70f177968372063f8693",
+    "target_record_sha256": "390c9ce75b48abb3adbac27fabcf161efef222721476f63d0c19d08056aa1e8d",
+    "configuration_sha256": "f1d0c70fdba6e0f14109c2d6b76c8c2d40476138c769ccbd240017447867b145",
+    "b40_record_identity": "scalar-primary-target-method-record-v1-216a38a3783575a51d6ba586f4f910f142b65611734037a302c1e74de48bb856",
+    "b40_record_sha256": "faca64ed7be0e6d359fa7e19ebd9a50ea85f4b133b1eb78ca32f23c90cfa7503",
+    "b100_record_identity": "scalar-primary-target-method-record-v1-062874ba1a1049a100447c3b12ddeffab317674d2c389eec8e7bf96aad0866ff",
+    "b100_record_sha256": "5a57b06d150fbe2505ec244b697d9a53d0957e69d9c9c4e970383fa0542a7315"
+  },
+  "replay_environment": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.15",
+    "torch": "2.12.1+cpu",
+    "botorch": "0.18.1",
+    "gpytorch": "1.15.2",
+    "device": "cpu",
+    "dtype": "float32",
+    "production_environment_relation": "library_versions_match_but_operating_system_differs_from_linux_jobs"
+  },
+  "code_path_constraint": {
+    "archived_candidate_source": "deterministic_raw_fallback_after_ScalarQLogNEIError",
+    "deduction": "official_optimizer_returned_then_compound_candidate_validity_check_failed",
+    "possible_unpersisted_subtypes": [
+      "nonfinite_candidate",
+      "nonfinite_acquisition_value",
+      "exact_baseline_duplicate"
+    ],
+    "exact_historical_subtype_serialized": false
+  },
+  "summary": {
+    "archived_fallback_states": 8,
+    "exact_archived_fallbacks_reproduced": 5,
+    "reproduced_exact_duplicate_triggers": 5,
+    "platform_divergent_states": 3,
+    "nonfinite_triggers_reproduced": 0,
+    "second_local_replays_identical": 8,
+    "ambient_torch_rng_preserved": 8,
+    "returned_candidates_finite": 8,
+    "returned_candidates_exact_baseline_duplicates": 0,
+    "precision_fallbacks": 0,
+    "simulator_calls": 0,
+    "jobs_submitted": 0
+  },
+  "states": [
+    {
+      "job_id": 6248175,
+      "budget": 40,
+      "evaluation_index_one_based": 30,
+      "baseline_size": 29,
+      "classification": "exact_archived_fallback_reproduced",
+      "trigger": "exact_baseline_duplicate",
+      "duplicate_index_zero_based": 22,
+      "optimized_candidate": [0.5, 0.5, 2.0, 1.0]
+    },
+    {
+      "job_id": 6248175,
+      "budget": 40,
+      "evaluation_index_one_based": 31,
+      "baseline_size": 30,
+      "classification": "exact_archived_fallback_reproduced",
+      "trigger": "exact_baseline_duplicate",
+      "duplicate_index_zero_based": 22,
+      "optimized_candidate": [0.5, 0.5, 2.0, 1.0]
+    },
+    {
+      "job_id": 6248175,
+      "budget": 40,
+      "evaluation_index_one_based": 34,
+      "baseline_size": 33,
+      "classification": "platform_divergent_archived_trigger_unresolved"
+    },
+    {
+      "job_id": 6248175,
+      "budget": 40,
+      "evaluation_index_one_based": 35,
+      "baseline_size": 34,
+      "classification": "platform_divergent_archived_trigger_unresolved"
+    },
+    {
+      "job_id": 6248220,
+      "budget": 100,
+      "evaluation_index_one_based": 29,
+      "baseline_size": 28,
+      "classification": "platform_divergent_archived_trigger_unresolved"
+    },
+    {
+      "job_id": 6248220,
+      "budget": 100,
+      "evaluation_index_one_based": 39,
+      "baseline_size": 38,
+      "classification": "exact_archived_fallback_reproduced",
+      "trigger": "exact_baseline_duplicate",
+      "duplicate_index_zero_based": 19,
+      "optimized_candidate": [0.5, 0.5, 2.0, 1.0]
+    },
+    {
+      "job_id": 6248220,
+      "budget": 100,
+      "evaluation_index_one_based": 47,
+      "baseline_size": 46,
+      "classification": "exact_archived_fallback_reproduced",
+      "trigger": "exact_baseline_duplicate",
+      "duplicate_index_zero_based": 17,
+      "optimized_candidate": [0.5, 0.5, 2.0, 0.0]
+    },
+    {
+      "job_id": 6248220,
+      "budget": 100,
+      "evaluation_index_one_based": 48,
+      "baseline_size": 47,
+      "classification": "exact_archived_fallback_reproduced",
+      "trigger": "exact_baseline_duplicate",
+      "duplicate_index_zero_based": 17,
+      "optimized_candidate": [0.5, 0.5, 2.0, 0.0]
+    }
+  ],
+  "scientific_interpretation": {
+    "fallback_changes_objective": false,
+    "fallback_acquisition": "same_qlognei_scored_on_deterministic_raw_sobol_candidates",
+    "fallback_filters_nonfinite_and_exact_duplicate_candidates": true,
+    "baseline_label": "scalar_qlognei_with_declared_deterministic_raw_candidate_fallback",
+    "official_continuous_optimizer_used_for_every_adaptive_step": false,
+    "historical_results_remain_valid": true,
+    "population_readiness": "blocked_only_on_evidence_provenance_repair_not_algorithm_policy"
+  },
+  "finding": {
+    "algorithm_defect_demonstrated": false,
+    "evidence_defect_demonstrated": true,
+    "evidence_defect": "fallback provenance stores exception class but not the rejected optimized candidate, value, or exact invalidity subtype",
+    "least_scope_next_action": "add_diagnostic_only_fallback_trigger_provenance_without_changing_candidate_selection"
+  },
+  "evidence_identity": "scalar-qlognei-fallback-forensics-v1-30b0c068bf1e6aa036e7eb5c77f48a892bbda9c6cf9e1ea23be3f03f377d95dc"
+}

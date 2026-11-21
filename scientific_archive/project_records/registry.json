@@ -1,0 +1,396 @@
+{
+  "analytic_evidence": {
+    "included": false,
+    "reason": "Prompt 5D authority is unresolved between current status and dated planning evidence; Prompt 19B does not guess or alter it.",
+    "revisit_gate": "documentation authority reconciliation"
+  },
+  "authority_sources": [
+    {
+      "path": "docs/benchmarks/PAPER100_RESULTS.md",
+      "sha256": "da9d27fe3a52ee440734ecda8cbfa0787b7b5b343a001eb0acb924b073781add",
+      "size_bytes": 8424
+    },
+    {
+      "path": "docs/benchmarks/PROMPT15_POLICY_UPGRADE_RESULTS.md",
+      "sha256": "f63346bcdec5175fe05aa09d8e2d7de55f3734c4aa88728b6f8f755e13697fbe",
+      "size_bytes": 4466
+    },
+    {
+      "path": "docs/benchmarks/PROMPT18_TRUBA_PAPER100_RESULTS.md",
+      "sha256": "0edb757f6117436507592289ef80af5ee1fabb324458fc9739a6f0300e3baf1f",
+      "size_bytes": 6925
+    },
+    {
+      "path": "docs/benchmarks/PROMPT11_DENSE_REPRESENTATIVE_RESULTS.md",
+      "sha256": "1268e19d51a8579d4a877289211b697dc9c1bd5a262b9a7184866c6ce36bb874",
+      "size_bytes": 3751
+    },
+    {
+      "path": "docs/planning/PROMPT15_GRAPH_POLICY_UPGRADE_CAMPAIGN.md",
+      "sha256": "bf4e3912e340bbaf1b2afd523f81b8723ef8553db246e4ff310f7d794d619c25",
+      "size_bytes": 4556
+    },
+    {
+      "path": "docs/planning/PROMPT18_TRUBA_UPGRADED_MUTACO_PAPER100.md",
+      "sha256": "8959bc087e556de2be6921d84ffa5e0024bc4bedf89714700a2088e9648fde33",
+      "size_bytes": 2674
+    },
+    {
+      "path": "docs/planning/PROMPT18A_DOCUMENTATION_CONTINUITY.md",
+      "sha256": "61819d495b06bb57b873e5580ad40cd5f91b1518776aaa178de164b8a766c520",
+      "size_bytes": 1672
+    },
+    {
+      "path": "experiments/graph_inversion/configs/d4_100_targets.json",
+      "sha256": "11c0494594007f7c09161ba52e175a764aae2f0ef9ca23eaab196d7737f8ac4e",
+      "size_bytes": 4999
+    },
+    {
+      "path": "experiments/graph_inversion/configs/paper/policy_upgrade_100_targets_v1.json",
+      "sha256": "5e44d50a0073706dbe692bfd1c9627ee34b67791d7e32d94898c8928a44bc7bf",
+      "size_bytes": 6117
+    }
+  ],
+  "compact_not_full_replay": true,
+  "excluded_categories": [
+    "full scientific_evidence.json payloads",
+    "full per-call evaluation histories except selected high-budget plotting data",
+    "TensorBoard event files",
+    "model and posterior objects",
+    "worker logs and duplicated worker-local cohorts"
+  ],
+  "graph_paper100": {
+    "cohort_count": 100,
+    "cohort_ledger_hash": "589538469203373026d3ea5ec3ee242200c3ec7b4166b219106292f65375eb22",
+    "method_record_counts": {
+      "canonical_mutaco": 100,
+      "canonical_npe": 100,
+      "prompt15_upgraded": 100,
+      "prompt18_upgraded": 100
+    },
+    "receipt_counts": {
+      "canonical": 1,
+      "prompt15": 2,
+      "prompt18": 40
+    }
+  },
+  "prompt18_finalization_provenance": {
+    "failed_slurm_state_after_science": true,
+    "failure_scope": "receipt finalization only",
+    "recovery_labelled_receipts": 40,
+    "repair_commit": "f7bed16ca3bd945aded32ea4055a9c4727c4c207",
+    "repair_scientific_calls": 0,
+    "scientific_records_completed_before_failure": 100,
+    "source": "docs/benchmarks/PROMPT18_TRUBA_PAPER100_RESULTS.md"
+  },
+  "prompt18_thread_provenance": {
+    "interoperation_threads_per_process": 1,
+    "intraoperation_threads_per_process": 8,
+    "node_count": 8,
+    "science_commit": "e5943412aee4b973a3eb2af75551ba04372f339b",
+    "slurm_job": "6208837",
+    "worker_count": 40,
+    "workers_per_node": 5
+  },
+  "representative_copy_manifests": {
+    "dense_derived": [
+      {
+        "sha256": "8d109b375ac161adc799a69afa5af57ab848a44d272bad40e786e52084dba78b",
+        "size_bytes": 439,
+        "source": "runs/paper/derived/graph_representative_dense_force_v1/captions/representative_forward_dense.md"
+      },
+      {
+        "sha256": "f198c071ec973c85f9bbd06f3633fc3cdf2d56551b412095a9b7e366bb4f4cbc",
+        "size_bytes": 443,
+        "source": "runs/paper/derived/graph_representative_dense_force_v1/captions/representative_reconstruction_dense.md"
+      },
+      {
+        "sha256": "652ede34fac7ea323e3225b51aed46f49272b0e5ab02a52d411b47145a0f760b",
+        "size_bytes": 140024,
+        "source": "runs/paper/derived/graph_representative_dense_force_v1/figures/representative_forward_dense.pdf"
+      },
+      {
+        "sha256": "e26934449858a4ce28d2cd9726368d3cb21548d28e4d6c3d81f4a7a9a84d671c",
+        "size_bytes": 577930,
+        "source": "runs/paper/derived/graph_representative_dense_force_v1/figures/representative_forward_dense.png"
+      },
+      {
+        "sha256": "4a486ba6a79d41da0fcacc6bd5c6b339d1ab947ccf513ea508392e2c0a715d71",
+        "size_bytes": 440480,
+        "source": "runs/paper/derived/graph_representative_dense_force_v1/figures/representative_forward_dense.svg"
+      },
+      {
+        "sha256": "b096ddd93e93de423fe3d8fe94178087b5cbbfec95ab769a851da7bb6de78130",
+        "size_bytes": 33252,
+        "source": "runs/paper/derived/graph_representative_dense_force_v1/figures/representative_reconstruction_dense.pdf"
+      },
+      {
+        "sha256": "fda7a0d34479c049d704769ecda3742ef16ada7cf7e53e59f8b1d33f82c91a88",
+        "size_bytes": 148347,
+        "source": "runs/paper/derived/graph_representative_dense_force_v1/figures/representative_reconstruction_dense.png"
+      },
+      {
+        "sha256": "1070fdf867956376edd532c9d283e93b01ebffb165dc72dd5606a9092a7f8ac7",
+        "size_bytes": 54054,
+        "source": "runs/paper/derived/graph_representative_dense_force_v1/figures/representative_reconstruction_dense.svg"
+      },
+      {
+        "sha256": "c069689722a263ec1b786dfb8c14f0a39a044baea4ce11eb2e159cdfa6db3098",
+        "size_bytes": 2650,
+        "source": "runs/paper/derived/graph_representative_dense_force_v1/manifest.json"
+      },
+      {
+        "sha256": "47d6fd290becffb0eaae59a076a20f0804e9f60f26a03812380b22a2ea3a1003",
+        "size_bytes": 65,
+        "source": "runs/paper/derived/graph_representative_dense_force_v1/manifest.sha256"
+      },
+      {
+        "sha256": "e0aea8534eb1dbf67cb14693979b04f54f6f5675249189893c1ca9c3efe81365",
+        "size_bytes": 112474,
+        "source": "runs/paper/derived/graph_representative_dense_force_v1/plot_data/dense_responses.csv"
+      },
+      {
+        "sha256": "70edf6eee1a89c0c3be9c646cdb60781443f6cd890e2d02b69e48dc8cfcc6085",
+        "size_bytes": 1679,
+        "source": "runs/paper/derived/graph_representative_dense_force_v1/plot_data/metrics.json"
+      },
+      {
+        "sha256": "ccdeab6f6f701afa00eaed77346cbb2a39670b16c37087c2b8c89091796a64a0",
+        "size_bytes": 4599368,
+        "source": "runs/paper/derived/graph_representative_dense_force_v1/plot_data/target_graph_responses.csv"
+      },
+      {
+        "sha256": "e46872d7d5db04ce4ef15e105e616c9b36aacd44500604d0f6baa9a484b42a07",
+        "size_bytes": 2161,
+        "source": "runs/paper/derived/graph_representative_dense_force_v1/presentation/resolved_style.json"
+      },
+      {
+        "sha256": "659da5ff2b275b260552db3ed93824b4617c98401976182b785bb819ca143b2e",
+        "size_bytes": 752,
+        "source": "runs/paper/derived/graph_representative_dense_force_v1/validation.json"
+      }
+    ],
+    "high_budget_selected": [
+      {
+        "sha256": "2f8e937eb0354f76d23fc26087fcf6d7d7632dfcc4cfe489f3c695e1192d45fd",
+        "size_bytes": 544,
+        "source": "runs/paper/graph_oscillator/graph_representative_high_budget_105_v1/call_accounting.json"
+      },
+      {
+        "sha256": "e0aea8534eb1dbf67cb14693979b04f54f6f5675249189893c1ca9c3efe81365",
+        "size_bytes": 112474,
+        "source": "runs/paper/graph_oscillator/graph_representative_high_budget_105_v1/data/dense_responses.csv"
+      },
+      {
+        "sha256": "70edf6eee1a89c0c3be9c646cdb60781443f6cd890e2d02b69e48dc8cfcc6085",
+        "size_bytes": 1679,
+        "source": "runs/paper/graph_oscillator/graph_representative_high_budget_105_v1/data/metrics.json"
+      },
+      {
+        "sha256": "3d89c664d0e5e7377d0c8559cd41facddcc2e5034bd0dedca679ff68700f0d96",
+        "size_bytes": 60031,
+        "source": "runs/paper/graph_oscillator/graph_representative_high_budget_105_v1/data/mutaco_evaluation_history.csv"
+      },
+      {
+        "sha256": "ccdeab6f6f701afa00eaed77346cbb2a39670b16c37087c2b8c89091796a64a0",
+        "size_bytes": 4599368,
+        "source": "runs/paper/graph_oscillator/graph_representative_high_budget_105_v1/data/target_graph_responses.csv"
+      },
+      {
+        "sha256": "4a45c0baa331e620f7733c659542a65d6fb3a09444a466f1ed66eae0d405843c",
+        "size_bytes": 441,
+        "source": "runs/paper/graph_oscillator/graph_representative_high_budget_105_v1/environment.json"
+      },
+      {
+        "sha256": "6c07c2f952c6322cba1bd6fdaeb15ae9cb69218c5d8732152c7f3bb7bbb9287b",
+        "size_bytes": 558,
+        "source": "runs/paper/graph_oscillator/graph_representative_high_budget_105_v1/failed_finalization_attempt.json"
+      },
+      {
+        "sha256": "15863b4feae6b24dc577f6a8ac2be41b47e366035ac20b5e2c08c3f89962eb36",
+        "size_bytes": 2358,
+        "source": "runs/paper/graph_oscillator/graph_representative_high_budget_105_v1/manifest.json"
+      },
+      {
+        "sha256": "260ca517e0eca86b314ad409dd733918372a21e619235a8de4219702770347a1",
+        "size_bytes": 65,
+        "source": "runs/paper/graph_oscillator/graph_representative_high_budget_105_v1/manifest.sha256"
+      },
+      {
+        "sha256": "006568dab79cf5718584a201d1089888b982a7e8fe1d25917c72c69d73f24940",
+        "size_bytes": 761,
+        "source": "runs/paper/graph_oscillator/graph_representative_high_budget_105_v1/provenance.json"
+      },
+      {
+        "sha256": "2a76e95d1459737d142f9eb8f8bd80181af8690e1f6a00b2f95bc4a65de8bb98",
+        "size_bytes": 7728,
+        "source": "runs/paper/graph_oscillator/graph_representative_high_budget_105_v1/timings.json"
+      }
+    ],
+    "sparse_v5": [
+      {
+        "sha256": "fdca86f8829f6829182532c6316b65fbda0ed692e6d173bc46767748415f4868",
+        "size_bytes": 1046,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/captions/caption_provenance.json"
+      },
+      {
+        "sha256": "0f14f8d152670c0c04603502d08819dd99a176d1eef94ae9266df18a5d8c2fce",
+        "size_bytes": 1086,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/captions/representative_forward.md"
+      },
+      {
+        "sha256": "1cd565ef2530451400ffc632cce027f17e7bdeca5569c8b724e267815c862eea",
+        "size_bytes": 1254,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/captions/representative_reconstruction.md"
+      },
+      {
+        "sha256": "2822b81eb79e8bc8f357a15b5b8bcdb3a15da35552246f8cc29ead68f9b660ab",
+        "size_bytes": 377,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/environment.json"
+      },
+      {
+        "sha256": "0666e03b3a5451340feb7aa5217c1465223d081aa558c537416133b91fdadaef",
+        "size_bytes": 28623,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/figures/representative_forward.pdf"
+      },
+      {
+        "sha256": "136c55f7b99df6a38e42153a1445c56ff9e8818297fca71b564b9ee507bfc699",
+        "size_bytes": 522194,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/figures/representative_forward.png"
+      },
+      {
+        "sha256": "a7a95d7b662e06b63a4e2083b7c97c4b6bed4c49915a239a4b2a910d69888512",
+        "size_bytes": 73552,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/figures/representative_forward.svg"
+      },
+      {
+        "sha256": "536df5ad496e0470a64d67d1e3608b28e6c430bc2757bd5ce18ed95ccca6bbe0",
+        "size_bytes": 25106,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/figures/representative_reconstruction.pdf"
+      },
+      {
+        "sha256": "40ed4a7159e1216c5d9655076831edfc5042f3dc634b028e13484309f93b642b",
+        "size_bytes": 152259,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/figures/representative_reconstruction.png"
+      },
+      {
+        "sha256": "8d0e67ba456ec53fef8f7b9395ecabab7dc38d5fc38c3c448960e4160c4f9505",
+        "size_bytes": 32848,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/figures/representative_reconstruction.svg"
+      },
+      {
+        "sha256": "b891fe933b1323ee3a3ab0ef5fbd3109977cb01a85f5c2db7ba3b40a6d205794",
+        "size_bytes": 259,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/generation.log"
+      },
+      {
+        "sha256": "9c27763e8564fcb9055101fe0cdd97474aa40fbb52eed4fdc8ca1648ba0ead32",
+        "size_bytes": 4864,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/manifest.json"
+      },
+      {
+        "sha256": "c876e4989fd8fda2949a1e92316aa71259dfb6871fe54d702fc122af4b08cc13",
+        "size_bytes": 64,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/manifest.sha256"
+      },
+      {
+        "sha256": "7c2b2444ffeab45e2174852277e261ab847b69f2c18cda2895c6ff8e18c7b9f8",
+        "size_bytes": 165394,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/plot_data/forward_response.csv"
+      },
+      {
+        "sha256": "10ea0b9231c66e1211fe8e48e0d8ed3853f97dd2d9c899e8570b064b160b0b8e",
+        "size_bytes": 9781,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/plot_data/reconstruction.csv"
+      },
+      {
+        "sha256": "f3e125999f2edb620c70c15cf7b0ac168b086ad9ecdc7593baf1756185ec464e",
+        "size_bytes": 1497,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/plot_data/reported_metrics.json"
+      },
+      {
+        "sha256": "e46872d7d5db04ce4ef15e105e616c9b36aacd44500604d0f6baa9a484b42a07",
+        "size_bytes": 2161,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/presentation/resolved_style.json"
+      },
+      {
+        "sha256": "6aa26f2b473bd70f5e5188cd4aa190507d9b1bd989a65b747f3c00cad453331a",
+        "size_bytes": 223389,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/replay/ensemble_responses.csv"
+      },
+      {
+        "sha256": "57acc6b23623bffdd583e82207ba15f52cd6937a419ec99c54663aeb32fdbf78",
+        "size_bytes": 452965,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/replay/raw_responses.csv"
+      },
+      {
+        "sha256": "f552f4cdfd2bd4ceb206a57237292b691cc4b27ab67fd7ca4efa868be004c4c7",
+        "size_bytes": 544,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/replay/replay_metadata.json"
+      },
+      {
+        "sha256": "c6bbb73a1910162904a15e69185c67681c3c1cd549062819a2fa4bf4f2be6f60",
+        "size_bytes": 1604,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/replay/replay_validation.json"
+      },
+      {
+        "sha256": "f7726ff67a3b13707f6a8bb9f5d91f8cf914aa3fb48ae58ecb6e16a9c51be41f",
+        "size_bytes": 262,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/replay/status.json"
+      },
+      {
+        "sha256": "012016abc16d47954ad96e2b12758946782345cb7b1f5fbe2538d9d556577fba",
+        "size_bytes": 51148,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/selection/representative_target.json"
+      },
+      {
+        "sha256": "132d78b1321f9eff73698a415beddd6f71d1cce49e9e98eafeb92bedc5a6d48e",
+        "size_bytes": 17458,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/selection/source_hashes.json"
+      },
+      {
+        "sha256": "8c3c111e72ce1ad192de12148131880c94847dde5236079d0e48d12c85953f3d",
+        "size_bytes": 4092,
+        "source": "runs/paper/derived/graph_paper100_representative_response_v5/validation.json"
+      }
+    ]
+  },
+  "schema_version": "mutaco-benchmark-registry-v1",
+  "truba_source_copies": [
+    {
+      "sha256": "d79a6971878715738262f997d00126f03ebaef3278ac91664d2a38803570e39b",
+      "size_bytes": 12499,
+      "source": "runs/qualification/truba/prompt18/e5943412aee4b973a3eb2af75551ba04372f339b/job-6208837/campaign_summary.json"
+    },
+    {
+      "sha256": "991f9aae337c2b941c545f413bfdcdf03fe30ee6db7114e259ebccaac7dea9a2",
+      "size_bytes": 9860,
+      "source": "runs/qualification/truba/prompt18/e5943412aee4b973a3eb2af75551ba04372f339b/job-6208837/comparison.json"
+    },
+    {
+      "sha256": "5ccd87682005843cbb9dd54de86944a18c872c18188751ffd6496fa990236d68",
+      "size_bytes": 66,
+      "source": "runs/qualification/truba/prompt18/e5943412aee4b973a3eb2af75551ba04372f339b/job-6208837/comparison.json.sha256"
+    },
+    {
+      "sha256": "a39ac754b8b884346bb756157fffc3c4286082a08785223de2202f42daa36063",
+      "size_bytes": 3227,
+      "source": "runs/qualification/truba/prompt18/e5943412aee4b973a3eb2af75551ba04372f339b/job-6208837/paired_metrics.csv"
+    },
+    {
+      "sha256": "cd62975226a471487013a2da13b3f0762e6069f1aec5688ba7d7d26a986c0e8a",
+      "size_bytes": 66,
+      "source": "runs/qualification/truba/prompt18/e5943412aee4b973a3eb2af75551ba04372f339b/job-6208837/paired_metrics.csv.sha256"
+    },
+    {
+      "sha256": "857991fd8eb0040f0e3fbc8405430af5f341bd46445bdd8692866ba20b950dd1",
+      "size_bytes": 266104,
+      "source": "runs/qualification/truba/prompt18/e5943412aee4b973a3eb2af75551ba04372f339b/job-6208837/SHA256SUMS"
+    },
+    {
+      "sha256": "d9f07fd7929017334d8c7adc96b923ae07ca0a32015653ab1ea8ca38a3181ee9",
+      "size_bytes": 11655,
+      "source": "runs/qualification/truba/prompt18/e5943412aee4b973a3eb2af75551ba04372f339b/job-6208837/timings.csv"
+    }
+  ]
+}

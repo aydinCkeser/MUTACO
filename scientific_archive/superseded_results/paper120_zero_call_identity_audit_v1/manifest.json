@@ -1,0 +1,14 @@
+{
+  "schema_version": "mutaco-paper-zero-call-identity-audit-v1",
+  "status": "complete",
+  "scientific_source_commit": "170406a4ec53c7fce2772180bef17d4fc92b2800",
+  "cohort": "data/cohorts/paper120_v3/manifest.json",
+  "targets_audited": 120,
+  "methods_audited": ["mutaco", "sbi_npe", "sbi_snpe"],
+  "identity_checks": 360,
+  "seed_coordinate_checks": 16560,
+  "beta_checks": 120,
+  "record_checks": 360,
+  "errors": 0,
+  "scientific_calls": 0
+}

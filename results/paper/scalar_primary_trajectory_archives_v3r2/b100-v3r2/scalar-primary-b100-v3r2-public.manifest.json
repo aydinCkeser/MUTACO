@@ -1,0 +1,36 @@
+{
+  "schema_version": "mutaco-public-trajectory-export-v1",
+  "budget": 100,
+  "dataset_version": "v3r2-public",
+  "archive_name": "scalar-primary-b100-v3r2-public.tar.gz",
+  "archive_sha256": "f1d4fc1640ce6bded2310273c8e9df970024190ac98d9ddab16f0024e13da3e0",
+  "original_archive_sha256": "e30befedd72b85bd0eda8fe1d7e33ed6ef10acd0c880b1bd6aca60865e4a49c7",
+  "original_compact_export_sha256": "1e2aacfdafe754bdd2697c85df2731d50ec9160807f8cbfbe0634199bc12497a",
+  "redaction": {
+    "field": "records[].decision.trajectory[].acquisition_diagnostics.execution.interpreter_path",
+    "value": "<redacted>",
+    "occurrences": 10080
+  },
+  "files": [
+    {
+      "path": "collection/collection.json",
+      "size_bytes": 643,
+      "sha256": "fdb737be4d5143e5113f829bd60ebe85e68e7ff45337b6b10d84654eda8278a1"
+    },
+    {
+      "path": "collection/collection.sha256",
+      "size_bytes": 64,
+      "sha256": "0597b2f64ac2be036440a1811df5aa905e2905b09ab330a9640146df8c5f25da"
+    },
+    {
+      "path": "collection/compact_export.json",
+      "size_bytes": 273452354,
+      "sha256": "15dcdeed278c3c54dee949c5a55cceb4497e76d094fe6065d52fb1a6733e35cd"
+    },
+    {
+      "path": "collection/compact_export.sha256",
+      "size_bytes": 64,
+      "sha256": "8717385e82c860a3c2a1214d06485dae90d4a132504b1c78e75fac3da52bbe08"
+    }
+  ]
+}

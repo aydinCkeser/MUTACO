@@ -1,0 +1,54 @@
+{
+  "schema_version": "mutaco-nei-q1-preparation-v1",
+  "state": "targets_unconstructed_execution_unauthorized",
+  "study_identity": "paper-study-spec-v1-be2d8718a2e931174e21a0e5e34c096819cdf9ef65c46724bb4ca02846120d80",
+  "theta_declaration": "experiments/graph_inversion/target_declarations/primary_nei_q1_offcohort_theta_v1.json",
+  "theta_declaration_sha256": "ce89ef672a88654bcbdb08525ce781256b0dd60c39b4406fa9755789ad75c7ec",
+  "theta_declaration_identity": "hidden-theta-cohort-v2-e9208cdb8056245dc6df5540c327029917e4600b512e9084b1f6998a772ad142",
+  "graph_qualification_configuration": "experiments/graph_inversion/configs/paper/paper120_b100_mutaco_v1.json",
+  "graph_qualification_configuration_sha256": "f1d0c70fdba6e0f14109c2d6b76c8c2d40476138c769ccbd240017447867b145",
+  "theta_target_identities": [
+    "hidden-theta-target-v2-f9914faa0b242d5e468969c9fb2ebdcbef7c9eb0f1cc98fcc66a864d94b80c56",
+    "hidden-theta-target-v2-d2f7baa9dd151ae0587e6aab7b7a61de61c94df7cb4e22143c02d112785b9128",
+    "hidden-theta-target-v2-087a032707f4e78ed0928da06927f2e53b791498df9ff5d1ce18ad39475c86e8",
+    "hidden-theta-target-v2-517d2852740353a21e49568c3f3e97ae8da5c0f301ba215038c00b575298a787",
+    "hidden-theta-target-v2-31e8e37c993ad77c043060037afae71b7256242852b62232c80eecd477c68d2b"
+  ],
+  "target_construction": {
+    "required_calls": 5,
+    "authorized": false,
+    "response_record_identities": null
+  },
+  "qualification": {
+    "budgets": [40, 100],
+    "trajectory_tier_id": "tier_high",
+    "snapshot_positions": {
+      "40": [16, 28, 40],
+      "100": [16, 40, 70, 100]
+    },
+    "tiers_lowest_effort_first": [
+      {"tier_id": "tier_low", "n_mc": 64, "raw_candidates": 64, "local_starts": 4, "optimization_steps": 8, "learning_rate": 0.05},
+      {"tier_id": "tier_medium", "n_mc": 128, "raw_candidates": 128, "local_starts": 8, "optimization_steps": 16, "learning_rate": 0.04},
+      {"tier_id": "tier_high", "n_mc": 256, "raw_candidates": 256, "local_starts": 12, "optimization_steps": 24, "learning_rate": 0.03}
+    ],
+    "reference_optimizer": {"tier_id": "reference", "n_mc": 1024, "raw_candidates": 512, "local_starts": 16, "optimization_steps": 48, "learning_rate": 0.025},
+    "campaign_seeds": {
+      "design": 92020821,
+      "inference": 92020822,
+      "terminal": 92020823,
+      "reference": 92020824
+    },
+    "reference_batches": 4,
+    "reference_samples_per_batch": 4096,
+    "maximum_search_calls": 700,
+    "heldout_calls": 0,
+    "authorized": false
+  },
+  "q2": {
+    "target_selection": "new_independent_offcohort_target_after_q1",
+    "maximum_calls": 123,
+    "authorized": false
+  },
+  "scientific_calls_executed": 0,
+  "preparation_identity": "nei-q1-preparation-v1-fb0d3cedd383acd146d526f38d68d8ce0c056c5a1c7bb38f97292fba39f41fed"
+}

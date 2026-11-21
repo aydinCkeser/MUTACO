@@ -1,0 +1,65 @@
+{
+  "call_accounting": {
+    "attempted": 96,
+    "center": 0,
+    "failed": 0,
+    "postprocessing_scientific_calls": 0,
+    "retry": 0,
+    "successful": 96
+  },
+  "cohort_summary_identity": "mutaco-oscillator-physics-multitarget-cohort-summary-v1-b2272bb620efe0217e90ca31dc3d1e3c6eb9a23cef3b8f0e057c06e38884cafc",
+  "declaration": {
+    "identity": "mutaco-oscillator-physics-multitarget-declaration-v1-22becfc33c2d62850044fec060cd3bec361c86f832a4a879adc94416f818f73c",
+    "sha256": "36bad7dcad86d2420797464299cdfe2872f6f83a28f3674ed0895a4b296ae636"
+  },
+  "figure": {
+    "pdf": "paper120_maximin12_oscillator_sensitivity_cohort.pdf",
+    "pdf_sha256": "d10156392b552e8ee9daeb95fe3d13b08f329eb5cec2add6a8f57905202478d0",
+    "png": "paper120_maximin12_oscillator_sensitivity_cohort.png",
+    "png_sha256": "ff3501ec938ca63c3249d82843c9f2876b06162d55acfa7563bfce20429a4739"
+  },
+  "file_inventory_identity": "mutaco-file-hash-inventory-v1-b18bb9a6feb647999bea13dcd0971c21c7d855231c4263a5bc9fa36f24d5cd1f",
+  "file_inventory_sha256": "3483f01b78d4cec467e7506086e2426e668a3a38aa959a27a0e6e47683a9f90a",
+  "job": {
+    "allocated_cpus": 20,
+    "elapsed": "00:02:07",
+    "exit_code": "0:0",
+    "job_id": 6353452,
+    "node": "barbun10",
+    "partition": "barbun",
+    "requested_memory": "64G",
+    "state": "COMPLETED"
+  },
+  "package_identity": "mutaco-oscillator-physics-multitarget-result-package-v1-111608c473e048368bbef9a027c25de808375577cfe9d424af1d9092a965e272",
+  "plotting_data_identity": "mutaco-oscillator-physics-multitarget-plotting-data-v1-2367f44493b9c5f146819decac81f9cee0c34b55509edf8029c8bb6e4ec00f48",
+  "remote_evidence": {
+    "copy_count": 1,
+    "logs": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/oscillator_physics_multitarget/25ac98b25f78/logs",
+    "workers": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/oscillator_physics_multitarget/25ac98b25f78/workers"
+  },
+  "schema_version": "mutaco-oscillator-physics-multitarget-result-package-v1",
+  "source": {
+    "commit": "25ac98b25f78d6d79a5465df5fd8a3ce2d64b3aa",
+    "remote_exact_source": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/oscillator_physics_multitarget/25ac98b25f78/source-exact",
+    "tree": "7ed7dd564b21c16a3420a45f5da04db2545e6132"
+  },
+  "status": "complete_validated_zero_call_postprocessing",
+  "target98_is_cohort_member": false,
+  "target_order": [
+    25,
+    64,
+    34,
+    48,
+    119,
+    86,
+    57,
+    13,
+    111,
+    96,
+    45,
+    58
+  ],
+  "validation_identity": "mutaco-oscillator-physics-multitarget-validation-v1-0bebabb16bb21f65e45a52e5100e9fcecbeb17a9059336f88b2c1640361aaaea",
+  "validation_receipt_identity": "mutaco-truba-validation-receipt-v1-46b6c59ba95afd50c3313a7765ac8e5358351ae4f15a5c4afa1fc9e24efdc52e",
+  "worker_result_identity": "mutaco-oscillator-physics-multitarget-result-v1-1433783c0fce14526387a469002afe6f70d3c12cfe0ebf6102861b1d8df86a95"
+}

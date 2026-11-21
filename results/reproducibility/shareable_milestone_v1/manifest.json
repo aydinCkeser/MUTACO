@@ -1,0 +1,115 @@
+{
+  "accepted_source_commit": "d7b5b1267419ca4a95001c2784cfb83b0a020e7b",
+  "additional_hygiene_reports": {
+    "local-validation.json": "47e798732d4de29d1cb2bf00128eb211ba4d71c2a8f438684ab88db9f92dcc55",
+    "sharing-review.json": "1c33b7d49484f59d8b07f119290fbe9260d9cf767f1f34cadca0a16a6227b7a7"
+  },
+  "b100_reference_established": false,
+  "b40": {
+    "ambient_rng_preserved": true,
+    "baseline_refactor_scientific_exact": true,
+    "fits": 25,
+    "historical_replay": "passed",
+    "observations": 40,
+    "physical_simulator_calls": 0,
+    "proposals": 24,
+    "recommendations": 1,
+    "record": "/records/48",
+    "target": 16
+  },
+  "baseline_source_commit": "aa7f4feb58302ecf6abfa6dee2d81071eabb7fe3",
+  "baseline_tests": {
+    "known_nei_failure": 1,
+    "passed": 169,
+    "skipped": 8
+  },
+  "byte_identical_to_raw": false,
+  "capture_harness_commit": "27f654a8e590d3aadb89a2791c91f1e1491a1aad",
+  "derived": true,
+  "derived_files": {
+    "b40-replay-mathematics.json.gz": {
+      "derived_sha256": "e8baece376afd9477e07022149294ada5875cee29baad22dd984f7b9810c3a19",
+      "raw_sources": [
+        {
+          "path": "benchmarks/reproducibility/truba_refactor_reference_v1/historical-b40.json.gz",
+          "sha256": "cc7974d202ecaa5444946aae45965c01f9cf93a10b027f253e71e30a7494dad2"
+        },
+        {
+          "path": "benchmarks/reproducibility/frozen_response_helper_v1/workers/candidate-historical-b40.json.gz",
+          "sha256": "23178c0af3778d2006b31ab426f376e2b3be68abe32138e89da35cdf8eda845a"
+        }
+      ],
+      "role": "exact mathematical replay fields; original predeclared timing/execution exclusions only"
+    },
+    "b40-scientific-payload.json.gz": {
+      "derived_sha256": "505c68e4628834bb1f9526c53abd893aff48005a023a508a7d1867520782b040",
+      "raw_sources": [
+        {
+          "path": "benchmarks/reproducibility/truba_refactor_reference_v1/baseline-b40.json.gz",
+          "sha256": "029632e4d0f863a4d1e4c8014a88eca94a0b7eee59517152cbfa80d8919604c2"
+        },
+        {
+          "path": "benchmarks/reproducibility/truba_refactor_reference_v1/repeat-b40.json.gz",
+          "sha256": "d1ac47e6a4f68a9fad03746f49afc6fc45e45765f274ab04fe9e64c185f0998f"
+        },
+        {
+          "path": "benchmarks/reproducibility/frozen_response_helper_v1/workers/candidate-b40.json.gz",
+          "sha256": "06da8f05e8f5e0c2f67def4671c2b6aa35f5f361bcea3cacfd80816f280b737f"
+        }
+      ],
+      "role": "exact mathematical payload"
+    },
+    "baseline-summary.json": {
+      "derived_sha256": "1d5c53d513b1c24821b20f4cedd380bd0ff05f85d3ef56e7af1dca4f1cce621f",
+      "raw_sources": [
+        {
+          "path": "benchmarks/reproducibility/truba_refactor_reference_v1/manifest.json",
+          "sha256": "71f76cec7cb371157a24bd225ba0e5b664802f3c6a04d5c965f32169c3446fd9"
+        }
+      ],
+      "role": "sanitized derived report"
+    },
+    "macos-diagnostic-summary.json": {
+      "derived_sha256": "364cae82586fa14bde455f124b4ea675adb1526ed46c169a9b8f37daca26817a",
+      "raw_sources": [
+        {
+          "path": "configs/environments/mutaco-sbi-macos-arm64-replay-diagnosis.json",
+          "sha256": "ed86c4ef7d9bf1015078d6fc425bafb84dad412491a1ecde58a777c9ea3f1dc1"
+        }
+      ],
+      "role": "sanitized derived report"
+    },
+    "refactor-summary.json": {
+      "derived_sha256": "0de69c4333f63cedcac274e5699f3f83eba28e12877233f6247c5ecf930667a5",
+      "raw_sources": [
+        {
+          "path": "benchmarks/reproducibility/frozen_response_helper_v1/manifest.json",
+          "sha256": "6eb6ec68ee11c702675f2189b7a30e6befc979a5b3c3f71be1775fc7c6634084"
+        }
+      ],
+      "role": "sanitized derived report"
+    }
+  },
+  "no_new_simulations_or_cluster_jobs_in_hygiene_task": true,
+  "private_backup_attestation": {
+    "backup-manifest.json": "8b19dcd0f5d827b656976e8ec6d07ab9d055c519cbd5d783bae86cd7322c2d42",
+    "location": "private; not published",
+    "original-branch.bundle": "89df0bc6fd69e6314aa067012f19d391a21285ca2ee1eebfc93c82380c490a05",
+    "original-tree.tar": "6a4ee9d5ad2cd87ece801bf2d718ea8f6c975d447ec48a29a824edbd871f9634"
+  },
+  "private_inputs_required": "An independently verified restore of the original private branch backup; never substitute these summaries for raw packets.",
+  "raw_evidence_modified": false,
+  "raw_index_sha256": "90b86dd3350c013bc1a911b2bea507cec053b022873b57a341946ea87873f500",
+  "refactor_tests": {
+    "known_nei_failure": 1,
+    "new_failures": 0,
+    "passed": 175,
+    "skipped": 8
+  },
+  "remote_checkpoint": "ccc45090146bdee3f632e7c1084df77daeff9ddb",
+  "replay_mathematics_sha256": "687433605adebeb928b081c616e7d603267d71faebb3cfa061a6c730865ec782",
+  "schema_version": "mutaco-shareable-evidence-v1",
+  "scientific_payload_sha256": "12251e746d4c39f2f028651f766c96a6723dc39cb63d5cd484ad661b9cf3001c",
+  "validated_source_snapshot": "31e161d0112ffd920e4f105ed498be39b9b4ec68",
+  "verification_scope": "Portable hashes/math only. Exact environment acceptance still uses unmodified raw comparator and private original packets."
+}

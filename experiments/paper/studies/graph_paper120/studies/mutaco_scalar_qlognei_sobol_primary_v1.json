@@ -1,0 +1,88 @@
+{
+  "schema_version": "mutaco-paper-study-spec-v1",
+  "study_id": "graph_paper120_mutaco_scalar_qlognei_sobol_primary",
+  "revision": "v1",
+  "classification": "primary_three_method_end_to_end_benchmark",
+  "status": "normative_candidate_zero_call_prequalification_prepared",
+  "domain": "graph_oscillator_inverse_problem",
+  "authority": "scientific/scalar_qlognei_primary_benchmark_protocol/README.md",
+  "scientific_inputs": {
+    "cohort_manifest": "data/cohorts/paper120_v3/manifest.json",
+    "target_ledger_sha256": "359fc0bb59fc9a8a52f5da684e7a7eb352466bdc0d0a54fb8efa94131ce423bb",
+    "target_count": 120,
+    "response_dimension": 20,
+    "methods": ["mutaco", "scalar_qlognei", "sobol"],
+    "budgets": [40, 100],
+    "budgets_are_independent_campaigns": true,
+    "initial_points": 16,
+    "hidden_theta_available_to_methods": false
+  },
+  "comparison_interpretation": {
+    "mutaco_vs_scalar_qlognei": "end_to_end_structured_response_modeling_vs_conventional_scalar_objective_bo",
+    "mutaco_vs_sobol": "end_to_end_adaptive_model_based_vs_nonadaptive_surrogate_free",
+    "controlled_acquisition_only_claim_allowed": false
+  },
+  "scalar_qlognei": {
+    "library": "pinned_official_botorch",
+    "model": "SingleTaskGP",
+    "objective": "negative_observed_physical_response_l1_mae",
+    "acquisition": "qLogNoisyExpectedImprovement",
+    "batch_q": 1,
+    "dtype": "float32",
+    "precision_fallback": "forbidden",
+    "cholesky_initial_float32_jitter": 1e-6,
+    "cholesky_maximum_attempts": 3,
+    "unrecovered_factorization": "typed_failure_before_next_simulator_call",
+    "production_settings": "experiments/graph_inversion/configs/paper/scalar_qlognei_primary_settings_v1.json",
+    "production_settings_identity": "scalar-qlognei-primary-settings-v1-0f64f21df9b925a5508d90420f1179941174d300d0d38a11ac162044f3540a6d",
+    "archived_state_validation": "benchmarks/paper/graph_scalar_qlognei_zero_call_validation_v1/manifest.json",
+    "archived_state_baseline_sizes": [16, 34, 40, 60, 66],
+    "exact_b100_capacity_regression": "synthetic_zero_call_test"
+  },
+  "terminal_policies": {
+    "mutaco": "continuous_posterior_mean_physical_l1_mae",
+    "scalar_qlognei": "continuous_scalar_posterior_mean_physical_mae_v1",
+    "sobol": "evaluated_best_observed_physical_mae_v1",
+    "terminal_simulator_calls": 0
+  },
+  "assessment": {
+    "policy": "paired_held_out_assessment_v1",
+    "metric": "paired_one_realization_heldout_physical_response_mae",
+    "replicates": 1,
+    "method_independent_context": true,
+    "after_all_decisions_frozen": true,
+    "inside_search_budget": false
+  },
+  "decision_timing": {
+    "clock": "time.perf_counter",
+    "fields": ["simulator", "gp_fit", "acquisition", "terminal", "other", "total"],
+    "nonoverlapping_components": true,
+    "components_sum_to_total": true,
+    "sobol_gp_fit_seconds": 0,
+    "sobol_acquisition_seconds": 0,
+    "sobol_terminal_selection_timed": true,
+    "nested_method_diagnostics_not_resummed": true,
+    "heldout_evidence_scheduler_and_qualification_excluded": true
+  },
+  "call_accounting": {
+    "b40_search_calls": 14400,
+    "b40_assessment_calls": 360,
+    "b40_total_calls": 14760,
+    "b100_search_calls": 36000,
+    "b100_assessment_calls": 360,
+    "b100_total_calls": 36360,
+    "full_total_calls": 51120,
+    "terminal_calls": 0,
+    "automatic_campaign_retry": false
+  },
+  "execution": {
+    "implementation_authorized": true,
+    "qualification_authorized": false,
+    "truba_submission_authorized": false,
+    "population_campaign_authorized": false,
+    "scientific_calls_executed_by_freeze": 0,
+    "prequalification_b40_call_cap": 123,
+    "prequalification_b40_submission_authorized": false
+  },
+  "study_identity": "paper-study-spec-v1-f36dcfe64fe9319b3dfcc972601a722251d604577ce65c00a2a63bf6f2584f84"
+}

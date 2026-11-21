@@ -1,0 +1,123 @@
+{
+  "artifacts": {
+    "derived_sensitivity.json": {
+      "sha256": "75929ba8a05bd339339e9badacacad45754e8a27e1af9c88609f641ac28155ba",
+      "size_bytes": 24949
+    },
+    "provenance/remote_artifact_hashes.json": {
+      "sha256": "04057f0c0073e970504e6ce12c95c1e2165ecaea5990da1563381eece41ae22b",
+      "size_bytes": 3250
+    },
+    "provenance/scheduler_accounting.json": {
+      "sha256": "66b83e2ffaabf6251b8c7630a837e0c2522653208ae37ace6ea10feab877430e",
+      "size_bytes": 305
+    },
+    "provenance/validation.json": {
+      "sha256": "47cbce2e3156b7e45667bfec16ea967112d8a13005cd9ade5045af47d56135f8",
+      "size_bytes": 3449
+    },
+    "raw_worker_output/points/point_00.intent.json": {
+      "sha256": "732b7907d97f53e1f3ea1e47eb90f1fd41ed9d74511ca29aeeaaa05b6e8e2abd",
+      "size_bytes": 306
+    },
+    "raw_worker_output/points/point_00.outcome.json": {
+      "sha256": "c59c98b747130ff76cdce4ff4b045850ba8ad49408a5f363a926fe18565536b4",
+      "size_bytes": 115128
+    },
+    "raw_worker_output/points/point_01.intent.json": {
+      "sha256": "cf8d0f6bc591ce85426cba840acec1a192e1576a0f1b7865e8ebe3510e6a4245",
+      "size_bytes": 306
+    },
+    "raw_worker_output/points/point_01.outcome.json": {
+      "sha256": "941788ccae5769cf9c97a51fa374c837ddd908f53458d2fe753933729b8f3f2b",
+      "size_bytes": 115126
+    },
+    "raw_worker_output/points/point_02.intent.json": {
+      "sha256": "b699356f7f532105d592e4ff24ab36368647ed41c21a99d9d869faf846d5eea4",
+      "size_bytes": 306
+    },
+    "raw_worker_output/points/point_02.outcome.json": {
+      "sha256": "ba456291c1ab2927dcada557f0f4d2c1e701a350de20c6c833201aaa6d3041bf",
+      "size_bytes": 115139
+    },
+    "raw_worker_output/points/point_03.intent.json": {
+      "sha256": "29433eb7b1772eedc4be68cefa229c021a73a36157d98528d38c914923c6359b",
+      "size_bytes": 305
+    },
+    "raw_worker_output/points/point_03.outcome.json": {
+      "sha256": "42811edb447ef3f9a6e9bc028e633abacd98429130b1e49a21e5dc14f531828d",
+      "size_bytes": 115137
+    },
+    "raw_worker_output/points/point_04.intent.json": {
+      "sha256": "090589abf519910c70f88aa3c7424162479078767f2b77f9157a6a07d0c886b7",
+      "size_bytes": 305
+    },
+    "raw_worker_output/points/point_04.outcome.json": {
+      "sha256": "55098352addfa3014e231421ffb62e23dc32033ad6da0e5b355cd7c3921afcd9",
+      "size_bytes": 115136
+    },
+    "raw_worker_output/points/point_05.intent.json": {
+      "sha256": "fd60c6e4a072aeb81b0fd6668473a331866936ca50925f59fca9e53000304b2d",
+      "size_bytes": 305
+    },
+    "raw_worker_output/points/point_05.outcome.json": {
+      "sha256": "8367a5b332ac7ab88958ba8070843548873b880db3fc784fac210017f77a7458",
+      "size_bytes": 115128
+    },
+    "raw_worker_output/points/point_06.intent.json": {
+      "sha256": "36599b9376a1ca7ee32d3cdc59b8c8bd07447a91efaf75874a6d0c25756e9125",
+      "size_bytes": 306
+    },
+    "raw_worker_output/points/point_06.outcome.json": {
+      "sha256": "d16e3adfd65c1f4fcee6d1648e040f3c932fca75465133319c5843fdca287ae9",
+      "size_bytes": 115136
+    },
+    "raw_worker_output/points/point_07.intent.json": {
+      "sha256": "13815f24ab6439751d33a3c3663dbd8ec1f60fd96e20662f4822207c6d9c2acb",
+      "size_bytes": 305
+    },
+    "raw_worker_output/points/point_07.outcome.json": {
+      "sha256": "b455d1bef4d8d7d6d755f2f0f4b41ebc32437203200ce338af7947fbbc771a92",
+      "size_bytes": 115134
+    },
+    "raw_worker_output/sensitivity.json": {
+      "sha256": "dfb694459243a71f3581c83f0478e7016a758b49c072030393990b37a34c7411",
+      "size_bytes": 9875
+    },
+    "scheduler_logs/mutaco-oscillator-physics-t098-6352257.err": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "scheduler_logs/mutaco-oscillator-physics-t098-6352257.out": {
+      "sha256": "b434dc996b09c1a2d1264c69c51f8d4559ac7bb8d5d2b62b472df19f945470b1",
+      "size_bytes": 7527
+    },
+    "target098_oscillator_physics_complete.png": {
+      "sha256": "64f0ed98abca8ec546d4c9a7a16ed3f8c88a3b3beeb55d1ccaf4987317d0507e",
+      "size_bytes": 394262
+    }
+  },
+  "center_calls": 0,
+  "common_random_numbers_policy": "fixed_full_stream_crn_diagnostic_v1",
+  "declaration_identity": "mutaco-oscillator-physics-sensitivity-declaration-v1-211c22d28bda06dcce8835dfdf1d936b4bbb93234101c0ba096f0b172734d325",
+  "evaluation_seed": 9818052026,
+  "failed_calls": 0,
+  "job_id": 6352257,
+  "node": "barbun110",
+  "package_identity": "mutaco-oscillator-physics-result-package-v1-173d40e65afa8d48e4962f554013902d504ae46332814484bf0f4e5c8019d4ff",
+  "remote_log_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/oscillator_physics_target098/aeee1cc567ab/logs",
+  "remote_output_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/oscillator_physics_target098/aeee1cc567ab/workers",
+  "remote_source": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/oscillator_physics_target098/aeee1cc567ab/source-exact",
+  "retry_calls": 0,
+  "scheduler_elapsed": "00:00:52",
+  "scheduler_exit_code": "0:0",
+  "scheduler_state": "COMPLETED",
+  "schema_version": "mutaco-oscillator-physics-result-package-v1",
+  "scientific_calls": 8,
+  "seed_manifest_sha256": "c0e458bc38ba0f9ff0b2777cb412f617c0dea63e84818fc5f7b3006f2e08b341",
+  "source_commit": "aeee1cc567abff6b0f23e1e6dbdce4115e882c7c",
+  "source_tree": "b4720ad37d0b9b7a4fc2bc5da50e666c97cf0010",
+  "status": "complete_validated",
+  "successful_calls": 8,
+  "validation_receipt_identity": "mutaco-truba-validation-receipt-v1-3424efe3d83f47e620a1e753e47f460f744591f4061d20b2b4e4c99fa8fdc8c4"
+}

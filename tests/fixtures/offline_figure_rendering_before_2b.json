@@ -1,0 +1,59 @@
+{
+  "profile": {
+    "architecture": "arm64",
+    "backend": "agg",
+    "base_style": "matplotlib-defaults",
+    "font_sha256": "107244956e9962b9e96faccdc551825e0ae0898ae13737133e1b921a2fd35ffa",
+    "freetype": "2.14.3",
+    "matplotlib": "3.11.1",
+    "numpy": "2.4.6",
+    "source_date_epoch": "0",
+    "system": "Darwin",
+    "test_font": "DejaVu Serif",
+    "usetex": false
+  },
+  "purpose": "pre-move engineering capture; test-only fallback fonts, not a paper reference",
+  "renderers": {
+    "plot_paper120_local_sensitivity_v6": {
+      "artists_sha256": "0c30bbb9a955af1303ffdaf7678432bb56e66c5a65ff1bb7fe0bb037405452a3",
+      "fallback_files": {
+        "fig07_local_sensitivity.pdf": "a0f2019e1994cd6cb7044e990215e99af0fc78bf6f9ed5e817b9ed4cb2a2c0a6"
+      },
+      "plot_data_sha256": "e9afc142cc9b23d0854e366fcc6d80fd780ed3f2e3eb5205c52f39422853da48"
+    },
+    "plot_paper120_primary_boxplot_v1": {
+      "artists_sha256": "7de32ee34a6204a9f678bb160db1b3945106aba76fb18148d4325bcd729a8b55",
+      "fallback_files": {
+        "paper120_primary_b40_b100_boxplot.pdf": "ee20746c6dab5f7f56e412093a491a8d2c8ccbb7568721fd5bade8b8c77832d4",
+        "paper120_primary_b40_b100_boxplot.png": "7b2c7121cc1e5f89cb7cf9fb21c921efe699953d5d0ed65da371d9641c236ff3"
+      },
+      "plot_data_sha256": "b2e66029112e3828721f51bed60a4e9c8944533c7c788c8e4fd277910f5ae2e2"
+    },
+    "plot_paper120_primary_parameter_boxplot_v1": {
+      "artists_sha256": "7a9f13a92f93ddfa1730ccd1fc2c7ebe9edb174f57da991d77fcef622f6951fe",
+      "fallback_files": {
+        "paper120_primary_b40_b100_parameter_boxplot.pdf": "c3806f16fda6e2e4363effcf77a24ed1aa3a2505eadf93d64eac3585aa8c2f4b",
+        "paper120_primary_b40_b100_parameter_boxplot.png": "f3256bc70eb87298427854848901404a82011e0c7bbc2317baa518050e4e2bbd"
+      },
+      "plot_data_sha256": "74aa3ff73f81f4da6d8a439780eab54e568e50a02da9db59d932505f73af9d2f"
+    },
+    "plot_paper120_sbi_response_boxplot_v1": {
+      "artists_sha256": "b87297ff65a78231d2fbd090f90dfe8159682480c1dc1fcb7f2463caad63ccec",
+      "fallback_files": {
+        "paper120_sbi_b40_b100_response_boxplot.pdf": "9dd2727de47a649cb2e3fa9965f367154aee5e01986b14b30ee2212c063413b3",
+        "paper120_sbi_b40_b100_response_boxplot.png": "5f4ed930d312357391f238919f6d1c9017bf5bc8b398d7d78bd068583b3a7a1f"
+      },
+      "plot_data_sha256": "cc299d9645b247da7710ddef219d9fb9ffb5f59f52e0e4566155710c14554df9"
+    },
+    "plot_paper120_terminal_domain_ablation_v1": {
+      "artists_sha256": "e41d49c9283213d70477f3cdff3a30f5b0d64441caed6c020e657a7ddc8bf501",
+      "fallback_files": {
+        "paper120_terminal_domain_ablation_b40.pdf": "96c1ba6f948a3d7a318bf7f1cf2586b25e9d2ea21aad61d849cbbd1d56d871b1",
+        "paper120_terminal_domain_ablation_b40.png": "8dfe036d0d27692fd8d1e374585cff8544cca229cbcd7ecbed7ff83931f36a2b"
+      },
+      "plot_data_sha256": "290a6b651fc3a710fe9a0de171df3e0637ac34fda88f5a36fa7ed19dacb2baa3"
+    }
+  },
+  "schema": "mutaco-offline-figure-relocation-baseline-v1",
+  "source_commit": "1afb0333d5fca28ecb673ea9679a154e4eefc7a9"
+}

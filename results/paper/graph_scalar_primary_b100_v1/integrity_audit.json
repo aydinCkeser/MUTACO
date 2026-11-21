@@ -1,0 +1,39 @@
+{
+  "collection_sha256": "fdb737be4d5143e5113f829bd60ebe85e68e7ff45337b6b10d84654eda8278a1",
+  "compact_archive_bytes": 25747701,
+  "compact_archive_sha256": "e30befedd72b85bd0eda8fe1d7e33ed6ef10acd0c880b1bd6aca60865e4a49c7",
+  "compact_export_bytes": 273905954,
+  "compact_export_sha256": "1e2aacfdafe754bdd2697c85df2731d50ec9160807f8cbfbe0634199bc12497a",
+  "compact_export_tracked_in_git": false,
+  "remote_raw_evidence_mutated": false,
+  "remote_worker_hash_inventory": {
+    "categories": {
+      "collection": 2,
+      "decision_freeze": 120,
+      "mutaco": 120,
+      "scalar_qlognei": 120,
+      "sobol": 120,
+      "target_execution": 120,
+      "worker_start": 120,
+      "worker_terminal": 120
+    },
+    "hash_mismatches": [],
+    "inventory_sha256": "27c65c91de858845d193d2c12ad4b779061ffc7a18a71edff6bdbc6a4e43d634",
+    "json_bytes": 1283337279,
+    "json_files": 842,
+    "missing_sidecars": [],
+    "orphan_sidecars": [],
+    "schema_version": "mutaco-json-hash-pair-inventory-v1",
+    "scientific_calls": 0,
+    "sha256_sidecars": 842
+  },
+  "scheduler_inventory_records": 61,
+  "scheduler_inventory_sha256": "84b0955e74a12538846c2d17dc521503045a56fd094dd2d6efdd4b2af29ad924",
+  "scheduler_logs": {
+    "bytes": 240553,
+    "failure_markers": [],
+    "files": 122,
+    "inventory_sha256": "f374df371bf937b0098319bd2207b34213393c2ff00d5c55c4242a5d36700b21",
+    "nonempty_files": 121
+  }
+}

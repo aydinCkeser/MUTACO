@@ -1,0 +1,977 @@
+{
+  "assessment_randomness_namespaces": [
+    "quenched_disorder",
+    "initial_state",
+    "thermal_noise"
+  ],
+  "campaign_id": "graph_paper120_b40_snpe_remaining117_v1",
+  "collection_archive_sha256": "c7529207e6b5491343fba34a1b389176893a6e21726f28cf12b1dc8782e5084f",
+  "completed_records": 117,
+  "declaration_identity": "paper-population-declaration-v3-2738766eb5a64037605e5d9d40fbfe5209427c5d9da16a073eeeb2b4a1511f1e",
+  "declaration_sha256": "f262c7fc2e25cc92d9641ab9951db3384d8f89e27577021b6703edd2ddf7eaa4",
+  "execution_surface": "truba",
+  "inference_budget_per_target": 40,
+  "method": "sbi_snpe",
+  "physical_calls": {
+    "assessment": 117,
+    "attempted": 4797,
+    "failed": 0,
+    "inference": 4680,
+    "retry": 0,
+    "successful": 4797
+  },
+  "population_evidence_identity": "paper-snpe-population-evidence-v1-658a0b3aa7c40e2042ff831fef4c1c8448889fa01c5d53600f363a901b780747",
+  "records": [
+    {
+      "parameter_error_l2": 0.5027147960899931,
+      "record_content_hash": "paper-method-record-v1-406cb5151d1a3e54ab506f960d74b6c3e4bd91b5eb4a63036aeece1ff50ebf94",
+      "response_error_l2": 0.11539244633194484,
+      "response_error_mae": 0.01848436167849741,
+      "target_position": 1,
+      "target_record_identity": "frozen-target-record-v2-bb1d168ccc8238ad4fbffce48402bc93c36867210824fb7ae3660df81e17863f"
+    },
+    {
+      "parameter_error_l2": 0.8635794320765875,
+      "record_content_hash": "paper-method-record-v1-ad74ea0832443f869dd87b62d08fa3ad2d26d2806c075c6a2efc70ca87ec6530",
+      "response_error_l2": 2.3769072599783048,
+      "response_error_mae": 0.33703151469353543,
+      "target_position": 2,
+      "target_record_identity": "frozen-target-record-v2-585791ce4186e893bd1bff656ce1f581167fd34ec51d37057d6566ef036077d3"
+    },
+    {
+      "parameter_error_l2": 0.4713359495322542,
+      "record_content_hash": "paper-method-record-v1-25b5f3157d69bfa9ae941b50acb404e01556a7c04e6d5ed854d2e5bc8bc4caf9",
+      "response_error_l2": 3.1556480600806247,
+      "response_error_mae": 0.41249298745551644,
+      "target_position": 3,
+      "target_record_identity": "frozen-target-record-v2-ca40f4501ce1210b484ad217ef33d2186eef37262ddf5a3e64b8e608f48b25e0"
+    },
+    {
+      "parameter_error_l2": 0.5074070721674281,
+      "record_content_hash": "paper-method-record-v1-07aa7138a825f13ea6760ef86da10cd88f03716f6f8fa8fc7a7039c6d363a2f2",
+      "response_error_l2": 0.22930089617069602,
+      "response_error_mae": 0.04034416471531586,
+      "target_position": 4,
+      "target_record_identity": "frozen-target-record-v2-bcd4888674c216794a8b759ad7612c2c2210262e6a28a40f30c29228e17b6ce8"
+    },
+    {
+      "parameter_error_l2": 0.6254749197419298,
+      "record_content_hash": "paper-method-record-v1-839f6b226e4bad227ab900d01e134b77ef4f1b011d55e21db1a58263d7b85d52",
+      "response_error_l2": 1.0346850652017756,
+      "response_error_mae": 0.14203558089284343,
+      "target_position": 5,
+      "target_record_identity": "frozen-target-record-v2-a1041eef02bc71d75ed3dd3c9cf64fbb86017108ca94bab6a3c80830c23313b0"
+    },
+    {
+      "parameter_error_l2": 0.7786749586380305,
+      "record_content_hash": "paper-method-record-v1-d15a5108b44be5eebf5206b5526d0dbc0c90b0590b87fd5e743e7c90103462bd",
+      "response_error_l2": 7.4688643873378435,
+      "response_error_mae": 1.0705044192929563,
+      "target_position": 6,
+      "target_record_identity": "frozen-target-record-v2-dfcd570b31fb0038c9c1e8fb7aaf12538891f3243fee4d5172ac00b8f1dba499"
+    },
+    {
+      "parameter_error_l2": 0.17146427808775044,
+      "record_content_hash": "paper-method-record-v1-bf6134f9b2d8b68b7f4c51fcd5d365e4d8503fff7f22296f5018cdcce6ba26e2",
+      "response_error_l2": 0.2415685620486881,
+      "response_error_mae": 0.036802711615928276,
+      "target_position": 7,
+      "target_record_identity": "frozen-target-record-v2-97936d209183b8f39379465b610701d4d23613946bf362bde88dd51018c4568f"
+    },
+    {
+      "parameter_error_l2": 0.36241571435398495,
+      "record_content_hash": "paper-method-record-v1-d55c92eecfe66f5de692f1380ea6cf0e69982560c5c84468cf65856d338e876b",
+      "response_error_l2": 1.0450585802838097,
+      "response_error_mae": 0.1451417008336648,
+      "target_position": 8,
+      "target_record_identity": "frozen-target-record-v2-d707fb9a26e26cea5cc730f5b3dcb8a6cce66af8fe4ed026113ebf13d8d71131"
+    },
+    {
+      "parameter_error_l2": 0.26147225128189283,
+      "record_content_hash": "paper-method-record-v1-4d6530638bbfca2b0e77d553bb20ede58d8f2b6c25db59d007691105eba0ea89",
+      "response_error_l2": 0.24651482051324577,
+      "response_error_mae": 0.038888077792944384,
+      "target_position": 9,
+      "target_record_identity": "frozen-target-record-v2-287b967531c8476120994936887bb0e194eff53adbf366acb2e8c0ffc0299fad"
+    },
+    {
+      "parameter_error_l2": 0.526766895858312,
+      "record_content_hash": "paper-method-record-v1-09aa47d48cee76a405b24dcf6c69be6b48515f8e90643975088194c90ffff094",
+      "response_error_l2": 1.1052923702446724,
+      "response_error_mae": 0.16473487530506645,
+      "target_position": 10,
+      "target_record_identity": "frozen-target-record-v2-e2ee0e8f757d9d5275e4277b3cab3c68b247c2c76c8b15bfeae329f9e0c782d6"
+    },
+    {
+      "parameter_error_l2": 0.4754461253297164,
+      "record_content_hash": "paper-method-record-v1-b066b8643e0da3b51df4cf5993922fc2924bcd0c4c608f57a0d2e7c3a0c2b0bd",
+      "response_error_l2": 0.36174331132036236,
+      "response_error_mae": 0.05391241574616288,
+      "target_position": 11,
+      "target_record_identity": "frozen-target-record-v2-61dc239b44b9ee3a444a05f34f39fd83705a0b4e2f2b5e3812f2ea056cc5aeba"
+    },
+    {
+      "parameter_error_l2": 0.2963604343962061,
+      "record_content_hash": "paper-method-record-v1-1dde241becad4a90fd6a484ad6a5a0b75916cb1d8dff110557cf24262307f62c",
+      "response_error_l2": 1.281831713036015,
+      "response_error_mae": 0.17666327352017105,
+      "target_position": 12,
+      "target_record_identity": "frozen-target-record-v2-32e17c40704d32e6a0aa4c2d3bce44bbc69c1d964e568713077fcee8118685da"
+    },
+    {
+      "parameter_error_l2": 0.3957959312112775,
+      "record_content_hash": "paper-method-record-v1-e2db14b1c2edc083fddab753386d4ed0a27b0ea8042dd4417dfe0a6cb64e0d41",
+      "response_error_l2": 0.4422491840506013,
+      "response_error_mae": 0.06203190428386733,
+      "target_position": 13,
+      "target_record_identity": "frozen-target-record-v2-8c0a74c53d82a4ab6bef24b2d1f3548fb443af5a5c9a99d4e69989f741ee23f0"
+    },
+    {
+      "parameter_error_l2": 0.31886873646045094,
+      "record_content_hash": "paper-method-record-v1-ee013b09709eacbc0d010b124dc9420c1714d1ef702f69e159a35a65d095c665",
+      "response_error_l2": 0.0664109553363273,
+      "response_error_mae": 0.011116437479063278,
+      "target_position": 14,
+      "target_record_identity": "frozen-target-record-v2-b9cd7171eff9523f88a633c2973e857e22724b4c3758484b8ca6b251b5e76a34"
+    },
+    {
+      "parameter_error_l2": 0.3534117352965027,
+      "record_content_hash": "paper-method-record-v1-27d3c773a0662979462c614c75084780e7a636b8d4057d7bd409ffadd150b144",
+      "response_error_l2": 0.26616779971537924,
+      "response_error_mae": 0.03920110254985047,
+      "target_position": 15,
+      "target_record_identity": "frozen-target-record-v2-19278460f25d7d288b8652cd04253fcbff76e19bde6333b09a890eaa4d44194d"
+    },
+    {
+      "parameter_error_l2": 0.4997995075107104,
+      "record_content_hash": "paper-method-record-v1-d69ca35b4a6cf893b5ed0071f2243b6e471a96ab1d7b00305dbb7197507acdc4",
+      "response_error_l2": 0.741813523472438,
+      "response_error_mae": 0.09930381802259944,
+      "target_position": 16,
+      "target_record_identity": "frozen-target-record-v2-4e2b6d17df5371f082ad76b281aa08e97fa6ccf50e60c47ef54730267b35e714"
+    },
+    {
+      "parameter_error_l2": 0.46331280663397795,
+      "record_content_hash": "paper-method-record-v1-598b1c257708b218a8fd742479f5f43cbc185685392913c65ca29fe306460970",
+      "response_error_l2": 0.48203720380914744,
+      "response_error_mae": 0.06426557991107984,
+      "target_position": 17,
+      "target_record_identity": "frozen-target-record-v2-76bee7fc4e6e00cb4426f1cb1adb4dd39fd500880e6cf7bf5af12e739ac3dc4d"
+    },
+    {
+      "parameter_error_l2": 0.7971475187318219,
+      "record_content_hash": "paper-method-record-v1-7bed3b8a861e520f686ed7108c32086d42644109f89730361cb4a9f0bdd8ddb8",
+      "response_error_l2": 0.7884187701274429,
+      "response_error_mae": 0.11032882817962672,
+      "target_position": 18,
+      "target_record_identity": "frozen-target-record-v2-565038d2027b3dbc11b2962104551ab4a76665d1752b874e3b3fb203b4b6bfa8"
+    },
+    {
+      "parameter_error_l2": 0.43553726655340685,
+      "record_content_hash": "paper-method-record-v1-097a80ee84f116d5fb7beec617246e2dc1319d3b6aee942f1bcae53246f0230a",
+      "response_error_l2": 0.7817342010542939,
+      "response_error_mae": 0.11700169784235186,
+      "target_position": 19,
+      "target_record_identity": "frozen-target-record-v2-fa87f7d77bb64dae2a17013f0a19956eb1a5c13372f3ca3e178f47399cb71d12"
+    },
+    {
+      "parameter_error_l2": 0.27352377816656254,
+      "record_content_hash": "paper-method-record-v1-68d2e136b9a281ba0c399c9b9ab6f8555b185dd8eb3a903a147e933fb5946316",
+      "response_error_l2": 0.20820736929680242,
+      "response_error_mae": 0.03304693981976925,
+      "target_position": 20,
+      "target_record_identity": "frozen-target-record-v2-f0b184edafaa3e131755c8a7a59bf2985f49f506f5d9c9f5258a65b1347a14fa"
+    },
+    {
+      "parameter_error_l2": 0.5579967200420526,
+      "record_content_hash": "paper-method-record-v1-97df4e06c50d71c884e242801e6537eabd6dd8cd6f66dd37f193fe5d3bf8c581",
+      "response_error_l2": 0.803559733717412,
+      "response_error_mae": 0.10291694632317103,
+      "target_position": 21,
+      "target_record_identity": "frozen-target-record-v2-d647cf57d0de392b7b40442dd523c6fb50f9e86e2f348bc6b3cd5dcc7e9b013f"
+    },
+    {
+      "parameter_error_l2": 0.34183376088261896,
+      "record_content_hash": "paper-method-record-v1-b0ea962eaa37194dda3a82b8df3c5ede7ad1e5fc1ae8a94bc1ef32440d31fe1c",
+      "response_error_l2": 0.2901484400760945,
+      "response_error_mae": 0.0458755407467379,
+      "target_position": 22,
+      "target_record_identity": "frozen-target-record-v2-d8f21303a6bccfd733be2e012500e9f899d0684083f35b027bbd74ac42d1cc9e"
+    },
+    {
+      "parameter_error_l2": 0.6710484667215857,
+      "record_content_hash": "paper-method-record-v1-32d09b2784db431988e5e68268a4eed7ca93912820533830571fdb2cddaa96d2",
+      "response_error_l2": 0.14138433194375052,
+      "response_error_mae": 0.026118020236026496,
+      "target_position": 23,
+      "target_record_identity": "frozen-target-record-v2-36b0cf9cbdaf0e97ea4d9e83261c3b57915fef366fd8376ffd07af77f1c22674"
+    },
+    {
+      "parameter_error_l2": 0.09876400914989422,
+      "record_content_hash": "paper-method-record-v1-9463bf955c1810865169230f4eeef7cc1d25eb20147c55a131cd15ea19e011d5",
+      "response_error_l2": 0.6058240753527266,
+      "response_error_mae": 0.0832308140893474,
+      "target_position": 24,
+      "target_record_identity": "frozen-target-record-v2-31fd6607e3a7be5c1b689679e5a9ad147a107737a735dcbce73b4ccf579eff81"
+    },
+    {
+      "parameter_error_l2": 0.18107276427869284,
+      "record_content_hash": "paper-method-record-v1-744a33af563737119d1ded8002a7ad9d553400dba6ff872e57319c93f7e8e1de",
+      "response_error_l2": 0.3011365936621322,
+      "response_error_mae": 0.04103562467257689,
+      "target_position": 25,
+      "target_record_identity": "frozen-target-record-v2-e6f61e08f67b2f50c42ab9b4dd17bd3e23a8dd2c0104fbdbe93a3cacd23eebeb"
+    },
+    {
+      "parameter_error_l2": 0.38841518990051105,
+      "record_content_hash": "paper-method-record-v1-43d44671e230fc1eeef1feb6c33b2beb860d9a987b9520a4fef01d6110f2cc11",
+      "response_error_l2": 0.6680905211389021,
+      "response_error_mae": 0.08875767148583691,
+      "target_position": 26,
+      "target_record_identity": "frozen-target-record-v2-3f4e504ca0d38d3f5d02fe22990f4c479db307f51bdf0926d0250a170e6952c3"
+    },
+    {
+      "parameter_error_l2": 0.838756325119532,
+      "record_content_hash": "paper-method-record-v1-da3af5f844cc637b49edd8748b05ed64e3b9799e227b39c6f5172091f24e0194",
+      "response_error_l2": 2.4436340586414578,
+      "response_error_mae": 0.31404951697040817,
+      "target_position": 27,
+      "target_record_identity": "frozen-target-record-v2-4d059284d103833721a4db3babc45cbef858b3c1efe7035dac271897caf7c706"
+    },
+    {
+      "parameter_error_l2": 0.35242290536388854,
+      "record_content_hash": "paper-method-record-v1-92744462f31cb4a4d528f9b4cc4a13afc5155a11ea49fc0051cae869514e673a",
+      "response_error_l2": 1.2770364386702482,
+      "response_error_mae": 0.19229341524427354,
+      "target_position": 28,
+      "target_record_identity": "frozen-target-record-v2-8fe7128a89de2954d1f55a52e5d2dccd1ab612022f62fbdcfe188f0b30e85801"
+    },
+    {
+      "parameter_error_l2": 0.21635601476822933,
+      "record_content_hash": "paper-method-record-v1-b4e1d53931921b1ae79880a4ec766f7ccbb6b5f24b3b71b376aae0bb2c953106",
+      "response_error_l2": 1.322072114808194,
+      "response_error_mae": 0.18949837962209132,
+      "target_position": 29,
+      "target_record_identity": "frozen-target-record-v2-90c7314e3df86aeb2d851f932229c4384267edadaf56bdd2ff2c2c639c3cd09b"
+    },
+    {
+      "parameter_error_l2": 0.5886012190425817,
+      "record_content_hash": "paper-method-record-v1-f7d21620f7e2aa9d0b00444693139c6a723cc2cf7fee957e6e9ecc29bc11f219",
+      "response_error_l2": 0.3646489713472363,
+      "response_error_mae": 0.04611561417259509,
+      "target_position": 30,
+      "target_record_identity": "frozen-target-record-v2-6d1feb61da07ab0c9b5124284285937f58593603d3ff9d555e7fe72cabe14abc"
+    },
+    {
+      "parameter_error_l2": 0.4757508839269829,
+      "record_content_hash": "paper-method-record-v1-d6f14ada33598210a2f95e67bae5a8e375b93cfa30bb3ab8a0fced3a84d6ef96",
+      "response_error_l2": 0.9214945663273962,
+      "response_error_mae": 0.1281143428386713,
+      "target_position": 31,
+      "target_record_identity": "frozen-target-record-v2-937bf83db0c8b9515ef9fb8f210ef5f70891996f2009aab5dbfe409ab3d7d657"
+    },
+    {
+      "parameter_error_l2": 0.6484169601884663,
+      "record_content_hash": "paper-method-record-v1-2a2189144c8ff68a34c402991dc948ca17124b45b91bad4ba8c044ce3eefd4f4",
+      "response_error_l2": 3.201342767572369,
+      "response_error_mae": 0.4707598859735299,
+      "target_position": 32,
+      "target_record_identity": "frozen-target-record-v2-f4206a038358468a4852fab477f946cc3c27a01e9b473e910b3c4c9382a17f33"
+    },
+    {
+      "parameter_error_l2": 0.7234071217860759,
+      "record_content_hash": "paper-method-record-v1-afd14bc1e7f98ff277652293a2fecc695a54780d9387c00f197a4ca171ee6f51",
+      "response_error_l2": 0.7790380518043075,
+      "response_error_mae": 0.10517027336300089,
+      "target_position": 33,
+      "target_record_identity": "frozen-target-record-v2-3e1b0265722d920e7ec28c4935bd2441a4fefc44ab23345e616fed98864530c3"
+    },
+    {
+      "parameter_error_l2": 1.0041923262776922,
+      "record_content_hash": "paper-method-record-v1-3aa31cb5a9da889a2ce95ff933bbe280fb34a47d92ecd01fb1203ca514289d99",
+      "response_error_l2": 0.587568202481311,
+      "response_error_mae": 0.070169437741788,
+      "target_position": 34,
+      "target_record_identity": "frozen-target-record-v2-0f21ca4e86664c7640fbd8dfaa480b39a602fe24f6649f41977522b065d4fd97"
+    },
+    {
+      "parameter_error_l2": 0.5107822551083653,
+      "record_content_hash": "paper-method-record-v1-efd5f780e11583a5235d70526734e15d778a6c0e5c11b914db3e5ca86bb68d85",
+      "response_error_l2": 0.6183453880128958,
+      "response_error_mae": 0.09347549749363679,
+      "target_position": 35,
+      "target_record_identity": "frozen-target-record-v2-1f3cd9c0248fc348dca518a4c47417b396aba827bc3f1075d7919784f4491ad4"
+    },
+    {
+      "parameter_error_l2": 0.560432608609824,
+      "record_content_hash": "paper-method-record-v1-ec422d8d6d0e080c9391955d492bc251e91c55916575b462b2b2ee7f35dbe238",
+      "response_error_l2": 0.6306052793838978,
+      "response_error_mae": 0.09195513242775633,
+      "target_position": 36,
+      "target_record_identity": "frozen-target-record-v2-1fe2cfbffeb5d5b0d3821008084ad9290c4e3651726b7d6b5ab11cd80c5f18b4"
+    },
+    {
+      "parameter_error_l2": 0.19821054428959597,
+      "record_content_hash": "paper-method-record-v1-4b0b22545540b15218f54fc4f38cfbee6388314525e89cdf637acfbbefa14b5d",
+      "response_error_l2": 0.35398010431167476,
+      "response_error_mae": 0.05619458431701787,
+      "target_position": 37,
+      "target_record_identity": "frozen-target-record-v2-b118bdcaddf5bbace67e6745b10fe456cac2fe781d74ff4b24d13671457f2ad4"
+    },
+    {
+      "parameter_error_l2": 0.2800245209546451,
+      "record_content_hash": "paper-method-record-v1-2abdcd0d5e1c6ea9e0d565d053ba6a5edc0a69c4d2e1b6511eaf5e8af17b4f47",
+      "response_error_l2": 0.33341981643230845,
+      "response_error_mae": 0.05011462535640021,
+      "target_position": 38,
+      "target_record_identity": "frozen-target-record-v2-7757302ff682ca6fb6a4a461051db86609715dc5fb3d767e5dce9c2b84d077fb"
+    },
+    {
+      "parameter_error_l2": 0.43737323685670576,
+      "record_content_hash": "paper-method-record-v1-125145fcdfc28659a70ee32239ffd456b4fc3309e957c7b6510135c72d9ae580",
+      "response_error_l2": 2.6917234922584368,
+      "response_error_mae": 0.3543097755595227,
+      "target_position": 39,
+      "target_record_identity": "frozen-target-record-v2-53770210f180f7518d10bb371493e4056c8cf0b34cdecc3737c8a79732cb7cdd"
+    },
+    {
+      "parameter_error_l2": 0.22558055924769663,
+      "record_content_hash": "paper-method-record-v1-6214c4a725c0153e3e5e762e0bc9bfddced28771304d6fe7a0389883183c4c3d",
+      "response_error_l2": 0.30913132896482476,
+      "response_error_mae": 0.043596578787037286,
+      "target_position": 40,
+      "target_record_identity": "frozen-target-record-v2-7d9a6f92df85541bae04d018551aa8883143692aff2b061feb10ffb5e6aab5bb"
+    },
+    {
+      "parameter_error_l2": 0.46030115674701244,
+      "record_content_hash": "paper-method-record-v1-1ae24b27a6196f647f05dc7a0f56e6694acdae2c6810f8a4320da36831af47ee",
+      "response_error_l2": 2.844632270568998,
+      "response_error_mae": 0.3825999923436029,
+      "target_position": 41,
+      "target_record_identity": "frozen-target-record-v2-db65c6a75b57094adeb5f5392f77ce757685f5fe120340dbaf972cb5fabc4731"
+    },
+    {
+      "parameter_error_l2": 0.3261141487108821,
+      "record_content_hash": "paper-method-record-v1-78d362101d5cc612d37456736a88c5789dd7343dc29842b2a23cb57f0367bb97",
+      "response_error_l2": 0.2817202943117578,
+      "response_error_mae": 0.04543110672675539,
+      "target_position": 42,
+      "target_record_identity": "frozen-target-record-v2-7247ecda4de7d03c160e632162cd64a54af60cfc33f83e57d40e57f7674603c7"
+    },
+    {
+      "parameter_error_l2": 0.6278896902635838,
+      "record_content_hash": "paper-method-record-v1-026b99f55943bdec27edf790eaf5227163fefc96d3b95e7b5288840cf6207889",
+      "response_error_l2": 1.024917855701197,
+      "response_error_mae": 0.13697722671658993,
+      "target_position": 43,
+      "target_record_identity": "frozen-target-record-v2-4d90ab87f55ea1d6a0a7659e14ae575dec83b39449b01effb8be7435b1ca9353"
+    },
+    {
+      "parameter_error_l2": 0.35285366839081,
+      "record_content_hash": "paper-method-record-v1-f9462b3bd392937edb69f9cfab1f794b5a0e6537c4ac109ad424895c95aa2ff4",
+      "response_error_l2": 0.09635933693572274,
+      "response_error_mae": 0.014538900942352485,
+      "target_position": 44,
+      "target_record_identity": "frozen-target-record-v2-42bdb9616fd9ac511610ff1c46335db64fbe2ff4333eb0dec2db262f1287ad73"
+    },
+    {
+      "parameter_error_l2": 0.27909576646743756,
+      "record_content_hash": "paper-method-record-v1-4e02ddd4b3169c14590ec2b38db5aca176c5cb5af8baf55897f08d5dc47341dd",
+      "response_error_l2": 0.9997650624329621,
+      "response_error_mae": 0.11173334565551159,
+      "target_position": 45,
+      "target_record_identity": "frozen-target-record-v2-150d47a262376ad71b781ee403508fe958e1b866c8024dc48dde7e26f821c221"
+    },
+    {
+      "parameter_error_l2": 0.24780089679069708,
+      "record_content_hash": "paper-method-record-v1-c5feef8e3f8dbcf2814eaaf9f004fa4a29d88f710848e47905c7b0ec665acbe0",
+      "response_error_l2": 0.47099940719399985,
+      "response_error_mae": 0.06952700912515866,
+      "target_position": 46,
+      "target_record_identity": "frozen-target-record-v2-8761f68d767cfca486b2c042beed0b7915c50bceb32959fef0bb0cd800303849"
+    },
+    {
+      "parameter_error_l2": 0.6999394097783593,
+      "record_content_hash": "paper-method-record-v1-086b71ca48fd7072927c42b9d548fdce3a32291e9be6caae62e9bd42459029fd",
+      "response_error_l2": 1.1094873886719845,
+      "response_error_mae": 0.150038246647091,
+      "target_position": 47,
+      "target_record_identity": "frozen-target-record-v2-49b0bed9436a965b6c2ea49193f4dbad2427c9264292148e38fe230c6f41d392"
+    },
+    {
+      "parameter_error_l2": 0.2886418194457057,
+      "record_content_hash": "paper-method-record-v1-c013dd51c83ab9854a7c26cfbbf2e3a4a02faeade4bf317bb04ad86e82c532ea",
+      "response_error_l2": 0.7692624175942546,
+      "response_error_mae": 0.11348570880545594,
+      "target_position": 48,
+      "target_record_identity": "frozen-target-record-v2-2eb70a65b78d0e97804dca6390602ee465434ef961789235c67f013367b606c8"
+    },
+    {
+      "parameter_error_l2": 0.11506203942993508,
+      "record_content_hash": "paper-method-record-v1-f87cad0651f02742e43b54fe6b916d279a28c73b9d96c1b3308c7cafd7115764",
+      "response_error_l2": 0.32560272585753475,
+      "response_error_mae": 0.04568664699468172,
+      "target_position": 50,
+      "target_record_identity": "frozen-target-record-v2-08301c62d97fb7f303af7a7708d4b209e5728a16ef9925d4ab09625573516700"
+    },
+    {
+      "parameter_error_l2": 0.6060612353369351,
+      "record_content_hash": "paper-method-record-v1-a303f80afe433a5d4ce5c3676e23ca0705faf8115cfe2665ed1734ebb1e710ea",
+      "response_error_l2": 1.0892790444606857,
+      "response_error_mae": 0.1345011385034013,
+      "target_position": 51,
+      "target_record_identity": "frozen-target-record-v2-1c9615c3a50d0aa3e272f16dc50428b2f299120b93e22213ed8cdaac87ca14f7"
+    },
+    {
+      "parameter_error_l2": 0.09845573322053551,
+      "record_content_hash": "paper-method-record-v1-53ab865a82fbc56eb1f3d4f6097bb12c2c741ddfa1841fefd41fed659cfafb32",
+      "response_error_l2": 0.21577754108659364,
+      "response_error_mae": 0.03397411701444071,
+      "target_position": 52,
+      "target_record_identity": "frozen-target-record-v2-ec3aaaf178174e4846eb483681bd5d7e5f9651678bebe968f18adfed26d2993e"
+    },
+    {
+      "parameter_error_l2": 0.5178210137571038,
+      "record_content_hash": "paper-method-record-v1-95460ba053ae44d4250942f8d2ef4f31d01cee9433115c5c0e41726df4031cf4",
+      "response_error_l2": 1.1314526957708197,
+      "response_error_mae": 0.17219352044139669,
+      "target_position": 53,
+      "target_record_identity": "frozen-target-record-v2-61844cf7d241baa41c9cff31e746ef8e9d3bf664fc174a3755418097cca73366"
+    },
+    {
+      "parameter_error_l2": 0.3276072606475841,
+      "record_content_hash": "paper-method-record-v1-caf25d3918eec3b2edf1628d9abea5e739f3c01ea5f9da59751f3d92ba0be175",
+      "response_error_l2": 0.7508072483353154,
+      "response_error_mae": 0.0976182519505528,
+      "target_position": 54,
+      "target_record_identity": "frozen-target-record-v2-3fe8d359cbabd33f443ba6c8590f9e049e4c8f79711b71abcff0e3d86cc8b7a2"
+    },
+    {
+      "parameter_error_l2": 0.7375592606107886,
+      "record_content_hash": "paper-method-record-v1-3eebe9aed01147011bdee5433dab8ed0824f6cbcc9625b87a79bee00b429bcdc",
+      "response_error_l2": 0.11701867113036206,
+      "response_error_mae": 0.02114498514747538,
+      "target_position": 55,
+      "target_record_identity": "frozen-target-record-v2-cca966ab967c9613e13200766488a155d857df16f1e3076ce6a05d6920b872d4"
+    },
+    {
+      "parameter_error_l2": 0.4512325327047239,
+      "record_content_hash": "paper-method-record-v1-f794a6ac70d03b6bef5f34ae52a6bbc98e883b1a1a7ff726c1791cc52f9c96bc",
+      "response_error_l2": 0.8597654081843804,
+      "response_error_mae": 0.1152954988426064,
+      "target_position": 56,
+      "target_record_identity": "frozen-target-record-v2-44cf6502cfd1c194ab4e430f106f012fecb39131ee362a26fb64ca69596099d1"
+    },
+    {
+      "parameter_error_l2": 0.6410379491972945,
+      "record_content_hash": "paper-method-record-v1-3c6f333e4645f79b60d2c8982f4610967dcc80876491f4ddf7819572c8b631dc",
+      "response_error_l2": 1.3320803646778538,
+      "response_error_mae": 0.19558832886177696,
+      "target_position": 57,
+      "target_record_identity": "frozen-target-record-v2-ef274b92c63b655f1d738d72a71ff81f18b62d90439aa75cb79ef5649d4da2c7"
+    },
+    {
+      "parameter_error_l2": 1.611143842198076,
+      "record_content_hash": "paper-method-record-v1-cbc7bb835cbc2b8ac851ffe22224cce1f76f9751b027c5deadc8dd9d5ca5ac9c",
+      "response_error_l2": 1.7234606832762813,
+      "response_error_mae": 0.2622896372435207,
+      "target_position": 58,
+      "target_record_identity": "frozen-target-record-v2-7e33e6ca1bee0e2795bedad56428c6f839297ea5b378474be049e1aa7c5a67a1"
+    },
+    {
+      "parameter_error_l2": 0.4976688158997709,
+      "record_content_hash": "paper-method-record-v1-49ef3abebe31f50c4d32c6690e384666f5b340e2288f18a97065eb54b2714d10",
+      "response_error_l2": 0.5679265904961167,
+      "response_error_mae": 0.08314184813170869,
+      "target_position": 59,
+      "target_record_identity": "frozen-target-record-v2-84ddb4da736ffcc192bb0504a94bb156e5f8e662fb4a8148d1bdc489428c5530"
+    },
+    {
+      "parameter_error_l2": 0.6228878280815157,
+      "record_content_hash": "paper-method-record-v1-1927623994cfc6638d106014ec0881d5422e3ee83d2a3568cc848463aa26bc24",
+      "response_error_l2": 2.5549386167593364,
+      "response_error_mae": 0.3387364146386972,
+      "target_position": 60,
+      "target_record_identity": "frozen-target-record-v2-b8767a34190ce0e19c807a98f060b8dd5ed9fdb82615f2367b380c37fc08ad9f"
+    },
+    {
+      "parameter_error_l2": 1.139166691751165,
+      "record_content_hash": "paper-method-record-v1-5c5f0cc3d6070c60fa7f3d02d8a19e63e10c4f70f56133c1ec1990e222e5327c",
+      "response_error_l2": 2.3296012455704065,
+      "response_error_mae": 0.33673849627803065,
+      "target_position": 61,
+      "target_record_identity": "frozen-target-record-v2-9751896e74a5a1f6c7184e979fb2d3d7eccfccc031f986b3a8bc74b4b974226c"
+    },
+    {
+      "parameter_error_l2": 0.6889582278611059,
+      "record_content_hash": "paper-method-record-v1-8443862169e69d9a85bbea3bdbbc4cf828394ab3de8d38ae5a41c6cb14eb08f7",
+      "response_error_l2": 1.213358615570053,
+      "response_error_mae": 0.16884801572632568,
+      "target_position": 62,
+      "target_record_identity": "frozen-target-record-v2-d96926abf99869f9badcca3829a528f1132d73a26570513e6b120f803c4478e1"
+    },
+    {
+      "parameter_error_l2": 0.6084060469568177,
+      "record_content_hash": "paper-method-record-v1-9d9cdf976df2abfc7e6877994602af1a846e731b16c07644aca2d79f65d95694",
+      "response_error_l2": 2.6591552075174887,
+      "response_error_mae": 0.3742245397723309,
+      "target_position": 63,
+      "target_record_identity": "frozen-target-record-v2-edb169ac4f561c88a8f3892cad4886434b1edaf1c654e5720a0fb9e5ce3e766a"
+    },
+    {
+      "parameter_error_l2": 0.3323105010143158,
+      "record_content_hash": "paper-method-record-v1-40a2c3076f1af1c6545c76ad53823a2469b1b93c32b8c5d901f492085f4a3ce0",
+      "response_error_l2": 2.04574603179475,
+      "response_error_mae": 0.2791921907008145,
+      "target_position": 64,
+      "target_record_identity": "frozen-target-record-v2-e8aee67ef21caf9ceaefdb705e37198b586542d38035c917296881389f34d2c4"
+    },
+    {
+      "parameter_error_l2": 0.7316344274657848,
+      "record_content_hash": "paper-method-record-v1-40eb6547874c01cec1076fd65c660e7bb4376921080201ebec379f727592b014",
+      "response_error_l2": 0.26101326558703825,
+      "response_error_mae": 0.028815844682685565,
+      "target_position": 65,
+      "target_record_identity": "frozen-target-record-v2-a1e5771c53f3871e067fc6075e6200c95075164a8a3b486a31f8a9fba5d0f8f0"
+    },
+    {
+      "parameter_error_l2": 0.5947337967972827,
+      "record_content_hash": "paper-method-record-v1-0faf8a146c824906f1e533f42cfda2515ce18e5c3540a7119faef804bc69eb2b",
+      "response_error_l2": 4.787612521066403,
+      "response_error_mae": 0.6723555985965504,
+      "target_position": 66,
+      "target_record_identity": "frozen-target-record-v2-97420416be544c82226c05698e97ad7e75fa1b85f48d5bbad6faad6e65084f71"
+    },
+    {
+      "parameter_error_l2": 1.1847839901364308,
+      "record_content_hash": "paper-method-record-v1-269d7feb147e0a6207bc4ad933b0694dee8fed88b3026b47a8ded8b877c95e18",
+      "response_error_l2": 2.125641239085942,
+      "response_error_mae": 0.2813166690224989,
+      "target_position": 67,
+      "target_record_identity": "frozen-target-record-v2-383d93cf3c55de7b98a0f8bfd0065850ff933c1599eae0e0b75ba67662ee7f14"
+    },
+    {
+      "parameter_error_l2": 0.6739795735148005,
+      "record_content_hash": "paper-method-record-v1-1222d13b37d76572a3318151a53e578e9b5fa238f814ae741954ecaf4ba39b52",
+      "response_error_l2": 2.667897331973351,
+      "response_error_mae": 0.3373394960548467,
+      "target_position": 68,
+      "target_record_identity": "frozen-target-record-v2-52193791df93cc5ecf99df3591aa03c0ebf373095f93112d5391dacc5be4d29e"
+    },
+    {
+      "parameter_error_l2": 0.3121792568678211,
+      "record_content_hash": "paper-method-record-v1-74f5acdb289634cc8cf838c6b3be17de2e50e07addd334fc999fd114d844d64c",
+      "response_error_l2": 0.9034860422499997,
+      "response_error_mae": 0.12337970301359746,
+      "target_position": 69,
+      "target_record_identity": "frozen-target-record-v2-73ea7254ad4cc096df8a4bcf5689ebe09e8a265c32d15752b98cb7f1e7152dff"
+    },
+    {
+      "parameter_error_l2": 0.44947430075427275,
+      "record_content_hash": "paper-method-record-v1-8e16790ec9398d61eecaa4fbb32e37d9769c77e248c86533535372e55aacb50f",
+      "response_error_l2": 0.5922420418080918,
+      "response_error_mae": 0.08848544474394657,
+      "target_position": 70,
+      "target_record_identity": "frozen-target-record-v2-ae9acecdf0206e51669a65bfa851902b8f3e273e939b3e553c0c755884f04b20"
+    },
+    {
+      "parameter_error_l2": 0.44803502456303756,
+      "record_content_hash": "paper-method-record-v1-7ebf8f0a29345f0e8cb1858192f1c25309227d283e825bebf70f563a624dbaad",
+      "response_error_l2": 0.8928062841042579,
+      "response_error_mae": 0.13907474477600773,
+      "target_position": 71,
+      "target_record_identity": "frozen-target-record-v2-690f5e384572b5852f4dd7834fafe9582f28b94c312d421d127a5e1e808453d3"
+    },
+    {
+      "parameter_error_l2": 0.707814629577313,
+      "record_content_hash": "paper-method-record-v1-35cadee5ed5675528472007f64d8a926bbed4829af1045fbfff435ad8d1cac3e",
+      "response_error_l2": 0.6925587105953688,
+      "response_error_mae": 0.08973264670166828,
+      "target_position": 72,
+      "target_record_identity": "frozen-target-record-v2-c72753fbb5c295c603632801d2190c61962841a22f353907c3a290bc65f5e6d8"
+    },
+    {
+      "parameter_error_l2": 0.563491876980046,
+      "record_content_hash": "paper-method-record-v1-283661a6ace1edb8b9293125396810a54815dade794d876d0e30c5bec91ba8a8",
+      "response_error_l2": 0.2914978009066854,
+      "response_error_mae": 0.043983263279369564,
+      "target_position": 73,
+      "target_record_identity": "frozen-target-record-v2-d82318df823640b7c644a31c611351b45c9d9496ca5fa4ebe177ad631d0a51d3"
+    },
+    {
+      "parameter_error_l2": 0.7366279251488701,
+      "record_content_hash": "paper-method-record-v1-15bbd3f21484c0da5cc55b5cb4cdb2dc07835b6fc9412107a6959ad46e2a8e77",
+      "response_error_l2": 0.6568179914711437,
+      "response_error_mae": 0.0809974244733894,
+      "target_position": 74,
+      "target_record_identity": "frozen-target-record-v2-e571fd02e4e978d53314105eda2c1b4de6ebd95a2ac915adf272f10c3d09944a"
+    },
+    {
+      "parameter_error_l2": 0.2977206453629872,
+      "record_content_hash": "paper-method-record-v1-ff5715d3e836438b6a632afc1f6b7c7f73692435350096f58e7e9d611b84bf0e",
+      "response_error_l2": 0.37345629837584493,
+      "response_error_mae": 0.05305863738412882,
+      "target_position": 75,
+      "target_record_identity": "frozen-target-record-v2-14c8968fe3e11c764518bfc5c8c0d0d991aa3d3a0ea1599543230af95aadf71d"
+    },
+    {
+      "parameter_error_l2": 0.34136226675448955,
+      "record_content_hash": "paper-method-record-v1-6e47e07ff2abfeb6a9163651a6f2fad912611edc91b63f8c29b9ad98b39cd7b0",
+      "response_error_l2": 0.3017192880630489,
+      "response_error_mae": 0.04347537900102907,
+      "target_position": 76,
+      "target_record_identity": "frozen-target-record-v2-c735dd4223c23145b262a691e696bf3457639949dcfb75d35d8b09d071aa136f"
+    },
+    {
+      "parameter_error_l2": 0.3425359815779639,
+      "record_content_hash": "paper-method-record-v1-d340e2996e6370b26f81eccc71a9906f7938af6c8322c0460ca0bd1900071421",
+      "response_error_l2": 0.16968423374226463,
+      "response_error_mae": 0.02442070571833028,
+      "target_position": 77,
+      "target_record_identity": "frozen-target-record-v2-9ae9707f1288e8615ea67859c3a75964c74694cbe6ca31e9e0d93f55c53a6eb0"
+    },
+    {
+      "parameter_error_l2": 0.6372480607411841,
+      "record_content_hash": "paper-method-record-v1-6c87d82b50d968c120261e537947dc55cc8dcff7df0d5b87ed964a11e6fe0622",
+      "response_error_l2": 0.28120796462306746,
+      "response_error_mae": 0.040354700202078674,
+      "target_position": 78,
+      "target_record_identity": "frozen-target-record-v2-fc3da0ce8da427b8493e61c84947bf489e0b67a203a0ccb8c9bcb2f7426d20cc"
+    },
+    {
+      "parameter_error_l2": 0.7045106164698763,
+      "record_content_hash": "paper-method-record-v1-05a0aa2e326238fd18e533283a795e3648827d0a7b752212b64310a897275052",
+      "response_error_l2": 0.8724903683453047,
+      "response_error_mae": 0.1103037500195569,
+      "target_position": 79,
+      "target_record_identity": "frozen-target-record-v2-971c12e8bad3a4149b3d04137077154513f1dc0cefe745aeba0a8b35ef45b2ce"
+    },
+    {
+      "parameter_error_l2": 0.26414546765747254,
+      "record_content_hash": "paper-method-record-v1-7dcf2305812c1a295a7ce0979f9ff682c09a297fc2e530c99180a7d5ee04633a",
+      "response_error_l2": 2.173988340286311,
+      "response_error_mae": 0.29835342448714075,
+      "target_position": 80,
+      "target_record_identity": "frozen-target-record-v2-2720229ed70dca601613c328ba2ec4bd9ea9aa8de03294c1fb34af8c423e761b"
+    },
+    {
+      "parameter_error_l2": 0.3351295864378208,
+      "record_content_hash": "paper-method-record-v1-c4176994bf2e404e3f3a1bae1e5711f17216270c2ba4e51a9cc65cb26ad41681",
+      "response_error_l2": 0.37697763797235245,
+      "response_error_mae": 0.0488958527246723,
+      "target_position": 81,
+      "target_record_identity": "frozen-target-record-v2-e295f7f81641cd208e0830806630fcf6742e47dc620c3305922d91a326694649"
+    },
+    {
+      "parameter_error_l2": 0.42944911314927525,
+      "record_content_hash": "paper-method-record-v1-eacaac097c9663e9523beaca7a7cae7e7afc24b1bc4241c09b669b3e778e3414",
+      "response_error_l2": 0.7803656912952164,
+      "response_error_mae": 0.10966120307639357,
+      "target_position": 82,
+      "target_record_identity": "frozen-target-record-v2-446dff216dc27910442165f0f1cfed71a3066d5890de70362c3a0635bcd70b80"
+    },
+    {
+      "parameter_error_l2": 1.1115711407215685,
+      "record_content_hash": "paper-method-record-v1-561fb8d36a824ddb20be6d8a131fcf9458c26726a6935316e54ccc97abe7bec4",
+      "response_error_l2": 1.0763570232368764,
+      "response_error_mae": 0.1293224625680523,
+      "target_position": 83,
+      "target_record_identity": "frozen-target-record-v2-b5c6ab5c7a0ec050b9dda0b72438cfe1a896ed3e66c8301913faaf5fc079ade8"
+    },
+    {
+      "parameter_error_l2": 0.25914661086934154,
+      "record_content_hash": "paper-method-record-v1-b1fa73e6bc4105b899c11c619e1647e031dc3d2dc8ca94cc631e81005d3997be",
+      "response_error_l2": 0.38879632285832083,
+      "response_error_mae": 0.05636434698408266,
+      "target_position": 84,
+      "target_record_identity": "frozen-target-record-v2-90df42acf6b8f6fd7721b03a88ad986119839956970157c353da91d86d8bd2b5"
+    },
+    {
+      "parameter_error_l2": 0.35594310535117013,
+      "record_content_hash": "paper-method-record-v1-a224921c35cf8a4a4b3eb0b77a435ef5c37b892e32665c7c0a33dd993642e42c",
+      "response_error_l2": 0.4270471750617137,
+      "response_error_mae": 0.06376591563075636,
+      "target_position": 85,
+      "target_record_identity": "frozen-target-record-v2-e15be0c337e95b5b1efa6ad53e6c8ab36f22ef4a78b4ee8c7270f70449ecfb61"
+    },
+    {
+      "parameter_error_l2": 0.14002536463878199,
+      "record_content_hash": "paper-method-record-v1-55f9d96363cbef6abc575047dab6f5c5305c6b41d9ecf5ae6e68e56eb7272f27",
+      "response_error_l2": 0.4416311783264791,
+      "response_error_mae": 0.05379174759036687,
+      "target_position": 86,
+      "target_record_identity": "frozen-target-record-v2-b625cd6de43ff0101869627e92e037e519b72af1d956dd760c82fed9d19e9f8c"
+    },
+    {
+      "parameter_error_l2": 0.5748094189125708,
+      "record_content_hash": "paper-method-record-v1-f72c3fb273d54561c2f09438a058a620ea6c451b950b96eb3c7f9df09efd272d",
+      "response_error_l2": 1.4540564468855244,
+      "response_error_mae": 0.2079900842407369,
+      "target_position": 87,
+      "target_record_identity": "frozen-target-record-v2-e51f648f76873cc23734675aba2d9a9e6b039a531537742925b9df1d57c06dc9"
+    },
+    {
+      "parameter_error_l2": 0.2197854162479635,
+      "record_content_hash": "paper-method-record-v1-8ef63475b8a32a729f24435c832797202683b4f06ad2718f8beb82b6f4c3da7c",
+      "response_error_l2": 0.36261886343803845,
+      "response_error_mae": 0.04881874368511489,
+      "target_position": 88,
+      "target_record_identity": "frozen-target-record-v2-eac99876e837012c62c3d72c95ef5d7d1e3bb881ed8bdab0199b9fb2efdbcdf8"
+    },
+    {
+      "parameter_error_l2": 0.420185973620996,
+      "record_content_hash": "paper-method-record-v1-894e7949b72e518aba0cfbea346cd14dbe30b0613a76e7c6ebce833aef22392c",
+      "response_error_l2": 0.4170040939882254,
+      "response_error_mae": 0.06929570062084167,
+      "target_position": 89,
+      "target_record_identity": "frozen-target-record-v2-ff41548027111dd0d65ecd34972f35d229833653b282e89ef5cc6dd0e64157ad"
+    },
+    {
+      "parameter_error_l2": 0.42686078036964925,
+      "record_content_hash": "paper-method-record-v1-fb24162e3467d1b0f92536eaefa6117e7c6a78ede25b216af97120291140a75b",
+      "response_error_l2": 0.8876248659774897,
+      "response_error_mae": 0.11795161918354893,
+      "target_position": 90,
+      "target_record_identity": "frozen-target-record-v2-b2ad6667eb5231a582195164c6e26d66d0733a5bb93e16623fff0debd42f630b"
+    },
+    {
+      "parameter_error_l2": 0.41956191219940336,
+      "record_content_hash": "paper-method-record-v1-48a87abe801c935515db208d402a0722df74aeb1ac4ac429e01a94a7d4d365f5",
+      "response_error_l2": 0.3126504847917335,
+      "response_error_mae": 0.04916336017777212,
+      "target_position": 91,
+      "target_record_identity": "frozen-target-record-v2-39702b4ee20277b240cce5ef00f40c9a70fab3ef35b02242d7c3b7cd0dfdeed9"
+    },
+    {
+      "parameter_error_l2": 0.3589987043813407,
+      "record_content_hash": "paper-method-record-v1-73162f68b8b900ac6c468f8944c0bc08cf226a21b0641b1fd1784c5c5caea5b1",
+      "response_error_l2": 2.3683369895132254,
+      "response_error_mae": 0.30868420409988173,
+      "target_position": 92,
+      "target_record_identity": "frozen-target-record-v2-bda967d47407c1a95746d5c8d25b3a0bfb7a751b5f3fa72218e2225eaf676d32"
+    },
+    {
+      "parameter_error_l2": 0.512634842452293,
+      "record_content_hash": "paper-method-record-v1-d4e81996e84bd471550a9242e8c779e803d46a5e9953ffff64326df406f83d3d",
+      "response_error_l2": 1.7071583570517026,
+      "response_error_mae": 0.2387869653330199,
+      "target_position": 93,
+      "target_record_identity": "frozen-target-record-v2-03c13a27f1029635a0c8f0224965d8ce7ba512e578d962087e165aa928a4ed63"
+    },
+    {
+      "parameter_error_l2": 0.8337694847514046,
+      "record_content_hash": "paper-method-record-v1-77ba6b8b736fcbaedf99854cdeb93f39f6afdfa0b5246bba11a45946b3a270f7",
+      "response_error_l2": 1.0881226015835215,
+      "response_error_mae": 0.15548302719616913,
+      "target_position": 94,
+      "target_record_identity": "frozen-target-record-v2-e569773540481e17e4d7be880c87e134a75708012ed2b228e8278dea199e22b3"
+    },
+    {
+      "parameter_error_l2": 0.344266475225324,
+      "record_content_hash": "paper-method-record-v1-f81291f60e31d3ed7e9d5f0e698cebe34a5db15a630ac2439a1232948b481fa9",
+      "response_error_l2": 0.7793218861785728,
+      "response_error_mae": 0.11904460195328284,
+      "target_position": 95,
+      "target_record_identity": "frozen-target-record-v2-c5611395953cce9c03178e12291af77fe86f7cd8dee7c2469f84cbccb91f6d83"
+    },
+    {
+      "parameter_error_l2": 0.776826347439558,
+      "record_content_hash": "paper-method-record-v1-8ff413aa061853161d5341cba1eb652cffdeb6acf1f8211f3ecad6a747577f08",
+      "response_error_l2": 1.6868208734599415,
+      "response_error_mae": 0.22750858257841172,
+      "target_position": 96,
+      "target_record_identity": "frozen-target-record-v2-e8809f4c318d0bade56d60822bfa5b1ba6ab02a6766ef4c9ee6522bd91ef2f21"
+    },
+    {
+      "parameter_error_l2": 0.7338604128981723,
+      "record_content_hash": "paper-method-record-v1-7ef7d2df8fa92b745341a3796e012f9d207a08dc0299b2127d12682abe6b8d8b",
+      "response_error_l2": 3.2925961910702712,
+      "response_error_mae": 0.41890692721535744,
+      "target_position": 97,
+      "target_record_identity": "frozen-target-record-v2-613a7c3fa43a071af9e498cc86c37926d18d990b2d7c9ae43a61219ae4333471"
+    },
+    {
+      "parameter_error_l2": 1.0892511729220606,
+      "record_content_hash": "paper-method-record-v1-f6cda75003cf07ae4bcea72520a16d16f4ec30c6f858ad2df49ae9c22b6f252c",
+      "response_error_l2": 1.2014934044242296,
+      "response_error_mae": 0.19810305382488877,
+      "target_position": 98,
+      "target_record_identity": "frozen-target-record-v2-c1f2caab22dc5c7f72782e379c38ce9ee06297491b6174c6306303cb9f35a7c5"
+    },
+    {
+      "parameter_error_l2": 0.11499471893599789,
+      "record_content_hash": "paper-method-record-v1-db0e2f8916cd54541e9ebdc5a98966e7869a37d118c6fc70c48cb68c9beb2b3b",
+      "response_error_l2": 0.4321909095079609,
+      "response_error_mae": 0.066122695447757,
+      "target_position": 100,
+      "target_record_identity": "frozen-target-record-v2-eeb6e9d45cd3eedeb7925531f572b358c46cb3c1e747036701e2bd1ed13c1151"
+    },
+    {
+      "parameter_error_l2": 0.7210941338942677,
+      "record_content_hash": "paper-method-record-v1-967f5df9cb7449da8751592842ce7a0aeb84b7fa29cd42d94998d3a3442a32c7",
+      "response_error_l2": 2.4762675514809027,
+      "response_error_mae": 0.3197843116421438,
+      "target_position": 101,
+      "target_record_identity": "frozen-target-record-v2-5df4597cf65937bda268d76e80b1f042f7e8c8c7ec97d1318b3c3c51f8a61a8f"
+    },
+    {
+      "parameter_error_l2": 0.6679805221372854,
+      "record_content_hash": "paper-method-record-v1-00b19999ef9ded96dd8d34628bc3f3c9d92bdcd6c2be7833d053d0f5eb73ca0b",
+      "response_error_l2": 0.1342401400137451,
+      "response_error_mae": 0.019816418106347555,
+      "target_position": 102,
+      "target_record_identity": "frozen-target-record-v2-3e8ba52227a59ab65ee2832d05c5f70949cd534b90b517197b3c4d69d38fbafa"
+    },
+    {
+      "parameter_error_l2": 0.5866884538090182,
+      "record_content_hash": "paper-method-record-v1-b1980b56b68a1e1497d8f90af58cab5f9b51d733f4d6f37bd25961f145f17232",
+      "response_error_l2": 0.831463338858645,
+      "response_error_mae": 0.10633371521598747,
+      "target_position": 103,
+      "target_record_identity": "frozen-target-record-v2-855a22546149f17a3eaf3597304d331c085d81eb14dfd5c300aed5bd1df0e433"
+    },
+    {
+      "parameter_error_l2": 0.3866459477445985,
+      "record_content_hash": "paper-method-record-v1-a41b34da4e03593f1936889c636621b6b28cccc777fafb2981a65442e5f37133",
+      "response_error_l2": 0.2959561300241884,
+      "response_error_mae": 0.04043158947870325,
+      "target_position": 104,
+      "target_record_identity": "frozen-target-record-v2-8a8ef0e215360682c47f78ff1f84296e030af41a22bb366934c6648a0f68e914"
+    },
+    {
+      "parameter_error_l2": 0.22542798921386842,
+      "record_content_hash": "paper-method-record-v1-dcbc0e41b944c6af20aa124a0ffd51dad203516e34d37c32f5f85ae7a64fca85",
+      "response_error_l2": 0.20406188872718298,
+      "response_error_mae": 0.03002602288397611,
+      "target_position": 105,
+      "target_record_identity": "frozen-target-record-v2-3d3ab80b25b41b165befc785ea7dc268502f91778c3e54a129dcea7a9c0bc9a8"
+    },
+    {
+      "parameter_error_l2": 0.30731156014295713,
+      "record_content_hash": "paper-method-record-v1-449436dc40da1a784d3741992cf1882917576642733c4ee682a406f6e29379bc",
+      "response_error_l2": 0.8715476638665185,
+      "response_error_mae": 0.10683030719519593,
+      "target_position": 106,
+      "target_record_identity": "frozen-target-record-v2-0245bf13749b951f360c85e648689fcfb331ecb42aa5e0cb6072a931d655a569"
+    },
+    {
+      "parameter_error_l2": 0.3781477700500082,
+      "record_content_hash": "paper-method-record-v1-d8d35f7272b020511b12335e9c675be8eee1a8f77362fe9390004bca5f2fb04d",
+      "response_error_l2": 0.29166516898236095,
+      "response_error_mae": 0.0401241764673614,
+      "target_position": 107,
+      "target_record_identity": "frozen-target-record-v2-b80546a7571cd0bb14eb19aa53448704c04d48d8f4f2eb47fecfd11ced86fd05"
+    },
+    {
+      "parameter_error_l2": 0.6438051698231647,
+      "record_content_hash": "paper-method-record-v1-8aa20d322ded5701a658a3a8accbbf68db90b50dbc23836fc72a9ffee4fe2e39",
+      "response_error_l2": 1.1710329188428759,
+      "response_error_mae": 0.1710791438992601,
+      "target_position": 108,
+      "target_record_identity": "frozen-target-record-v2-b1ec61a33401f62dd2401d1b6ad0e2b9bfdb073c8d2add5cab7c0bc622c84630"
+    },
+    {
+      "parameter_error_l2": 0.5606823760423436,
+      "record_content_hash": "paper-method-record-v1-36a5082c9a0b5e2278934d58fc385f35e7dd6953d0066a605f75439d8b13c21c",
+      "response_error_l2": 1.479474819094032,
+      "response_error_mae": 0.19042630009798814,
+      "target_position": 109,
+      "target_record_identity": "frozen-target-record-v2-028f4cd13517bd0d8aec260235422d0d7d482e36fb14eb0acbf8b50b1eee446d"
+    },
+    {
+      "parameter_error_l2": 0.394846264322423,
+      "record_content_hash": "paper-method-record-v1-8a5b9d73b8ef22dd3085a2872c69bb880866c5592ef8575ad2b30b6e9e6f8add",
+      "response_error_l2": 1.5244875781670462,
+      "response_error_mae": 0.19603799686628917,
+      "target_position": 110,
+      "target_record_identity": "frozen-target-record-v2-62b11ed47eed97f58a8b71bb79ae2ba440f29a6f28f88bcac9c65dbc8ae60e8e"
+    },
+    {
+      "parameter_error_l2": 0.5430420363315707,
+      "record_content_hash": "paper-method-record-v1-9bce9793359cc1c5d84b61617fe87ee80200b57f1c694a1119ae126d17dfd3a6",
+      "response_error_l2": 0.352353918875677,
+      "response_error_mae": 0.05064335518763983,
+      "target_position": 111,
+      "target_record_identity": "frozen-target-record-v2-511bdd05a84d911f9a72c18152ae5389664f4847e72d109ebadc84417211e2c4"
+    },
+    {
+      "parameter_error_l2": 0.7442588471886843,
+      "record_content_hash": "paper-method-record-v1-e887025d3157b619a65a2c94a1170665dba8727182a6e8a0b5065a6bf2f86d4b",
+      "response_error_l2": 0.7282460867403693,
+      "response_error_mae": 0.1256358271741192,
+      "target_position": 112,
+      "target_record_identity": "frozen-target-record-v2-3950feddb8535d6ceca928c4a9b9c9e40ec7398cee73b9b65f1c4c41dcbd7f83"
+    },
+    {
+      "parameter_error_l2": 0.30997007205790966,
+      "record_content_hash": "paper-method-record-v1-7722b366592e20af1ebfa5b3a0bcdda8ae3b94ec76702c4674d7093380f5aa0d",
+      "response_error_l2": 0.3610100113511477,
+      "response_error_mae": 0.059272929251892495,
+      "target_position": 113,
+      "target_record_identity": "frozen-target-record-v2-3d26495eb3e72cbbc0d2f345bff676bcf5c7d9d6ee7ce6e6acd1c2ce18b03625"
+    },
+    {
+      "parameter_error_l2": 0.4772575904812705,
+      "record_content_hash": "paper-method-record-v1-a68409ad45781814ff347d38be6068bf9a3942b4af8ef362d6a3c47924869b69",
+      "response_error_l2": 0.8319770492399496,
+      "response_error_mae": 0.10977586333465297,
+      "target_position": 114,
+      "target_record_identity": "frozen-target-record-v2-99d70ab9572dd7a6932d9c79e63ca77b005c566571b12d958492f15897987d6f"
+    },
+    {
+      "parameter_error_l2": 0.3791795874014542,
+      "record_content_hash": "paper-method-record-v1-204269a3271116a2a3a078a40688a429ec53f6e14ca83d1953e2118aeb48a0b3",
+      "response_error_l2": 0.40969669555718313,
+      "response_error_mae": 0.061139416019250346,
+      "target_position": 115,
+      "target_record_identity": "frozen-target-record-v2-52333fced6c10cbff60251d19e127054fcdeb044cfc525e6c1c7d085530480f3"
+    },
+    {
+      "parameter_error_l2": 0.690013836048422,
+      "record_content_hash": "paper-method-record-v1-ec53b0dfabbacfab7aa72ec6e12daa3cad9a91e0bb242ead83993b63bf1451b0",
+      "response_error_l2": 0.9376566627215522,
+      "response_error_mae": 0.14167276260204745,
+      "target_position": 116,
+      "target_record_identity": "frozen-target-record-v2-ede9169d17affd4b032318692c1439b37d451756548345e34a0fc8dbe01e8cb8"
+    },
+    {
+      "parameter_error_l2": 0.4455398192754981,
+      "record_content_hash": "paper-method-record-v1-e7218d09ab643d56af712c42f25e0d8f2ca7067abc1d5da33b7709d24e580772",
+      "response_error_l2": 1.7651869006827674,
+      "response_error_mae": 0.21762035454412398,
+      "target_position": 117,
+      "target_record_identity": "frozen-target-record-v2-c28f4a57f247432fe447b6c67da1244f9268fef720edaa8a20b149000a273cd6"
+    },
+    {
+      "parameter_error_l2": 0.4136999745820447,
+      "record_content_hash": "paper-method-record-v1-0751cca5c1d29f3a9c611d736ce4917b54d6f2676c346759f28f9d0e88b86fe2",
+      "response_error_l2": 1.4919705886008756,
+      "response_error_mae": 0.21678950978857756,
+      "target_position": 118,
+      "target_record_identity": "frozen-target-record-v2-f67c5c10623662df9d452528e8c843dfff6fcd54b9ca2fe7defb130c89ba2d4e"
+    },
+    {
+      "parameter_error_l2": 0.5309802057855944,
+      "record_content_hash": "paper-method-record-v1-eb34f41bb1eff2448161caa659fb682672b384dcc9dab23490bff5ff8dbc46e7",
+      "response_error_l2": 0.3397967327063866,
+      "response_error_mae": 0.04700691172683946,
+      "target_position": 119,
+      "target_record_identity": "frozen-target-record-v2-beb92c06ab3cb06d2b8fb7e7c3ec1025a7906c06ef80bb5b20988cc80827d731"
+    }
+  ],
+  "schema_version": "mutaco-paper-snpe-population-evidence-v1",
+  "scientific_calls_added_by_collection": 0,
+  "scientific_source_commit": "46a2a45c100990c553e8c9edeeb431f0dbf62847",
+  "sequential_round_allocation": [
+    14,
+    13,
+    13
+  ],
+  "slurm_elapsed": "00:24:04",
+  "slurm_exit_code": "0:0",
+  "slurm_job_id": 6214181,
+  "slurm_state": "COMPLETED",
+  "status": "complete",
+  "target_count": 117,
+  "worker_count": 39
+}

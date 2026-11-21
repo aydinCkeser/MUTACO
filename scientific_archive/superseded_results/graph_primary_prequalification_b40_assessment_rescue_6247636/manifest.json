@@ -1,0 +1,99 @@
+{
+  "schema_version": "mutaco-primary-assessment-rescue-evidence-v1",
+  "evidence_identity": "primary-assessment-rescue-evidence-v1-e7a0e1225f7d3e75046ec74776642a18481a98429c40fa0354054713eb84a053",
+  "status": "completed_collected_archived_verified",
+  "role": "prequalification_engineering_rescue_not_q1_or_primary_performance_evidence",
+  "campaign_id": "graph_primary_prequalification_b40_integration_smoke_v1",
+  "source_failed_attempt": {
+    "job_id": 6247524,
+    "status": "failed_after_complete_search_before_first_assessment",
+    "remains_failed": true,
+    "scientific_source_commit": "a398ed58eef4449ee8aebb98a21243c1863cb3fb"
+  },
+  "rescue_attempt": {
+    "job_id": 6247636,
+    "status": "COMPLETED",
+    "elapsed": "00:00:45",
+    "exit_code": "0:0",
+    "node": "barbun22",
+    "scientific_source_commit": "88d00a1bab06975fd72ab72eaa56eb3d9a296f8a",
+    "automatic_retry": false
+  },
+  "declaration": "experiments/graph_inversion/configs/paper/primary_prequalification_b40_assessment_rescue_v1.json",
+  "declaration_identity": "primary-assessment-rescue-declaration-v1-d8ba3e2b6ac742a4b5824d5adfc9db11a76e172f823b5017e4ff7c504f2f57c8",
+  "decision_freeze_identity": "primary-all-method-decision-freeze-v1-bab64af25214969d97fb20803f4975e2c094faa10ab0c1ed9541e4803f9eca03",
+  "decision_freeze_sha256": "62b8a2797b326995852de2cd388ce14ca5edf38f6d5a810e8a4f8e357e1de9b5",
+  "collection_identity": "primary-assessment-rescue-collection-v1-98391b7cdf534e4c11e1be5b0d4e4eac36cb831bc7d0e32c7032a9672fe23f51",
+  "rescue_identity": "primary-assessment-rescue-result-v1-2d840689122c4f6c1a404acecfcfff939fd8db9f753ef0fba8b126ee0b08b6bd",
+  "target_record_identity": "frozen-target-record-v2-55ef79e8c497a3d9e186553901b04d909b2de06d145b70f177968372063f8693",
+  "budget": 40,
+  "call_accounting": {
+    "search_rerun": false,
+    "search_calls": 0,
+    "maximum_assessment_calls": 3,
+    "attempted_assessment_calls": 3,
+    "successful_assessment_calls": 3,
+    "failed_assessment_calls": 0
+  },
+  "assessment_context": {
+    "family_identity": "primary-paired-heldout-family-v1-9ce7cbaafe56a930578210b8a14c0d9a6fc514cfe5751935779886e8ed32de65",
+    "purpose": "paired_held_out_assessment",
+    "logical_index": 0,
+    "replicate": 0,
+    "evaluation_seed": 5158963867398340264,
+    "shared_across_methods": true
+  },
+  "method_results": [
+    {
+      "method": "mutaco",
+      "recommended_theta": [1.2309844493865967, 0.8728883862495422, 2.0, 0.6750051975250244],
+      "heldout_physical_mae": 0.0584814541911328,
+      "record_identity": "primary-assessment-rescue-record-v1-70df013f818b64cb3e2bd679d7e377bd98f5c3943df3df52fda3a2c841b2cc00",
+      "artifact_sha256": "11e4603c701722699a8447ed01167ce3994f31c9b314878574e171451bbce0db"
+    },
+    {
+      "method": "nei_bo",
+      "recommended_theta": [1.1838120222091675, 0.7506611347198486, 2.0, 0.7801502346992493],
+      "heldout_physical_mae": 0.04739550825834158,
+      "record_identity": "primary-assessment-rescue-record-v1-c469cbd55b5841f597b7784c42762de3943be4668553463902057ef45436645a",
+      "artifact_sha256": "9befe949827edb3bee167b19fbd0300f57e9d015307d2d53a86be40d2357dad8"
+    },
+    {
+      "method": "sobol",
+      "recommended_theta": [0.8270516395568848, 0.5468377470970154, 1.926875352859497, 0.20393967628479004],
+      "heldout_physical_mae": 0.12467099237910588,
+      "record_identity": "primary-assessment-rescue-record-v1-5fc8a734ea06701a7b6f07d21bb73d6342cfe3f33244cd74f50017a3ddd2fec5",
+      "artifact_sha256": "08798023577e5d555f955266b63ca4c677b1cc0b1bdd27ec19ae7d971029e91e"
+    }
+  ],
+  "paired_mae_differences": {
+    "mutaco_minus_nei_bo": 0.01108594593279122,
+    "mutaco_minus_sobol": -0.06618953818797308,
+    "nei_bo_minus_sobol": -0.0772754841207643
+  },
+  "ranking_on_this_engineering_target_only": ["nei_bo", "mutaco", "sobol"],
+  "integrity": {
+    "json_hash_pairs_verified": 7,
+    "json_parse_failures": 0,
+    "missing_sidecars": 0,
+    "hash_mismatches": 0,
+    "collection_sha256": "f153df2e4897e222353602a02c9371299a8e88484f18fd98b6db04dc9a1c8c53",
+    "rescue_result_sha256": "6920393b062511dac3e903577b9206ada5a32c55cbc7d010abf4e8c124cb9f64",
+    "rescue_start_sha256": "b6dd1b438a7390d2d6a68bbf9a58c8000831628a89df0650549fcbf3c3c113e4",
+    "rescue_terminal_sha256": "d022c10018bcc9f3fc9985f76da77d26ae05bec36131fa0d581f6b1717e057c4",
+    "scheduler_stdout_sha256": "061f082cc2fef68b496bd07ea494c5fce9ab45f62e9a4662bbca619c121b8bdf",
+    "scheduler_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scheduler_stderr_bytes": 0,
+    "full_worker_collection_and_log_tree_copied_locally": true
+  },
+  "eligibility": {
+    "q1_tier_selection": false,
+    "primary_population_performance": false,
+    "single_target_engineering_comparison": true
+  },
+  "remote_output_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/primary_three_method_smoke/assessment-rescue-v1/workers",
+  "remote_log_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/primary_three_method_smoke/assessment-rescue-v1/logs",
+  "local_raw_evidence": "experiments/paper/exploration/outputs/primary_three_method_smoke/assessment_rescue_attempt_6247636",
+  "scientific_calls_added_by_archival_and_documentation": 0,
+  "truba_jobs_added_by_archival_and_documentation": 0
+}

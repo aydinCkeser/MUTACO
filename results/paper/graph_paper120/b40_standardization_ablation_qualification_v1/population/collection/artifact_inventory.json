@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "path": "population_collection.json",
+      "sha256": "5594e677577a4cef016d1aa3ee49f89c67a32d92572d7776a7451d2b7736e9f9",
+      "size_bytes": 1679
+    },
+    {
+      "path": "population_collection.sha256",
+      "sha256": "3a62efe5bc1dbab6c33313c2079f41f4b398443c806ff80af0fc29f471a8f351",
+      "size_bytes": 64
+    },
+    {
+      "path": "population_summary.json",
+      "sha256": "af6c90a0a043aedf7709e1aa78dccb957244e8b81809617974dfadad6e28c094",
+      "size_bytes": 12640
+    },
+    {
+      "path": "population_summary.sha256",
+      "sha256": "83e877aa00bea809aaa5dbf10c8f2f50595e2d7bffe7bc9ac64de2ac2e6a5264",
+      "size_bytes": 64
+    }
+  ],
+  "schema_version": "mutaco-paper-v3-global-inventory-v1",
+  "scientific_calls": 0
+}

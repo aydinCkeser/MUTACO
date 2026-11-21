@@ -1,0 +1,14 @@
+{
+  "attempt_index": 0,
+  "evaluation_seed": 9818052026,
+  "maximum_transport_calls": 1,
+  "point_index": 7,
+  "retry_calls": 0,
+  "schema_version": "mutaco-oscillator-physics-point-intent-v1",
+  "theta": [
+    1.910422682762146,
+    1.115454077720642,
+    1.1611828804016113,
+    0.930811882019043
+  ]
+}

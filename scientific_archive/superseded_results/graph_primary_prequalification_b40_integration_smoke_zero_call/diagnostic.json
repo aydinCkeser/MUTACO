@@ -1,0 +1,49 @@
+{
+  "call_accounting": {
+    "assessment_callback_invocations": 3,
+    "failed_callback_invocations": 0,
+    "maximum_callback_invocations": 123,
+    "search_callback_invocations": 120,
+    "successful_callback_invocations": 123
+  },
+  "classification": "zero_simulator_call_production_shaped_engineering_evidence_not_q1_or_primary_performance_evidence",
+  "declaration_identity": "primary-population-declaration-v1-27e5747d2e155163b7b7f5957eeec0c03a3ca40bfde459c2746c39c7b9835d2c",
+  "diagnostic_identity": "primary-prequalification-smoke-zero-call-diagnostic-v1-e95d634a9fba3b7cd04a63765838d2c75ab72efd490ea62f0cf392d3be54ade2",
+  "freeze_count": 1,
+  "methods": [
+    {
+      "method": "mutaco",
+      "status": "completed",
+      "terminal_iterations": [64, 64, 64, 64, 64, 64, 64, 64, 64, 64],
+      "terminal_source": "refined"
+    },
+    {
+      "baseline_factorization_policies": [
+        "promoted_float64_cholesky_zero_jitter_v1"
+      ],
+      "method": "nei_bo",
+      "status": "completed",
+      "terminal_iterations": [7, 64, 14, 12, 64, 10, 64, 18, 11, 12],
+      "terminal_source": "refined"
+    },
+    {
+      "method": "sobol",
+      "status": "completed",
+      "surrogate_used": false
+    }
+  ],
+  "plan_identity": "primary-prequalification-smoke-plan-v1-79c0f4fcbb4750e85300fe28a98e9a2474f73dc67a4d7da8e7fb471faa713fca",
+  "response_source": "deterministic_in_memory_analytic_callback_not_physical_graph_simulator",
+  "schema_version": "mutaco-primary-prequalification-smoke-zero-call-diagnostic-v1",
+  "scientific_calls": 0,
+  "simulator_calls": 0,
+  "source_commit": "a398ed58eef4449ee8aebb98a21243c1863cb3fb",
+  "status": "completed_zero_call",
+  "tests": {
+    "focused_preparation_tests_passed": 18,
+    "full_suite_passed": 427,
+    "full_suite_skipped": 8,
+    "pinned_environment": "mutaco-sbi"
+  },
+  "truba_jobs_submitted": 0
+}

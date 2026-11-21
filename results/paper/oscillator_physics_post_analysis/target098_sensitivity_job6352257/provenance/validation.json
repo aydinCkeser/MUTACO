@@ -1,0 +1,99 @@
+{
+  "base_commit": "649235bcb7e8773f5f4b0425ad111314d7d3b1f9",
+  "base_source_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/scalar_primary_population/b100-v3r2/source-exact",
+  "created_utc": "2026-09-12T22:39:31.308690+00:00",
+  "execution_preflight": null,
+  "host": "truba",
+  "job_submitted": false,
+  "layout": {
+    "paths_pairwise_disjoint": true,
+    "qualification_output_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/oscillator_physics_target098/aeee1cc567ab/workers",
+    "scheduler_log_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/oscillator_physics_target098/aeee1cc567ab/logs",
+    "schema_version": "mutaco-truba-qualification-layout-v1",
+    "scientific_calls": 0,
+    "source_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/oscillator_physics_target098/aeee1cc567ab/source-exact"
+  },
+  "log_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/oscillator_physics_target098/aeee1cc567ab/logs",
+  "output_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/oscillator_physics_target098/aeee1cc567ab/workers",
+  "profile": "experiments/paper/oscillator_physics_post_analysis/truba/target098_sensitivity_v1.env",
+  "profile_sha256": "73743a53cd21f8a408bcea0ff7e8db9594bcad121cb6e3676061eab1bc8bed7c",
+  "receipt_identity": "mutaco-truba-validation-receipt-v1-3424efe3d83f47e620a1e753e47f460f744591f4061d20b2b4e4c99fa8fdc8c4",
+  "runtime_python": "/arf/home/REPLACE_WITH_TRUBA_USER/mutaco/envs/mutaco-sbi-0261/bin/python",
+  "schema_version": "mutaco-truba-validation-receipt-v1",
+  "scientific_calls": 0,
+  "source_commit": "aeee1cc567abff6b0f23e1e6dbdce4115e882c7c",
+  "source_materialization": {
+    "schema_version": "mutaco-truba-source-materialization-v1",
+    "source_commit": "aeee1cc567abff6b0f23e1e6dbdce4115e882c7c",
+    "source_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/oscillator_physics_target098/aeee1cc567ab/source-exact",
+    "status": "materialized_clean"
+  },
+  "source_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/oscillator_physics_target098/aeee1cc567ab/source-exact",
+  "status": "validated_zero_call",
+  "submission_authorized": false,
+  "transfer": "incremental_git_bundle_v1",
+  "worker_preview": {
+    "call_preview": {
+      "center_calls": 0,
+      "maximum_simulator_calls": 8,
+      "retry_calls": 0,
+      "scientific_calls_executed": 0
+    },
+    "evaluation_seed": 9818052026,
+    "job_submitted": false,
+    "pending_theta": [
+      [
+        1.8354227542877197,
+        1.115454077720642,
+        1.1611828804016113,
+        0.880811870098114
+      ],
+      [
+        1.9854227304458618,
+        1.115454077720642,
+        1.1611828804016113,
+        0.880811870098114
+      ],
+      [
+        1.910422682762146,
+        1.0404541492462158,
+        1.1611828804016113,
+        0.880811870098114
+      ],
+      [
+        1.910422682762146,
+        1.190454125404358,
+        1.1611828804016113,
+        0.880811870098114
+      ],
+      [
+        1.910422682762146,
+        1.115454077720642,
+        1.0861828327178955,
+        0.880811870098114
+      ],
+      [
+        1.910422682762146,
+        1.115454077720642,
+        1.2361829280853271,
+        0.880811870098114
+      ],
+      [
+        1.910422682762146,
+        1.115454077720642,
+        1.1611828804016113,
+        0.8308118581771851
+      ],
+      [
+        1.910422682762146,
+        1.115454077720642,
+        1.1611828804016113,
+        0.930811882019043
+      ]
+    ],
+    "schema_version": "mutaco-oscillator-physics-preflight-v1",
+    "scientific_calls_executed": 0,
+    "status": "validated_zero_call",
+    "submission_authorized": false
+  }
+}

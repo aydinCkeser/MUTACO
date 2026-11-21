@@ -1,0 +1,47 @@
+{
+  "schema_version": "mutaco-paper-ingestion-spec-v1",
+  "ingestion_id": "graph_paper120_b40_standardization_ablation_v1",
+  "bundle_id": "graph_paper120_b40_standardization_ablation_v1",
+  "bundle_format": "canonical_population_v1",
+  "cohort_identity": "hidden-theta-cohort-v2-da66373467f7cc3eecf5600bb38ef9d845c0c5a40d33c04247be72687bc38c46",
+  "cohort_manifest": "data/cohorts/paper120_v3/manifest.json",
+  "cohort_sha256": "359fc0bb59fc9a8a52f5da684e7a7eb352466bdc0d0a54fb8efa94131ce423bb",
+  "methods": ["mutaco_standardized", "mutaco_unstandardized"],
+  "inference_budget_per_method_target": 40,
+  "expected_target_count": 120,
+  "expected_physical_calls": {
+    "attempted_calls": 9840,
+    "successful_calls": 9840,
+    "failed_calls": 0,
+    "retry_calls": 0
+  },
+  "bootstrap_seed": 92020120,
+  "bootstrap_resamples": 10000,
+  "source_fragments": [
+    {
+      "source_id": "qualification3",
+      "kind": "worker_population",
+      "source_evidence_identity": "qualification-manifest-sha256-1ecb99d3385a32d33c578fe559506e40ac37f1abaa675f9e6dcb4b5deff5084c",
+      "source_commit": "1062f66cb0605a8e89331af842fa82cdbb636ba1",
+      "declaration_identity": "paper-population-declaration-v3-7f6f63b004d79cdcffd0e10b2863f8619df269c4265b97c070aee28435e97fd7",
+      "collection_sha256": "5594e677577a4cef016d1aa3ee49f89c67a32d92572d7776a7451d2b7736e9f9",
+      "target_count": 3,
+      "record_count": 6,
+      "successful_calls": 246
+    },
+    {
+      "source_id": "remaining117",
+      "kind": "worker_population",
+      "source_evidence_identity": "truba-job-6220933-collection-sha256-e3c00ff4ebda73a15e7c493dca68b99eebc2b5c8c8b6b3f9b184b063e0355ac1",
+      "source_commit": "522acea5d95baf6d3f87d19bc2e5f5e50c243882",
+      "declaration_identity": "paper-population-declaration-v3-6d266b02d5426ecb34d7d2836f28230a47dc8ca369d0914746fc54d32f807651",
+      "collection_sha256": "e3c00ff4ebda73a15e7c493dca68b99eebc2b5c8c8b6b3f9b184b063e0355ac1",
+      "target_count": 117,
+      "record_count": 234,
+      "successful_calls": 9594
+    }
+  ],
+  "output": "benchmarks/paper/graph_paper120/b40_standardization_ablation_v1",
+  "consolidation_authorized": false,
+  "ingestion_identity": "paper-ingestion-spec-v1-f4f88bce263e68e8fffe2e723f9f44d288deda9b2493cb754aacb29d8fbf82a9"
+}

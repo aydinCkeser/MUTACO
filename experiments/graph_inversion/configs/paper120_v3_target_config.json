@@ -1,0 +1,20 @@
+{
+  "schema_version": "mutaco-target-simulator-configuration-v1",
+  "dtype": "float32",
+  "device": "cpu",
+  "simulator": {
+    "adapter": "graph_scientific_d4",
+    "identifier": "graph-oscillator.overdamped-scientific.v1",
+    "parameter_profile": "p4-paper-baseline",
+    "response_profile": "m20-five-force-scientific",
+    "node_count": 10,
+    "batch_size": 80,
+    "repeat_size": 2,
+    "bias_conditions": 5,
+    "temperature": 0.15,
+    "dt": 0.1,
+    "burn_in_steps": 100,
+    "sample_steps": 900,
+    "sample_stride": 1
+  }
+}

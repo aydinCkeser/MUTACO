@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mutaco-oscillator-physics-sensitivity-v1",
+  "type": "object",
+  "required": ["schema_version", "target_position", "parameter_names", "response_names", "normalized_half_step", "physical_half_steps", "response_scales", "jacobian_wrt_normalized", "jacobian_wrt_physical", "scaled_jacobian_wrt_normalized", "point_outcome_identities", "call_accounting", "sensitivity_identity"],
+  "properties": {
+    "schema_version": {"const": "mutaco-oscillator-physics-sensitivity-v1"},
+    "target_position": {"const": 98},
+    "parameter_names": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "string"}},
+    "response_names": {"type": "array", "minItems": 20, "maxItems": 20, "items": {"type": "string"}},
+    "normalized_half_step": {"const": 0.05},
+    "physical_half_steps": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "number", "exclusiveMinimum": 0}},
+    "response_scales": {"type": "array", "minItems": 20, "maxItems": 20, "items": {"type": "number", "exclusiveMinimum": 0}},
+    "jacobian_wrt_normalized": {"$ref": "#/$defs/matrix"},
+    "jacobian_wrt_physical": {"$ref": "#/$defs/matrix"},
+    "scaled_jacobian_wrt_normalized": {"$ref": "#/$defs/matrix"},
+    "point_outcome_identities": {"type": "array", "minItems": 8, "maxItems": 8, "items": {"type": "string"}},
+    "call_accounting": {
+      "type": "object",
+      "required": ["attempted_calls", "successful_calls", "failed_calls", "retry_calls", "center_calls"],
+      "properties": {
+        "attempted_calls": {"const": 8}, "successful_calls": {"const": 8}, "failed_calls": {"const": 0}, "retry_calls": {"const": 0}, "center_calls": {"const": 0}
+      },
+      "additionalProperties": false
+    },
+    "sensitivity_identity": {"type": "string", "pattern": "^mutaco-oscillator-physics-sensitivity-v1-[0-9a-f]{64}$"}
+  },
+  "$defs": {
+    "matrix": {"type": "array", "minItems": 20, "maxItems": 20, "items": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "number"}}}
+  },
+  "additionalProperties": false
+}

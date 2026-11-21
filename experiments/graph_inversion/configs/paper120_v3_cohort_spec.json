@@ -1,0 +1,25 @@
+{
+  "cohort_id": "graph_paper_120_v3_new_cohort_v1",
+  "simulator_adapter": "graph_scientific_d4",
+  "simulator_definition_id": "graph-oscillator.overdamped-scientific.v1",
+  "simulator_configuration_identity": "graph-target-simulator-configuration-v1-ff70b08584d86189e7464b20602142d9faeca01f588c0d691de6cdf2c7568a08",
+  "simulator_configuration_sha256": "2614cdae3f2eb40ff1a0f0ee473056f05c8284d3ab59e2f159969ed1cc704a8a",
+  "parameter_profile": "p4-paper-baseline",
+  "parameter_names": [
+    "weight_mean",
+    "pairwise_coupling_mean",
+    "bias_scale_mean",
+    "pairwise_coupling_CV"
+  ],
+  "bounds": [
+    [0.5, 0.5, 0.5, 0.0],
+    [2.0, 2.0, 2.0, 1.0]
+  ],
+  "target_count": 120,
+  "campaign_seed": 92020120,
+  "target_seed_namespace": "graph_paper_120_v3_target_response",
+  "sobol_skip": 0,
+  "sobol_scramble": true,
+  "dtype": "float32",
+  "generation_device": "cpu"
+}

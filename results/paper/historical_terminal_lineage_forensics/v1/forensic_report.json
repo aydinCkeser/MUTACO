@@ -1,0 +1,96 @@
+{
+  "b100": {
+    "error_availability": {
+      "E_heldout": 120,
+      "E_obs": 0,
+      "E_raw_GP": 0,
+      "E_term_GP": 0
+    },
+    "fact_strength": "direct_endpoints_plus_exact_source_inference",
+    "path_classifications": {
+      "indeterminate_from_retained_evidence": 120
+    },
+    "source_commits": {
+      "2b067c33720ed7c6b30ee91ae6087081d5ad0776": 3,
+      "e7baa235fd7282ea478acc83f9457cfd95b76185": 117
+    },
+    "target_specific_raw_vs_refined_classification": "unavailable_without_raw_terminal_metadata",
+    "targets": 120
+  },
+  "b40": {
+    "error_availability": {
+      "E_heldout": 120,
+      "E_obs": 120,
+      "E_raw_GP": 120,
+      "E_term_GP": 120
+    },
+    "fact_strength": "direct_persisted_and_direct_recomputed",
+    "one_iteration_restart_histories": 1200,
+    "path_classifications": {
+      "historical_one_step_terminal": 90,
+      "raw_fallback_after_one_step_attempts": 30
+    },
+    "posterior_calls": {
+      "21": 120
+    },
+    "restart_failures": 0,
+    "restart_histories": 1200,
+    "returned_candidate_sources": {
+      "raw_fallback": 30,
+      "refined": 90
+    },
+    "returned_vs_best_raw_surrogate_mae": {
+      "equal_within_1e_12": 30,
+      "interpretation": "surrogate-only comparison; not heldout physical improvement",
+      "returned_better": 14,
+      "returned_worse": 76,
+      "summary": {
+        "maximum": 0.04003162495791912,
+        "mean": 0.008902030861160407,
+        "median": 0.006416161544620991,
+        "minimum": -0.020517170429229736,
+        "n": 120
+      }
+    },
+    "selected_restart_improvement_surrogate_mae": {
+      "maximum": 0.07065409049391747,
+      "mean": 0.019286538732962474,
+      "median": 0.016517640557140112,
+      "minimum": 0.0007378794252872467,
+      "n": 90
+    },
+    "targets": 120
+  },
+  "exact_source_conclusion": {
+    "continuous_optimizer_blob_identical_across_b40_and_b100": true,
+    "defect": "convergence compares the raw/pre-update score with the same pre-update score after optimizer.step",
+    "mathematical_trace": [
+      "s0 = L(mu(theta0), y_star); previous = s0",
+      "compute gradient of s(theta0), then theta1 = project(Adam(theta0, grad s(theta0)))",
+      "historical current = s(theta0), not s(theta1)",
+      "abs(previous-current) = abs(s0-s0) = 0 <= tolerance",
+      "loop terminates after one update; only afterward is s(theta1) evaluated"
+    ],
+    "physical_mae_blob_identical_across_b40_and_b100": true
+  },
+  "forensic_report_identity": "historical-terminal-lineage-forensic-report-v1-6b1a939b1ad0f714daf141a807dcebba38b716c45175711e7e9da199c2e361f2",
+  "forensic_spec_identity": "historical-terminal-lineage-forensic-spec-v1-33e9bc9f55a1495b004deffd02b00b327f38525eaff3a74877d7e60b7df1e4e0",
+  "historical_evidence_modified": false,
+  "row_count": 240,
+  "schema_version": "mutaco-historical-terminal-lineage-forensic-report-v1",
+  "scientific_calls": 0,
+  "scientific_disposition": {
+    "invalid_current_policy_claims": [
+      "historical MUTACO endpoints do not estimate performance of the corrected multi-step terminal optimizer",
+      "raw, terminal-surrogate, and heldout errors cannot be substituted for one another",
+      "B100 target-specific raw-versus-one-step return branches cannot be claimed from compact evidence"
+    ],
+    "requires_new_evidence": "a repaired MUTACO-vs-SBI comparison is required for current-policy performance claims",
+    "valid_claims": [
+      "historical searches and recommendations are valid evidence for the policies actually executed",
+      "heldout physical assessments remain observations of the immutable returned recommendations",
+      "B40 directly executed 1024-point screening followed by one update attempt per restart"
+    ]
+  },
+  "truba_jobs_submitted": 0
+}

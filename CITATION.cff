@@ -1,0 +1,22 @@
+cff-version: "1.2.0"
+message: "Please cite the MUTACO preprint and identify the software release and dataset versions used."
+title: MUTACO
+type: software
+repository-code: "https://github.com/aydinCkeser/MUTACO"
+license: BSD-3-Clause
+authors:
+  - {given-names: Ege, family-names: Karadeniz}
+  - {given-names: Aydın Cem, family-names: Keser}
+preferred-citation:
+  type: article
+  title: "MUTACO: Simulator-Efficient Response Matching in Stochastic Nonlinear Systems via Compatibility-Aware Sequential Design"
+  authors:
+    - {given-names: Ege, family-names: Karadeniz}
+    - {given-names: İlter Onat, family-names: Korkmaz}
+    - {given-names: Umut Can, family-names: Turhan}
+    - {given-names: Cem, family-names: Tekin}
+    - {given-names: Aydın Cem, family-names: Keser}
+  journal: arXiv
+  year: 2026
+  doi: "10.48550/arXiv.2610.04619"
+  url: "https://arxiv.org/abs/2610.04619v2"

@@ -1,0 +1,110 @@
+{
+  "analysis": {
+    "adapter": "adapt_scalar_primary_export",
+    "adapter_source": "experiments/paper/common/evidence_analysis.py",
+    "adapter_source_sha256": "81f94aa88ea7ab8d48808b4ea1ced4cfa8673f19aadd142eaaccea6e830969f4",
+    "analysis_spec_identity": "cross-experiment-analysis-spec-v1-c5b0afcfa3a9d194de34cbdfed5854e77ff827f4a312a3589b216eca83ca540f",
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 92024100,
+    "primary_metric": "heldout_assessment_error.component_mean_mae"
+  },
+  "budget": 100,
+  "cohort_manifest": "data/cohorts/paper120_v3/manifest.json",
+  "cohort_manifest_sha256": "359fc0bb59fc9a8a52f5da684e7a7eb352466bdc0d0a54fb8efa94131ce423bb",
+  "collection": {
+    "append_only_worker_evidence": true,
+    "collector": "infrastructure/truba/collect_primary_benchmark.py",
+    "collector_dependency": "afterany_array",
+    "collector_sha256": "334c43e14d3eb11fe444890faeabeaa2c90a5f61f04ec8f1ab93bce0d9999547",
+    "compact_export_schema": "mutaco-scalar-primary-compact-export-v1"
+  },
+  "cross_experiment_contract_audit": {
+    "budgets": [
+      40,
+      100
+    ],
+    "campaigns_independent": true,
+    "common_cohort": "paper120_v3",
+    "contract_identity": "cross-experiment-scientific-contract-v1-f5cfcdc612904d951da366c492d510ad45886265ec716b2560bc1b93bce90fd4",
+    "declarations": [
+      {
+        "assessment_pairing": "method_independent_within_target_budget",
+        "budget": 40,
+        "campaign_id": "graph_paper120_scalar_primary_b40_v1",
+        "cohort": "paper120_v3",
+        "contract_identity": "cross-experiment-scientific-contract-v1-f5cfcdc612904d951da366c492d510ad45886265ec716b2560bc1b93bce90fd4",
+        "search_randomness": "method_addressed",
+        "simulator_backbone_identity": "paper-simulator-scientific-backbone-v1-34fea45cfad9dd4a16c5310362c97e53ff3e3d8c7888fc07d7a8f1789c4d158b",
+        "status": "valid",
+        "study_identity": "paper-study-spec-v1-f36dcfe64fe9319b3dfcc972601a722251d604577ce65c00a2a63bf6f2584f84",
+        "target_count": 120
+      },
+      {
+        "assessment_pairing": "method_independent_within_target_budget",
+        "budget": 100,
+        "campaign_id": "graph_paper120_scalar_primary_b100_v1",
+        "cohort": "paper120_v3",
+        "contract_identity": "cross-experiment-scientific-contract-v1-f5cfcdc612904d951da366c492d510ad45886265ec716b2560bc1b93bce90fd4",
+        "search_randomness": "method_addressed",
+        "simulator_backbone_identity": "paper-simulator-scientific-backbone-v1-34fea45cfad9dd4a16c5310362c97e53ff3e3d8c7888fc07d7a8f1789c4d158b",
+        "status": "valid",
+        "study_identity": "paper-study-spec-v1-f36dcfe64fe9319b3dfcc972601a722251d604577ce65c00a2a63bf6f2584f84",
+        "target_count": 120
+      }
+    ],
+    "status": "valid",
+    "study_identity": "paper-study-spec-v1-f36dcfe64fe9319b3dfcc972601a722251d604577ce65c00a2a63bf6f2584f84"
+  },
+  "declaration": "experiments/graph_inversion/configs/paper/scalar_primary_population_b100_v3r2.json",
+  "declaration_identity": "scalar-primary-population-declaration-v1-4368a180ea23c8efce026261ac9c9f29b034c6e615c24cc2716f7becc8af7520",
+  "declaration_sha256": "7b4a83e7a6c02073764c35219dbd3cd52375b68bf22f52d8db16de41cd9699ea",
+  "execution_authorized": false,
+  "historical_evidence_changed": false,
+  "logical_workers": 120,
+  "logical_workers_per_task": 2,
+  "maximum_calls_per_logical_worker": 303,
+  "maximum_paired_assessment_calls": 360,
+  "maximum_search_calls": 36000,
+  "maximum_total_calls": 36360,
+  "methods": [
+    "mutaco",
+    "scalar_qlognei",
+    "sobol"
+  ],
+  "package_identity": "scalar-primary-b100-preparation-audit-v1-e1a1b60e603a8a9b9cfdfd82075c4e247f2dba2c5baf140c475380cc7a88bd7f",
+  "physical_array_tasks": 60,
+  "plan": "experiments/graph_inversion/configs/paper/scalar_primary_population_b100_plan_v3r2.json",
+  "plan_identity": "scalar-primary-population-plan-v1-a1329425fdd2b84f59ee4d29748469b23db3aabdd9196714cfe0e21d37060343",
+  "plan_sha256": "194a3cdbf87c9191deaba27e5fc8b7b2de46517f2943e1bc2550077d0027b934",
+  "profile": "infrastructure/truba/scalar_primary_population_b100_v3r2.env",
+  "profile_sha256": "01ee5c405eaa1ed38c922ccff86f40b127b936b5ab51d5a14d43c4be9a777280",
+  "scheduler_policy": {
+    "array_concurrency": 60,
+    "array_indices": "0-59",
+    "automatic_retry": false,
+    "cpus_per_task": 20,
+    "layout": "60_exclusive_nodes_two_sequential_logical_workers_each",
+    "slurm_requeue": false,
+    "transaction": "delayed_start_then_afterany_collector_with_partial_submit_rollback",
+    "worker_walltime": "04:00:00"
+  },
+  "schema_version": "mutaco-scalar-primary-b100-preparation-audit-v1",
+  "scientific_calls": 0,
+  "source_transfers": 0,
+  "status": "complete_zero_call_unsubmitted",
+  "study_identity": "paper-study-spec-v1-f36dcfe64fe9319b3dfcc972601a722251d604577ce65c00a2a63bf6f2584f84",
+  "supersedes_scheduler_only": {
+    "declaration": "experiments/graph_inversion/configs/paper/scalar_primary_population_b100_v2.json",
+    "reason": "two-array 100-plus-20 layout is incompatible with the demonstrated effective submit-job limit",
+    "scientific_policy_changed": false
+  },
+  "timing_fields": [
+    "simulator",
+    "gp_fit",
+    "acquisition",
+    "terminal",
+    "other",
+    "total"
+  ],
+  "truba_jobs_submitted": 0
+}

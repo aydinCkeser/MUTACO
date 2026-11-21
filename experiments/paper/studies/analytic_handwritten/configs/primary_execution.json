@@ -1,0 +1,7 @@
+{
+  "schema_version": "mutaco-paper-execution-selection-v1",
+  "state": "unexecuted",
+  "execution_requires_approval": true,
+  "campaign_id": "paper_handwritten_supporting_v1",
+  "methods_to_execute": ["mutaco", "sbi_npe"]
+}

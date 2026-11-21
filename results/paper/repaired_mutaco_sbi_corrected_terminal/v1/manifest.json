@@ -1,0 +1,14 @@
+{
+  "assessment_authorized": false,
+  "heldout_assessment_calls": 0,
+  "package_identity": "repaired-sbi-corrected-terminal-package-v1-6988fdc19056535377b54b28ba6d6b03c9ee46ddba5f793d03e536d053d490a2",
+  "record_count": 240,
+  "records_content_identity": "repaired-sbi-corrected-terminal-records-file-v1-79329be2fbd6df9fecce8628ac262501122cda92bf46a923f8871f4d6da26ce4",
+  "records_identity": "repaired-sbi-corrected-terminal-record-list-v1-6d7b74488e3dba7f7afefb86ae84736a0c82d3d2fda6111d702a27158e7ff86e",
+  "schema_version": "mutaco-repaired-sbi-corrected-terminal-package-v1",
+  "simulator_calls": 0,
+  "summary_content_identity": "repaired-sbi-corrected-terminal-summary-file-v1-807aec3a1ab6a3a061181aae5f58e1460fb736cd37bdcd256a994fd74cf0c382",
+  "summary_identity": "repaired-sbi-corrected-terminal-summary-v1-70ac3ab493ba21b9238e232cd61eaf8a7ea29348789b3d8fde99d4cd4323fbc7",
+  "terminal_recommendations_frozen": 240,
+  "truba_jobs_submitted": 0
+}

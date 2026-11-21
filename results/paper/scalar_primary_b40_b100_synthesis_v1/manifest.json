@@ -1,0 +1,32 @@
+{
+  "budgets": [
+    40,
+    100
+  ],
+  "campaign_relation": "independent_campaigns_same_ordered_target_cohort_not_nested",
+  "historical_evidence_modified": false,
+  "integrity_audit_identity": "scalar-primary-cross-budget-integrity-audit-v1-6ed57df43980a6c2bb13890140a3c9d7a58b0e8ecaa8436df33dc7328a3f26c7",
+  "methods": [
+    "mutaco",
+    "scalar_qlognei",
+    "sobol"
+  ],
+  "package_identity": "scalar-primary-cross-budget-synthesis-package-v1-b3e3e28b695534b8ec550ed4da7d75a69c3ad028794da050f864535bd8ddab3f",
+  "row_count": 360,
+  "rows_content_identity": "scalar-primary-cross-budget-rows-file-v1-7fb44aea91ce80a6a77a7b98a49d7f1e698d43471bd1fe99c05e3c99727c95a3",
+  "schema_version": "mutaco-scalar-primary-cross-budget-synthesis-package-v1",
+  "scientific_calls": 0,
+  "source_analysis_report_identities": {
+    "100": "cross-experiment-analysis-report-v1-92c1964d2be762a2f84fb73f3b8ee42fbecd58c47fd3f42a2c9ea2f39aa91a51",
+    "40": "cross-experiment-analysis-report-v1-d34c6f25a3da7d3bbf15fb5a2f1dd81bce0a7b5ec52f3ace8b0299ac18df825e"
+  },
+  "source_evidence_identities": {
+    "100": "scalar-primary-population-evidence-v1-c72415fcb29e8d7379604d3cf0a33a3b0e962fed94ead446088c55ece83a9375",
+    "40": "scalar-primary-population-evidence-v1-9294220a23a94c7514dfd608ea6a7b0dbe3f8474222d30309e7b4a9aeef04009"
+  },
+  "status": "complete_zero_call_deterministic_synthesis",
+  "synthesis_report_identity": "scalar-primary-cross-budget-report-v1-d695cc49c31c5c884c97058e3140a17abaf1be77f61dc54b15a21460621eba33",
+  "synthesis_spec_identity": "scalar-primary-cross-budget-synthesis-spec-v1-f0a7c6453d3353976b60c5d71b105c68c8a11a032a84ac877398227962a318c5",
+  "target_count": 120,
+  "truba_jobs_submitted": 0
+}

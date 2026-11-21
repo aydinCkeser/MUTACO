@@ -1,0 +1,11 @@
+{
+  "elapsed": "00:00:52",
+  "end": "2026-09-13T02:10:12",
+  "exit_code": "0:0",
+  "job_id": 6352257,
+  "job_name": "mutaco-oscillator-physics-t098",
+  "node": "barbun110",
+  "schema_version": "mutaco-oscillator-physics-scheduler-accounting-v1",
+  "start": "2026-09-13T02:09:20",
+  "state": "COMPLETED"
+}

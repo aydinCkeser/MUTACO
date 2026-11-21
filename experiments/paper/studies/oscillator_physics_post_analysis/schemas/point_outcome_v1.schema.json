@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mutaco-oscillator-physics-point-outcome-v1",
+  "type": "object",
+  "required": ["schema_version", "point_index", "parameter_index", "parameter_name", "sign", "theta", "response", "evaluation_seed", "seed_manifest", "transport_call_count", "outcome_identity"],
+  "properties": {
+    "schema_version": {"const": "mutaco-oscillator-physics-point-outcome-v1"},
+    "point_index": {"type": "integer", "minimum": 0, "maximum": 7},
+    "parameter_index": {"type": "integer", "minimum": 0, "maximum": 3},
+    "parameter_name": {"type": "string"},
+    "sign": {"enum": ["minus", "plus"]},
+    "theta": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "number"}},
+    "response": {"type": "array", "minItems": 20, "maxItems": 20, "items": {"type": "number"}},
+    "evaluation_seed": {"type": "integer", "minimum": 0},
+    "seed_manifest": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "transport_call_count": {"const": 1},
+    "outcome_identity": {"type": "string", "pattern": "^mutaco-oscillator-physics-point-outcome-v1-[0-9a-f]{64}$"}
+  },
+  "additionalProperties": false
+}

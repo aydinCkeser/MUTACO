@@ -1,0 +1,132 @@
+{
+  "schema_version": "mutaco-benchmark-campaign-v1",
+  "identity_policy": "target_method_execution_v1",
+  "campaign_classification": "scientific",
+  "dtype": "float32",
+  "device": "auto",
+  "proposal_effort": "canonical",
+  "terminal_recommendation": "continuous_posterior_mean_physical_l2",
+  "evaluation_randomness": "independent",
+  "assessment": "fresh_held_out",
+  "posterior_numerics": "float32_fit_float64_covariance",
+  "gp_recovery": "graph_m20_sequential_recovery_v1",
+  "campaign": {
+    "id": "graph_paper_100_mutaco_vs_npe_v1",
+    "description": "Frozen Prompt 8L graph-paper comparison over 100 new hidden targets; declaration only",
+    "target_count": 100,
+    "target_bank_policy": "scrambled_sobol",
+    "campaign_seed": 81257,
+    "replay_policy": "first_middle_last",
+    "hidden_theta_visibility": "post_run_truth_only"
+  },
+  "simulator": {
+    "adapter": "graph_scientific_d4",
+    "identifier": "graph-oscillator.overdamped-scientific.v1",
+    "parameter_profile": "p4-paper-baseline",
+    "response_profile": "m20-five-force-scientific",
+    "node_count": 10,
+    "batch_size": 80,
+    "repeat_size": 2,
+    "bias_conditions": 5,
+    "temperature": 0.15,
+    "dt": 0.1,
+    "burn_in_steps": 100,
+    "sample_steps": 900,
+    "sample_stride": 1
+  },
+  "comparison": {
+    "primary_basis": "equal_simulator_calls",
+    "include_target_generation_in_budget": false,
+    "held_out_assessment_calls": 1,
+    "record_wall_clock": true
+  },
+  "comparison_set": {"policy": "full_bank"},
+  "reference_method": "mutaco",
+  "sbi_methods": ["sbi_npe"],
+  "views": ["cold_start_per_target"],
+  "regimes": ["equal_simulator_calls"],
+  "process_policy": "fresh_method_process",
+  "simulation_budget_per_target": 40,
+  "runner": {
+    "initial_points": 8,
+    "sequential_rounds": 32,
+    "transform": {"ddof": 1, "scale_floor": 1e-12},
+    "gp": {
+      "likelihood": "task_diagonal_gaussian",
+      "max_iterations": 12,
+      "jitter": 1e-6,
+      "symmetry_tolerance": 2e-6,
+      "psd_tolerance": 1e-6,
+      "covariance_validation_policy": "structural_symmetric_materialization_v1",
+      "posterior_numerics_policy": "float32_fit_float64_covariance",
+      "task_variance_floor_policy": "standardized_absolute_v1",
+      "task_variance_floor": 5.991468697175151e-6,
+      "task_variance_floor_reference_scale": 6.282510280609131,
+      "task_variance_floor_epsilon_multiplier": 8.0,
+      "recovery_policy": "graph_m20_sequential_recovery_v1",
+      "max_warm_start_states": 2
+    },
+    "duplicate_policy": "best_ranked_unevaluated_raw_v1"
+  },
+  "sbi": {
+    "density_estimator": "maf",
+    "training_batch_size": 64,
+    "learning_rate": 0.0005,
+    "validation_fraction": 0.2,
+    "stop_after_epochs": 20,
+    "max_num_epochs": 200,
+    "posterior_samples": 10000,
+    "show_progress_bars": false,
+    "posterior_sampling": "direct",
+    "fallback_policy": "none",
+    "training_diagnostics_policy": "sbi_training_summary_loss_v0261",
+    "training_diagnostics_audit": "sbi_tensorboard_training_loss_audit_v1"
+  },
+  "randomness": {
+    "seed_policy": "mutaco-coordinate-sha256-v1",
+    "target_seed_namespace": "graph_paper_100_target_response",
+    "method_seed_namespace": "method_runs",
+    "assessment_seed_namespace": "held_out_assessment",
+    "sbi_batch_context_policy": "per_logical_simulation_index_v1",
+    "no_cross_theta_common_random_numbers": true
+  },
+  "runtime_limits": {
+    "global_deadline_seconds": 28800,
+    "per_target_deadline_seconds": 288,
+    "mutaco_method_deadline_seconds": 180,
+    "npe_method_deadline_seconds": 180,
+    "artifact_cap_bytes": 1610612736,
+    "resume_policy": "completed_target_or_method_only",
+    "process_tree_cleanup": true
+  },
+  "artifact_policy": "compact_paper_records_v1",
+  "storage_plan": {
+    "pilot_total_bytes": 530592121,
+    "pilot_mean_full_mutaco_record_bytes": 12374650,
+    "projected_campaign_bytes": 1320000000,
+    "retain_tensorboard_events": false,
+    "retain_npe_model_weights": false,
+    "canonical_training_diagnostics": "json"
+  },
+  "storage_plan": {
+    "pilot_total_bytes": 530592121,
+    "pilot_mean_full_mutaco_record_bytes": 12374650,
+    "projected_campaign_bytes": 1320000000,
+    "retain_tensorboard_events": false,
+    "retain_npe_model_weights": false,
+    "canonical_training_diagnostics": "json"
+  },
+  "artifact_policy": "compact_paper_records_v1",
+  "target_declaration": {
+    "path": "experiments/graph_inversion/target_declarations/paper_100_theta_ledger.json",
+    "schema_version": "graph-paper-hidden-theta-ledger-v1"
+  },
+  "call_accounting": {
+    "per_target": {"target_generation": 1, "mutaco_inference": 40, "npe_inference": 40, "mutaco_assessment": 1, "npe_assessment": 1, "total": 83},
+    "campaign": {"target_generation": 100, "mutaco_inference": 4000, "npe_inference": 4000, "held_out_assessment": 200, "total": 8300}
+  },
+  "outputs": {
+    "directory": "runs/graph_inversion/graph_paper_100_mutaco_vs_npe_v1",
+    "formats": ["json", "csv", "pdf", "svg"]
+  }
+}

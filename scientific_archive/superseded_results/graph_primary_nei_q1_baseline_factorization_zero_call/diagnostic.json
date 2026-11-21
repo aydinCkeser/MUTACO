@@ -1,0 +1,271 @@
+{
+  "archive_root": "experiments/paper/exploration/outputs/primary_nei_q1/qualification_evidence_repair_attempt_6246600/workers",
+  "cases": [
+    {
+      "archived_failure": {
+        "failure_explanation": "baseline latent covariance is not positive definite",
+        "failure_stage": "acquisition",
+        "failure_type": "NEIAcquisitionError"
+      },
+      "archived_fit_id": "gp-fit-v1-887e8a70f953cb7c29eefbab085085f6916040b31b42178a215c9a0d75451da1",
+      "archived_model_id": "exact-multitask-gp-v1-26d0939c713c4ed9ad21a9dcfe8401a777e84c3b609d36f010787c6a386d483a",
+      "baseline_size": 58,
+      "bounded_jitter_trials_on_returned_covariance": [
+        {
+          "dimension_epsilon_multiplier": 0.0,
+          "jitter": 0.0,
+          "relative_to_diagonal_scale": 0.0,
+          "strict_cholesky": true
+        },
+        {
+          "dimension_epsilon_multiplier": 1.0,
+          "jitter": 2.575717417130363e-13,
+          "relative_to_diagonal_scale": 2.575717417130363e-13,
+          "strict_cholesky": true
+        },
+        {
+          "dimension_epsilon_multiplier": 10.0,
+          "jitter": 2.575717417130363e-12,
+          "relative_to_diagonal_scale": 2.575717417130363e-12,
+          "strict_cholesky": true
+        },
+        {
+          "dimension_epsilon_multiplier": 100.0,
+          "jitter": 2.5757174171303632e-11,
+          "relative_to_diagonal_scale": 2.5757174171303632e-11,
+          "strict_cholesky": true
+        },
+        {
+          "dimension_epsilon_multiplier": 1000.0,
+          "jitter": 2.575717417130363e-10,
+          "relative_to_diagonal_scale": 2.575717417130363e-10,
+          "strict_cholesky": true
+        },
+        {
+          "dimension_epsilon_multiplier": 10000.0,
+          "jitter": 2.575717417130363e-09,
+          "relative_to_diagonal_scale": 2.575717417130363e-09,
+          "strict_cholesky": true
+        }
+      ],
+      "flattened_dimension": 1160,
+      "promoted_after_float32_return": {
+        "dimension": 1160,
+        "dtype": "torch.float64",
+        "maximum_eigenvalue_float64": 0.6132244893127982,
+        "minimum_eigenvalue_float64": 2.9589377879266672e-09,
+        "positive_spectrum_condition_estimate": 207244806.50283816,
+        "strict_cholesky": true
+      },
+      "promoted_at_surrogate_source": {
+        "dimension": 1160,
+        "dtype": "torch.float64",
+        "maximum_eigenvalue_float64": 0.6132244892739361,
+        "minimum_eigenvalue_float64": 2.703345246265211e-09,
+        "positive_spectrum_condition_estimate": 226839132.04246938,
+        "strict_cholesky": true
+      },
+      "returned_float32": {
+        "dimension": 1160,
+        "dtype": "torch.float32",
+        "maximum_eigenvalue_float64": 0.6132244893127982,
+        "minimum_eigenvalue_float64": 2.9589377879266672e-09,
+        "positive_spectrum_condition_estimate": 207244806.50283816,
+        "strict_cholesky": false
+      },
+      "selected_production_policy": {
+        "cholesky_attempts": 1,
+        "dimension": 1160,
+        "factor_dtype": "torch.float64",
+        "input_dtype": "torch.float32",
+        "jitter_added": 0.0,
+        "maximum_absolute_reconstruction_error": 4.85722573273506e-17,
+        "passed": true,
+        "policy_id": "promoted_float64_cholesky_zero_jitter_v1",
+        "promotion_occurred": true,
+        "relative_jitter": 0.0
+      },
+      "worker": 0
+    },
+    {
+      "archived_failure": {
+        "failure_explanation": "baseline latent covariance is not positive definite",
+        "failure_stage": "acquisition",
+        "failure_type": "NEIAcquisitionError"
+      },
+      "archived_fit_id": "gp-fit-v1-f91acae69e2ba3a27fe71b8c2492aca81051eb1ead71c185df646d26d474c4ec",
+      "archived_model_id": "exact-multitask-gp-v1-76578f5597745d71b5f72e7447f42fe9d7666a3d5f2c9c8f982299def13cad49",
+      "baseline_size": 35,
+      "bounded_jitter_trials_on_returned_covariance": [
+        {
+          "dimension_epsilon_multiplier": 0.0,
+          "jitter": 0.0,
+          "relative_to_diagonal_scale": 0.0,
+          "strict_cholesky": true
+        },
+        {
+          "dimension_epsilon_multiplier": 1.0,
+          "jitter": 1.5543122344752192e-13,
+          "relative_to_diagonal_scale": 1.5543122344752192e-13,
+          "strict_cholesky": true
+        },
+        {
+          "dimension_epsilon_multiplier": 10.0,
+          "jitter": 1.5543122344752192e-12,
+          "relative_to_diagonal_scale": 1.5543122344752192e-12,
+          "strict_cholesky": true
+        },
+        {
+          "dimension_epsilon_multiplier": 100.0,
+          "jitter": 1.554312234475219e-11,
+          "relative_to_diagonal_scale": 1.554312234475219e-11,
+          "strict_cholesky": true
+        },
+        {
+          "dimension_epsilon_multiplier": 1000.0,
+          "jitter": 1.5543122344752192e-10,
+          "relative_to_diagonal_scale": 1.5543122344752192e-10,
+          "strict_cholesky": true
+        },
+        {
+          "dimension_epsilon_multiplier": 10000.0,
+          "jitter": 1.5543122344752192e-09,
+          "relative_to_diagonal_scale": 1.5543122344752192e-09,
+          "strict_cholesky": true
+        }
+      ],
+      "flattened_dimension": 700,
+      "promoted_after_float32_return": {
+        "dimension": 700,
+        "dtype": "torch.float64",
+        "maximum_eigenvalue_float64": 1.0338893493408934,
+        "minimum_eigenvalue_float64": 6.396059286272614e-10,
+        "positive_spectrum_condition_estimate": 1616447414.0504813,
+        "strict_cholesky": true
+      },
+      "promoted_at_surrogate_source": {
+        "dimension": 700,
+        "dtype": "torch.float64",
+        "maximum_eigenvalue_float64": 1.0338893494595394,
+        "minimum_eigenvalue_float64": 2.022973868514582e-09,
+        "positive_spectrum_condition_estimate": 511074001.27649593,
+        "strict_cholesky": true
+      },
+      "returned_float32": {
+        "dimension": 700,
+        "dtype": "torch.float32",
+        "maximum_eigenvalue_float64": 1.0338893493408934,
+        "minimum_eigenvalue_float64": 6.396059286272614e-10,
+        "positive_spectrum_condition_estimate": 1616447414.0504813,
+        "strict_cholesky": false
+      },
+      "selected_production_policy": {
+        "cholesky_attempts": 1,
+        "dimension": 700,
+        "factor_dtype": "torch.float64",
+        "input_dtype": "torch.float32",
+        "jitter_added": 0.0,
+        "maximum_absolute_reconstruction_error": 6.938893903907228e-17,
+        "passed": true,
+        "policy_id": "promoted_float64_cholesky_zero_jitter_v1",
+        "promotion_occurred": true,
+        "relative_jitter": 0.0
+      },
+      "worker": 1
+    },
+    {
+      "archived_failure": {
+        "failure_explanation": "baseline latent covariance is not positive definite",
+        "failure_stage": "acquisition",
+        "failure_type": "NEIAcquisitionError"
+      },
+      "archived_fit_id": "gp-fit-v1-2d5a7ea0265aff04e81e5b209ce969adeb7776b71d6dec4dcd64e1f5d8981e93",
+      "archived_model_id": "exact-multitask-gp-v1-a2094d95efc4c94d60135fd3bc50423c5277ce63b1d7fad3d84827b57c04f906",
+      "baseline_size": 39,
+      "bounded_jitter_trials_on_returned_covariance": [
+        {
+          "dimension_epsilon_multiplier": 0.0,
+          "jitter": 0.0,
+          "relative_to_diagonal_scale": 0.0,
+          "strict_cholesky": true
+        },
+        {
+          "dimension_epsilon_multiplier": 1.0,
+          "jitter": 1.7319479184152442e-13,
+          "relative_to_diagonal_scale": 1.7319479184152442e-13,
+          "strict_cholesky": true
+        },
+        {
+          "dimension_epsilon_multiplier": 10.0,
+          "jitter": 1.7319479184152442e-12,
+          "relative_to_diagonal_scale": 1.7319479184152442e-12,
+          "strict_cholesky": true
+        },
+        {
+          "dimension_epsilon_multiplier": 100.0,
+          "jitter": 1.7319479184152442e-11,
+          "relative_to_diagonal_scale": 1.7319479184152442e-11,
+          "strict_cholesky": true
+        },
+        {
+          "dimension_epsilon_multiplier": 1000.0,
+          "jitter": 1.7319479184152442e-10,
+          "relative_to_diagonal_scale": 1.7319479184152442e-10,
+          "strict_cholesky": true
+        },
+        {
+          "dimension_epsilon_multiplier": 10000.0,
+          "jitter": 1.7319479184152442e-09,
+          "relative_to_diagonal_scale": 1.7319479184152442e-09,
+          "strict_cholesky": true
+        }
+      ],
+      "flattened_dimension": 780,
+      "promoted_after_float32_return": {
+        "dimension": 780,
+        "dtype": "torch.float64",
+        "maximum_eigenvalue_float64": 0.6379593972613723,
+        "minimum_eigenvalue_float64": 5.299793531651898e-09,
+        "positive_spectrum_condition_estimate": 120374386.93626355,
+        "strict_cholesky": true
+      },
+      "promoted_at_surrogate_source": {
+        "dimension": 780,
+        "dtype": "torch.float64",
+        "maximum_eigenvalue_float64": 0.6379593969392301,
+        "minimum_eigenvalue_float64": 4.996062038964222e-09,
+        "positive_spectrum_condition_estimate": 127692448.96556392,
+        "strict_cholesky": true
+      },
+      "returned_float32": {
+        "dimension": 780,
+        "dtype": "torch.float32",
+        "maximum_eigenvalue_float64": 0.6379593972613723,
+        "minimum_eigenvalue_float64": 5.299793531651898e-09,
+        "positive_spectrum_condition_estimate": 120374386.93626355,
+        "strict_cholesky": false
+      },
+      "selected_production_policy": {
+        "cholesky_attempts": 1,
+        "dimension": 780,
+        "factor_dtype": "torch.float64",
+        "input_dtype": "torch.float32",
+        "jitter_added": 0.0,
+        "maximum_absolute_reconstruction_error": 6.938893903907228e-17,
+        "passed": true,
+        "policy_id": "promoted_float64_cholesky_zero_jitter_v1",
+        "promotion_occurred": true,
+        "relative_jitter": 0.0
+      },
+      "worker": 4
+    }
+  ],
+  "configuration": "experiments/graph_inversion/configs/paper/paper120_b100_mutaco_v1.json",
+  "diagnostic_identity": "nei-baseline-factorization-diagnostic-v1-4fdabbab544648b7df5a1dcd471142c90470766fde2650dc85c67e30305e073a",
+  "schema_version": "mutaco-nei-baseline-factorization-diagnostic-v1",
+  "scientific_calls": 0,
+  "simulator_calls": 0,
+  "source_commit": "3ee7832985e25eb649a6b727cfb4d11f922f75bd",
+  "status": "completed_zero_call",
+  "truba_jobs_submitted": 0
+}

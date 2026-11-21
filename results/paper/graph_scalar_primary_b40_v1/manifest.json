@@ -1,0 +1,260 @@
+{
+  "schema_version": "mutaco-scalar-primary-population-evidence-v1",
+  "evidence_identity": "scalar-primary-population-evidence-v1-9294220a23a94c7514dfd608ea6a7b0dbe3f8474222d30309e7b4a9aeef04009",
+  "status": "complete_archived_zero_call",
+  "study_id": "graph_paper120_mutaco_scalar_qlognei_sobol_primary_v1",
+  "budget": 40,
+  "targets": 120,
+  "methods": [
+    "mutaco",
+    "scalar_qlognei",
+    "sobol"
+  ],
+  "scientific_source": {
+    "commit": "bd83de6ec01f0f7e2241ee498960a4d493d601e6",
+    "declaration": "experiments/graph_inversion/configs/paper/scalar_primary_population_b40_v3r2.json",
+    "declaration_sha256": "d367779f60aca933343a8f24b313869258910a38de950ebbb870550caf6231bc",
+    "declaration_identity": "scalar-primary-population-declaration-v1-89812cd6af2fad706e7ca603be4ff5a6cd8827cc1ec68e24d635e8c34d6137c3",
+    "plan": "experiments/graph_inversion/configs/paper/scalar_primary_population_b40_plan_v3r2.json",
+    "plan_sha256": "fa8b164d23b501e900338d822bb2ce2f668ca185e60b70772dde34a8bd782617",
+    "plan_identity": "scalar-primary-population-plan-v1-61e95458efcd70bbfd1ce106e5590c721dfebc48a8b8d54d005689e45857586f",
+    "profile": "infrastructure/truba/scalar_primary_population_b40_v3r2.env",
+    "profile_sha256": "618f6d61aaa3c9fb1c1c354be358f6bb1684c9de0190496bc1dbc3a582434c7b",
+    "source_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/scalar_primary_population/b40-v3r2/source-exact",
+    "output_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/scalar_primary_population/b40-v3r2/workers",
+    "log_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/scalar_primary_population/b40-v3r2/logs"
+  },
+  "scheduler": {
+    "array_job_id": 6250134,
+    "collector_job_id": 6250135,
+    "array_state": "COMPLETED",
+    "collector_state": "COMPLETED",
+    "physical_array_tasks": 60,
+    "completed_physical_array_tasks": 60,
+    "logical_workers": 120,
+    "completed_logical_workers": 120,
+    "failed_logical_workers": 0,
+    "campaign_wall_interval": "00:20:17",
+    "longest_worker_elapsed": "00:19:52",
+    "collector_elapsed": "00:00:23",
+    "automatic_retry": false,
+    "slurm_requeue": false
+  },
+  "call_accounting": {
+    "attempted": 14760,
+    "successful": 14760,
+    "failed": 0,
+    "maximum_authorized": 14760,
+    "calls_added_by_archival": 0
+  },
+  "coverage": {
+    "completed_targets": 120,
+    "method_records": 360,
+    "endpoint_results": 360,
+    "trajectory_results": 14400,
+    "paired_endpoint_differences": 120,
+    "runtime_results": 360,
+    "worker_start_records": 120,
+    "worker_terminal_records": 120
+  },
+  "integrity": {
+    "worker_json_files": 842,
+    "worker_sha256_sidecars": 842,
+    "worker_hash_mismatches": 0,
+    "worker_orphan_sidecars": 0,
+    "scheduler_log_files": 122,
+    "scheduler_nonempty_log_files": 121,
+    "scheduler_log_bytes": 240553,
+    "scheduler_inventory_sha256": "cfef85ce08de090f125c3ea93e991ded38ac388a63ad514f6ca81a62479615169",
+    "collection_identity": "scalar-primary-global-collection-v1-b0b4c16f86d9b7ee2a3bfedbef4838f4e730a4187a29c74dd89a152be134ea24",
+    "collection_sha256": "09edf52c485b56d7e05f73ddc439a6465443385367d92820d1324a988818326b",
+    "compact_export_sha256": "f02bd7343292cf0a9768fb83ffc85019177feceb0afb1003c65f834b3ffcbbe9",
+    "compact_archive_sha256": "2f86646f7c21914552d10e9e1fcb209d29880cee194a3e79f8f8fae211b6659c",
+    "compact_archive_bytes": 9125109,
+    "remote_compact_export_prefix": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/scalar_primary_population/b40-v3r2/compact-export/scalar-primary-b40-v3r2",
+    "local_verified_fetch": "experiments/paper/exploration/outputs/scalar_primary_smoke/population_b40_v3r2_compact_fetch",
+    "local_expanded_export_bytes": 83370165,
+    "expanded_export_tracked_in_git": false
+  },
+  "primary_endpoint_heldout_physical_response_mae": {
+    "mutaco": {
+      "n": 120,
+      "mean": 0.021502998957449875,
+      "standard_deviation": 0.016602291004703965,
+      "median": 0.015447998471245228,
+      "q1": 0.010420750411276459,
+      "q3": 0.02723649274745412,
+      "minimum": 0.0034067206524923677,
+      "maximum": 0.1062684890370292
+    },
+    "scalar_qlognei": {
+      "n": 120,
+      "mean": 0.041502528592222386,
+      "standard_deviation": 0.046558524232867785,
+      "median": 0.035208661203159866,
+      "q1": 0.022747621679036455,
+      "q3": 0.0514013518704644,
+      "minimum": 0.006393999238571269,
+      "maximum": 0.5027489789557876
+    },
+    "sobol": {
+      "n": 120,
+      "mean": 0.07929868641862374,
+      "standard_deviation": 0.03517076479287181,
+      "median": 0.07607142185233898,
+      "q1": 0.05403209156181674,
+      "q3": 0.09870416052929158,
+      "minimum": 0.009890512550919084,
+      "maximum": 0.17127859298252587
+    }
+  },
+  "paired_primary_endpoint": {
+    "mutaco_minus_scalar_qlognei": {
+      "mean": -0.01999952963477251,
+      "median": -0.015554088004682855,
+      "q1": -0.028506384807835163,
+      "q3": -0.003685161823023009,
+      "standard_deviation": 0.04578858380672768,
+      "minimum": -0.47964305155273906,
+      "maximum": 0.0216426117989613,
+      "mutaco_better": 99,
+      "scalar_qlognei_better": 21,
+      "ties": 0
+    },
+    "mutaco_minus_sobol": {
+      "mean": -0.05779568746117387,
+      "median": -0.05709652324826493,
+      "q1": -0.07483457228893257,
+      "q3": -0.033051978012028374,
+      "standard_deviation": 0.03644913836998013,
+      "minimum": -0.16512266669451492,
+      "maximum": 0.025656901830734567,
+      "mutaco_better": 114,
+      "sobol_better": 6,
+      "ties": 0
+    },
+    "scalar_qlognei_minus_sobol": {
+      "mean": -0.037796157826401354,
+      "median": -0.03686649913834117,
+      "q1": -0.06886090921025244,
+      "q3": -0.01148081723347332,
+      "standard_deviation": 0.05501317849780867,
+      "minimum": -0.13777910702883672,
+      "maximum": 0.35492217966875617,
+      "scalar_qlognei_better": 97,
+      "sobol_better": 23,
+      "ties": 0
+    },
+    "target_winners": {
+      "mutaco": 94,
+      "scalar_qlognei": 20,
+      "sobol": 6
+    },
+    "mean_rank": {
+      "mutaco": 1.225,
+      "scalar_qlognei": 2.0166666666666666,
+      "sobol": 2.7583333333333333
+    }
+  },
+  "secondary_noisy_best_observed_search_mae_at_call_40": {
+    "mutaco": {
+      "mean": 0.026321213193781053,
+      "standard_deviation": 0.02310700651631484,
+      "median": 0.017618076875805855,
+      "q1": 0.010588387958705425,
+      "q3": 0.03206051979213953,
+      "minimum": 0.0029806443490087986,
+      "maximum": 0.09972231090068817
+    },
+    "scalar_qlognei": {
+      "mean": 0.023536378626401226,
+      "standard_deviation": 0.011027135185208045,
+      "median": 0.021836500614881516,
+      "q1": 0.014453631825745106,
+      "q3": 0.030365894082933664,
+      "minimum": 0.005674044601619244,
+      "maximum": 0.05412407964468002
+    },
+    "sobol": {
+      "mean": 0.07405236705671996,
+      "standard_deviation": 0.03098413636223731,
+      "median": 0.06984195485711098,
+      "q1": 0.0521008400246501,
+      "q3": 0.09451710246503353,
+      "minimum": 0.009703676216304302,
+      "maximum": 0.1482083648443222
+    },
+    "interpretation": "Secondary noisy in-search evidence; not the paired held-out primary endpoint."
+  },
+  "descriptive_decision_runtime_seconds": {
+    "claim_scope": "descriptive symmetric component timings only; no production compute-efficiency claim",
+    "mutaco": {
+      "total_mean": 94.27200090171924,
+      "total_median": 91.74154257122427,
+      "simulator_mean": 47.73078449172123,
+      "simulator_median": 46.40845891088247,
+      "non_simulator_mean": 46.541216409998015,
+      "non_simulator_median": 45.12923913169652,
+      "gp_fit_mean": 16.29992655010428,
+      "gp_fit_median": 14.54715168569237,
+      "acquisition_mean": 20.900008490053004,
+      "acquisition_median": 20.728257755748928,
+      "terminal_mean": 8.977585331738617,
+      "terminal_median": 8.271747378632426,
+      "other_mean": 0.3636960381021102,
+      "other_median": 0.3446621522307396
+    },
+    "scalar_qlognei": {
+      "total_mean": 67.91601771616843,
+      "total_median": 66.09002262260765,
+      "simulator_mean": 47.642576045333406,
+      "simulator_median": 46.2613416230306,
+      "non_simulator_mean": 20.27344167083502,
+      "non_simulator_median": 19.82287136465311,
+      "gp_fit_mean": 6.570919632771984,
+      "gp_fit_median": 6.298041649162769,
+      "acquisition_mean": 13.563708695420065,
+      "acquisition_median": 13.371365568600595,
+      "terminal_mean": 0.13809903586128106,
+      "terminal_median": 0.1230461960658431,
+      "other_mean": 0.000714306781689326
+    },
+    "sobol": {
+      "total_mean": 47.00546953058026,
+      "total_median": 45.634832955896854,
+      "simulator_mean": 47.00174830349473,
+      "simulator_median": 45.63159249257296,
+      "non_simulator_mean": 0.0037212270855282743,
+      "non_simulator_median": 0.003553471527993679,
+      "gp_fit_mean": 0.0,
+      "acquisition_mean": 0.0,
+      "terminal_mean": 0.00044345260442545017,
+      "terminal_median": 0.0004238691180944443,
+      "other_mean": 0.003277774481102824
+    }
+  },
+  "scalar_qlognei_diagnostics": {
+    "targets": 120,
+    "adaptive_proposals": 2880,
+    "botorch_optimize_acqf_proposals": 2872,
+    "deterministic_raw_fallback_proposals": 8,
+    "duplicate_search_designs": 0,
+    "successful_gp_fits": 3000,
+    "precision_fallbacks": 0,
+    "terminal_precision_fallbacks": 0,
+    "warning_events": 3308,
+    "jitter_events": 2384,
+    "maximum_jitter": 0.00001,
+    "unrecovered_algorithm_failures": 0
+  },
+  "audit_note": {
+    "largest_scalar_qlognei_heldout_mae_target_identity": "frozen-target-record-v2-36b0cf9cbdaf0e97ea4d9e83261c3b57915fef366fd8376ffd07af77f1c22674",
+    "largest_scalar_qlognei_heldout_mae": 0.5027489789557876,
+    "interpretation": "The primary means include this held-out endpoint outlier. Medians and paired win counts are retained so interpretation does not depend on the mean alone. This is an audit flag, not an exclusion."
+  },
+  "historical_attempt_policy": {
+    "previous_attempts_preserved": true,
+    "previous_attempts_pooled_into_this_population": false,
+    "this_population_complete_without_retry": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "b100_classification": "population_exact_state_replay_passed_corrected_terminal_pending",
+  "b40_classification": "population_exact_state_replay_passed_corrected_terminal_pending",
+  "best_case_new_calls": 720,
+  "design_identity": "repaired-sbi-salvage-design-v1-5283c87e6f5fedfc8d611682769ca0a8b1bbdd184b26110678f2fd74ceaa2a9b",
+  "historical_evidence_modified": false,
+  "inventory_content_identity": "repaired-sbi-salvage-inventory-file-v1-25d8c9374a9f504290ca23ffc3a4e052c07c45cad4272cd92f2e34a9ffb82f00",
+  "inventory_identity": "repaired-sbi-salvage-inventory-v1-8ab383766f97d7a1dac2f81898ab72d714397f154b47dbe9f8d9135cb2fce769",
+  "package_identity": "repaired-sbi-salvage-design-package-v1-9f7ba91012714cdaa8441b7730dbfade1dc5d926b6028a3c7e5d64adcbdb0a9e",
+  "schema_version": "mutaco-repaired-sbi-salvage-design-package-v1",
+  "scientific_calls": 0,
+  "truba_jobs_submitted": 0,
+  "worst_case_new_calls": 17520
+}

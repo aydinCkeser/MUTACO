@@ -1,0 +1,10 @@
+{
+  "audit_identity": "cross-experiment-b40-discrepancy-audit-v1-e631d031a222552840f66bea78d0a537b7d683ffcc733caa046335f1e25ee7db",
+  "comparison_scope": "generated canonical scalar-primary B40 statistics versus historical compact manifest claims",
+  "discrepancies": [],
+  "discrepancy_count": 0,
+  "historical_evidence_modified": false,
+  "numeric_tolerance": 1e-14,
+  "schema_version": "mutaco-cross-experiment-b40-discrepancy-audit-v1",
+  "scientific_calls": 0
+}

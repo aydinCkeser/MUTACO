@@ -1,0 +1,25 @@
+{
+  "analysis_report_identity": "cross-experiment-analysis-report-v1-d34c6f25a3da7d3bbf15fb5a2f1dd81bce0a7b5ec52f3ace8b0299ac18df825e",
+  "analysis_spec_identity": "cross-experiment-analysis-spec-v1-ce39586ec1978c954d3daecc7d1687942c56123f085eae68a84dc70a5c4c3392",
+  "budgets": [
+    40
+  ],
+  "cohort_sha256": "359fc0bb59fc9a8a52f5da684e7a7eb352466bdc0d0a54fb8efa94131ce423bb",
+  "discrepancy_audit_identity": "cross-experiment-b40-discrepancy-audit-v1-e631d031a222552840f66bea78d0a537b7d683ffcc733caa046335f1e25ee7db",
+  "discrepancy_count": 0,
+  "historical_evidence_modified": false,
+  "methods": [
+    "mutaco",
+    "scalar_qlognei",
+    "sobol"
+  ],
+  "package_identity": "cross-experiment-analysis-package-v1-826e4063cfa73b465a112fe64dbaaa7ceac8cbe7ac6d96e8b2892c04605c3c94",
+  "row_count": 360,
+  "rows_content_identity": "cross-experiment-analysis-rows-file-v1-a94eb3520313d26cc300890714d43b6a41ac0d4d519efa039667f9862449f452",
+  "schema_version": "mutaco-cross-experiment-analysis-package-v1",
+  "scientific_calls": 0,
+  "source_evidence_identity": "scalar-primary-population-evidence-v1-9294220a23a94c7514dfd608ea6a7b0dbe3f8474222d30309e7b4a9aeef04009",
+  "source_export_sha256": "f02bd7343292cf0a9768fb83ffc85019177feceb0afb1003c65f834b3ffcbbe9",
+  "target_count": 120,
+  "truba_jobs_submitted": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifacts": {
+    "gauge_contrast.json": "c8fd43b65838f5a41ed29f5608d74c28fc2a18a5250bc9dfe33268c4e5016bed",
+    "response_trajectories.json": "8ffe79a0258e86f4057669ccb0510d972a8e73dab5b7b0dd3c4d7016ebc60a80",
+    "target098_gauge_response_preview.png": "bf3a4c0bd74726bc4b3d287ded69dd82f1a0d179c134cda26f9d7ebc90041641"
+  },
+  "package_identity": "mutaco-oscillator-physics-zero-call-package-v1-22d52d1338fa48f0d15782941637f2aa60d1d62a44f33d582fab4a2c2f463481",
+  "schema_version": "mutaco-oscillator-physics-zero-call-package-v1",
+  "scientific_calls": 0,
+  "status": "complete_zero_call",
+  "target_position": 98
+}

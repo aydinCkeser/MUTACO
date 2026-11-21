@@ -1,0 +1,27 @@
+{
+  "schema_version": "mutaco-paper-method-spec-set-v1",
+  "state": "unexecuted",
+  "execution_requires_approval": true,
+  "methods": [
+    {
+      "method": "mutaco_standardized",
+      "method_family": "mutaco",
+      "comparison_group": "mutaco_standardization_ablation",
+      "adapter": "mutaco",
+      "configuration_path": "experiments/graph_inversion/configs/paper/policy_upgrade_100_targets_v1.json",
+      "configuration_sha256": "5e44d50a0073706dbe692bfd1c9627ee34b67791d7e32d94898c8928a44bc7bf",
+      "inference_budget": 40,
+      "decision_policy_identifier": "continuous_posterior_mean_physical_l1_mae"
+    },
+    {
+      "method": "mutaco_unstandardized",
+      "method_family": "mutaco",
+      "comparison_group": "mutaco_standardization_ablation",
+      "adapter": "mutaco",
+      "configuration_path": "experiments/graph_inversion/configs/paper/paper120_b40_mutaco_unstandardized_v1.json",
+      "configuration_sha256": "b9c263d7ae3c48abacbd54d817e80a4846cddf1d21f12788b1d043fc1fddbfdb",
+      "inference_budget": 40,
+      "decision_policy_identifier": "continuous_posterior_mean_physical_l1_mae"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "byte_identical_to_raw": false,
+  "derived": true,
+  "not_a_raw_acceptance_packet": true,
+  "reports": {
+    "baseline-history-gate.json": {
+      "first_divergence": null,
+      "history_gate_passed": true,
+      "observations": 100,
+      "status": "passed"
+    },
+    "baseline-tests-gate.json": {
+      "added_cases": [],
+      "changed_baseline_cases": [],
+      "counts": {
+        "error": 0,
+        "failure": 1,
+        "passed": 169,
+        "skipped": 8
+      },
+      "known_NEI_failure_present": true,
+      "physical_backend_attempts": 0,
+      "pytest_exit": 1,
+      "test_gate_passed": true
+    },
+    "checkpoint-comparison.json": {
+      "artifacts_self_consistent": true,
+      "baseline_scientific_hash": "06338d126708d62fdb3967db3d1603eb1529270ec4c6704322b621cd6b4fa150",
+      "comparison_scientific_hash": "06338d126708d62fdb3967db3d1603eb1529270ec4c6704322b621cd6b4fa150",
+      "environment_comparison_schema": "runtime-library-set-v2",
+      "physical_backend_attempts": [
+        0,
+        0
+      ],
+      "runtime_enumeration_order_only_difference": false,
+      "same_environment": true,
+      "scientific_exact_equal": true,
+      "tolerances": "none; exact operation-preserving reference"
+    },
+    "full-replay-comparison.json": {
+      "baseline_gate_passed": true,
+      "baseline_sha256": "c97b62ec714905ff97037561aad8ac3aef638abf9e189a926d6306844d3854c2",
+      "excluded": "original predeclared timers and execution provenance only",
+      "first_difference": null,
+      "refactor_gate_passed": true,
+      "refactor_sha256": "c97b62ec714905ff97037561aad8ac3aef638abf9e189a926d6306844d3854c2",
+      "scientific_exact_equal": true,
+      "tolerances": "none"
+    },
+    "job-status.json": {
+      "baseline_observations_consumed": 100,
+      "baseline_vs_refactor": "passed",
+      "checkpoint_scientific_exact": true,
+      "execution_exit": 1,
+      "first_historical_divergence": null,
+      "full_replay_scientific_exact": true,
+      "historical_baseline_status": "passed",
+      "historical_reference_failure_is_not_refactor_failure": true,
+      "last_stage": "completed",
+      "physical_simulator_calls_authorized": 0,
+      "recorded_physical_backend_attempts": [
+        0,
+        0
+      ],
+      "refactor_first_divergence": null,
+      "refactor_historical_status": "passed",
+      "refactor_observations_consumed": 100,
+      "scientific_exit": 0,
+      "scientific_gate_passed": true
+    },
+    "qualified-environment-gate.json": {
+      "normalization": "predeclared unordered runtime-library records only",
+      "same_qualified_B40_environment": true
+    },
+    "refactor-history-gate.json": {
+      "first_divergence": null,
+      "history_gate_passed": true,
+      "observations": 100,
+      "status": "passed"
+    },
+    "refactor-tests-gate.json": {
+      "added_cases": [
+        {
+          "case": [
+            "tests.orchestration.test_runner",
+            "test_response_preparation_failure_preserves_committed_state[fit-dtype0]"
+          ],
+          "outcome": "passed"
+        },
+        {
+          "case": [
+            "tests.orchestration.test_runner",
+            "test_response_preparation_failure_preserves_committed_state[fit-dtype1]"
+          ],
+          "outcome": "passed"
+        },
+        {
+          "case": [
+            "tests.orchestration.test_runner",
+            "test_response_preparation_failure_preserves_committed_state[standardize_target-dtype0]"
+          ],
+          "outcome": "passed"
+        },
+        {
+          "case": [
+            "tests.orchestration.test_runner",
+            "test_response_preparation_failure_preserves_committed_state[standardize_target-dtype1]"
+          ],
+          "outcome": "passed"
+        },
+        {
+          "case": [
+            "tests.orchestration.test_runner",
+            "test_response_preparation_failure_preserves_committed_state[to_standardized-dtype0]"
+          ],
+          "outcome": "passed"
+        },
+        {
+          "case": [
+            "tests.orchestration.test_runner",
+            "test_response_preparation_failure_preserves_committed_state[to_standardized-dtype1]"
+          ],
+          "outcome": "passed"
+        }
+      ],
+      "changed_baseline_cases": [],
+      "counts": {
+        "error": 0,
+        "failure": 1,
+        "passed": 175,
+        "skipped": 8
+      },
+      "known_NEI_failure_present": true,
+      "physical_backend_attempts": 0,
+      "pytest_exit": 1,
+      "test_gate_passed": true
+    }
+  }
+}

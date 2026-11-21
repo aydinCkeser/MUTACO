@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "source_git_blobs",
+    "raw_file_sha256_sidecars",
+    "cohort_identity_and_order",
+    "raw_compact_recommendation_theta_equality",
+    "native_policy_equality",
+    "restart_history_structure",
+    "heldout_mae_l1_consistency"
+  ],
+  "forensic_audit_identity": "historical-terminal-lineage-forensic-audit-v1-976f529293b22454ad1dec93f4742eeb12fcc96302cebb17a0bca6e802b9c074",
+  "historical_evidence_modified": false,
+  "mismatch_count": 0,
+  "mismatches": [],
+  "schema_version": "mutaco-historical-terminal-lineage-forensic-audit-v1",
+  "scientific_calls": 0
+}

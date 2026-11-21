@@ -1,0 +1,42 @@
+{
+  "schema_version": "mutaco-paper-report-spec-v1",
+  "report_id": "graph_paper120_b40_standardization_ablation_v1",
+  "study_id": "graph_paper120_b40_standardization_ablation_v1",
+  "state": "accepted_canonical_evidence",
+  "classification": "paired response-standardization ablation",
+  "inference_budget_per_method_target": 40,
+  "methods": ["mutaco_standardized", "mutaco_unstandardized"],
+  "source": {
+    "state": "accepted_tracked_evidence",
+    "path": "benchmarks/paper/graph_paper120/b40_standardization_ablation_v1/manifest.json",
+    "sha256": "5b30c721cd4cec591bf1b62eb8cda6e55f1802f1f3132f6b56ff230959106b00"
+  },
+  "output": "docs/paper/results/graph_paper120_b40_standardization_ablation_v1.md",
+  "sections": ["status", "parameters", "method_metrics", "paired_results", "accounting", "provenance"],
+  "claims": {
+    "target_count": 120,
+    "methods": {
+      "mutaco_standardized": {
+        "response_error_mae": {"mean": 0.045261971504571175, "median": 0.04206324599131221},
+        "response_error_l2": {"mean": 0.31077942533954245, "median": 0.286271840178299},
+        "parameter_error_l2": {"mean": 0.43700302126692486, "median": 0.3864594172447723}
+      },
+      "mutaco_unstandardized": {
+        "response_error_mae": {"mean": 0.04233478943169738, "median": 0.03675699467363245},
+        "response_error_l2": {"mean": 0.297782274472584, "median": 0.2588834885135741},
+        "parameter_error_l2": {"mean": 0.3914015349735836, "median": 0.3775397032202237}
+      }
+    },
+    "paired_response_mae": {
+      "mutaco_standardized__mutaco_unstandardized": {
+        "mean_left_minus_right": 0.002927182072873802,
+        "left_wins": 52,
+        "ties": 0,
+        "left_losses": 68,
+        "paired_mean_bootstrap_95_percentile_interval": [-0.003544516997476111, 0.009098215297973292]
+      }
+    },
+    "physical_calls": {"attempted_calls": 9840, "successful_calls": 9840, "failed_calls": 0, "retry_calls": 0}
+  },
+  "report_identity": "paper-report-spec-v1-669d883bf371080d3f1af64710eae2e4599aa202ac63cc771d66fe915bbbbf25"
+}

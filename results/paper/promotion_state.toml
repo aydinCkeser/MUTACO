@@ -1,0 +1,10 @@
+# Promotion authority copied from the reviewed state at 9f3ce189.
+# Keep native manifest paths: the report identities bind these strings.
+
+[paper120_b40_standardization_ablation]
+compact_evidence = "benchmarks/paper/graph_paper120/b40_standardization_ablation_v1/manifest.json"
+bundle_identity = "paper-canonical-population-evidence-v1-300e2d86714c653f961d0860cf35634e5367d6a966dcbbacee1265405e7b06e1"
+
+[paper120_b100_three_method]
+compact_evidence = "benchmarks/paper/graph_paper120/b100_v1/manifest.json"
+bundle_identity = "paper-canonical-population-evidence-v1-37f198a4c844356de1e1c538f81e036afcd26ea3ef638393e3e9fca9d3b82fa8"

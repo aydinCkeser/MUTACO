@@ -1,0 +1,9 @@
+schema_version = "mutaco-paper-figure-spec-v1"
+figure_set_id = "graph_paper120_b100_v1"
+study_id = "graph_paper120_three_method"
+state = "discussion_pending"
+source_report = "experiments/paper/studies/graph_paper120/reports/b100_v1.json"
+output_root = "docs/paper/figures/graph_paper120_b100_v1"
+rendering_authorized = false
+panels = []
+figure_identity = "paper-figure-spec-v1-a5303049bf74afec96922be2b71c9f5619722fd80824e77ef90ae985dfccfa12"

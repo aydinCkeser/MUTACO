@@ -1,0 +1,59 @@
+{
+  "b100": {
+    "assessment_calls": 360,
+    "compact_source": {
+      "path": "benchmarks/paper/graph_paper120/b100_v1/paired_records.jsonl",
+      "rows": 120,
+      "sha256": "29f6af90cdec9581dd3b850636c05c6dd740dac2aa22164c7f4bc68b3ab61f67"
+    },
+    "current_classification": "population_exact_state_replay_passed_corrected_terminal_pending",
+    "exact_model_replays_completed": 120,
+    "qualification3_raw_recovery_path_registered": true,
+    "raw_trajectory_files_local_verified": 120,
+    "registered_remote_remaining117_output_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/b100_remaining117/e7baa235/workers",
+    "remote_existence_verified_by_this_gate": true,
+    "search_rerun_calls_required": 0
+  },
+  "b40": {
+    "best_case_new_calls": 360,
+    "compact_source": {
+      "path": "benchmarks/graph/paper120_mutaco_npe_snpe_v1/paired_records.jsonl",
+      "rows": 120,
+      "sha256": "cd0352310c8e570bdc56fe6e4ef587bd58e1c26f1f0865d44878ffc7dd2c0c72"
+    },
+    "complete_fit_lineages": 120,
+    "complete_observation_trajectories": 120,
+    "current_classification": "population_exact_state_replay_passed_corrected_terminal_pending",
+    "exact_model_replays_completed": 120,
+    "raw_trajectory_files_local_verified": 120,
+    "runtime_counts": {
+      "2.12.1+cpu|cpu|float32": 120
+    },
+    "search_rerun_calls_required": 0
+  },
+  "causal_boundary": {
+    "recommendation_effect": "demonstrated",
+    "runner_blob": "99cc8ef1606a41dd221cf583ca225222178ca15c",
+    "search_effect_of_terminal_defect": "none",
+    "status": "verified_exact_source"
+  },
+  "combined_call_preview": {
+    "best_case": 720,
+    "formula": "720 + 40*n40_rerun + 100*n100_rerun",
+    "resolved_remaining_scientific_calls": 720,
+    "resolved_search_rerun_calls": 0,
+    "worst_case": 17520
+  },
+  "design_identity": "repaired-sbi-salvage-design-v1-5283c87e6f5fedfc8d611682769ca0a8b1bbdd184b26110678f2fd74ceaa2a9b",
+  "historical_evidence_modified": false,
+  "inventory_identity": "repaired-sbi-salvage-inventory-v1-8ab383766f97d7a1dac2f81898ab72d714397f154b47dbe9f8d9135cb2fce769",
+  "readiness": {
+    "b100_scientific_execution_ready": false,
+    "b40_scientific_execution_ready": false,
+    "next_zero_call_gate": "corrected-terminal exact-source preparation and deterministic recommendation-generation declaration",
+    "reason": "all historical searches are now salvageable; corrected recommendations must be generated and frozen before assessment"
+  },
+  "schema_version": "mutaco-repaired-sbi-salvage-inventory-v1",
+  "scientific_calls": 0,
+  "truba_jobs_submitted": 0
+}

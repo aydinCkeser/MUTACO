@@ -1,0 +1,170 @@
+{
+  "schema": "mutaco-architecture-historical-search-closure-v1",
+  "original_inventory_revision": "9f3ce1893112bb37c23e3aad1508564f55d2c81b",
+  "tested_architecture": "7f4ef91e34fefb00fd5f1f8779f1c69641afb424",
+  "source_lineage_refreshed": [
+    "main",
+    "ege/repro-refactor",
+    "archive/full-research-state-20260809",
+    "codex/primary-q1-engineering-freeze",
+    "mutaco-dissection",
+    "refactor/paper-readable-core (local)"
+  ],
+  "manuscript_review_head": "111a452347ea1999d92f134abdabf3ec02c010e7",
+  "canonical_and_fork_ref_count": {
+    "origin": 9,
+    "legacy-origin": 5
+  },
+  "ref_coverage": "All advertised branch, tag and pull request head/merge object IDs were covered. Canonical refs unchanged at time of search.",
+  "github": {
+    "aydinCkeser/MUTACO": {
+      "releases": 0,
+      "release_assets": 0,
+      "actions_artifacts": 0
+    },
+    "egekaradeniz/MUTACO": {
+      "releases": 0,
+      "release_assets": 0,
+      "actions_artifacts": 0
+    }
+  },
+  "git": {
+    "distinct_object_databases": 6,
+    "distinct_blobs_all_stores": 6044,
+    "canonical_blobs": 5519,
+    "canonical_commits": 441,
+    "includes_unreachable_objects": true,
+    "bundle_files": 27,
+    "bundle_missing_ref_tips": 0,
+    "source": "Canonical mirror, original and architecture worktrees (shared store), independent canonical and private qualification clones and two research study clones.",
+    "bundle_pack_verification": {
+      "bundle_files": 27,
+      "distinct_bundles_by_sha256": 25,
+      "all_unpacked_object_ids_known": true,
+      "objects_only_in_bundles": []
+    }
+  },
+  "filesystem": {
+    "scoped_project_directories": 14,
+    "regular_files_checked": 14324,
+    "root_categories": [
+      "private evidence backups",
+      "architecture and historical worktrees",
+      "canonical and manuscript study checkouts",
+      "downloaded MUTACO snapshots",
+      "architecture review and presentation packages"
+    ],
+    "gzip": 157,
+    "tar": 52,
+    "tar_members": 4495,
+    "zip": 25,
+    "zip_members_listed": 1796,
+    "selected_zip_members": 111,
+    "top_level_archives": 8,
+    "skipped_read_or_archive_errors": 0,
+    "selection": "Scoped loose evidence files by data, checksum and archive extensions. All Git blobs by content hash. TAR files hashed member-by-member. ZIP central directories listed and pertinent data, text and nested archive members inspected. Duplicate contents processed once."
+  },
+  "immutable_source_inventories": [
+    {
+      "recorded_path_at_9f3ce18": "benchmarks/paper/graph_scalar_primary_b40_v1/manifest.json",
+      "current_location": "results/paper/graph_scalar_primary_b40_v1/manifest.json",
+      "recorded_sha256": "ecfbf6621931a17e7bd62e1a8cda13137cbeb7949cc13f7aa4bcef7f60f985be"
+    },
+    {
+      "recorded_path_at_9f3ce18": "benchmarks/paper/repaired_mutaco_sbi_corrected_terminal/v1/recommendations.jsonl",
+      "current_location": "results/paper/repaired_mutaco_sbi_corrected_terminal/v1/recommendations.jsonl",
+      "recorded_sha256": "a5f1ecca16c560378c57836dca64853a80eb3f3a144cfafd52a1f4eb0fb7ab81"
+    },
+    {
+      "recorded_path_at_9f3ce18": "benchmarks/paper/repaired_mutaco_sbi_terminal_preparation/v1/preparation_inventory.json",
+      "current_location": "results/paper/repaired_mutaco_sbi_terminal_preparation/v1/preparation_inventory.json",
+      "recorded_sha256": "4bae5af25d4e4647d0396e848d90e7bc909021d0080b28f3e5c035f43116d3fe"
+    },
+    {
+      "recorded_path_at_9f3ce18": "experiments/paper/oscillator_physics_post_analysis/analysis.py",
+      "current_location": "experiments/paper/studies/oscillator_physics_post_analysis/analysis.py",
+      "recorded_sha256": "98935b3d5ca1666499d356a5830c6dd05ee408b67138c45c50df06750d02e62b"
+    }
+  ],
+  "native_missing_files": {
+    "raw_trajectory_json": 240,
+    "corrected_terminal_attempt_json": 240,
+    "original_target98_worker_json": 1,
+    "original_target98_worker_json_sha256": "4eb69e660b9ef9527ff9ee61d4803c23514a0fde3738c1cbed9a10b59fe8c207",
+    "original_target98_worker_sidecar": "Missing original mutaco.sha256. Verification contract requires its stripped text to equal the worker bytes SHA-256.",
+    "unique_original_file_sha256_sought_including_restored_compact": 482
+  },
+  "matched_original_bytes": {
+    "purpose": "B40 scalar compact export already recovered from the versioned trajectory archive",
+    "sha256": "f02bd7343292cf0a9768fb83ffc85019177feceb0afb1003c65f834b3ffcbbe9",
+    "additional_new_originals": 0
+  },
+  "assessment_6251303": {
+    "results_rows_per_method": {
+      "mutaco": 240,
+      "sbi_npe": 240,
+      "sbi_snpe": 240
+    },
+    "unique_native_record_identities": 720,
+    "independent_manifest": "results/paper/repaired_mutaco_sbi_assessment_6251303/v1/manifest.json",
+    "analysis_rows": [
+      "results/paper/repaired_mutaco_sbi_assessment_6251303/v1/analysis_rows_b40.jsonl",
+      "results/paper/repaired_mutaco_sbi_assessment_6251303/v1/analysis_rows_b100.jsonl"
+    ],
+    "analysis_files_checksum_verified": 5,
+    "source_sha256_field_common_to_all_720": "f4558c9a59ebbdb405ce6aefdf5313bcfb8103b3fcca3b3c0699df7d1134a1bf",
+    "known_artifact_hashes": {
+      "collection_sha256": "43e645281a7fdab5348b7e218ac730b46c576747cf1cf5368c78e7693854ce33",
+      "compact_export_sha256": "f4558c9a59ebbdb405ce6aefdf5313bcfb8103b3fcca3b3c0699df7d1134a1bf",
+      "scheduler_stdout_sha256": "fbba1d1ddb20480a1d8b20a681fb022f1969e3a6cf700870231e828b618f3142"
+    },
+    "original_sbi_zoo_dependency": "240 MUTACO held-out worker attempts with original sidecars. Full optional rebuild declares 962 JSON/hash pairs and scheduler logs. Raw per-worker SHA values reside in those sidecars. Published native identities are semantic result identities.",
+    "native_inputs_found": 0
+  },
+  "oscillator_dense_arrays": {
+    "sealed_source_pairs_found": 0,
+    "only_named_npz_and_manifest": "newly produced by job 7010616",
+    "corresponding_npz_sha256": "5355ed788c07213abdaaea235056cb4a4ad3fe30869e1c27cdcc736a145a6403"
+  },
+  "truba_saved_observations": {
+    "authenticated_private_path_probes": {
+      "EACCES": 3,
+      "accessible": 2,
+      "ENOENT": 10
+    },
+    "owner_reference_probes": 5,
+    "optional_b100_archive_path_checks_readable_searchable": {
+      "log_root_readable": false,
+      "log_root_searchable": false,
+      "output_root_readable": false,
+      "output_root_searchable": false
+    },
+    "live_refresh": "Existing SSH control session expired and a noninteractive call returned authentication denied. Directories with recorded EACCES remain unverified. A fresh traversal of current scratch was unavailable. No newly identified readable or previously unexamined original authority location surfaced.",
+    "previously_verified_at": "qualified 2026-11-18 run",
+    "job_6251303_original_access_record": {
+      "sha256": "ed4a89c84eeb37e592d3cf1382905cf492c58ab91f6892cb3e178aae7d7d5366",
+      "read_and_search_denied_for": [
+        "worker root",
+        "first MUTACO assessment JSON",
+        "original compact export",
+        "log root"
+      ]
+    }
+  },
+  "affected_pytest": {
+    "previous_actual_rerun_with_restored_b40": "2 passed, 3 failed on 7f4ef91; both B40 tests reproduced 240 tasks each",
+    "passed": [
+      "tests/experiments/test_terminal_domain_heldout_assessment.py::test_zero_call_preparation_has_complete_paired_inventory",
+      "tests/experiments/test_terminal_domain_heldout_assessment_v2.py::test_zero_call_preparation_has_complete_paired_inventory"
+    ],
+    "failed": [
+      "tests/experiments/test_repaired_sbi_terminal_preparation.py::test_terminal_preparation_package_and_declaration_are_reproducible",
+      "tests/experiments/test_repaired_sbi_terminal_archive.py::test_corrected_terminal_archive_reproduces_from_append_only_attempts",
+      "experiments/paper/studies/oscillator_physics_post_analysis/test_analysis.py::test_zero_call_analysis_uses_only_frozen_response"
+    ],
+    "raw_log_sha256": "fdaffe85ece1ceee2f749d2c79899faf2a1b9e89320bbc2d5359fbf77f62c882",
+    "current_search_rerun": false,
+    "reason": "No additional original bytes recovered since the source-qualified rerun."
+  },
+  "conclusion": "Historical raw-source reconstructions remain BLOCKED. No unpublished raw file was reconstructed, substituted, or marked as verified."
+}

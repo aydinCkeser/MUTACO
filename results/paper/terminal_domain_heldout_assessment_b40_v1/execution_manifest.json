@@ -1,0 +1,24 @@
+{
+  "automatic_retry": false,
+  "continuation_prohibited_under_current_declaration": true,
+  "declaration_identity": "terminal-domain-heldout-declaration-v1-15a2180b4ce9073a54c015edb5c5cb1f482703ab2d4b5a2f94b1e8f6d9207576",
+  "execution_location": "local_ubuntu",
+  "gp_fit_attempts": 0,
+  "mutaco_search_calls": 0,
+  "physical_calls": {
+    "attempted": 1,
+    "attempted_outcome_unknown": 1,
+    "failed": 0,
+    "maximum": 240,
+    "retry": 0,
+    "successful": 0
+  },
+  "policy_A_calls": 0,
+  "remaining_unattempted_calls": 239,
+  "schema_version": "mutaco-terminal-domain-heldout-execution-manifest-v1",
+  "simulator_instances_constructed": 1,
+  "slurm_jobs": 0,
+  "status": "incomplete_stopped_after_first_outcome_persistence_failure",
+  "terminal_optimizations": 0,
+  "truba_jobs": 0
+}

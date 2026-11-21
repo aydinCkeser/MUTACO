@@ -1,0 +1,621 @@
+{
+  "byte_identical_to_raw": false,
+  "derived": true,
+  "files": [
+    {
+      "bytes": 47827,
+      "path": "controlled-after/after_callback.json",
+      "sha256": "850f595c89c57789dbcbb8a8cddb1514fc4a41dc7b17760e7f80046a5d2492b9"
+    },
+    {
+      "bytes": 23813,
+      "path": "controlled-after/before_callback.json",
+      "sha256": "662fdc1e3929da1bf55763729164c5a54e733db6e5255412c5fc3dbe64de1c5f"
+    },
+    {
+      "bytes": 47877,
+      "path": "controlled-after/caller_callback.json",
+      "sha256": "3fed98e8d344f8c0e4e8945f3949950641acb2f9e5da1763269a859813288a71"
+    },
+    {
+      "bytes": 91148,
+      "path": "controlled-after/fixed.json",
+      "sha256": "15dc3687fd32523f51e6ffc5e68241c50656104741aa56ad1f887218373ae6f5"
+    },
+    {
+      "bytes": 28458,
+      "path": "controlled-after/invalid_parameters.json",
+      "sha256": "418ea6c417bf7dd9b080032ed40622ed3ef03b6ceb74acd15e62d3ed7c0531ef"
+    },
+    {
+      "bytes": 39244,
+      "path": "controlled-after/invalid_posterior.json",
+      "sha256": "31bee65e984a5e4c177d7a1dfe2bb2ec2f2cffbb3dbb73806072a08ea685476c"
+    },
+    {
+      "bytes": 28436,
+      "path": "controlled-after/iteration_limit.json",
+      "sha256": "3280619548b700f9537f0ed9c8ceeb52593647072dfce9897732ad406da9814b"
+    },
+    {
+      "bytes": 28486,
+      "path": "controlled-after/nonfinite.json",
+      "sha256": "68e21cb53d5c8d1402f93e7fdedef1d4429bc153996f739874cec4242dd8bfbf"
+    },
+    {
+      "bytes": 65221,
+      "path": "controlled-after/real_optimizer.json",
+      "sha256": "529a5781019c03865d0a0e0a56e8fd04478f237645d59433b83cebda994b9eb7"
+    },
+    {
+      "bytes": 96937,
+      "path": "controlled-after/recovery_exhausted.json",
+      "sha256": "32b93e82214bdc14dc6ed0841606a0ad33314639bb203b6dcef041cb0a23fe4c"
+    },
+    {
+      "bytes": 214822,
+      "path": "controlled-after/recovery_success.json",
+      "sha256": "f0619b527ec5855cbcf5a5ede4dbbb475aba830b6b6b24152b001117fcf125a2"
+    },
+    {
+      "bytes": 64984,
+      "path": "controlled-after/success.json",
+      "sha256": "0a73a25b96f6339892032ffbfd4740526ecd16b8adb8da3eb7c44877e9c40e1b"
+    },
+    {
+      "bytes": 94783,
+      "path": "controlled-after/warm.json",
+      "sha256": "656fe93196c48c65218338f106342f3b31fe0e85abb0866d87145cbc51ff36f1"
+    },
+    {
+      "bytes": 47827,
+      "path": "controlled-before/after_callback.json",
+      "sha256": "850f595c89c57789dbcbb8a8cddb1514fc4a41dc7b17760e7f80046a5d2492b9"
+    },
+    {
+      "bytes": 23813,
+      "path": "controlled-before/before_callback.json",
+      "sha256": "662fdc1e3929da1bf55763729164c5a54e733db6e5255412c5fc3dbe64de1c5f"
+    },
+    {
+      "bytes": 47877,
+      "path": "controlled-before/caller_callback.json",
+      "sha256": "3fed98e8d344f8c0e4e8945f3949950641acb2f9e5da1763269a859813288a71"
+    },
+    {
+      "bytes": 91148,
+      "path": "controlled-before/fixed.json",
+      "sha256": "15dc3687fd32523f51e6ffc5e68241c50656104741aa56ad1f887218373ae6f5"
+    },
+    {
+      "bytes": 28458,
+      "path": "controlled-before/invalid_parameters.json",
+      "sha256": "418ea6c417bf7dd9b080032ed40622ed3ef03b6ceb74acd15e62d3ed7c0531ef"
+    },
+    {
+      "bytes": 39244,
+      "path": "controlled-before/invalid_posterior.json",
+      "sha256": "31bee65e984a5e4c177d7a1dfe2bb2ec2f2cffbb3dbb73806072a08ea685476c"
+    },
+    {
+      "bytes": 28436,
+      "path": "controlled-before/iteration_limit.json",
+      "sha256": "3280619548b700f9537f0ed9c8ceeb52593647072dfce9897732ad406da9814b"
+    },
+    {
+      "bytes": 28486,
+      "path": "controlled-before/nonfinite.json",
+      "sha256": "68e21cb53d5c8d1402f93e7fdedef1d4429bc153996f739874cec4242dd8bfbf"
+    },
+    {
+      "bytes": 65221,
+      "path": "controlled-before/real_optimizer.json",
+      "sha256": "529a5781019c03865d0a0e0a56e8fd04478f237645d59433b83cebda994b9eb7"
+    },
+    {
+      "bytes": 96937,
+      "path": "controlled-before/recovery_exhausted.json",
+      "sha256": "32b93e82214bdc14dc6ed0841606a0ad33314639bb203b6dcef041cb0a23fe4c"
+    },
+    {
+      "bytes": 214822,
+      "path": "controlled-before/recovery_success.json",
+      "sha256": "f0619b527ec5855cbcf5a5ede4dbbb475aba830b6b6b24152b001117fcf125a2"
+    },
+    {
+      "bytes": 64984,
+      "path": "controlled-before/success.json",
+      "sha256": "0a73a25b96f6339892032ffbfd4740526ecd16b8adb8da3eb7c44877e9c40e1b"
+    },
+    {
+      "bytes": 94783,
+      "path": "controlled-before/warm.json",
+      "sha256": "656fe93196c48c65218338f106342f3b31fe0e85abb0866d87145cbc51ff36f1"
+    },
+    {
+      "bytes": 0,
+      "path": "download/logs/job-6860709.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 5258,
+      "path": "download/logs/job-6860709.out",
+      "sha256": "da95e53f693e0daa95a55752dc0dd0e4cb5308a33b0b2247c31f41b628cfb092"
+    },
+    {
+      "bytes": 211511,
+      "path": "download/workers/b100-capture.json.gz",
+      "sha256": "91f1c47ebb38e3f87a86fb751eda1f17ea236dc996009dc1c894f6804c52d9f4"
+    },
+    {
+      "bytes": 145181,
+      "path": "download/workers/b100-capture.json.gz.first.json.gz",
+      "sha256": "31887fb49700e048c76250475b28d21fce04129164b057936296ebf8f4f3f9b9"
+    },
+    {
+      "bytes": 1291,
+      "path": "download/workers/b100-capture.log",
+      "sha256": "1473924e940e49f96b9cc7c07ec1c2983b0b50aceb7f2c71802fe809a23561e1"
+    },
+    {
+      "bytes": 528,
+      "path": "download/workers/b100-checkpoint-comparison.json",
+      "sha256": "2c2b122c065082143c16e92940928778d6b920f9e360d6ae634871aa85fdd667"
+    },
+    {
+      "bytes": 641,
+      "path": "download/workers/b100-fit-event-comparison.json",
+      "sha256": "fe9cb90381d4eb38eb6a16b0619d65e1cef79dff7c01b0f61a44346c613d3671"
+    },
+    {
+      "bytes": 199440,
+      "path": "download/workers/b100-fit-events.json",
+      "sha256": "06b2346518e9661f35e2edff3d4ea6176379607613247da40e065f8644a46a47"
+    },
+    {
+      "bytes": 409,
+      "path": "download/workers/b100-history-comparison.json",
+      "sha256": "f3ee0e379e44aabd3d155c598d79a61bbe8e4741bf4cc81a3e8d7b84a7cd167d"
+    },
+    {
+      "bytes": 267210,
+      "path": "download/workers/b100-history.json.gz",
+      "sha256": "ae4a5865668e7bd88c15f1799cca200ba90e228b2caa883fa7a9ace88af876bc"
+    },
+    {
+      "bytes": 660,
+      "path": "download/workers/b100-history.log",
+      "sha256": "0cb3391e95c945308c8487afe43d08dac28bae2f55d7991066a2aaf12519e34c"
+    },
+    {
+      "bytes": 189313,
+      "path": "download/workers/b40-capture.json.gz",
+      "sha256": "71f52539bbedf05fb3e71b01f0bcf67059f70aac60fb1bd23d2637189057363b"
+    },
+    {
+      "bytes": 144222,
+      "path": "download/workers/b40-capture.json.gz.first.json.gz",
+      "sha256": "21e28d3955ae5c57e848288ac61fce78895b929a619d84bf6468c2eb3eb0842e"
+    },
+    {
+      "bytes": 1290,
+      "path": "download/workers/b40-capture.log",
+      "sha256": "cc9eb1c75df8e38b7b1ae423752b570c0506078ee5bf4b13aa4bd3bad399a140"
+    },
+    {
+      "bytes": 527,
+      "path": "download/workers/b40-checkpoint-comparison.json",
+      "sha256": "f6a263129b3f7e7c812bec85ece7eaa5d45cc66d93b8004643f28a320476dac9"
+    },
+    {
+      "bytes": 639,
+      "path": "download/workers/b40-fit-event-comparison.json",
+      "sha256": "a7cea890abdfbde6bd93236b8d4b3303f94c24945ea3f8159896d0d7594af67e"
+    },
+    {
+      "bytes": 66292,
+      "path": "download/workers/b40-fit-events.json",
+      "sha256": "7dd02621f21eb3b389d48c782746d59b4cd86617092a0e83e6d844c4acbd234e"
+    },
+    {
+      "bytes": 409,
+      "path": "download/workers/b40-history-comparison.json",
+      "sha256": "30145343775152faed9f0f178a28a1743f1ca266e1b4afdd7c610401b170002d"
+    },
+    {
+      "bytes": 81619,
+      "path": "download/workers/b40-history.json.gz",
+      "sha256": "cdab1b392cdb5307823b9cd865aaa17b0dd82728547c72998f399f160cc20a2b"
+    },
+    {
+      "bytes": 659,
+      "path": "download/workers/b40-history.log",
+      "sha256": "7788b9d8da2bcd1d4994496bccdadcc496abe444d851c4c0667de0a5bba116d8"
+    },
+    {
+      "bytes": 88461,
+      "path": "download/workers/candidate-tests/junit.xml",
+      "sha256": "33db4838b3d2fb51273ef273d9156547f6aeff52fb54daa19a0bfd11f5a0245f"
+    },
+    {
+      "bytes": 207,
+      "path": "download/workers/candidate-tests/status.json",
+      "sha256": "e90e4aed98ea67649153ed5683e859aec9cab0c401108976e7025f39c617543d"
+    },
+    {
+      "bytes": 2570,
+      "path": "download/workers/candidate-tests.log",
+      "sha256": "df70cbe831de7d90cde88a1ed87774ae147e2d3f5f5e03dad35fe9c09d7a5ec2"
+    },
+    {
+      "bytes": 47832,
+      "path": "download/workers/controlled-gp-diagnostics/after_callback.json",
+      "sha256": "b5c28bafd8afc4f3b9ab83e2af2b346ea47d330451893ad4ea954e216c9a2ea8"
+    },
+    {
+      "bytes": 23812,
+      "path": "download/workers/controlled-gp-diagnostics/before_callback.json",
+      "sha256": "06ad0c9e2751a9206a5e9cc8cc34c68e6322d1cf3f53253d26b5cd84d85b7115"
+    },
+    {
+      "bytes": 47880,
+      "path": "download/workers/controlled-gp-diagnostics/caller_callback.json",
+      "sha256": "f02f5cc7cbe48c74a979087c79c87d5a38ca6e8b6bd8fe5df66b783d42a04122"
+    },
+    {
+      "bytes": 91147,
+      "path": "download/workers/controlled-gp-diagnostics/fixed.json",
+      "sha256": "467a5ae53b46a938c940b10414a9154c1842b911fcc9077db2ac4b6d70fef36a"
+    },
+    {
+      "bytes": 28457,
+      "path": "download/workers/controlled-gp-diagnostics/invalid_parameters.json",
+      "sha256": "7d6646a37e98974e92c0510aa094f7d7e7dfc63e313a5439a0c98b9ec1c36786"
+    },
+    {
+      "bytes": 39246,
+      "path": "download/workers/controlled-gp-diagnostics/invalid_posterior.json",
+      "sha256": "958150d1c166f8b67324a130f623bf7e30b0ac230f8d7d974b8578a092948161"
+    },
+    {
+      "bytes": 28435,
+      "path": "download/workers/controlled-gp-diagnostics/iteration_limit.json",
+      "sha256": "6fb09bd8f4d21ccc02988c15fec8da41f7775ea0360527921117c1aad1e51e98"
+    },
+    {
+      "bytes": 28485,
+      "path": "download/workers/controlled-gp-diagnostics/nonfinite.json",
+      "sha256": "f93a402d94060c9c803f68c4d672a055839cebb3a8ab933823d698622af34d92"
+    },
+    {
+      "bytes": 65199,
+      "path": "download/workers/controlled-gp-diagnostics/real_optimizer.json",
+      "sha256": "43bec5c1216b6c54189c4eff375a0f2eb74eee76a1c58a70df82f098d06dbef5"
+    },
+    {
+      "bytes": 96938,
+      "path": "download/workers/controlled-gp-diagnostics/recovery_exhausted.json",
+      "sha256": "bf2fbce2f9c45d37b885f3450abee6e47216ce83a37883cd5001d53ab42df319"
+    },
+    {
+      "bytes": 214810,
+      "path": "download/workers/controlled-gp-diagnostics/recovery_success.json",
+      "sha256": "81b48f257cb6c4e01680818d1c5116a2ec71a023bab9eb9f7d2a6b2fb5daaa75"
+    },
+    {
+      "bytes": 64983,
+      "path": "download/workers/controlled-gp-diagnostics/success.json",
+      "sha256": "869f705429b4c232260e1e0e9e8b62de027747bbf909b6eed0f3f828e8926a53"
+    },
+    {
+      "bytes": 94782,
+      "path": "download/workers/controlled-gp-diagnostics/warm.json",
+      "sha256": "96fd182b542dd04c73d2cdd9373bf771b51ccab5f89dc59cd09337f5c1eb177d"
+    },
+    {
+      "bytes": 1141,
+      "path": "download/workers/environment.freeze.txt",
+      "sha256": "e4cf81c7053a56d4147cb6eaa306a4314ddfee9344750e19d15c068bf5086182"
+    },
+    {
+      "bytes": 888,
+      "path": "download/workers/full-test-selection.json",
+      "sha256": "0a661d93432952fc50b75e6bd7d4d14cb468731f34bbcdc42fcaaded3e7b3c99"
+    },
+    {
+      "bytes": 198,
+      "path": "download/workers/job-status.json",
+      "sha256": "f2f8454e586fe3cf40667191c19ea8fbcd24b0c19e873699469ab3be5b87576a"
+    },
+    {
+      "bytes": 659,
+      "path": "download/workers/tests-gate.json",
+      "sha256": "1308449148f9adcc5b3c5969627279d3e8e5879522fe136b0aeac7cd44e99972"
+    },
+    {
+      "bytes": 2577,
+      "path": "execution/audit_mutaco_gpdiag_source.py",
+      "sha256": "47c609384d2e1c56ce76be00217676928df439ab9e7563c608f2f73affd482ca"
+    },
+    {
+      "bytes": 680,
+      "path": "execution/collection-and-backup-integrity.json",
+      "sha256": "157d0c3db992988f944aeea4f8410867afff06d04ca53290068232d7f8e19bf4"
+    },
+    {
+      "bytes": 13679,
+      "path": "execution/derive_mutaco_gpdiag_evidence.py",
+      "sha256": "e68481e0b3f03c86b17a3f1970b0eb0fe6e6ce5c9fb9f7b1c20eccf351188da4"
+    },
+    {
+      "bytes": 241,
+      "path": "execution/driver-proof.json",
+      "sha256": "8d6d77339a31e1074dcafcb41af54f28e5d100d6f44c629403e04cbdfa922d32"
+    },
+    {
+      "bytes": 2568,
+      "path": "execution/extract_mutaco_gp_diagnostics.py",
+      "sha256": "9761903bd79f428739f8e047f285c003a517e4a1151d2ab811e368741399a3f7"
+    },
+    {
+      "bytes": 3939,
+      "path": "execution/finalize_mutaco_gpdiag_summaries.py",
+      "sha256": "41042058978f9da1dc85aea259124cb3b64ac9e9714d9608d681e8e61229e3fb"
+    },
+    {
+      "bytes": 10287,
+      "path": "execution/independent-result-verification.json",
+      "sha256": "33c9832e222f161a0a56ce3f311ddad9a3011ab1d17159597f2bc0f99411cb4a"
+    },
+    {
+      "bytes": 3763,
+      "path": "execution/mutaco-gpdiag-independent-verification.log",
+      "sha256": "81f0d64c54a6229b1d1e5c4bca537eb524ddddb876b36d57aa9d7ddc93b0212e"
+    },
+    {
+      "bytes": 2016,
+      "path": "execution/mutaco-gpdiag-lifecycle.log",
+      "sha256": "a523a565729204d7df4757f6c49851877369cbf2ad12596e6151826faebac35d"
+    },
+    {
+      "bytes": 286,
+      "path": "execution/mutaco-gpdiag-structural-audit.json",
+      "sha256": "dd7503bcd72b45872e5943c2369bd094e82f32c945cee4415b402cd2c59844ce"
+    },
+    {
+      "bytes": 1404,
+      "path": "execution/mutaco_gp_diagnostics_probe.py",
+      "sha256": "ce110b3241dfa82942d2e5c980eaa80b286f9227b98206c45cba708fc5b361b1"
+    },
+    {
+      "bytes": 1034,
+      "path": "execution/mutaco_gpdiag_full_tests.py",
+      "sha256": "914b414219edda3c318582c3c615b25a2411dbc6173e3bb35d79b68389b9bb8b"
+    },
+    {
+      "bytes": 3373,
+      "path": "execution/mutaco_gpdiag_job.sh",
+      "sha256": "c4448a0b184a03b617e271bea037d8c52bbaa80247a0fc8e11d1fc916a5829d4"
+    },
+    {
+      "bytes": 839,
+      "path": "execution/mutaco_gpdiag_local_full.py",
+      "sha256": "0b491212d899074a2443501a1b7ced929f57a046803ee9367d8c5b225b1b9c2a"
+    },
+    {
+      "bytes": 3394,
+      "path": "execution/prepare_mutaco_gpdiag_snapshot.py",
+      "sha256": "bc86ca2db26ec67c7b792d0366cdfbcf31a731d13ffe51c4b40c6e14b0362a1f"
+    },
+    {
+      "bytes": 1211,
+      "path": "execution/remote-preflight.txt",
+      "sha256": "270825245e408562d22ee5467b49576a9c2c1685e35826459a86ab6468296863"
+    },
+    {
+      "bytes": 849,
+      "path": "execution/restore_mutaco_gpdiag_inputs.py",
+      "sha256": "8f240fac3e283aa3bb83631af10d6980ed14f33dc82108e5eaf2885fad306729"
+    },
+    {
+      "bytes": 198,
+      "path": "execution/scheduler-accounting.txt",
+      "sha256": "e83c70010467cfef9c902c4683958d9567574ea667a5559fa8490f4a053d7b8d"
+    },
+    {
+      "bytes": 197,
+      "path": "execution/submission.json",
+      "sha256": "3fea20a3216c2b299f1de99020b4dc99f6e428686acfd787d80a1bf93c8212c3"
+    },
+    {
+      "bytes": 8,
+      "path": "execution/submission.txt",
+      "sha256": "2879971dcbfa3258fc9193615313e4b3a5709bc4ea764d6790533c16d3f0a3a4"
+    },
+    {
+      "bytes": 2286,
+      "path": "execution/submit_mutaco_gpdiag_job.py",
+      "sha256": "a259253d18bd0fd6a2d21c41f34fc9df5b36b5217710d8095a01e1fe5455d0fe"
+    },
+    {
+      "bytes": 255,
+      "path": "execution/transfer-integrity.json",
+      "sha256": "f6d70884cefea1058c19e55ab657f1a32c89a75b46426c10d4e77d6f8f0ff4ab"
+    },
+    {
+      "bytes": 5732,
+      "path": "execution/verify_mutaco_gpdiag_results.py",
+      "sha256": "43521f0c85bdc12b8e46ec632c84e9e4c679b3af2f8522de140daf822c543f39"
+    },
+    {
+      "bytes": 1198108,
+      "path": "job-artifacts.tar.gz",
+      "sha256": "912aa407910837c03bfb5b009cb54c0ddf509eff14594bf3b144857b584415a9"
+    },
+    {
+      "bytes": 1735,
+      "path": "lifecycle-receipt.json",
+      "sha256": "ec534c8e61f8f781a979edb358c993cd943e1adfac4562a160ed0f63c641c3ad"
+    },
+    {
+      "bytes": 221,
+      "path": "mutaco-gpdiag-AST-proof.json",
+      "sha256": "f044aa979acba9dad8199f14bca1b1130a207f83ffe2679e9b163ab167cdf542"
+    },
+    {
+      "bytes": 1832,
+      "path": "mutaco-gpdiag-after.log",
+      "sha256": "b40aa7dc10c4b85459149f7970e004bd45f0d2749c16be844623391511611a30"
+    },
+    {
+      "bytes": 2102,
+      "path": "mutaco-gpdiag-after.xml",
+      "sha256": "4a06328431bcddd61ad3123bf4f739e67002c700307cb14f170e0d26cfdb04c1"
+    },
+    {
+      "bytes": 147082,
+      "path": "mutaco-gpdiag-authoring-1.log",
+      "sha256": "85c28161d3c8ff0e58506b990d227009e98b6e229a381a35e16c68b9d48822fe"
+    },
+    {
+      "bytes": 146285,
+      "path": "mutaco-gpdiag-authoring-1.xml",
+      "sha256": "1ee5646a3df6ce66e8a37b40d42d46d6afa241dce228245642dcda5d62d518ea"
+    },
+    {
+      "bytes": 19844,
+      "path": "mutaco-gpdiag-authoring-2.log",
+      "sha256": "1b0f88be2876308f94a9870a5430113575aad2293f55f28ddd7415987657fa2f"
+    },
+    {
+      "bytes": 20131,
+      "path": "mutaco-gpdiag-authoring-2.xml",
+      "sha256": "484ff71509c822379b91f9c59e360cfb8bcab895d6370bd9541c40c42b99ef3c"
+    },
+    {
+      "bytes": 1832,
+      "path": "mutaco-gpdiag-before.log",
+      "sha256": "ebfa5491bf521527f4b7521ecf4e29355b2784d81850741dd2844759c10cc3b9"
+    },
+    {
+      "bytes": 2102,
+      "path": "mutaco-gpdiag-before.xml",
+      "sha256": "ee1f3d93b8a7ac14c1566d8ba2965f4732a71bfed21b80027d144f8c92c28d19"
+    },
+    {
+      "bytes": 154,
+      "path": "mutaco-gpdiag-comparison.json",
+      "sha256": "30003d1a224f61ace20048cc839a63848faa8f25ca7388a4b047b57795782d92"
+    },
+    {
+      "bytes": 380,
+      "path": "mutaco-gpdiag-existing-shadowing.json",
+      "sha256": "cecfff8c3130e3b43270e004568bb009214a018cc7041ab8f25c0781eb8ead01"
+    },
+    {
+      "bytes": 50,
+      "path": "mutaco-gpdiag-final-metadata-status.json",
+      "sha256": "733c4b716ebef2fa5709bbbb5a9dd3711cfac0e3213fcb91e09628fae7dfa5a4"
+    },
+    {
+      "bytes": 513,
+      "path": "mutaco-gpdiag-final-metadata.log",
+      "sha256": "f127993129f7b88c4465a7379de445a52ee7d604fd574b4f1e4e6f55847ecc5b"
+    },
+    {
+      "bytes": 12141,
+      "path": "mutaco-gpdiag-final-metadata.xml",
+      "sha256": "bdf3dc42b6caec92d978ac3c8220d6517de0392f1f396968bb17ddab03ce8dbc"
+    },
+    {
+      "bytes": 51,
+      "path": "mutaco-gpdiag-full-after-status.json",
+      "sha256": "4adc97cf33cb3e0c675388bdf4aa892b6189f48046ceb209f2abe5a51fb1ee65"
+    },
+    {
+      "bytes": 2977,
+      "path": "mutaco-gpdiag-full-after.log",
+      "sha256": "ff15cdcabee628dbe4c6f656eea69357c74ff54ece29f50ea4cf0a014eca4366"
+    },
+    {
+      "bytes": 88665,
+      "path": "mutaco-gpdiag-full-after.xml",
+      "sha256": "91d4e2a297f02523e1bdd829d7c3427ce6d6ccd36d6fafbdede10a66d5ddd011"
+    },
+    {
+      "bytes": 51,
+      "path": "mutaco-gpdiag-full-before-status.json",
+      "sha256": "4adc97cf33cb3e0c675388bdf4aa892b6189f48046ceb209f2abe5a51fb1ee65"
+    },
+    {
+      "bytes": 2977,
+      "path": "mutaco-gpdiag-full-before.log",
+      "sha256": "52549bd9cf666a555d6d3973af795753a481172fe8f3aeb306185acaadb47596"
+    },
+    {
+      "bytes": 88665,
+      "path": "mutaco-gpdiag-full-before.xml",
+      "sha256": "9f2974b92c0cbd29ca60ac3949760613551c8cc0fdc3e9309353bbcf3d3f97fa"
+    },
+    {
+      "bytes": 642,
+      "path": "mutaco-gpdiag-resource-review.txt",
+      "sha256": "c02dec073c3e124bd58392a478a953eab6438cd2a8e3e759e95ae4026279dda2"
+    },
+    {
+      "bytes": 5352,
+      "path": "mutaco-gpdiagnostic-probe.log",
+      "sha256": "62d416c67901e21e9cff19bc02ffb555b4ebf646a71864a7abb73fd63b82fd9c"
+    },
+    {
+      "bytes": 1076,
+      "path": "preserved-input-bindings.json",
+      "sha256": "81a10a3c01c73390690f4526e488dcfe9cc3561dd8a55ad12c8b828b8a25e94a"
+    },
+    {
+      "bytes": 51,
+      "path": "references/accepted-tests-status.json",
+      "sha256": "4adc97cf33cb3e0c675388bdf4aa892b6189f48046ceb209f2abe5a51fb1ee65"
+    },
+    {
+      "bytes": 88665,
+      "path": "references/accepted-tests.xml",
+      "sha256": "9f2974b92c0cbd29ca60ac3949760613551c8cc0fdc3e9309353bbcf3d3f97fa"
+    },
+    {
+      "bytes": 419,
+      "path": "run-info.json",
+      "sha256": "7e2688bb9db533208b686ed2ce0e7de3c9f08017351c1cdfd78f771dbfe1bb50"
+    },
+    {
+      "bytes": 8815,
+      "path": "source-snapshot-delta.bundle",
+      "sha256": "0ae2b8a3ae699fc83472598016ebf76ead9ce6cdf5475ab7aaf095eddb1aecb0"
+    },
+    {
+      "bytes": 14633,
+      "path": "test_optimizer_diagnostics.py",
+      "sha256": "b0c97e1ca28935d6438b4fd8ebec9b288d2848914ea22d36c6618cf05788f660"
+    }
+  ],
+  "reused_inputs": {
+    "b100-capture.json.gz": {
+      "sha256": "1865655feddf8658f534e029b89212f2e5a1b0bf308f099705e584bde641e156"
+    },
+    "b100-history.json.gz": {
+      "sha256": "09e2df33bdfba7cc7ccb331a2995d81bda7e1ae13d5d6f61569904574b6a7e57"
+    },
+    "b40-capture.json.gz": {
+      "sha256": "029632e4d0f863a4d1e4c8014a88eca94a0b7eee59517152cbfa80d8919604c2"
+    },
+    "b40-history.json.gz": {
+      "sha256": "cc7974d202ecaa5444946aae45965c01f9cf93a10b027f253e71e30a7494dad2"
+    },
+    "base-source.bundle": {
+      "commit": "68435659d05d12280c396045c42a15eefaf7c84e",
+      "sha256": "e2ea0a2a19cfe8c221eedfcf8c25d52c9e4b616d3ed68f94869730dc3e9d89b1"
+    }
+  },
+  "schema": "mutaco-private-raw-evidence-index-v1",
+  "scope": "new raw files at derivation; final private checksums also bind the accepted delta bundle and manifest"
+}

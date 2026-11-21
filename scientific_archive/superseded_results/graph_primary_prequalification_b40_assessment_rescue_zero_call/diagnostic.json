@@ -1,0 +1,60 @@
+{
+  "schema_version": "mutaco-primary-assessment-rescue-zero-call-diagnostic-v1",
+  "diagnostic_identity": "primary-assessment-rescue-zero-call-diagnostic-v1-ae7ed9f5e58288d0c7dc45c996b9fd44a2b6fa901086774161444b381202f930",
+  "status": "exact_source_validated_awaiting_separate_three_call_authorization",
+  "classification": "prequalification_engineering_rescue_not_q1_or_primary_performance_evidence",
+  "source_attempt_job_id": 6247524,
+  "source_attempt_commit": "a398ed58eef4449ee8aebb98a21243c1863cb3fb",
+  "context_repair_commit": "41d0bbd563bed0271373f9a18780010d96991e87",
+  "rescue_source_commit": "88d00a1bab06975fd72ab72eaa56eb3d9a296f8a",
+  "declaration": "experiments/graph_inversion/configs/paper/primary_prequalification_b40_assessment_rescue_v1.json",
+  "declaration_identity": "primary-assessment-rescue-declaration-v1-d8ba3e2b6ac742a4b5824d5adfc9db11a76e172f823b5017e4ff7c504f2f57c8",
+  "declaration_sha256": "c02999819a84a4e5b53869362529f882feb024a44a8448a621a055411bb23857",
+  "decision_freeze_identity": "primary-all-method-decision-freeze-v1-bab64af25214969d97fb20803f4975e2c094faa10ab0c1ed9541e4803f9eca03",
+  "decision_freeze_sha256": "62b8a2797b326995852de2cd388ce14ca5edf38f6d5a810e8a4f8e357e1de9b5",
+  "target_record_identity": "frozen-target-record-v2-55ef79e8c497a3d9e186553901b04d909b2de06d145b70f177968372063f8693",
+  "methods": ["mutaco", "nei_bo", "sobol"],
+  "call_policy": {
+    "search_rerun": false,
+    "search_calls_executed": 0,
+    "assessment_calls_executed": 0,
+    "maximum_future_assessment_calls": 3,
+    "automatic_retry": false
+  },
+  "assessment_context": {
+    "family_identity": "primary-paired-heldout-family-v1-9ce7cbaafe56a930578210b8a14c0d9a6fc514cfe5751935779886e8ed32de65",
+    "purpose": "paired_held_out_assessment",
+    "logical_index": 0,
+    "replicate": 0,
+    "evaluation_seed": 5158963867398340264,
+    "method_independent": true
+  },
+  "local_validation": {
+    "actual_archived_freeze_preview": "passed_zero_call",
+    "actual_archived_freeze_synthetic_execution": "completed_three_shared_context_callbacks",
+    "synthetic_rescue_identity": "primary-assessment-rescue-result-v1-f3f3f2aab459b551634e5a6b56303cd0ec7d34cb636988240f5c9f145f082602",
+    "simulator_calls": 0,
+    "focused_tests_passed": 36,
+    "full_suite_passed": 436,
+    "full_suite_skipped": 8,
+    "pinned_environment": "mutaco-sbi"
+  },
+  "truba_validation": {
+    "status": "validated_zero_call",
+    "source_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/primary_three_method_smoke/assessment-rescue-v1/source-exact",
+    "output_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/primary_three_method_smoke/assessment-rescue-v1/workers",
+    "log_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/primary_three_method_smoke/assessment-rescue-v1/logs",
+    "paths_pairwise_disjoint": true,
+    "decision_freeze_validated": true,
+    "target_ledger_validated": true,
+    "scientific_calls": 0,
+    "job_submitted": false,
+    "submission_authorized": false,
+    "receipt_identity": "mutaco-truba-validation-receipt-v1-c44c53410f488647ab2bf27acd4d12bb33683b8d66e4b7d313496fb1588cbc14",
+    "receipt_sha256": "f6c55928e4bc57e7c16eb8f291f2de70615bb7d88a7877675f5ba0e13cfb5f78"
+  },
+  "scientific_calls": 0,
+  "simulator_calls": 0,
+  "truba_jobs_submitted": 0,
+  "scientific_submission_authorized": false
+}

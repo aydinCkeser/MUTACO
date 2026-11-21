@@ -1,0 +1,5 @@
+# Historical coordination records
+
+This directory preserves the original [reviewed state](state.toml), [schema](state.schema.json), [changelog](CHANGELOG.md), [project index](project_README.md) and handoff notes as recorded. Treat dates, paths, approvals, job status and next actions in those files as evidence of their particular checkpoint. Inherited relative references in the original text use its original Git location.
+
+For current scientific definitions read the [scientific registry](../../scientific_contracts/scientific_registry.toml). For current-use result packages and their history read the [experiment registry](../../results/experiment_registry.toml). The [promotion bindings](../../results/paper/promotion_state.toml) carry forward the two independent source-path and bundle-identity pairs used by the Paper Lab promotion check. The [migration map](../../docs/decisions/repository_migration_map.md) records structural changes. Scientific runs, transfers and publication require separate explicit authorization.

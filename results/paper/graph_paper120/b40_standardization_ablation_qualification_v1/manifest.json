@@ -1,0 +1,42 @@
+{
+  "schema_version": "mutaco-paper-b40-standardization-ablation-qualification-evidence-v1",
+  "status": "complete",
+  "role": "engineering_qualification_not_population_performance_claim",
+  "campaign_id": "graph_paper120_b40_standardization_ablation_qualification_v1",
+  "scientific_source_commit": "1062f66cb0605a8e89331af842fa82cdbb636ba1",
+  "declaration_identity": "paper-population-declaration-v3-7f6f63b004d79cdcffd0e10b2863f8619df269c4265b97c070aee28435e97fd7",
+  "declaration_sha256": "49f4361f70a739671a9f241a2020e90829420a8394564534cddd3d21c2fb7c6d",
+  "target_indices": [0, 49, 99],
+  "methods": ["mutaco_standardized", "mutaco_unstandardized"],
+  "physical_calls": {
+    "maximum": 246,
+    "attempted": 246,
+    "successful": 246,
+    "failed": 0,
+    "retry": 0,
+    "inference": 240,
+    "assessment": 6,
+    "target_construction": 0,
+    "recommendation": 0
+  },
+  "paired_context_validation": "passed",
+  "all_method_decisions_frozen_before_assessment": true,
+  "compact_source": "population",
+  "compact_export_archive_sha256": "6c935cb99fdbf4ce5f53b92022bd58d996fe64efb2dc97bd8a9e61d41ad78377",
+  "compact_export_manifest_sha256": "6010309519e92c80c5331a0e6c4f86bc87c087b48d8e561fe326406fc402ae02",
+  "compact_export_file_count": 30,
+  "collection_sha256": "5594e677577a4cef016d1aa3ee49f89c67a32d92572d7776a7451d2b7736e9f9",
+  "summary_sha256": "af6c90a0a043aedf7709e1aa78dccb957244e8b81809617974dfadad6e28c094",
+  "truba": {
+    "job_id": 6220690,
+    "state": "COMPLETED",
+    "elapsed": "00:04:43",
+    "exit_code": "0:0",
+    "nodes": "barbun[95-97]",
+    "allocated_cpus": 60,
+    "worker_threads": 20,
+    "memory_per_node": "64G",
+    "excluded_nodes": "barbun70,barbun[112-119]"
+  },
+  "scientific_calls_added_by_fetch_and_promotion": 0
+}

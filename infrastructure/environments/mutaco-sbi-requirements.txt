@@ -1,0 +1,4 @@
+# Prompt 5B compatibility preflight: 2026-07-29
+# sbi 0.25.0 was rejected because it requires torch<2.6.
+# sbi 0.26.1 preserves the clean project's Torch 2.12 requirement.
+sbi==0.26.1

@@ -1,0 +1,28 @@
+{
+  "automatic_retries": 0,
+  "b100_records": 120,
+  "b40_records": 120,
+  "failed_recommendations": 0,
+  "full_attempt_bytes": 8376227,
+  "gp_fit_attempts": 0,
+  "heldout_assessment_calls": 0,
+  "historical_evidence_modified": false,
+  "preparation_identity": "repaired-sbi-corrected-terminal-preparation-v1-3a346d310c9a54bd285707c4b77d9b92f0b62abc720cff0122678ab3f91933af",
+  "preparation_package_identity": "repaired-sbi-corrected-terminal-preparation-package-v1-123306d9650ee714d0601a253149c609bdfa08faabc762d3300cc5bb425181e6",
+  "record_count": 240,
+  "records_identity": "repaired-sbi-corrected-terminal-record-list-v1-6d7b74488e3dba7f7afefb86ae84736a0c82d3d2fda6111d702a27158e7ff86e",
+  "return_source_counts": {
+    "refined": 240
+  },
+  "schema_version": "mutaco-repaired-sbi-corrected-terminal-summary-v1",
+  "search_calls": 0,
+  "simulator_calls": 0,
+  "source_counts": {
+    "2b067c33720ed7c6b30ee91ae6087081d5ad0776": 3,
+    "9235d2fefefa6af0d35cc3af2dfaa01a2d56a3a9": 120,
+    "e7baa235fd7282ea478acc83f9457cfd95b76185": 117
+  },
+  "summary_identity": "repaired-sbi-corrected-terminal-summary-v1-70ac3ab493ba21b9238e232cd61eaf8a7ea29348789b3d8fde99d4cd4323fbc7",
+  "terminal_optimizations": 240,
+  "unique_recommendation_identities": 240
+}

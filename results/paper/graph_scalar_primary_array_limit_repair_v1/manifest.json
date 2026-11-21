@@ -1,0 +1,114 @@
+{
+  "schema_version": "mutaco-scalar-primary-array-limit-repair-v1",
+  "evidence_identity": "scalar-primary-array-limit-repair-v1-df5fe8fa184ac4164f4272e8b4eef75a495cf595ee4dfa191c1878225f4e6456",
+  "status": "complete_zero_call_unsubmitted",
+  "rejected_attempt": {
+    "budget": 40,
+    "source_commit": "ce41544651b72a5197985aebb507898f4d4ec9da",
+    "declaration_identity": "scalar-primary-population-declaration-v1-f1d506212a4b67eeb8de0282110b2089281c3d4618ebc0e5af4b8b9af2ef9583",
+    "plan_identity": "scalar-primary-population-plan-v1-c4c4a7d60044e7367d1ed56551e853075f07e838a48f7be15e0b938ccfc21efa",
+    "requested_array": "0-119%120",
+    "scheduler_error": "Invalid job array specification",
+    "preflight_passed": true,
+    "job_created": false,
+    "collector_created": false,
+    "worker_output_root_created": false,
+    "scientific_calls": 0
+  },
+  "root_cause": {
+    "scheduler": "slurm",
+    "scheduler_version": "23.02.5",
+    "cluster_max_array_size": 100,
+    "maximum_physical_array_index": 99,
+    "scientific_or_algorithm_defect": false,
+    "classification": "scheduler_representation_incompatible_with_cluster_limit"
+  },
+  "repair_source_commit": "e3e3dbad82d73b07564fb286e85f311a6c5751c4",
+  "logical_worker_geometry": {
+    "worker_count": 120,
+    "logical_ranks": "0-119",
+    "targets_per_worker": 1,
+    "coverage_exactly_once": true,
+    "physical_arrays": [
+      {
+        "task_indices": "0-99",
+        "rank_offset": 0,
+        "logical_ranks": "0-99",
+        "maximum_concurrent_tasks": 100
+      },
+      {
+        "task_indices": "0-19",
+        "rank_offset": 100,
+        "logical_ranks": "100-119",
+        "maximum_concurrent_tasks": 20
+      }
+    ],
+    "collector_dependency": "afterany_both_arrays",
+    "automatic_retry": false,
+    "slurm_requeue": false
+  },
+  "scientific_invariants": {
+    "methods_changed": false,
+    "targets_changed": false,
+    "target_order_changed": false,
+    "budgets_changed": false,
+    "campaign_seeds_changed": false,
+    "method_configuration_identities_changed": false,
+    "qlognei_settings_changed": false,
+    "fallback_policy_changed": false,
+    "terminal_policies_changed": false,
+    "heldout_policy_changed": false,
+    "per_worker_call_caps_changed": false,
+    "global_call_caps_changed": false
+  },
+  "campaigns": {
+    "b40": {
+      "declaration": "experiments/graph_inversion/configs/paper/scalar_primary_population_b40_v2.json",
+      "declaration_sha256": "b5a7dc0fc6f4624b347cdde1b9771f15bd089b9847b5456c0b451927bc410972",
+      "declaration_identity": "scalar-primary-population-declaration-v1-e3f3e409cc504bcf3b24a8dde51c9674755e9dbf195daade9e737a16742f0b0a",
+      "plan": "experiments/graph_inversion/configs/paper/scalar_primary_population_b40_plan_v2.json",
+      "plan_sha256": "87f45cbcae94c48d6b63b7526e3d7af8b059618792b4c847ec406ce57f2cb873",
+      "plan_identity": "scalar-primary-population-plan-v1-0cc9ce6fb1e72a04d4e9185e0ae1ec1d4f2773d35059dd36da3889f550315c23",
+      "profile": "infrastructure/truba/scalar_primary_population_b40_v2.env",
+      "profile_sha256": "b1a38ef15269111dc015c18e7c151f9116837bedbe7d4a6eab0960f89690104c",
+      "exact_source_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/scalar_primary_population/b40-v2/source-exact",
+      "validation_receipt": "experiments/paper/exploration/outputs/scalar_primary_smoke/population_b40_v2_source_validation_receipt.json",
+      "validation_receipt_sha256": "a961d88cf9ba20afd4a4427019c4e9f38c96795e34c5f54b9414a1b69edc56f1",
+      "validation_receipt_identity": "mutaco-truba-validation-receipt-v1-db8bda41e70cc8780c360b4b9adb2fa8713502cf41fd96b0d34c5cd6b0b58400",
+      "maximum_calls": 14760
+    },
+    "b100": {
+      "declaration": "experiments/graph_inversion/configs/paper/scalar_primary_population_b100_v2.json",
+      "declaration_sha256": "e0328217e74bd4f3703dd712ec565c4b16b5ae55ff2f179f166cc51f98cfb983",
+      "declaration_identity": "scalar-primary-population-declaration-v1-8c47145907db1ffd61b8a93f0f7ea5d0670357df99be90e5e49d061724996a0a",
+      "plan": "experiments/graph_inversion/configs/paper/scalar_primary_population_b100_plan_v2.json",
+      "plan_sha256": "a3abd2692adb4c67c4fa71fca6c097b83b8c2bc2a32e2762a1dee3fdb85051ee",
+      "plan_identity": "scalar-primary-population-plan-v1-dab807cf6683e11f2a2deb9d73589f7750bcf9afafb0a34aa219c18e9455d2ee",
+      "profile": "infrastructure/truba/scalar_primary_population_b100_v2.env",
+      "profile_sha256": "00bbe4d66578fb9d53f19a86201df54be32a4213a80516fc1be270906c93f79d",
+      "exact_source_root": "/arf/scratch/REPLACE_WITH_TRUBA_USER/mutaco/scalar_primary_population/b100-v2/source-exact",
+      "validation_receipt": "experiments/paper/exploration/outputs/scalar_primary_smoke/population_b100_v2_source_validation_receipt.json",
+      "validation_receipt_sha256": "b34799a7928a894b6a306eec03be5b194ee507c60bb4c14553caeb204812d87e",
+      "validation_receipt_identity": "mutaco-truba-validation-receipt-v1-bfaa80fa991063236f6e17797e08741ca3d658c3c05ffdb90433a70ce6a1f71f",
+      "maximum_calls": 36360
+    }
+  },
+  "validation": {
+    "b40_all_120_shards_validated": true,
+    "b100_all_120_shards_validated": true,
+    "bash_syntax": "passed",
+    "focused_suite": "16_passed",
+    "full_suite": "465_passed_8_skipped",
+    "scheduler_test_only_array_0_99_accepted": true,
+    "scheduler_test_only_array_0_19_accepted": true,
+    "scheduler_test_only_jobs_created": 0,
+    "scientific_calls": 0,
+    "jobs_submitted": 0,
+    "source_transfers": 2
+  },
+  "authorization": {
+    "b40_submission_authorized": false,
+    "b100_submission_authorized": false,
+    "population_execution_authorized": false
+  }
+}

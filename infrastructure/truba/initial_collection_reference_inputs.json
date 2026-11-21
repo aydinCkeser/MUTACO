@@ -1,0 +1,22 @@
+{
+  "accepted_source": "5e8bd33c270443a6b6ba617404f23667a08886a1",
+  "baseline": "aa7f4feb58302ecf6abfa6dee2d81071eabb7fe3",
+  "derived_summaries_are_not_raw_inputs": true,
+  "expected_added_tests": 26,
+  "new_test_prefixes": [
+    "test_initial_collection_success_context_order[",
+    "test_initial_collection_retry_success[",
+    "test_initial_collection_failure_state[",
+    "test_initial_collection_capability_failure_precedes_budget",
+    "test_initial_collection_callback_failure_is_isolated"
+  ],
+  "raw_inputs": {
+    "accepted-tests-status.json": "ca0a4a601b8031fd644115f00107c92b3e699ab234436a34721e2315bff3b736",
+    "accepted-tests.xml": "a1f7f725afdadaa03878bfa5c5bd5c48ee4740e7220d207abd9f495401c76ae7",
+    "b100-capture.json.gz": "1865655feddf8658f534e029b89212f2e5a1b0bf308f099705e584bde641e156",
+    "b100-history.json.gz": "09e2df33bdfba7cc7ccb331a2995d81bda7e1ae13d5d6f61569904574b6a7e57",
+    "b40-capture.json.gz": "029632e4d0f863a4d1e4c8014a88eca94a0b7eee59517152cbfa80d8919604c2",
+    "b40-history.json.gz": "cc7974d202ecaa5444946aae45965c01f9cf93a10b027f253e71e30a7494dad2"
+  },
+  "schema": "mutaco-initial-collection-private-inputs-v1"
+}

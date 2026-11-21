@@ -1,0 +1,10 @@
+{
+  "automatic_retry": false,
+  "call_identity": "terminal-domain-heldout-call-v1-f5cbd9fb4a2811b69ee5102ee3cea8cb1d294248d686badf4f9d573e061b85c9",
+  "failure_explanation": "simulator_result_metadata contained a mappingproxy that the frozen JSON writer could not serialize",
+  "failure_stage": "post_invocation_outcome_persistence",
+  "failure_type": "TypeError",
+  "schema_version": "mutaco-terminal-domain-heldout-call-outcome-v1",
+  "status": "attempted_outcome_unknown",
+  "task_identity": "terminal-domain-heldout-task-v1-8f67ef84596188cd78852f2062de42ec559e68a4d891af8cbeb8e1f2e67cd7b6"
+}

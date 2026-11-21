@@ -1,0 +1,29 @@
+{
+  "budget_counts": {
+    "100": 360,
+    "40": 360
+  },
+  "cross_budget_context_overlap": 0,
+  "declaration_identity": "repaired-sbi-assessment-declaration-v1-acd75ed8d2fcc424f5b2bd68f092c3f2f4fa61fdbec4195d355a7b033f01492f",
+  "execution_authorized": false,
+  "gp_fit_attempts": 0,
+  "historical_evidence_modified": false,
+  "maximum_assessment_calls": 720,
+  "method_counts": {
+    "mutaco": 240,
+    "sbi_npe": 240,
+    "sbi_snpe": 240
+  },
+  "preparation_identity": "repaired-sbi-assessment-preparation-v1-4ce37f910f76ea7d9c8dd76178f003471a092c6163754c384bbc829ced41291b",
+  "same_context_for_all_methods_within_target_budget": true,
+  "schema_version": "mutaco-repaired-sbi-assessment-preparation-v1",
+  "search_calls": 0,
+  "simulator_calls": 0,
+  "target_budget_contexts": 240,
+  "task_count": 720,
+  "tasks_identity": "repaired-sbi-assessment-task-list-v1-a9ae8aa77ea067d40f83d68d7079104893cba2e72beddb9ddad6e4a23a6f17c3",
+  "terminal_optimizations": 0,
+  "truba_jobs_submitted": 0,
+  "unique_context_family_identities": 240,
+  "unique_task_identities": 720
+}

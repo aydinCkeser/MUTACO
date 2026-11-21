@@ -1,0 +1,1 @@
+../device_and_resources/device_and_precision_resolution.py

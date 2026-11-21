@@ -1,0 +1,27 @@
+{
+  "audit_identity": "scalar-primary-cross-budget-integrity-audit-v1-6ed57df43980a6c2bb13890140a3c9d7a58b0e8ecaa8436df33dc7328a3f26c7",
+  "complete_target_method_budget_grid": true,
+  "historical_evidence_modified": false,
+  "inputs": {
+    "100": {
+      "analysis_report_identity": "cross-experiment-analysis-report-v1-92c1964d2be762a2f84fb73f3b8ee42fbecd58c47fd3f42a2c9ea2f39aa91a51",
+      "analysis_report_reproduced": true,
+      "evidence_identity": "scalar-primary-population-evidence-v1-c72415fcb29e8d7379604d3cf0a33a3b0e962fed94ead446088c55ece83a9375",
+      "manifest_sha256": "7f1c79a1351457cd8f0ee918bcfc0077375635e334803f54beee6fd1428436e8",
+      "report_sha256": "ff7f2fc48a5b23621d41764545b04058511a065af038eb6822ef378f38273305",
+      "rows_sha256": "e03ddf7359724ab2d680e92b3996725e05f894d4c3228ce3c30bf78dac41e434"
+    },
+    "40": {
+      "analysis_report_identity": "cross-experiment-analysis-report-v1-d34c6f25a3da7d3bbf15fb5a2f1dd81bce0a7b5ec52f3ace8b0299ac18df825e",
+      "analysis_report_reproduced": true,
+      "evidence_identity": "scalar-primary-population-evidence-v1-9294220a23a94c7514dfd608ea6a7b0dbe3f8474222d30309e7b4a9aeef04009",
+      "manifest_sha256": "ecfbf6621931a17e7bd62e1a8cda13137cbeb7949cc13f7aa4bcef7f60f985be",
+      "report_sha256": "f46c453b38f3842d67c829a073e593a8e05534d7b4ab187d7a85a1fc62966157",
+      "rows_sha256": "4bd34f4ba8fdb01e3b9279270b1ed9c971da28970990bad52a2c7bbead801a6f"
+    }
+  },
+  "same_ordered_target_cohort": true,
+  "schema_version": "mutaco-scalar-primary-cross-budget-integrity-audit-v1",
+  "scientific_calls": 0,
+  "truba_jobs_submitted": 0
+}

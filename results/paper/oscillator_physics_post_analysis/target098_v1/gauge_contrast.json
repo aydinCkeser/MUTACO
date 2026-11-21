@@ -1,0 +1,72 @@
+{
+  "analysis_classification": "zero_call_frozen_archive_only",
+  "contrast_definition": "response(Phi=pi)-response(Phi=0)",
+  "gauge_contrast_identity": "mutaco-oscillator-physics-gauge-contrast-v1-9adaa331fe2c4852734139c59ebee7be902e3fb6f038ae722cd10029b8f56b3d",
+  "mutaco_b40_record_identity": "paper-method-record-v1-76c8bf4b5a6ede5b1bcfc26142a86256c1c7f4d3a3a474e80868e3614749dd49",
+  "rows": [
+    {
+      "M_pi_minus_zero": -0.16046404838562012,
+      "force": 0.0,
+      "omega_bar_pi_minus_zero": 0.0004995409253751859,
+      "series": "target"
+    },
+    {
+      "M_pi_minus_zero": -0.21175557374954224,
+      "force": 1.25,
+      "omega_bar_pi_minus_zero": 0.055593982338905334,
+      "series": "target"
+    },
+    {
+      "M_pi_minus_zero": -0.0703916847705841,
+      "force": 2.5,
+      "omega_bar_pi_minus_zero": -0.002751588821411133,
+      "series": "target"
+    },
+    {
+      "M_pi_minus_zero": -0.03113517165184021,
+      "force": 3.75,
+      "omega_bar_pi_minus_zero": -0.00744318962097168,
+      "series": "target"
+    },
+    {
+      "M_pi_minus_zero": -0.016378939151763916,
+      "force": 5.0,
+      "omega_bar_pi_minus_zero": -0.003306865692138672,
+      "series": "target"
+    },
+    {
+      "M_pi_minus_zero": -0.17285972833633423,
+      "force": 0.0,
+      "omega_bar_pi_minus_zero": 0.0003016288537764922,
+      "series": "mutaco_b40_reconstruction"
+    },
+    {
+      "M_pi_minus_zero": -0.2282995581626892,
+      "force": 1.25,
+      "omega_bar_pi_minus_zero": 0.05831506475806236,
+      "series": "mutaco_b40_reconstruction"
+    },
+    {
+      "M_pi_minus_zero": -0.08752477169036865,
+      "force": 2.5,
+      "omega_bar_pi_minus_zero": 0.011936783790588379,
+      "series": "mutaco_b40_reconstruction"
+    },
+    {
+      "M_pi_minus_zero": -0.03642478585243225,
+      "force": 3.75,
+      "omega_bar_pi_minus_zero": -0.011349201202392578,
+      "series": "mutaco_b40_reconstruction"
+    },
+    {
+      "M_pi_minus_zero": -0.02159208059310913,
+      "force": 5.0,
+      "omega_bar_pi_minus_zero": -0.010371685028076172,
+      "series": "mutaco_b40_reconstruction"
+    }
+  ],
+  "schema_version": "mutaco-oscillator-physics-gauge-contrast-v1",
+  "scientific_calls": 0,
+  "target_position": 98,
+  "target_record_id": "frozen-target-record-v2-c1f2caab22dc5c7f72782e379c38ce9ee06297491b6174c6306303cb9f35a7c5"
+}
